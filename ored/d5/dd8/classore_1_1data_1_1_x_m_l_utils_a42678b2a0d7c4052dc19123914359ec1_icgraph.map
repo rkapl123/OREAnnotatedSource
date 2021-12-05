@@ -1,42 +1,38 @@
 <map id="getChildrenNodes" name="getChildrenNodes">
-<area shape="rect" id="node1" title="Returns all the children with a given name." alt="" coords="981,359,1105,385"/>
-<area shape="rect" id="node2" href="$d4/dca/xmlmanipulation_8cpp.html#aa0312ecf31814fd12e8287d1726d3070" title=" " alt="" coords="725,5,933,32"/>
-<area shape="rect" id="node3" href="$d7/d02/classore_1_1data_1_1_instantaneous_correlations.html#a372f574f5171521f99187364e6610a9e" title="Populate members from XML." alt="" coords="748,57,911,98"/>
-<area shape="rect" id="node4" href="$d2/de8/classore_1_1data_1_1_netting_set_manager.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="733,122,925,163"/>
-<area shape="rect" id="node5" href="$dd/d14/classore_1_1data_1_1_commodity_future_convention.html#a7741ae0fc924943de5bfe02928262eb7" title="Serialisation." alt="" coords="737,187,921,229"/>
-<area shape="rect" id="node6" href="$dc/d1c/classore_1_1data_1_1_default_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="735,253,924,294"/>
-<area shape="rect" id="node7" href="$d2/d45/classore_1_1data_1_1_ibor_fallback_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="736,318,923,359"/>
-<area shape="rect" id="node8" href="$db/dfe/classore_1_1data_1_1_envelope.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="763,383,896,425"/>
-<area shape="rect" id="node19" href="$d4/ded/classore_1_1data_1_1_leg_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="765,514,894,555"/>
-<area shape="rect" id="node25" href="$d0/da9/classore_1_1data_1_1_trade_actions.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="751,449,908,490"/>
-<area shape="rect" id="node26" href="$dc/d6a/classore_1_1data_1_1_calendar_adjustment_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="730,579,929,621"/>
-<area shape="rect" id="node27" href="$d8/d38/classore_1_1data_1_1_currency_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="745,645,914,686"/>
-<area shape="rect" id="node28" href="$dc/de8/classore_1_1data_1_1_yield_curve_segment.html#ae1b045b804732e89cbac7ac33ee6bdfe" title=" " alt="" coords="732,1005,927,1046"/>
-<area shape="rect" id="node9" href="$d8/d99/classore_1_1data_1_1_trade.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="495,391,666,417"/>
-<area shape="rect" id="node10" href="$d7/d79/classore_1_1data_1_1_asian_option_trade.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="247,122,431,163"/>
-<area shape="rect" id="node13" href="$dc/d0b/classore_1_1data_1_1_commodity_asian_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="249,187,429,229"/>
-<area shape="rect" id="node14" href="$d9/db7/classore_1_1data_1_1_commodity_forward.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="243,253,436,294"/>
-<area shape="rect" id="node15" href="$dc/d0c/classore_1_1data_1_1_commodity_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="247,318,432,359"/>
-<area shape="rect" id="node16" href="$d3/d0d/classore_1_1data_1_1_credit_default_swap_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="262,514,417,555"/>
-<area shape="rect" id="node17" href="$d8/dfc/classore_1_1data_1_1_equity_future_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="243,383,436,425"/>
-<area shape="rect" id="node18" href="$d5/de8/classore_1_1data_1_1_fx_forward.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="268,449,411,490"/>
-<area shape="rect" id="node11" href="$db/d7c/classore_1_1data_1_1_equity_asian_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="5,89,195,130"/>
-<area shape="rect" id="node12" href="$dc/ddc/classore_1_1data_1_1_fx_asian_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="17,154,183,195"/>
-<area shape="rect" id="node20" href="$dc/dd8/classore_1_1data_1_1_bond_data.html#a7741ae0fc924943de5bfe02928262eb7" title="XMLSerializable interface." alt="" coords="511,449,650,490"/>
-<area shape="rect" id="node21" href="$d6/da0/classore_1_1data_1_1_credit_default_swap_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="503,514,658,555"/>
-<area shape="rect" id="node22" href="$d7/dfc/structore_1_1data_1_1_bond_reference_datum_1_1_bond_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="489,579,672,621"/>
-<area shape="rect" id="node24" href="$d7/d75/classore_1_1data_1_1_swaption.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="513,645,648,686"/>
-<area shape="rect" id="node23" href="$db/dab/classore_1_1data_1_1_bond_reference_datum.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="255,579,424,621"/>
-<area shape="rect" id="node29" href="$d2/d13/classore_1_1data_1_1_direct_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="493,710,669,751"/>
-<area shape="rect" id="node30" href="$dd/d62/classore_1_1data_1_1_simple_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="489,775,672,817"/>
-<area shape="rect" id="node31" href="$d3/dda/classore_1_1data_1_1_average_o_i_s_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="491,841,670,882"/>
-<area shape="rect" id="node32" href="$d0/de0/classore_1_1data_1_1_tenor_basis_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="493,906,668,947"/>
-<area shape="rect" id="node33" href="$dd/d90/classore_1_1data_1_1_cross_ccy_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="497,971,664,1013"/>
-<area shape="rect" id="node34" href="$d8/d05/classore_1_1data_1_1_zero_spreaded_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="485,1037,676,1078"/>
-<area shape="rect" id="node35" href="$da/d77/classore_1_1data_1_1_weighted_average_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="484,1102,677,1143"/>
-<area shape="rect" id="node36" href="$df/deb/classore_1_1data_1_1_yield_plus_default_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="484,1167,677,1209"/>
-<area shape="rect" id="node37" href="$db/d92/classore_1_1data_1_1_discount_ratio_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="484,1233,677,1274"/>
-<area shape="rect" id="node39" href="$dd/d24/classore_1_1data_1_1_fitted_bond_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="494,1298,667,1339"/>
-<area shape="rect" id="node40" href="$d0/d00/classore_1_1data_1_1_ibor_fallback_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="489,1363,672,1405"/>
-<area shape="rect" id="node38" href="$d2/df5/test_2curveconfig_8cpp.html#ac3d1d49df97d682bf9887e65c4156404" title=" " alt="" coords="244,1240,435,1267"/>
+<area shape="rect" id="node1" title="Returns all the children with a given name." alt="" coords="972,339,1096,366"/>
+<area shape="rect" id="node2" href="$d7/d02/classore_1_1data_1_1_instantaneous_correlations.html#a372f574f5171521f99187364e6610a9e" title="Populate members from XML." alt="" coords="743,5,906,47"/>
+<area shape="rect" id="node3" href="$d2/de8/classore_1_1data_1_1_netting_set_manager.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="729,71,921,112"/>
+<area shape="rect" id="node4" href="$dd/d14/classore_1_1data_1_1_commodity_future_convention.html#a7741ae0fc924943de5bfe02928262eb7" title="Serialisation." alt="" coords="733,136,917,177"/>
+<area shape="rect" id="node5" href="$dc/d1c/classore_1_1data_1_1_default_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="730,201,919,243"/>
+<area shape="rect" id="node6" href="$d2/d45/classore_1_1data_1_1_ibor_fallback_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="731,267,918,308"/>
+<area shape="rect" id="node7" href="$db/dfe/classore_1_1data_1_1_envelope.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="758,332,891,373"/>
+<area shape="rect" id="node16" href="$d4/ded/classore_1_1data_1_1_leg_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="760,463,889,504"/>
+<area shape="rect" id="node22" href="$d0/da9/classore_1_1data_1_1_trade_actions.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="746,397,903,439"/>
+<area shape="rect" id="node23" href="$dc/d6a/classore_1_1data_1_1_calendar_adjustment_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="725,528,924,569"/>
+<area shape="rect" id="node24" href="$d8/d38/classore_1_1data_1_1_currency_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="740,593,909,635"/>
+<area shape="rect" id="node25" href="$dc/de8/classore_1_1data_1_1_yield_curve_segment.html#ae1b045b804732e89cbac7ac33ee6bdfe" title=" " alt="" coords="727,949,922,991"/>
+<area shape="rect" id="node8" href="$d8/d99/classore_1_1data_1_1_trade.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="495,339,666,366"/>
+<area shape="rect" id="node9" href="$d7/d79/classore_1_1data_1_1_asian_option_trade.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="247,197,431,239"/>
+<area shape="rect" id="node12" href="$dc/d0b/classore_1_1data_1_1_commodity_asian_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="249,263,429,304"/>
+<area shape="rect" id="node13" href="$dc/d0c/classore_1_1data_1_1_commodity_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="247,328,432,369"/>
+<area shape="rect" id="node14" href="$d3/d0d/classore_1_1data_1_1_credit_default_swap_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="262,459,417,500"/>
+<area shape="rect" id="node15" href="$d8/dfc/classore_1_1data_1_1_equity_future_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="243,393,436,435"/>
+<area shape="rect" id="node10" href="$db/d7c/classore_1_1data_1_1_equity_asian_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="5,164,195,205"/>
+<area shape="rect" id="node11" href="$dc/ddc/classore_1_1data_1_1_fx_asian_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="17,229,183,271"/>
+<area shape="rect" id="node17" href="$dc/dd8/classore_1_1data_1_1_bond_data.html#a7741ae0fc924943de5bfe02928262eb7" title="XMLSerializable interface." alt="" coords="511,393,650,435"/>
+<area shape="rect" id="node18" href="$d6/da0/classore_1_1data_1_1_credit_default_swap_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="503,459,658,500"/>
+<area shape="rect" id="node19" href="$d7/dfc/structore_1_1data_1_1_bond_reference_datum_1_1_bond_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="489,524,672,565"/>
+<area shape="rect" id="node21" href="$d7/d75/classore_1_1data_1_1_swaption.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="513,589,648,631"/>
+<area shape="rect" id="node20" href="$db/dab/classore_1_1data_1_1_bond_reference_datum.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="255,524,424,565"/>
+<area shape="rect" id="node26" href="$d2/d13/classore_1_1data_1_1_direct_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="493,655,669,696"/>
+<area shape="rect" id="node27" href="$dd/d62/classore_1_1data_1_1_simple_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="489,720,672,761"/>
+<area shape="rect" id="node28" href="$d3/dda/classore_1_1data_1_1_average_o_i_s_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="491,785,670,827"/>
+<area shape="rect" id="node29" href="$d0/de0/classore_1_1data_1_1_tenor_basis_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="493,851,668,892"/>
+<area shape="rect" id="node30" href="$dd/d90/classore_1_1data_1_1_cross_ccy_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="497,916,664,957"/>
+<area shape="rect" id="node31" href="$d8/d05/classore_1_1data_1_1_zero_spreaded_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="485,981,676,1023"/>
+<area shape="rect" id="node32" href="$da/d77/classore_1_1data_1_1_weighted_average_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="484,1047,677,1088"/>
+<area shape="rect" id="node33" href="$df/deb/classore_1_1data_1_1_yield_plus_default_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="484,1112,677,1153"/>
+<area shape="rect" id="node34" href="$db/d92/classore_1_1data_1_1_discount_ratio_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="484,1177,677,1219"/>
+<area shape="rect" id="node35" href="$dd/d24/classore_1_1data_1_1_fitted_bond_yield_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="494,1243,667,1284"/>
+<area shape="rect" id="node36" href="$d0/d00/classore_1_1data_1_1_ibor_fallback_curve_segment.html#a372f574f5171521f99187364e6610a9e" title=" " alt="" coords="489,1308,672,1349"/>
 </map>

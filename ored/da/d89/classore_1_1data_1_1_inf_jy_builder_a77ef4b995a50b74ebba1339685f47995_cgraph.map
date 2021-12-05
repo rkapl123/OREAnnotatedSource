@@ -1,29 +1,30 @@
 <map id="InfJyBuilder" name="InfJyBuilder">
-<area shape="rect" id="node1" title=" " alt="" coords="5,661,93,688"/>
-<area shape="rect" id="node2" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a935e1c16b02ca6dbe5e1e5f32882b2c7" title="Build any calibration baskets requested by the configuration i.e. via the data_ member." alt="" coords="141,433,300,460"/>
-<area shape="rect" id="node19" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#aaeb4b90a6643bcae142fa5f3ed5dc0c6" title="Create the inflation index parameterisation." alt="" coords="157,611,284,637"/>
-<area shape="rect" id="node24" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#ac38891d2ad44f9b6e02730f8d10b58d8" title="Create the real rate parameterisation." alt="" coords="146,712,295,739"/>
-<area shape="rect" id="node27" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a653cb2f17648c48732f61cf3ceb947fb" title="Attempt to initialise market data members that may be needed for building calibration instruments." alt="" coords="166,763,275,789"/>
-<area shape="rect" id="node3" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a04274cbe5a4625db825e42c300eef575" title="Build the calibration basket." alt="" coords="371,291,522,317"/>
-<area shape="rect" id="node17" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#aacf0933dd9d459ffbedbac265f3269b5" title=" " alt="" coords="597,473,773,514"/>
-<area shape="rect" id="node18" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a3bc0c8081ffc221edaa8f90c065a2747" title="Find calibration basket with parameter value equal to parameter." alt="" coords="385,459,508,485"/>
-<area shape="rect" id="node4" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a69c1e8a74b5a706e29821a070c83907d" title="Build a CPI cap floor calibration basket." alt="" coords="604,139,765,165"/>
-<area shape="rect" id="node7" href="$d2/d38/classore_1_1data_1_1_calibration_basket.html#a2d3d9b3795a151df5e33b31b2b5575cc" title=" " alt="" coords="827,225,1009,266"/>
-<area shape="rect" id="node12" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a62a24690024d3d23ae7d3f880eef8ef2" title="Build a YoY cap floor calibration basket." alt="" coords="601,291,768,317"/>
-<area shape="rect" id="node14" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a133d1dc488d0f63362752706f448007e" title="Build a YoY swap calibration basket." alt="" coords="611,240,758,267"/>
-<area shape="rect" id="node15" href="$d2/d38/classore_1_1data_1_1_calibration_basket.html#a644718bb2fb240de962dc3c9a1fdf0dc" title="Returns true if the calibration basket is empty." alt="" coords="593,342,776,383"/>
-<area shape="rect" id="node16" href="$d2/d38/classore_1_1data_1_1_calibration_basket.html#aa525cac0662eacaed44a94894b9a002a" title=" " alt="" coords="593,407,776,449"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,761,93,788"/>
+<area shape="rect" id="node2" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a935e1c16b02ca6dbe5e1e5f32882b2c7" title="Build any calibration baskets requested by the configuration i.e. via the data_ member." alt="" coords="141,533,300,560"/>
+<area shape="rect" id="node20" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#aaeb4b90a6643bcae142fa5f3ed5dc0c6" title="Create the inflation index parameterisation." alt="" coords="157,711,284,737"/>
+<area shape="rect" id="node25" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#ac38891d2ad44f9b6e02730f8d10b58d8" title="Create the real rate parameterisation." alt="" coords="146,812,295,839"/>
+<area shape="rect" id="node28" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a653cb2f17648c48732f61cf3ceb947fb" title="Attempt to initialise market data members that may be needed for building calibration instruments." alt="" coords="166,863,275,889"/>
+<area shape="rect" id="node3" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a04274cbe5a4625db825e42c300eef575" title="Build the calibration basket." alt="" coords="371,391,522,417"/>
+<area shape="rect" id="node18" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#aacf0933dd9d459ffbedbac265f3269b5" title=" " alt="" coords="597,573,773,614"/>
+<area shape="rect" id="node19" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a3bc0c8081ffc221edaa8f90c065a2747" title="Find calibration basket with parameter value equal to parameter." alt="" coords="385,559,508,585"/>
+<area shape="rect" id="node4" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a69c1e8a74b5a706e29821a070c83907d" title="Build a CPI cap floor calibration basket." alt="" coords="604,199,765,225"/>
+<area shape="rect" id="node8" href="$d2/d38/classore_1_1data_1_1_calibration_basket.html#a2d3d9b3795a151df5e33b31b2b5575cc" title=" " alt="" coords="827,393,1009,434"/>
+<area shape="rect" id="node13" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a62a24690024d3d23ae7d3f880eef8ef2" title="Build a YoY cap floor calibration basket." alt="" coords="601,285,768,312"/>
+<area shape="rect" id="node15" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#a133d1dc488d0f63362752706f448007e" title="Build a YoY swap calibration basket." alt="" coords="611,340,758,367"/>
+<area shape="rect" id="node16" href="$d2/d38/classore_1_1data_1_1_calibration_basket.html#a644718bb2fb240de962dc3c9a1fdf0dc" title="Returns true if the calibration basket is empty." alt="" coords="593,442,776,483"/>
+<area shape="rect" id="node17" href="$d2/d38/classore_1_1data_1_1_calibration_basket.html#aa525cac0662eacaed44a94894b9a002a" title=" " alt="" coords="593,507,776,549"/>
 <area shape="rect" id="node5" href="$d7/dfd/namespaceore_1_1data.html#adaf4807ccbbad086444bca74bc236c28" title="Return a cpi cap/floor strike value, the input strike can be of type absolute or atm forward." alt="" coords="826,107,1010,149"/>
 <area shape="rect" id="node6" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#ad22960d15d32d9e5be44c045744d8a3a" title=" " alt="" coords="869,5,967,32"/>
-<area shape="rect" id="node8" href="$d7/dfd/namespaceore_1_1data.html#a2581593e2b36910abee4f7e2cfda1039" title=" " alt="" coords="837,56,999,83"/>
-<area shape="rect" id="node9" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#acc7b35fae386b8e18ed5b7a4bbe99cea" title="Create the reference calibration dates." alt="" coords="833,291,1003,317"/>
-<area shape="rect" id="node11" href="$dc/d39/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="853,173,983,200"/>
-<area shape="rect" id="node10" href="$df/dc7/classore_1_1data_1_1_date_grid.html#acb160a773a51bbd23047ca5e1c90ba2a" title=" " alt="" coords="1060,283,1192,325"/>
-<area shape="rect" id="node13" href="$d7/dfd/namespaceore_1_1data.html#a1d8097d686d022bfc1405413cb49deea" title="Return a yoy cap/floor strike value, the input strike can be of type absolute or atm forward." alt="" coords="824,342,1012,383"/>
-<area shape="rect" id="node20" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#abc7000ad61c727a1c92edf461dfeda9e" title=" " alt="" coords="397,611,496,637"/>
-<area shape="rect" id="node21" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#a23131baceb8e12f265f04d3d772fa628" title=" " alt="" coords="597,669,773,710"/>
-<area shape="rect" id="node22" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#a8df044e9f3b4bd3e3e5c855a7f84adbb" title=" " alt="" coords="597,538,773,579"/>
-<area shape="rect" id="node23" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#adaf95a566e294a0739abae733b5475ee" title=" " alt="" coords="597,603,773,645"/>
-<area shape="rect" id="node25" href="$d1/d28/classore_1_1data_1_1_reversion_parameter.html#a8c5dd13b5a108105c52d850a097f93c5" title=" " alt="" coords="348,763,545,805"/>
-<area shape="rect" id="node26" href="$d7/d74/classore_1_1data_1_1_volatility_parameter.html#a24ed2d5eca36f983090654744009e773" title=" " alt="" coords="351,829,542,870"/>
+<area shape="rect" id="node7" href="C:/dev/ORE/master/QuantExt/doc/quantext.tag$inflation_8hpp.html#a3382feb5af22cf4e80823c97d52226db" title=" " alt="" coords="871,341,965,368"/>
+<area shape="rect" id="node9" href="$d7/dfd/namespaceore_1_1data.html#a2581593e2b36910abee4f7e2cfda1039" title=" " alt="" coords="837,56,999,83"/>
+<area shape="rect" id="node10" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#acc7b35fae386b8e18ed5b7a4bbe99cea" title="Create the reference calibration dates." alt="" coords="833,224,1003,251"/>
+<area shape="rect" id="node12" href="$dc/d39/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="853,173,983,200"/>
+<area shape="rect" id="node11" href="$df/dc7/classore_1_1data_1_1_date_grid.html#acb160a773a51bbd23047ca5e1c90ba2a" title=" " alt="" coords="1060,217,1192,258"/>
+<area shape="rect" id="node14" href="$d7/dfd/namespaceore_1_1data.html#a1d8097d686d022bfc1405413cb49deea" title="Return a yoy cap/floor strike value, the input strike can be of type absolute or atm forward." alt="" coords="824,275,1012,317"/>
+<area shape="rect" id="node21" href="$da/d89/classore_1_1data_1_1_inf_jy_builder.html#abc7000ad61c727a1c92edf461dfeda9e" title=" " alt="" coords="397,711,496,737"/>
+<area shape="rect" id="node22" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#a23131baceb8e12f265f04d3d772fa628" title=" " alt="" coords="597,769,773,810"/>
+<area shape="rect" id="node23" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#a8df044e9f3b4bd3e3e5c855a7f84adbb" title=" " alt="" coords="597,638,773,679"/>
+<area shape="rect" id="node24" href="$d6/d9f/classore_1_1data_1_1_model_parameter.html#adaf95a566e294a0739abae733b5475ee" title=" " alt="" coords="597,703,773,745"/>
+<area shape="rect" id="node26" href="$d1/d28/classore_1_1data_1_1_reversion_parameter.html#a8c5dd13b5a108105c52d850a097f93c5" title=" " alt="" coords="348,863,545,905"/>
+<area shape="rect" id="node27" href="$d7/d74/classore_1_1data_1_1_volatility_parameter.html#a24ed2d5eca36f983090654744009e773" title=" " alt="" coords="351,929,542,970"/>
 </map>
