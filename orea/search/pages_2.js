@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['introduction_13311',['Introduction',['../index.html',1,'']]]
+  ['ore_20license_8575',['ORE License',['../../qle/license.html',1,'']]]
 ];

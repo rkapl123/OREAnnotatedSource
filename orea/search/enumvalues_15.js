@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['weightedaverage_13256',['WeightedAverage',['../../ored/classore_1_1data_1_1_yield_curve_segment.html#a1d1cfd8ffb84e947f82999c682b666a7af818fb451ad05227ddf60d3380f8dd99',1,'ore::data::YieldCurveSegment']]]
+  ['xr_8523',['XR',['../../ored/namespaceore_1_1data.html#a1c8d62fd759e177405f7d28b33d0d981a6e029fb0cac7800630850e5f6a2f5567',1,'ore::data']]],
+  ['xr14_8524',['XR14',['../../ored/namespaceore_1_1data.html#a1c8d62fd759e177405f7d28b33d0d981a4086d9b7f71d2711651cc9131ad60c70',1,'ore::data']]]
 ];

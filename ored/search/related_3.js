@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['singleton_3c_20calibrationinstrumentfactory_20_3e_10274',['Singleton&lt; CalibrationInstrumentFactory &gt;',['../d5/d35/classore_1_1data_1_1_calibration_instrument_factory.html#aad5ed6d3476ef4fda649edb2d79e0fc2',1,'ore::data::CalibrationInstrumentFactory']]],
-  ['singleton_3c_20legdatafactory_20_3e_10275',['Singleton&lt; LegDataFactory &gt;',['../d3/dd6/classore_1_1data_1_1_leg_data_factory.html#ab14e0558a007006d8ebd37d37e3e5247',1,'ore::data::LegDataFactory']]],
-  ['singleton_3c_20log_20_3e_10276',['Singleton&lt; Log &gt;',['../df/da0/classore_1_1data_1_1_log.html#af37618935b5e191c66a98964a1b3ea0d',1,'ore::data::Log']]],
-  ['singleton_3c_20referencedatumfactory_20_3e_10277',['Singleton&lt; ReferenceDatumFactory &gt;',['../d7/df2/classore_1_1data_1_1_reference_datum_factory.html#a7cb35b2ffcc249b594898d2ae05dfa49',1,'ore::data::ReferenceDatumFactory']]]
+  ['operator_3c_3c_14503',['operator&lt;&lt;',['../classore_1_1data_1_1_dependency_graph.html#a09cf54ba236d2e41b6724766144dfcff',1,'ore::data::DependencyGraph::operator&lt;&lt;()'],['../classore_1_1data_1_1_required_fixings.html#acdc6807f45044ec4632c4400916ceb5e',1,'ore::data::RequiredFixings::operator&lt;&lt;()']]],
+  ['operator_3d_3d_14504',['operator==',['../classore_1_1data_1_1_expiry.html#ade4f2e126363952ffd269342e1384c52',1,'ore::data::Expiry::operator==()'],['../classore_1_1data_1_1_base_strike.html#ae9ed9d487a19f1417bd270153961c0f7',1,'ore::data::BaseStrike::operator==()']]]
 ];

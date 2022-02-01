@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['helper_12954',['Helper',['../../ored/classore_1_1data_1_1_commodity_curve.html#a4feb994018e052debc65208f7d30998e',1,'ore::data::CommodityCurve::Helper()'],['../../qle/struct_quant_ext_1_1_optionlet_traits.html#ac28af33f0db47fd24320c0ae0844971f',1,'QuantExt::OptionletTraits::helper()'],['../../qle/struct_quant_ext_1_1_price_traits.html#a572a2a0a140b57f21a248068745566b2',1,'QuantExt::PriceTraits::helper()']]],
-  ['helpers_12955',['Helpers',['../../ored/classore_1_1data_1_1_inf_jy_builder.html#ade48cc2e594ab6101da51172394368d7',1,'ore::data::InfJyBuilder::Helpers()'],['../../ored/namespaceore_1_1data.html#a58ee0c3350457011cc6ebe976fecb821',1,'ore::data::Helpers()']]]
+  ['optionletcurve_8285',['OptionletCurve',['../../qle/group__termstructures.html#ga9ca4398965b0afb84c607e3f76871c20',1,]]]
 ];

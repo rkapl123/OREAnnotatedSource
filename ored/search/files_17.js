@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['xmlutils_2ecpp_6502',['xmlutils.cpp',['../d0/d30/xmlutils_8cpp.html',1,'']]],
-  ['xmlutils_2ehpp_6503',['xmlutils.hpp',['../d7/dc4/xmlutils_8hpp.html',1,'']]]
+  ['xmlmanipulation_2ecpp_8460',['xmlmanipulation.cpp',['../xmlmanipulation_8cpp.html',1,'']]],
+  ['xmlmanipulation_2ehpp_8461',['xmlmanipulation.hpp',['../xmlmanipulation_8hpp.html',1,'']]],
+  ['xmlutils_2ecpp_8462',['xmlutils.cpp',['../xmlutils_8cpp.html',1,'']]],
+  ['xmlutils_2ehpp_8463',['xmlutils.hpp',['../xmlutils_8hpp.html',1,'']]]
 ];

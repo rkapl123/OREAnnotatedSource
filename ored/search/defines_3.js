@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['elog_10284',['ELOG',['../d4/d3d/log_8hpp.html#a162fbfad7c960fdab84f7ff46f0c413c',1,'log.hpp']]],
-  ['eloggerstream_10285',['ELOGGERSTREAM',['../d4/d3d/log_8hpp.html#a838007246edd9cef5630413d5c01c0d4',1,'log.hpp']]]
+  ['dlog_14518',['DLOG',['../log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5',1,'log.hpp']]],
+  ['dloggerstream_14519',['DLOGGERSTREAM',['../log_8hpp.html#af90fee33d55763cc6d5079b524fc2e07',1,'log.hpp']]]
 ];

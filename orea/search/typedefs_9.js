@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node_12959',['Node',['../../ored/classore_1_1data_1_1_todays_market.html#aedc7f80292f3b2edcac8cb48ee6262cd',1,'ore::data::TodaysMarket']]]
+  ['traits_5ftype_8295',['traits_type',['../../qle/class_quant_ext_1_1_piecewise_optionlet_curve.html#aec92a1f54e259eac2be907133e652b2f',1,'QuantExt::PiecewiseOptionletCurve']]]
 ];

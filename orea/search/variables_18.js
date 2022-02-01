@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['xccycurvenameprefix_12874',['xccyCurveNamePrefix',['../../ored/namespaceore_1_1data.html#aeb0eb4bc9fbaaf6174b8f566c2ad5dd4',1,'ore::data']]],
-  ['xccydiscounting_5f_12875',['xccyDiscounting_',['../d0/db3/classore_1_1analytics_1_1_sensitivity_analysis.html#afacc2977a96fbe28841faebd21435ee9',1,'ore::analytics::SensitivityAnalysis']]],
-  ['xva_5f_12876',['xva_',['../dc/d50/classore_1_1analytics_1_1_o_r_e_app.html#a1e9b65ba92e14aab8e1300c9e84d403f',1,'ore::analytics::OREApp']]]
+  ['zeroinflationcurveshiftdata_5f_8270',['zeroInflationCurveShiftData_',['../classore_1_1analytics_1_1_sensitivity_scenario_data.html#a38b72a700ffe570d3e519585b455e513',1,'ore::analytics::SensitivityScenarioData']]],
+  ['zeroinflationdaycounters_5f_8271',['zeroInflationDayCounters_',['../classore_1_1analytics_1_1_scenario_sim_market_parameters.html#ac064fd89d89570ae635630f21c72f8aa',1,'ore::analytics::ScenarioSimMarketParameters']]],
+  ['zeroinflationkeys_5f_8272',['zeroInflationKeys_',['../classore_1_1analytics_1_1_cross_asset_model_scenario_generator.html#a5ac0f6ddfcea57a037c32d573be8913a',1,'ore::analytics::CrossAssetModelScenarioGenerator']]],
+  ['zeroinflationtenors_5f_8273',['zeroInflationTenors_',['../classore_1_1analytics_1_1_scenario_sim_market_parameters.html#a793cd322f6d14955c180d3d53361fe6c',1,'ore::analytics::ScenarioSimMarketParameters']]]
 ];

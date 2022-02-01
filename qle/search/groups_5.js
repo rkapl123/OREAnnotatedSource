@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quotes_7487',['Quotes',['../de/dfd/group__quotes.html',1,'']]]
+  ['quotes_8406',['Quotes',['../group__quotes.html',1,'']]]
 ];

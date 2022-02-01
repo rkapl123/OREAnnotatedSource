@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['vannavolga1_13253',['VannaVolga1',['../../ored/classore_1_1data_1_1_f_x_volatility_curve_config.html#af4a46b8832b2a6d595b949f103813347a0a9b78811436090fe81263d468ed328f',1,'ore::data::FXVolatilityCurveConfig']]],
-  ['vannavolga2_13254',['VannaVolga2',['../../ored/classore_1_1data_1_1_f_x_volatility_curve_config.html#af4a46b8832b2a6d595b949f103813347a67209b8cc56244df6f216f3806ddbe0f',1,'ore::data::FXVolatilityCurveConfig']]],
-  ['volatility_13255',['Volatility',['../../ored/classore_1_1data_1_1_inflation_cap_floor_volatility_curve_config.html#aa5b3ec8bb6c730c38b87a73c11dec808ad4192ca9679d38110983141b896eebbf',1,'ore::data::InflationCapFloorVolatilityCurveConfig']]]
+  ['weightedaverage_8522',['WeightedAverage',['../../ored/classore_1_1data_1_1_yield_curve_segment.html#a1d1cfd8ffb84e947f82999c682b666a7af818fb451ad05227ddf60d3380f8dd99',1,'ore::data::YieldCurveSegment']]]
 ];

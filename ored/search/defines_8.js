@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['wlog_10301',['WLOG',['../d4/d3d/log_8hpp.html#a9622ca943201e814041f051b7a10b3ea',1,'log.hpp']]],
-  ['wloggerstream_10302',['WLOGGERSTREAM',['../d4/d3d/log_8hpp.html#ab72dbab22dcad3b3455b4d0d4d7c4a9e',1,'log.hpp']]]
+  ['mem_5flog_14526',['MEM_LOG',['../log_8hpp.html#a016524a97fed701aa01ea913a0f5ae96',1,'log.hpp']]],
+  ['mem_5flog_5fusing_5flevel_14527',['MEM_LOG_USING_LEVEL',['../log_8hpp.html#a392f86eb6ccabe97e8d90bf599153d5e',1,'log.hpp']]],
+  ['mlog_14528',['MLOG',['../log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568',1,'log.hpp']]]
 ];
