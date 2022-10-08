@@ -1,25 +1,34 @@
 <map id="generateNPVCube" name="generateNPVCube">
-<area shape="rect" id="node1" title="generate NPV cube" alt="" coords="5,387,135,413"/>
-<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_o_r_e_app.html#a3d7967e4445fb6751ff21f7a079bdf6b" title="build engine factory for a given market" alt="" coords="209,56,343,83"/>
-<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_o_r_e_app.html#a406a58f555bde3a585f89fef4512ba14" title="build an NPV cube" alt="" coords="223,180,329,207"/>
-<area shape="rect" id="node9" href="$classore_1_1analytics_1_1_o_r_e_app.html#aa771f449b4cd1767c2ca1560415e4e24" title="build portfolio for a given market" alt="" coords="228,235,324,261"/>
-<area shape="rect" id="node12" href="$classore_1_1analytics_1_1_o_r_e_app.html#a1aec4d45173f2cd8e82371ed9b17656f" title="build scenarioGenerator" alt="" coords="197,285,355,312"/>
-<area shape="rect" id="node15" href="$classore_1_1analytics_1_1_o_r_e_app.html#ab7ad44287b1e33721989d603d4dd8e90" title="Get fixing manager." alt="" coords="213,336,339,363"/>
-<area shape="rect" id="node16" href="$classore_1_1analytics_1_1_o_r_e_app.html#ad8d3878406f278a0932240bcd38a9f18" title="load scenarioGeneratorData" alt="" coords="189,387,363,413"/>
-<area shape="rect" id="node17" href="$classore_1_1analytics_1_1_o_r_e_app.html#aaa836f8d86bd8b4cbd76fa40e7a652bb" title="load simMarketData" alt="" coords="211,437,341,464"/>
-<area shape="rect" id="node18" href="$classore_1_1analytics_1_1_o_r_e_app.html#acb780bf153853025066e2da6fa58921a" title="get an instance of an aggregationScenarioData class" alt="" coords="183,488,369,515"/>
-<area shape="rect" id="node19" href="$classore_1_1analytics_1_1_o_r_e_app.html#aac1efccfa74d000afc1f72b721e84b16" title="get an instance of a cube class" alt="" coords="241,539,311,565"/>
-<area shape="rect" id="node20" href="$classore_1_1analytics_1_1_o_r_e_app.html#af6d3aee8b621d217d5658517cf5b2fbc" title="write out cube" alt="" coords="237,589,315,616"/>
-<area shape="rect" id="node21" href="$classore_1_1analytics_1_1_o_r_e_app.html#adbaebeba656d572600cf9d5667eb6137" title="write out scenarioData" alt="" coords="213,640,339,667"/>
-<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_o_r_e_app.html#ae139509dbd840b9303d103bdfef70a63" title="Add extra engine builders." alt="" coords="429,5,588,32"/>
-<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_o_r_e_app.html#aa4c9a2d286db56971a6029627ffbac9d" title="Add extra leg builders." alt="" coords="439,56,578,83"/>
-<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_valuation_engine.html#ad489dcfde518b43556d256c1089c8daa" title="Build NPV cube." alt="" coords="427,107,590,149"/>
-<area shape="rect" id="node8" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$classore_1_1data_1_1_progress_reporter.html#a499650a4410acc7cf051dd9598e03fb7" title=" " alt="" coords="417,173,600,214"/>
-<area shape="rect" id="node7" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="648,107,831,149"/>
-<area shape="rect" id="node10" href="$classore_1_1analytics_1_1_o_r_e_app.html#ac28e56fd521c0252eb15c61dd32b38fb" title="build trade factory" alt="" coords="446,239,571,265"/>
-<area shape="rect" id="node11" href="$classore_1_1analytics_1_1_o_r_e_app.html#a932c8dc6ba8cefe081a65026b80fbdfa" title="Add extra trade builders." alt="" coords="664,239,815,265"/>
-<area shape="rect" id="node13" href="$classore_1_1analytics_1_1_scenario_generator_builder.html#a449fae46073a7821c9742842d1d5a560" title="Build function." alt="" coords="429,290,588,331"/>
-<area shape="rect" id="node14" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$multipathgeneratorbase_8hpp.html#ac77926d03b97ffeaf0dacb6f4360cacc" title=" " alt="" coords="656,297,823,324"/>
-<area shape="rect" id="node22" href="$classore_1_1analytics_1_1_o_r_e_app.html#a4d71a83150dd6b89e07b42c70ca385ba" title="Get report writer." alt="" coords="452,640,565,667"/>
-<area shape="rect" id="node23" href="$classore_1_1analytics_1_1_o_r_e_app.html#a9807ba3b2ac05864f6777eb8f15de964" title=" " alt="" coords="671,640,808,667"/>
+<area shape="rect" id="node1" title="generate NPV cube" alt="" coords="5,681,135,707"/>
+<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_o_r_e_app.html#a406a58f555bde3a585f89fef4512ba14" title="build an NPV cube" alt="" coords="224,205,331,231"/>
+<area shape="rect" id="node11" href="$classore_1_1analytics_1_1_o_r_e_app.html#abbc937febeba941b8ef5870a4af31727" title="initialise NPV cube generation" alt="" coords="183,495,372,522"/>
+<area shape="rect" id="node24" href="$classore_1_1analytics_1_1_o_r_e_app.html#a37637556f3fd5b19f89db40c96172318" title="load portfolio from file(s)" alt="" coords="231,655,324,682"/>
+<area shape="rect" id="node27" href="$classore_1_1analytics_1_1_o_r_e_app.html#a030c4b708ae709a03a6a5d3006419be8" title="write out cube" alt="" coords="238,706,317,733"/>
+<area shape="rect" id="node28" href="$classore_1_1analytics_1_1_o_r_e_app.html#ae72f59b79cf3a552b232fb4c5f86588b" title=" " alt="" coords="217,757,337,783"/>
+<area shape="rect" id="node30" href="$classore_1_1analytics_1_1_o_r_e_app.html#adbaebeba656d572600cf9d5667eb6137" title="write out scenarioData" alt="" coords="214,811,341,838"/>
+<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_valuation_engine.html#af79aac066763faf6b905aa4eae4bd243" title="Build NPV cube." alt="" coords="432,109,595,151"/>
+<area shape="rect" id="node9" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga4fd8d22840edd388a049cd7da664f3cf" title=" " alt="" coords="706,293,786,319"/>
+<area shape="rect" id="node10" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$classore_1_1data_1_1_progress_reporter.html#a499650a4410acc7cf051dd9598e03fb7" title=" " alt="" coords="422,227,605,268"/>
+<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="660,5,832,47"/>
+<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_valuation_engine.html#a449798759505031a71161e8c1d5b4a6b" title=" " alt="" coords="665,71,827,112"/>
+<area shape="rect" id="node7" href="$classore_1_1analytics_1_1_valuation_engine.html#ad371228271a48730d80eba456f32d7c2" title=" " alt="" coords="663,136,829,177"/>
+<area shape="rect" id="node8" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="655,201,837,243"/>
+<area shape="rect" id="node6" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga56e050afc6767f54987f481aa229c7df" title=" " alt="" coords="912,78,1043,105"/>
+<area shape="rect" id="node12" href="$classore_1_1analytics_1_1_o_r_e_app.html#af4c310e8a4ef67f58527e0531d81d1fa" title="build engine factory for a given market" alt="" coords="447,394,580,421"/>
+<area shape="rect" id="node15" href="$classore_1_1analytics_1_1_o_r_e_app.html#a4f60609d4cc537062be2e5b1f9c72389" title="build scenarioGenerator" alt="" coords="435,445,592,471"/>
+<area shape="rect" id="node19" href="$classore_1_1analytics_1_1_o_r_e_app.html#ad8d3878406f278a0932240bcd38a9f18" title="load scenarioGeneratorData" alt="" coords="426,495,601,522"/>
+<area shape="rect" id="node20" href="$classore_1_1analytics_1_1_o_r_e_app.html#aaa836f8d86bd8b4cbd76fa40e7a652bb" title="load simMarketData" alt="" coords="448,546,579,573"/>
+<area shape="rect" id="node21" href="$classore_1_1analytics_1_1_o_r_e_app.html#acb780bf153853025066e2da6fa58921a" title="get an instance of an aggregationScenarioData class" alt="" coords="420,597,607,623"/>
+<area shape="rect" id="node22" href="$classore_1_1analytics_1_1_o_r_e_app.html#a6e45357db737d29b2f55ade395e3b88a" title="get an instance of a cube class" alt="" coords="479,647,548,674"/>
+<area shape="rect" id="node23" href="$classore_1_1analytics_1_1_o_r_e_app.html#a241aac1a090152bb32531ab829b15176" title="set depth of NPV cube in cubeDepth_" alt="" coords="461,343,565,370"/>
+<area shape="rect" id="node13" href="$classore_1_1analytics_1_1_o_r_e_app.html#ae139509dbd840b9303d103bdfef70a63" title="Add extra engine builders." alt="" coords="667,343,825,370"/>
+<area shape="rect" id="node14" href="$classore_1_1analytics_1_1_o_r_e_app.html#aa4c9a2d286db56971a6029627ffbac9d" title="Add extra leg builders." alt="" coords="677,394,815,421"/>
+<area shape="rect" id="node16" href="$classore_1_1analytics_1_1_scenario_generator_builder.html#a2223dea59294ad4ccf98fcf182dc7031" title="Build function." alt="" coords="667,445,825,487"/>
+<area shape="rect" id="node17" href="$classore_1_1analytics_1_1_o_r_e_app.html#ace5d4bb2f6d39fd095f04980ab458ad5" title="build CAM" alt="" coords="708,511,784,538"/>
+<area shape="rect" id="node18" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$classore_1_1data_1_1_cross_asset_model_builder.html#ac38bbf12bbb67f3b16c2975d42122662" title=" " alt="" coords="885,504,1069,545"/>
+<area shape="rect" id="node25" href="$classore_1_1analytics_1_1_o_r_e_app.html#ac28e56fd521c0252eb15c61dd32b38fb" title="build trade factory" alt="" coords="451,698,576,725"/>
+<area shape="rect" id="node26" href="$classore_1_1analytics_1_1_o_r_e_app.html#ae18535c818e16e99943d9d6447af13c1" title="Add extra trade builders." alt="" coords="671,698,821,725"/>
+<area shape="rect" id="node29" href="$classore_1_1analytics_1_1_report_writer.html#a93630b1ff2ace7a25c1fc608041b0daa" title=" " alt="" coords="423,749,604,791"/>
+<area shape="rect" id="node31" href="$classore_1_1analytics_1_1_o_r_e_app.html#a4d71a83150dd6b89e07b42c70ca385ba" title="Get report writer." alt="" coords="457,815,570,842"/>
+<area shape="rect" id="node32" href="$classore_1_1analytics_1_1_o_r_e_app.html#a9807ba3b2ac05864f6777eb8f15de964" title=" " alt="" coords="677,815,815,842"/>
 </map>

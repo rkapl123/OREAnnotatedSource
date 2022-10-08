@@ -1,9 +1,9 @@
 <map id="BlackVolTermStructure" name="BlackVolTermStructure">
-<area shape="rect" id="node1" title=" " alt="" coords="656,5,812,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="673,5,829,83"/>
 <area shape="rect" id="node2" href="$class_quant_ext_1_1_black_inverted_vol_term_structure.html" title="Black volatility surface that inverts an existing surface." alt="" coords="5,160,225,531"/>
-<area shape="rect" id="node3" href="$class_quant_ext_1_1_black_monotone_var_vol_term_structure.html" title="Black volatility surface that that monotonises the variance in an existing surface." alt="" coords="250,138,503,553"/>
-<area shape="rect" id="node4" href="$class_quant_ext_1_1_cross_asset_model_implied_eq_vol_term_structure.html" title="Cross Asset Model Implied EQ Term Structure." alt="" coords="527,131,722,560"/>
-<area shape="rect" id="node5" href="$class_quant_ext_1_1_cross_asset_model_implied_fx_vol_term_structure.html" title="Cross Asset Model Implied FX Term Structure." alt="" coords="747,131,940,560"/>
-<area shape="rect" id="node6" href="$class_quant_ext_1_1_dynamic_black_vol_term_structure.html" title="Takes a BlackVolTermStructure with fixed reference date and turns it into a floating reference date t..." alt="" coords="965,160,1191,531"/>
-<area shape="rect" id="node7" href="$class_quant_ext_1_1_equity_volatility_constant_spread.html" title="Equity cube that combines an ATM matrix and vol spreads from a cube." alt="" coords="1215,153,1389,538"/>
+<area shape="rect" id="node3" href="$class_quant_ext_1_1_black_monotone_var_vol_term_structure.html" title="Black volatility surface that monotonises the variance in an existing surface." alt="" coords="250,138,503,553"/>
+<area shape="rect" id="node4" href="$class_quant_ext_1_1_black_volatility_constant_spread.html" title="Cube that combines an ATM matrix and vol spreads from a cube." alt="" coords="527,167,746,523"/>
+<area shape="rect" id="node5" href="$class_quant_ext_1_1_cross_asset_model_implied_eq_vol_term_structure.html" title="Cross Asset Model Implied EQ Term Structure." alt="" coords="770,131,965,560"/>
+<area shape="rect" id="node6" href="$class_quant_ext_1_1_cross_asset_model_implied_fx_vol_term_structure.html" title="Cross Asset Model Implied FX Term Structure." alt="" coords="989,131,1183,560"/>
+<area shape="rect" id="node7" href="$class_quant_ext_1_1_dynamic_black_vol_term_structure.html" title="Takes a BlackVolTermStructure with fixed reference date and turns it into a floating reference date t..." alt="" coords="1207,160,1434,531"/>
 </map>
