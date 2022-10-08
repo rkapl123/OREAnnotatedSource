@@ -1,21 +1,22 @@
 <map id="CurveConfig" name="CurveConfig">
-<area shape="rect" id="node1" title="Base curve configuration." alt="" coords="168,411,259,437"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_base_correlation_curve_config.html" title="Base Correlation term structure configuration." alt="" coords="311,5,494,32"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_cap_floor_volatility_curve_config.html" title=" " alt="" coords="307,56,499,83"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_c_d_s_volatility_curve_config.html" title=" " alt="" coords="319,107,486,133"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_commodity_curve_config.html" title="Commodity curve configuration." alt="" coords="325,157,481,184"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_commodity_volatility_config.html" title="Commodity volatility configuration." alt="" coords="315,208,490,235"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_correlation_curve_config.html" title="Correlation curve configuration." alt="" coords="327,259,479,285"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_default_curve_config.html" title="Default curve configuration." alt="" coords="337,309,468,336"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_equity_curve_config.html" title="Equity curve configuration." alt="" coords="339,360,466,387"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_equity_volatility_curve_config.html" title="Equity volatility structure configuration." alt="" coords="314,411,491,437"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_f_x_spot_config.html" title="FXSpot configuration." alt="" coords="353,461,453,488"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_f_x_volatility_curve_config.html" title="FX volatility structure configuration." alt="" coords="325,512,480,539"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_generic_yield_volatility_curve_config.html" title="Generic yield volatility curve configuration class." alt="" coords="313,563,492,605"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_inflation_cap_floor_price_surface_config.html" title=" " alt="" coords="307,629,499,670"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_inflation_cap_floor_volatility_curve_config.html" title="Inflation CapFloor volatility curve configuration class." alt="" coords="319,694,487,735"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_inflation_curve_config.html" title=" " alt="" coords="335,760,470,787"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_security_config.html" title="Security configuration." alt="" coords="349,811,456,837"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_yield_curve_config.html" title="Yield Curve configuration." alt="" coords="343,861,462,888"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="5,411,120,437"/>
+<area shape="rect" id="node1" title="Base curve configuration." alt="" coords="1674,219,1811,589"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_base_correlation_curve_config.html" title="Base Correlation term structure configuration." alt="" coords="5,872,208,1727"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_cap_floor_volatility_curve_config.html" title=" " alt="" coords="233,1063,445,1536"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_c_d_s_volatility_curve_config.html" title=" " alt="" coords="469,1019,657,1580"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_commodity_curve_config.html" title="Commodity curve configuration." alt="" coords="681,762,860,1837"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_commodity_volatility_config.html" title="Commodity volatility configuration." alt="" coords="884,953,1079,1646"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_correlation_curve_config.html" title="Correlation curve configuration." alt="" coords="1103,784,1291,1815"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_default_curve_config.html" title="Default curve configuration." alt="" coords="1315,1180,1503,1419"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_equity_curve_config.html" title="Equity curve configuration." alt="" coords="1528,887,1733,1712"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_equity_volatility_curve_config.html" title="Equity volatility structure configuration." alt="" coords="1757,945,1955,1653"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_f_x_spot_config.html" title="FXSpot configuration." alt="" coords="1979,1209,2099,1389"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_f_x_volatility_curve_config.html" title="FX volatility structure configuration." alt="" coords="2123,791,2303,1807"/>
+<area shape="rect" id="node14" href="$classore_1_1data_1_1_generic_yield_volatility_curve_config.html" title="Generic yield volatility curve configuration class." alt="" coords="2327,637,2566,1961"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_inflation_cap_floor_volatility_curve_config.html" title="Inflation CapFloor volatility curve configuration class." alt="" coords="2590,740,2791,1859"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_inflation_curve_config.html" title=" " alt="" coords="2815,975,3014,1624"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_security_config.html" title="Security configuration." alt="" coords="3038,1158,3194,1441"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_yield_curve_config.html" title="Yield Curve configuration." alt="" coords="3218,967,3406,1631"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="1671,5,1814,171"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_swaption_volatility_curve_config.html" title="Swaption volatility curve configuration class." alt="" coords="2228,2009,2441,2116"/>
+<area shape="rect" id="node16" href="$classore_1_1data_1_1_yield_volatility_curve_config.html" title="Yield volatility curve configuration." alt="" coords="2465,2017,2655,2109"/>
 </map>

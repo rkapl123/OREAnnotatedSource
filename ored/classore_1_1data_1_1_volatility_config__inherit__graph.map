@@ -1,11 +1,14 @@
 <map id="VolatilityConfig" name="VolatilityConfig">
-<area shape="rect" id="node1" title=" " alt="" coords="168,56,276,83"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_constant_volatility_config.html" title=" " alt="" coords="324,5,484,32"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_volatility_curve_config.html" title=" " alt="" coords="334,56,474,83"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_volatility_surface_config.html" title=" " alt="" coords="328,107,480,133"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="5,56,120,83"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_volatility_apo_future_surface_config.html" title=" " alt="" coords="537,11,713,53"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_volatility_delta_surface_config.html" title=" " alt="" coords="534,77,717,104"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_volatility_moneyness_surface_config.html" title=" " alt="" coords="534,129,717,170"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_volatility_strike_surface_config.html" title=" " alt="" coords="532,195,719,221"/>
+<area shape="rect" id="node1" title=" " alt="" coords="236,219,364,384"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_c_d_s_proxy_volatility_config.html" title=" " alt="" coords="5,476,195,641"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_proxy_volatility_config.html" title=" " alt="" coords="219,432,381,685"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_quote_based_volatility_config.html" title=" " alt="" coords="405,461,605,656"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="229,5,371,171"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_constant_volatility_config.html" title=" " alt="" coords="209,799,389,965"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_volatility_curve_config.html" title=" " alt="" coords="413,733,598,1031"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_volatility_surface_config.html" title=" " alt="" coords="622,741,794,1023"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_volatility_apo_future_surface_config.html" title=" " alt="" coords="283,1079,471,1537"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_volatility_delta_surface_config.html" title=" " alt="" coords="496,1079,699,1537"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_volatility_moneyness_surface_config.html" title=" " alt="" coords="723,1123,917,1493"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_volatility_strike_surface_config.html" title=" " alt="" coords="942,1189,1149,1427"/>
 </map>
