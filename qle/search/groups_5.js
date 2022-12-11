@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quotes_8830',['Quotes',['../group__quotes.html',1,'']]]
+  ['quotes_0',['Quotes',['../group__quotes.html',1,'']]]
 ];

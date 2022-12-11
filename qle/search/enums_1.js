@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['commodityquantityfrequency_8662',['CommodityQuantityFrequency',['../namespace_quant_ext.html#a09d4e29c69cb797cd6633e1081884e7c',1,'QuantExt']]]
+  ['bounds_0',['Bounds',['../struct_quant_ext_1_1_generalised_replicating_variance_swap_engine_1_1_settings.html#a6c9f0dc89d75993537560054fe82c985',1,'QuantExt::GeneralisedReplicatingVarianceSwapEngine::Settings']]]
 ];

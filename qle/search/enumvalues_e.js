@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['takada_8769',['Takada',['../class_quant_ext_1_1_average_o_n_indexed_coupon_pricer.html#ae829a2d9766b911264f513517f7f7623aab32e544155be4898cff89ab4ddfad5f',1,'QuantExt::AverageONIndexedCouponPricer']]],
-  ['tase_8770',['TASE',['../class_quant_ext_1_1_israel.html#a35dff8baebbca7efb81b0c0c62adeea3a60ff46e2495da573a8907ac12afba6a8',1,'QuantExt::Israel']]],
-  ['telbor_8771',['Telbor',['../class_quant_ext_1_1_israel.html#a35dff8baebbca7efb81b0c0c62adeea3aec0d3e457ca7a8b72dae4686071625a5',1,'QuantExt::Israel']]],
-  ['total_8772',['Total',['../namespace_quant_ext.html#a67d80ecd77787f39e188070d9e240071a96b0141273eabab320119c467cdcaf17',1,'QuantExt']]]
+  ['receiver_0',['Receiver',['../class_quant_ext_1_1_average_o_i_s.html#a1d1cfd8ffb84e947f82999c682b666a7a7928a668954c57bb64a7a9d98994cbaa',1,'QuantExt::AverageOIS::Receiver()'],['../class_quant_ext_1_1_cross_ccy_fix_float_swap.html#a1d1cfd8ffb84e947f82999c682b666a7a7928a668954c57bb64a7a9d98994cbaa',1,'QuantExt::CrossCcyFixFloatSwap::Receiver()'],['../class_quant_ext_1_1_fixed_b_m_a_swap.html#a1d1cfd8ffb84e947f82999c682b666a7a7928a668954c57bb64a7a9d98994cbaa',1,'QuantExt::FixedBMASwap::Receiver()'],['../class_quant_ext_1_1_overnight_indexed_basis_swap.html#a1d1cfd8ffb84e947f82999c682b666a7a7928a668954c57bb64a7a9d98994cbaa',1,'QuantExt::OvernightIndexedBasisSwap::Receiver()']]],
+  ['relativetoexpiry_1',['RelativeToExpiry',['../class_quant_ext_1_1_commodity_indexed_cash_flow.html#ad4543fa3ccf34fd7094241b04092cef0afe77d5669044e0c5cb24f20ee98f91b7',1,'QuantExt::CommodityIndexedCashFlow']]]
 ];

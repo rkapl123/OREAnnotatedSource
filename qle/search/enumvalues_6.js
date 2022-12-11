@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['inf_8728',['INF',['../group__crossassetmodel.html#gga72d924d1cb8e1544b6d5198e98d52ca9a2e6059d72d8fde88f3127eb147e4eff8',1,'QuantExt::CrossAssetModelTypes']]],
-  ['ir_8729',['IR',['../group__crossassetmodel.html#gga72d924d1cb8e1544b6d5198e98d52ca9a37f5e4ec9707c7d3c7ecf1bad3e740c4',1,'QuantExt::CrossAssetModelTypes']]],
-  ['irishstockexchange_8730',['IrishStockExchange',['../class_quant_ext_1_1_ireland.html#abe41cfffd960e29a5d8b07be00aeda42a1e8986393695272bf5611f234ae3600c',1,'QuantExt::Ireland']]]
+  ['gab_0',['GAB',['../class_quant_ext_1_1_cross_asset_model.html#a9f27db0468ce0ce2994eb68dc919b15da73d9d5e5f403ba0dc1e021acb0b34944',1,'QuantExt::CrossAssetModel']]],
+  ['gausslobatto_1',['GaussLobatto',['../struct_quant_ext_1_1_generalised_replicating_variance_swap_engine_1_1_settings.html#a5c5181a54a4f46149d9c9662b2694167a8d79a6cd40b3cc60da789f4c167526b9',1,'QuantExt::GeneralisedReplicatingVarianceSwapEngine::Settings']]]
 ];

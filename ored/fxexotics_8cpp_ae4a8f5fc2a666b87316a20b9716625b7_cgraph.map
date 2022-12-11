@@ -1,24 +1,68 @@
 <map id="BOOST_AUTO_TEST_CASE" name="BOOST_AUTO_TEST_CASE">
-<area shape="rect" id="node1" title=" " alt="" coords="5,427,196,453"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="495,226,661,267"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,354,411,395"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="244,419,443,461"/>
-<area shape="rect" id="node20" href="$classore_1_1data_1_1_trade.html#a5f9091de5ec032537403756f0b4926ff" title=" " alt="" coords="252,485,435,512"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_trade.html#ad20897c5c8bd47f5d4005989bead0e55" title="Reset trade, clear all base class data. This does not reset accumulated timings for this trade." alt="" coords="268,536,419,563"/>
-<area shape="rect" id="node3" href="$namespaceore_1_1data.html#a867b06b274bdd2a6aa6b864b89285129" title=" " alt="" coords="738,107,893,133"/>
-<area shape="rect" id="node4" href="$group__utilities.html#gab90425924b36d115487ef18cc4578df6" title="Convert std::string to QuantLib::BarrierType." alt="" coords="726,157,905,184"/>
-<area shape="rect" id="node5" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="1239,272,1403,299"/>
-<area shape="rect" id="node6" href="$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="990,335,1155,361"/>
-<area shape="rect" id="node7" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="745,259,885,285"/>
-<area shape="rect" id="node9" href="$group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad" title="Convert std::string to QuantExt::FxIndex." alt="" coords="736,411,895,437"/>
-<area shape="rect" id="node13" href="$group__utilities.html#gafba82f05ecaf8827537fb3144f436002" title="Convert text to QuantLib::Option::Type." alt="" coords="726,360,905,387"/>
-<area shape="rect" id="node14" href="$group__utilities.html#ga71937c757a73b33221be6ce6a8046839" title="Convert text to QuantLib::Position::Type." alt="" coords="721,5,909,32"/>
-<area shape="rect" id="node15" href="$group__utilities.html#gaedc713e911316c8eb473fdaf83fcfaa6" title="Convert text to QuantLib::Settlement::Type." alt="" coords="713,56,917,83"/>
-<area shape="rect" id="node8" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="997,259,1149,285"/>
-<area shape="rect" id="node10" href="$namespaceore_1_1data.html#a6801570c1c67cd40e3edf51440551900" title=" " alt="" coords="965,411,1180,437"/>
-<area shape="rect" id="node11" href="$namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e" title=" " alt="" coords="1253,436,1390,463"/>
-<area shape="rect" id="node12" href="$group__utilities.html#gac0cf10eef45b9d706e29e7eb2ddddc90" title="check for pseudo currency = precious metal or crypto currency *‍/" alt="" coords="1228,385,1415,412"/>
-<area shape="rect" id="node17" href="$namespaceore_1_1data.html#ade4be232275cfbb581d21fddbc01b7be" title=" " alt="" coords="501,411,655,437"/>
-<area shape="rect" id="node18" href="$namespaceore_1_1data.html#a6048fd87840c79258ed4e959f0555a2f" title=" " alt="" coords="730,461,901,488"/>
-<area shape="rect" id="node22" href="$classore_1_1data_1_1_required_fixings.html#ac8bb3912a3ce86b15842e79d0b421204" title=" " alt="" coords="491,529,665,570"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,1631,196,1656"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="507,658,673,698"/>
+<area shape="rect" id="node31" href="$classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,1501,411,1541"/>
+<area shape="rect" id="node46" href="$classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="244,1623,443,1663"/>
+<area shape="rect" id="node64" href="$classore_1_1data_1_1_trade.html#a1b2753d72ad69a6c11bf54cf1fb8d2a0" title=" " alt="" coords="252,1688,435,1713"/>
+<area shape="rect" id="node65" href="$classore_1_1data_1_1_trade.html#ad20897c5c8bd47f5d4005989bead0e55" title="Reset trade, clear all base class data. This does not reset accumulated timings for this trade." alt="" coords="268,1748,419,1773"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c" title=" " alt="" coords="759,715,934,755"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_trade.html#aeda0a71da18a4f5f9960d06cfa18b283" title=" " alt="" coords="746,995,947,1020"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_option_data.html#a26e655a989f3bd0e0fd895fd3bd50497" title=" " alt="" coords="773,1045,920,1085"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#aa387ae9da0405c17a03baa25d64bc923" title=" " alt="" coords="764,231,929,271"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_option_data.html#af82897aa671c01e0988878f1476ef9b8" title=" " alt="" coords="773,1109,920,1149"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a99d0d1556268d45c3fa2895fcad219de" title=" " alt="" coords="764,295,929,335"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_option_data.html#a50b9f07b1c2bd1b4fea7f2e7da7fdb2b" title=" " alt="" coords="773,1223,920,1263"/>
+<area shape="rect" id="node14" href="$group__utilities.html#gab90425924b36d115487ef18cc4578df6" title="Convert std::string to QuantLib::BarrierType." alt="" coords="757,1173,936,1199"/>
+<area shape="rect" id="node15" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="1278,93,1442,119"/>
+<area shape="rect" id="node16" href="$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="1029,131,1194,156"/>
+<area shape="rect" id="node17" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="777,665,917,691"/>
+<area shape="rect" id="node19" href="$group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad" title="Convert std::string to QuantExt::FxIndex." alt="" coords="767,181,926,207"/>
+<area shape="rect" id="node23" href="$group__utilities.html#gafba82f05ecaf8827537fb3144f436002" title="Convert text to QuantLib::Option::Type." alt="" coords="757,1352,936,1377"/>
+<area shape="rect" id="node24" href="$group__utilities.html#ga71937c757a73b33221be6ce6a8046839" title="Convert text to QuantLib::Position::Type." alt="" coords="753,1401,941,1427"/>
+<area shape="rect" id="node25" href="$group__utilities.html#gaedc713e911316c8eb473fdaf83fcfaa6" title="Convert text to QuantLib::Settlement::Type." alt="" coords="745,1451,949,1476"/>
+<area shape="rect" id="node26" href="$classore_1_1data_1_1_option_data.html#adcb66e32b32e9b291c5a6f37e82c5692" title=" " alt="" coords="773,423,920,463"/>
+<area shape="rect" id="node27" href="$classore_1_1data_1_1_option_data.html#a77098ad5025357188934116cfc632fd3" title=" " alt="" coords="773,487,920,527"/>
+<area shape="rect" id="node28" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a3c1b5eca22a456480c69c81ac5c84c70" title=" " alt="" coords="764,359,929,399"/>
+<area shape="rect" id="node29" href="$classore_1_1data_1_1_option_data.html#a657c7d1172af0024c7594ad4082a040e" title=" " alt="" coords="773,551,920,591"/>
+<area shape="rect" id="node30" href="$classore_1_1data_1_1_trade.html#a009f004d62a7bce6dd0e870f8389cd85" title="Set the trade actions." alt="" coords="749,616,944,641"/>
+<area shape="rect" id="node4" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="1072,665,1151,691"/>
+<area shape="rect" id="node6" href="$group__utilities.html#ga63a24b69574b9f0dc9f49cddbcaa242e" title="Convert a value from a minor ccy to major." alt="" coords="1027,945,1195,985"/>
+<area shape="rect" id="node7" href="$group__utilities.html#ga5816082aca07feca7ec905758bd09392" title="Convert text to QuantLib::Currency." alt="" coords="1501,887,1667,927"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_premium_data.html#a123c02cf2a8c6d52ae16203dbde172fa" title=" " alt="" coords="1031,1009,1191,1049"/>
+<area shape="rect" id="node18" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1035,616,1187,641"/>
+<area shape="rect" id="node20" href="$namespaceore_1_1data.html#a924eb5d1881d31c82ac8abbdc15a5027" title=" " alt="" coords="1004,181,1219,207"/>
+<area shape="rect" id="node21" href="$namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e" title=" " alt="" coords="1291,168,1429,193"/>
+<area shape="rect" id="node22" href="$group__utilities.html#gac0cf10eef45b9d706e29e7eb2ddddc90" title="check for pseudo currency = precious metal or crypto currency *‍/" alt="" coords="1267,217,1453,243"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_vanilla_option_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="511,1045,669,1085"/>
+<area shape="rect" id="node37" href="$classore_1_1data_1_1_option_data.html#aac4007ef1d4cf94ee4a6597839e9846b" title="Automatic exercise assumed false if not explicitly provided." alt="" coords="771,1629,922,1669"/>
+<area shape="rect" id="node43" href="$classore_1_1data_1_1_trade_strike.html#ab0070e2cd9d998541431e9aba2e5583b" title=" " alt="" coords="773,1501,920,1541"/>
+<area shape="rect" id="node44" href="$namespaceore_1_1data.html#ade4be232275cfbb581d21fddbc01b7be" title=" " alt="" coords="513,181,667,207"/>
+<area shape="rect" id="node33" href="$classore_1_1data_1_1_trade_strike.html#a79ae4d803e6ff99821ed6f7e674898f7" title=" " alt="" coords="1038,766,1185,806"/>
+<area shape="rect" id="node36" href="$classore_1_1data_1_1_option_data.html#ab55874deb46a8404d56db05d2b6e7e9c" title=" " alt="" coords="773,1693,920,1733"/>
+<area shape="rect" id="node38" href="$group__utilities.html#ga20c18a22a7c42fb8d358d9778a956011" title="Convert text to QuantLib::Exercise::Type." alt="" coords="751,945,943,971"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_option_data.html#aaf9f088b33dedab37e1b4e1b7d01502c" title=" " alt="" coords="773,1565,920,1605"/>
+<area shape="rect" id="node40" href="$classore_1_1data_1_1_option_data.html#aa84255ed88a50b2ba174afe04df43ed8" title=" " alt="" coords="773,1287,920,1327"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_trade_strike.html#a56307f76ba467cb0eaa001badcc11b4c" title=" " alt="" coords="773,779,920,819"/>
+<area shape="rect" id="node34" href="$classore_1_1data_1_1_trade_monetary.html#a2fd1bb34ef1df644354f3c6872bb90ff" title=" " alt="" coords="1277,830,1443,870"/>
+<area shape="rect" id="node35" href="$classore_1_1data_1_1_trade_strike.html#af8c266414ee2c6abfd1994cb39f8552b" title=" " alt="" coords="1287,737,1433,777"/>
+<area shape="rect" id="node42" href="$classore_1_1data_1_1_trade_monetary.html#a56307f76ba467cb0eaa001badcc11b4c" title=" " alt="" coords="1028,830,1195,870"/>
+<area shape="rect" id="node45" href="$namespaceore_1_1data.html#a6048fd87840c79258ed4e959f0555a2f" title=" " alt="" coords="761,29,932,55"/>
+<area shape="rect" id="node47" href="$classore_1_1data_1_1_barrier_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="511,1623,669,1663"/>
+<area shape="rect" id="node63" href="$classore_1_1data_1_1_fx_option_with_barrier.html#af93443b8e4eb94ab22124a0f32684e5d" title=" " alt="" coords="491,1687,689,1727"/>
+<area shape="rect" id="node48" href="$classore_1_1data_1_1_barrier_option.html#a1c358c97a8920ec5f7ad00767f7520b8" title=" " alt="" coords="768,2626,925,2666"/>
+<area shape="rect" id="node49" href="$classore_1_1data_1_1_barrier_option.html#a8d0513f18d8595f6fc4b36f5ac610ca1" title=" " alt="" coords="768,1757,925,1797"/>
+<area shape="rect" id="node50" href="$classore_1_1data_1_1_barrier_option.html#a566fdf95f454e8801d9e9a8d58465230" title="check validity of barriers" alt="" coords="768,1821,925,1861"/>
+<area shape="rect" id="node51" href="$classore_1_1data_1_1_barrier_option.html#a607d95b793e5c61d2da3e2bbc33f4cc5" title=" " alt="" coords="768,1885,925,1925"/>
+<area shape="rect" id="node52" href="$classore_1_1data_1_1_barrier_option.html#a236e4de7990e5eacfaffcd6a612ff495" title=" " alt="" coords="768,2013,925,2053"/>
+<area shape="rect" id="node53" href="$classore_1_1data_1_1_barrier_data.html#adf36fc42a1b0663a77133c9a5a7cef32" title=" " alt="" coords="773,2077,920,2117"/>
+<area shape="rect" id="node54" href="$group__utilities.html#ga4da64fe042d47aa9190f63f6d67c1c3c" title="Convert std::string to QuantLib::DoubleBarrierType." alt="" coords="737,2141,956,2167"/>
+<area shape="rect" id="node55" href="$classore_1_1data_1_1_barrier_data.html#a6ca526fc90592d85399bfe2f8d25e943" title=" " alt="" coords="773,2191,920,2231"/>
+<area shape="rect" id="node56" href="$classore_1_1data_1_1_barrier_option.html#ab6943b0f23b614bac7c84924a703cd16" title=" " alt="" coords="768,2255,925,2295"/>
+<area shape="rect" id="node57" href="$classore_1_1data_1_1_barrier_option.html#adfee6bdc2b08cadb484a6b9c781ce6c9" title=" " alt="" coords="768,2319,925,2359"/>
+<area shape="rect" id="node58" href="$classore_1_1data_1_1_barrier_option.html#a4b02a0150a563bc8fad9eb1168e0ee34" title=" " alt="" coords="768,2383,925,2423"/>
+<area shape="rect" id="node59" href="$classore_1_1data_1_1_barrier_option.html#a3c7846e19cb638c2568167985442bead" title=" " alt="" coords="768,2447,925,2487"/>
+<area shape="rect" id="node60" href="$classore_1_1data_1_1_trade.html#aec03b18fc42a659e6dca829a82659809" title=" " alt="" coords="757,2512,936,2537"/>
+<area shape="rect" id="node61" href="$classore_1_1data_1_1_barrier_data.html#a4acb75b8abcd83a41915c116edbd003c" title=" " alt="" coords="773,2562,920,2602"/>
+<area shape="rect" id="node62" href="$classore_1_1data_1_1_barrier_option.html#a254a395466378309e5c3127bd83955b5" title=" " alt="" coords="768,1949,925,1989"/>
+<area shape="rect" id="node66" href="$classore_1_1data_1_1_required_fixings.html#ac8bb3912a3ce86b15842e79d0b421204" title=" " alt="" coords="503,1751,677,1791"/>
 </map>

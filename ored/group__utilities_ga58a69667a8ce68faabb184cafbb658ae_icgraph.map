@@ -1,21 +1,26 @@
 <map id="parseBondIndex" name="parseBondIndex">
-<area shape="rect" id="node1" title="Convert std::string to QuantExt::BondIndex." alt="" coords="836,549,951,575"/>
-<area shape="rect" id="node2" href="$namespaceore_1_1data.html#acf9b1abc76494a85c8d98f24b47662a6" title=" " alt="" coords="687,373,788,399"/>
-<area shape="rect" id="node14" href="$group__utilities.html#gab2d26348315b387f1b203be151c09fbf" title="Convert std::string to QuantLib::Index." alt="" coords="695,754,780,781"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_fixed_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="445,5,620,47"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="441,71,624,112"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_floating_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="439,136,627,177"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="451,201,614,243"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_y_y_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="453,267,613,308"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="447,332,618,373"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="447,397,618,439"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_digital_c_m_s_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="449,463,616,504"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="427,528,639,569"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="439,593,626,635"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aeb50cf21d091ae4adf6acc8717fb75ba" title=" " alt="" coords="443,659,623,700"/>
-<area shape="rect" id="node15" href="$namespaceore_1_1data.html#afbdabb3acc8c9fd3e013b2d5b9b71660" title="Utility to write a vector of fixings in the QuantLib index manager&#39;s fixing history." alt="" coords="485,725,580,751"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_asian_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="457,776,609,817"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_swap.html#aa80b421a434b9b4e99b95cf32cfcb22f" title="Add underlying index names." alt="" coords="443,841,623,883"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,717,379,759"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_todays_market.html#af3ff68704212623c58363471b2546be1" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,717,168,759"/>
+<area shape="rect" id="node1" title="Convert std::string to QuantExt::BondIndex." alt="" coords="836,694,951,719"/>
+<area shape="rect" id="node2" href="$namespaceore_1_1data.html#a3a4cd34032e74bb4c8324f49feb9ee5a" title=" " alt="" coords="687,429,788,454"/>
+<area shape="rect" id="node16" href="$group__utilities.html#gab2d26348315b387f1b203be151c09fbf" title="Convert std::string to QuantLib::Index." alt="" coords="695,959,780,985"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_fixed_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="445,5,620,45"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="441,69,624,109"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_floating_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="439,133,627,173"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="451,197,614,237"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_y_y_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="453,261,613,301"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="447,325,618,365"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="447,389,618,429"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_digital_c_m_s_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="449,453,616,493"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="427,517,639,557"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="439,581,626,621"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aeb50cf21d091ae4adf6acc8717fb75ba" title=" " alt="" coords="443,645,623,685"/>
+<area shape="rect" id="node14" href="$classore_1_1data_1_1_commodity_fixed_leg_builder.html#a4f5a53a0db9a53bdaa6f073aef1d2f3e" title=" " alt="" coords="443,709,622,749"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_commodity_floating_leg_builder.html#a4f5a53a0db9a53bdaa6f073aef1d2f3e" title=" " alt="" coords="436,773,629,813"/>
+<area shape="rect" id="node17" href="$namespaceore_1_1data.html#afbdabb3acc8c9fd3e013b2d5b9b71660" title="Utility to write a vector of fixings in the QuantLib index manager&#39;s fixing history." alt="" coords="485,838,580,863"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_asian_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="457,888,609,928"/>
+<area shape="rect" id="node21" href="$classore_1_1data_1_1_commodity_swap.html#aa6ef9bf809c54ebef188c02a9f5e9ae0" title="Add underlying Commodity names." alt="" coords="443,952,622,992"/>
+<area shape="rect" id="node22" href="$classore_1_1data_1_1_commodity_option_strip.html#ace1ee35a5870d6d6824cba8e63dfd3b8" title="Add underlying Commodity names." alt="" coords="440,1016,625,1056"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_commodity_swaption.html#a8e1ee54795e991c3756e0c78e900bd8a" title="Add underlying Commodity names." alt="" coords="433,1080,633,1120"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_swap.html#aa80b421a434b9b4e99b95cf32cfcb22f" title="Add underlying index names." alt="" coords="443,1144,623,1184"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,831,379,871"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,831,168,871"/>
 </map>

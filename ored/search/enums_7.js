@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notionalcalculation_16214',['NotionalCalculation',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664c',1,'ore::data::CompositeTrade']]]
+  ['notionalcalculation_0',['NotionalCalculation',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664c',1,'ore::data::CompositeTrade']]]
 ];

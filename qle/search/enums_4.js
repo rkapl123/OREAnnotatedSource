@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['floatspreadmapping_8666',['FloatSpreadMapping',['../class_quant_ext_1_1_analytic_lgm_swaption_engine.html#a83694f03f004a1e606eb6c27bdd5e367',1,'QuantExt::AnalyticLgmSwaptionEngine']]]
+  ['equityreturntype_0',['EquityReturnType',['../namespace_quant_ext.html#a67d80ecd77787f39e188070d9e240071',1,'QuantExt']]],
+  ['extrapolation_1',['Extrapolation',['../class_quant_ext_1_1_interpolated_discount_curve.html#a8e2df513f6590afb6c85a22a458745c5',1,'QuantExt::InterpolatedDiscountCurve::Extrapolation()'],['../class_quant_ext_1_1_interpolated_discount_curve2.html#a8e2df513f6590afb6c85a22a458745c5',1,'QuantExt::InterpolatedDiscountCurve2::Extrapolation()'],['../class_quant_ext_1_1_spreaded_discount_curve.html#a8e2df513f6590afb6c85a22a458745c5',1,'QuantExt::SpreadedDiscountCurve::Extrapolation()'],['../class_quant_ext_1_1_spreaded_survival_probability_term_structure.html#a8e2df513f6590afb6c85a22a458745c5',1,'QuantExt::SpreadedSurvivalProbabilityTermStructure::Extrapolation()'],['../class_quant_ext_1_1_survival_probability_curve.html#a8e2df513f6590afb6c85a22a458745c5',1,'QuantExt::SurvivalProbabilityCurve::Extrapolation()']]]
 ];

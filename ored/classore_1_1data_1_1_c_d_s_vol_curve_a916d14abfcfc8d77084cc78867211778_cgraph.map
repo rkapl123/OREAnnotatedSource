@@ -1,10 +1,12 @@
 <map id="buildVolatility" name="buildVolatility">
-<area shape="rect" id="node1" title="Build a volatility curve from a 1&#45;D curve of volatility quotes." alt="" coords="5,159,104,186"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_curve_config.html#a745b9578f3aa0f77a9429764501e76bb" title=" " alt="" coords="173,5,322,47"/>
-<area shape="rect" id="node3" href="$namespaceore_1_1data.html#afbb6a9b32d74c08e52ac0984dcf2d880" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="152,71,343,98"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_loader.html#a6265c0b19e531f835ac5ae2283193a76" title="get all quotes, TODO change the return value to std::set" alt="" coords="183,123,311,164"/>
-<area shape="rect" id="node6" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="172,189,323,215"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_volatility_curve_config.html#ab4850b56e8bad34c1c061fed3ade5d1a" title=" " alt="" coords="166,240,329,281"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_c_d_s_volatility_curve_config.html#a0eaaa05c716936d3fffd39da0cc67f11" title=" " alt="" coords="168,305,327,347"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="391,64,523,105"/>
+<area shape="rect" id="node1" title="Build a volatility curve from a 1&#45;D curve of volatility quotes." alt="" coords="5,169,104,194"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_curve_config.html#a469f15054f3eb55783dfeb953fdf4373" title=" " alt="" coords="173,5,322,45"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="174,70,321,95"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_c_d_s_vol_curve.html#ad2aa17bab3fd994c78b469dd85db7008" title="Get an explicit expiry date from a CDS option quote&#39;s Expiry." alt="" coords="209,119,286,145"/>
+<area shape="rect" id="node6" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="152,169,343,194"/>
+<area shape="rect" id="node8" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="172,218,323,243"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_volatility_curve_config.html#ab4850b56e8bad34c1c061fed3ade5d1a" title=" " alt="" coords="166,268,329,308"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_c_d_s_volatility_curve_config.html#a0eaaa05c716936d3fffd39da0cc67f11" title=" " alt="" coords="168,332,327,372"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="393,63,521,103"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="391,161,523,201"/>
 </map>

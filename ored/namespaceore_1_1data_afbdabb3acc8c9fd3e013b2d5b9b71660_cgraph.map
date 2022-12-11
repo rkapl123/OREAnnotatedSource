@@ -1,26 +1,23 @@
 <map id="applyFixings" name="applyFixings">
-<area shape="rect" id="node1" title="Utility to write a vector of fixings in the QuantLib index manager&#39;s fixing history." alt="" coords="5,317,100,344"/>
-<area shape="rect" id="node2" href="$group__utilities.html#gab2d26348315b387f1b203be151c09fbf" title="Convert std::string to QuantLib::Index." alt="" coords="148,317,233,344"/>
-<area shape="rect" id="node3" href="$group__utilities.html#ga58a69667a8ce68faabb184cafbb658ae" title="Convert std::string to QuantExt::BondIndex." alt="" coords="315,20,430,47"/>
-<area shape="rect" id="node6" href="$namespaceore_1_1data.html#a8afbd6cbbce177660f98f8d211378957" title=" " alt="" coords="297,100,448,127"/>
-<area shape="rect" id="node9" href="$group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882" title="Convert std::string to QuantExt::ConstantMaturityBondIndex." alt="" coords="281,310,464,351"/>
-<area shape="rect" id="node11" href="$group__utilities.html#ga6e0f769ebecd00060bb6e5b12d14fbad" title="Convert std::string (e.g SP5) to QuantExt::EquityIndex." alt="" coords="311,427,434,453"/>
-<area shape="rect" id="node12" href="$group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad" title="Convert std::string to QuantExt::FxIndex." alt="" coords="323,191,423,217"/>
-<area shape="rect" id="node18" href="$group__utilities.html#ga36b2d912a4fa8168738bf2f740e7939a" title="Convert std::string (GENERIC&#45;...) to QuantExt::Index." alt="" coords="307,477,438,504"/>
-<area shape="rect" id="node19" href="$namespaceore_1_1data.html#ae4173b8feca639752877a5d80b2e26b8" title=" " alt="" coords="319,376,426,403"/>
-<area shape="rect" id="node23" href="$group__utilities.html#ga46dfe85b4a8c5b926d377f65d1231065" title="Convert std::string to QuantLib::SwapIndex." alt="" coords="314,259,431,285"/>
-<area shape="rect" id="node24" href="$group__utilities.html#ga7b35ee5d62ce2c3673b73faf1bb9fe56" title="Convert std::string to QuantLib::ZeroInflationIndex." alt="" coords="295,528,450,555"/>
-<area shape="rect" id="node4" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="569,5,650,32"/>
-<area shape="rect" id="node5" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="772,5,865,32"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title="Provide implementation for the base class method." alt="" coords="515,107,703,149"/>
-<area shape="rect" id="node8" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="573,56,645,83"/>
-<area shape="rect" id="node10" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="564,325,655,352"/>
-<area shape="rect" id="node13" href="$namespaceore_1_1data.html#a6801570c1c67cd40e3edf51440551900" title=" " alt="" coords="531,173,687,200"/>
-<area shape="rect" id="node17" href="$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="556,275,663,301"/>
-<area shape="rect" id="node14" href="$namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e" title=" " alt="" coords="779,173,858,200"/>
-<area shape="rect" id="node15" href="$group__utilities.html#gac0cf10eef45b9d706e29e7eb2ddddc90" title="check for pseudo currency = precious metal or crypto currency *‍/" alt="" coords="755,123,883,149"/>
-<area shape="rect" id="node16" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="766,224,871,251"/>
-<area shape="rect" id="node20" href="$namespaceore_1_1data.html#ad568c17cfd9414ac0712025df02759bd" title=" " alt="" coords="550,427,669,453"/>
-<area shape="rect" id="node21" href="$group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="512,477,707,504"/>
-<area shape="rect" id="node22" href="$group__utilities.html#gaefb008d0de256c79140545d9c7549093" title="Convert text to QuantLib::DayCounter." alt="" coords="548,528,671,555"/>
+<area shape="rect" id="node1" title="Utility to write a vector of fixings in the QuantLib index manager&#39;s fixing history." alt="" coords="5,319,100,344"/>
+<area shape="rect" id="node2" href="$group__utilities.html#gab2d26348315b387f1b203be151c09fbf" title="Convert std::string to QuantLib::Index." alt="" coords="148,319,233,344"/>
+<area shape="rect" id="node3" href="$group__utilities.html#ga58a69667a8ce68faabb184cafbb658ae" title="Convert std::string to QuantExt::BondIndex." alt="" coords="315,43,430,68"/>
+<area shape="rect" id="node6" href="$namespaceore_1_1data.html#a1d5a62f54d619803ecebbe09dc93d7d9" title=" " alt="" coords="297,141,448,167"/>
+<area shape="rect" id="node9" href="$group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882" title="Convert std::string to QuantExt::ConstantMaturityBondIndex." alt="" coords="281,205,464,245"/>
+<area shape="rect" id="node11" href="$group__utilities.html#ga6e0f769ebecd00060bb6e5b12d14fbad" title="Convert std::string (e.g SP5) to QuantExt::EquityIndex." alt="" coords="311,368,434,393"/>
+<area shape="rect" id="node12" href="$group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad" title="Convert std::string to QuantExt::FxIndex." alt="" coords="323,319,423,344"/>
+<area shape="rect" id="node18" href="$group__utilities.html#ga36b2d912a4fa8168738bf2f740e7939a" title="Convert std::string (GENERIC&#45;...) to QuantExt::Index." alt="" coords="307,417,438,443"/>
+<area shape="rect" id="node19" href="$group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="319,491,426,516"/>
+<area shape="rect" id="node20" href="$group__utilities.html#ga46dfe85b4a8c5b926d377f65d1231065" title="Convert std::string to QuantLib::SwapIndex." alt="" coords="314,269,431,295"/>
+<area shape="rect" id="node21" href="$group__utilities.html#ga7b35ee5d62ce2c3673b73faf1bb9fe56" title="Convert std::string to QuantLib::ZeroInflationIndex." alt="" coords="295,540,450,565"/>
+<area shape="rect" id="node4" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="565,29,647,55"/>
+<area shape="rect" id="node5" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="765,29,859,55"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="512,79,700,119"/>
+<area shape="rect" id="node8" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="570,168,642,193"/>
+<area shape="rect" id="node10" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="561,217,651,243"/>
+<area shape="rect" id="node13" href="$namespaceore_1_1data.html#a924eb5d1881d31c82ac8abbdc15a5027" title=" " alt="" coords="528,368,684,393"/>
+<area shape="rect" id="node17" href="$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="553,319,659,344"/>
+<area shape="rect" id="node14" href="$namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e" title=" " alt="" coords="773,343,851,368"/>
+<area shape="rect" id="node15" href="$group__utilities.html#gac0cf10eef45b9d706e29e7eb2ddddc90" title="check for pseudo currency = precious metal or crypto currency *‍/" alt="" coords="748,392,876,417"/>
+<area shape="rect" id="node16" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="759,280,865,305"/>
 </map>
