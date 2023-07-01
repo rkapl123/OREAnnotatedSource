@@ -1,60 +1,60 @@
 <map id="FxEuropeanBarrierOption" name="FxEuropeanBarrierOption">
-<area shape="rect" id="node1" title="Serializable FX European Barrier Option." alt="" coords="3590,4347,3784,4621"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_fx_single_asset_derivative.html" title="Base class for all single asset FX Derivaties." alt="" coords="1716,4169,1896,4297"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_fx_derivative.html" title="Base class for all FX Derivaties." alt="" coords="1748,4051,1864,4120"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_trade.html" title="Trade base class." alt="" coords="1712,3140,1900,4001"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="2224,255,2372,397"/>
-<area shape="rect" id="node32" href="$classore_1_1data_1_1_envelope.html" title="Serializable object holding generic trade data, reporting dimensions." alt="" coords="1254,1116,1416,1479"/>
-<area shape="rect" id="node33" href="$classore_1_1data_1_1_netting_set_details.html" title="Serializable object holding netting set identification data." alt="" coords="1558,581,1717,943"/>
-<area shape="rect" id="node36" href="$classore_1_1data_1_1_trade_actions.html" title="Serializable object holding generic trade actions." alt="" coords="2236,2935,2360,3077"/>
-<area shape="rect" id="node38" href="$classore_1_1data_1_1_trade_action.html" title="Serializable object holding a trade action." alt="" coords="2192,2553,2310,2740"/>
-<area shape="rect" id="node39" href="$classore_1_1data_1_1_schedule_data.html" title="Serializable schedule data." alt="" coords="2386,1798,2551,2234"/>
-<area shape="rect" id="node41" href="$classore_1_1data_1_1_schedule_dates.html" title="Serializable object holding schedule Dates data." alt="" coords="2294,617,2430,907"/>
-<area shape="rect" id="node43" href="$classore_1_1data_1_1_schedule_rules.html" title="Serializable object holding schedule Rules data." alt="" coords="2724,515,2858,1009"/>
-<area shape="rect" id="node45" href="$classore_1_1data_1_1_schedule_derived.html" title="Serializable object holding Derived schedule data." alt="" coords="2504,610,2648,914"/>
-<area shape="rect" id="node46" href="$classore_1_1data_1_1_option_data.html" title="Serializable object holding option data." alt="" coords="3568,1541,3806,2491"/>
-<area shape="rect" id="node47" href="$classore_1_1data_1_1_premium_data.html" title="Serializable object holding premium data." alt="" coords="3522,1226,3649,1369"/>
-<area shape="rect" id="node55" href="$classore_1_1data_1_1_barrier_data.html" title="Serializable obejct holding barrier data." alt="" coords="4167,1864,4298,2168"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1951,108,2010,148"/>
-<area shape="rect" id="node13" title=" " alt="" coords="2396,306,2512,346"/>
-<area shape="rect" id="node29" title=" " alt="" coords="1373,735,1534,789"/>
-<area shape="rect" id="node34" title=" " alt="" coords="1026,742,1126,782"/>
-<area shape="rect" id="node35" title=" " alt="" coords="1151,742,1298,782"/>
-<area shape="rect" id="node49" href="$structore_1_1data_1_1_premium_data_1_1_premium_datum.html" title=" " alt="" coords="3818,291,3956,361"/>
-<area shape="rect" id="node58" href="$classore_1_1data_1_1_trade_monetary.html" title=" " alt="" coords="3981,225,4116,427"/>
-<area shape="rect" id="node7" title=" " alt="" coords="1907,5,2054,45"/>
-<area shape="rect" id="node8" title=" " alt="" coords="2059,2979,2211,3033"/>
-<area shape="rect" id="node9" title=" " alt="" coords="1752,306,1918,346"/>
-<area shape="rect" id="node10" title=" " alt="" coords="1812,108,1858,148"/>
-<area shape="rect" id="node11" title=" " alt="" coords="3258,108,3348,148"/>
-<area shape="rect" id="node14" title=" " alt="" coords="3497,742,3605,782"/>
-<area shape="rect" id="node37" title=" " alt="" coords="2232,2817,2363,2872"/>
-<area shape="rect" id="node40" title=" " alt="" coords="2403,1270,2534,1325"/>
-<area shape="rect" id="node42" title=" " alt="" coords="2760,1270,2891,1325"/>
-<area shape="rect" id="node44" title=" " alt="" coords="2606,1270,2736,1325"/>
-<area shape="rect" id="node48" title=" " alt="" coords="4183,735,4394,789"/>
-<area shape="rect" id="node51" title=" " alt="" coords="4666,451,4788,491"/>
-<area shape="rect" id="node56" title=" " alt="" coords="4412,1270,4543,1325"/>
-<area shape="rect" id="node12" title=" " alt="" coords="2380,5,2418,45"/>
-<area shape="rect" id="node31" title=" " alt="" coords="943,306,1042,346"/>
-<area shape="rect" id="node15" title=" " alt="" coords="3642,306,3692,346"/>
-<area shape="rect" id="node16" title=" " alt="" coords="2526,108,2578,148"/>
-<area shape="rect" id="node17" title=" " alt="" coords="2912,108,2966,148"/>
-<area shape="rect" id="node18" title=" " alt="" coords="567,2986,628,3026"/>
-<area shape="rect" id="node19" title=" " alt="" coords="722,2986,850,3026"/>
-<area shape="rect" id="node20" href="$classore_1_1data_1_1_required_fixings.html" title=" " alt="" coords="383,1219,578,1376"/>
-<area shape="rect" id="node21" title=" " alt="" coords="386,742,521,782"/>
-<area shape="rect" id="node22" title=" " alt="" coords="381,306,473,346"/>
-<area shape="rect" id="node23" title=" " alt="" coords="498,306,575,346"/>
-<area shape="rect" id="node25" title=" " alt="" coords="154,735,314,789"/>
-<area shape="rect" id="node27" title=" " alt="" coords="546,742,724,782"/>
-<area shape="rect" id="node24" title=" " alt="" coords="12,108,50,148"/>
-<area shape="rect" id="node26" title=" " alt="" coords="154,306,316,346"/>
-<area shape="rect" id="node28" title=" " alt="" coords="783,306,919,346"/>
-<area shape="rect" id="node30" title=" " alt="" coords="1477,306,1524,346"/>
-<area shape="rect" id="node50" title=" " alt="" coords="4734,108,4798,148"/>
-<area shape="rect" id="node52" title=" " alt="" coords="3725,1277,3844,1317"/>
-<area shape="rect" id="node53" title=" " alt="" coords="3868,1270,4026,1325"/>
-<area shape="rect" id="node54" title=" " alt="" coords="3340,1270,3498,1325"/>
-<area shape="rect" id="node57" href="$classore_1_1data_1_1_trade_barrier.html" title=" " alt="" coords="4418,713,4537,811"/>
+<area shape="rect" id="node1" title="Serializable FX European Barrier Option." alt="" coords="4381,4556,4575,4831"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_fx_single_asset_derivative.html" title="Base class for all single asset FX Derivaties." alt="" coords="3045,4379,3225,4507"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_fx_derivative.html" title="Base class for all FX Derivaties." alt="" coords="2623,4260,2739,4329"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_trade.html" title="Trade base class." alt="" coords="1888,3305,2087,4211"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="3315,255,3463,397"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_envelope.html" title="Serializable object holding generic trade data, reporting dimensions." alt="" coords="3263,1252,3424,1644"/>
+<area shape="rect" id="node33" href="$classore_1_1data_1_1_netting_set_details.html" title="Serializable object holding netting set identification data." alt="" coords="3685,658,3844,1021"/>
+<area shape="rect" id="node36" href="$classore_1_1data_1_1_trade_actions.html" title="Serializable object holding generic trade actions." alt="" coords="2761,3100,2885,3243"/>
+<area shape="rect" id="node38" href="$classore_1_1data_1_1_trade_action.html" title="Serializable object holding a trade action." alt="" coords="2801,2719,2918,2905"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_schedule_data.html" title="Serializable schedule data." alt="" coords="2339,1963,2505,2399"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_schedule_dates.html" title="Serializable object holding schedule Dates data." alt="" coords="2826,695,2962,984"/>
+<area shape="rect" id="node43" href="$classore_1_1data_1_1_schedule_rules.html" title="Serializable object holding schedule Rules data." alt="" coords="2629,533,2801,1145"/>
+<area shape="rect" id="node45" href="$classore_1_1data_1_1_schedule_derived.html" title="Serializable object holding Derived schedule data." alt="" coords="2986,658,3130,1021"/>
+<area shape="rect" id="node46" href="$classore_1_1data_1_1_option_data.html" title="Serializable object holding option data." alt="" coords="3804,1707,4043,2656"/>
+<area shape="rect" id="node47" href="$classore_1_1data_1_1_premium_data.html" title="Serializable object holding premium data." alt="" coords="3448,1377,3575,1519"/>
+<area shape="rect" id="node55" href="$classore_1_1data_1_1_barrier_data.html" title="Serializable obejct holding barrier data." alt="" coords="4483,2029,4614,2333"/>
+<area shape="rect" id="node6" title=" " alt="" coords="3423,108,3482,148"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2365,306,2481,346"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1103,299,1264,353"/>
+<area shape="rect" id="node34" title=" " alt="" coords="2743,306,2843,346"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1524,299,1659,353"/>
+<area shape="rect" id="node49" href="$structore_1_1data_1_1_premium_data_1_1_premium_datum.html" title=" " alt="" coords="4054,291,4193,361"/>
+<area shape="rect" id="node58" href="$classore_1_1data_1_1_trade_monetary.html" title=" " alt="" coords="3895,225,4029,427"/>
+<area shape="rect" id="node7" title=" " alt="" coords="3379,5,3526,45"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2025,3144,2177,3199"/>
+<area shape="rect" id="node9" title=" " alt="" coords="849,306,1014,346"/>
+<area shape="rect" id="node10" title=" " alt="" coords="837,108,884,148"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1723,108,1814,148"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1905,819,2013,859"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2758,2983,2889,3037"/>
+<area shape="rect" id="node40" title=" " alt="" coords="2179,1421,2310,1475"/>
+<area shape="rect" id="node42" title=" " alt="" coords="2025,1421,2155,1475"/>
+<area shape="rect" id="node44" title=" " alt="" coords="2385,1421,2515,1475"/>
+<area shape="rect" id="node48" title=" " alt="" coords="3869,812,4079,867"/>
+<area shape="rect" id="node51" title=" " alt="" coords="4367,460,4490,500"/>
+<area shape="rect" id="node56" title=" " alt="" coords="3833,1421,3963,1475"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1444,5,1483,45"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1213,108,1311,148"/>
+<area shape="rect" id="node15" href="$classbool.html" title=" " alt="" coords="2609,306,2659,346"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2541,108,2593,148"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2881,108,2934,148"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1259,3151,1321,3191"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1414,3151,1542,3191"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_required_fixings.html" title=" " alt="" coords="402,761,597,918"/>
+<area shape="rect" id="node21" title=" " alt="" coords="161,306,296,346"/>
+<area shape="rect" id="node22" title=" " alt="" coords="5,108,97,148"/>
+<area shape="rect" id="node23" title=" " alt="" coords="555,108,633,148"/>
+<area shape="rect" id="node25" title=" " alt="" coords="321,299,481,353"/>
+<area shape="rect" id="node27" title=" " alt="" coords="505,306,683,346"/>
+<area shape="rect" id="node24" title=" " alt="" coords="937,5,976,45"/>
+<area shape="rect" id="node26" title=" " alt="" coords="121,108,283,148"/>
+<area shape="rect" id="node28" title=" " alt="" coords="677,108,813,148"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1557,108,1604,148"/>
+<area shape="rect" id="node50" title=" " alt="" coords="4791,108,4855,148"/>
+<area shape="rect" id="node52" title=" " alt="" coords="4089,1428,4208,1468"/>
+<area shape="rect" id="node53" title=" " alt="" coords="4232,1421,4391,1475"/>
+<area shape="rect" id="node54" title=" " alt="" coords="3599,1421,3757,1475"/>
+<area shape="rect" id="node57" href="$classore_1_1data_1_1_trade_barrier.html" title=" " alt="" coords="4104,790,4223,889"/>
 </map>

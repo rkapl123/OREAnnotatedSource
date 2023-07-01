@@ -40,6 +40,6 @@ var searchData=
   ['yoyts_37',['YoYTS',['../class_quant_ext_1_1_interpolated_yo_y_cap_floor_term_price_surface.html#ab8401f5d11158a70cbf478643b52b4f5',1,'QuantExt::InterpolatedYoYCapFloorTermPriceSurface']]],
   ['yshift_38',['yShift',['../class_quant_ext_1_1_stabilised_g_l_l_s.html#a00f76a454fd79003d84377ff6553d18a',1,'QuantExt::StabilisedGLLS']]],
   ['ystarhelper_39',['yStarHelper',['../class_quant_ext_1_1_analytic_lgm_swaption_engine.html#a89ea1e0a6c5cecb1806410408cf9779c',1,'QuantExt::AnalyticLgmSwaptionEngine']]],
-  ['yts_40',['yts',['../class_quant_ext_1_1_cross_currency_price_term_structure.html#a403e8a353dc2d79cf2600c8abb854ea0',1,'QuantExt::CrossCurrencyPriceTermStructure']]],
+  ['yts_40',['yts',['../class_quant_ext_1_1_bond_basket.html#a772fad96f9c191f981e4754917ae785b',1,'QuantExt::BondBasket::yts()'],['../class_quant_ext_1_1_cross_currency_price_term_structure.html#a403e8a353dc2d79cf2600c8abb854ea0',1,'QuantExt::CrossCurrencyPriceTermStructure::yts()']]],
   ['yvalues_41',['yValues',['../struct_quant_ext_1_1_constant_interpolation_1_1_constant_interpolation_impl.html#aa24b77a7a20008bc8608553a256cbd46',1,'QuantExt::ConstantInterpolation::ConstantInterpolationImpl::yValues()'],['../class_quant_ext_1_1_flat_extrapolation_1_1_flat_extrapolation_impl.html#aa24b77a7a20008bc8608553a256cbd46',1,'QuantExt::FlatExtrapolation::FlatExtrapolationImpl::yValues()']]]
 ];

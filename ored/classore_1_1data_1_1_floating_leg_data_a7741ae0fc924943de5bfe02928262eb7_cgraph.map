@@ -1,17 +1,20 @@
 <map id="fromXML" name="fromXML">
-<area shape="rect" id="node1" title=" " alt="" coords="5,299,77,325"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,335,77,361"/>
 <area shape="rect" id="node2" href="$classore_1_1data_1_1_x_m_l_utils.html#a37c092916f4bdf10d4fbf6bb9e474db7" title=" " alt="" coords="153,5,285,45"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501" title=" " alt="" coords="153,69,285,109"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27" title=" " alt="" coords="383,184,515,224"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2" title="Get a node&#39;s value." alt="" coords="611,156,743,196"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_x_m_l_utils.html#a5dc9d9e82028f69de452d27da6b43db0" title=" " alt="" coords="143,235,295,275"/>
-<area shape="rect" id="node7" href="$group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="380,286,519,311"/>
-<area shape="rect" id="node8" href="$group__utilities.html#ga5f79097fd51daf582d52f3096653af27" title=" " alt="" coords="125,350,313,375"/>
-<area shape="rect" id="node12" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="374,399,525,425"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_leg_additional_data.html#a3d64443d0286cde7f8dc6bc41efb78d0" title=" " alt="" coords="140,451,299,491"/>
-<area shape="rect" id="node14" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="143,539,295,565"/>
-<area shape="rect" id="node15" href="$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="150,613,289,638"/>
-<area shape="rect" id="node9" href="$group__utilities.html#ga2f0695fe62430369b6acca7976d7be97" title="Return true if the indexName is that of an overnight index, otherwise false." alt="" coords="361,350,537,375"/>
-<area shape="rect" id="node10" href="$group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title="Try to convert std::string to QuantLib::IborIndex." alt="" coords="585,350,768,375"/>
-<area shape="rect" id="node11" href="$group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="816,350,981,375"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_schedule_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="138,69,301,109"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501" title=" " alt="" coords="153,133,285,173"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27" title=" " alt="" coords="383,248,515,288"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2" title="Get a node&#39;s value." alt="" coords="611,220,743,260"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_x_m_l_utils.html#a5dc9d9e82028f69de452d27da6b43db0" title=" " alt="" coords="143,299,295,339"/>
+<area shape="rect" id="node10" href="$group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="380,350,519,375"/>
+<area shape="rect" id="node11" href="$group__utilities.html#ga5f79097fd51daf582d52f3096653af27" title=" " alt="" coords="125,414,313,439"/>
+<area shape="rect" id="node15" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="374,463,525,489"/>
+<area shape="rect" id="node16" href="$classore_1_1data_1_1_leg_additional_data.html#a3d64443d0286cde7f8dc6bc41efb78d0" title=" " alt="" coords="140,515,299,555"/>
+<area shape="rect" id="node17" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="143,603,295,629"/>
+<area shape="rect" id="node18" href="$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="150,677,289,702"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_x_m_l_utils.html#a42678b2a0d7c4052dc19123914359ec1" title="Returns all the children with a given name." alt="" coords="383,101,515,141"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_x_m_l_utils.html#a4e041c36cab0a16681fb41dfbd991882" title="Get and set a node&#39;s name." alt="" coords="383,37,515,77"/>
+<area shape="rect" id="node12" href="$group__utilities.html#ga2f0695fe62430369b6acca7976d7be97" title="Return true if the indexName is that of an overnight index, otherwise false." alt="" coords="361,414,537,439"/>
+<area shape="rect" id="node13" href="$group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title="Try to convert std::string to QuantLib::IborIndex." alt="" coords="585,414,768,439"/>
+<area shape="rect" id="node14" href="$group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="816,414,981,439"/>
 </map>

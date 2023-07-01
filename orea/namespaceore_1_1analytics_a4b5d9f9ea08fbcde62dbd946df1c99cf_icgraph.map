@@ -1,15 +1,17 @@
 <map id="parseRiskFactorKeyType" name="parseRiskFactorKeyType">
-<area shape="rect" id="node1" title=" " alt="" coords="919,208,1087,233"/>
-<area shape="rect" id="node2" href="$namespaceore_1_1analytics.html#aa478be5ad07eb7f927efe3292773a77c" title=" " alt="" coords="724,149,851,175"/>
-<area shape="rect" id="node9" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="704,201,871,241"/>
-<area shape="rect" id="node10" href="$namespaceore_1_1analytics.html#a8da68e881bfff4f6e84e910e9d1e03fd" title=" " alt="" coords="717,267,857,292"/>
-<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_shift_scenario_generator_1_1_scenario_description.html#aee68fef751ad1ff3ed7e7f0f59771f5f" title="Construct from string." alt="" coords="453,5,656,60"/>
-<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_sensitivity_cube.html#a18abf8b19283101238a77c9e6865b673" title="Initialise method used by the constructors." alt="" coords="471,85,638,125"/>
-<area shape="rect" id="node6" href="$namespaceore_1_1analytics.html#a243d36f6228887538c9d67ef7134d33e" title="risk factor key parser that takes into account additional tokens occurring in sensitivity risk factor..." alt="" coords="485,149,625,175"/>
-<area shape="rect" id="node7" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html#aa6be739dbe06b71f4327d90413fb6031" title="Create a record from a collection of strings." alt="" coords="465,199,645,239"/>
-<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_sensitivity_cube.html#a31fe24d6059c2466e433796354235c93" title="Constructor using a vector of scenario descriptions." alt="" coords="239,85,405,125"/>
-<area shape="rect" id="node8" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html#af17e57cfee2da5808c13f9f4c014f676" title="Returns the next SensitivityRecord in the stream." alt="" coords="239,198,405,238"/>
-<area shape="rect" id="node11" href="$namespaceore_1_1analytics.html#a6476ca4a9b98776675fb04266da9cb85" title=" " alt="" coords="461,267,648,292"/>
-<area shape="rect" id="node12" href="$classore_1_1analytics_1_1_o_r_e_app.html#ad61d20c4738ab6b966315b1b2b9005ba" title="run parametric var and write out report" alt="" coords="243,262,401,302"/>
-<area shape="rect" id="node13" href="$classore_1_1analytics_1_1_o_r_e_app.html#a58e8be2db2660128e4e6456a9c981fb5" title="generates XVA reports for a given portfolio and market" alt="" coords="5,269,191,295"/>
+<area shape="rect" id="node1" title=" " alt="" coords="741,279,909,304"/>
+<area shape="rect" id="node2" href="$namespaceore_1_1analytics.html#aa478be5ad07eb7f927efe3292773a77c" title=" " alt="" coords="547,185,673,211"/>
+<area shape="rect" id="node10" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="527,271,693,311"/>
+<area shape="rect" id="node11" href="$namespaceore_1_1analytics.html#a8da68e881bfff4f6e84e910e9d1e03fd" title=" " alt="" coords="540,379,680,404"/>
+<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_shift_scenario_generator_1_1_scenario_description.html#aee68fef751ad1ff3ed7e7f0f59771f5f" title="Construct from string." alt="" coords="276,5,479,60"/>
+<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_sensitivity_cube.html#a18abf8b19283101238a77c9e6865b673" title="Initialise method used by the constructors." alt="" coords="294,85,461,125"/>
+<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_par_sensitivity_cube_stream.html#af17e57cfee2da5808c13f9f4c014f676" title=" " alt="" coords="284,149,471,189"/>
+<area shape="rect" id="node7" href="$namespaceore_1_1analytics.html#a243d36f6228887538c9d67ef7134d33e" title="risk factor key parser that takes into account additional tokens occurring in sensitivity risk factor..." alt="" coords="307,213,447,239"/>
+<area shape="rect" id="node8" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html#aa6be739dbe06b71f4327d90413fb6031" title="Create a record from a collection of strings." alt="" coords="287,263,467,303"/>
+<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_sensitivity_cube.html#a31fe24d6059c2466e433796354235c93" title="Constructor using a vector of scenario descriptions." alt="" coords="33,85,200,125"/>
+<area shape="rect" id="node9" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html#af17e57cfee2da5808c13f9f4c014f676" title="Returns the next SensitivityRecord in the stream." alt="" coords="33,263,200,303"/>
+<area shape="rect" id="node12" href="$classore_1_1analytics_1_1_historical_scenario_file_reader.html#a54054666802b6f8c5ded02ce5bd7321e" title=" " alt="" coords="279,328,476,383"/>
+<area shape="rect" id="node13" href="$classore_1_1analytics_1_1_c_s_v_scenario_generator.html#ac5fadb7881ae954770d26f6ee7fc4c72" title=" " alt="" coords="284,407,471,447"/>
+<area shape="rect" id="node15" href="$classore_1_1analytics_1_1_input_parameters.html#a48da4cd653bf3badc4e6aae8fdb5f935" title=" " alt="" coords="276,471,479,511"/>
+<area shape="rect" id="node14" href="$classore_1_1analytics_1_1_c_s_v_scenario_generator.html#a7ef63b07841659971654e6851a3fdffc" title=" " alt="" coords="5,407,228,447"/>
 </map>

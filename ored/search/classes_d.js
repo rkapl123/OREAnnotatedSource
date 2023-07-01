@@ -23,12 +23,14 @@ var searchData=
   ['normalsabrsmilesection_20',['NormalSabrSmileSection',['../../qle/class_quant_ext_1_1_normal_sabr_smile_section.html',1,'QuantExt']]],
   ['normalsabrspecs_21',['NormalSABRSpecs',['../../qle/struct_quant_ext_1_1detail_1_1_normal_s_a_b_r_specs.html',1,'QuantExt::detail']]],
   ['normalsabrwrapper_22',['NormalSABRWrapper',['../../qle/class_quant_ext_1_1detail_1_1_normal_s_a_b_r_wrapper.html',1,'QuantExt::detail']]],
-  ['nowa_23',['Nowa',['../../qle/class_quant_ext_1_1_nowa.html',1,'QuantExt']]],
-  ['nullinstrument_24',['NullInstrument',['../../qle/class_quant_ext_1_1_null_instrument.html',1,'QuantExt']]],
-  ['numericalhagancmscouponpricerbuilder_25',['NumericalHaganCmsCouponPricerBuilder',['../classore_1_1data_1_1_numerical_hagan_cms_coupon_pricer_builder.html',1,'ore::data']]],
-  ['numericlgmmultilegoptionengine_26',['NumericLgmMultiLegOptionEngine',['../../qle/class_quant_ext_1_1_numeric_lgm_multi_leg_option_engine.html',1,'QuantExt']]],
-  ['numericlgmmultilegoptionenginebase_27',['NumericLgmMultiLegOptionEngineBase',['../../qle/class_quant_ext_1_1_numeric_lgm_multi_leg_option_engine_base.html',1,'QuantExt']]],
-  ['numericlgmnonstandardswaptionengine_28',['NumericLgmNonstandardSwaptionEngine',['../../qle/class_quant_ext_1_1_numeric_lgm_nonstandard_swaption_engine.html',1,'QuantExt']]],
-  ['numericlgmswaptionengine_29',['NumericLgmSwaptionEngine',['../../qle/class_quant_ext_1_1_numeric_lgm_swaption_engine.html',1,'QuantExt']]],
-  ['nzdbkbm_30',['NZDBKBM',['../../qle/class_quant_ext_1_1_n_z_d_b_k_b_m.html',1,'QuantExt']]]
+  ['notionals_23',['Notionals',['../structore_1_1data_1_1_index_credit_default_swap_option_1_1_notionals.html',1,'ore::data::IndexCreditDefaultSwapOption']]],
+  ['nowa_24',['Nowa',['../../qle/class_quant_ext_1_1_nowa.html',1,'QuantExt']]],
+  ['nullinstrument_25',['NullInstrument',['../../qle/class_quant_ext_1_1_null_instrument.html',1,'QuantExt']]],
+  ['numericalhagancmscouponpricerbuilder_26',['NumericalHaganCmsCouponPricerBuilder',['../classore_1_1data_1_1_numerical_hagan_cms_coupon_pricer_builder.html',1,'ore::data']]],
+  ['numericalintegrationindexcdsoptionenginebuilder_27',['NumericalIntegrationIndexCdsOptionEngineBuilder',['../classore_1_1data_1_1_numerical_integration_index_cds_option_engine_builder.html',1,'ore::data']]],
+  ['numericlgmmultilegoptionengine_28',['NumericLgmMultiLegOptionEngine',['../../qle/class_quant_ext_1_1_numeric_lgm_multi_leg_option_engine.html',1,'QuantExt']]],
+  ['numericlgmmultilegoptionenginebase_29',['NumericLgmMultiLegOptionEngineBase',['../../qle/class_quant_ext_1_1_numeric_lgm_multi_leg_option_engine_base.html',1,'QuantExt']]],
+  ['numericlgmnonstandardswaptionengine_30',['NumericLgmNonstandardSwaptionEngine',['../../qle/class_quant_ext_1_1_numeric_lgm_nonstandard_swaption_engine.html',1,'QuantExt']]],
+  ['numericlgmswaptionengine_31',['NumericLgmSwaptionEngine',['../../qle/class_quant_ext_1_1_numeric_lgm_swaption_engine.html',1,'QuantExt']]],
+  ['nzdbkbm_32',['NZDBKBM',['../../qle/class_quant_ext_1_1_n_z_d_b_k_b_m.html',1,'QuantExt']]]
 ];

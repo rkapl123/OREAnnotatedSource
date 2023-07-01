@@ -1,7 +1,7 @@
 <map id="buildDiscountCurve" name="buildDiscountCurve">
 <area shape="rect" id="node1" title=" " alt="" coords="5,84,137,109"/>
 <area shape="rect" id="node2" href="$namespaceore_1_1data.html#ae8d9686c475a56d3f0cf4c668daf734c" title="Create a Interpolated Discount Curve and apply interpolators." alt="" coords="185,5,345,31"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="192,55,339,80"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="192,55,339,80"/>
 <area shape="rect" id="node5" href="$classore_1_1data_1_1_curve_spec.html#afa7a10b4b56522f03c698ac514b0f844" title="returns the unique curve name" alt="" coords="194,105,337,145"/>
 <area shape="rect" id="node10" href="$namespaceore_1_1data.html#a0f7e5ffba0d5b8728d9220b2a85b18e4" title="Create a Interpolated Zero Curve and apply interpolators." alt="" coords="197,169,333,195"/>
 <area shape="rect" id="node4" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="401,41,529,81"/>

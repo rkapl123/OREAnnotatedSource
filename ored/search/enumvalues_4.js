@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['end_0',['End',['../namespaceore_1_1data.html#a1a76f681a6c126542ccd092516cbba96a667876a6f108081ad524d7d29d23d506',1,'ore::data']]],
+  ['endofmonth_0',['EndOfMonth',['../structore_1_1data_1_1_currency_hedged_equity_index_reference_datum_1_1_rebalancing_date.html#acf7192c608527efb8f8dedf0a3f2e706abe57e40ade9a00bd9d3355cfe2236141',1,'ore::data::CurrencyHedgedEquityIndexReferenceDatum::RebalancingDate']]],
   ['eq_1',['EQ',['../namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840ea2dcbad7477fd40561e8b8198f173bd47',1,'ore::data']]],
   ['eqcalibration_2',['eqCalibration',['../namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cca0aed5d6663ad7519b907cc4c4c46bbe7',1,'ore::data']]],
   ['equity_3',['Equity',['../classore_1_1data_1_1_curve_spec.html#a007dea27057008224e9da69eaeca8606ad9df825203724a2f3412de3fc7a7a2be',1,'ore::data::CurveSpec']]],
@@ -12,8 +12,9 @@ var searchData=
   ['equitydividend_9',['EquityDividend',['../namespaceore_1_1data.html#ac6f42eb3486232f025ca701de91409ccad524939f612dd922f745bd5880583e2b',1,'ore::data']]],
   ['equityvol_10',['EquityVol',['../namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66dac824183f01840e1b78ed986116211471',1,'ore::data']]],
   ['equityvolatility_11',['EquityVolatility',['../classore_1_1data_1_1_curve_spec.html#a007dea27057008224e9da69eaeca8606a9d7d26f62c80f28bf77fe27b5916d72b',1,'ore::data::CurveSpec']]],
-  ['exercise_12',['Exercise',['../classore_1_1data_1_1_option_payment_data.html#adb13085deadc56b2b94868701a5ba8d1aef8fb97d271d5d2e855498ac9a9b41b7',1,'ore::data::OptionPaymentData']]],
-  ['expiry_13',['Expiry',['../classore_1_1data_1_1_option_payment_data.html#adb13085deadc56b2b94868701a5ba8d1aad7a5dccbb87e6c4be1cfd32954711fc',1,'ore::data::OptionPaymentData']]],
-  ['expirytoexpiry_14',['ExpiryToExpiry',['../classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4',1,'ore::data::CommodityFutureConvention::AveragingData']]],
-  ['exponentialsplines_15',['ExponentialSplines',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284a5f4de31064491ee0cee306bbe3fac777',1,'ore::data::YieldCurve']]]
+  ['error_12',['Error',['../classore_1_1data_1_1_structured_message.html#a9ca8f05608edcbf85ab6c2c85a439ccba902b0d55fddef6f8d651fe1035b7d4bd',1,'ore::data::StructuredMessage']]],
+  ['exercise_13',['Exercise',['../classore_1_1data_1_1_option_payment_data.html#adb13085deadc56b2b94868701a5ba8d1aef8fb97d271d5d2e855498ac9a9b41b7',1,'ore::data::OptionPaymentData']]],
+  ['expiry_14',['Expiry',['../classore_1_1data_1_1_option_payment_data.html#adb13085deadc56b2b94868701a5ba8d1aad7a5dccbb87e6c4be1cfd32954711fc',1,'ore::data::OptionPaymentData']]],
+  ['expirytoexpiry_15',['ExpiryToExpiry',['../classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4',1,'ore::data::CommodityFutureConvention::AveragingData']]],
+  ['exponentialsplines_16',['ExponentialSplines',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284a5f4de31064491ee0cee306bbe3fac777',1,'ore::data::YieldCurve']]]
 ];

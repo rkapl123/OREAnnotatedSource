@@ -18,7 +18,7 @@ var searchData=
   ['timeperiod_2ehpp_15',['timeperiod.hpp',['../../ored/timeperiod_8hpp.html',1,'']]],
   ['to_5fstring_2ecpp_16',['to_string.cpp',['../../ored/to__string_8cpp.html',1,'']]],
   ['to_5fstring_2ehpp_17',['to_string.hpp',['../../ored/to__string_8hpp.html',1,'']]],
-  ['todaysmarket_2ecpp_18',['todaysmarket.cpp',['../../ored/test_2todaysmarket_8cpp.html',1,'(Global Namespace)'],['../../ored/ored_2marketdata_2todaysmarket_8cpp.html',1,'(Global Namespace)']]],
+  ['todaysmarket_2ecpp_18',['todaysmarket.cpp',['../../ored/ored_2marketdata_2todaysmarket_8cpp.html',1,'(Global Namespace)'],['../../ored/test_2todaysmarket_8cpp.html',1,'(Global Namespace)']]],
   ['todaysmarket_2ehpp_19',['todaysmarket.hpp',['../../ored/todaysmarket_8hpp.html',1,'']]],
   ['todaysmarketcalibrationinfo_2ecpp_20',['todaysmarketcalibrationinfo.cpp',['../../ored/todaysmarketcalibrationinfo_8cpp.html',1,'']]],
   ['todaysmarketcalibrationinfo_2ehpp_21',['todaysmarketcalibrationinfo.hpp',['../../ored/todaysmarketcalibrationinfo_8hpp.html',1,'']]],
@@ -39,6 +39,14 @@ var searchData=
   ['trademonetary_2ehpp_36',['trademonetary.hpp',['../../ored/trademonetary_8hpp.html',1,'']]],
   ['tradestrike_2ecpp_37',['tradestrike.cpp',['../../ored/tradestrike_8cpp.html',1,'']]],
   ['tradestrike_2ehpp_38',['tradestrike.hpp',['../../ored/tradestrike_8hpp.html',1,'']]],
-  ['twdtaibor_2ehpp_39',['twdtaibor.hpp',['../../qle/twdtaibor_8hpp.html',1,'']]],
-  ['types_2ehpp_40',['types.hpp',['../../ored/types_8hpp.html',1,'']]]
+  ['tranche_2ecpp_39',['tranche.cpp',['../../ored/tranche_8cpp.html',1,'']]],
+  ['tranche_2ehpp_40',['tranche.hpp',['../../ored/tranche_8hpp.html',1,'']]],
+  ['trs_2ecpp_41',['trs.cpp',['../../ored/trs_8cpp.html',1,'']]],
+  ['trs_2ehpp_42',['trs.hpp',['../../ored/trs_8hpp.html',1,'']]],
+  ['trsunderlyingbuilder_2ecpp_43',['trsunderlyingbuilder.cpp',['../../ored/trsunderlyingbuilder_8cpp.html',1,'']]],
+  ['trsunderlyingbuilder_2ehpp_44',['trsunderlyingbuilder.hpp',['../../ored/trsunderlyingbuilder_8hpp.html',1,'']]],
+  ['trswrapper_2ecpp_45',['trswrapper.cpp',['../../ored/trswrapper_8cpp.html',1,'']]],
+  ['trswrapper_2ehpp_46',['trswrapper.hpp',['../../ored/trswrapper_8hpp.html',1,'']]],
+  ['twdtaibor_2ehpp_47',['twdtaibor.hpp',['../../qle/twdtaibor_8hpp.html',1,'']]],
+  ['types_2ehpp_48',['types.hpp',['../../ored/types_8hpp.html',1,'']]]
 ];

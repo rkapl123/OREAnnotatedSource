@@ -1,7 +1,7 @@
 <map id="addCrossCcyFixFloatSwaps" name="addCrossCcyFixFloatSwaps">
 <area shape="rect" id="node1" title=" " alt="" coords="5,326,192,351"/>
 <area shape="rect" id="node2" href="$classore_1_1data_1_1_market.html#aff00023d0e25ad7c0bf29e8cc97f9e00" title=" " alt="" coords="258,102,387,142"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="671,275,817,300"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="671,275,817,300"/>
 <area shape="rect" id="node11" href="$classore_1_1data_1_1_yield_curve.html#abe50b18a59c390f70e2182d9224bb07f" title=" " alt="" coords="264,326,381,351"/>
 <area shape="rect" id="node14" href="$classore_1_1data_1_1_curve_spec.html#afa7a10b4b56522f03c698ac514b0f844" title="returns the unique curve name" alt="" coords="251,408,394,448"/>
 <area shape="rect" id="node19" href="$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="240,472,405,498"/>

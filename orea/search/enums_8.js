@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notionalcalculation_0',['NotionalCalculation',['../../ored/classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664c',1,'ore::data::CompositeTrade']]]
+  ['keytype_0',['KeyType',['../classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238c',1,'ore::analytics::RiskFactorKey']]]
 ];

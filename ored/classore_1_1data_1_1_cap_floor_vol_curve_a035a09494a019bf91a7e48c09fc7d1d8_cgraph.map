@@ -1,7 +1,7 @@
 <map id="shiftQuote" name="shiftQuote">
 <area shape="rect" id="node1" title="Get a shift quote value from the configured quotes." alt="" coords="5,99,87,125"/>
 <area shape="rect" id="node2" href="$classore_1_1data_1_1_curve_config.html#a469f15054f3eb55783dfeb953fdf4373" title=" " alt="" coords="151,5,301,45"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="153,70,299,95"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="153,70,299,95"/>
 <area shape="rect" id="node5" href="$classore_1_1data_1_1_curve_config.html#a69738e85aa491109ae0e57fd5833aebb" title="Return all the market quotes required for this config." alt="" coords="151,120,301,160"/>
 <area shape="rect" id="node6" href="$classore_1_1data_1_1_cap_floor_volatility_curve_config.html#abda03231746ea9064406698eef5bfb3e" title=" " alt="" coords="135,184,317,224"/>
 <area shape="rect" id="node4" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="365,63,493,103"/>

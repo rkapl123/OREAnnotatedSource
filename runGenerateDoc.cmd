@@ -1,16 +1,19 @@
-copy orea*.* C:\dev\ORE\documentation\OREAnalytics\doc\
-copy ored*.* C:\dev\ORE\documentation\OREData\doc\
-copy quantext*.* C:\dev\ORE\documentation\QuantExt\doc\
-rmdir /S /Q C:\dev\ORE\documentation\OREAnalytics\doc\html 
-rmdir /S /Q C:\dev\ORE\documentation\OREData\doc\html 
-rmdir /S /Q C:\dev\ORE\documentation\QuantExt\doc\html 
-mkdir C:\dev\ORE\documentation\OREAnalytics\doc\html 
-mkdir C:\dev\ORE\documentation\OREData\doc\html 
-mkdir C:\dev\ORE\documentation\QuantExt\doc\html 
-cd C:\dev\ORE\documentation\OREAnalytics\doc
-"C:\Program Files\doxygen\bin\doxygen.exe" oreaFull.doxy
-cd C:\dev\ORE\documentation\OREData\doc
-"C:\Program Files\doxygen\bin\doxygen.exe" oredFull.doxy
-cd C:\dev\ORE\documentation\QuantExt\doc
-"C:\Program Files\doxygen\bin\doxygen.exe" quantextFull.doxy
+set ORE=C:\dev\ORE\documentation
+set doxybin="C:\Program Files\doxygen\bin\doxygen.exe"
+
+copy orea*.* %ORE%\OREAnalytics\doc\
+copy ored*.* %ORE%\OREData\doc\
+copy quantext*.* %ORE%\QuantExt\doc\
+rmdir /S /Q %ORE%\OREAnalytics\doc\html 
+rmdir /S /Q %ORE%\OREData\doc\html 
+rmdir /S /Q %ORE%\QuantExt\doc\html 
+mkdir %ORE%\OREAnalytics\doc\html 
+mkdir %ORE%\OREData\doc\html 
+mkdir %ORE%\QuantExt\doc\html 
+cd %ORE%\OREAnalytics\doc
+%doxybin% oreaFull.doxy
+cd %ORE%\OREData\doc
+%doxybin% oredFull.doxy
+cd %ORE%\QuantExt\doc
+%doxybin% quantextFull.doxy
 pause

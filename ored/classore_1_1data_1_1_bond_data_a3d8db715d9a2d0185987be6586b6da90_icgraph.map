@@ -1,28 +1,48 @@
 <map id="coupons" name="coupons">
-<area shape="rect" id="node1" title=" " alt="" coords="1367,95,1437,120"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_bond_data.html#a25a31be300b812e4d5560a2311670d1d" title="Constructor for coupon bonds." alt="" coords="1240,5,1319,31"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_bond.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="747,157,893,183"/>
-<area shape="rect" id="node20" href="$namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="487,83,650,108"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_bond_data.html#a18abf8b19283101238a77c9e6865b673" title=" " alt="" coords="1245,231,1314,256"/>
-<area shape="rect" id="node4" href="$structore_1_1data_1_1_vanilla_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="473,175,664,215"/>
-<area shape="rect" id="node5" href="$namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="484,308,653,333"/>
-<area shape="rect" id="node6" href="$namespaceore_1_1data.html#a3a4cd34032e74bb4c8324f49feb9ee5a" title=" " alt="" coords="265,387,425,412"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_fixed_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="24,143,199,183"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="20,207,203,247"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_floating_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="17,271,205,311"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="30,335,193,375"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_y_y_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="31,399,191,439"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="26,463,197,503"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="26,15,197,55"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_digital_c_m_s_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="28,527,195,567"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="5,591,217,631"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#ab18e04da2ce99be08cf7fa4085aa6d8d" title=" " alt="" coords="18,655,205,695"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aeb50cf21d091ae4adf6acc8717fb75ba" title=" " alt="" coords="21,719,201,759"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_commodity_fixed_leg_builder.html#a4f5a53a0db9a53bdaa6f073aef1d2f3e" title=" " alt="" coords="22,783,201,823"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_commodity_floating_leg_builder.html#a4f5a53a0db9a53bdaa6f073aef1d2f3e" title=" " alt="" coords="15,79,208,119"/>
-<area shape="rect" id="node22" href="$classore_1_1data_1_1_bond_data.html#a9591043f1a92787188f5af3df6c13e42" title="Constructor for coupon bonds with multiple phases (represented as legs)" alt="" coords="1045,305,1123,331"/>
-<area shape="rect" id="node23" href="$classore_1_1data_1_1_bond_data.html#a7741ae0fc924943de5bfe02928262eb7" title="XMLSerializable interface." alt="" coords="1048,256,1120,281"/>
-<area shape="rect" id="node25" href="$classore_1_1data_1_1_bond_data.html#a7a2dc8eb72e468938aca98abc932ef36" title="populate data from reference datum and check data for completeness" alt="" coords="976,207,1192,232"/>
-<area shape="rect" id="node24" href="$classore_1_1data_1_1_bond.html#a7741ae0fc924943de5bfe02928262eb7" title="XMLSerializable interface." alt="" coords="735,359,905,384"/>
-<area shape="rect" id="node26" href="$classore_1_1data_1_1_bond_data.html#a9b2d48409ccc3c32b0843bc55336e4d7" title="look up reference datum in ref data manager and populate, check data for completeness" alt="" coords="712,207,928,232"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1663,511,1733,536"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_bond_data.html#a25a31be300b812e4d5560a2311670d1d" title="Constructor for coupon bonds." alt="" coords="1536,40,1615,65"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_bond.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="1025,485,1172,511"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_convertible_bond.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="743,814,917,854"/>
+<area shape="rect" id="node29" href="$namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="749,352,911,377"/>
+<area shape="rect" id="node30" href="$classore_1_1data_1_1_bond_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1024,814,1173,854"/>
+<area shape="rect" id="node31" href="$classore_1_1data_1_1_bond_data.html#a18abf8b19283101238a77c9e6865b673" title=" " alt="" coords="1541,536,1610,561"/>
+<area shape="rect" id="node4" href="$structore_1_1data_1_1_vanilla_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="735,457,925,497"/>
+<area shape="rect" id="node8" href="$namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="745,611,915,636"/>
+<area shape="rect" id="node6" href="$structore_1_1data_1_1_convertible_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="508,871,683,911"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="520,821,671,847"/>
+<area shape="rect" id="node9" href="$namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="515,617,675,643"/>
+<area shape="rect" id="node28" href="$classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="527,679,663,719"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,368,424,393"/>
+<area shape="rect" id="node14" href="$classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,418,437,458"/>
+<area shape="rect" id="node16" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,482,441,522"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,546,444,586"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,610,431,650"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,674,430,714"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,738,435,778"/>
+<area shape="rect" id="node21" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,239,435,279"/>
+<area shape="rect" id="node22" href="$classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,802,433,842"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,866,456,906"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,930,443,970"/>
+<area shape="rect" id="node25" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,994,440,1034"/>
+<area shape="rect" id="node26" href="$classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,1058,439,1098"/>
+<area shape="rect" id="node27" href="$classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,303,447,343"/>
+<area shape="rect" id="node11" href="$test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,396,196,421"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,267,176,307"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,331,179,371"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,446,194,486"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_bond_data.html#a9591043f1a92787188f5af3df6c13e42" title="Constructor for coupon bonds with multiple phases (represented as legs)" alt="" coords="1341,536,1419,561"/>
+<area shape="rect" id="node33" href="$classore_1_1data_1_1_bond_data.html#a7741ae0fc924943de5bfe02928262eb7" title="XMLSerializable interface." alt="" coords="1344,241,1416,267"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_bond_data.html#a7a2dc8eb72e468938aca98abc932ef36" title="populate data from reference datum and check data for completeness" alt="" coords="1272,585,1488,611"/>
+<area shape="rect" id="node34" href="$classore_1_1data_1_1_convertible_bond_data.html#a510baf06568510646decfeaf1753e526" title=" " alt="" coords="1011,26,1186,66"/>
+<area shape="rect" id="node37" href="$classore_1_1data_1_1_bond.html#a7741ae0fc924943de5bfe02928262eb7" title="XMLSerializable interface." alt="" coords="1014,269,1183,295"/>
+<area shape="rect" id="node38" href="$classore_1_1data_1_1_bond_option.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="1024,319,1173,359"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_bond_repo.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="1028,141,1169,181"/>
+<area shape="rect" id="node40" href="$classore_1_1data_1_1_bond_t_r_s.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="1031,205,1167,245"/>
+<area shape="rect" id="node35" href="$classore_1_1data_1_1_ascot.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="743,5,917,31"/>
+<area shape="rect" id="node36" href="$classore_1_1data_1_1_convertible_bond.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="743,55,917,95"/>
+<area shape="rect" id="node42" href="$classore_1_1data_1_1_bond_repo.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1028,635,1169,675"/>
+<area shape="rect" id="node43" href="$classore_1_1data_1_1_convertible_bond_data.html#a3785dbdd1cfb8c0c51226d6bd999e804" title=" " alt="" coords="973,750,1224,790"/>
+<area shape="rect" id="node46" href="$classore_1_1data_1_1_bond_data.html#a9b2d48409ccc3c32b0843bc55336e4d7" title="look up reference datum in ref data manager and populate, check data for completeness" alt="" coords="991,535,1207,560"/>
+<area shape="rect" id="node44" href="$classore_1_1data_1_1_convertible_bond.html#a8e1ee54795e991c3756e0c78e900bd8a" title="Add underlying Bond names." alt="" coords="743,750,917,790"/>
+<area shape="rect" id="node45" href="$classore_1_1data_1_1_ascot.html#a8e1ee54795e991c3756e0c78e900bd8a" title=" " alt="" coords="504,750,687,790"/>
 </map>

@@ -28,10 +28,12 @@ var searchData=
   ['yoyinflationmodeltermstructure_25',['YoYInflationModelTermStructure',['../../qle/class_quant_ext_1_1_yo_y_inflation_model_term_structure.html',1,'QuantExt']]],
   ['yoyinflationoptionletvolstripper_26',['YoYInflationOptionletVolStripper',['../../qle/class_quant_ext_1_1_yo_y_inflation_optionlet_vol_stripper.html',1,'QuantExt']]],
   ['yoyinflationswapquote_27',['YoYInflationSwapQuote',['../../ored/classore_1_1data_1_1_yo_y_inflation_swap_quote.html',1,'ore::data']]],
-  ['yoyinflationunitdisplacedblackcapfloorengine_28',['YoYInflationUnitDisplacedBlackCapFloorEngine',['../../qle/class_quant_ext_1_1_yo_y_inflation_unit_displaced_black_cap_floor_engine.html',1,'QuantExt']]],
-  ['yoylegdata_29',['YoYLegData',['../../ored/classore_1_1data_1_1_yo_y_leg_data.html',1,'ore::data']]],
-  ['yoyswap_30',['YoYSwap',['../../ored/classore_1_1data_1_1_yo_y_swap.html',1,'ore::data']]],
-  ['yoyswaphelper_31',['YoYSwapHelper',['../../qle/class_quant_ext_1_1_yo_y_swap_helper.html',1,'QuantExt']]],
-  ['yyinflationcapfloorquote_32',['YyInflationCapFloorQuote',['../../ored/classore_1_1data_1_1_yy_inflation_cap_floor_quote.html',1,'ore::data']]],
-  ['yylegbuilder_33',['YYLegBuilder',['../../ored/classore_1_1data_1_1_y_y_leg_builder.html',1,'ore::data']]]
+  ['yoyinflationtermstructure_28',['YoYInflationTermStructure',['../../qle/class_yo_y_inflation_term_structure.html',1,'']]],
+  ['yoyinflationunitdisplacedblackcapfloorengine_29',['YoYInflationUnitDisplacedBlackCapFloorEngine',['../../qle/class_quant_ext_1_1_yo_y_inflation_unit_displaced_black_cap_floor_engine.html',1,'QuantExt']]],
+  ['yoylegdata_30',['YoYLegData',['../../ored/classore_1_1data_1_1_yo_y_leg_data.html',1,'ore::data']]],
+  ['yoyoptionletvolatilitysurface_31',['YoYOptionletVolatilitySurface',['../../qle/class_yo_y_optionlet_volatility_surface.html',1,'']]],
+  ['yoyswap_32',['YoYSwap',['../../ored/classore_1_1data_1_1_yo_y_swap.html',1,'ore::data']]],
+  ['yoyswaphelper_33',['YoYSwapHelper',['../../qle/class_quant_ext_1_1_yo_y_swap_helper.html',1,'QuantExt']]],
+  ['yyinflationcapfloorquote_34',['YyInflationCapFloorQuote',['../../ored/classore_1_1data_1_1_yy_inflation_cap_floor_quote.html',1,'ore::data']]],
+  ['yylegbuilder_35',['YYLegBuilder',['../../ored/classore_1_1data_1_1_y_y_leg_builder.html',1,'ore::data']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['smile_0',['Smile',['../class_quant_ext_1_1_interpolating_credit_vol_curve.html#ac52cae8ac6698db1cd66dd1daeac5609',1,'QuantExt::InterpolatingCreditVolCurve']]],
-  ['strategy_1',['Strategy',['../class_quant_ext_1_1_differential_evolution___m_t.html#a099c99c2f79ce67091ff938086a6fa02',1,'QuantExt::DifferentialEvolution_MT']]]
+  ['piecewiselinearcorrelationcurve_0',['PiecewiseLinearCorrelationCurve',['../namespace_quant_ext.html#ab93c105583e2d4a5a86f21657115ff43',1,'QuantExt']]],
+  ['pricehelper_1',['PriceHelper',['../namespace_quant_ext.html#a498efb55f7ad20cf6edd4be98ef28320',1,'QuantExt']]]
 ];

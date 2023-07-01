@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['optionletvolatility_0',['OptionletVolatility',['../classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca1b5732971f0b2e238e09996b0e4137ab',1,'ore::analytics::RiskFactorKey']]]
+  ['kfsc_0',['KFSC',['../classore_1_1analytics_1_1_simm_configuration.html#ad161a2b20dc3904152efa20d4248536dad4cafc26eea1edf4f489ab16dfcc2e4b',1,'ore::analytics::SimmConfiguration']]]
 ];

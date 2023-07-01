@@ -1,5 +1,5 @@
 <map id="buildBasisPriceCurve" name="buildBasisPriceCurve">
-<area shape="rect" id="node1" title="Build commodity basis price curve." alt="" coords="5,269,149,294"/>
+<area shape="rect" id="node1" title="Build commodity basis price curve." alt="" coords="5,301,149,326"/>
 <area shape="rect" id="node2" href="$classore_1_1data_1_1_commodity_curve_config.html#a6106a57ba7bc1ffd3342dfe79c481863" title=" " alt="" coords="197,5,376,45"/>
 <area shape="rect" id="node3" href="$classore_1_1data_1_1_commodity_curve_config.html#a4d11acd1d5d75403cf454d980e2061fd" title=" " alt="" coords="197,69,376,109"/>
 <area shape="rect" id="node4" href="$classore_1_1data_1_1_commodity_curve_config.html#abd4134c689049197658a8d762aba5982" title=" " alt="" coords="197,133,376,173"/>
@@ -9,11 +9,12 @@
 <area shape="rect" id="node8" href="$classore_1_1data_1_1_commodity_curve.html#a8f12d0e659e33dda4a8a1a90005acbe7" title="Get the configured quotes. If filter is true, remove tenor based quotes and quotes with expiry before..." alt="" coords="245,390,328,415"/>
 <area shape="rect" id="node13" href="$classore_1_1data_1_1_commodity_curve_config.html#abb9e11a100f91de0127aa03ba619564d" title=" " alt="" coords="197,440,376,480"/>
 <area shape="rect" id="node14" href="$namespaceore_1_1data.html#a1d5a62f54d619803ecebbe09dc93d7d9" title=" " alt="" coords="197,528,376,568"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="446,349,593,374"/>
-<area shape="rect" id="node11" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="424,405,615,430"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="675,337,803,377"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="673,401,805,441"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="425,471,613,511"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_commodity_curve_config.html#a509e69cd0b55e5778c01d8c3eb1e8e7a" title=" " alt="" coords="197,592,376,632"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="446,337,593,362"/>
+<area shape="rect" id="node11" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="424,393,615,418"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="675,325,803,365"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="673,389,805,429"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="425,447,613,487"/>
 <area shape="rect" id="node16" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="449,535,589,561"/>
 <area shape="rect" id="node18" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="454,609,585,634"/>
 <area shape="rect" id="node17" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="663,535,815,561"/>

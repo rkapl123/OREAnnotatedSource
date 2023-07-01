@@ -1,6 +1,6 @@
 <map id="addDeposits" name="addDeposits">
 <area shape="rect" id="node1" title=" " alt="" coords="5,70,100,95"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="163,17,309,42"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="163,17,309,42"/>
 <area shape="rect" id="node4" href="$group__utilities.html#ga2f0695fe62430369b6acca7976d7be97" title="Return true if the indexName is that of an overnight index, otherwise false." alt="" coords="148,70,324,95"/>
 <area shape="rect" id="node6" href="$group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="603,95,768,121"/>
 <area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="399,5,527,45"/>

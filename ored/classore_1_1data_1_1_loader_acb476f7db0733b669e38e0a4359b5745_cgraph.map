@@ -1,5 +1,5 @@
 <map id="has" name="has">
 <area shape="rect" id="node1" title="Default implementation, returns false if get throws or returns a null pointer." alt="" coords="5,5,48,31"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="96,5,136,31"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="96,5,136,31"/>
 <area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="184,5,272,31"/>
 </map>

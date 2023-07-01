@@ -4,9 +4,11 @@ var searchData=
   ['x_5fmul_5f_1',['x_mul_',['../../qle/class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a13b830d8750e1e0ec1abc94dbe6731a0',1,'QuantExt::detail::QuadraticInterpolationImpl::x_mul_()'],['../../qle/class_quant_ext_1_1_log_quadratic.html#a13b830d8750e1e0ec1abc94dbe6731a0',1,'QuantExt::LogQuadratic::x_mul_()'],['../../qle/class_quant_ext_1_1_quadratic.html#a13b830d8750e1e0ec1abc94dbe6731a0',1,'QuantExt::Quadratic::x_mul_()']]],
   ['x_5foffset_5f_2',['x_offset_',['../../qle/class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a23a330d0a37780e733d6814d68466b19',1,'QuantExt::detail::QuadraticInterpolationImpl::x_offset_()'],['../../qle/class_quant_ext_1_1_log_quadratic.html#a23a330d0a37780e733d6814d68466b19',1,'QuantExt::LogQuadratic::x_offset_()'],['../../qle/class_quant_ext_1_1_quadratic.html#a23a330d0a37780e733d6814d68466b19',1,'QuantExt::Quadratic::x_offset_()']]],
   ['xbegin_5f_3',['xBegin_',['../../qle/class_quant_ext_1_1detail_1_1_nadaraya_watson_impl.html#a10aaa529bbf849a034c64dd3d6bcfa45',1,'QuantExt::detail::NadarayaWatsonImpl']]],
-  ['xccycurvenameprefix_4',['xccyCurveNamePrefix',['../../ored/namespaceore_1_1data.html#aeb0eb4bc9fbaaf6174b8f566c2ad5dd4',1,'ore::data']]],
-  ['xend_5f_5',['xEnd_',['../../qle/class_quant_ext_1_1detail_1_1_nadaraya_watson_impl.html#a948e1e0e08b57467fba9406d23c16222',1,'QuantExt::detail::NadarayaWatsonImpl']]],
-  ['xmultiplier_5f_6',['xMultiplier_',['../../qle/class_quant_ext_1_1_stabilised_g_l_l_s.html#aa244efd298f0c5b13499d08df826bb14',1,'QuantExt::StabilisedGLLS']]],
-  ['xshift_5f_7',['xShift_',['../../qle/class_quant_ext_1_1_stabilised_g_l_l_s.html#a9f85357c30762512c1f400e644b7a132',1,'QuantExt::StabilisedGLLS']]],
-  ['xva_5f_8',['xva_',['../classore_1_1analytics_1_1_o_r_e_app.html#a1e9b65ba92e14aab8e1300c9e84d403f',1,'ore::analytics::OREApp']]]
+  ['xbsparconversion_5f_4',['xbsParConversion_',['../classore_1_1analytics_1_1_input_parameters.html#ab486ad4b353d218d680cb6af679b6578',1,'ore::analytics::InputParameters']]],
+  ['xccycorr_5f_5',['xccyCorr_',['../classore_1_1analytics_1_1_simm_configuration_base.html#ab15df858cc06cb3af20c09cf480d29ab',1,'ore::analytics::SimmConfigurationBase']]],
+  ['xccycurvenameprefix_6',['xccyCurveNamePrefix',['../../ored/namespaceore_1_1data.html#aeb0eb4bc9fbaaf6174b8f566c2ad5dd4',1,'ore::data']]],
+  ['xend_5f_7',['xEnd_',['../../qle/class_quant_ext_1_1detail_1_1_nadaraya_watson_impl.html#a948e1e0e08b57467fba9406d23c16222',1,'QuantExt::detail::NadarayaWatsonImpl']]],
+  ['xmultiplier_5f_8',['xMultiplier_',['../../qle/class_quant_ext_1_1_stabilised_g_l_l_s.html#aa244efd298f0c5b13499d08df826bb14',1,'QuantExt::StabilisedGLLS']]],
+  ['xshift_5f_9',['xShift_',['../../qle/class_quant_ext_1_1_stabilised_g_l_l_s.html#a9f85357c30762512c1f400e644b7a132',1,'QuantExt::StabilisedGLLS']]],
+  ['xvabasecurrency_5f_10',['xvaBaseCurrency_',['../classore_1_1analytics_1_1_input_parameters.html#a79c181638597af2d0ef52fb384e06521',1,'ore::analytics::InputParameters']]]
 ];

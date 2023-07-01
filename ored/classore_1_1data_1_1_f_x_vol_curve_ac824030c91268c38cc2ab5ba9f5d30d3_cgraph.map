@@ -1,7 +1,7 @@
 <map id="buildVannaVolgaOrATMCurve" name="buildVannaVolgaOrATMCurve">
 <area shape="rect" id="node1" title=" " alt="" coords="5,145,197,170"/>
 <area shape="rect" id="node2" href="$classore_1_1data_1_1_f_x_volatility_curve_spec.html#a3d358ea6ebc33cd2ab59484401f77d54" title=" " alt="" coords="245,5,424,45"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="261,70,408,95"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="261,70,408,95"/>
 <area shape="rect" id="node5" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="259,119,410,145"/>
 <area shape="rect" id="node6" href="$classore_1_1data_1_1_f_x_vol_curve.html#af0f1be52552a1e5147607f5ae5fb757b" title=" " alt="" coords="309,169,360,194"/>
 <area shape="rect" id="node7" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="269,242,400,267"/>

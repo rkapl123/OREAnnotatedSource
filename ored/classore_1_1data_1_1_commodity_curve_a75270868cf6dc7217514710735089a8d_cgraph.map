@@ -9,7 +9,7 @@
 <area shape="rect" id="node19" href="$classore_1_1data_1_1_price_segment.html#a54520ef949aadaad6600f1eacd3f606c" title=" " alt="" coords="172,393,335,433"/>
 <area shape="rect" id="node20" href="$classore_1_1data_1_1_price_segment.html#ab4850b56e8bad34c1c061fed3ade5d1a" title=" " alt="" coords="172,457,335,497"/>
 <area shape="rect" id="node21" href="$classore_1_1data_1_1_price_segment.html#a30c9abb76b73ff3014822f631d6b12de" title=" " alt="" coords="172,521,335,561"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent" alt="" coords="413,19,559,45"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="413,19,559,45"/>
 <area shape="rect" id="node6" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="391,77,581,102"/>
 <area shape="rect" id="node5" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="641,5,769,45"/>
 <area shape="rect" id="node7" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="639,69,771,109"/>
@@ -18,6 +18,6 @@
 <area shape="rect" id="node10" href="$classore_1_1data_1_1_curve_spec.html#a0106d2fb6472e64456c6ebd018aa6300" title=" " alt="" coords="634,133,777,173"/>
 <area shape="rect" id="node11" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="640,239,771,265"/>
 <area shape="rect" id="node15" href="$classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="392,305,580,345"/>
-<area shape="rect" id="node16" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="416,370,556,395"/>
-<area shape="rect" id="node17" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="629,370,781,395"/>
+<area shape="rect" id="node16" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="416,394,556,419"/>
+<area shape="rect" id="node17" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="629,394,781,419"/>
 </map>

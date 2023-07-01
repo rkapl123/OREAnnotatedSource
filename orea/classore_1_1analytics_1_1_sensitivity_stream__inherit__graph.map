@@ -1,8 +1,9 @@
 <map id="SensitivityStream" name="SensitivityStream">
-<area shape="rect" id="node1" title="Base Class for streaming SensitivityRecords." alt="" coords="446,5,603,89"/>
-<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_buffered_sensitivity_stream.html" title=" " alt="" coords="5,167,199,295"/>
-<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_filtered_sensitivity_stream.html" title="Class that wraps a sensitivity stream and filters out negligible records." alt="" coords="223,152,413,309"/>
-<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_sensitivity_cube_stream.html" title=" " alt="" coords="437,137,613,324"/>
-<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="637,145,809,317"/>
-<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_sensitivity_in_memory_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="834,159,1037,302"/>
+<area shape="rect" id="node1" title="Base Class for streaming SensitivityRecords." alt="" coords="565,5,722,89"/>
+<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_buffered_sensitivity_stream.html" title=" " alt="" coords="5,181,199,309"/>
+<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_filtered_sensitivity_stream.html" title="Class that wraps a sensitivity stream and filters out negligible records." alt="" coords="223,167,413,324"/>
+<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_par_sensitivity_cube_stream.html" title=" " alt="" coords="437,159,633,331"/>
+<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_sensitivity_cube_stream.html" title=" " alt="" coords="658,137,845,353"/>
+<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="869,159,1041,331"/>
+<area shape="rect" id="node7" href="$classore_1_1analytics_1_1_sensitivity_in_memory_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="1066,174,1269,317"/>
 </map>

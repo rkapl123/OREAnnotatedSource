@@ -10,5 +10,7 @@ var searchData=
   ['xmlutils_7',['XMLUtils',['../../ored/classore_1_1data_1_1_x_m_l_utils.html',1,'ore::data']]],
   ['xpdcurrency_8',['XPDCurrency',['../../qle/class_quant_ext_1_1_x_p_d_currency.html',1,'QuantExt']]],
   ['xptcurrency_9',['XPTCurrency',['../../qle/class_quant_ext_1_1_x_p_t_currency.html',1,'QuantExt']]],
-  ['xvarunner_10',['XvaRunner',['../classore_1_1analytics_1_1_xva_runner.html',1,'ore::analytics']]]
+  ['xvaanalytic_10',['XvaAnalytic',['../classore_1_1analytics_1_1_xva_analytic.html',1,'ore::analytics']]],
+  ['xvaanalyticimpl_11',['XvaAnalyticImpl',['../classore_1_1analytics_1_1_xva_analytic_impl.html',1,'ore::analytics']]],
+  ['xvarunner_12',['XvaRunner',['../classore_1_1analytics_1_1_xva_runner.html',1,'ore::analytics']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fixingentry_0',['FixingEntry',['../classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268',1,'ore::data::RequiredFixings']]]
+  ['equitypositiontrsunderlyingbuilder_0',['EquityPositionTrsUnderlyingBuilder',['../namespaceore_1_1data.html#a9eae8ac800ba46d1de4c95185f9a95cc',1,'ore::data']]]
 ];

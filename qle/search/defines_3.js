@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['qe_5flib_5fname_0',['QE_LIB_NAME',['../auto__link_8hpp.html#af3f273455b180285881d0e3a0a61e820',1,'auto_link.hpp']]],
-  ['qe_5flib_5fplatform_1',['QE_LIB_PLATFORM',['../auto__link_8hpp.html#a3bbf206f928cea791f3ad4153e739323',1,'auto_link.hpp']]],
-  ['qe_5flib_5frt_5fopt_2',['QE_LIB_RT_OPT',['../auto__link_8hpp.html#a101cc5a8b4283af320e9497ab2d3b6c6',1,'auto_link.hpp']]],
-  ['qe_5flib_5fthread_5fopt_3',['QE_LIB_THREAD_OPT',['../auto__link_8hpp.html#ab04c7bd123d2e2c66a8556249083ea37',1,'auto_link.hpp']]]
+  ['open_5fsource_5frisk_5fversion_0',['OPEN_SOURCE_RISK_VERSION',['../version_8hpp.html#abd4fe0218d6a39d8363ec6a65f0530ab',1,'version.hpp']]],
+  ['open_5fsource_5frisk_5fversion_5fnum_1',['OPEN_SOURCE_RISK_VERSION_NUM',['../version_8hpp.html#ad4775a24b3a616e73ccc91ad01c1ef42',1,'version.hpp']]]
 ];

@@ -11,5 +11,7 @@ var searchData=
   ['tonar_8',['Tonar',['../class_quant_ext_1_1_tonar.html',1,'QuantExt']]],
   ['tonarterm_9',['TonarTerm',['../class_quant_ext_1_1_tonar_term.html',1,'QuantExt']]],
   ['toplevelfixture_10',['TopLevelFixture',['../classqle_1_1test_1_1_top_level_fixture.html',1,'qle::test']]],
-  ['twdtaibor_11',['TWDTaibor',['../class_quant_ext_1_1_t_w_d_taibor.html',1,'QuantExt']]]
+  ['tranche_11',['Tranche',['../struct_quant_ext_1_1_tranche.html',1,'QuantExt']]],
+  ['tsiveriotisfernandeslattice_12',['TsiveriotisFernandesLattice',['../class_quant_ext_1_1_tsiveriotis_fernandes_lattice.html',1,'QuantExt']]],
+  ['twdtaibor_13',['TWDTaibor',['../class_quant_ext_1_1_t_w_d_taibor.html',1,'QuantExt']]]
 ];
