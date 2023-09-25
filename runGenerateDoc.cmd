@@ -1,6 +1,6 @@
 set ORE=C:\dev\ORE\documentation
 set doxybin="C:\Program Files\doxygen\bin\doxygen.exe"
-
+perl UpdateVersion.pl
 copy oreaFull.doxy %ORE%\OREAnalytics\doc\
 copy oreaheaderFull.html %ORE%\OREAnalytics\doc\
 copy oredFull.doxy %ORE%\OREData\doc\
