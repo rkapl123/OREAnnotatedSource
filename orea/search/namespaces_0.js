@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['boost_0',['boost',['../../qle/namespaceboost.html',1,'']]],
-  ['data_1',['data',['../../qle/namespaceboost_1_1unit__test_1_1data.html',1,'boost::unit_test']]],
-  ['monomorphic_2',['monomorphic',['../../qle/namespaceboost_1_1unit__test_1_1data_1_1monomorphic.html',1,'boost::unit_test::data']]],
-  ['serialization_3',['serialization',['../../ored/namespaceboost_1_1serialization.html',1,'boost']]],
-  ['test_5ftools_4',['test_tools',['../../qle/namespaceboost_1_1test__tools.html',1,'boost']]],
-  ['tt_5fdetail_5',['tt_detail',['../../qle/namespaceboost_1_1test__tools_1_1tt__detail.html',1,'boost::test_tools']]],
-  ['unit_5ftest_6',['unit_test',['../../qle/namespaceboost_1_1unit__test.html',1,'boost']]]
+  ['analytics_0',['analytics',['../namespaceore_1_1analytics.html',1,'ore']]],
+  ['detail_1',['detail',['../namespaceore_1_1analytics_1_1detail.html',1,'ore::analytics']]],
+  ['ore_2',['ore',['../namespaceore.html',1,'']]],
+  ['test_3',['test',['../namespaceore_1_1test.html',1,'ore']]]
 ];

@@ -218,11 +218,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   55</span> </div>
 <div class="line"><span class="lineno">   56</span>    <span class="comment">// If for any reason v_1 or v_2 are not finite or nan, log an alert and return 0</span></div>
 <div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (!std::isfinite(v_1) || std::isnan(v_1)) {</div>
-<div class="line"><span class="lineno">   58</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;The scenario value v_1 for key &#39;&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; is &quot;</span> &lt;&lt; v_1 &lt;&lt; <span class="stringliteral">&quot; and is not usable so we are returning 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   58</span>        ALOG(<span class="stringliteral">&quot;The scenario value v_1 for key &#39;&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; is &quot;</span> &lt;&lt; v_1 &lt;&lt; <span class="stringliteral">&quot; and is not usable so we are returning 0&quot;</span>);</div>
 <div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><span class="lineno">   60</span>    }</div>
 <div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> (!std::isfinite(v_2) || std::isnan(v_2)) {</div>
-<div class="line"><span class="lineno">   62</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;The scenario value v_2 for key &#39;&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; is &quot;</span> &lt;&lt; v_2 &lt;&lt; <span class="stringliteral">&quot; and is not usable so we are returning 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   62</span>        ALOG(<span class="stringliteral">&quot;The scenario value v_2 for key &#39;&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; is &quot;</span> &lt;&lt; v_2 &lt;&lt; <span class="stringliteral">&quot; and is not usable so we are returning 0&quot;</span>);</div>
 <div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><span class="lineno">   64</span>    }</div>
 <div class="line"><span class="lineno">   65</span> </div>
@@ -233,7 +233,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   70</span> </div>
 <div class="line"><span class="lineno">   71</span>    <span class="comment">// If shiftSize is zero, log an alert and return 0 early</span></div>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e">close</a>(shiftSize, 0.0)) {</div>
-<div class="line"><span class="lineno">   73</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;The shift size for key &#39;&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; in sensitivity config is zero&quot;</span>);</div>
+<div class="line"><span class="lineno">   73</span>        ALOG(<span class="stringliteral">&quot;The shift size for key &#39;&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; in sensitivity config is zero&quot;</span>);</div>
 <div class="line"><span class="lineno">   74</span>        <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><span class="lineno">   75</span>    }</div>
 <div class="line"><span class="lineno">   76</span> </div>
@@ -243,7 +243,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   80</span>        result = v_2 - v_1;</div>
 <div class="line"><span class="lineno">   81</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   82</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e">close</a>(v_1, 0.0)) {</div>
-<div class="line"><span class="lineno">   83</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;The reference scenario value for key &#39;&quot;</span></div>
+<div class="line"><span class="lineno">   83</span>            ALOG(<span class="stringliteral">&quot;The reference scenario value for key &#39;&quot;</span></div>
 <div class="line"><span class="lineno">   84</span>                 &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; is zero and the shift is relative so must return a shift of zero&quot;</span>);</div>
 <div class="line"><span class="lineno">   85</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   86</span>            result = v_2 / v_1 - 1.0;</div>
@@ -258,7 +258,6 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_html_a43f2ebd1f3bad53257886472cc333830"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario.html#a43f2ebd1f3bad53257886472cc333830">ore::analytics::Scenario::asof</a></div><div class="ttdeci">virtual const Date &amp; asof() const =0</div><div class="ttdoc">Return the scenario asof date.</div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_html_a5213b6e738620bde2cccf27b46056722"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario.html#a5213b6e738620bde2cccf27b46056722">ore::analytics::Scenario::get</a></div><div class="ttdeci">virtual Real get(const RiskFactorKey &amp;key) const =0</div><div class="ttdoc">Get an element from the scenario.</div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_shift_calculator_html_a936ec36326d50b4a1056d50d0332ebee"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_shift_calculator.html#a936ec36326d50b4a1056d50d0332ebee">ore::analytics::ScenarioShiftCalculator::transform</a></div><div class="ttdeci">QuantLib::Real transform(const ore::analytics::RiskFactorKey &amp;key, QuantLib::Real value, const QuantLib::Date &amp;asof) const</div><div class="ttdef"><b>Definition:</b> <a href="orea_2scenario_2scenarioshiftcalculator_8cpp_source.html#l00094">scenarioshiftcalculator.cpp:94</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a35cb05f674d9e764ca12cff351b064f2"><div class="ttname"><a href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a></div><div class="ttdeci">#define ALOG(text)</div></div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_a1619c68d023b881eb856529b4be48d8b"><div class="ttname"><a href="namespaceore_1_1analytics.html#a1619c68d023b881eb856529b4be48d8b">ore::analytics::ShiftData</a></div><div class="ttdeci">SensitivityScenarioData::ShiftData ShiftData</div><div class="ttdef"><b>Definition:</b> <a href="orea_2scenario_2scenarioshiftcalculator_8cpp_source.html#l00042">scenarioshiftcalculator.cpp:42</a></div></div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_a1d01daebcd210546f1784785760fb64e"><div class="ttname"><a href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e">ore::analytics::close</a></div><div class="ttdeci">bool close(const Real &amp;t_1, const Real &amp;t_2)</div><div class="ttdef"><b>Definition:</b> <a href="sensitivityscenariogenerator_8cpp_source.html#l00076">sensitivityscenariogenerator.cpp:76</a></div></div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_a5cceb12d217bac14eeda59d5f774f7c1"><div class="ttname"><a href="namespaceore_1_1analytics.html#a5cceb12d217bac14eeda59d5f774f7c1">ore::analytics::parseShiftType</a></div><div class="ttdeci">ShiftScenarioGenerator::ShiftType parseShiftType(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="orea_2scenario_2shiftscenariogenerator_8cpp_source.html#l00145">shiftscenariogenerator.cpp:145</a></div></div>
@@ -272,12 +271,11 @@ Private Attributes</h2></td></tr>
 <map name="aclassore_1_1analytics_1_1_scenario_shift_calculator_a820ea7689c3a614dafe00bbc00e61e0d_cgraph" id="aclassore_1_1analytics_1_1_scenario_shift_calculator_a820ea7689c3a614dafe00bbc00e61e0d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,121,52,146"/>
 <area shape="rect" href="classore_1_1analytics_1_1_scenario.html#a43f2ebd1f3bad53257886472cc333830" title="Return the scenario asof date." alt="" coords="118,5,277,45"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e" title=" " alt="" coords="343,119,481,145"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e" title=" " alt="" coords="343,133,481,158"/>
 <area shape="rect" href="classore_1_1analytics_1_1_scenario.html#a5213b6e738620bde2cccf27b46056722" title="Get an element from the scenario." alt="" coords="105,121,290,146"/>
 <area shape="rect" href="namespaceore_1_1analytics.html#a5cceb12d217bac14eeda59d5f774f7c1" title=" " alt="" coords="100,194,295,219"/>
 <area shape="rect" href="classore_1_1analytics_1_1_scenario_shift_calculator.html#a936ec36326d50b4a1056d50d0332ebee" title=" " alt="" coords="159,243,235,269"/>
-<area shape="rect" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4" title=" " alt="" coords="389,218,435,243"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284" title=" " alt="" coords="393,267,431,293"/>
+<area shape="rect" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4" title=" " alt="" coords="389,243,435,269"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -375,15 +373,14 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  125</span> </div>
 <div class="line"><span class="lineno">  126</span>    <span class="comment">// The way that this is used above should be ok i.e. will always be 0 - 0 when t = 0</span></div>
 <div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e">close</a>(t, 0.0)) {</div>
-<div class="line"><span class="lineno">  128</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;The time needed in the denominator of the transform for key &#39;&quot;</span></div>
+<div class="line"><span class="lineno">  128</span>        ALOG(<span class="stringliteral">&quot;The time needed in the denominator of the transform for key &#39;&quot;</span></div>
 <div class="line"><span class="lineno">  129</span>             &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39; is zero so we return a transformed value of zero&quot;</span>);</div>
 <div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><span class="lineno">  131</span>    }</div>
 <div class="line"><span class="lineno">  132</span> </div>
-<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">return</span> -<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284">log</a>(value) / t;</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">return</span> -log(value) / t;</div>
 <div class="line"><span class="lineno">  134</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_risk_factor_key_html_aebd5628481ed5dc73597551a57eeceac"><div class="ttname"><a href="classore_1_1analytics_1_1_risk_factor_key.html#aebd5628481ed5dc73597551a57eeceac">ore::analytics::RiskFactorKey::index</a></div><div class="ttdeci">Size index</div><div class="ttdoc">Index.</div><div class="ttdef"><b>Definition:</b> <a href="scenario_8hpp_source.html#l00094">scenario.hpp:94</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a250ccc1dd6b0731854784fddafb97284"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284">log</a></div><div class="ttdeci">RandomVariable log(RandomVariable x)</div></div>
 <div class="ttc" id="atest_2scenarioshiftcalculator_8cpp_html_a652b8805d9b88185e25574d4820660c4"><div class="ttname"><a href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a></div><div class="ttdeci">Date asof(14, Jun, 2018)</div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -392,10 +389,9 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_scenario_shift_calculator_a936ec36326d50b4a1056d50d0332ebee_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_scenario_shift_calculator_a936ec36326d50b4a1056d50d0332ebee_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_scenario_shift_calculator_a936ec36326d50b4a1056d50d0332ebee_cgraph" id="aclassore_1_1analytics_1_1_scenario_shift_calculator_a936ec36326d50b4a1056d50d0332ebee_cgraph">
-<area shape="rect" title=" " alt="" coords="5,79,81,104"/>
+<area shape="rect" title=" " alt="" coords="5,43,81,68"/>
 <area shape="rect" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4" title=" " alt="" coords="175,5,222,31"/>
 <area shape="rect" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e" title=" " alt="" coords="129,79,268,104"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284" title=" " alt="" coords="179,128,218,153"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">

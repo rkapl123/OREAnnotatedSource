@@ -101,8 +101,8 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="inmemorycube_8hpp.html">orea/cube/inmemorycube.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="cubecsvreader_8hpp.html">orea/cube/cubecsvreader.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/log_8hpp.html">ored/utilities/log.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/parsers_8hpp.html">ored/utilities/parsers.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;ored/utilities/log.hpp&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;ored/utilities/parsers.hpp&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;ql/errors.hpp&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -142,10 +142,10 @@ $(function() {
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            QL_REQUIRE(tokens.size() == 7, <span class="stringliteral">&quot;Invalid CubeCsvReader line, 7 tokens expected &quot;</span> &lt;&lt; line);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordtype">string</span> tradeId = tokens[0];</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">string</span> nettingId = tokens[1];</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            Size dateIdx = <a class="code hl_functionRef" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a>(tokens[2]);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            Date gridDate = <a class="code hl_functionRef" href="../ored/group__utilities.html#ga59b5fdda574d90facae95dec2d13040d">ore::data::parseDate</a>(tokens[3]);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            Size sampleIdx = <a class="code hl_functionRef" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a>(tokens[4]);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            Size depthIdx = <a class="code hl_functionRef" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a>(tokens[5]);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            Size dateIdx = ore::data::parseInteger(tokens[2]);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            Date gridDate = ore::data::parseDate(tokens[3]);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            Size sampleIdx = ore::data::parseInteger(tokens[4]);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            Size depthIdx = ore::data::parseInteger(tokens[5]);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">if</span> (dateIdx == 0) {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a> = gridDate;</div>
@@ -202,11 +202,11 @@ $(function() {
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            QL_REQUIRE(tokens.size() == 7, <span class="stringliteral">&quot;Invalid CubeCsvReader line, 7 tokens expected &quot;</span> &lt;&lt; line);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordtype">string</span> tradeId = tokens[0];</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordtype">string</span> nettingId = tokens[1];</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            Size dateIdx = <a class="code hl_functionRef" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a>(tokens[2]);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            Size dateIdx = ore::data::parseInteger(tokens[2]);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="comment">// Date gridDate = ore::data::parseDate(tokens[3]); Not needed</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            Size sampleIdx = <a class="code hl_functionRef" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a>(tokens[4]);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            Size depthIdx = <a class="code hl_functionRef" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a>(tokens[5]);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            Real value = <a class="code hl_functionRef" href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">ore::data::parseReal</a>(tokens[6]);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            Size sampleIdx = ore::data::parseInteger(tokens[4]);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            Size depthIdx = ore::data::parseInteger(tokens[5]);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            Real value = ore::data::parseReal(tokens[6]);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keyword">auto</span> pos_trade = cube-&gt;getTradeIndex(tradeId);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
@@ -226,14 +226,9 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_cube_csv_reader_html_a5cce019bb11cd07d4943114e9f8456bf"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_csv_reader.html#a5cce019bb11cd07d4943114e9f8456bf">ore::analytics::CubeCsvReader::CubeCsvReader</a></div><div class="ttdeci">CubeCsvReader(const std::string &amp;filename)</div><div class="ttdoc">ctor</div><div class="ttdef"><b>Definition:</b> <a href="cubecsvreader_8cpp_source.html#l00036">cubecsvreader.cpp:36</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_cube_csv_reader_html_ac14a7020baf682e8a1cb974b2db0182a"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_csv_reader.html#ac14a7020baf682e8a1cb974b2db0182a">ore::analytics::CubeCsvReader::read</a></div><div class="ttdeci">void read(boost::shared_ptr&lt; ore::analytics::NPVCube &gt; &amp;cube, std::map&lt; std::string, std::string &gt; &amp;nettingSetMap)</div><div class="ttdoc">Read a cube from a csv file.</div><div class="ttdef"><b>Definition:</b> <a href="cubecsvreader_8cpp_source.html#l00038">cubecsvreader.cpp:38</a></div></div>
 <div class="ttc" id="acubecsvreader_8hpp_html"><div class="ttname"><a href="cubecsvreader_8hpp.html">cubecsvreader.hpp</a></div><div class="ttdoc">A Class to read a cube file from csv input.</div></div>
-<div class="ttc" id="agroup__utilities_html_ga59b5fdda574d90facae95dec2d13040d"><div class="ttname"><a href="../ored/group__utilities.html#ga59b5fdda574d90facae95dec2d13040d">ore::data::parseDate</a></div><div class="ttdeci">Date parseDate(const string &amp;s)</div></div>
-<div class="ttc" id="agroup__utilities_html_gad1db2a68f9a73667c3b4084d63955bdd"><div class="ttname"><a href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">ore::data::parseReal</a></div><div class="ttdeci">Real parseReal(const string &amp;s)</div></div>
-<div class="ttc" id="agroup__utilities_html_gaecd67eda4fb5f4859bb8f6d383547721"><div class="ttname"><a href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a></div><div class="ttdeci">Integer parseInteger(const string &amp;s)</div></div>
 <div class="ttc" id="ainmemorycube_8hpp_html"><div class="ttname"><a href="inmemorycube_8hpp.html">inmemorycube.hpp</a></div><div class="ttdoc">A cube implementation that stores the cube in memory.</div></div>
-<div class="ttc" id="alog_8hpp_html"><div class="ttname"><a href="../ored/log_8hpp.html">log.hpp</a></div></div>
-<div class="ttc" id="anamespaceore_1_1analytics_html"><div class="ttname"><a href="namespaceore_1_1analytics.html">ore::analytics</a></div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
-<div class="ttc" id="aparsers_8hpp_html"><div class="ttname"><a href="../ored/parsers_8hpp.html">parsers.hpp</a></div></div>
+<div class="ttc" id="anamespaceore_1_1analytics_html"><div class="ttname"><a href="namespaceore_1_1analytics.html">ore::analytics</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00028">namespaces.docs:28</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 <div class="ttc" id="atest_2scenarioshiftcalculator_8cpp_html_a652b8805d9b88185e25574d4820660c4"><div class="ttname"><a href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a></div><div class="ttdeci">Date asof(14, Jun, 2018)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

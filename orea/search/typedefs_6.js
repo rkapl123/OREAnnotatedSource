@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graph_0',['Graph',['../../ored/classore_1_1data_1_1_dependency_graph.html#aa1d5c00d71a6233f93a1a9f2c671cb31',1,'ore::data::DependencyGraph::Graph()'],['../../ored/classore_1_1data_1_1_todays_market.html#aa1d5c00d71a6233f93a1a9f2c671cb31',1,'ore::data::TodaysMarket::Graph()']]]
+  ['margintype_0',['MarginType',['../classore_1_1analytics_1_1_simm_results.html#a37f0476a64890aa4797db50095f787ec',1,'ore::analytics::SimmResults::MarginType()'],['../namespaceore_1_1analytics.html#a37f0476a64890aa4797db50095f787ec',1,'ore::analytics::MarginType()']]]
 ];

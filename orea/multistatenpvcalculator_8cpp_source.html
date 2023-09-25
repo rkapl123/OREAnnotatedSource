@@ -104,7 +104,7 @@ $(function() {
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="multistatenpvcalculator_8hpp.html">orea/engine/multistatenpvcalculator.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/log_8hpp.html">ored/utilities/log.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;ored/utilities/log.hpp&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span>analytics {</div>
@@ -152,7 +152,7 @@ $(function() {
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            QL_FAIL(<span class="stringliteral">&quot;unexpected type of result stateNpv: &quot;</span> &lt;&lt; e.what());</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; n : stateNpv) {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">if</span> (!<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(n, 0.0)) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">if</span> (!close_enough(n, 0.0)) {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                n *= trade-&gt;instrument()-&gt;multiplier() * trade-&gt;instrument()-&gt;multiplier2();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                Real fx = <a class="code hl_variable" href="classore_1_1analytics_1_1_n_p_v_calculator.html#a4e02fb8463a11677f0ea30276cbe06d4">fxRates_</a>[<a class="code hl_variable" href="classore_1_1analytics_1_1_n_p_v_calculator.html#a2ce9737ac1e95599f183332fdcd264c6">tradeCcyIndex_</a>[tradeIndex]];</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                Real numeraire = simMarket-&gt;numeraire();</div>
@@ -181,10 +181,8 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_n_p_v_calculator_html_a4e02fb8463a11677f0ea30276cbe06d4"><div class="ttname"><a href="classore_1_1analytics_1_1_n_p_v_calculator.html#a4e02fb8463a11677f0ea30276cbe06d4">ore::analytics::NPVCalculator::fxRates_</a></div><div class="ttdeci">std::vector&lt; double &gt; fxRates_</div><div class="ttdef"><b>Definition:</b> <a href="valuationcalculator_8hpp_source.html#l00112">valuationcalculator.hpp:112</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_n_p_v_calculator_html_a7115fee2bf2b1e165f5db8acbfee8263"><div class="ttname"><a href="classore_1_1analytics_1_1_n_p_v_calculator.html#a7115fee2bf2b1e165f5db8acbfee8263">ore::analytics::NPVCalculator::npv</a></div><div class="ttdeci">virtual Real npv(Size tradeIndex, const boost::shared_ptr&lt; Trade &gt; &amp;trade, const boost::shared_ptr&lt; SimMarket &gt; &amp;simMarket)</div><div class="ttdef"><b>Definition:</b> <a href="valuationcalculator_8cpp_source.html#l00069">valuationcalculator.cpp:69</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_n_p_v_calculator_html_a8499544e603bf831c56d2c3414e456ae"><div class="ttname"><a href="classore_1_1analytics_1_1_n_p_v_calculator.html#a8499544e603bf831c56d2c3414e456ae">ore::analytics::NPVCalculator::index_</a></div><div class="ttdeci">Size index_</div><div class="ttdef"><b>Definition:</b> <a href="valuationcalculator_8hpp_source.html#l00109">valuationcalculator.hpp:109</a></div></div>
-<div class="ttc" id="alog_8hpp_html"><div class="ttname"><a href="../ored/log_8hpp.html">log.hpp</a></div></div>
 <div class="ttc" id="amultistatenpvcalculator_8hpp_html"><div class="ttname"><a href="multistatenpvcalculator_8hpp.html">multistatenpvcalculator.hpp</a></div><div class="ttdoc">a calculator that computes npvs for a vector of credit states</div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

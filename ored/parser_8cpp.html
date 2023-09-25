@@ -93,13 +93,13 @@ $(function() {
 <code>#include &lt;ql/time/calendars/france.hpp&gt;</code><br />
 <code>#include &lt;ql/time/calendars/thailand.hpp&gt;</code><br />
 <code>#include &lt;ql/time/daycounters/all.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/colombia_8hpp.html">qle/calendars/colombia.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/israel_8hpp.html">qle/calendars/israel.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/largejointcalendar_8hpp.html">qle/calendars/largejointcalendar.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/malaysia_8hpp.html">qle/calendars/malaysia.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/netherlands_8hpp.html">qle/calendars/netherlands.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/peru_8hpp.html">qle/calendars/peru.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/philippines_8hpp.html">qle/calendars/philippines.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/calendars/colombia.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/israel.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/largejointcalendar.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/malaysia.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/netherlands.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/peru.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/philippines.hpp&gt;</code><br />
 </div>
 <p><a href="parser_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -1130,15 +1130,15 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  924</span>    expectedHolidays.insert(Date(2, November, 2018));</div>
 <div class="line"><span class="lineno">  925</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><span class="lineno">  926</span> </div>
-<div class="line"><span class="lineno">  927</span>    Calendar peru = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_peru.html">QuantExt::Peru</a>();</div>
+<div class="line"><span class="lineno">  927</span>    Calendar peru = QuantExt::Peru();</div>
 <div class="line"><span class="lineno">  928</span> </div>
 <div class="line"><span class="lineno">  929</span>    cals.push_back(peru);</div>
-<div class="line"><span class="lineno">  930</span>    Calendar joint1 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno">  930</span>    Calendar joint1 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno">  931</span> </div>
 <div class="line"><span class="lineno">  932</span>    std::vector&lt;Date&gt; hol = joint1.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno">  933</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
 <div class="line"><span class="lineno">  934</span> </div>
-<div class="line"><span class="lineno">  935</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno">  935</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno">  936</span> </div>
 <div class="line"><span class="lineno">  937</span>    <span class="comment">// add columbian holidays</span></div>
 <div class="line"><span class="lineno">  938</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1159,13 +1159,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  953</span>    expectedHolidays.insert(Date(12, November, 2018));</div>
 <div class="line"><span class="lineno">  954</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><span class="lineno">  955</span> </div>
-<div class="line"><span class="lineno">  956</span>    Calendar col = <a class="code hl_classRef" href="../qle/class_quant_lib_1_1_colombia.html">Colombia</a>();</div>
+<div class="line"><span class="lineno">  956</span>    Calendar col = Colombia();</div>
 <div class="line"><span class="lineno">  957</span>    cals.push_back(col);</div>
-<div class="line"><span class="lineno">  958</span>    Calendar joint2 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno">  958</span>    Calendar joint2 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno">  959</span> </div>
 <div class="line"><span class="lineno">  960</span>    hol = joint2.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno">  961</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><span class="lineno">  962</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno">  962</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno">  963</span> </div>
 <div class="line"><span class="lineno">  964</span>    <span class="comment">// add philippines holidays</span></div>
 <div class="line"><span class="lineno">  965</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1182,13 +1182,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  976</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><span class="lineno">  977</span>    expectedHolidays.insert(Date(31, December, 2018));</div>
 <div class="line"><span class="lineno">  978</span> </div>
-<div class="line"><span class="lineno">  979</span>    Calendar phil = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_philippines.html">Philippines</a>();</div>
+<div class="line"><span class="lineno">  979</span>    Calendar phil = Philippines();</div>
 <div class="line"><span class="lineno">  980</span>    cals.push_back(phil);</div>
-<div class="line"><span class="lineno">  981</span>    Calendar joint3 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno">  981</span>    Calendar joint3 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno">  982</span> </div>
 <div class="line"><span class="lineno">  983</span>    hol = joint3.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno">  984</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><span class="lineno">  985</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno">  985</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno">  986</span> </div>
 <div class="line"><span class="lineno">  987</span>    <span class="comment">// add thailand holidays</span></div>
 <div class="line"><span class="lineno">  988</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1210,11 +1210,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1004</span> </div>
 <div class="line"><span class="lineno"> 1005</span>    Calendar thai = Thailand();</div>
 <div class="line"><span class="lineno"> 1006</span>    cals.push_back(thai);</div>
-<div class="line"><span class="lineno"> 1007</span>    Calendar joint4 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno"> 1007</span>    Calendar joint4 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno"> 1008</span> </div>
 <div class="line"><span class="lineno"> 1009</span>    hol = joint4.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno"> 1010</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><span class="lineno"> 1011</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno"> 1011</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno"> 1012</span> </div>
 <div class="line"><span class="lineno"> 1013</span>    <span class="comment">// add malaysia holidays</span></div>
 <div class="line"><span class="lineno"> 1014</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1224,13 +1224,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1018</span>    expectedHolidays.insert(Date(17, September, 2018));</div>
 <div class="line"><span class="lineno"> 1019</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><span class="lineno"> 1020</span> </div>
-<div class="line"><span class="lineno"> 1021</span>    Calendar mal = <a class="code hl_classRef" href="../qle/class_quant_lib_1_1_malaysia.html">Malaysia</a>();</div>
+<div class="line"><span class="lineno"> 1021</span>    Calendar mal = Malaysia();</div>
 <div class="line"><span class="lineno"> 1022</span>    cals.push_back(mal);</div>
-<div class="line"><span class="lineno"> 1023</span>    Calendar joint5 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno"> 1023</span>    Calendar joint5 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno"> 1024</span> </div>
 <div class="line"><span class="lineno"> 1025</span>    hol = joint5.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno"> 1026</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><span class="lineno"> 1027</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno"> 1027</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno"> 1028</span> </div>
 <div class="line"><span class="lineno"> 1029</span>    <span class="comment">// add chilean calendar</span></div>
 <div class="line"><span class="lineno"> 1030</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1250,11 +1250,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1044</span> </div>
 <div class="line"><span class="lineno"> 1045</span>    Calendar chil = Chile();</div>
 <div class="line"><span class="lineno"> 1046</span>    cals.push_back(chil);</div>
-<div class="line"><span class="lineno"> 1047</span>    Calendar joint6 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno"> 1047</span>    Calendar joint6 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno"> 1048</span> </div>
 <div class="line"><span class="lineno"> 1049</span>    hol = joint6.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno"> 1050</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><span class="lineno"> 1051</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno"> 1051</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno"> 1052</span> </div>
 <div class="line"><span class="lineno"> 1053</span>    <span class="comment">// add netherlands calendar</span></div>
 <div class="line"><span class="lineno"> 1054</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1266,13 +1266,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1060</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><span class="lineno"> 1061</span>    expectedHolidays.insert(Date(26, December, 2018));</div>
 <div class="line"><span class="lineno"> 1062</span> </div>
-<div class="line"><span class="lineno"> 1063</span>    Calendar net = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_netherlands.html">Netherlands</a>();</div>
+<div class="line"><span class="lineno"> 1063</span>    Calendar net = Netherlands();</div>
 <div class="line"><span class="lineno"> 1064</span>    cals.push_back(net);</div>
-<div class="line"><span class="lineno"> 1065</span>    Calendar joint7 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno"> 1065</span>    Calendar joint7 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno"> 1066</span> </div>
 <div class="line"><span class="lineno"> 1067</span>    hol = joint7.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno"> 1068</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><span class="lineno"> 1069</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno"> 1069</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno"> 1070</span> </div>
 <div class="line"><span class="lineno"> 1071</span>    <span class="comment">// add French calendar</span></div>
 <div class="line"><span class="lineno"> 1072</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1287,34 +1287,15 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1081</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><span class="lineno"> 1082</span>    expectedHolidays.insert(Date(26, December, 2018));</div>
 <div class="line"><span class="lineno"> 1083</span> </div>
-<div class="line"><span class="lineno"> 1084</span>    Calendar fre = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_france.html">France</a>();</div>
+<div class="line"><span class="lineno"> 1084</span>    Calendar fre = France();</div>
 <div class="line"><span class="lineno"> 1085</span>    cals.push_back(fre);</div>
-<div class="line"><span class="lineno"> 1086</span>    Calendar joint8 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><span class="lineno"> 1086</span>    Calendar joint8 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><span class="lineno"> 1087</span> </div>
 <div class="line"><span class="lineno"> 1088</span>    hol = joint8.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><span class="lineno"> 1089</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><span class="lineno"> 1090</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><span class="lineno"> 1090</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><span class="lineno"> 1091</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_france_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_france.html">QuantExt::France</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_large_joint_calendar_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_netherlands_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_netherlands.html">QuantExt::Netherlands</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_peru_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_peru.html">QuantExt::Peru</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_philippines_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_philippines.html">QuantExt::Philippines</a></div></div>
-<div class="ttc" id="aclass_quant_lib_1_1_colombia_html"><div class="ttname"><a href="../qle/class_quant_lib_1_1_colombia.html">QuantLib::Colombia</a></div></div>
-<div class="ttc" id="aclass_quant_lib_1_1_malaysia_html"><div class="ttname"><a href="../qle/class_quant_lib_1_1_malaysia.html">QuantLib::Malaysia</a></div></div>
-<div class="ttc" id="anamespacecheck_html_a8f1ee4ad80881049db0c67bc521e0b2a"><div class="ttname"><a href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a></div><div class="ttdeci">void checkCalendars(const std::vector&lt; Date &gt; &amp;expectedHolidays, const std::vector&lt; Date &gt; &amp;testHolidays)</div></div>
-</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="parser_8cpp_ab469e78ec49b3bf69c877c4a4c132276_cgraph.png" border="0" usemap="#aparser_8cpp_ab469e78ec49b3bf69c877c4a4c132276_cgraph" alt=""/></div>
-<map name="aparser_8cpp_ab469e78ec49b3bf69c877c4a4c132276_cgraph" id="aparser_8cpp_ab469e78ec49b3bf69c877c4a4c132276_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,196,31"/>
-<area shape="rect" target="_parent" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a" title=" " alt="" coords="244,5,359,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a802380e7b82c74fd1ccb2117ddb3bbc8" name="a802380e7b82c74fd1ccb2117ddb3bbc8"></a>
@@ -1347,11 +1328,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1103</span>    BOOST_CHECK_EQUAL(result.second, <span class="stringliteral">&quot;[ 3; 3; 3; 3; 3 ]&quot;</span>);</div>
 <div class="line"><span class="lineno"> 1104</span>}</div>
 <div class="ttc" id="agroup__utilities_html_ga4da79166744295d1237e2699d19806b0"><div class="ttname"><a href="group__utilities.html#ga4da79166744295d1237e2699d19806b0">ore::data::parseBoostAny</a></div><div class="ttdeci">pair&lt; string, string &gt; parseBoostAny(const boost::any &amp;anyType, Size precision)</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00805">parsers.cpp:805</a></div></div>
-</div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="parser_8cpp_a802380e7b82c74fd1ccb2117ddb3bbc8_cgraph.png" border="0" usemap="#aparser_8cpp_a802380e7b82c74fd1ccb2117ddb3bbc8_cgraph" alt=""/></div>
 <map name="aparser_8cpp_a802380e7b82c74fd1ccb2117ddb3bbc8_cgraph" id="aparser_8cpp_a802380e7b82c74fd1ccb2117ddb3bbc8_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,196,55"/>

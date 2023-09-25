@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['indicatoreq_0',['indicatorEq',['../../qle/struct_quant_ext_1_1_random_variable.html#a88853be7919fd64cee71206773ebe787',1,'QuantExt::RandomVariable']]],
-  ['indicatorgeq_1',['indicatorGeq',['../../qle/struct_quant_ext_1_1_random_variable.html#aff00e0d1093bdb2cd67b7eabaebf64b1',1,'QuantExt::RandomVariable']]],
-  ['indicatorgt_2',['indicatorGt',['../../qle/struct_quant_ext_1_1_random_variable.html#a36c7702449c5f68d4c68695594f55aa3',1,'QuantExt::RandomVariable']]],
-  ['integrand_5ff_3',['integrand_f',['../../qle/class_quant_ext_1_1_lognormal_cms_spread_pricer.html#aeb363f3becf227b87f2de6b651d6c8b3',1,'QuantExt::LognormalCmsSpreadPricer']]]
+  ['singleton_3c_20globalpseudocurrencymarketparameters_2c_20std_3a_3aintegral_5fconstant_3c_20bool_2c_20true_20_3e_20_3e_0',['Singleton&lt; GlobalPseudoCurrencyMarketParameters, std::integral_constant&lt; bool, true &gt; &gt;',['../classore_1_1data_1_1_global_pseudo_currency_market_parameters.html#a9de60126ed69cff3f943ec88338fff4d',1,'ore::data::GlobalPseudoCurrencyMarketParameters']]]
 ];

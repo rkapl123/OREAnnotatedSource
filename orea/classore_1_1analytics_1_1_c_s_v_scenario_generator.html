@@ -223,11 +223,10 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_c_s_v_scenario_generator_a7ef63b07841659971654e6851a3fdffc_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_c_s_v_scenario_generator_a7ef63b07841659971654e6851a3fdffc_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_a7ef63b07841659971654e6851a3fdffc_cgraph" id="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_a7ef63b07841659971654e6851a3fdffc_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,163,60"/>
-<area shape="rect" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#ac5fadb7881ae954770d26f6ee7fc4c72" title=" " alt="" coords="211,35,288,60"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a8da68e881bfff4f6e84e910e9d1e03fd" title=" " alt="" coords="336,27,503,67"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title=" " alt="" coords="587,5,681,31"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="551,55,717,95"/>
+<area shape="rect" title=" " alt="" coords="5,13,163,38"/>
+<area shape="rect" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#ac5fadb7881ae954770d26f6ee7fc4c72" title=" " alt="" coords="211,13,288,38"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a8da68e881bfff4f6e84e910e9d1e03fd" title=" " alt="" coords="336,5,503,45"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="551,5,717,45"/>
 </map>
 </div>
 
@@ -304,7 +303,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   66</span>    boost::split(tokens, line, boost::is_any_of(strsep), boost::token_compress_on);</div>
 <div class="line"><span class="lineno">   67</span> </div>
 <div class="line"><span class="lineno">   68</span>    <span class="comment">// Check that dates match</span></div>
-<div class="line"><span class="lineno">   69</span>    QL_REQUIRE(<a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(d) == tokens[0], <span class="stringliteral">&quot;Incompatible date &quot;</span> &lt;&lt; tokens[0] &lt;&lt; <span class="stringliteral">&quot; in &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#a6eff940df146fecfff180d5189b251a7">filename_</a>);</div>
+<div class="line"><span class="lineno">   69</span>    QL_REQUIRE(to_string(d) == tokens[0], <span class="stringliteral">&quot;Incompatible date &quot;</span> &lt;&lt; tokens[0] &lt;&lt; <span class="stringliteral">&quot; in &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#a6eff940df146fecfff180d5189b251a7">filename_</a>);</div>
 <div class="line"><span class="lineno">   70</span> </div>
 <div class="line"><span class="lineno">   71</span>    <span class="comment">// Build scenario</span></div>
 <div class="line"><span class="lineno">   72</span>    <span class="keyword">const</span> boost::shared_ptr&lt;Scenario&gt; scenario = <a class="code hl_variable" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#a739e14e52a85c067c5ce86222f92279a">scenarioFactory_</a>-&gt;buildScenario(d);</div>
@@ -312,31 +311,17 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   74</span>    <span class="comment">// Fill scenario with RiskFactorKeys</span></div>
 <div class="line"><span class="lineno">   75</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#ae50effc84983e25ac73ba74fe3d8bf12">keys_</a>.size() == tokens.size() - 3, <span class="stringliteral">&quot;Erroneus line in &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#a6eff940df146fecfff180d5189b251a7">filename_</a>);</div>
 <div class="line"><span class="lineno">   76</span>    <span class="keywordflow">for</span> (Size i = 3; i &lt; tokens.size(); i++) {</div>
-<div class="line"><span class="lineno">   77</span>        scenario-&gt;add(<a class="code hl_variable" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#ae50effc84983e25ac73ba74fe3d8bf12">keys_</a>[i - 3], <a class="code hl_functionRef" href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(tokens[i]));</div>
+<div class="line"><span class="lineno">   77</span>        scenario-&gt;add(<a class="code hl_variable" href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#ae50effc84983e25ac73ba74fe3d8bf12">keys_</a>[i - 3], parseReal(tokens[i]));</div>
 <div class="line"><span class="lineno">   78</span>    }</div>
 <div class="line"><span class="lineno">   79</span> </div>
 <div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> scenario;</div>
 <div class="line"><span class="lineno">   81</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_html_ae50effc84983e25ac73ba74fe3d8bf12"><div class="ttname"><a href="classore_1_1analytics_1_1_c_s_v_scenario_generator.html#ae50effc84983e25ac73ba74fe3d8bf12">ore::analytics::CSVScenarioGenerator::keys_</a></div><div class="ttdeci">vector&lt; RiskFactorKey &gt; keys_</div><div class="ttdef"><b>Definition:</b> <a href="csvscenariogenerator_8hpp_source.html#l00045">csvscenariogenerator.hpp:45</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div></div>
-<div class="ttc" id="agroup__utilities_html_gad1db2a68f9a73667c3b4084d63955bdd"><div class="ttname"><a href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a></div><div class="ttdeci">Real parseReal(const string &amp;s)</div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_cgraph" alt=""/></div>
-<map name="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_cgraph" id="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_cgraph">
-<area shape="rect" title="Return the next scenario for the given date." alt="" coords="5,31,52,56"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title=" " alt="" coords="100,5,180,31"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="104,55,176,80"/>
-</map>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_icgraph" id="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_af5972fa7887678c0e6720a37807d2507_icgraph">
 <area shape="rect" title="Return the next scenario for the given date." alt="" coords="244,5,291,31"/>
@@ -422,24 +407,23 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   54</span>    }</div>
 <div class="line"><span class="lineno">   55</span>}</div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_a8da68e881bfff4f6e84e910e9d1e03fd"><div class="ttname"><a href="namespaceore_1_1analytics.html#a8da68e881bfff4f6e84e910e9d1e03fd">ore::analytics::parseRiskFactorKey</a></div><div class="ttdeci">RiskFactorKey parseRiskFactorKey(const string &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="orea_2scenario_2scenario_8cpp_source.html#l00168">scenario.cpp:168</a></div></div>
-</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph" alt=""/></div>
+<map name="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph" id="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,83,38"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a8da68e881bfff4f6e84e910e9d1e03fd" title=" " alt="" coords="131,5,297,45"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="345,5,512,45"/>
+</map>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph" alt=""/></div>
-<map name="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph" id="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,83,60"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a8da68e881bfff4f6e84e910e9d1e03fd" title=" " alt="" coords="131,27,297,67"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title=" " alt="" coords="382,5,475,31"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="345,55,512,95"/>
-</map>
-</div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_icgraph" id="aclassore_1_1analytics_1_1_c_s_v_scenario_generator_ac5fadb7881ae954770d26f6ee7fc4c72_icgraph">
 <area shape="rect" title=" " alt="" coords="211,5,288,31"/>

@@ -76,11 +76,97 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">calendars.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &lt;boost/test/data/test_case.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="parsers_8hpp_source.html">ored/utilities/parsers.hpp</a>&gt;</code><br />
+<code>#include &lt;oret/toplevelfixture.hpp&gt;</code><br />
+<code>#include &lt;ql/time/calendars/all.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/amendedcalendar.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/belgium.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/cme.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/colombia.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/france.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/ice.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/luxembourg.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/malaysia.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/peru.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/philippines.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/russia.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/spain.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/switzerland.hpp&gt;</code><br />
+<code>#include &lt;qle/calendars/wmr.hpp&gt;</code><br />
+</div>
 <p><a href="calendars_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9ef60eb2ed4d9e44017c50a458727894"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="calendars_8cpp.html#a9ef60eb2ed4d9e44017c50a458727894">BOOST_DATA_TEST_CASE</a> (testCalendarNameParsing, bdata::make(calendarData), calendarDatum)</td></tr>
+<tr class="separator:a9ef60eb2ed4d9e44017c50a458727894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9ef60eb2ed4d9e44017c50a458727894" name="a9ef60eb2ed4d9e44017c50a458727894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ef60eb2ed4d9e44017c50a458727894">&#9670;&#160;</a></span>BOOST_DATA_TEST_CASE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_DATA_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testCalendarNameParsing&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bdata::make(calendarData)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">calendarDatum&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="calendars_8cpp_source.html#l00149">149</a> of file <a class="el" href="calendars_8cpp_source.html">calendars.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>                                                                                      {</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    Calendar <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>;</div>
+<div class="line"><span class="lineno">  152</span>    BOOST_REQUIRE_NO_THROW(<a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a> = <a class="code hl_function" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">ore::data::parseCalendar</a>(calendarDatum.calendarName));</div>
+<div class="line"><span class="lineno">  153</span>    BOOST_REQUIRE(!<a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.empty());</div>
+<div class="line"><span class="lineno">  154</span>    BOOST_CHECK_EQUAL(<a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>, calendarDatum.calendar);</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Parsed &quot;</span> &lt;&lt; calendarDatum.calendarName &lt;&lt; <span class="stringliteral">&quot; and got &quot;</span> &lt;&lt; <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.name());</div>
+<div class="line"><span class="lineno">  157</span>}</div>
+<div class="ttc" id="agroup__utilities_html_ga0f72d6fcccae10a674bdcd5095200f14"><div class="ttname"><a href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">ore::data::parseCalendar</a></div><div class="ttdeci">Calendar parseCalendar(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Calendar.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00152">parsers.cpp:152</a></div></div>
+<div class="ttc" id="autilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="calendars_8cpp_a9ef60eb2ed4d9e44017c50a458727894_cgraph.png" border="0" usemap="#acalendars_8cpp_a9ef60eb2ed4d9e44017c50a458727894_cgraph" alt=""/></div>
+<map name="acalendars_8cpp_a9ef60eb2ed4d9e44017c50a458727894_cgraph" id="acalendars_8cpp_a9ef60eb2ed4d9e44017c50a458727894_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,196,31"/>
+<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="244,5,408,31"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

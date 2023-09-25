@@ -111,7 +111,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8996e7592f7df871d0d54f4dd476ee92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cds_8cpp.html#a8996e7592f7df871d0d54f4dd476ee92">BOOST_DATA_TEST_CASE</a> (testCreditDefaultSwap, bdata::make(marketInputs) ^ bdata::make(tradeInputs) ^ bdata::make(expNpvs), mkt, trd, <a class="elRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>)</td></tr>
+<tr class="memitem:a8996e7592f7df871d0d54f4dd476ee92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cds_8cpp.html#a8996e7592f7df871d0d54f4dd476ee92">BOOST_DATA_TEST_CASE</a> (testCreditDefaultSwap, bdata::make(marketInputs) ^ bdata::make(tradeInputs) ^ bdata::make(expNpvs), mkt, trd, exp)</td></tr>
 <tr class="separator:a8996e7592f7df871d0d54f4dd476ee92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b66c7738850568d96fd0ecc0428915d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cds_8cpp.html#a7b66c7738850568d96fd0ecc0428915d">BOOST_DATA_TEST_CASE_F</a> (TopLevelFixture, testCreditDefaultSwapBuilding, bdata::make(trades), trade)</td></tr>
 <tr class="separator:a7b66c7738850568d96fd0ecc0428915d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +163,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>&#160;</td>
+          <td class="paramtype">exp&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -179,18 +179,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  233</span> </div>
 <div class="line"><span class="lineno">  234</span>    BOOST_CHECK_CLOSE(cdsNpv(mkt, trd), exp, 0.01);</div>
 <div class="line"><span class="lineno">  235</span>}</div>
-</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="cds_8cpp_a8996e7592f7df871d0d54f4dd476ee92_cgraph.png" border="0" usemap="#acds_8cpp_a8996e7592f7df871d0d54f4dd476ee92_cgraph" alt=""/></div>
-<map name="acds_8cpp_a8996e7592f7df871d0d54f4dd476ee92_cgraph" id="acds_8cpp_a8996e7592f7df871d0d54f4dd476ee92_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,196,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="244,5,287,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7b66c7738850568d96fd0ecc0428915d" name="a7b66c7738850568d96fd0ecc0428915d"></a>
@@ -264,11 +253,11 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_portfolio_html_a48b90275c7bccf5822418ef47bb922ee"><div class="ttname"><a href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee">ore::data::Portfolio::size</a></div><div class="ttdeci">QuantLib::Size size() const</div><div class="ttdoc">Portfolio size.</div><div class="ttdef"><b>Definition:</b> <a href="portfolio_8hpp_source.html#l00067">portfolio.hpp:67</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_portfolio_html_ad63b8b7a5b528b65cd81abe0bbbbc404"><div class="ttname"><a href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">ore::data::Portfolio::trades</a></div><div class="ttdeci">const std::map&lt; std::string, boost::shared_ptr&lt; Trade &gt; &gt; &amp; trades() const</div><div class="ttdoc">Return the map tradeId -&gt; trade.</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2portfolio_8cpp_source.html#l00161">portfolio.cpp:161</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_x_m_l_serializable_html_ac3ac11cf6a3155713cea6a1a67e2b64d"><div class="ttname"><a href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d">ore::data::XMLSerializable::fromFile</a></div><div class="ttdeci">void fromFile(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="xmlutils_8cpp_source.html#l00173">xmlutils.cpp:173</a></div></div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cds_8cpp_a7b66c7738850568d96fd0ecc0428915d_cgraph.png" border="0" usemap="#acds_8cpp_a7b66c7738850568d96fd0ecc0428915d_cgraph" alt=""/></div>
 <map name="acds_8cpp_a7b66c7738850568d96fd0ecc0428915d_cgraph" id="acds_8cpp_a7b66c7738850568d96fd0ecc0428915d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,163,211,189"/>
@@ -383,11 +372,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  308</span>        }</div>
 <div class="line"><span class="lineno">  309</span>    }</div>
 <div class="line"><span class="lineno">  310</span>}</div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cds_8cpp_a9cd88dc27cb4c692bf99276462cee565_cgraph.png" border="0" usemap="#acds_8cpp_a9cd88dc27cb4c692bf99276462cee565_cgraph" alt=""/></div>
 <map name="acds_8cpp_a9cd88dc27cb4c692bf99276462cee565_cgraph" id="acds_8cpp_a9cd88dc27cb4c692bf99276462cee565_cgraph">
 <area shape="rect" title=" " alt="" coords="5,131,196,157"/>

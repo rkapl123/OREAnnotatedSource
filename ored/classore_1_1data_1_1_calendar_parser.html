@@ -221,10 +221,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   88</span>                QL_FAIL(<span class="stringliteral">&quot;Cannot convert \&quot;&quot;</span> &lt;&lt; <a class="code hl_variable" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> &lt;&lt; <span class="stringliteral">&quot;\&quot; to Calendar [unhandled exception]&quot;</span>);</div>
 <div class="line"><span class="lineno">   89</span>            }</div>
 <div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(calendars);</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> QuantExt::LargeJointCalendar(calendars);</div>
 <div class="line"><span class="lineno">   92</span>    }</div>
 <div class="line"><span class="lineno">   93</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_large_joint_calendar_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_calendar_parser_html_a3bf0f0b965ffe8b5c2ad9a65dd09352d"><div class="ttname"><a href="classore_1_1data_1_1_calendar_parser.html#a3bf0f0b965ffe8b5c2ad9a65dd09352d">ore::data::CalendarParser::calendars_</a></div><div class="ttdeci">std::map&lt; std::string, QuantLib::Calendar &gt; calendars_</div><div class="ttdef"><b>Definition:</b> <a href="calendarparser_8hpp_source.html#l00045">calendarparser.hpp:45</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_calendar_parser_html_a9a3a4c95759d63234dae21f7379f0bc3"><div class="ttname"><a href="classore_1_1data_1_1_calendar_parser.html#a9a3a4c95759d63234dae21f7379f0bc3">ore::data::CalendarParser::parseCalendar</a></div><div class="ttdeci">QuantLib::Calendar parseCalendar(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="calendarparser_8cpp_source.html#l00061">calendarparser.cpp:61</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_calendar_parser_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_calendar_parser.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::CalendarParser::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="calendarparser_8hpp_source.html#l00044">calendarparser.hpp:44</a></div></div>
@@ -285,14 +284,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   97</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_calendar_parser.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
 <div class="line"><span class="lineno">   98</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1data_1_1_calendar_parser.html#a3bf0f0b965ffe8b5c2ad9a65dd09352d">calendars_</a>.find(newName);</div>
 <div class="line"><span class="lineno">   99</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classore_1_1data_1_1_calendar_parser.html#a3bf0f0b965ffe8b5c2ad9a65dd09352d">calendars_</a>.end()) {</div>
-<div class="line"><span class="lineno">  100</span>        <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_amended_calendar.html">QuantExt::AmendedCalendar</a> tmp(cal, newName);</div>
+<div class="line"><span class="lineno">  100</span>        QuantExt::AmendedCalendar tmp(cal, newName);</div>
 <div class="line"><span class="lineno">  101</span>        <a class="code hl_variable" href="classore_1_1data_1_1_calendar_parser.html#a3bf0f0b965ffe8b5c2ad9a65dd09352d">calendars_</a>[newName] = tmp;</div>
 <div class="line"><span class="lineno">  102</span>        <span class="keywordflow">return</span> std::move(tmp);</div>
 <div class="line"><span class="lineno">  103</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> it-&gt;second;</div>
 <div class="line"><span class="lineno">  105</span>    }</div>
 <div class="line"><span class="lineno">  106</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_amended_calendar_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_amended_calendar.html">QuantExt::AmendedCalendar</a></div></div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -354,22 +352,22 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  136</span>        {<span class="stringliteral">&quot;Cyprus&quot;</span>, Cyprus()},</div>
 <div class="line"><span class="lineno">  137</span>        {<span class="stringliteral">&quot;Denmark&quot;</span>, Denmark()},</div>
 <div class="line"><span class="lineno">  138</span>        {<span class="stringliteral">&quot;Greece&quot;</span>, Greece()},</div>
-<div class="line"><span class="lineno">  139</span>        {<span class="stringliteral">&quot;Ireland&quot;</span>, Ireland(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_ireland.html#abe41cfffd960e29a5d8b07be00aeda42a2051f10f9ae323ab3c29020030315f1b">Ireland::BankHolidays</a>)},</div>
+<div class="line"><span class="lineno">  139</span>        {<span class="stringliteral">&quot;Ireland&quot;</span>, Ireland(Ireland::BankHolidays)},</div>
 <div class="line"><span class="lineno">  140</span>        {<span class="stringliteral">&quot;Japan&quot;</span>, Japan()},</div>
 <div class="line"><span class="lineno">  141</span>        {<span class="stringliteral">&quot;Norway&quot;</span>, Norway()},</div>
-<div class="line"><span class="lineno">  142</span>        {<span class="stringliteral">&quot;Switzerland&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a>()},</div>
+<div class="line"><span class="lineno">  142</span>        {<span class="stringliteral">&quot;Switzerland&quot;</span>, QuantExt::Switzerland()},</div>
 <div class="line"><span class="lineno">  143</span>        {<span class="stringliteral">&quot;Sweden&quot;</span>, Sweden()},</div>
 <div class="line"><span class="lineno">  144</span>        {<span class="stringliteral">&quot;Belgium&quot;</span>, Belgium()},</div>
 <div class="line"><span class="lineno">  145</span>        {<span class="stringliteral">&quot;Luxembourg&quot;</span>, Luxembourg()},</div>
 <div class="line"><span class="lineno">  146</span>        {<span class="stringliteral">&quot;Spain&quot;</span>, Spain()},</div>
-<div class="line"><span class="lineno">  147</span>        {<span class="stringliteral">&quot;Austria&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_austria.html">QuantExt::Austria</a>()},</div>
+<div class="line"><span class="lineno">  147</span>        {<span class="stringliteral">&quot;Austria&quot;</span>, QuantExt::Austria()},</div>
 <div class="line"><span class="lineno">  148</span> </div>
 <div class="line"><span class="lineno">  149</span>        <span class="comment">// city specific calendars</span></div>
 <div class="line"><span class="lineno">  150</span>        {<span class="stringliteral">&quot;FRA&quot;</span>, Germany(Germany::Settlement)},</div>
 <div class="line"><span class="lineno">  151</span> </div>
 <div class="line"><span class="lineno">  152</span>        <span class="comment">// Country City</span></div>
 <div class="line"><span class="lineno">  153</span>        {<span class="stringliteral">&quot;CATO&quot;</span>, Canada()},</div>
-<div class="line"><span class="lineno">  154</span>        {<span class="stringliteral">&quot;CHZU&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a>()},</div>
+<div class="line"><span class="lineno">  154</span>        {<span class="stringliteral">&quot;CHZU&quot;</span>, QuantExt::Switzerland()},</div>
 <div class="line"><span class="lineno">  155</span>        {<span class="stringliteral">&quot;JPTO&quot;</span>, Japan()},</div>
 <div class="line"><span class="lineno">  156</span>        {<span class="stringliteral">&quot;GBLO&quot;</span>, UnitedKingdom()},</div>
 <div class="line"><span class="lineno">  157</span>        {<span class="stringliteral">&quot;SEST&quot;</span>, Sweden()},</div>
@@ -381,7 +379,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  163</span>        {<span class="stringliteral">&quot;BEBR&quot;</span>, Belgium()}, <span class="comment">// Belgium, Brussels not in QL,</span></div>
 <div class="line"><span class="lineno">  164</span> </div>
 <div class="line"><span class="lineno">  165</span>        <span class="comment">// ISO 3166-1 Alpha-2 code</span></div>
-<div class="line"><span class="lineno">  166</span>        {<span class="stringliteral">&quot;AT&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_austria.html">QuantExt::Austria</a>()},</div>
+<div class="line"><span class="lineno">  166</span>        {<span class="stringliteral">&quot;AT&quot;</span>, QuantExt::Austria()},</div>
 <div class="line"><span class="lineno">  167</span>        {<span class="stringliteral">&quot;AR&quot;</span>, Argentina()},</div>
 <div class="line"><span class="lineno">  168</span>        {<span class="stringliteral">&quot;AU&quot;</span>, Australia()},</div>
 <div class="line"><span class="lineno">  169</span>        {<span class="stringliteral">&quot;BW&quot;</span>, Botswana()},</div>
@@ -394,12 +392,12 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  176</span>        {<span class="stringliteral">&quot;CZ&quot;</span>, CzechRepublic()},</div>
 <div class="line"><span class="lineno">  177</span>        {<span class="stringliteral">&quot;DK&quot;</span>, Denmark()},</div>
 <div class="line"><span class="lineno">  178</span>        {<span class="stringliteral">&quot;FI&quot;</span>, Finland()},</div>
-<div class="line"><span class="lineno">  179</span>        {<span class="stringliteral">&quot;FR&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_france.html">QuantExt::France</a>()},</div>
+<div class="line"><span class="lineno">  179</span>        {<span class="stringliteral">&quot;FR&quot;</span>, QuantExt::France()},</div>
 <div class="line"><span class="lineno">  180</span>        {<span class="stringliteral">&quot;GR&quot;</span>, Greece()},</div>
 <div class="line"><span class="lineno">  181</span>        {<span class="stringliteral">&quot;DE&quot;</span>, Germany(Germany::Settlement)},</div>
 <div class="line"><span class="lineno">  182</span>        {<span class="stringliteral">&quot;HK&quot;</span>, HongKong()},</div>
 <div class="line"><span class="lineno">  183</span>        {<span class="stringliteral">&quot;HU&quot;</span>, Hungary()},</div>
-<div class="line"><span class="lineno">  184</span>        {<span class="stringliteral">&quot;IE&quot;</span>, Ireland(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_ireland.html#abe41cfffd960e29a5d8b07be00aeda42a2051f10f9ae323ab3c29020030315f1b">Ireland::BankHolidays</a>)},</div>
+<div class="line"><span class="lineno">  184</span>        {<span class="stringliteral">&quot;IE&quot;</span>, Ireland(Ireland::BankHolidays)},</div>
 <div class="line"><span class="lineno">  185</span>        {<span class="stringliteral">&quot;IS&quot;</span>, Iceland()},</div>
 <div class="line"><span class="lineno">  186</span>        {<span class="stringliteral">&quot;IN&quot;</span>, India()},</div>
 <div class="line"><span class="lineno">  187</span>        {<span class="stringliteral">&quot;ID&quot;</span>, Indonesia()},</div>
@@ -421,7 +419,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  203</span>        {<span class="stringliteral">&quot;ZA&quot;</span>, SouthAfrica()},</div>
 <div class="line"><span class="lineno">  204</span>        {<span class="stringliteral">&quot;KR&quot;</span>, SouthKorea(SouthKorea::Settlement)},</div>
 <div class="line"><span class="lineno">  205</span>        {<span class="stringliteral">&quot;SE&quot;</span>, Sweden()},</div>
-<div class="line"><span class="lineno">  206</span>        {<span class="stringliteral">&quot;CH&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a>()},</div>
+<div class="line"><span class="lineno">  206</span>        {<span class="stringliteral">&quot;CH&quot;</span>, QuantExt::Switzerland()},</div>
 <div class="line"><span class="lineno">  207</span>        {<span class="stringliteral">&quot;TW&quot;</span>, Taiwan()},</div>
 <div class="line"><span class="lineno">  208</span>        {<span class="stringliteral">&quot;TH&quot;</span>, Thailand()},</div>
 <div class="line"><span class="lineno">  209</span>        {<span class="stringliteral">&quot;TR&quot;</span>, Turkey()},</div>
@@ -431,12 +429,12 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  213</span>        {<span class="stringliteral">&quot;BE&quot;</span>, Belgium()},</div>
 <div class="line"><span class="lineno">  214</span>        {<span class="stringliteral">&quot;LU&quot;</span>, Luxembourg()},</div>
 <div class="line"><span class="lineno">  215</span>        {<span class="stringliteral">&quot;ES&quot;</span>, Spain()},</div>
-<div class="line"><span class="lineno">  216</span>        {<span class="stringliteral">&quot;AT&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_austria.html">QuantExt::Austria</a>()},</div>
+<div class="line"><span class="lineno">  216</span>        {<span class="stringliteral">&quot;AT&quot;</span>, QuantExt::Austria()},</div>
 <div class="line"><span class="lineno">  217</span> </div>
 <div class="line"><span class="lineno">  218</span>        <span class="comment">// ISO 3166-1 Alpha-3 code</span></div>
 <div class="line"><span class="lineno">  219</span>        {<span class="stringliteral">&quot;ARG&quot;</span>, Argentina()},</div>
 <div class="line"><span class="lineno">  220</span>        {<span class="stringliteral">&quot;AUS&quot;</span>, Australia()},</div>
-<div class="line"><span class="lineno">  221</span>        {<span class="stringliteral">&quot;ATS&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_austria.html">QuantExt::Austria</a>()},</div>
+<div class="line"><span class="lineno">  221</span>        {<span class="stringliteral">&quot;ATS&quot;</span>, QuantExt::Austria()},</div>
 <div class="line"><span class="lineno">  222</span>        {<span class="stringliteral">&quot;BWA&quot;</span>, Botswana()},</div>
 <div class="line"><span class="lineno">  223</span>        {<span class="stringliteral">&quot;BRA&quot;</span>, Brazil()},</div>
 <div class="line"><span class="lineno">  224</span>        {<span class="stringliteral">&quot;CAN&quot;</span>, Canada()},</div>
@@ -454,7 +452,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  236</span>        {<span class="stringliteral">&quot;HUN&quot;</span>, Hungary()},</div>
 <div class="line"><span class="lineno">  237</span>        {<span class="stringliteral">&quot;ISL&quot;</span>, Iceland()},</div>
 <div class="line"><span class="lineno">  238</span> </div>
-<div class="line"><span class="lineno">  239</span>        {<span class="stringliteral">&quot;IRL&quot;</span>, Ireland(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_ireland.html#abe41cfffd960e29a5d8b07be00aeda42a2051f10f9ae323ab3c29020030315f1b">Ireland::BankHolidays</a>)},</div>
+<div class="line"><span class="lineno">  239</span>        {<span class="stringliteral">&quot;IRL&quot;</span>, Ireland(Ireland::BankHolidays)},</div>
 <div class="line"><span class="lineno">  240</span>        {<span class="stringliteral">&quot;IND&quot;</span>, India()},</div>
 <div class="line"><span class="lineno">  241</span>        {<span class="stringliteral">&quot;IDN&quot;</span>, Indonesia()},</div>
 <div class="line"><span class="lineno">  242</span>        {<span class="stringliteral">&quot;ISR&quot;</span>, QuantLib::Israel()},</div>
@@ -475,7 +473,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  257</span>        {<span class="stringliteral">&quot;ZAF&quot;</span>, SouthAfrica()},</div>
 <div class="line"><span class="lineno">  258</span>        {<span class="stringliteral">&quot;KOR&quot;</span>, SouthKorea(SouthKorea::Settlement)},</div>
 <div class="line"><span class="lineno">  259</span>        {<span class="stringliteral">&quot;SWE&quot;</span>, Sweden()},</div>
-<div class="line"><span class="lineno">  260</span>        {<span class="stringliteral">&quot;CHE&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a>()},</div>
+<div class="line"><span class="lineno">  260</span>        {<span class="stringliteral">&quot;CHE&quot;</span>, QuantExt::Switzerland()},</div>
 <div class="line"><span class="lineno">  261</span>        {<span class="stringliteral">&quot;TWN&quot;</span>, Taiwan()},</div>
 <div class="line"><span class="lineno">  262</span>        {<span class="stringliteral">&quot;THA&quot;</span>, Thailand()},</div>
 <div class="line"><span class="lineno">  263</span>        {<span class="stringliteral">&quot;TUR&quot;</span>, Turkey()},</div>
@@ -485,7 +483,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  267</span>        {<span class="stringliteral">&quot;BEL&quot;</span>, Belgium()},</div>
 <div class="line"><span class="lineno">  268</span>        {<span class="stringliteral">&quot;LUX&quot;</span>, Luxembourg()},</div>
 <div class="line"><span class="lineno">  269</span>        {<span class="stringliteral">&quot;ESP&quot;</span>, Spain()},</div>
-<div class="line"><span class="lineno">  270</span>        {<span class="stringliteral">&quot;AUT&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_austria.html">QuantExt::Austria</a>()},</div>
+<div class="line"><span class="lineno">  270</span>        {<span class="stringliteral">&quot;AUT&quot;</span>, QuantExt::Austria()},</div>
 <div class="line"><span class="lineno">  271</span> </div>
 <div class="line"><span class="lineno">  272</span>        <span class="comment">// ISO 4217 Currency Alphabetic code</span></div>
 <div class="line"><span class="lineno">  273</span>        {<span class="stringliteral">&quot;ARS&quot;</span>, Argentina()},</div>
@@ -499,7 +497,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  281</span>        {<span class="stringliteral">&quot;COP&quot;</span>, Colombia()},</div>
 <div class="line"><span class="lineno">  282</span>        {<span class="stringliteral">&quot;CZK&quot;</span>, CzechRepublic()},</div>
 <div class="line"><span class="lineno">  283</span>        {<span class="stringliteral">&quot;DKK&quot;</span>, Denmark()},</div>
-<div class="line"><span class="lineno">  284</span>        {<span class="stringliteral">&quot;FRF&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_france.html">QuantExt::France</a>()},</div>
+<div class="line"><span class="lineno">  284</span>        {<span class="stringliteral">&quot;FRF&quot;</span>, QuantExt::France()},</div>
 <div class="line"><span class="lineno">  285</span>        {<span class="stringliteral">&quot;HKD&quot;</span>, HongKong()},</div>
 <div class="line"><span class="lineno">  286</span>        {<span class="stringliteral">&quot;HUF&quot;</span>, Hungary()},</div>
 <div class="line"><span class="lineno">  287</span>        {<span class="stringliteral">&quot;INR&quot;</span>, India()},</div>
@@ -522,7 +520,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  304</span>        {<span class="stringliteral">&quot;ZAR&quot;</span>, SouthAfrica()},</div>
 <div class="line"><span class="lineno">  305</span>        {<span class="stringliteral">&quot;KRW&quot;</span>, SouthKorea(SouthKorea::Settlement)},</div>
 <div class="line"><span class="lineno">  306</span>        {<span class="stringliteral">&quot;SEK&quot;</span>, Sweden()},</div>
-<div class="line"><span class="lineno">  307</span>        {<span class="stringliteral">&quot;CHF&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a>()},</div>
+<div class="line"><span class="lineno">  307</span>        {<span class="stringliteral">&quot;CHF&quot;</span>, QuantExt::Switzerland()},</div>
 <div class="line"><span class="lineno">  308</span>        {<span class="stringliteral">&quot;EUR&quot;</span>, TARGET()},</div>
 <div class="line"><span class="lineno">  309</span>        {<span class="stringliteral">&quot;TWD&quot;</span>, Taiwan()},</div>
 <div class="line"><span class="lineno">  310</span>        {<span class="stringliteral">&quot;THB&quot;</span>, Thailand()},</div>
@@ -532,7 +530,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  314</span>        {<span class="stringliteral">&quot;USD&quot;</span>, UnitedStates(UnitedStates::Settlement)},</div>
 <div class="line"><span class="lineno">  315</span>        {<span class="stringliteral">&quot;BEF&quot;</span>, Belgium()},</div>
 <div class="line"><span class="lineno">  316</span>        {<span class="stringliteral">&quot;LUF&quot;</span>, Luxembourg()},</div>
-<div class="line"><span class="lineno">  317</span>        {<span class="stringliteral">&quot;ATS&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_austria.html">QuantExt::Austria</a>()},</div>
+<div class="line"><span class="lineno">  317</span>        {<span class="stringliteral">&quot;ATS&quot;</span>, QuantExt::Austria()},</div>
 <div class="line"><span class="lineno">  318</span> </div>
 <div class="line"><span class="lineno">  319</span>        <span class="comment">// Minor Currencies</span></div>
 <div class="line"><span class="lineno">  320</span>        {<span class="stringliteral">&quot;GBp&quot;</span>, UnitedKingdom()},</div>
@@ -596,7 +594,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  378</span>        {<span class="stringliteral">&quot;XMIL&quot;</span>, Italy(Italy::Exchange)},</div>
 <div class="line"><span class="lineno">  379</span>        {<span class="stringliteral">&quot;MISX&quot;</span>, RussiaModified(Russia::MOEX)},</div>
 <div class="line"><span class="lineno">  380</span>        {<span class="stringliteral">&quot;XKRX&quot;</span>, SouthKorea(SouthKorea::KRX)},</div>
-<div class="line"><span class="lineno">  381</span>        {<span class="stringliteral">&quot;XSWX&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a>(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_switzerland.html#abe41cfffd960e29a5d8b07be00aeda42aadffddd32c3e7497e32cd7e430c9c106">QuantExt::Switzerland::SIX</a>)},</div>
+<div class="line"><span class="lineno">  381</span>        {<span class="stringliteral">&quot;XSWX&quot;</span>, QuantExt::Switzerland(QuantExt::Switzerland::SIX)},</div>
 <div class="line"><span class="lineno">  382</span>        {<span class="stringliteral">&quot;XLON&quot;</span>, UnitedKingdom(UnitedKingdom::Exchange)},</div>
 <div class="line"><span class="lineno">  383</span>        {<span class="stringliteral">&quot;XLME&quot;</span>, UnitedKingdom(UnitedKingdom::Metals)},</div>
 <div class="line"><span class="lineno">  384</span>        {<span class="stringliteral">&quot;XNYS&quot;</span>, UnitedStates(UnitedStates::NYSE)},</div>
@@ -604,7 +602,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  386</span> </div>
 <div class="line"><span class="lineno">  387</span>        <span class="comment">// Other / Legacy</span></div>
 <div class="line"><span class="lineno">  388</span>        {<span class="stringliteral">&quot;DEN&quot;</span>, Denmark()}, <span class="comment">// TODO: consider remove it, not ISO</span></div>
-<div class="line"><span class="lineno">  389</span>        {<span class="stringliteral">&quot;Telbor&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_israel.html">QuantExt::Israel</a>(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_israel.html#a35dff8baebbca7efb81b0c0c62adeea3aec0d3e457ca7a8b72dae4686071625a5">QuantExt::Israel::Telbor</a>)},</div>
+<div class="line"><span class="lineno">  389</span>        {<span class="stringliteral">&quot;Telbor&quot;</span>, QuantExt::Israel(QuantExt::Israel::Telbor)},</div>
 <div class="line"><span class="lineno">  390</span>        {<span class="stringliteral">&quot;London stock exchange&quot;</span>, UnitedKingdom(UnitedKingdom::Exchange)},</div>
 <div class="line"><span class="lineno">  391</span>        {<span class="stringliteral">&quot;LNB&quot;</span>, UnitedKingdom()},</div>
 <div class="line"><span class="lineno">  392</span>        {<span class="stringliteral">&quot;New York stock exchange&quot;</span>, UnitedStates(UnitedStates::NYSE)},</div>
@@ -620,19 +618,19 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  402</span>        {<span class="stringliteral">&quot;US settlement&quot;</span>, UnitedStates(UnitedStates::Settlement)},</div>
 <div class="line"><span class="lineno">  403</span>        {<span class="stringliteral">&quot;US with Libor impact&quot;</span>, UnitedStates(UnitedStates::LiborImpact)},</div>
 <div class="line"><span class="lineno">  404</span>        {<span class="stringliteral">&quot;WMR&quot;</span>, Wmr()},</div>
-<div class="line"><span class="lineno">  405</span>        {<span class="stringliteral">&quot;ZUB&quot;</span>, <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a>()},</div>
+<div class="line"><span class="lineno">  405</span>        {<span class="stringliteral">&quot;ZUB&quot;</span>, QuantExt::Switzerland()},</div>
 <div class="line"><span class="lineno">  406</span> </div>
 <div class="line"><span class="lineno">  407</span>        <span class="comment">// ICE exchange calendars</span></div>
-<div class="line"><span class="lineno">  408</span>        {<span class="stringliteral">&quot;ICE_FuturesUS&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a66dcf192b1777b9351c5b63b03421d17">ICE::FuturesUS</a>)},</div>
-<div class="line"><span class="lineno">  409</span>        {<span class="stringliteral">&quot;ICE_FuturesUS_1&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a5fbfcf55924accba82329e54e3191128">ICE::FuturesUS_1</a>)},</div>
-<div class="line"><span class="lineno">  410</span>        {<span class="stringliteral">&quot;ICE_FuturesUS_2&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a23d15ebdca140872b9de61218371bd12">ICE::FuturesUS_2</a>)},</div>
-<div class="line"><span class="lineno">  411</span>        {<span class="stringliteral">&quot;ICE_FuturesEU&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a11767a57ab6cffea5552ed924ca77ddf">ICE::FuturesEU</a>)},</div>
-<div class="line"><span class="lineno">  412</span>        {<span class="stringliteral">&quot;ICE_FuturesEU_1&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a0b9946b822a5f64db9cf697aeba2bd56">ICE::FuturesEU_1</a>)},</div>
-<div class="line"><span class="lineno">  413</span>        {<span class="stringliteral">&quot;ICE_EndexEnergy&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a67487d431666707fb9116f1a5b798f17">ICE::EndexEnergy</a>)},</div>
-<div class="line"><span class="lineno">  414</span>        {<span class="stringliteral">&quot;ICE_EndexEquities&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a70b6229123e734aee326f0b09353a2a6">ICE::EndexEquities</a>)},</div>
-<div class="line"><span class="lineno">  415</span>        {<span class="stringliteral">&quot;ICE_SwapTradeUS&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42abcf9f5283f4631af25a8060072c3ba99">ICE::SwapTradeUS</a>)},</div>
-<div class="line"><span class="lineno">  416</span>        {<span class="stringliteral">&quot;ICE_SwapTradeUK&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42acfbcd2fbb140b301393edc5b3292ee32">ICE::SwapTradeUK</a>)},</div>
-<div class="line"><span class="lineno">  417</span>        {<span class="stringliteral">&quot;ICE_FuturesSingapore&quot;</span>, ICE(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a248ddc88afd7a09f391f45d495e0a3f1">ICE::FuturesSingapore</a>)},</div>
+<div class="line"><span class="lineno">  408</span>        {<span class="stringliteral">&quot;ICE_FuturesUS&quot;</span>, ICE(ICE::FuturesUS)},</div>
+<div class="line"><span class="lineno">  409</span>        {<span class="stringliteral">&quot;ICE_FuturesUS_1&quot;</span>, ICE(ICE::FuturesUS_1)},</div>
+<div class="line"><span class="lineno">  410</span>        {<span class="stringliteral">&quot;ICE_FuturesUS_2&quot;</span>, ICE(ICE::FuturesUS_2)},</div>
+<div class="line"><span class="lineno">  411</span>        {<span class="stringliteral">&quot;ICE_FuturesEU&quot;</span>, ICE(ICE::FuturesEU)},</div>
+<div class="line"><span class="lineno">  412</span>        {<span class="stringliteral">&quot;ICE_FuturesEU_1&quot;</span>, ICE(ICE::FuturesEU_1)},</div>
+<div class="line"><span class="lineno">  413</span>        {<span class="stringliteral">&quot;ICE_EndexEnergy&quot;</span>, ICE(ICE::EndexEnergy)},</div>
+<div class="line"><span class="lineno">  414</span>        {<span class="stringliteral">&quot;ICE_EndexEquities&quot;</span>, ICE(ICE::EndexEquities)},</div>
+<div class="line"><span class="lineno">  415</span>        {<span class="stringliteral">&quot;ICE_SwapTradeUS&quot;</span>, ICE(ICE::SwapTradeUS)},</div>
+<div class="line"><span class="lineno">  416</span>        {<span class="stringliteral">&quot;ICE_SwapTradeUK&quot;</span>, ICE(ICE::SwapTradeUK)},</div>
+<div class="line"><span class="lineno">  417</span>        {<span class="stringliteral">&quot;ICE_FuturesSingapore&quot;</span>, ICE(ICE::FuturesSingapore)},</div>
 <div class="line"><span class="lineno">  418</span>        <span class="comment">// CME exchange calendar</span></div>
 <div class="line"><span class="lineno">  419</span>        {<span class="stringliteral">&quot;CME&quot;</span>, CME()},</div>
 <div class="line"><span class="lineno">  420</span> </div>
@@ -649,23 +647,6 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  431</span>        <a class="code hl_variable" href="classore_1_1data_1_1_calendar_parser.html#a3bf0f0b965ffe8b5c2ad9a65dd09352d">calendars_</a>[c.second.name()] = c.second;</div>
 <div class="line"><span class="lineno">  432</span>    }</div>
 <div class="line"><span class="lineno">  433</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_austria_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_austria.html">QuantExt::Austria</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_france_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_france.html">QuantExt::France</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a0b9946b822a5f64db9cf697aeba2bd56"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a0b9946b822a5f64db9cf697aeba2bd56">QuantExt::ICE::FuturesEU_1</a></div><div class="ttdeci">FuturesEU_1</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a11767a57ab6cffea5552ed924ca77ddf"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a11767a57ab6cffea5552ed924ca77ddf">QuantExt::ICE::FuturesEU</a></div><div class="ttdeci">FuturesEU</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a23d15ebdca140872b9de61218371bd12"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a23d15ebdca140872b9de61218371bd12">QuantExt::ICE::FuturesUS_2</a></div><div class="ttdeci">FuturesUS_2</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a248ddc88afd7a09f391f45d495e0a3f1"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a248ddc88afd7a09f391f45d495e0a3f1">QuantExt::ICE::FuturesSingapore</a></div><div class="ttdeci">FuturesSingapore</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a5fbfcf55924accba82329e54e3191128"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a5fbfcf55924accba82329e54e3191128">QuantExt::ICE::FuturesUS_1</a></div><div class="ttdeci">FuturesUS_1</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a66dcf192b1777b9351c5b63b03421d17"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a66dcf192b1777b9351c5b63b03421d17">QuantExt::ICE::FuturesUS</a></div><div class="ttdeci">FuturesUS</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a67487d431666707fb9116f1a5b798f17"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a67487d431666707fb9116f1a5b798f17">QuantExt::ICE::EndexEnergy</a></div><div class="ttdeci">EndexEnergy</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a70b6229123e734aee326f0b09353a2a6"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a70b6229123e734aee326f0b09353a2a6">QuantExt::ICE::EndexEquities</a></div><div class="ttdeci">EndexEquities</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42abcf9f5283f4631af25a8060072c3ba99"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42abcf9f5283f4631af25a8060072c3ba99">QuantExt::ICE::SwapTradeUS</a></div><div class="ttdeci">SwapTradeUS</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42acfbcd2fbb140b301393edc5b3292ee32"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42acfbcd2fbb140b301393edc5b3292ee32">QuantExt::ICE::SwapTradeUK</a></div><div class="ttdeci">SwapTradeUK</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_ireland_html_abe41cfffd960e29a5d8b07be00aeda42a2051f10f9ae323ab3c29020030315f1b"><div class="ttname"><a href="../qle/class_quant_ext_1_1_ireland.html#abe41cfffd960e29a5d8b07be00aeda42a2051f10f9ae323ab3c29020030315f1b">QuantExt::Ireland::BankHolidays</a></div><div class="ttdeci">BankHolidays</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_israel_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_israel.html">QuantExt::Israel</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_israel_html_a35dff8baebbca7efb81b0c0c62adeea3aec0d3e457ca7a8b72dae4686071625a5"><div class="ttname"><a href="../qle/class_quant_ext_1_1_israel.html#a35dff8baebbca7efb81b0c0c62adeea3aec0d3e457ca7a8b72dae4686071625a5">QuantExt::Israel::Telbor</a></div><div class="ttdeci">Telbor</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_switzerland_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_switzerland.html">QuantExt::Switzerland</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_switzerland_html_abe41cfffd960e29a5d8b07be00aeda42aadffddd32c3e7497e32cd7e430c9c106"><div class="ttname"><a href="../qle/class_quant_ext_1_1_switzerland.html#abe41cfffd960e29a5d8b07be00aeda42aadffddd32c3e7497e32cd7e430c9c106">QuantExt::Switzerland::SIX</a></div><div class="ttdeci">SIX</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_calendar_parser_html_adb1b3d0cf714c72883aba37c4fda5eff"><div class="ttname"><a href="classore_1_1data_1_1_calendar_parser.html#adb1b3d0cf714c72883aba37c4fda5eff">ore::data::CalendarParser::resetAddedAndRemovedHolidays</a></div><div class="ttdeci">void resetAddedAndRemovedHolidays()</div><div class="ttdef"><b>Definition:</b> <a href="calendarparser_8cpp_source.html#l00435">calendarparser.cpp:435</a></div></div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>

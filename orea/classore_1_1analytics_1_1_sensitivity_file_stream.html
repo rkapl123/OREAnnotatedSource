@@ -212,13 +212,12 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   40</span>    <span class="comment">// Open the file</span></div>
 <div class="line"><span class="lineno">   41</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa4c51adb6ab470071bba23d8731fcce8">file_</a>.open(fileName);</div>
 <div class="line"><span class="lineno">   42</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa4c51adb6ab470071bba23d8731fcce8">file_</a>.is_open(), <span class="stringliteral">&quot;error opening file &quot;</span> &lt;&lt; fileName);</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;The file &quot;</span> &lt;&lt; fileName &lt;&lt; <span class="stringliteral">&quot; has been opened for streaming&quot;</span>);</div>
+<div class="line"><span class="lineno">   43</span>    LOG(<span class="stringliteral">&quot;The file &quot;</span> &lt;&lt; fileName &lt;&lt; <span class="stringliteral">&quot; has been opened for streaming&quot;</span>);</div>
 <div class="line"><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensitivity_file_stream_html_a06f4793760db6b966f2e1351eb15d6fa"><div class="ttname"><a href="classore_1_1analytics_1_1_sensitivity_file_stream.html#a06f4793760db6b966f2e1351eb15d6fa">ore::analytics::SensitivityFileStream::lineNo_</a></div><div class="ttdeci">QuantLib::Size lineNo_</div><div class="ttdoc">Keep track of line number for messages.</div><div class="ttdef"><b>Definition:</b> <a href="sensitivityfilestream_8hpp_source.html#l00053">sensitivityfilestream.hpp:53</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensitivity_file_stream_html_a6261eec1d94dc6d4d78506029c235833"><div class="ttname"><a href="classore_1_1analytics_1_1_sensitivity_file_stream.html#a6261eec1d94dc6d4d78506029c235833">ore::analytics::SensitivityFileStream::comment_</a></div><div class="ttdeci">std::string comment_</div><div class="ttdoc">Csv file comment string.</div><div class="ttdef"><b>Definition:</b> <a href="sensitivityfilestream_8hpp_source.html#l00051">sensitivityfilestream.hpp:51</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensitivity_file_stream_html_a7b408246a5860551f7dad8544f06101e"><div class="ttname"><a href="classore_1_1analytics_1_1_sensitivity_file_stream.html#a7b408246a5860551f7dad8544f06101e">ore::analytics::SensitivityFileStream::delim_</a></div><div class="ttdeci">char delim_</div><div class="ttdoc">Csv file delimiter.</div><div class="ttdef"><b>Definition:</b> <a href="sensitivityfilestream_8hpp_source.html#l00049">sensitivityfilestream.hpp:49</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensitivity_file_stream_html_aa4c51adb6ab470071bba23d8731fcce8"><div class="ttname"><a href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa4c51adb6ab470071bba23d8731fcce8">ore::analytics::SensitivityFileStream::file_</a></div><div class="ttdeci">std::ifstream file_</div><div class="ttdoc">Handle on the csv file.</div><div class="ttdef"><b>Definition:</b> <a href="sensitivityfilestream_8hpp_source.html#l00047">sensitivityfilestream.hpp:47</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,7 +252,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa4c51adb6ab470071bba23d8731fcce8">file_</a>.is_open()) {</div>
 <div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa4c51adb6ab470071bba23d8731fcce8">file_</a>.close();</div>
 <div class="line"><span class="lineno">   50</span>    }</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;The file stream has been closed&quot;</span>);</div>
+<div class="line"><span class="lineno">   51</span>    LOG(<span class="stringliteral">&quot;The file stream has been closed&quot;</span>);</div>
 <div class="line"><span class="lineno">   52</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -305,7 +304,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   69</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><span class="lineno">   70</span> </div>
 <div class="line"><span class="lineno">   71</span>        <span class="comment">// Try to parse line in to a SensitivityRecord</span></div>
-<div class="line"><span class="lineno">   72</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Processing line number &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#a06f4793760db6b966f2e1351eb15d6fa">lineNo_</a> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; line);</div>
+<div class="line"><span class="lineno">   72</span>        DLOG(<span class="stringliteral">&quot;Processing line number &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#a06f4793760db6b966f2e1351eb15d6fa">lineNo_</a> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; line);</div>
 <div class="line"><span class="lineno">   73</span>        vector&lt;string&gt; entries;</div>
 <div class="line"><span class="lineno">   74</span>        boost::split(</div>
 <div class="line"><span class="lineno">   75</span>            entries, line, [<span class="keyword">this</span>](<span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> c == <a class="code hl_variable" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#a7b408246a5860551f7dad8544f06101e">delim_</a>; }, boost::token_compress_off);</div>
@@ -316,7 +315,6 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> SensitivityRecord();</div>
 <div class="line"><span class="lineno">   81</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensitivity_file_stream_html_aa6be739dbe06b71f4327d90413fb6031"><div class="ttname"><a href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa6be739dbe06b71f4327d90413fb6031">ore::analytics::SensitivityFileStream::processRecord</a></div><div class="ttdeci">SensitivityRecord processRecord(const std::vector&lt; std::string &gt; &amp;entries) const</div><div class="ttdoc">Create a record from a collection of strings.</div><div class="ttdef"><b>Definition:</b> <a href="sensitivityfilestream_8cpp_source.html#l00090">sensitivityfilestream.cpp:90</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -324,14 +322,10 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_sensitivity_file_stream_af17e57cfee2da5808c13f9f4c014f676_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_sensitivity_file_stream_af17e57cfee2da5808c13f9f4c014f676_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_sensitivity_file_stream_af17e57cfee2da5808c13f9f4c014f676_cgraph" id="aclassore_1_1analytics_1_1_sensitivity_file_stream_af17e57cfee2da5808c13f9f4c014f676_cgraph">
-<area shape="rect" title="Returns the next SensitivityRecord in the stream." alt="" coords="5,119,52,145"/>
-<area shape="rect" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa6be739dbe06b71f4327d90413fb6031" title="Create a record from a collection of strings." alt="" coords="100,119,209,145"/>
+<area shape="rect" title="Returns the next SensitivityRecord in the stream." alt="" coords="5,37,52,62"/>
+<area shape="rect" href="classore_1_1analytics_1_1_sensitivity_file_stream.html#aa6be739dbe06b71f4327d90413fb6031" title="Create a record from a collection of strings." alt="" coords="100,37,209,62"/>
 <area shape="rect" href="namespaceore_1_1analytics.html#aa478be5ad07eb7f927efe3292773a77c" title=" " alt="" coords="257,29,433,69"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga94621f11193864fa1338296232dc5be9" title=" " alt="" coords="305,94,385,119"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title=" " alt="" coords="305,143,385,169"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581" title=" " alt="" coords="267,193,423,218"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title=" " alt="" coords="518,9,611,34"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="481,59,648,99"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="481,29,648,69"/>
 </map>
 </div>
 
@@ -407,28 +401,25 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    SensitivityRecord sr;</div>
 <div class="line"><span class="lineno">   95</span>    sr.tradeId = entries[0];</div>
-<div class="line"><span class="lineno">   96</span>    sr.isPar = <a class="code hl_functionRef" href="../ored/group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(entries[1]);</div>
+<div class="line"><span class="lineno">   96</span>    sr.isPar = parseBool(entries[1]);</div>
 <div class="line"><span class="lineno">   97</span> </div>
 <div class="line"><span class="lineno">   98</span>    <span class="keyword">auto</span> p = <a class="code hl_function" href="namespaceore_1_1analytics.html#aa478be5ad07eb7f927efe3292773a77c">deconstructFactor</a>(entries[2]);</div>
 <div class="line"><span class="lineno">   99</span>    sr.key_1 = p.first;</div>
 <div class="line"><span class="lineno">  100</span>    sr.desc_1 = p.second;</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_functionRef" href="../ored/group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581">tryParseReal</a>(entries[3], sr.shift_1);</div>
+<div class="line"><span class="lineno">  101</span>    tryParseReal(entries[3], sr.shift_1);</div>
 <div class="line"><span class="lineno">  102</span> </div>
 <div class="line"><span class="lineno">  103</span>    p = <a class="code hl_function" href="namespaceore_1_1analytics.html#aa478be5ad07eb7f927efe3292773a77c">deconstructFactor</a>(entries[4]);</div>
 <div class="line"><span class="lineno">  104</span>    sr.key_2 = p.first;</div>
 <div class="line"><span class="lineno">  105</span>    sr.desc_2 = p.second;</div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_functionRef" href="../ored/group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581">tryParseReal</a>(entries[5], sr.shift_2);</div>
+<div class="line"><span class="lineno">  106</span>    tryParseReal(entries[5], sr.shift_2);</div>
 <div class="line"><span class="lineno">  107</span> </div>
 <div class="line"><span class="lineno">  108</span>    sr.currency = entries[6];</div>
-<div class="line"><span class="lineno">  109</span>    sr.baseNpv = <a class="code hl_functionRef" href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(entries[7]);</div>
-<div class="line"><span class="lineno">  110</span>    sr.delta = <a class="code hl_functionRef" href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(entries[8]);</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_functionRef" href="../ored/group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581">tryParseReal</a>(entries[9], sr.gamma); <span class="comment">// might be #N/A, if not computed</span></div>
+<div class="line"><span class="lineno">  109</span>    sr.baseNpv = parseReal(entries[7]);</div>
+<div class="line"><span class="lineno">  110</span>    sr.delta = parseReal(entries[8]);</div>
+<div class="line"><span class="lineno">  111</span>    tryParseReal(entries[9], sr.gamma); <span class="comment">// might be #N/A, if not computed</span></div>
 <div class="line"><span class="lineno">  112</span> </div>
 <div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> sr;</div>
 <div class="line"><span class="lineno">  114</span>}</div>
-<div class="ttc" id="agroup__utilities_html_ga3447951aa05e25440d0d5b7eecfce581"><div class="ttname"><a href="../ored/group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581">ore::data::tryParseReal</a></div><div class="ttdeci">bool tryParseReal(const string &amp;s, QuantLib::Real &amp;result)</div></div>
-<div class="ttc" id="agroup__utilities_html_ga94621f11193864fa1338296232dc5be9"><div class="ttname"><a href="../ored/group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a></div><div class="ttdeci">bool parseBool(const string &amp;s)</div></div>
-<div class="ttc" id="agroup__utilities_html_gad1db2a68f9a73667c3b4084d63955bdd"><div class="ttname"><a href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a></div><div class="ttdeci">Real parseReal(const string &amp;s)</div></div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_aa478be5ad07eb7f927efe3292773a77c"><div class="ttname"><a href="namespaceore_1_1analytics.html#aa478be5ad07eb7f927efe3292773a77c">ore::analytics::deconstructFactor</a></div><div class="ttdeci">pair&lt; RiskFactorKey, string &gt; deconstructFactor(const string &amp;factor)</div><div class="ttdef"><b>Definition:</b> <a href="orea_2scenario_2shiftscenariogenerator_8cpp_source.html#l00175">shiftscenariogenerator.cpp:175</a></div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -437,13 +428,9 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_sensitivity_file_stream_aa6be739dbe06b71f4327d90413fb6031_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_sensitivity_file_stream_aa6be739dbe06b71f4327d90413fb6031_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_sensitivity_file_stream_aa6be739dbe06b71f4327d90413fb6031_cgraph" id="aclassore_1_1analytics_1_1_sensitivity_file_stream_aa6be739dbe06b71f4327d90413fb6031_cgraph">
-<area shape="rect" title="Create a record from a collection of strings." alt="" coords="5,119,115,145"/>
+<area shape="rect" title="Create a record from a collection of strings." alt="" coords="5,37,115,62"/>
 <area shape="rect" href="namespaceore_1_1analytics.html#aa478be5ad07eb7f927efe3292773a77c" title=" " alt="" coords="163,29,339,69"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga94621f11193864fa1338296232dc5be9" title=" " alt="" coords="211,94,291,119"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title=" " alt="" coords="211,143,291,169"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581" title=" " alt="" coords="173,193,329,218"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title=" " alt="" coords="423,9,517,34"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="387,59,553,99"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a4b5d9f9ea08fbcde62dbd946df1c99cf" title=" " alt="" coords="387,29,553,69"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">

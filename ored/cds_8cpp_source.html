@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceore_1_1data.html">ore::data</a>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">using </span>ore::test::TopLevelFixture;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">namespace </span><a class="code hl_namespaceRef" href="../qle/namespaceboost_1_1unit__test_1_1data.html">bdata</a> = <a class="code hl_namespaceRef" href="../qle/namespaceboost_1_1unit__test_1_1data.html">boost::unit_test::data</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">namespace </span>bdata = boost::unit_test::data;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
@@ -224,7 +224,7 @@ $(function() {
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>};</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">// Needed for BOOST_DATA_TEST_CASE below as it writes out the MarketInputs</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>ostream&amp; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a7490bdacbb14ada31cca8fd1df8ab543">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> MarketInputs&amp; m) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>ostream&amp; <a class="code hl_function" href="namespaceore_1_1data.html#a19530ede91a7f455dcf63bde157569ad">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> MarketInputs&amp; m) {</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; m.hazardRate &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; m.recoveryRate &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; m.liborRate &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
@@ -234,7 +234,7 @@ $(function() {
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">// Needed for BOOST_DATA_TEST_CASE below as it writes out the TradeInputs</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>ostream&amp; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a7490bdacbb14ada31cca8fd1df8ab543">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> TradeInputs&amp; t) { <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; t.endDate &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; t.fixedRate &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>; }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>ostream&amp; <a class="code hl_function" href="namespaceore_1_1data.html#a19530ede91a7f455dcf63bde157569ad">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> TradeInputs&amp; t) { <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; t.endDate &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; t.fixedRate &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>; }</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>Real cdsNpv(<span class="keyword">const</span> MarketInputs&amp; m, <span class="keyword">const</span> TradeInputs&amp; t) {</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
@@ -309,10 +309,10 @@ $(function() {
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>BOOST_AUTO_TEST_SUITE(CreditDefaultSwapTests)</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="cds_8cpp.html#a8996e7592f7df871d0d54f4dd476ee92">  231</a></span><a class="code hl_function" href="cds_8cpp.html#a8996e7592f7df871d0d54f4dd476ee92">BOOST_DATA_TEST_CASE</a>(testCreditDefaultSwap, <a class="code hl_namespaceRef" href="../qle/namespaceboost_1_1unit__test_1_1data.html">bdata</a>::make(marketInputs) ^ <a class="code hl_namespaceRef" href="../qle/namespaceboost_1_1unit__test_1_1data.html">bdata</a>::make(tradeInputs) ^ <a class="code hl_namespaceRef" href="../qle/namespaceboost_1_1unit__test_1_1data.html">bdata</a>::make(expNpvs),</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="cds_8cpp.html#a8996e7592f7df871d0d54f4dd476ee92">  231</a></span><a class="code hl_function" href="cds_8cpp.html#a8996e7592f7df871d0d54f4dd476ee92">BOOST_DATA_TEST_CASE</a>(testCreditDefaultSwap, bdata::make(marketInputs) ^ bdata::make(tradeInputs) ^ bdata::make(expNpvs),</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                     mkt, trd, exp) {</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    BOOST_CHECK_CLOSE(cdsNpv(mkt, trd), <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>, 0.01);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    BOOST_CHECK_CLOSE(cdsNpv(mkt, trd), exp, 0.01);</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="cds_8cpp.html#a7b66c7738850568d96fd0ecc0428915d">  237</a></span><a class="code hl_function" href="cds_8cpp.html#a7b66c7738850568d96fd0ecc0428915d">BOOST_DATA_TEST_CASE_F</a>(TopLevelFixture, testCreditDefaultSwapBuilding, bdata::make(trades), trade) {</div>
@@ -464,11 +464,9 @@ $(function() {
 <div class="ttc" id="alegdata_8hpp_html"><div class="ttname"><a href="legdata_8hpp.html">legdata.hpp</a></div><div class="ttdoc">leg data model and serialization</div></div>
 <div class="ttc" id="aloader_8hpp_html"><div class="ttname"><a href="loader_8hpp.html">loader.hpp</a></div><div class="ttdoc">Market Datum Loader Interface.</div></div>
 <div class="ttc" id="amarketimpl_8hpp_html"><div class="ttname"><a href="marketimpl_8hpp.html">marketimpl.hpp</a></div><div class="ttdoc">An implementation of the Market class that stores the required objects in maps.</div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a11171c842d01ffacc4ec522e398070a9"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a></div><div class="ttdeci">RandomVariable exp(RandomVariable x)</div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a7490bdacbb14ada31cca8fd1df8ab543"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a7490bdacbb14ada31cca8fd1df8ab543">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, EquityReturnType t)</div></div>
-<div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="namespace_quant_lib.html">QuantLib</a></div></div>
-<div class="ttc" id="anamespaceboost_1_1unit__test_1_1data_html"><div class="ttname"><a href="../qle/namespaceboost_1_1unit__test_1_1data.html">boost::unit_test::data</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html"><div class="ttname"><a href="namespaceore_1_1data.html">ore::data</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs.html_source#l00028">namespaces.docs:28</a></div></div>
+<div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="namespace_quant_lib.html">QuantLib</a></div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00035">fixingdates.hpp:35</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html"><div class="ttname"><a href="namespaceore_1_1data.html">ore::data</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00028">namespaces.docs:28</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a19530ede91a7f455dcf63bde157569ad"><div class="ttname"><a href="namespaceore_1_1data.html#a19530ede91a7f455dcf63bde157569ad">ore::data::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, CorrelationCurveConfig::CorrelationType t)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2configuration_2correlationcurveconfig_8cpp_source.html#l00030">correlationcurveconfig.cpp:30</a></div></div>
 <div class="ttc" id="aportfolio_8hpp_html"><div class="ttname"><a href="portfolio_8hpp.html">portfolio.hpp</a></div><div class="ttdoc">Portfolio class.</div></div>
 <div class="ttc" id="aschedule_8hpp_html"><div class="ttname"><a href="schedule_8hpp.html">schedule.hpp</a></div><div class="ttdoc">trade schedule data model and serialization</div></div>
 <div class="ttc" id="atest_2commodityvolcurve_8cpp_html_a96a582300d10244c7df851066de48438"><div class="ttname"><a href="test_2commodityvolcurve_8cpp.html#a96a582300d10244c7df851066de48438">curveConfigs</a></div><div class="ttdeci">vector&lt; string &gt; curveConfigs</div><div class="ttdef"><b>Definition:</b> <a href="test_2commodityvolcurve_8cpp_source.html#l00525">commodityvolcurve.cpp:525</a></div></div>

@@ -99,10 +99,10 @@ $(function() {
 <code>#include &lt;<a class="el" href="to__string_8hpp_source.html">ored/utilities/to_string.hpp</a>&gt;</code><br />
 <code>#include &lt;ql/termstructures/volatility/equityfx/blackvariancesurface.hpp&gt;</code><br />
 <code>#include &lt;qle/indexes/dividendmanager.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/aposurface_8hpp.html">qle/termstructures/aposurface.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/blackvariancesurfacesparse_8hpp.html">qle/termstructures/blackvariancesurfacesparse.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/blackvolsurfacedelta_8hpp.html">qle/termstructures/blackvolsurfacedelta.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/blackvolsurfacewithatm_8hpp.html">qle/termstructures/blackvolsurfacewithatm.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/termstructures/aposurface.hpp&gt;</code><br />
+<code>#include &lt;qle/termstructures/blackvariancesurfacesparse.hpp&gt;</code><br />
+<code>#include &lt;qle/termstructures/blackvolsurfacedelta.hpp&gt;</code><br />
+<code>#include &lt;qle/termstructures/blackvolsurfacewithatm.hpp&gt;</code><br />
 </div>
 <p><a href="test_2commodityvolcurve_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -286,26 +286,14 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  272</span>    Real v_e = 0.09;</div>
 <div class="line"><span class="lineno">  273</span>    <span class="comment">// at 3 years</span></div>
 <div class="line"><span class="lineno">  274</span>    Time t = volatility-&gt;dayCounter().yearFraction(asof, asof + 3 * Years);</div>
-<div class="line"><span class="lineno">  275</span>    Real v = <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a>((v_s * v_s * t_s + (v_e * v_e * t_e - v_s * v_s * t_s) * (t - t_s) / (t_e - t_s)) / t);</div>
+<div class="line"><span class="lineno">  275</span>    Real v = sqrt((v_s * v_s * t_s + (v_e * v_e * t_e - v_s * v_s * t_s) * (t - t_s) / (t_e - t_s)) / t);</div>
 <div class="line"><span class="lineno">  276</span>    BOOST_CHECK_CLOSE(volatility-&gt;blackVol(asof + 3 * Years, 1000.0), v, testTolerance);</div>
 <div class="line"><span class="lineno">  277</span>    BOOST_CHECK_CLOSE(volatility-&gt;blackVol(asof + 3 * Years, 1200.0), v, testTolerance);</div>
 <div class="line"><span class="lineno">  278</span>    <span class="comment">// at 6 years, extrapolation is with a flat vol</span></div>
 <div class="line"><span class="lineno">  279</span>    BOOST_CHECK_CLOSE(volatility-&gt;blackVol(asof + 6 * Years, 1000.0), v_e, testTolerance);</div>
 <div class="line"><span class="lineno">  280</span>    BOOST_CHECK_CLOSE(volatility-&gt;blackVol(asof + 6 * Years, 1200.0), v_e, testTolerance);</div>
 <div class="line"><span class="lineno">  281</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a1b4a64a3620f987e65fec4ccf7cadcf2"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a></div><div class="ttdeci">RandomVariable sqrt(RandomVariable x)</div></div>
-</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="test_2commodityvolcurve_8cpp_a44ddfa6a405eb023a3a599fdbe9bcd0f_cgraph.png" border="0" usemap="#atest_2commodityvolcurve_8cpp_a44ddfa6a405eb023a3a599fdbe9bcd0f_cgraph" alt=""/></div>
-<map name="atest_2commodityvolcurve_8cpp_a44ddfa6a405eb023a3a599fdbe9bcd0f_cgraph" id="atest_2commodityvolcurve_8cpp_a44ddfa6a405eb023a3a599fdbe9bcd0f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,196,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2" title=" " alt="" coords="244,5,288,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aad1f411bc09de6a360add401393db70e" name="aad1f411bc09de6a360add401393db70e"></a>
@@ -334,7 +322,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  289</span> </div>
 <div class="line"><span class="lineno">  290</span>    <span class="comment">// Volatility configuration with expiry period vs. absolute strike matrix. Bilinear interpolation and flat</span></div>
 <div class="line"><span class="lineno">  291</span>    <span class="comment">// extrapolation.</span></div>
-<div class="line"><span class="lineno">  292</span>    vector&lt;string&gt; <a class="code hl_variableRef" href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>{<span class="stringliteral">&quot;1150&quot;</span>, <span class="stringliteral">&quot;1190&quot;</span>};</div>
+<div class="line"><span class="lineno">  292</span>    vector&lt;string&gt; strikes{<span class="stringliteral">&quot;1150&quot;</span>, <span class="stringliteral">&quot;1190&quot;</span>};</div>
 <div class="line"><span class="lineno">  293</span>    vector&lt;string&gt; expiries{<span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;2Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>};</div>
 <div class="line"><span class="lineno">  294</span> </div>
 <div class="line"><span class="lineno">  295</span>    vector&lt;boost::shared_ptr&lt;VolatilityConfig&gt;&gt; vssc;</div>
@@ -373,7 +361,6 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  328</span>    BOOST_CHECK_CLOSE(volatility-&gt;blackVol(asof + 5 * Years, 1150.0), 0.085, testTolerance);</div>
 <div class="line"><span class="lineno">  329</span>    BOOST_CHECK_CLOSE(volatility-&gt;blackVol(asof + 5 * Years, 1190.0), 0.095, testTolerance);</div>
 <div class="line"><span class="lineno">  330</span>}</div>
-<div class="ttc" id="atest_2analyticcashsettledeuropeanengine_8cpp_html_aa7b6f0cca80627aec257d302511d608c"><div class="ttname"><a href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a></div><div class="ttdeci">vector&lt; Real &gt; strikes</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -768,11 +755,11 @@ Variables</h2></td></tr>
 <div class="ttc" id="agroup__utilities_html_ga59b5fdda574d90facae95dec2d13040d"><div class="ttname"><a href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d">ore::data::parseDate</a></div><div class="ttdeci">Date parseDate(const string &amp;s)</div><div class="ttdoc">Convert std::string to QuantLib::Date.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00052">parsers.cpp:52</a></div></div>
 <div class="ttc" id="agroup__utilities_html_gad1db2a68f9a73667c3b4084d63955bdd"><div class="ttname"><a href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">ore::data::parseReal</a></div><div class="ttdeci">Real parseReal(const string &amp;s)</div><div class="ttdoc">Convert text to Real.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00113">parsers.cpp:113</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a1dd3178717c03aef7d6851a3dfd92207ad4192ca9679d38110983141b896eebbf"><div class="ttname"><a href="namespaceore_1_1data.html#a1dd3178717c03aef7d6851a3dfd92207ad4192ca9679d38110983141b896eebbf">ore::data::MomentType::Volatility</a></div><div class="ttdeci">@ Volatility</div></div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2commodityvolcurve_8cpp_a8614f16d649a5fb64b81ce0ee6f49d89_cgraph.png" border="0" usemap="#atest_2commodityvolcurve_8cpp_a8614f16d649a5fb64b81ce0ee6f49d89_cgraph" alt=""/></div>
 <map name="atest_2commodityvolcurve_8cpp_a8614f16d649a5fb64b81ce0ee6f49d89_cgraph" id="atest_2commodityvolcurve_8cpp_a8614f16d649a5fb64b81ce0ee6f49d89_cgraph">
 <area shape="rect" title=" " alt="" coords="5,168,196,193"/>
@@ -892,11 +879,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  674</span>                       &lt;&lt; fixed &lt;&lt; setprecision(12) &lt;&lt; volUpperStrike &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; volUpperExtrapStrike &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><span class="lineno">  675</span>    BOOST_CHECK_SMALL(volUpperStrike - volUpperExtrapStrike, tol);</div>
 <div class="line"><span class="lineno">  676</span>}</div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2commodityvolcurve_8cpp_abc646673a48ac9d2a9b57e0c54250195_cgraph.png" border="0" usemap="#atest_2commodityvolcurve_8cpp_abc646673a48ac9d2a9b57e0c54250195_cgraph" alt=""/></div>
 <map name="atest_2commodityvolcurve_8cpp_abc646673a48ac9d2a9b57e0c54250195_cgraph" id="atest_2commodityvolcurve_8cpp_abc646673a48ac9d2a9b57e0c54250195_cgraph">
 <area shape="rect" title=" " alt="" coords="5,168,196,193"/>
@@ -982,11 +969,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  711</span>        BOOST_CHECK_SMALL(difference, tol);</div>
 <div class="line"><span class="lineno">  712</span>    }</div>
 <div class="line"><span class="lineno">  713</span>}</div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2commodityvolcurve_8cpp_a6f750495eebfc246acfa03ade4e1c041_cgraph.png" border="0" usemap="#atest_2commodityvolcurve_8cpp_a6f750495eebfc246acfa03ade4e1c041_cgraph" alt=""/></div>
 <map name="atest_2commodityvolcurve_8cpp_a6f750495eebfc246acfa03ade4e1c041_cgraph" id="atest_2commodityvolcurve_8cpp_a6f750495eebfc246acfa03ade4e1c041_cgraph">
 <area shape="rect" title=" " alt="" coords="5,168,196,193"/>
@@ -1057,11 +1044,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  750</span>    <span class="comment">// Check equal.</span></div>
 <div class="line"><span class="lineno">  751</span>    BOOST_CHECK_EQUAL_COLLECTIONS(surfaceDates.begin(), surfaceDates.end(), expectedDates.begin(), expectedDates.end());</div>
 <div class="line"><span class="lineno">  752</span>}</div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2commodityvolcurve_8cpp_a020df78606b2b7a7f1ff9d89a1d1f9cd_cgraph.png" border="0" usemap="#atest_2commodityvolcurve_8cpp_a020df78606b2b7a7f1ff9d89a1d1f9cd_cgraph" alt=""/></div>
 <map name="atest_2commodityvolcurve_8cpp_a020df78606b2b7a7f1ff9d89a1d1f9cd_cgraph" id="atest_2commodityvolcurve_8cpp_a020df78606b2b7a7f1ff9d89a1d1f9cd_cgraph">
 <area shape="rect" title=" " alt="" coords="5,95,196,120"/>

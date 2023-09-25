@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="infjydata_8hpp.html">ored/model/inflation/infjydata.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;qle/models/marketobserver.hpp&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;qle/models/modelbuilder.hpp&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/infjyparameterization_8hpp.html">qle/models/infjyparameterization.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;qle/models/infjyparameterization.hpp&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span>data {</div>
@@ -242,7 +242,7 @@ $(function() {
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classore_1_1data_1_1_inf_jy_builder.html#a963ba81fda2b78c9565c4bbd02cd3504">pricesChanged</a>(<span class="keywordtype">bool</span> updateCache) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"></span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">    //! Return the market value of the given calibration helper</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment"></span>    QuantLib::Real <a class="code hl_function" href="classore_1_1data_1_1_inf_jy_builder.html#a0ab42808dfdb4cbc27855eae7f89d785">marketPrice</a>(<span class="keyword">const</span> boost::shared_ptr&lt;QuantLib::CalibrationHelper&gt;&amp; <a class="code hl_typedefRef" href="../qle/piecewiseatmoptionletcurve_8cpp.html#ac28af33f0db47fd24320c0ae0844971f">helper</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment"></span>    QuantLib::Real <a class="code hl_function" href="classore_1_1data_1_1_inf_jy_builder.html#a0ab42808dfdb4cbc27855eae7f89d785">marketPrice</a>(<span class="keyword">const</span> boost::shared_ptr&lt;QuantLib::CalibrationHelper&gt;&amp; helper) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>};</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
@@ -292,10 +292,8 @@ $(function() {
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_ab336651e3455fff1764bf576a5785bbd"><div class="ttname"><a href="classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">ore::data::Market::defaultConfiguration</a></div><div class="ttdeci">static const string defaultConfiguration</div><div class="ttdoc">Default configuration label.</div><div class="ttdef"><b>Definition:</b> <a href="market_8hpp_source.html#l00296">market.hpp:296</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_model_parameter_html"><div class="ttname"><a href="classore_1_1data_1_1_model_parameter.html">ore::data::ModelParameter</a></div><div class="ttdef"><b>Definition:</b> <a href="modelparameter_8hpp_source.html#l00038">modelparameter.hpp:38</a></div></div>
 <div class="ttc" id="ainfjydata_8hpp_html"><div class="ttname"><a href="infjydata_8hpp.html">infjydata.hpp</a></div><div class="ttdoc">Jarrow Yildirim inflation model component data for the cross asset model.</div></div>
-<div class="ttc" id="ainfjyparameterization_8hpp_html"><div class="ttname"><a href="../qle/infjyparameterization_8hpp.html">infjyparameterization.hpp</a></div></div>
 <div class="ttc" id="amarket_8hpp_html"><div class="ttname"><a href="market_8hpp.html">market.hpp</a></div><div class="ttdoc">Base Market class.</div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdoc">Serializable Credit Default Swap.</div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs.html_source#l00023">namespaces.docs:23</a></div></div>
-<div class="ttc" id="apiecewiseatmoptionletcurve_8cpp_html_ac28af33f0db47fd24320c0ae0844971f"><div class="ttname"><a href="../qle/piecewiseatmoptionletcurve_8cpp.html#ac28af33f0db47fd24320c0ae0844971f">helper</a></div><div class="ttdeci">QuantLib::BootstrapHelper&lt; QuantLib::OptionletVolatilityStructure &gt; helper</div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdoc">Serializable Credit Default Swap.</div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

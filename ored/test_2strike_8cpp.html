@@ -320,12 +320,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  122</span>     DeltaVolQuote::AtmType atmType = DeltaVolQuote::AtmFwd;</div>
 <div class="line"><span class="lineno">  123</span>     boost::optional&lt;DeltaVolQuote::DeltaType&gt; atmDeltaType;</div>
 <div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>     vector&lt;boost::shared_ptr&lt;BaseStrike&gt;&gt; <a class="code hl_variableRef" href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>;</div>
-<div class="line"><span class="lineno">  126</span>     <a class="code hl_variableRef" href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>.push_back(boost::make_shared&lt;AtmStrike&gt;(atmType, atmDeltaType));</div>
-<div class="line"><span class="lineno">  127</span>     <a class="code hl_variableRef" href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>.push_back(boost::make_shared&lt;AtmStrike&gt;(DeltaVolQuote::AtmFwd));</div>
+<div class="line"><span class="lineno">  125</span>     vector&lt;boost::shared_ptr&lt;BaseStrike&gt;&gt; strikes;</div>
+<div class="line"><span class="lineno">  126</span>     strikes.push_back(boost::make_shared&lt;AtmStrike&gt;(atmType, atmDeltaType));</div>
+<div class="line"><span class="lineno">  127</span>     strikes.push_back(boost::make_shared&lt;AtmStrike&gt;(DeltaVolQuote::AtmFwd));</div>
 <div class="line"><span class="lineno">  128</span>     BOOST_CHECK(*strikes[0] == *strikes[1]);</div>
 <div class="line"><span class="lineno">  129</span>}</div>
-<div class="ttc" id="atest_2analyticcashsettledeuropeanengine_8cpp_html_aa7b6f0cca80627aec257d302511d608c"><div class="ttname"><a href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a></div><div class="ttdeci">vector&lt; Real &gt; strikes</div></div>
 </div><!-- fragment -->
 </div>
 </div>

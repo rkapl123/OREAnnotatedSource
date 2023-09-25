@@ -199,9 +199,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  212</span>    m = p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e">fixings</a>(today);</div>
 <div class="line"><span class="lineno">  213</span> </div>
 <div class="line"><span class="lineno">  214</span>    <span class="comment">// Check the retrieved fixings against the expected results</span></div>
-<div class="line"><span class="lineno">  215</span>    <span class="keyword">auto</span> <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a> = tradeTypeExpected();</div>
+<div class="line"><span class="lineno">  215</span>    <span class="keyword">auto</span> exp = tradeTypeExpected();</div>
 <div class="line"><span class="lineno">  216</span>    <span class="keyword">auto</span> key = make_tuple(tradeType, tradeCase, includeSettlementDateFlows, enforcesTodaysHistoricFixings);</div>
-<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">if</span> (<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.count(key) == 0) {</div>
+<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">if</span> (exp.count(key) == 0) {</div>
 <div class="line"><span class="lineno">  218</span>        <span class="comment">// Expected result is no required fixings</span></div>
 <div class="line"><span class="lineno">  219</span>        BOOST_CHECK_MESSAGE(m.empty(), <span class="stringliteral">&quot;Expected no required fixings for [&quot;</span></div>
 <div class="line"><span class="lineno">  220</span>                                           &lt;&lt; tradeType &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; tradeCase &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  227</span> </div>
 <div class="line"><span class="lineno">  228</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  229</span>        <span class="comment">// Check the retrieved fixings against the expected fixings</span></div>
-<div class="line"><span class="lineno">  230</span>        <span class="keyword">auto</span> expMap = <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.<a class="code hl_functionRef" href="../qle/struct_quant_ext_1_1_random_variable.html#a52b7b894964a2a061ce79c386c3e3e8f">at</a>(key);</div>
+<div class="line"><span class="lineno">  230</span>        <span class="keyword">auto</span> expMap = exp.at(key);</div>
 <div class="line"><span class="lineno">  231</span>        BOOST_CHECK_EQUAL(expMap.size(), m.size());</div>
 <div class="line"><span class="lineno">  232</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : expMap) {</div>
 <div class="line"><span class="lineno">  233</span>            BOOST_CHECK_MESSAGE(m.count(kv.first), <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; kv.first &lt;&lt; <span class="stringliteral">&quot; in retrieved fixings&quot;</span>);</div>
@@ -242,8 +242,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_portfolio_html_ad63b8b7a5b528b65cd81abe0bbbbc404"><div class="ttname"><a href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">ore::data::Portfolio::trades</a></div><div class="ttdeci">const std::map&lt; std::string, boost::shared_ptr&lt; Trade &gt; &gt; &amp; trades() const</div><div class="ttdoc">Return the map tradeId -&gt; trade.</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2portfolio_8cpp_source.html#l00161">portfolio.cpp:161</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_x_m_l_serializable_html_ac3ac11cf6a3155713cea6a1a67e2b64d"><div class="ttname"><a href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d">ore::data::XMLSerializable::fromFile</a></div><div class="ttdeci">void fromFile(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="xmlutils_8cpp_source.html#l00173">xmlutils.cpp:173</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a11171c842d01ffacc4ec522e398070a9"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a></div><div class="ttdeci">RandomVariable exp(RandomVariable x)</div></div>
-<div class="ttc" id="astruct_quant_ext_1_1_random_variable_html_a52b7b894964a2a061ce79c386c3e3e8f"><div class="ttname"><a href="../qle/struct_quant_ext_1_1_random_variable.html#a52b7b894964a2a061ce79c386c3e3e8f">QuantExt::RandomVariable::at</a></div><div class="ttdeci">Real at(const Size i) const</div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -251,19 +249,17 @@ Functions</h2></td></tr>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2fixings_8cpp_ad30d7669059cad5a015cab351d16e3b7_cgraph.png" border="0" usemap="#atest_2fixings_8cpp_ad30d7669059cad5a015cab351d16e3b7_cgraph" alt=""/></div>
 <map name="atest_2fixings_8cpp_ad30d7669059cad5a015cab351d16e3b7_cgraph" id="atest_2fixings_8cpp_ad30d7669059cad5a015cab351d16e3b7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,233,211,259"/>
-<area shape="rect" target="_parent" href="../qle/struct_quant_ext_1_1_random_variable.html#a52b7b894964a2a061ce79c386c3e3e8f" title=" " alt="" coords="259,5,457,31"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a465da53bfc5c5739485ec876bf514e42" title="Call build on all trades in the portfolio, the context is included in error messages." alt="" coords="294,55,422,95"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="337,120,379,145"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e" title=" " alt="" coords="294,194,422,234"/>
-<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d" title=" " alt="" coords="271,258,445,298"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee" title="Portfolio size." alt="" coords="294,322,422,362"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="293,411,423,436"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404" title="Return the map tradeId &#45;&gt; trade." alt="" coords="294,461,422,501"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#aa132f7e3db9728b12a14c975c9714c58" title="Does this portfolio build failed trades?" alt="" coords="527,27,657,67"/>
-<area shape="rect" href="namespaceore_1_1data.html#af7851439c1cfcd8eca85761ced5f9f63" title=" " alt="" coords="522,92,662,117"/>
-<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#a52f896048a4e04b36fcfc8fa3de6a9b4" title=" " alt="" coords="505,226,679,266"/>
-<area shape="rect" href="classore_1_1data_1_1_x_m_l_document.html#acba01e13c110d0f183c9c0f275061e3f" title=" " alt="" coords="509,290,675,330"/>
+<area shape="rect" title=" " alt="" coords="5,225,211,250"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a465da53bfc5c5739485ec876bf514e42" title="Call build on all trades in the portfolio, the context is included in error messages." alt="" coords="281,33,409,73"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e" title=" " alt="" coords="281,121,409,161"/>
+<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d" title=" " alt="" coords="259,185,432,225"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee" title="Portfolio size." alt="" coords="281,249,409,289"/>
+<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="280,338,411,363"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404" title="Return the map tradeId &#45;&gt; trade." alt="" coords="281,388,409,428"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#aa132f7e3db9728b12a14c975c9714c58" title="Does this portfolio build failed trades?" alt="" coords="501,5,632,45"/>
+<area shape="rect" href="namespaceore_1_1data.html#af7851439c1cfcd8eca85761ced5f9f63" title=" " alt="" coords="497,70,637,95"/>
+<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#a52f896048a4e04b36fcfc8fa3de6a9b4" title=" " alt="" coords="480,153,653,193"/>
+<area shape="rect" href="classore_1_1data_1_1_x_m_l_document.html#acba01e13c110d0f183c9c0f275061e3f" title=" " alt="" coords="484,217,649,257"/>
 </map>
 </div>
 
@@ -495,10 +491,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  363</span>    m = p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e">fixings</a>(today);</div>
 <div class="line"><span class="lineno">  364</span> </div>
 <div class="line"><span class="lineno">  365</span>    <span class="comment">// Expected results</span></div>
-<div class="line"><span class="lineno">  366</span>    map&lt;string, Date&gt; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a> = {{<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, Date(5, Feb, 2019)}, {<span class="stringliteral">&quot;EUR-EURIBOR-3M&quot;</span>, Date(5, Feb, 2019)}};</div>
+<div class="line"><span class="lineno">  366</span>    map&lt;string, Date&gt; exp = {{<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, Date(5, Feb, 2019)}, {<span class="stringliteral">&quot;EUR-EURIBOR-3M&quot;</span>, Date(5, Feb, 2019)}};</div>
 <div class="line"><span class="lineno">  367</span> </div>
 <div class="line"><span class="lineno">  368</span>    <span class="comment">// Check the expected results against the actual results</span></div>
-<div class="line"><span class="lineno">  369</span>    BOOST_CHECK_EQUAL(m.size(), <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.<a class="code hl_functionRef" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">size</a>());</div>
+<div class="line"><span class="lineno">  369</span>    BOOST_CHECK_EQUAL(m.size(), exp.size());</div>
 <div class="line"><span class="lineno">  370</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : exp) {</div>
 <div class="line"><span class="lineno">  371</span>        BOOST_CHECK_MESSAGE(m.count(kv.first) == 1, <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; kv.first &lt;&lt; <span class="stringliteral">&quot; in retrieved fixings&quot;</span>);</div>
 <div class="line"><span class="lineno">  372</span>        <span class="keywordflow">if</span> (m.count(kv.first) == 1) {</div>
@@ -516,7 +512,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  384</span>    <span class="comment">// Trade should now not throw when we try to price it</span></div>
 <div class="line"><span class="lineno">  385</span>    BOOST_CHECK_NO_THROW(p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">trades</a>().begin()-&gt;second-&gt;instrument()-&gt;NPV());</div>
 <div class="line"><span class="lineno">  386</span>}</div>
-<div class="ttc" id="astruct_quant_ext_1_1_random_variable_html_acce0ab2cacc475b2434f24c65c91685a"><div class="ttname"><a href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">QuantExt::RandomVariable::size</a></div><div class="ttdeci">Size size() const</div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -524,18 +519,16 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2fixings_8cpp_a8e7c4561d95fe2e9fce9d2ebb3fdb563_cgraph.png" border="0" usemap="#atest_2fixings_8cpp_a8e7c4561d95fe2e9fce9d2ebb3fdb563_cgraph" alt=""/></div>
 <map name="atest_2fixings_8cpp_a8e7c4561d95fe2e9fce9d2ebb3fdb563_cgraph" id="atest_2fixings_8cpp_a8e7c4561d95fe2e9fce9d2ebb3fdb563_cgraph">
-<area shape="rect" title=" " alt="" coords="5,243,213,269"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a465da53bfc5c5739485ec876bf514e42" title="Call build on all trades in the portfolio, the context is included in error messages." alt="" coords="287,33,415,73"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="330,98,373,123"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e" title=" " alt="" coords="287,172,415,212"/>
-<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d" title=" " alt="" coords="265,236,438,276"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee" title="Portfolio size." alt="" coords="287,300,415,340"/>
-<area shape="rect" target="_parent" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a" title=" " alt="" coords="261,364,441,404"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404" title="Return the map tradeId &#45;&gt; trade." alt="" coords="287,428,415,468"/>
-<area shape="rect" href="classore_1_1data_1_1_portfolio.html#aa132f7e3db9728b12a14c975c9714c58" title="Does this portfolio build failed trades?" alt="" coords="511,5,641,45"/>
-<area shape="rect" href="namespaceore_1_1data.html#af7851439c1cfcd8eca85761ced5f9f63" title=" " alt="" coords="506,70,646,95"/>
-<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#a52f896048a4e04b36fcfc8fa3de6a9b4" title=" " alt="" coords="489,204,663,244"/>
-<area shape="rect" href="classore_1_1data_1_1_x_m_l_document.html#acba01e13c110d0f183c9c0f275061e3f" title=" " alt="" coords="493,268,659,308"/>
+<area shape="rect" title=" " alt="" coords="5,193,213,218"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a465da53bfc5c5739485ec876bf514e42" title="Call build on all trades in the portfolio, the context is included in error messages." alt="" coords="284,33,412,73"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e" title=" " alt="" coords="284,121,412,161"/>
+<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d" title=" " alt="" coords="261,185,435,225"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee" title="Portfolio size." alt="" coords="284,249,412,289"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404" title="Return the map tradeId &#45;&gt; trade." alt="" coords="284,313,412,353"/>
+<area shape="rect" href="classore_1_1data_1_1_portfolio.html#aa132f7e3db9728b12a14c975c9714c58" title="Does this portfolio build failed trades?" alt="" coords="504,5,635,45"/>
+<area shape="rect" href="namespaceore_1_1data.html#af7851439c1cfcd8eca85761ced5f9f63" title=" " alt="" coords="499,70,639,95"/>
+<area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#a52f896048a4e04b36fcfc8fa3de6a9b4" title=" " alt="" coords="483,153,656,193"/>
+<area shape="rect" href="classore_1_1data_1_1_x_m_l_document.html#acba01e13c110d0f183c9c0f275061e3f" title=" " alt="" coords="487,217,652,257"/>
 </map>
 </div>
 
@@ -583,9 +576,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  400</span>        divMap[d.exDate] = d;</div>
 <div class="line"><span class="lineno">  401</span> </div>
 <div class="line"><span class="lineno">  402</span>    <span class="comment">// Expected results</span></div>
-<div class="line"><span class="lineno">  403</span>    map&lt;Date, Real&gt; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a> = {{Date(1, Nov, 2018), 25.313}, {Date(1, Dec, 2018), 15.957}};</div>
+<div class="line"><span class="lineno">  403</span>    map&lt;Date, Real&gt; exp = {{Date(1, Nov, 2018), 25.313}, {Date(1, Dec, 2018), 15.957}};</div>
 <div class="line"><span class="lineno">  404</span> </div>
-<div class="line"><span class="lineno">  405</span>    BOOST_CHECK_EQUAL(dividends.size(), <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.<a class="code hl_functionRef" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">size</a>());</div>
+<div class="line"><span class="lineno">  405</span>    BOOST_CHECK_EQUAL(dividends.size(), exp.size());</div>
 <div class="line"><span class="lineno">  406</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : exp) {</div>
 <div class="line"><span class="lineno">  407</span>        BOOST_CHECK_EQUAL(divMap[kv.first].rate, kv.second);</div>
 <div class="line"><span class="lineno">  408</span>    }</div>
@@ -598,10 +591,8 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2fixings_8cpp_a66b14c06cf8de35044129080cdb1a2f8_cgraph.png" border="0" usemap="#atest_2fixings_8cpp_a66b14c06cf8de35044129080cdb1a2f8_cgraph" alt=""/></div>
 <map name="atest_2fixings_8cpp_a66b14c06cf8de35044129080cdb1a2f8_cgraph" id="atest_2fixings_8cpp_a66b14c06cf8de35044129080cdb1a2f8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,213,80"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="331,5,373,31"/>
-<area shape="rect" href="group__utilities.html#ga93446dbb3100534f566787afbf673dbf" title="Convert std::string (e.g SP5) to QuantExt::EquityIndex." alt="" coords="261,55,443,80"/>
-<area shape="rect" target="_parent" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a" title=" " alt="" coords="262,105,442,145"/>
+<area shape="rect" title=" " alt="" coords="5,5,213,31"/>
+<area shape="rect" href="group__utilities.html#ga93446dbb3100534f566787afbf673dbf" title="Convert std::string (e.g SP5) to QuantExt::EquityIndex." alt="" coords="261,5,443,31"/>
 </map>
 </div>
 

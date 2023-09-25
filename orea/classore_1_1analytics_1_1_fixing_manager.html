@@ -101,7 +101,7 @@ $(function() {
 <area shape="rect" title="Pseudo Fixings Manager." alt="" coords="99,489,234,617"/>
 <area shape="rect" title=" " alt="" coords="5,108,59,148"/>
 <area shape="rect" title=" " alt="" coords="82,211,177,251"/>
-<area shape="rect" href="classbool.html" title=" " alt="" coords="56,365,107,405"/>
+<area shape="rect" title=" " alt="" coords="56,365,107,405"/>
 <area shape="rect" title=" " alt="" coords="169,343,311,427"/>
 <area shape="rect" title=" " alt="" coords="633,211,775,251"/>
 <area shape="rect" title=" " alt="" coords="505,350,735,419"/>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9064e1b770fa1ed53359770026ca5c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aaa9f5051ccdfaf5f086fe92fcb96ac"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#a3aaa9f5051ccdfaf5f086fe92fcb96ac">~FixingManager</a> ()</td></tr>
 <tr class="separator:a3aaa9f5051ccdfaf5f086fe92fcb96ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abda861dc3e44c930801007a897af59d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#abda861dc3e44c930801007a897af59d8">initialise</a> (const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_portfolio.html">Portfolio</a> &gt; &amp;portfolio, const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_market.html">Market</a> &gt; &amp;market, const std::string &amp;configuration=<a class="elRef" href="../ored/classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">Market::defaultConfiguration</a>)</td></tr>
+<tr class="memitem:abda861dc3e44c930801007a897af59d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#abda861dc3e44c930801007a897af59d8">initialise</a> (const boost::shared_ptr&lt; Portfolio &gt; &amp;portfolio, const boost::shared_ptr&lt; Market &gt; &amp;market, const std::string &amp;configuration=Market::defaultConfiguration)</td></tr>
 <tr class="memdesc:abda861dc3e44c930801007a897af59d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the manager with these flows and indices from the given portfolio.  <a href="classore_1_1analytics_1_1_fixing_manager.html#abda861dc3e44c930801007a897af59d8">More...</a><br /></td></tr>
 <tr class="separator:abda861dc3e44c930801007a897af59d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5956b696c00e06f34cf1cb62a01c6b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#a5956b696c00e06f34cf1cb62a01c6b0c">update</a> (Date d)</td></tr>
@@ -151,7 +151,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aedc6b4c263e4e87835f8fa59891ccd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dd33c0056c2aa852d1599b7cbbe78d9"><td class="memItemLeft" align="right" valign="top">Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#a8dd33c0056c2aa852d1599b7cbbe78d9">fixingsEnd_</a></td></tr>
 <tr class="separator:a8dd33c0056c2aa852d1599b7cbbe78d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd564b6143c4f71a70fc09ee2993bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#abcd564b6143c4f71a70fc09ee2993bb3">modifiedFixingHistory_</a></td></tr>
+<tr class="memitem:abcd564b6143c4f71a70fc09ee2993bb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#abcd564b6143c4f71a70fc09ee2993bb3">modifiedFixingHistory_</a></td></tr>
 <tr class="separator:abcd564b6143c4f71a70fc09ee2993bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1ccf616ef5248870d7ba637f3e35959"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#a4a085461566b78911bfe7342f15eb96c">FixingMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_fixing_manager.html#ac1ccf616ef5248870d7ba637f3e35959">fixingMap_</a></td></tr>
 <tr class="separator:ac1ccf616ef5248870d7ba637f3e35959"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Pseudo Fixings Manager. </p>
-<p >A Pseudo Fixing is a future historical fixing. When pricing on T0 but asof T and we require a fixing on t with T0 &lt; t &lt; T then the <a class="elRef" href="../qle/namespace_quant_lib.html">QuantLib</a> pricing engines will look to the IndexManager for a fixing at t.</p>
+<p >A Pseudo Fixing is a future historical fixing. When pricing on T0 but asof T and we require a fixing on t with T0 &lt; t &lt; T then the QuantLib pricing engines will look to the IndexManager for a fixing at t.</p>
 <p >When moving between dates and simulation paths then the Fixings can change and should be populated in a path consistent manner</p>
 <p >The <a class="el" href="classore_1_1analytics_1_1_fixing_manager.html" title="Pseudo Fixings Manager.">FixingManager</a> controls this updating and reset of the QuantLib::IndexManager for the required set of fixings</p>
 <p >When stepping between simulation dated t_(n-1) and t_(n) and update a fixing t with t_(n-1) &lt; t &lt; t(n) than the fixing from t(n) will be backfilled. There is currently no interpolation of fixings. </p>
@@ -280,20 +280,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void initialise </td>
           <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_portfolio.html">Portfolio</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; Portfolio &gt; &amp;&#160;</td>
           <td class="paramname"><em>portfolio</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_market.html">Market</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; Market &gt; &amp;&#160;</td>
           <td class="paramname"><em>market</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>configuration</em> = <code><a class="elRef" href="../ored/classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">Market::defaultConfiguration</a></code>&#160;</td>
+          <td class="paramname"><em>configuration</em> = <code>Market::defaultConfiguration</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -315,7 +315,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   71</span>        r.unsetPayDates();</div>
 <div class="line"><span class="lineno">   72</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [name, dates] : r.fixingDatesIndices(QuantLib::Date::maxDate())) {</div>
 <div class="line"><span class="lineno">   73</span>            <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   74</span>                <span class="keyword">auto</span> rawIndex = <a class="code hl_functionRef" href="../ored/group__utilities.html#gab2d26348315b387f1b203be151c09fbf">parseIndex</a>(name);</div>
+<div class="line"><span class="lineno">   74</span>                <span class="keyword">auto</span> rawIndex = parseIndex(name);</div>
 <div class="line"><span class="lineno">   75</span>                <span class="keywordflow">if</span> (<span class="keyword">auto</span> index = boost::dynamic_pointer_cast&lt;EquityIndex2&gt;(rawIndex)) {</div>
 <div class="line"><span class="lineno">   76</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_fixing_manager.html#ac1ccf616ef5248870d7ba637f3e35959">fixingMap_</a>[*market-&gt;equityCurve(index-&gt;familyName(), configuration)].insert(dates.begin(),</div>
 <div class="line"><span class="lineno">   77</span>                                                                                                dates.end());</div>
@@ -344,9 +344,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  100</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_fixing_manager.html#ac1ccf616ef5248870d7ba637f3e35959">fixingMap_</a>[*market-&gt;zeroInflationIndex(name, configuration)].insert(dates.begin(), dates.end());</div>
 <div class="line"><span class="lineno">  101</span>                }</div>
 <div class="line"><span class="lineno">  102</span>            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><span class="lineno">  103</span>                <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;FixingManager: error &quot;</span> &lt;&lt; e.what() &lt;&lt; <span class="stringliteral">&quot; - no fixings are added for &#39;&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><span class="lineno">  103</span>                ALOG(<span class="stringliteral">&quot;FixingManager: error &quot;</span> &lt;&lt; e.what() &lt;&lt; <span class="stringliteral">&quot; - no fixings are added for &#39;&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
 <div class="line"><span class="lineno">  104</span>            }</div>
-<div class="line"><span class="lineno">  105</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(<span class="stringliteral">&quot;Added &quot;</span> &lt;&lt; dates.size() &lt;&lt; <span class="stringliteral">&quot; fixing dates for &#39;&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><span class="lineno">  105</span>            TLOG(<span class="stringliteral">&quot;Added &quot;</span> &lt;&lt; dates.size() &lt;&lt; <span class="stringliteral">&quot; fixing dates for &#39;&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
 <div class="line"><span class="lineno">  106</span>        }</div>
 <div class="line"><span class="lineno">  107</span>    }</div>
 <div class="line"><span class="lineno">  108</span> </div>
@@ -357,21 +357,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  113</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_fixing_manager_html_ac1ccf616ef5248870d7ba637f3e35959"><div class="ttname"><a href="classore_1_1analytics_1_1_fixing_manager.html#ac1ccf616ef5248870d7ba637f3e35959">ore::analytics::FixingManager::fixingMap_</a></div><div class="ttdeci">FixingMap fixingMap_</div><div class="ttdef"><b>Definition:</b> <a href="fixingmanager_8hpp_source.html#l00084">fixingmanager.hpp:84</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_fixing_manager_html_aede1f0411aac6ee42e142462c09d470c"><div class="ttname"><a href="classore_1_1analytics_1_1_fixing_manager.html#aede1f0411aac6ee42e142462c09d470c">ore::analytics::FixingManager::fixingCache_</a></div><div class="ttdeci">FixingCache fixingCache_</div><div class="ttdef"><b>Definition:</b> <a href="fixingmanager_8hpp_source.html#l00085">fixingmanager.hpp:85</a></div></div>
-<div class="ttc" id="agroup__utilities_html_gab2d26348315b387f1b203be151c09fbf"><div class="ttname"><a href="../ored/group__utilities.html#gab2d26348315b387f1b203be151c09fbf">ore::data::parseIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; Index &gt; parseIndex(const string &amp;s)</div></div>
-<div class="ttc" id="alog_8hpp_html_a35cb05f674d9e764ca12cff351b064f2"><div class="ttname"><a href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a></div><div class="ttdeci">#define ALOG(text)</div></div>
-<div class="ttc" id="alog_8hpp_html_a99aeca53f904c71a68070e1f9d310232"><div class="ttname"><a href="../ored/log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a></div><div class="ttdeci">#define TLOG(text)</div></div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1analytics_1_1_fixing_manager_abda861dc3e44c930801007a897af59d8_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_fixing_manager_abda861dc3e44c930801007a897af59d8_cgraph" alt=""/></div>
-<map name="aclassore_1_1analytics_1_1_fixing_manager_abda861dc3e44c930801007a897af59d8_cgraph" id="aclassore_1_1analytics_1_1_fixing_manager_abda861dc3e44c930801007a897af59d8_cgraph">
-<area shape="rect" title="Initialise the manager with these flows and indices from the given portfolio." alt="" coords="5,5,75,31"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#gab2d26348315b387f1b203be151c09fbf" title=" " alt="" coords="123,5,267,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5956b696c00e06f34cf1cb62a01c6b0c" name="a5956b696c00e06f34cf1cb62a01c6b0c"></a>
@@ -404,11 +390,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  124</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_fixing_manager.html#a8dd33c0056c2aa852d1599b7cbbe78d9">fixingsEnd_</a> = d;</div>
 <div class="line"><span class="lineno">  125</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_fixing_manager_html_a4c6553fba2a8f293c5a828dfe6692e21"><div class="ttname"><a href="classore_1_1analytics_1_1_fixing_manager.html#a4c6553fba2a8f293c5a828dfe6692e21">ore::analytics::FixingManager::applyFixings</a></div><div class="ttdeci">void applyFixings(Date start, Date end)</div><div class="ttdef"><b>Definition:</b> <a href="fixingmanager_8cpp_source.html#l00137">fixingmanager.cpp:137</a></div></div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_fixing_manager_a5956b696c00e06f34cf1cb62a01c6b0c_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_fixing_manager_a5956b696c00e06f34cf1cb62a01c6b0c_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_fixing_manager_a5956b696c00e06f34cf1cb62a01c6b0c_cgraph" id="aclassore_1_1analytics_1_1_fixing_manager_a5956b696c00e06f34cf1cb62a01c6b0c_cgraph">
 <area shape="rect" title="Update fixings to date d." alt="" coords="5,13,67,38"/>
@@ -546,22 +532,22 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  197</span>    }</div>
 <div class="line"><span class="lineno">  198</span>}</div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_a7b93f46289874bc8f9c38df54a9a8078"><div class="ttname"><a href="namespaceore_1_1analytics.html#a7b93f46289874bc8f9c38df54a9a8078">ore::analytics::nextValidFixingDate</a></div><div class="ttdeci">Date nextValidFixingDate(Date d, const boost::shared_ptr&lt; Index &gt; &amp;index, Size gap=7)</div><div class="ttdef"><b>Definition:</b> <a href="fixingmanager_8cpp_source.html#l00051">fixingmanager.cpp:51</a></div></div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_cgraph" id="aclassore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,100,38"/>
 <area shape="rect" href="namespaceore_1_1analytics.html#a7b93f46289874bc8f9c38df54a9a8078" title=" " alt="" coords="148,5,311,45"/>
 </map>
 </div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_icgraph" id="aclassore_1_1analytics_1_1_fixing_manager_a4c6553fba2a8f293c5a828dfe6692e21_icgraph">
 <area shape="rect" title=" " alt="" coords="115,5,209,31"/>
@@ -630,7 +616,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbool.html">bool</a> modifiedFixingHistory_</td>
+          <td class="memname">bool modifiedFixingHistory_</td>
         </tr>
       </table>
   </td>

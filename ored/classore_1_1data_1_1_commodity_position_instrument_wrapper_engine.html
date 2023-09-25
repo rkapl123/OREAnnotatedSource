@@ -145,22 +145,20 @@ Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  182</span>                                                               {</div>
 <div class="line"><span class="lineno">  183</span>    Real result = 0.0;</div>
 <div class="line"><span class="lineno">  184</span>    Date today = Settings::instance().evaluationDate();</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.commodities_.size(); ++i) {</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; arguments_.commodities_.size(); ++i) {</div>
 <div class="line"><span class="lineno">  186</span>        <span class="comment">// TODO: if refering spot price need lookup the spot date instead of today</span></div>
 <div class="line"><span class="lineno">  187</span>        <span class="comment">// for future settlement the fixing date is not relvant, always lookup future expiry date</span></div>
-<div class="line"><span class="lineno">  188</span>        Real tmp = <a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.quantity_ * <a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.commodities_[i]-&gt;fixing(today, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">if</span> (!<a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.fxConversion_[i].empty()) {</div>
-<div class="line"><span class="lineno">  190</span>            tmp *= <a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.fxConversion_[i]-&gt;value();</div>
+<div class="line"><span class="lineno">  188</span>        Real tmp = arguments_.quantity_ * arguments_.commodities_[i]-&gt;fixing(today, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">if</span> (!arguments_.fxConversion_[i].empty()) {</div>
+<div class="line"><span class="lineno">  190</span>            tmp *= arguments_.fxConversion_[i]-&gt;value();</div>
 <div class="line"><span class="lineno">  191</span>        }</div>
-<div class="line"><span class="lineno">  192</span>        result += tmp * <a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.weights_[i];</div>
+<div class="line"><span class="lineno">  192</span>        result += tmp * arguments_.weights_[i];</div>
 <div class="line"><span class="lineno">  193</span>    }</div>
-<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">if</span> (!<a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.npvCcyConversion_.empty()) {</div>
-<div class="line"><span class="lineno">  195</span>        result *= <a class="code hl_variableRef" href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.npvCcyConversion_-&gt;value();</div>
+<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">if</span> (!arguments_.npvCcyConversion_.empty()) {</div>
+<div class="line"><span class="lineno">  195</span>        result *= arguments_.npvCcyConversion_-&gt;value();</div>
 <div class="line"><span class="lineno">  196</span>    }</div>
-<div class="line"><span class="lineno">  197</span>    <a class="code hl_variableRef" href="../qle/cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = result;</div>
+<div class="line"><span class="lineno">  197</span>    results_.value = result;</div>
 <div class="line"><span class="lineno">  198</span>}</div>
-<div class="ttc" id="acdsoption_8cpp_html_afeb3e8b4e6ab6604c185b2ea55bbc728"><div class="ttname"><a href="../qle/cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a></div><div class="ttdeci">const Instrument::results * results_</div></div>
-<div class="ttc" id="atenorbasisswap_8cpp_html_a71b2ce0e52885aca4ce15e1d128b9f56"><div class="ttname"><a href="../qle/tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a></div><div class="ttdeci">Swap::arguments * arguments_</div></div>
 </div><!-- fragment -->
 </div>
 </div>

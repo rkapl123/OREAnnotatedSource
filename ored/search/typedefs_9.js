@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lgm_0',['LGM',['../../qle/namespace_quant_ext.html#abeeb8dee24c6a3807d02aa18cf82cd12',1,'QuantExt']]]
+  ['node_0',['Node',['../classore_1_1data_1_1_todays_market.html#aedc7f80292f3b2edcac8cb48ee6262cd',1,'ore::data::TodaysMarket']]]
 ];

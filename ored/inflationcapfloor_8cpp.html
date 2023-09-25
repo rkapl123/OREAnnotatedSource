@@ -99,7 +99,7 @@ $(function() {
 <code>#include &lt;ql/termstructures/yield/discountcurve.hpp&gt;</code><br />
 <code>#include &lt;ql/termstructures/yield/flatforward.hpp&gt;</code><br />
 <code>#include &lt;ql/time/daycounters/actualactual.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/inflationindexwrapper_8hpp.html">qle/indexes/inflationindexwrapper.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/indexes/inflationindexwrapper.hpp&gt;</code><br />
 </div>
 <p><a href="inflationcapfloor_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -193,11 +193,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  167</span>    Schedule schedule(startDate, endDate, 1 * Years, TARGET(), Following, Following, DateGeneration::Forward, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  168</span>    Handle&lt;YieldTermStructure&gt; nominalTs = market-&gt;discountCurve(<span class="stringliteral">&quot;EUR&quot;</span>);</div>
 <div class="line"><span class="lineno">  169</span>    Leg yyLeg =</div>
-<div class="line"><span class="lineno">  170</span>        <a class="code hl_classRef" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html">yoyInflationLeg</a>(schedule, TARGET(), market-&gt;yoyInflationIndex(<span class="stringliteral">&quot;EUHICPXT&quot;</span>).currentLink(), Period(3, Months))</div>
-<div class="line"><span class="lineno">  171</span>            .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a31afff2ccfbd52b6333575ee40c23504">withNotionals</a>(10000000)</div>
-<div class="line"><span class="lineno">  172</span>            .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a7bd51a0a7da6c232fa3bcc70045d501d">withPaymentDayCounter</a>(ActualActual(ActualActual::ISDA))</div>
-<div class="line"><span class="lineno">  173</span>            .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a2a7bfe6996c7e5edb890e0877a52be46">withPaymentAdjustment</a>(Following)</div>
-<div class="line"><span class="lineno">  174</span>            .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a0617466d18a23a375cc3d45ec9102b33">withRateCurve</a>(nominalTs);</div>
+<div class="line"><span class="lineno">  170</span>        yoyInflationLeg(schedule, TARGET(), market-&gt;yoyInflationIndex(<span class="stringliteral">&quot;EUHICPXT&quot;</span>).currentLink(), Period(3, Months))</div>
+<div class="line"><span class="lineno">  171</span>            .withNotionals(10000000)</div>
+<div class="line"><span class="lineno">  172</span>            .withPaymentDayCounter(ActualActual(ActualActual::ISDA))</div>
+<div class="line"><span class="lineno">  173</span>            .withPaymentAdjustment(Following)</div>
+<div class="line"><span class="lineno">  174</span>            .withRateCurve(nominalTs);</div>
 <div class="line"><span class="lineno">  175</span> </div>
 <div class="line"><span class="lineno">  176</span>    boost::shared_ptr&lt;YoYInflationCapFloor&gt; qlCap(<span class="keyword">new</span> YoYInflationCap(yyLeg, caps));</div>
 <div class="line"><span class="lineno">  177</span> </div>
@@ -208,32 +208,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  182</span>    BOOST_CHECK_CLOSE(yyCap-&gt;instrument()-&gt;NPV(), qlCap-&gt;NPV(), 1E-8); <span class="comment">// this is 1E-10 rel diff</span></div>
 <div class="line"><span class="lineno">  183</span>    BOOST_CHECK_NO_THROW(yyCap-&gt;additionalData());</div>
 <div class="line"><span class="lineno">  184</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1yoy_inflation_leg_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1yoy_inflation_leg.html">QuantExt::yoyInflationLeg</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1yoy_inflation_leg_html_a0617466d18a23a375cc3d45ec9102b33"><div class="ttname"><a href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a0617466d18a23a375cc3d45ec9102b33">QuantExt::yoyInflationLeg::withRateCurve</a></div><div class="ttdeci">yoyInflationLeg &amp; withRateCurve(const Handle&lt; YieldTermStructure &gt; &amp;rateCurve)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1yoy_inflation_leg_html_a2a7bfe6996c7e5edb890e0877a52be46"><div class="ttname"><a href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a2a7bfe6996c7e5edb890e0877a52be46">QuantExt::yoyInflationLeg::withPaymentAdjustment</a></div><div class="ttdeci">yoyInflationLeg &amp; withPaymentAdjustment(BusinessDayConvention)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1yoy_inflation_leg_html_a31afff2ccfbd52b6333575ee40c23504"><div class="ttname"><a href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a31afff2ccfbd52b6333575ee40c23504">QuantExt::yoyInflationLeg::withNotionals</a></div><div class="ttdeci">yoyInflationLeg &amp; withNotionals(Real notional)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1yoy_inflation_leg_html_a7bd51a0a7da6c232fa3bcc70045d501d"><div class="ttname"><a href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a7bd51a0a7da6c232fa3bcc70045d501d">QuantExt::yoyInflationLeg::withPaymentDayCounter</a></div><div class="ttdeci">yoyInflationLeg &amp; withPaymentDayCounter(const DayCounter &amp;)</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_cap_floor_html"><div class="ttname"><a href="classore_1_1data_1_1_cap_floor.html">ore::data::CapFloor</a></div><div class="ttdoc">Serializable cap, floor, collar.</div><div class="ttdef"><b>Definition:</b> <a href="capfloor_8hpp_source.html#l00037">capfloor.hpp:37</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_envelope_html"><div class="ttname"><a href="classore_1_1data_1_1_envelope.html">ore::data::Envelope</a></div><div class="ttdoc">Serializable object holding generic trade data, reporting dimensions.</div><div class="ttdef"><b>Definition:</b> <a href="envelope_8hpp_source.html#l00048">envelope.hpp:48</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_leg_data_html"><div class="ttname"><a href="classore_1_1data_1_1_leg_data.html">ore::data::LegData</a></div><div class="ttdoc">Serializable object holding leg data.</div><div class="ttdef"><b>Definition:</b> <a href="legdata_8hpp_source.html#l00838">legdata.hpp:838</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_portfolio_html"><div class="ttname"><a href="classore_1_1data_1_1_portfolio.html">ore::data::Portfolio</a></div><div class="ttdoc">Serializable portfolio.</div><div class="ttdef"><b>Definition:</b> <a href="portfolio_8hpp_source.html#l00043">portfolio.hpp:43</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_data_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_data.html">ore::data::ScheduleData</a></div><div class="ttdoc">Serializable schedule data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00192">schedule.hpp:192</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_rules_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_rules.html">ore::data::ScheduleRules</a></div><div class="ttdoc">Serializable object holding schedule Rules data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00037">schedule.hpp:37</a></div></div>
-</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="inflationcapfloor_8cpp_a818a6165c9dfcf68169a462d692bc108_cgraph.png" border="0" usemap="#ainflationcapfloor_8cpp_a818a6165c9dfcf68169a462d692bc108_cgraph" alt=""/></div>
-<map name="ainflationcapfloor_8cpp_a818a6165c9dfcf68169a462d692bc108_cgraph" id="ainflationcapfloor_8cpp_a818a6165c9dfcf68169a462d692bc108_cgraph">
-<area shape="rect" title=" " alt="" coords="5,109,196,134"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a31afff2ccfbd52b6333575ee40c23504" title=" " alt="" coords="245,5,416,45"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a2a7bfe6996c7e5edb890e0877a52be46" title=" " alt="" coords="245,69,416,109"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a7bd51a0a7da6c232fa3bcc70045d501d" title=" " alt="" coords="244,133,417,173"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1yoy_inflation_leg.html#a0617466d18a23a375cc3d45ec9102b33" title=" " alt="" coords="245,197,416,237"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

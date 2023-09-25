@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['optionlet_5fcurve_0',['optionlet_curve',['../../qle/class_quant_ext_1_1_piecewise_atm_optionlet_curve.html#a55cf928ee82d1541446614e8e22ab852',1,'QuantExt::PiecewiseAtmOptionletCurve::optionlet_curve()'],['../../qle/class_quant_ext_1_1_piecewise_optionlet_stripper.html#a55cf928ee82d1541446614e8e22ab852',1,'QuantExt::PiecewiseOptionletStripper::optionlet_curve()']]],
-  ['optionletcurve_1',['OptionletCurve',['../../qle/group__termstructures.html#ga9ca4398965b0afb84c607e3f76871c20',1,'QuantExt::OptionletCurve()'],['../../qle/group__termstructures.html#ga9ca4398965b0afb84c607e3f76871c20',1,'QuantExt::OptionletCurve()']]]
+  ['strikeprice_0',['StrikePrice',['../classore_1_1data_1_1_trade_strike.html#ad66024a06f41ca27ecdd44b908ec8274',1,'ore::data::TradeStrike']]]
 ];

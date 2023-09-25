@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flat_5finterpolation_0',['FLAT_INTERPOLATION',['../collatexposurehelper_8cpp.html#ac217839e0738b05096428efb890843bf',1,'collatexposurehelper.cpp']]]
+  ['boost_5ftest_5fmodule_0',['BOOST_TEST_MODULE',['../testsuite_8cpp.html#a6b2a3852db8bb19ab6909bac01859985',1,'testsuite.cpp']]]
 ];

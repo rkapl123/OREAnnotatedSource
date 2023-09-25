@@ -1,42 +1,41 @@
 <map id="makeDigitalCMSLeg" name="makeDigitalCMSLeg">
-<area shape="rect" id="node1" title=" " alt="" coords="5,1116,145,1141"/>
-<area shape="rect" id="node2" href="$namespaceore_1_1data.html#a51a0ccd1027fb275bb214f1baaaa2986" title=" " alt="" coords="237,452,363,477"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_leg_data.html#ab59528a5949beca4ed9c060d58605afb" title=" " alt="" coords="487,770,617,810"/>
-<area shape="rect" id="node23" href="$group__utilities.html#gaefb008d0de256c79140545d9c7549093" title="Convert text to QuantLib::DayCounter." alt="" coords="491,835,613,860"/>
-<area shape="rect" id="node25" href="$namespaceore_1_1data.html#a9206da3667d412d6992de0f3909beef2" title=" " alt="" coords="478,936,626,961"/>
-<area shape="rect" id="node26" href="$namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560" title=" " alt="" coords="193,936,407,961"/>
-<area shape="rect" id="node27" href="$classore_1_1data_1_1_leg_data.html#ab49abe83fe5704b61699ba315197f285" title=" " alt="" coords="235,1079,365,1119"/>
-<area shape="rect" id="node28" href="$namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="246,1144,354,1169"/>
-<area shape="rect" id="node34" href="$group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="455,1532,649,1557"/>
-<area shape="rect" id="node37" href="$classore_1_1data_1_1_leg_data.html#abd26119812c01bdf2f2bb7a4e44e3fc8" title=" " alt="" coords="235,1245,365,1285"/>
-<area shape="rect" id="node38" href="$classore_1_1data_1_1_leg_data.html#ae2ab29deb3c2023559ce9413f534ba1f" title=" " alt="" coords="235,1309,365,1349"/>
-<area shape="rect" id="node39" href="$classore_1_1data_1_1_leg_data.html#a06c2e7a5f637c04367206ba6d5117f5e" title=" " alt="" coords="229,1373,371,1413"/>
-<area shape="rect" id="node40" href="$classore_1_1data_1_1_leg_data.html#a24c383ad799dfb748a065154bbd2f352" title=" " alt="" coords="235,1437,365,1477"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_leg_data.html#a0686e6fbc6cf163b2bd5e6df314507fc" title=" " alt="" coords="487,157,617,197"/>
-<area shape="rect" id="node4" href="$namespaceore_1_1data.html#a3f75d0993cfbe5fbe70dc1fc44f62e25" title=" " alt="" coords="464,285,640,325"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_amortization_data.html#a3504166537d77838012952fcee44e7f1" title="Amortization end date." alt="" coords="697,221,879,261"/>
-<area shape="rect" id="node8" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="747,600,829,625"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_amortization_data.html#a3c1b5eca22a456480c69c81ac5c84c70" title="Amortization start date." alt="" coords="697,285,879,325"/>
-<area shape="rect" id="node14" href="$namespaceore_1_1data.html#a780fd2c0c5fc502dfb7c5d888ed4d691" title=" " alt="" coords="464,221,640,261"/>
-<area shape="rect" id="node15" href="$namespaceore_1_1data.html#a28ae531d5d86c7011eabb39109863f8b" title=" " alt="" coords="464,413,640,453"/>
-<area shape="rect" id="node16" href="$namespaceore_1_1data.html#a4263844bbd362ebdc0149606a5bfc5b2" title=" " alt="" coords="464,349,640,389"/>
-<area shape="rect" id="node17" href="$namespaceore_1_1data.html#a59edcdbd4edbdf0262bfa5d3f89829f9" title=" " alt="" coords="463,477,641,517"/>
-<area shape="rect" id="node20" href="$classore_1_1data_1_1_amortization_data.html#afe87a180d00c685893090166d7a8dd46" title=" " alt="" coords="461,541,643,581"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_leg_data.html#a81b9d9c795e1f72812f0da9b14382f4a" title=" " alt="" coords="487,605,617,645"/>
-<area shape="rect" id="node22" href="$namespaceore_1_1data.html#abcf3f5cbf5b994ef81834c6dbbe9996d" title=" " alt="" coords="475,669,629,695"/>
-<area shape="rect" id="node24" href="$classore_1_1data_1_1_amortization_data.html#a8c38b99dde33571036565897e2534a53" title="FixedAmount, RelativeToInitialNotional, RelativeToPreviousNotional, Annuity." alt="" coords="461,93,643,133"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_amortization_data.html#af87b0bf90b153b43273516e72c727794" title="Amortization frequency." alt="" coords="697,413,879,453"/>
-<area shape="rect" id="node7" href="$namespaceore_1_1data.html#a05260d9174de60219e7cd128e76819f0" title=" " alt="" coords="715,477,861,503"/>
-<area shape="rect" id="node10" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="743,527,833,552"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_amortization_data.html#aebee264044b12835546e492436ca3017" title="Allow amortization below zero notional if true." alt="" coords="697,157,879,197"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_amortization_data.html#a374f9f0250d7e270cc4bf301edb46523" title="Interpretation depending on type()" alt="" coords="697,349,879,389"/>
-<area shape="rect" id="node9" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="927,600,1020,625"/>
-<area shape="rect" id="node18" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="705,649,871,675"/>
-<area shape="rect" id="node29" href="$classore_1_1data_1_1_schedule_dates.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="467,1087,637,1127"/>
-<area shape="rect" id="node30" href="$classore_1_1data_1_1_schedule_dates.html#a5adb3d124cd448362bff644ea836c696" title=" " alt="" coords="467,1151,637,1191"/>
-<area shape="rect" id="node31" href="$classore_1_1data_1_1_schedule_dates.html#ab6171ce44932642e32322a792c05761f" title=" " alt="" coords="467,1215,637,1255"/>
-<area shape="rect" id="node32" href="$classore_1_1data_1_1_schedule_dates.html#ad7f3ad731dcee615d5d336dfa5b18af5" title=" " alt="" coords="467,1279,637,1319"/>
-<area shape="rect" id="node33" href="$group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="512,1368,592,1393"/>
-<area shape="rect" id="node35" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="499,1417,605,1443"/>
-<area shape="rect" id="node36" href="$classore_1_1data_1_1_schedule_dates.html#a8117da17f90e9f46cf4ccf5d97b3eaed" title=" " alt="" coords="467,1467,637,1507"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,1163,145,1188"/>
+<area shape="rect" id="node2" href="$namespaceore_1_1data.html#a51a0ccd1027fb275bb214f1baaaa2986" title=" " alt="" coords="237,463,363,488"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_leg_data.html#ab59528a5949beca4ed9c060d58605afb" title=" " alt="" coords="487,781,617,821"/>
+<area shape="rect" id="node22" href="$group__utilities.html#gaefb008d0de256c79140545d9c7549093" title="Convert text to QuantLib::DayCounter." alt="" coords="491,846,613,871"/>
+<area shape="rect" id="node24" href="$namespaceore_1_1data.html#a9206da3667d412d6992de0f3909beef2" title=" " alt="" coords="478,947,626,972"/>
+<area shape="rect" id="node25" href="$namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560" title=" " alt="" coords="193,947,407,972"/>
+<area shape="rect" id="node26" href="$classore_1_1data_1_1_leg_data.html#ab49abe83fe5704b61699ba315197f285" title=" " alt="" coords="235,1238,365,1278"/>
+<area shape="rect" id="node27" href="$namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="246,1138,354,1163"/>
+<area shape="rect" id="node33" href="$group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="455,1543,649,1568"/>
+<area shape="rect" id="node36" href="$classore_1_1data_1_1_leg_data.html#abd26119812c01bdf2f2bb7a4e44e3fc8" title=" " alt="" coords="235,1302,365,1342"/>
+<area shape="rect" id="node37" href="$classore_1_1data_1_1_leg_data.html#ae2ab29deb3c2023559ce9413f534ba1f" title=" " alt="" coords="235,1366,365,1406"/>
+<area shape="rect" id="node38" href="$classore_1_1data_1_1_leg_data.html#a06c2e7a5f637c04367206ba6d5117f5e" title=" " alt="" coords="229,1430,371,1470"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_leg_data.html#a24c383ad799dfb748a065154bbd2f352" title=" " alt="" coords="235,1494,365,1534"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_leg_data.html#a0686e6fbc6cf163b2bd5e6df314507fc" title=" " alt="" coords="487,602,617,642"/>
+<area shape="rect" id="node4" href="$namespaceore_1_1data.html#a3f75d0993cfbe5fbe70dc1fc44f62e25" title=" " alt="" coords="464,168,640,208"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_amortization_data.html#a3504166537d77838012952fcee44e7f1" title="Amortization end date." alt="" coords="697,146,879,186"/>
+<area shape="rect" id="node8" href="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="747,463,829,488"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_amortization_data.html#a3c1b5eca22a456480c69c81ac5c84c70" title="Amortization start date." alt="" coords="697,210,879,250"/>
+<area shape="rect" id="node14" href="$namespaceore_1_1data.html#a780fd2c0c5fc502dfb7c5d888ed4d691" title=" " alt="" coords="464,53,640,93"/>
+<area shape="rect" id="node15" href="$namespaceore_1_1data.html#a28ae531d5d86c7011eabb39109863f8b" title=" " alt="" coords="464,360,640,400"/>
+<area shape="rect" id="node16" href="$namespaceore_1_1data.html#a4263844bbd362ebdc0149606a5bfc5b2" title=" " alt="" coords="464,232,640,272"/>
+<area shape="rect" id="node17" href="$namespaceore_1_1data.html#a59edcdbd4edbdf0262bfa5d3f89829f9" title=" " alt="" coords="463,296,641,336"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_amortization_data.html#afe87a180d00c685893090166d7a8dd46" title=" " alt="" coords="461,424,643,464"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_leg_data.html#a81b9d9c795e1f72812f0da9b14382f4a" title=" " alt="" coords="487,488,617,528"/>
+<area shape="rect" id="node21" href="$namespaceore_1_1data.html#abcf3f5cbf5b994ef81834c6dbbe9996d" title=" " alt="" coords="475,552,629,578"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_amortization_data.html#a8c38b99dde33571036565897e2534a53" title="FixedAmount, RelativeToInitialNotional, RelativeToPreviousNotional, Annuity." alt="" coords="461,717,643,757"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_amortization_data.html#af87b0bf90b153b43273516e72c727794" title="Amortization frequency." alt="" coords="697,325,879,365"/>
+<area shape="rect" id="node7" href="$namespaceore_1_1data.html#a05260d9174de60219e7cd128e76819f0" title=" " alt="" coords="715,275,861,300"/>
+<area shape="rect" id="node10" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="743,390,833,415"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_amortization_data.html#aebee264044b12835546e492436ca3017" title="Allow amortization below zero notional if true." alt="" coords="697,18,879,58"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_amortization_data.html#a374f9f0250d7e270cc4bf301edb46523" title="Interpretation depending on type()" alt="" coords="697,82,879,122"/>
+<area shape="rect" id="node9" href="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="927,463,1020,488"/>
+<area shape="rect" id="node28" href="$classore_1_1data_1_1_schedule_dates.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="467,1478,637,1518"/>
+<area shape="rect" id="node29" href="$classore_1_1data_1_1_schedule_dates.html#a5adb3d124cd448362bff644ea836c696" title=" " alt="" coords="467,1098,637,1138"/>
+<area shape="rect" id="node30" href="$classore_1_1data_1_1_schedule_dates.html#ab6171ce44932642e32322a792c05761f" title=" " alt="" coords="467,1162,637,1202"/>
+<area shape="rect" id="node31" href="$classore_1_1data_1_1_schedule_dates.html#ad7f3ad731dcee615d5d336dfa5b18af5" title=" " alt="" coords="467,1226,637,1266"/>
+<area shape="rect" id="node32" href="$group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="512,1315,592,1340"/>
+<area shape="rect" id="node34" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="499,1364,605,1390"/>
+<area shape="rect" id="node35" href="$classore_1_1data_1_1_schedule_dates.html#a8117da17f90e9f46cf4ccf5d97b3eaed" title=" " alt="" coords="467,1414,637,1454"/>
 </map>

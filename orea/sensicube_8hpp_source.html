@@ -105,9 +105,9 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="npvsensicube_8hpp.html">orea/cube/npvsensicube.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/portfolio_8hpp.html">ored/portfolio/portfolio.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/trade_8hpp.html">ored/portfolio/trade.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/serializationdate_8hpp.html">ored/utilities/serializationdate.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;ored/portfolio/portfolio.hpp&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;ored/portfolio/trade.hpp&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;ored/utilities/serializationdate.hpp&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;ql/errors.hpp&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
@@ -149,19 +149,19 @@ $(function() {
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"></span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">    //! Get a T0 value from the cube</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_sensi_cube.html#a8483c090aef4f36668344db8dff4abe7">   70</a></span><span class="comment"></span>    Real <a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#a8483c090aef4f36668344db8dff4abe7">getT0</a>(Size i, Size)<span class="keyword"> const override </span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        this-&gt;<a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(i, 0, 0);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        this-&gt;<a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#ac988be785a1d7bf672cc0a70cd4a1be3">check</a>(i, 0, 0);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#aabadaf9ae036a681cc58a48f768abfd5">t0Data_</a>[i];</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"></span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">    //! Set a value in the cube</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_sensi_cube.html#a480ac1027effa60cc1301d0794ce7d89">   76</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#a480ac1027effa60cc1301d0794ce7d89">setT0</a>(Real value, Size i, Size)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        this-&gt;<a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(i, 0, 0);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        this-&gt;<a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#ac988be785a1d7bf672cc0a70cd4a1be3">check</a>(i, 0, 0);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        this-&gt;<a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#aabadaf9ae036a681cc58a48f768abfd5">t0Data_</a>[i] = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(value);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"></span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">    //! Get a value from the cube</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_sensi_cube.html#aee311893ca464801c8e3c646731506af">   82</a></span><span class="comment"></span>    Real <a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#aee311893ca464801c8e3c646731506af">get</a>(Size i, Size j, Size k, Size)<span class="keyword"> const override </span>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        this-&gt;<a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(i, j, k);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        this-&gt;<a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#ac988be785a1d7bf672cc0a70cd4a1be3">check</a>(i, j, k);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keyword">auto</span> itr = this-&gt;<a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#a2d6ef46b43a53ea88caf346f0d80d8ff">tradeNPVs_</a>[i].find(k);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span> (itr != <a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#a2d6ef46b43a53ea88caf346f0d80d8ff">tradeNPVs_</a>[i].end()) {</div>
@@ -173,7 +173,7 @@ $(function() {
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"></span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">    //! Set a value in the cube</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_sensi_cube.html#aa740ad77ceb76ff5fbc022d4ebf6253e">   94</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#aa740ad77ceb76ff5fbc022d4ebf6253e">set</a>(Real value, Size i, Size j, Size k, Size)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        this-&gt;<a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(i, j, k);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        this-&gt;<a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#ac988be785a1d7bf672cc0a70cd4a1be3">check</a>(i, j, k);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        T castValue = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(value);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span> (boost::math::epsilon_difference&lt;T&gt;(castValue, <a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#aabadaf9ae036a681cc58a48f768abfd5">t0Data_</a>[i]) &gt; 42) {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            this-&gt;<a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#a2d6ef46b43a53ea88caf346f0d80d8ff">tradeNPVs_</a>[i][k] = castValue;</div>
@@ -182,13 +182,13 @@ $(function() {
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_sensi_cube.html#aa048a0a7f6d7de1e95676bb12ffef006">  103</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#aa048a0a7f6d7de1e95676bb12ffef006">remove</a>(Size i)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        this-&gt;<a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(i,0,0);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        this-&gt;<a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#ac988be785a1d7bf672cc0a70cd4a1be3">check</a>(i,0,0);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        this-&gt;<a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#aabadaf9ae036a681cc58a48f768abfd5">t0Data_</a>[i] = 0.0;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        this-&gt;<a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#a2d6ef46b43a53ea88caf346f0d80d8ff">tradeNPVs_</a>[i].clear();</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_sensi_cube.html#a72869f2b94f136dc59fdf32c9063ad64">  109</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#a72869f2b94f136dc59fdf32c9063ad64">remove</a>(Size i, Size k)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        this-&gt;<a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(i,0,k);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        this-&gt;<a class="code hl_function" href="classore_1_1analytics_1_1_sensi_cube.html#ac988be785a1d7bf672cc0a70cd4a1be3">check</a>(i,0,k);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        this-&gt;<a class="code hl_variable" href="classore_1_1analytics_1_1_sensi_cube.html#a2d6ef46b43a53ea88caf346f0d80d8ff">tradeNPVs_</a>[i].erase(k);</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
@@ -248,12 +248,8 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensi_cube_html_accbe81e6e5b792b9ec933260e184cf50"><div class="ttname"><a href="classore_1_1analytics_1_1_sensi_cube.html#accbe81e6e5b792b9ec933260e184cf50">ore::analytics::SensiCube::relevantScenarios_</a></div><div class="ttdeci">std::set&lt; QuantLib::Size &gt; relevantScenarios_</div><div class="ttdef"><b>Definition:</b> <a href="sensicube_8hpp_source.html#l00127">sensicube.hpp:127</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensi_cube_html_ad30ce021adff321c4716866265c90390"><div class="ttname"><a href="classore_1_1analytics_1_1_sensi_cube.html#ad30ce021adff321c4716866265c90390">ore::analytics::SensiCube::SensiCube</a></div><div class="ttdeci">SensiCube(const std::set&lt; std::string &gt; &amp;ids, const QuantLib::Date &amp;asof, QuantLib::Size samples, const T &amp;t=T())</div><div class="ttdef"><b>Definition:</b> <a href="sensicube_8hpp_source.html#l00047">sensicube.hpp:47</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_sensi_cube_html_aee311893ca464801c8e3c646731506af"><div class="ttname"><a href="classore_1_1analytics_1_1_sensi_cube.html#aee311893ca464801c8e3c646731506af">ore::analytics::SensiCube::get</a></div><div class="ttdeci">Real get(Size i, Size j, Size k, Size) const override</div><div class="ttdoc">Get a value from the cube.</div><div class="ttdef"><b>Definition:</b> <a href="sensicube_8hpp_source.html#l00082">sensicube.hpp:82</a></div></div>
-<div class="ttc" id="anamespacecheck_html"><div class="ttname"><a href="../qle/namespacecheck.html">check</a></div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 <div class="ttc" id="anpvsensicube_8hpp_html"><div class="ttname"><a href="npvsensicube_8hpp.html">npvsensicube.hpp</a></div><div class="ttdoc">An NPV cube for storing NPVs resulting from risk factor shifts.</div></div>
-<div class="ttc" id="aportfolio_8hpp_html"><div class="ttname"><a href="../ored/portfolio_8hpp.html">portfolio.hpp</a></div></div>
-<div class="ttc" id="aserializationdate_8hpp_html"><div class="ttname"><a href="../ored/serializationdate_8hpp.html">serializationdate.hpp</a></div></div>
-<div class="ttc" id="atrade_8hpp_html"><div class="ttname"><a href="../ored/trade_8hpp.html">trade.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

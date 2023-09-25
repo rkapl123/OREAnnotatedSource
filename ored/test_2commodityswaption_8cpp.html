@@ -94,17 +94,17 @@ $(function() {
 <code>#include &lt;ql/termstructures/yield/flatforward.hpp&gt;</code><br />
 <code>#include &lt;ql/time/calendars/unitedstates.hpp&gt;</code><br />
 <code>#include &lt;ql/time/schedule.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/commodityindexedaveragecashflow_8hpp.html">qle/cashflows/commodityindexedaveragecashflow.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/commodityindexedcashflow_8hpp.html">qle/cashflows/commodityindexedcashflow.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/pricecurve_8hpp.html">qle/termstructures/pricecurve.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/genericswaption_8hpp.html">qle/instruments/genericswaption.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/commodityswaptionengine_8hpp.html">qle/pricingengines/commodityswaptionengine.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/cashflows/commodityindexedaveragecashflow.hpp&gt;</code><br />
+<code>#include &lt;qle/cashflows/commodityindexedcashflow.hpp&gt;</code><br />
+<code>#include &lt;qle/termstructures/pricecurve.hpp&gt;</code><br />
+<code>#include &lt;qle/instruments/genericswaption.hpp&gt;</code><br />
+<code>#include &lt;qle/pricingengines/commodityswaptionengine.hpp&gt;</code><br />
 </div>
 <p><a href="test_2commodityswaption_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad6949892f99f1e60be016f0ea977d8c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5">run_test</a> (<a class="el" href="classbool.html">bool</a> averaging)</td></tr>
+<tr class="memitem:ad6949892f99f1e60be016f0ea977d8c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5">run_test</a> (bool averaging)</td></tr>
 <tr class="separator:ad6949892f99f1e60be016f0ea977d8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb89940466b0396f36261c30ecbb75ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_2commodityswaption_8cpp.html#adb89940466b0396f36261c30ecbb75ee">BOOST_AUTO_TEST_CASE</a> (testAveragingCommoditySwaption)</td></tr>
 <tr class="separator:adb89940466b0396f36261c30ecbb75ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,7 +121,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void run_test </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>averaging</em></td><td>)</td>
           <td></td>
         </tr>
@@ -147,7 +147,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   62</span>    std::vector&lt;Real&gt; prices = {100.0, 105.0, 110.0, 115.0, 120.0, 130.0, 150.0};</div>
 <div class="line"><span class="lineno">   63</span>    DayCounter dc = Actual365Fixed();</div>
 <div class="line"><span class="lineno">   64</span>    Handle&lt;QuantExt::PriceTermStructure&gt; priceCurve(</div>
-<div class="line"><span class="lineno">   65</span>        boost::make_shared&lt;<a class="code hl_classRef" href="../qle/class_quant_ext_1_1_interpolated_price_curve.html">InterpolatedPriceCurve&lt;Linear&gt;</a>&gt;(today, dates, prices, dc, USDCurrency()));</div>
+<div class="line"><span class="lineno">   65</span>        boost::make_shared&lt;InterpolatedPriceCurve&lt;Linear&gt;&gt;(today, dates, prices, dc, USDCurrency()));</div>
 <div class="line"><span class="lineno">   66</span>    priceCurve-&gt;enableExtrapolation();</div>
 <div class="line"><span class="lineno">   67</span> </div>
 <div class="line"><span class="lineno">   68</span>    <span class="comment">// Market - flat discount curve</span></div>
@@ -175,11 +175,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   90</span> </div>
 <div class="line"><span class="lineno">   91</span>    <span class="comment">// Swap start times</span></div>
 <div class="line"><span class="lineno">   92</span>    std::vector&lt;Size&gt; startTimes = {0, 1, 2, 3, 4, 5, 7, 10};</div>
-<div class="line"><span class="lineno">   93</span>    std::vector&lt;Real&gt; <a class="code hl_variableRef" href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a> = {10.0, 60.0, 80.0, 100.0, 120.0, 140.0};</div>
+<div class="line"><span class="lineno">   93</span>    std::vector&lt;Real&gt; strikes = {10.0, 60.0, 80.0, 100.0, 120.0, 140.0};</div>
 <div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">for</span> (Size k = 0; k &lt; <a class="code hl_variableRef" href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>.size(); ++k) {</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">for</span> (Size k = 0; k &lt; strikes.size(); ++k) {</div>
 <div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>        Real strikePrice = <a class="code hl_variableRef" href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>[k];</div>
+<div class="line"><span class="lineno">   97</span>        Real strikePrice = strikes[k];</div>
 <div class="line"><span class="lineno">   98</span> </div>
 <div class="line"><span class="lineno">   99</span>        <span class="comment">// Vary Swaption start dates, set up underlying Swaps of length one year with 12 monthly calculation periods</span></div>
 <div class="line"><span class="lineno">  100</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; startTimes.size(); ++i) {</div>
@@ -192,17 +192,17 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  107</span>                fixedLeg.push_back(boost::make_shared&lt;SimpleCashFlow&gt;(quantity * strikePrice, schedule[j]));</div>
 <div class="line"><span class="lineno">  108</span>            Leg floatLeg;</div>
 <div class="line"><span class="lineno">  109</span>            <span class="keywordflow">if</span> (averaging)</div>
-<div class="line"><span class="lineno">  110</span>                floatLeg = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html">CommodityIndexedAverageLeg</a>(schedule, index)</div>
-<div class="line"><span class="lineno">  111</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#a9a0d5a7277800380a87eabb8dbe46422">withQuantities</a>(quantity)</div>
-<div class="line"><span class="lineno">  112</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#aa4c81405ef7eccca2f849d92fa2bb2fc">withPaymentCalendar</a>(cal)</div>
-<div class="line"><span class="lineno">  113</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ab8906bdae278ba5fa45768f573a4510c">withPricingCalendar</a>(cal)</div>
-<div class="line"><span class="lineno">  114</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ae367bf80b054125fb9e637a43485f465">withSpreads</a>(0.0);</div>
+<div class="line"><span class="lineno">  110</span>                floatLeg = CommodityIndexedAverageLeg(schedule, index)</div>
+<div class="line"><span class="lineno">  111</span>                               .withQuantities(quantity)</div>
+<div class="line"><span class="lineno">  112</span>                               .withPaymentCalendar(cal)</div>
+<div class="line"><span class="lineno">  113</span>                               .withPricingCalendar(cal)</div>
+<div class="line"><span class="lineno">  114</span>                               .withSpreads(0.0);</div>
 <div class="line"><span class="lineno">  115</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  116</span>                floatLeg = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html">CommodityIndexedLeg</a>(schedule, index)</div>
-<div class="line"><span class="lineno">  117</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a64cfd9319bd7d1950913f635a010361a">withQuantities</a>(quantity)</div>
-<div class="line"><span class="lineno">  118</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#aa1e5e9ede02e491b609fdd2943d138aa">withPaymentCalendar</a>(cal)</div>
-<div class="line"><span class="lineno">  119</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a106ee203249d1ec7bb6565270e6acd16">withPricingLagCalendar</a>(cal)</div>
-<div class="line"><span class="lineno">  120</span>                               .<a class="code hl_functionRef" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#abd00a3f9dd34792d2088fff6b7f7aadc">withSpreads</a>(0.0);</div>
+<div class="line"><span class="lineno">  116</span>                floatLeg = CommodityIndexedLeg(schedule, index)</div>
+<div class="line"><span class="lineno">  117</span>                               .withQuantities(quantity)</div>
+<div class="line"><span class="lineno">  118</span>                               .withPaymentCalendar(cal)</div>
+<div class="line"><span class="lineno">  119</span>                               .withPricingLagCalendar(cal)</div>
+<div class="line"><span class="lineno">  120</span>                               .withSpreads(0.0);</div>
 <div class="line"><span class="lineno">  121</span> </div>
 <div class="line"><span class="lineno">  122</span>            boost::shared_ptr&lt;QuantLib::Swap&gt; payerSwap = boost::make_shared&lt;QuantLib::Swap&gt;(fixedLeg, floatLeg);</div>
 <div class="line"><span class="lineno">  123</span>            boost::shared_ptr&lt;QuantLib::Swap&gt; receiverSwap = boost::make_shared&lt;QuantLib::Swap&gt;(floatLeg, fixedLeg);</div>
@@ -273,42 +273,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  188</span>        }</div>
 <div class="line"><span class="lineno">  189</span>    }</div>
 <div class="line"><span class="lineno">  190</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_average_leg_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html">QuantExt::CommodityIndexedAverageLeg</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_average_leg_html_a9a0d5a7277800380a87eabb8dbe46422"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#a9a0d5a7277800380a87eabb8dbe46422">QuantExt::CommodityIndexedAverageLeg::withQuantities</a></div><div class="ttdeci">CommodityIndexedAverageLeg &amp; withQuantities(QuantLib::Real quantity)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_average_leg_html_aa4c81405ef7eccca2f849d92fa2bb2fc"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#aa4c81405ef7eccca2f849d92fa2bb2fc">QuantExt::CommodityIndexedAverageLeg::withPaymentCalendar</a></div><div class="ttdeci">CommodityIndexedAverageLeg &amp; withPaymentCalendar(const QuantLib::Calendar &amp;paymentCalendar)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_average_leg_html_ab8906bdae278ba5fa45768f573a4510c"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ab8906bdae278ba5fa45768f573a4510c">QuantExt::CommodityIndexedAverageLeg::withPricingCalendar</a></div><div class="ttdeci">CommodityIndexedAverageLeg &amp; withPricingCalendar(const QuantLib::Calendar &amp;pricingCalendar)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_average_leg_html_ae367bf80b054125fb9e637a43485f465"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ae367bf80b054125fb9e637a43485f465">QuantExt::CommodityIndexedAverageLeg::withSpreads</a></div><div class="ttdeci">CommodityIndexedAverageLeg &amp; withSpreads(QuantLib::Real spread)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_leg_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html">QuantExt::CommodityIndexedLeg</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_leg_html_a106ee203249d1ec7bb6565270e6acd16"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a106ee203249d1ec7bb6565270e6acd16">QuantExt::CommodityIndexedLeg::withPricingLagCalendar</a></div><div class="ttdeci">CommodityIndexedLeg &amp; withPricingLagCalendar(const QuantLib::Calendar &amp;pricingLagCalendar)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_leg_html_a64cfd9319bd7d1950913f635a010361a"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a64cfd9319bd7d1950913f635a010361a">QuantExt::CommodityIndexedLeg::withQuantities</a></div><div class="ttdeci">CommodityIndexedLeg &amp; withQuantities(QuantLib::Real quantity)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_leg_html_aa1e5e9ede02e491b609fdd2943d138aa"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#aa1e5e9ede02e491b609fdd2943d138aa">QuantExt::CommodityIndexedLeg::withPaymentCalendar</a></div><div class="ttdeci">CommodityIndexedLeg &amp; withPaymentCalendar(const QuantLib::Calendar &amp;paymentCalendar)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_indexed_leg_html_abd00a3f9dd34792d2088fff6b7f7aadc"><div class="ttname"><a href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#abd00a3f9dd34792d2088fff6b7f7aadc">QuantExt::CommodityIndexedLeg::withSpreads</a></div><div class="ttdeci">CommodityIndexedLeg &amp; withSpreads(QuantLib::Real spread)</div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_interpolated_price_curve_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_interpolated_price_curve.html">QuantExt::InterpolatedPriceCurve</a></div></div>
-<div class="ttc" id="atest_2analyticcashsettledeuropeanengine_8cpp_html_aa7b6f0cca80627aec257d302511d608c"><div class="ttname"><a href="../qle/test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a></div><div class="ttdeci">vector&lt; Real &gt; strikes</div></div>
 <div class="ttc" id="atodaysmarketparameters_8cpp_html_a8ccf841cb59e451791bcb2e1ac4f1edc"><div class="ttname"><a href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="todaysmarketparameters_8cpp_source.html#l00032">todaysmarketparameters.cpp:32</a></div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="test_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_cgraph.png" border="0" usemap="#atest_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_cgraph" alt=""/></div>
-<map name="atest_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_cgraph" id="atest_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,237,75,262"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#aa4c81405ef7eccca2f849d92fa2bb2fc" title=" " alt="" coords="123,5,345,45"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#aa1e5e9ede02e491b609fdd2943d138aa" title=" " alt="" coords="136,69,332,109"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ab8906bdae278ba5fa45768f573a4510c" title=" " alt="" coords="129,133,339,173"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a106ee203249d1ec7bb6565270e6acd16" title=" " alt="" coords="136,197,332,237"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#a9a0d5a7277800380a87eabb8dbe46422" title=" " alt="" coords="136,261,332,301"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a64cfd9319bd7d1950913f635a010361a" title=" " alt="" coords="136,325,332,365"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ae367bf80b054125fb9e637a43485f465" title=" " alt="" coords="136,389,332,429"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#abd00a3f9dd34792d2088fff6b7f7aadc" title=" " alt="" coords="136,453,332,493"/>
-</map>
-</div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_icgraph.png" border="0" usemap="#atest_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_icgraph" alt=""/></div>
 <map name="atest_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_icgraph" id="atest_2commodityswaption_8cpp_ad6949892f99f1e60be016f0ea977d8c5_icgraph">
 <area shape="rect" title=" " alt="" coords="244,5,313,31"/>
@@ -340,23 +310,15 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  194</span>    <a class="code hl_function" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5">run_test</a>(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  195</span>}</div>
 <div class="ttc" id="atest_2commodityswaption_8cpp_html_ad6949892f99f1e60be016f0ea977d8c5"><div class="ttname"><a href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5">run_test</a></div><div class="ttdeci">void run_test(bool averaging)</div><div class="ttdef"><b>Definition:</b> <a href="test_2commodityswaption_8cpp_source.html#l00047">commodityswaption.cpp:47</a></div></div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2commodityswaption_8cpp_adb89940466b0396f36261c30ecbb75ee_cgraph.png" border="0" usemap="#atest_2commodityswaption_8cpp_adb89940466b0396f36261c30ecbb75ee_cgraph" alt=""/></div>
 <map name="atest_2commodityswaption_8cpp_adb89940466b0396f36261c30ecbb75ee_cgraph" id="atest_2commodityswaption_8cpp_adb89940466b0396f36261c30ecbb75ee_cgraph">
-<area shape="rect" title=" " alt="" coords="5,237,196,262"/>
-<area shape="rect" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5" title=" " alt="" coords="244,237,313,262"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#aa4c81405ef7eccca2f849d92fa2bb2fc" title=" " alt="" coords="361,5,584,45"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#aa1e5e9ede02e491b609fdd2943d138aa" title=" " alt="" coords="375,69,571,109"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ab8906bdae278ba5fa45768f573a4510c" title=" " alt="" coords="367,133,578,173"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a106ee203249d1ec7bb6565270e6acd16" title=" " alt="" coords="375,197,571,237"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#a9a0d5a7277800380a87eabb8dbe46422" title=" " alt="" coords="375,261,571,301"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a64cfd9319bd7d1950913f635a010361a" title=" " alt="" coords="375,325,571,365"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ae367bf80b054125fb9e637a43485f465" title=" " alt="" coords="375,389,571,429"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#abd00a3f9dd34792d2088fff6b7f7aadc" title=" " alt="" coords="375,453,571,493"/>
+<area shape="rect" title=" " alt="" coords="5,5,196,31"/>
+<area shape="rect" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5" title=" " alt="" coords="244,5,313,31"/>
 </map>
 </div>
 
@@ -383,23 +345,15 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  198</span>    <span class="comment">// non-averaging swaption</span></div>
 <div class="line"><span class="lineno">  199</span>    <a class="code hl_function" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5">run_test</a>(<span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  200</span>}</div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2commodityswaption_8cpp_a17b589f408c6c8df109f704dda5fadc1_cgraph.png" border="0" usemap="#atest_2commodityswaption_8cpp_a17b589f408c6c8df109f704dda5fadc1_cgraph" alt=""/></div>
 <map name="atest_2commodityswaption_8cpp_a17b589f408c6c8df109f704dda5fadc1_cgraph" id="atest_2commodityswaption_8cpp_a17b589f408c6c8df109f704dda5fadc1_cgraph">
-<area shape="rect" title=" " alt="" coords="5,237,196,262"/>
-<area shape="rect" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5" title=" " alt="" coords="244,237,313,262"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#aa4c81405ef7eccca2f849d92fa2bb2fc" title=" " alt="" coords="361,5,584,45"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#aa1e5e9ede02e491b609fdd2943d138aa" title=" " alt="" coords="375,69,571,109"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ab8906bdae278ba5fa45768f573a4510c" title=" " alt="" coords="367,133,578,173"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a106ee203249d1ec7bb6565270e6acd16" title=" " alt="" coords="375,197,571,237"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#a9a0d5a7277800380a87eabb8dbe46422" title=" " alt="" coords="375,261,571,301"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#a64cfd9319bd7d1950913f635a010361a" title=" " alt="" coords="375,325,571,365"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_average_leg.html#ae367bf80b054125fb9e637a43485f465" title=" " alt="" coords="375,389,571,429"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_commodity_indexed_leg.html#abd00a3f9dd34792d2088fff6b7f7aadc" title=" " alt="" coords="375,453,571,493"/>
+<area shape="rect" title=" " alt="" coords="5,5,196,31"/>
+<area shape="rect" href="test_2commodityswaption_8cpp.html#ad6949892f99f1e60be016f0ea977d8c5" title=" " alt="" coords="244,5,313,31"/>
 </map>
 </div>
 

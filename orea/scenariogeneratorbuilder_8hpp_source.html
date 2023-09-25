@@ -108,18 +108,18 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;ql/types.hpp&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/crossassetmodel_8hpp.html">qle/models/crossassetmodel.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/pathgeneratorfactory_8hpp.html">qle/methods/pathgeneratorfactory.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;qle/models/crossassetmodel.hpp&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;qle/methods/pathgeneratorfactory.hpp&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="crossassetmodelscenariogenerator_8hpp.html">orea/scenario/crossassetmodelscenariogenerator.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="code" href="scenariofactory_8hpp.html">orea/scenario/scenariofactory.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="scenariogeneratordata_8hpp.html">orea/scenario/scenariogeneratordata.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="scenariosimmarketparameters_8hpp.html">orea/scenario/scenariosimmarketparameters.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/xmlutils_8hpp.html">ored/utilities/xmlutils.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;ored/utilities/xmlutils.hpp&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">namespace </span>analytics {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">using namespace </span><a class="code hl_namespaceRef" href="../qle/namespace_quant_lib.html">QuantLib</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">using namespace </span>QuantLib;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//! Build a ScenarioGenerator</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span><span class="comment">/*! ScenarioGeneratorBuilder builds a scenario generator</span></div>
@@ -145,7 +145,7 @@ $(function() {
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a2223dea59294ad4ccf98fcf182dc7031">build</a>(boost::shared_ptr&lt;QuantExt::CrossAssetModel&gt; model, boost::shared_ptr&lt;ScenarioFactory&gt; sf,</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>          boost::shared_ptr&lt;ScenarioSimMarketParameters&gt; marketConfig, Date <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>,</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>          boost::shared_ptr&lt;ore::data::Market&gt; initMarket,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>          <span class="keyword">const</span> std::string&amp; configuration = <a class="code hl_variableRef" href="../ored/classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">ore::data::Market::defaultConfiguration</a>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>          <span class="keyword">const</span> std::string&amp; configuration = ore::data::Market::defaultConfiguration,</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>          <span class="keyword">const</span> boost::shared_ptr&lt;PathGeneratorFactory&gt;&amp; pf = boost::make_shared&lt;MultiPathGeneratorFactory&gt;());</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">private</span>:</div>
@@ -160,17 +160,12 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_generator_builder_html_a37b5d10e377653dda7dd2c2d6bb268fc"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_generator_builder.html#a37b5d10e377653dda7dd2c2d6bb268fc">ore::analytics::ScenarioGeneratorBuilder::ScenarioGeneratorBuilder</a></div><div class="ttdeci">ScenarioGeneratorBuilder()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> <a href="scenariogeneratorbuilder_8hpp_source.html#l00057">scenariogeneratorbuilder.hpp:57</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_generator_builder_html_a4c908545f2c3e2e91ed16b29117e479c"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_generator_builder.html#a4c908545f2c3e2e91ed16b29117e479c">ore::analytics::ScenarioGeneratorBuilder::currencies_</a></div><div class="ttdeci">boost::optional&lt; std::set&lt; std::string &gt; &gt; currencies_</div><div class="ttdef"><b>Definition:</b> <a href="scenariogeneratorbuilder_8hpp_source.html#l00072">scenariogeneratorbuilder.hpp:72</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_generator_builder_html_aed8b85c7e49f13796082816ec7a3e71a"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_generator_builder.html#aed8b85c7e49f13796082816ec7a3e71a">ore::analytics::ScenarioGeneratorBuilder::ScenarioGeneratorBuilder</a></div><div class="ttdeci">ScenarioGeneratorBuilder(boost::shared_ptr&lt; ScenarioGeneratorData &gt; data)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="scenariogeneratorbuilder_8hpp_source.html#l00060">scenariogeneratorbuilder.hpp:60</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_market_html_ab336651e3455fff1764bf576a5785bbd"><div class="ttname"><a href="../ored/classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">ore::data::Market::defaultConfiguration</a></div><div class="ttdeci">static const string defaultConfiguration</div></div>
-<div class="ttc" id="acrossassetmodel_8hpp_html"><div class="ttname"><a href="../qle/crossassetmodel_8hpp.html">crossassetmodel.hpp</a></div></div>
 <div class="ttc" id="acrossassetmodelscenariogenerator_8hpp_html"><div class="ttname"><a href="crossassetmodelscenariogenerator_8hpp.html">crossassetmodelscenariogenerator.hpp</a></div><div class="ttdoc">Scenario generation using cross asset model paths.</div></div>
-<div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="../qle/namespace_quant_lib.html">QuantLib</a></div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
-<div class="ttc" id="apathgeneratorfactory_8hpp_html"><div class="ttname"><a href="../qle/pathgeneratorfactory_8hpp.html">pathgeneratorfactory.hpp</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 <div class="ttc" id="ascenariofactory_8hpp_html"><div class="ttname"><a href="scenariofactory_8hpp.html">scenariofactory.hpp</a></div><div class="ttdoc">factory classes for scenarios</div></div>
 <div class="ttc" id="ascenariogeneratordata_8hpp_html"><div class="ttname"><a href="scenariogeneratordata_8hpp.html">scenariogeneratordata.hpp</a></div><div class="ttdoc">Scenario generator configuration.</div></div>
 <div class="ttc" id="ascenariosimmarketparameters_8hpp_html"><div class="ttname"><a href="scenariosimmarketparameters_8hpp.html">scenariosimmarketparameters.hpp</a></div><div class="ttdoc">A class to hold Scenario parameters for scenarioSimMarket.</div></div>
 <div class="ttc" id="atest_2scenarioshiftcalculator_8cpp_html_a652b8805d9b88185e25574d4820660c4"><div class="ttname"><a href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a></div><div class="ttdeci">Date asof(14, Jun, 2018)</div></div>
-<div class="ttc" id="axmlutils_8hpp_html"><div class="ttname"><a href="../ored/xmlutils_8hpp.html">xmlutils.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

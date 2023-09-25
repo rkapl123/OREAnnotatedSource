@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['portfolio_0',['Portfolio',['../group__portfolio.html',1,'']]],
-  ['pricing_20engines_1',['Pricing engines',['../../qle/group__engines.html',1,'']]]
+  ['trade_20data_0',['Trade Data',['../group__tradedata.html',1,'']]]
 ];

@@ -136,17 +136,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd5a108c9bd58677b2c48d207a52c76d"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; boost::shared_ptr&lt; <a class="el" href="classore_1_1data_1_1_market_datum.html">MarketDatum</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#afd5a108c9bd58677b2c48d207a52c76d">get</a> (const <a class="el" href="classore_1_1data_1_1_wildcard.html">Wildcard</a> &amp;wildcard, const QuantLib::Date &amp;asof) const</td></tr>
 <tr class="memdesc:afd5a108c9bd58677b2c48d207a52c76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get quotes matching a wildcard, this should be overriden in derived classes for performance  <a href="classore_1_1data_1_1_loader.html#afd5a108c9bd58677b2c48d207a52c76d">More...</a><br /></td></tr>
 <tr class="separator:afd5a108c9bd58677b2c48d207a52c76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb476f7db0733b669e38e0a4359b5745"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#acb476f7db0733b669e38e0a4359b5745">has</a> (const std::string &amp;<a class="el" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>, const QuantLib::Date &amp;d) const</td></tr>
+<tr class="memitem:acb476f7db0733b669e38e0a4359b5745"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#acb476f7db0733b669e38e0a4359b5745">has</a> (const std::string &amp;<a class="el" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>, const QuantLib::Date &amp;d) const</td></tr>
 <tr class="memdesc:acb476f7db0733b669e38e0a4359b5745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default implementation, returns false if get throws or returns a null pointer.  <a href="classore_1_1data_1_1_loader.html#acb476f7db0733b669e38e0a4359b5745">More...</a><br /></td></tr>
 <tr class="separator:acb476f7db0733b669e38e0a4359b5745"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9a13e5ca32a324051dcb591de743f3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#a1a9a13e5ca32a324051dcb591de743f3">hasQuotes</a> (const QuantLib::Date &amp;d) const</td></tr>
+<tr class="memitem:a1a9a13e5ca32a324051dcb591de743f3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#a1a9a13e5ca32a324051dcb591de743f3">hasQuotes</a> (const QuantLib::Date &amp;d) const</td></tr>
 <tr class="memdesc:a1a9a13e5ca32a324051dcb591de743f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if there are quotes for a date  <a href="classore_1_1data_1_1_loader.html#a1a9a13e5ca32a324051dcb591de743f3">More...</a><br /></td></tr>
 <tr class="separator:a1a9a13e5ca32a324051dcb591de743f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2eab7ae499b2a598dda42735ccd621c"><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; <a class="el" href="classore_1_1data_1_1_market_datum.html">MarketDatum</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#af2eab7ae499b2a598dda42735ccd621c">get</a> (const std::pair&lt; std::string, <a class="el" href="classbool.html">bool</a> &gt; &amp;<a class="el" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>, const QuantLib::Date &amp;d) const</td></tr>
+<tr class="memitem:af2eab7ae499b2a598dda42735ccd621c"><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; <a class="el" href="classore_1_1data_1_1_market_datum.html">MarketDatum</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#af2eab7ae499b2a598dda42735ccd621c">get</a> (const std::pair&lt; std::string, bool &gt; &amp;<a class="el" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>, const QuantLib::Date &amp;d) const</td></tr>
 <tr class="separator:af2eab7ae499b2a598dda42735ccd621c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a843cedb8bd4ec68e84f9d478ba263f5b"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; <a class="el" href="structore_1_1data_1_1_fixing.html">Fixing</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#a843cedb8bd4ec68e84f9d478ba263f5b">loadFixings</a> () const =0</td></tr>
 <tr class="separator:a843cedb8bd4ec68e84f9d478ba263f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4764291d5b399cc5ad867ef78cbca5a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#ae4764291d5b399cc5ad867ef78cbca5a">hasFixing</a> (const string &amp;<a class="el" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>, const QuantLib::Date &amp;d) const</td></tr>
+<tr class="memitem:ae4764291d5b399cc5ad867ef78cbca5a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#ae4764291d5b399cc5ad867ef78cbca5a">hasFixing</a> (const string &amp;<a class="el" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>, const QuantLib::Date &amp;d) const</td></tr>
 <tr class="separator:ae4764291d5b399cc5ad867ef78cbca5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fdd97e9b3f5b666ca2e9cdf84bc99e8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structore_1_1data_1_1_fixing.html">Fixing</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_loader.html#a0fdd97e9b3f5b666ca2e9cdf84bc99e8">getFixing</a> (const string &amp;<a class="el" href="todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>, const QuantLib::Date &amp;d) const</td></tr>
 <tr class="memdesc:a0fdd97e9b3f5b666ca2e9cdf84bc99e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default implementation for getFixing.  <a href="classore_1_1data_1_1_loader.html#a0fdd97e9b3f5b666ca2e9cdf84bc99e8">More...</a><br /></td></tr>
@@ -553,7 +553,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbool.html">bool</a> has </td>
+          <td class="memname">bool has </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -635,7 +635,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbool.html">bool</a> hasQuotes </td>
+          <td class="memname">bool hasQuotes </td>
           <td>(</td>
           <td class="paramtype">const QuantLib::Date &amp;&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
@@ -687,7 +687,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boost::shared_ptr&lt; <a class="el" href="classore_1_1data_1_1_market_datum.html">MarketDatum</a> &gt; get </td>
           <td>(</td>
-          <td class="paramtype">const std::pair&lt; std::string, <a class="el" href="classbool.html">bool</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::pair&lt; std::string, bool &gt; &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -799,7 +799,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbool.html">bool</a> hasFixing </td>
+          <td class="memname">bool hasFixing </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>

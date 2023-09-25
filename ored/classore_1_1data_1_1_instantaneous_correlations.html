@@ -161,9 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Operators</h2></td></tr>
 <tr class="memitem:aa000c87b59194ac0010eacb7eaed5d35"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespaceore_1_1data.html#a060e136e9d7b5d305c9ad0c76621228f">CorrelationKey</a>, QuantLib::Handle&lt; QuantLib::Quote &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html#aa000c87b59194ac0010eacb7eaed5d35">correlations_</a></td></tr>
 <tr class="separator:aa000c87b59194ac0010eacb7eaed5d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9caf0f07b73dfbb0e6c9f128b7d185d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html#aa9caf0f07b73dfbb0e6c9f128b7d185d">operator==</a> (const <a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html">InstantaneousCorrelations</a> &amp;rhs)</td></tr>
+<tr class="memitem:aa9caf0f07b73dfbb0e6c9f128b7d185d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html#aa9caf0f07b73dfbb0e6c9f128b7d185d">operator==</a> (const <a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html">InstantaneousCorrelations</a> &amp;rhs)</td></tr>
 <tr class="separator:aa9caf0f07b73dfbb0e6c9f128b7d185d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab44d17d5b3a140e4af72fbf934fad83b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html#ab44d17d5b3a140e4af72fbf934fad83b">operator!=</a> (const <a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html">InstantaneousCorrelations</a> &amp;rhs)</td></tr>
+<tr class="memitem:ab44d17d5b3a140e4af72fbf934fad83b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html#ab44d17d5b3a140e4af72fbf934fad83b">operator!=</a> (const <a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html">InstantaneousCorrelations</a> &amp;rhs)</td></tr>
 <tr class="separator:ab44d17d5b3a140e4af72fbf934fad83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -438,7 +438,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbool.html">bool</a> operator== </td>
+          <td class="memname">bool operator== </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html">InstantaneousCorrelations</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
@@ -453,7 +453,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  117</span>    map&lt;CorrelationKey, Handle&lt;Quote&gt;&gt;::const_iterator corr1, corr2;</div>
 <div class="line"><span class="lineno">  118</span>    <span class="keywordflow">for</span> (corr1 = <a class="code hl_variable" href="classore_1_1data_1_1_instantaneous_correlations.html#aa000c87b59194ac0010eacb7eaed5d35">correlations_</a>.begin(), corr2 = rhs.correlations_.begin();</div>
 <div class="line"><span class="lineno">  119</span>         corr1 != <a class="code hl_variable" href="classore_1_1data_1_1_instantaneous_correlations.html#aa000c87b59194ac0010eacb7eaed5d35">correlations_</a>.end() &amp;&amp; corr2 != rhs.correlations_.end(); ++corr1, ++corr2) {</div>
-<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">if</span> (corr1-&gt;first != corr2-&gt;first || !<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(corr1-&gt;second-&gt;value(), corr2-&gt;second-&gt;value()))</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">if</span> (corr1-&gt;first != corr2-&gt;first || !close_enough(corr1-&gt;second-&gt;value(), corr2-&gt;second-&gt;value()))</div>
 <div class="line"><span class="lineno">  121</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  122</span>    }</div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> (corr1 != <a class="code hl_variable" href="classore_1_1data_1_1_instantaneous_correlations.html#aa000c87b59194ac0010eacb7eaed5d35">correlations_</a>.end() || corr2 != rhs.correlations_.end())</div>
@@ -461,19 +461,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  125</span> </div>
 <div class="line"><span class="lineno">  126</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  127</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div></div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1data_1_1_instantaneous_correlations_aa9caf0f07b73dfbb0e6c9f128b7d185d_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_instantaneous_correlations_aa9caf0f07b73dfbb0e6c9f128b7d185d_cgraph" alt=""/></div>
-<map name="aclassore_1_1data_1_1_instantaneous_correlations_aa9caf0f07b73dfbb0e6c9f128b7d185d_cgraph" id="aclassore_1_1data_1_1_instantaneous_correlations_aa9caf0f07b73dfbb0e6c9f128b7d185d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,91,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="139,5,304,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab44d17d5b3a140e4af72fbf934fad83b" name="ab44d17d5b3a140e4af72fbf934fad83b"></a>
@@ -483,7 +471,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbool.html">bool</a> <a class="elRef" href="../qle/namespace_quant_ext.html#a4de0b4bd481db2bc86c05772f8e26038">operator!</a>= </td>
+          <td class="memname">bool operator!= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classore_1_1data_1_1_instantaneous_correlations.html">InstantaneousCorrelations</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>

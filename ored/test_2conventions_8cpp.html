@@ -89,7 +89,7 @@ $(function() {
 <code>#include &lt;ql/currencies/all.hpp&gt;</code><br />
 <code>#include &lt;ql/time/calendars/all.hpp&gt;</code><br />
 <code>#include &lt;ql/time/daycounters/all.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/ice_8hpp.html">qle/calendars/ice.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/calendars/ice.hpp&gt;</code><br />
 </div>
 <p><a href="test_2conventions_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -323,7 +323,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  194</span>    BOOST_CHECK(convention-&gt;anchorType() == CommodityFutureConvention::AnchorType::DayOfMonth);</div>
 <div class="line"><span class="lineno">  195</span>    BOOST_CHECK_EQUAL(convention-&gt;dayOfMonth(), 31);</div>
 <div class="line"><span class="lineno">  196</span>    BOOST_CHECK_EQUAL(convention-&gt;contractFrequency(), Monthly);</div>
-<div class="line"><span class="lineno">  197</span>    BOOST_CHECK_EQUAL(convention-&gt;calendar(), <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_i_c_e.html">ICE</a>(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a11767a57ab6cffea5552ed924ca77ddf">ICE::FuturesEU</a>));</div>
+<div class="line"><span class="lineno">  197</span>    BOOST_CHECK_EQUAL(convention-&gt;calendar(), ICE(ICE::FuturesEU));</div>
 <div class="line"><span class="lineno">  198</span>    BOOST_CHECK_EQUAL(convention-&gt;expiryCalendar(), UnitedKingdom());</div>
 <div class="line"><span class="lineno">  199</span>    BOOST_CHECK_EQUAL(convention-&gt;expiryMonthLag(), 2);</div>
 <div class="line"><span class="lineno">  200</span>    BOOST_CHECK_EQUAL(convention-&gt;oneContractMonth(), Jan);</div>
@@ -347,8 +347,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  218</span>        BOOST_CHECK_EQUAL(it-&gt;optionBdc(), Preceding);</div>
 <div class="line"><span class="lineno">  219</span>    }</div>
 <div class="line"><span class="lineno">  220</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html">QuantExt::ICE</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_i_c_e_html_abe41cfffd960e29a5d8b07be00aeda42a11767a57ab6cffea5552ed924ca77ddf"><div class="ttname"><a href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a11767a57ab6cffea5552ed924ca77ddf">QuantExt::ICE::FuturesEU</a></div><div class="ttdeci">FuturesEU</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_prohibited_expiry_html"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_prohibited_expiry.html">ore::data::CommodityFutureConvention::ProhibitedExpiry</a></div><div class="ttdoc">Class to hold prohibited expiry information.</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01458">conventions.hpp:1458</a></div></div>
 <div class="ttc" id="astructore_1_1data_1_1_commodity_future_convention_1_1_calendar_days_before_html"><div class="ttname"><a href="structore_1_1data_1_1_commodity_future_convention_1_1_calendar_days_before.html">ore::data::CommodityFutureConvention::CalendarDaysBefore</a></div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01327">conventions.hpp:1327</a></div></div>
 <div class="ttc" id="astructore_1_1data_1_1_commodity_future_convention_1_1_day_of_month_html"><div class="ttname"><a href="structore_1_1data_1_1_commodity_future_convention_1_1_day_of_month.html">ore::data::CommodityFutureConvention::DayOfMonth</a></div><div class="ttdoc">Classes to differentiate constructors below.</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01322">conventions.hpp:1322</a></div></div>
@@ -408,7 +406,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  254</span>    BOOST_CHECK(convention-&gt;anchorType() == CommodityFutureConvention::AnchorType::DayOfMonth);</div>
 <div class="line"><span class="lineno">  255</span>    BOOST_CHECK_EQUAL(convention-&gt;dayOfMonth(), 31);</div>
 <div class="line"><span class="lineno">  256</span>    BOOST_CHECK_EQUAL(convention-&gt;contractFrequency(), Monthly);</div>
-<div class="line"><span class="lineno">  257</span>    BOOST_CHECK_EQUAL(convention-&gt;calendar(), <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_i_c_e.html">ICE</a>(<a class="code hl_variableRef" href="../qle/class_quant_ext_1_1_i_c_e.html#abe41cfffd960e29a5d8b07be00aeda42a11767a57ab6cffea5552ed924ca77ddf">ICE::FuturesEU</a>));</div>
+<div class="line"><span class="lineno">  257</span>    BOOST_CHECK_EQUAL(convention-&gt;calendar(), ICE(ICE::FuturesEU));</div>
 <div class="line"><span class="lineno">  258</span>    BOOST_CHECK_EQUAL(convention-&gt;expiryCalendar(), UnitedKingdom());</div>
 <div class="line"><span class="lineno">  259</span>    BOOST_CHECK_EQUAL(convention-&gt;expiryMonthLag(), 2);</div>
 <div class="line"><span class="lineno">  260</span>    BOOST_CHECK_EQUAL(convention-&gt;oneContractMonth(), Jan);</div>

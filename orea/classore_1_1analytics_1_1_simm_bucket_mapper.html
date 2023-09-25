@@ -119,13 +119,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab7942f5c19b4e33093ca28702baf5aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2a08f0192b1ead4b26a792b6aaede2"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#adc2a08f0192b1ead4b26a792b6aaede2">bucket</a> (const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;riskType, const std::string &amp;qualifier) const =0</td></tr>
 <tr class="separator:adc2a08f0192b1ead4b26a792b6aaede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4b98435d51c4518069421580553274"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a1a4b98435d51c4518069421580553274">hasBuckets</a> (const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;riskType) const =0</td></tr>
+<tr class="memitem:a1a4b98435d51c4518069421580553274"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a1a4b98435d51c4518069421580553274">hasBuckets</a> (const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;riskType) const =0</td></tr>
 <tr class="memdesc:a1a4b98435d51c4518069421580553274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given SIMM <em>RiskType</em> has a bucket structure.  <a href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a1a4b98435d51c4518069421580553274">More...</a><br /></td></tr>
 <tr class="separator:a1a4b98435d51c4518069421580553274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63aaae705a8e2feda8695e6a1d6e4e11"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a63aaae705a8e2feda8695e6a1d6e4e11">has</a> (const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;riskType, const std::string &amp;qualifier, boost::optional&lt; <a class="el" href="classbool.html">bool</a> &gt; fallback=boost::none) const =0</td></tr>
+<tr class="memitem:a63aaae705a8e2feda8695e6a1d6e4e11"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a63aaae705a8e2feda8695e6a1d6e4e11">has</a> (const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;riskType, const std::string &amp;qualifier, boost::optional&lt; bool &gt; fallback=boost::none) const =0</td></tr>
 <tr class="memdesc:a63aaae705a8e2feda8695e6a1d6e4e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given <code>riskType</code> and <code>qualifier</code> has a mapping (which is valid, and matches the fallback flag if given)  <a href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a63aaae705a8e2feda8695e6a1d6e4e11">More...</a><br /></td></tr>
 <tr class="separator:a63aaae705a8e2feda8695e6a1d6e4e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640f7f071c7b7e0f3dc13196c2caf98a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a640f7f071c7b7e0f3dc13196c2caf98a">addMapping</a> (const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;riskType, const std::string &amp;qualifier, const std::string &amp;<a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#adc2a08f0192b1ead4b26a792b6aaede2">bucket</a>, const std::string &amp;validFrom=&quot;&quot;, const std::string &amp;validTo=&quot;&quot;, <a class="el" href="classbool.html">bool</a> fallback=false)=0</td></tr>
+<tr class="memitem:a640f7f071c7b7e0f3dc13196c2caf98a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a640f7f071c7b7e0f3dc13196c2caf98a">addMapping</a> (const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;riskType, const std::string &amp;qualifier, const std::string &amp;<a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#adc2a08f0192b1ead4b26a792b6aaede2">bucket</a>, const std::string &amp;validFrom=&quot;&quot;, const std::string &amp;validTo=&quot;&quot;, bool fallback=false)=0</td></tr>
 <tr class="memdesc:a640f7f071c7b7e0f3dc13196c2caf98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a single <code>bucket</code> mapping for <code>qualifier</code> with risk type <code>riskType</code>.  <a href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a640f7f071c7b7e0f3dc13196c2caf98a">More...</a><br /></td></tr>
 <tr class="separator:a640f7f071c7b7e0f3dc13196c2caf98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59dacf432500b3bba2222ecb159b1212"><td class="memItemLeft" align="right" valign="top">virtual const std::set&lt; <a class="el" href="structore_1_1analytics_1_1_simm_bucket_mapper_1_1_failed_mapping.html">FailedMapping</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_simm_bucket_mapper.html#a59dacf432500b3bba2222ecb159b1212">failedMappings</a> () const =0</td></tr>
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> hasBuckets </td>
+          <td class="memname">virtual bool hasBuckets </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;&#160;</td>
           <td class="paramname"><em>riskType</em></td><td>)</td>
@@ -246,7 +246,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> has </td>
+          <td class="memname">virtual bool has </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classore_1_1analytics_1_1_simm_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2">SimmConfiguration::RiskType</a> &amp;&#160;</td>
           <td class="paramname"><em>riskType</em>, </td>
@@ -260,7 +260,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::optional&lt; <a class="el" href="classbool.html">bool</a> &gt;&#160;</td>
+          <td class="paramtype">boost::optional&lt; bool &gt;&#160;</td>
           <td class="paramname"><em>fallback</em> = <code>boost::none</code>&#160;</td>
         </tr>
         <tr>
@@ -324,7 +324,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>fallback</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>

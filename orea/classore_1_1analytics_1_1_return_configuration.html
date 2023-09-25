@@ -325,7 +325,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>                                                                    {</div>
 <div class="line"><span class="lineno">   67</span> </div>
 <div class="line"><span class="lineno">   68</span>    <span class="comment">// Checks</span></div>
-<div class="line"><span class="lineno">   69</span>    <a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(key);</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_function" href="classore_1_1analytics_1_1_return_configuration.html#aac362c0bc2f3e2d75a660d6f11b1ed9f">check</a>(key);</div>
 <div class="line"><span class="lineno">   70</span>    </div>
 <div class="line"><span class="lineno">   71</span>    <span class="comment">// Calculate the return</span></div>
 <div class="line"><span class="lineno">   72</span>    <span class="keyword">auto</span> keyType = key.keytype;    </div>
@@ -337,7 +337,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e">close</a>(v1, 0)) {</div>
 <div class="line"><span class="lineno">   79</span>            <span class="keywordflow">return</span> v2 / v1 - 1.0;</div>
 <div class="line"><span class="lineno">   80</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   81</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;Cannot calculate the relative return for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; so just returning 0: (&quot;</span> &lt;&lt; d1 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; v1</div>
+<div class="line"><span class="lineno">   81</span>            ALOG(<span class="stringliteral">&quot;Cannot calculate the relative return for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; so just returning 0: (&quot;</span> &lt;&lt; d1 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; v1</div>
 <div class="line"><span class="lineno">   82</span>                                                                 &lt;&lt; <span class="stringliteral">&quot;) to (&quot;</span> &lt;&lt; d2 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; v2 &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
 <div class="line"><span class="lineno">   83</span>            <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><span class="lineno">   84</span>        }</div>
@@ -346,7 +346,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   87</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e">close</a>(v1, 0) &amp;&amp; v2 / v1 &gt; 0) {</div>
 <div class="line"><span class="lineno">   88</span>            <span class="keywordflow">return</span> std::log(v2 / v1);</div>
 <div class="line"><span class="lineno">   89</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   90</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;Cannot calculate the relative return for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; so just returning 0: (&quot;</span> &lt;&lt; d1 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; v1</div>
+<div class="line"><span class="lineno">   90</span>            ALOG(<span class="stringliteral">&quot;Cannot calculate the relative return for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; so just returning 0: (&quot;</span> &lt;&lt; d1 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; v1</div>
 <div class="line"><span class="lineno">   91</span>                                                                 &lt;&lt; <span class="stringliteral">&quot;) to (&quot;</span> &lt;&lt; d2 &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; v2 &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
 <div class="line"><span class="lineno">   92</span>            <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><span class="lineno">   93</span>        }</div>
@@ -355,8 +355,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   96</span>        QL_FAIL(<span class="stringliteral">&quot;ReturnConfiguration: return type not covered for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>);</div>
 <div class="line"><span class="lineno">   97</span>    }</div>
 <div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="alog_8hpp_html_a35cb05f674d9e764ca12cff351b064f2"><div class="ttname"><a href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a></div><div class="ttdeci">#define ALOG(text)</div></div>
-<div class="ttc" id="anamespacecheck_html"><div class="ttname"><a href="../qle/namespacecheck.html">check</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_return_configuration_html_aac362c0bc2f3e2d75a660d6f11b1ed9f"><div class="ttname"><a href="classore_1_1analytics_1_1_return_configuration.html#aac362c0bc2f3e2d75a660d6f11b1ed9f">ore::analytics::ReturnConfiguration::check</a></div><div class="ttdeci">void check(const RiskFactorKey &amp;key) const</div><div class="ttdoc">Perform checks on key.</div><div class="ttdef"><b>Definition:</b> <a href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html#l00140">historicalscenariogenerator.cpp:140</a></div></div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_a1d01daebcd210546f1784785760fb64e"><div class="ttname"><a href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e">ore::analytics::close</a></div><div class="ttdeci">bool close(const Real &amp;t_1, const Real &amp;t_2)</div><div class="ttdef"><b>Definition:</b> <a href="sensitivityscenariogenerator_8cpp_source.html#l00076">sensitivityscenariogenerator.cpp:76</a></div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -365,8 +364,9 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_cgraph" id="aclassore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,29,93,55"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e" title=" " alt="" coords="141,29,280,55"/>
+<area shape="rect" title=" " alt="" coords="5,43,93,68"/>
+<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#aac362c0bc2f3e2d75a660d6f11b1ed9f" title="Perform checks on key." alt="" coords="182,5,239,31"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e" title=" " alt="" coords="141,79,280,104"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -422,7 +422,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  100</span>                                                                                                                  {</div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>    <span class="comment">// Checks</span></div>
-<div class="line"><span class="lineno">  103</span>    <a class="code hl_namespaceRef" href="../qle/namespacecheck.html">check</a>(key);</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="classore_1_1analytics_1_1_return_configuration.html#aac362c0bc2f3e2d75a660d6f11b1ed9f">check</a>(key);</div>
 <div class="line"><span class="lineno">  104</span> </div>
 <div class="line"><span class="lineno">  105</span>    <span class="comment">// Apply the return to the base value to generate the return value</span></div>
 <div class="line"><span class="lineno">  106</span>    <span class="keyword">auto</span> keyType = key.keytype;</div>
@@ -444,22 +444,21 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  122</span>    <span class="comment">// Apply cap / floors to guarantee admissable values</span></div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordflow">if</span> ((keyType == <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca3b4f5bcd113ba3a759fed5a53a6605ba">RiskFactorKey::KeyType::BaseCorrelation</a> || keyType == <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca5f750c3076b1c419d3d1684019d36b16">RiskFactorKey::KeyType::Correlation</a>) &amp;&amp; </div>
 <div class="line"><span class="lineno">  124</span>        (value &gt; 1.0 || value &lt; -1.0)) {</div>
-<div class="line"><span class="lineno">  125</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Base correlation value, &quot;</span> &lt;&lt; value &lt;&lt; <span class="stringliteral">&quot;, is not in range [-1.0, 1.0]&quot;</span>);</div>
+<div class="line"><span class="lineno">  125</span>        DLOG(<span class="stringliteral">&quot;Base correlation value, &quot;</span> &lt;&lt; value &lt;&lt; <span class="stringliteral">&quot;, is not in range [-1.0, 1.0]&quot;</span>);</div>
 <div class="line"><span class="lineno">  126</span>        value = std::max(std::min(value, 1.0), -1.0);</div>
-<div class="line"><span class="lineno">  127</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Base correlation value amended to &quot;</span> &lt;&lt; value);</div>
+<div class="line"><span class="lineno">  127</span>        DLOG(<span class="stringliteral">&quot;Base correlation value amended to &quot;</span> &lt;&lt; value);</div>
 <div class="line"><span class="lineno">  128</span>    }</div>
 <div class="line"><span class="lineno">  129</span> </div>
 <div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> ((keyType == <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238cab23cb6da65c5e4e9d93bf085112c0d49">RiskFactorKey::KeyType::RecoveryRate</a> || keyType == <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238caba2340fc08c36e9473d88fa6d823c1fb">RiskFactorKey::KeyType::SurvivalProbability</a>)</div>
 <div class="line"><span class="lineno">  131</span>        &amp;&amp; (value &gt; 1.0 || value &lt; 0.0)) {</div>
-<div class="line"><span class="lineno">  132</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Value of risk factor &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; value &lt;&lt; <span class="stringliteral">&quot;, is not in range [0.0, 1.0]&quot;</span>);</div>
+<div class="line"><span class="lineno">  132</span>        DLOG(<span class="stringliteral">&quot;Value of risk factor &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; value &lt;&lt; <span class="stringliteral">&quot;, is not in range [0.0, 1.0]&quot;</span>);</div>
 <div class="line"><span class="lineno">  133</span>        value = std::max(std::min(value, 1.0), 0.0);</div>
-<div class="line"><span class="lineno">  134</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Value of risk factor &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; amended to &quot;</span> &lt;&lt; value);</div>
+<div class="line"><span class="lineno">  134</span>        DLOG(<span class="stringliteral">&quot;Value of risk factor &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; amended to &quot;</span> &lt;&lt; value);</div>
 <div class="line"><span class="lineno">  135</span>    }</div>
 <div class="line"><span class="lineno">  136</span> </div>
 <div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span> value;</div>
 <div class="line"><span class="lineno">  138</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_return_configuration_html_aec9c57e2613e44495a7639174615e5a0"><div class="ttname"><a href="classore_1_1analytics_1_1_return_configuration.html#aec9c57e2613e44495a7639174615e5a0">ore::analytics::ReturnConfiguration::returnValue</a></div><div class="ttdeci">QuantLib::Real returnValue(const RiskFactorKey &amp;key, const QuantLib::Real v1, const QuantLib::Real v2, const QuantLib::Date &amp;d1, const QuantLib::Date &amp;d2) const</div><div class="ttdef"><b>Definition:</b> <a href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html#l00065">historicalscenariogenerator.cpp:65</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -467,9 +466,10 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_cgraph" id="aclassore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_cgraph">
-<area shape="rect" title="apply return from v1, v2 to base value" alt="" coords="5,29,96,55"/>
-<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#aec9c57e2613e44495a7639174615e5a0" title=" " alt="" coords="144,29,232,55"/>
-<area shape="rect" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e" title=" " alt="" coords="280,29,419,55"/>
+<area shape="rect" title="apply return from v1, v2 to base value" alt="" coords="5,31,96,56"/>
+<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#aac362c0bc2f3e2d75a660d6f11b1ed9f" title="Perform checks on key." alt="" coords="321,5,378,31"/>
+<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#aec9c57e2613e44495a7639174615e5a0" title=" " alt="" coords="144,56,232,81"/>
+<area shape="rect" href="namespaceore_1_1analytics.html#a1d01daebcd210546f1784785760fb64e" title=" " alt="" coords="280,79,419,104"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -521,7 +521,20 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  145</span>               <span class="stringliteral">&quot;ReturnConfiguration: key type &quot;</span> &lt;&lt; keyType &lt;&lt; <span class="stringliteral">&quot; for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; not found&quot;</span>);</div>
 <div class="line"><span class="lineno">  146</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_risk_factor_key_html_aab0feaba617470cb4aa830dc5935238ca6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca6adf97f83acf6453d4a6a4b1070f3754">ore::analytics::RiskFactorKey::KeyType::None</a></div><div class="ttdeci">@ None</div></div>
-</div><!-- fragment -->
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1analytics_1_1_return_configuration_aac362c0bc2f3e2d75a660d6f11b1ed9f_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_return_configuration_aac362c0bc2f3e2d75a660d6f11b1ed9f_icgraph" alt=""/></div>
+<map name="aclassore_1_1analytics_1_1_return_configuration_aac362c0bc2f3e2d75a660d6f11b1ed9f_icgraph" id="aclassore_1_1analytics_1_1_return_configuration_aac362c0bc2f3e2d75a660d6f11b1ed9f_icgraph">
+<area shape="rect" title="Perform checks on key." alt="" coords="491,31,548,56"/>
+<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#a5f45fd8b98b12fe253284c174b7c41b5" title="apply return from v1, v2 to base value" alt="" coords="216,5,307,31"/>
+<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#aec9c57e2613e44495a7639174615e5a0" title=" " alt="" coords="355,56,443,81"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title="Return the next scenario for the given date." alt="" coords="5,23,168,63"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>

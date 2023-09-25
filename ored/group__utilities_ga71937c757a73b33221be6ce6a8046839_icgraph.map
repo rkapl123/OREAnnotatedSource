@@ -1,8 +1,8 @@
 <map id="parsePositionType" name="parsePositionType">
 <area shape="rect" id="node1" title="Convert text to QuantLib::Position::Type." alt="" coords="780,1121,909,1146"/>
 <area shape="rect" id="node2" href="$classore_1_1data_1_1_credit_default_swap_option.html#a03d83d5501bba8ba1503f4f7eb6f5d0d" title="Add the premium payment." alt="" coords="537,66,710,106"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_credit_default_swap_option.html#aa9c90b7ee208adbdd179cee9d098d557" title="Build instrument given that default has occurred." alt="" coords="277,34,458,74"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_credit_default_swap_option.html#a802a461c439c1c5161db1302f2b4cdff" title="Build CDS option given that no default." alt="" coords="276,98,459,138"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_credit_default_swap_option.html#aa9c90b7ee208adbdd179cee9d098d557" title="Build instrument given that default has occurred." alt="" coords="277,98,458,138"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_credit_default_swap_option.html#a802a461c439c1c5161db1302f2b4cdff" title="Build CDS option given that no default." alt="" coords="276,34,459,74"/>
 <area shape="rect" id="node6" href="$classore_1_1data_1_1_asian_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="547,180,699,220"/>
 <area shape="rect" id="node7" href="$classore_1_1data_1_1_bond_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="549,244,698,284"/>
 <area shape="rect" id="node8" href="$classore_1_1data_1_1_cap_floor.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="557,308,690,348"/>
@@ -11,48 +11,49 @@
 <area shape="rect" id="node11" href="$classore_1_1data_1_1_equity_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="527,500,720,540"/>
 <area shape="rect" id="node12" href="$classore_1_1data_1_1_equity_european_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="537,564,710,604"/>
 <area shape="rect" id="node13" href="$classore_1_1data_1_1_equity_forward.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="541,628,705,668"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_equity_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="289,551,445,591"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_equity_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="528,858,719,898"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_fx_digital_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,922,709,962"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_fx_digital_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,986,709,1026"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_fx_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,1050,709,1090"/>
-<area shape="rect" id="node23" href="$classore_1_1data_1_1_fx_european_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="529,1114,718,1154"/>
-<area shape="rect" id="node25" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="541,1178,706,1218"/>
-<area shape="rect" id="node27" href="$classore_1_1data_1_1_fx_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="539,1242,708,1282"/>
-<area shape="rect" id="node29" href="$classore_1_1data_1_1_index_credit_default_swap_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="530,1306,717,1346"/>
-<area shape="rect" id="node30" href="$classore_1_1data_1_1_multi_leg_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="539,1370,707,1410"/>
-<area shape="rect" id="node31" href="$classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="556,1434,691,1474"/>
-<area shape="rect" id="node33" href="$classore_1_1data_1_1_vanilla_option_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="544,743,703,783"/>
-<area shape="rect" id="node39" href="$classore_1_1data_1_1_commodity_digital_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="21,800,204,840"/>
-<area shape="rect" id="node41" href="$classore_1_1data_1_1_forward_rate_agreement.html#a32b57451f66777dd8794b747d0f77224" title=" " alt="" coords="515,1498,732,1538"/>
-<area shape="rect" id="node42" href="$classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="548,1562,699,1588"/>
-<area shape="rect" id="node43" href="$classore_1_1data_1_1_barrier_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="545,1612,702,1652"/>
-<area shape="rect" id="node47" href="$classore_1_1data_1_1_cliquet_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="544,1676,703,1716"/>
-<area shape="rect" id="node48" href="$classore_1_1data_1_1_equity_option_position.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="522,1740,725,1780"/>
-<area shape="rect" id="node49" href="$classore_1_1data_1_1_var_swap.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="557,1804,690,1844"/>
-<area shape="rect" id="node50" href="$classore_1_1data_1_1_commodity_digital_average_price_option.html#a9af2b9e6d488683123c6e4790595eb2b" title=" " alt="" coords="532,1868,715,1908"/>
-<area shape="rect" id="node51" href="$classore_1_1data_1_1_commodity_spread_option.html#a9af2b9e6d488683123c6e4790595eb2b" title="Implement the build method." alt="" coords="529,1932,717,1972"/>
-<area shape="rect" id="node52" href="$classore_1_1data_1_1_commodity_swaption.html#a9af2b9e6d488683123c6e4790595eb2b" title=" " alt="" coords="523,1996,723,2036"/>
-<area shape="rect" id="node53" href="$classore_1_1data_1_1_commodity_average_price_option.html#a63d76bef3cb7216d4474fd99daff6989" title="Build an average price option." alt="" coords="527,2060,720,2100"/>
-<area shape="rect" id="node54" href="$classore_1_1data_1_1_commodity_option_strip.html#a510baf06568510646decfeaf1753e526" title=" " alt="" coords="531,2124,716,2164"/>
-<area shape="rect" id="node55" href="$classore_1_1data_1_1_digital_c_m_s_leg_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="540,2188,707,2228"/>
-<area shape="rect" id="node56" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="530,2252,717,2292"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_equity_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="289,583,445,623"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_equity_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="528,858,719,898"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_fx_digital_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,922,709,962"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_fx_digital_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,986,709,1026"/>
+<area shape="rect" id="node22" href="$classore_1_1data_1_1_fx_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,1050,709,1090"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_fx_european_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="529,1114,718,1154"/>
+<area shape="rect" id="node26" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="541,1178,706,1218"/>
+<area shape="rect" id="node28" href="$classore_1_1data_1_1_fx_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="539,1242,708,1282"/>
+<area shape="rect" id="node30" href="$classore_1_1data_1_1_index_credit_default_swap_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="530,1306,717,1346"/>
+<area shape="rect" id="node31" href="$classore_1_1data_1_1_multi_leg_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="539,1370,707,1410"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="556,1434,691,1474"/>
+<area shape="rect" id="node34" href="$classore_1_1data_1_1_vanilla_option_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="544,743,703,783"/>
+<area shape="rect" id="node40" href="$classore_1_1data_1_1_commodity_digital_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="21,832,204,872"/>
+<area shape="rect" id="node42" href="$classore_1_1data_1_1_forward_rate_agreement.html#a32b57451f66777dd8794b747d0f77224" title=" " alt="" coords="515,1498,732,1538"/>
+<area shape="rect" id="node43" href="$classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="548,1562,699,1588"/>
+<area shape="rect" id="node44" href="$classore_1_1data_1_1_barrier_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="545,1612,702,1652"/>
+<area shape="rect" id="node48" href="$classore_1_1data_1_1_cliquet_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="544,1676,703,1716"/>
+<area shape="rect" id="node49" href="$classore_1_1data_1_1_equity_option_position.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="522,1740,725,1780"/>
+<area shape="rect" id="node50" href="$classore_1_1data_1_1_var_swap.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="557,1804,690,1844"/>
+<area shape="rect" id="node51" href="$classore_1_1data_1_1_commodity_digital_average_price_option.html#a9af2b9e6d488683123c6e4790595eb2b" title=" " alt="" coords="532,1868,715,1908"/>
+<area shape="rect" id="node52" href="$classore_1_1data_1_1_commodity_spread_option.html#a9af2b9e6d488683123c6e4790595eb2b" title="Implement the build method." alt="" coords="529,1932,717,1972"/>
+<area shape="rect" id="node53" href="$classore_1_1data_1_1_commodity_swaption.html#a9af2b9e6d488683123c6e4790595eb2b" title=" " alt="" coords="523,1996,723,2036"/>
+<area shape="rect" id="node54" href="$classore_1_1data_1_1_commodity_average_price_option.html#a63d76bef3cb7216d4474fd99daff6989" title="Build an average price option." alt="" coords="527,2060,720,2100"/>
+<area shape="rect" id="node55" href="$classore_1_1data_1_1_commodity_option_strip.html#a510baf06568510646decfeaf1753e526" title=" " alt="" coords="531,2124,716,2164"/>
+<area shape="rect" id="node56" href="$classore_1_1data_1_1_digital_c_m_s_leg_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="540,2188,707,2228"/>
+<area shape="rect" id="node57" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_data.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="530,2252,717,2292"/>
 <area shape="rect" id="node4" href="$classore_1_1data_1_1_credit_default_swap_option.html#a0acfa862caa19c62c1362c2eb84bcff7" title=" " alt="" coords="35,66,190,106"/>
-<area shape="rect" id="node15" href="$equitytrades_8cpp.html#a9157b4f937ae04fa01bdd86ef531a15d" title=" " alt="" coords="17,558,208,584"/>
-<area shape="rect" id="node18" href="$fxexotics_8cpp.html#a1bb3d76e35ea3c22bb6f167cc5a2a9fa" title=" " alt="" coords="272,929,463,954"/>
-<area shape="rect" id="node20" href="$fxexotics_8cpp.html#a993c04d1a18186e1d5aa009deb6b02d1" title=" " alt="" coords="272,993,463,1018"/>
-<area shape="rect" id="node22" href="$fxexotics_8cpp.html#a356626221d09fa0287e4f5d1646ca231" title=" " alt="" coords="272,1057,463,1082"/>
-<area shape="rect" id="node24" href="$fxexotics_8cpp.html#acfd93f4169abaf3c0d3541c4a297d9de" title=" " alt="" coords="272,1121,463,1146"/>
-<area shape="rect" id="node26" href="$fxexotics_8cpp.html#ae4a8f5fc2a666b87316a20b9716625b7" title=" " alt="" coords="272,1185,463,1210"/>
-<area shape="rect" id="node28" href="$fxexotics_8cpp.html#a81ded61bff8d1f143845d1a8063ab363" title=" " alt="" coords="272,1249,463,1274"/>
-<area shape="rect" id="node32" href="$test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="272,1441,463,1466"/>
-<area shape="rect" id="node34" href="$classore_1_1data_1_1_equity_future_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="271,615,464,655"/>
-<area shape="rect" id="node36" href="$classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="300,679,435,719"/>
-<area shape="rect" id="node38" href="$classore_1_1data_1_1_commodity_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="275,743,460,783"/>
-<area shape="rect" id="node35" href="$equitytrades_8cpp.html#aa42062877db60fac479ac06add9deb01" title=" " alt="" coords="17,622,208,648"/>
-<area shape="rect" id="node37" href="$test_2fxoption_8cpp.html#a321417ba3c97d0524c8fa2d8acb97d72" title=" " alt="" coords="17,686,208,712"/>
-<area shape="rect" id="node40" href="$classore_1_1data_1_1_commodity_average_price_option.html#a56820373aef8756143bb07c7c7c7cf6e" title="Build a standard option." alt="" coords="5,736,220,776"/>
-<area shape="rect" id="node44" href="$classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="268,1580,467,1620"/>
-<area shape="rect" id="node46" href="$classore_1_1data_1_1_equity_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="276,1644,459,1684"/>
-<area shape="rect" id="node45" href="$fxexotics_8cpp.html#a97f1cf85be4712888f153506afc004be" title=" " alt="" coords="17,1588,208,1613"/>
+<area shape="rect" id="node14" href="$test_2compositetrade_8cpp.html#abd7151f9ca075e196a5c6cc7410035b6" title=" " alt="" coords="272,533,463,558"/>
+<area shape="rect" id="node16" href="$equitytrades_8cpp.html#a9157b4f937ae04fa01bdd86ef531a15d" title=" " alt="" coords="17,590,208,616"/>
+<area shape="rect" id="node19" href="$fxexotics_8cpp.html#a1bb3d76e35ea3c22bb6f167cc5a2a9fa" title=" " alt="" coords="272,929,463,954"/>
+<area shape="rect" id="node21" href="$fxexotics_8cpp.html#a993c04d1a18186e1d5aa009deb6b02d1" title=" " alt="" coords="272,993,463,1018"/>
+<area shape="rect" id="node23" href="$fxexotics_8cpp.html#a356626221d09fa0287e4f5d1646ca231" title=" " alt="" coords="272,1057,463,1082"/>
+<area shape="rect" id="node25" href="$fxexotics_8cpp.html#acfd93f4169abaf3c0d3541c4a297d9de" title=" " alt="" coords="272,1121,463,1146"/>
+<area shape="rect" id="node27" href="$fxexotics_8cpp.html#ae4a8f5fc2a666b87316a20b9716625b7" title=" " alt="" coords="272,1185,463,1210"/>
+<area shape="rect" id="node29" href="$fxexotics_8cpp.html#a81ded61bff8d1f143845d1a8063ab363" title=" " alt="" coords="272,1249,463,1274"/>
+<area shape="rect" id="node33" href="$test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="272,1441,463,1466"/>
+<area shape="rect" id="node35" href="$classore_1_1data_1_1_equity_future_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="271,775,464,815"/>
+<area shape="rect" id="node37" href="$classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="300,647,435,687"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_commodity_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="275,711,460,751"/>
+<area shape="rect" id="node36" href="$equitytrades_8cpp.html#aa42062877db60fac479ac06add9deb01" title=" " alt="" coords="17,782,208,808"/>
+<area shape="rect" id="node38" href="$test_2fxoption_8cpp.html#a321417ba3c97d0524c8fa2d8acb97d72" title=" " alt="" coords="17,654,208,680"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_commodity_average_price_option.html#a56820373aef8756143bb07c7c7c7cf6e" title="Build a standard option." alt="" coords="5,711,220,751"/>
+<area shape="rect" id="node45" href="$classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="268,1644,467,1684"/>
+<area shape="rect" id="node47" href="$classore_1_1data_1_1_equity_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="276,1580,459,1620"/>
+<area shape="rect" id="node46" href="$fxexotics_8cpp.html#a97f1cf85be4712888f153506afc004be" title=" " alt="" coords="17,1652,208,1677"/>
 </map>

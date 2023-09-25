@@ -97,7 +97,7 @@ $(function() {
 <code>#include &lt;ql/time/calendars/unitedkingdom.hpp&gt;</code><br />
 <code>#include &lt;ql/time/daycounters/actual365fixed.hpp&gt;</code><br />
 <code>#include &lt;ql/time/daycounters/actualactual.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/yearcounter_8hpp.html">qle/time/yearcounter.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/time/yearcounter.hpp&gt;</code><br />
 </div>
 <p><a href="zerocouponswap_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -205,7 +205,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  192</span>    Date <a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = schedule.endDate();</div>
 <div class="line"><span class="lineno">  193</span>    Date fixedPayDate = schedule.calendar().adjust(<a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>, <a class="code hl_function" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732">parseBusinessDayConvention</a>(paymentConvention));</div>
 <div class="line"><span class="lineno">  194</span>    Real df = market-&gt;discountCurve(<span class="stringliteral">&quot;GBP&quot;</span>)-&gt;discount(fixedPayDate);</div>
-<div class="line"><span class="lineno">  195</span>    Real expectedNPV = -1 * notional.back() * (<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(1.0 + rate, years) - 1.0) * df;</div>
+<div class="line"><span class="lineno">  195</span>    Real expectedNPV = -1 * notional.back() * (pow(1.0 + rate, years) - 1.0) * df;</div>
 <div class="line"><span class="lineno">  196</span>    BOOST_CHECK_CLOSE(swap-&gt;instrument()-&gt;NPV(), expectedNPV, 1E-8); <span class="comment">// this is 1E-10 rel diff</span></div>
 <div class="line"><span class="lineno">  197</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_envelope_html"><div class="ttname"><a href="classore_1_1data_1_1_envelope.html">ore::data::Envelope</a></div><div class="ttdoc">Serializable object holding generic trade data, reporting dimensions.</div><div class="ttdef"><b>Definition:</b> <a href="envelope_8hpp_source.html#l00048">envelope.hpp:48</a></div></div>
@@ -215,7 +215,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_rules_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_rules.html">ore::data::ScheduleRules</a></div><div class="ttdoc">Serializable object holding schedule Rules data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00037">schedule.hpp:37</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_swap_html"><div class="ttname"><a href="classore_1_1data_1_1_swap.html">ore::data::Swap</a></div><div class="ttdoc">Serializable Swap, Single and Cross Currency.</div><div class="ttdef"><b>Definition:</b> <a href="swap_8hpp_source.html#l00036">swap.hpp:36</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga86adcf55f91e340ff40783964666e732"><div class="ttname"><a href="group__utilities.html#ga86adcf55f91e340ff40783964666e732">ore::data::parseBusinessDayConvention</a></div><div class="ttdeci">BusinessDayConvention parseBusinessDayConvention(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::BusinessDayConvention.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00170">parsers.cpp:170</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a33845c3e343e646697955b3813b5ccbb"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a></div><div class="ttdeci">RandomVariable pow(RandomVariable x, const RandomVariable &amp;y)</div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_af158e922cf963a59228878344ca5858d"><div class="ttname"><a href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">ore::data::makeSchedule</a></div><div class="ttdeci">Schedule makeSchedule(const ScheduleDates &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2schedule_8cpp_source.html#l00232">schedule.cpp:232</a></div></div>
 <div class="ttc" id="autilities_8cpp_html_a13d7d92e74b3e8c94c52ca7a1262c55e"><div class="ttname"><a href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a></div><div class="ttdeci">Time maturity</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00066">utilities.cpp:66</a></div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -225,10 +224,9 @@ Functions</h2></td></tr>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="zerocouponswap_8cpp_a20ff34392f6a4b5ea419587db99f9f57_cgraph.png" border="0" usemap="#azerocouponswap_8cpp_a20ff34392f6a4b5ea419587db99f9f57_cgraph" alt=""/></div>
 <map name="azerocouponswap_8cpp_a20ff34392f6a4b5ea419587db99f9f57_cgraph" id="azerocouponswap_8cpp_a20ff34392f6a4b5ea419587db99f9f57_cgraph">
-<area shape="rect" title=" " alt="" coords="5,482,196,507"/>
+<area shape="rect" title=" " alt="" coords="5,409,196,434"/>
 <area shape="rect" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="244,335,411,361"/>
 <area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="460,572,627,612"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="305,533,350,558"/>
 <area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="459,5,628,45"/>
 <area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#a5adb3d124cd448362bff644ea836c696" title=" " alt="" coords="459,69,628,109"/>
 <area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#ab6171ce44932642e32322a792c05761f" title=" " alt="" coords="459,133,628,173"/>

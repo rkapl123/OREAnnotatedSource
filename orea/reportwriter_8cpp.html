@@ -87,23 +87,23 @@ $(function() {
 <code>#include &lt;boost/range/adaptor/indexed.hpp&gt;</code><br />
 <code>#include &lt;boost/lexical_cast.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="orea_8hpp_source.html">orea/orea.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../ored/ored_8hpp.html">ored/ored.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../ored/structuredtradeerror_8hpp.html">ored/portfolio/structuredtradeerror.hpp</a>&gt;</code><br />
+<code>#include &lt;ored/ored.hpp&gt;</code><br />
+<code>#include &lt;ored/portfolio/structuredtradeerror.hpp&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
 <code>#include &lt;ql/cashflows/averagebmacoupon.hpp&gt;</code><br />
 <code>#include &lt;ql/cashflows/indexedcashflow.hpp&gt;</code><br />
 <code>#include &lt;ql/cashflows/inflationcoupon.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/commodityindexedcashflow_8hpp.html">qle/cashflows/commodityindexedcashflow.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/commodityindexedaveragecashflow_8hpp.html">qle/cashflows/commodityindexedaveragecashflow.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/cashflows/commodityindexedcashflow.hpp&gt;</code><br />
+<code>#include &lt;qle/cashflows/commodityindexedaveragecashflow.hpp&gt;</code><br />
 <code>#include &lt;ql/errors.hpp&gt;</code><br />
 <code>#include &lt;ql/experimental/coupons/strippedcapflooredcoupon.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/averageonindexedcoupon_8hpp.html">qle/cashflows/averageonindexedcoupon.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/fxlinkedcashflow_8hpp.html">qle/cashflows/fxlinkedcashflow.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/overnightindexedcoupon_8hpp.html">qle/cashflows/overnightindexedcoupon.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/indexedcoupon_8hpp.html">qle/cashflows/indexedcoupon.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/equitycoupon_8hpp.html">qle/cashflows/equitycoupon.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/currencycomparator_8hpp.html">qle/currencies/currencycomparator.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/cashflowresults_8hpp.html">qle/instruments/cashflowresults.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/cashflows/averageonindexedcoupon.hpp&gt;</code><br />
+<code>#include &lt;qle/cashflows/fxlinkedcashflow.hpp&gt;</code><br />
+<code>#include &lt;qle/cashflows/overnightindexedcoupon.hpp&gt;</code><br />
+<code>#include &lt;qle/cashflows/indexedcoupon.hpp&gt;</code><br />
+<code>#include &lt;qle/cashflows/equitycoupon.hpp&gt;</code><br />
+<code>#include &lt;qle/currencies/currencycomparator.hpp&gt;</code><br />
+<code>#include &lt;qle/instruments/cashflowresults.hpp&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 </div>
 <p><a href="reportwriter_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -134,7 +134,7 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3a191fdcff85ebddf711ba1a4ca42db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1analytics.html#a3a191fdcff85ebddf711ba1a4ca42db1">addNettingSetExposure</a> (<a class="elRef" href="../ored/classore_1_1data_1_1_report.html">ore::data::Report</a> &amp;report, boost::shared_ptr&lt; PostProcess &gt; postProcess, const string &amp;nettingSetId)</td></tr>
+<tr class="memitem:a3a191fdcff85ebddf711ba1a4ca42db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1analytics.html#a3a191fdcff85ebddf711ba1a4ca42db1">addNettingSetExposure</a> (ore::data::Report &amp;report, boost::shared_ptr&lt; PostProcess &gt; postProcess, const string &amp;nettingSetId)</td></tr>
 <tr class="separator:a3a191fdcff85ebddf711ba1a4ca42db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023c5282df2ea9c99ab58941e58849dd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a023c5282df2ea9c99ab58941e58849dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceore_1_1analytics.html#a023c5282df2ea9c99ab58941e58849dd">addMapResults</a> (boost::any resultMap, const std::string &amp;tradeId, const std::string &amp;resultName, Report &amp;report)</td></tr>

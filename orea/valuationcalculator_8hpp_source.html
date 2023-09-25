@@ -106,12 +106,12 @@ $(function() {
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="npvcube_8hpp.html">orea/cube/npvcube.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="simmarket_8hpp.html">orea/simulation/simmarket.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/trade_8hpp.html">ored/portfolio/trade.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/dategrid_8hpp.html">ored/utilities/dategrid.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;ored/portfolio/trade.hpp&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;ored/utilities/dategrid.hpp&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span>analytics {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_trade.html">ore::data::Trade</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span>ore::data::Trade;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">using </span>QuantLib::Date;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">using </span>QuantLib::Real;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using </span>QuantLib::Size;</div>
@@ -310,12 +310,9 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_valuation_calculator_html_a497878795271888d6946b9ced7f4e8c0"><div class="ttname"><a href="classore_1_1analytics_1_1_valuation_calculator.html#a497878795271888d6946b9ced7f4e8c0">ore::analytics::ValuationCalculator::init</a></div><div class="ttdeci">virtual void init(const boost::shared_ptr&lt; Portfolio &gt; &amp;portfolio, const boost::shared_ptr&lt; SimMarket &gt; &amp;simMarket)=0</div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_valuation_calculator_html_ac17854337d2e5a5a7ecff69f6d31ae43"><div class="ttname"><a href="classore_1_1analytics_1_1_valuation_calculator.html#ac17854337d2e5a5a7ecff69f6d31ae43">ore::analytics::ValuationCalculator::~ValuationCalculator</a></div><div class="ttdeci">virtual ~ValuationCalculator()</div><div class="ttdef"><b>Definition:</b> <a href="valuationcalculator_8hpp_source.html#l00041">valuationcalculator.hpp:41</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_valuation_calculator_html_af2393c54741e643419dcf136854447db"><div class="ttname"><a href="classore_1_1analytics_1_1_valuation_calculator.html#af2393c54741e643419dcf136854447db">ore::analytics::ValuationCalculator::calculate</a></div><div class="ttdeci">virtual void calculate(const boost::shared_ptr&lt; Trade &gt; &amp;trade, Size tradeIndex, const boost::shared_ptr&lt; SimMarket &gt; &amp;simMarket, boost::shared_ptr&lt; NPVCube &gt; &amp;outputCube, boost::shared_ptr&lt; NPVCube &gt; &amp;outputCubeNettingSet, const Date &amp;date, Size dateIndex, Size sample, bool isCloseOut=false)=0</div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_trade_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_trade.html">ore::data::Trade</a></div></div>
-<div class="ttc" id="adategrid_8hpp_html"><div class="ttname"><a href="../ored/dategrid_8hpp.html">dategrid.hpp</a></div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 <div class="ttc" id="anpvcube_8hpp_html"><div class="ttname"><a href="npvcube_8hpp.html">npvcube.hpp</a></div><div class="ttdoc">The base NPV cube class.</div></div>
 <div class="ttc" id="asimmarket_8hpp_html"><div class="ttname"><a href="simmarket_8hpp.html">simmarket.hpp</a></div><div class="ttdoc">A Market class that can be Simulated.</div></div>
-<div class="ttc" id="atrade_8hpp_html"><div class="ttname"><a href="../ored/trade_8hpp.html">trade.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

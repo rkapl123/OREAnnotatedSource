@@ -110,9 +110,9 @@ $(function() {
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="inmemorycube_8hpp.html">orea/cube/inmemorycube.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="aggregationscenariodata_8hpp.html">orea/scenario/aggregationscenariodata.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/nettingsetmanager_8hpp.html">ored/portfolio/nettingsetmanager.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/portfolio_8hpp.html">ored/portfolio/portfolio.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/report_8hpp.html">ored/report/report.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;ored/portfolio/nettingsetmanager.hpp&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;ored/portfolio/portfolio.hpp&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;ored/report/report.hpp&gt;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;ql/time/date.hpp&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
@@ -120,8 +120,8 @@ $(function() {
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">namespace </span>analytics {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">using namespace </span><a class="code hl_namespaceRef" href="../qle/namespace_quant_lib.html">QuantLib</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">using namespace </span><a class="code hl_namespaceRef" href="../qle/namespace_quant_ext.html">QuantExt</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">using namespace </span>QuantLib;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">using namespace </span>QuantExt;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">using namespace </span>data;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">using namespace </span>std;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span> </div>
@@ -163,7 +163,7 @@ $(function() {
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#a40b8f569a6a764e2effe70f9a2f2b96d">   82</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#a40b8f569a6a764e2effe70f9a2f2b96d">build</a>() = 0;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">    //! DIM evolution report</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#ae7a8e1381ec46e372ad8b2fc38332332">exportDimEvolution</a>(<a class="code hl_classRef" href="../ored/classore_1_1data_1_1_report.html">ore::data::Report</a>&amp; dimEvolutionReport);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#ae7a8e1381ec46e372ad8b2fc38332332">exportDimEvolution</a>(ore::data::Report&amp; dimEvolutionReport);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"></span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">    //! DIM by nettingSet, date, sample returned as a regular NPV cube</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#aa2c95d653c90d3a2ca68441a84393091">   88</a></span><span class="comment"></span>    <span class="keyword">const</span> boost::shared_ptr&lt;NPVCube&gt;&amp; <a class="code hl_function" href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#aa2c95d653c90d3a2ca68441a84393091">dimCube</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#ab03a848c14c04df25aa83afbf6c0fe40">dimCube_</a>; }</div>
@@ -239,17 +239,11 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_dynamic_initial_margin_calculator_html_aee92a2dbac4255c5fdda145bc711bb7a"><div class="ttname"><a href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#aee92a2dbac4255c5fdda145bc711bb7a">ore::analytics::DynamicInitialMarginCalculator::nettingSetDIM_</a></div><div class="ttdeci">map&lt; string, vector&lt; vector&lt; Real &gt; &gt; &gt; nettingSetDIM_</div><div class="ttdef"><b>Definition:</b> <a href="dimcalculator_8hpp_source.html#l00122">dimcalculator.hpp:122</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_dynamic_initial_margin_calculator_html_afbc05b41a6d054501e59d50f8a0030ad"><div class="ttname"><a href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#afbc05b41a6d054501e59d50f8a0030ad">ore::analytics::DynamicInitialMarginCalculator::cashFlow</a></div><div class="ttdeci">const vector&lt; vector&lt; Real &gt; &gt; &amp; cashFlow(const string &amp;nettingSet)</div><div class="ttdoc">Cash flow matrix by date and sample index for the specified netting set.</div><div class="ttdef"><b>Definition:</b> <a href="dimcalculator_8cpp_source.html#l00123">dimcalculator.cpp:123</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_dynamic_initial_margin_calculator_html_afd72676e58cee49c05f4162a9773ba15"><div class="ttname"><a href="classore_1_1analytics_1_1_dynamic_initial_margin_calculator.html#afd72676e58cee49c05f4162a9773ba15">ore::analytics::DynamicInitialMarginCalculator::datesLoopSize_</a></div><div class="ttdeci">Size datesLoopSize_</div><div class="ttdef"><b>Definition:</b> <a href="dimcalculator_8hpp_source.html#l00113">dimcalculator.hpp:113</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_report_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_report.html">ore::data::Report</a></div></div>
 <div class="ttc" id="acollatexposurehelper_8hpp_html"><div class="ttname"><a href="collatexposurehelper_8hpp.html">collatexposurehelper.hpp</a></div><div class="ttdoc">Collateral Exposure Helper Functions (stored in base currency)</div></div>
 <div class="ttc" id="acubeinterpretation_8hpp_html"><div class="ttname"><a href="cubeinterpretation_8hpp.html">cubeinterpretation.hpp</a></div><div class="ttdoc">class describing the layout of an npv cube and aggregation scenario data</div></div>
 <div class="ttc" id="ainmemorycube_8hpp_html"><div class="ttname"><a href="inmemorycube_8hpp.html">inmemorycube.hpp</a></div><div class="ttdoc">A cube implementation that stores the cube in memory.</div></div>
 <div class="ttc" id="ainputparameters_8hpp_html"><div class="ttname"><a href="inputparameters_8hpp.html">inputparameters.hpp</a></div><div class="ttdoc">Input Parameters.</div></div>
-<div class="ttc" id="anamespace_quant_ext_html"><div class="ttname"><a href="../qle/namespace_quant_ext.html">QuantExt</a></div></div>
-<div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="../qle/namespace_quant_lib.html">QuantLib</a></div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
-<div class="ttc" id="anettingsetmanager_8hpp_html"><div class="ttname"><a href="../ored/nettingsetmanager_8hpp.html">nettingsetmanager.hpp</a></div></div>
-<div class="ttc" id="aportfolio_8hpp_html"><div class="ttname"><a href="../ored/portfolio_8hpp.html">portfolio.hpp</a></div></div>
-<div class="ttc" id="areport_8hpp_html"><div class="ttname"><a href="../ored/report_8hpp.html">report.hpp</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

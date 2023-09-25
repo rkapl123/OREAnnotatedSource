@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="deltascenario_8hpp.html">orea/scenario/deltascenario.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="scenariosimmarketplus_8hpp.html">orea/scenario/scenariosimmarketplus.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../ored/log_8hpp.html">ored/utilities/log.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;ored/utilities/log.hpp&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>analytics {</div>
@@ -125,7 +125,7 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; key : delta-&gt;keys()) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_sim_market.html#ac707b4edea83c9460f992b3b74e9ad4a">simData_</a>.find(key);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_sim_market.html#ac707b4edea83c9460f992b3b74e9ad4a">simData_</a>.end()) {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<span class="stringliteral">&quot;simulation data point missing for key &quot;</span> &lt;&lt; key);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                ALOG(<span class="stringliteral">&quot;simulation data point missing for key &quot;</span> &lt;&lt; key);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                missingPoint = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_sim_market.html#a4aad7c331461564721b0e53a7b944b92">filter_</a>-&gt;allow(key)) {</div>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        QL_REQUIRE(!missingPoint, <span class="stringliteral">&quot;simulation data points missing from scenario, exit.&quot;</span>);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_variableRef" href="../ored/classore_1_1data_1_1_market_impl.html#ae647dad4005a503dc047518e84fb9a08">asof_</a> = scenario-&gt;asof();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        asof_ = scenario-&gt;asof();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_function" href="classore_1_1analytics_1_1_scenario_sim_market.html#a3c58efb82e3ac50b43423f91c0c53079">ScenarioSimMarket::applyScenario</a>(scenario);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
@@ -148,11 +148,8 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_sim_market_html_ac707b4edea83c9460f992b3b74e9ad4a"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_sim_market.html#ac707b4edea83c9460f992b3b74e9ad4a">ore::analytics::ScenarioSimMarket::simData_</a></div><div class="ttdeci">std::map&lt; RiskFactorKey, boost::shared_ptr&lt; SimpleQuote &gt; &gt; simData_</div><div class="ttdef"><b>Definition:</b> <a href="scenariosimmarket_8hpp_source.html#l00214">scenariosimmarket.hpp:214</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_sim_market_plus_html_a3e61a4568553cf61902d348ab3f5e3c2"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_sim_market_plus.html#a3e61a4568553cf61902d348ab3f5e3c2">ore::analytics::ScenarioSimMarketPlus::applyScenario</a></div><div class="ttdeci">void applyScenario(const boost::shared_ptr&lt; ore::analytics::Scenario &gt; &amp;scenario) override</div><div class="ttdef"><b>Definition:</b> <a href="scenariosimmarketplus_8cpp_source.html#l00027">scenariosimmarketplus.cpp:27</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_sim_market_plus_html_a55687aaad8fa83a41d2c8a83846fbfbb"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_sim_market_plus.html#a55687aaad8fa83a41d2c8a83846fbfbb">ore::analytics::ScenarioSimMarketPlus::diffToBaseKeys_</a></div><div class="ttdeci">std::set&lt; ore::analytics::RiskFactorKey &gt; diffToBaseKeys_</div><div class="ttdef"><b>Definition:</b> <a href="scenariosimmarketplus_8hpp_source.html#l00037">scenariosimmarketplus.hpp:37</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ae647dad4005a503dc047518e84fb9a08"><div class="ttname"><a href="../ored/classore_1_1data_1_1_market_impl.html#ae647dad4005a503dc047518e84fb9a08">ore::data::MarketImpl::asof_</a></div><div class="ttdeci">Date asof_</div></div>
 <div class="ttc" id="adeltascenario_8hpp_html"><div class="ttname"><a href="deltascenario_8hpp.html">deltascenario.hpp</a></div><div class="ttdoc">Delta scenario class.</div></div>
-<div class="ttc" id="alog_8hpp_html"><div class="ttname"><a href="../ored/log_8hpp.html">log.hpp</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a35cb05f674d9e764ca12cff351b064f2"><div class="ttname"><a href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a></div><div class="ttdeci">#define ALOG(text)</div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 <div class="ttc" id="ascenariosimmarketplus_8hpp_html"><div class="ttname"><a href="scenariosimmarketplus_8hpp.html">scenariosimmarketplus.hpp</a></div><div class="ttdoc">scenario sim market with optimised delta scenario processing</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

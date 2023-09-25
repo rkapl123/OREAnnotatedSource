@@ -110,13 +110,13 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a76939e80c80ff949b4568be7af749d37"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::set&lt; QuantLib::Date &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a76939e80c80ff949b4568be7af749d37">fixingDatesIndices</a> (const QuantLib::Date &amp;settlementDate=QuantLib::Date()) const</td></tr>
 <tr class="separator:a76939e80c80ff949b4568be7af749d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae12e0cc681b4cc2d31b7ee2acc16e99c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c">addFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="memitem:ae12e0cc681b4cc2d31b7ee2acc16e99c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c">addFixingDate</a> (const QuantLib::Date &amp;fixingDate, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const bool alwaysAddIfPaysOnSettlement=false)</td></tr>
 <tr class="separator:ae12e0cc681b4cc2d31b7ee2acc16e99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75ba515fe0f8043b427bd54677dfa51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a75ba515fe0f8043b427bd54677dfa51c">addFixingDates</a> (const std::vector&lt; QuantLib::Date &gt; &amp;fixingDates, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="memitem:a75ba515fe0f8043b427bd54677dfa51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a75ba515fe0f8043b427bd54677dfa51c">addFixingDates</a> (const std::vector&lt; QuantLib::Date &gt; &amp;fixingDates, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const bool alwaysAddIfPaysOnSettlement=false)</td></tr>
 <tr class="separator:a75ba515fe0f8043b427bd54677dfa51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e38e0bce977019cf9b28d7ffe38763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a73e38e0bce977019cf9b28d7ffe38763">addZeroInflationFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const <a class="el" href="classbool.html">bool</a> indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const CPI::InterpolationType coupopnInterpolation, const Frequency couponFrequency, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="memitem:a73e38e0bce977019cf9b28d7ffe38763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a73e38e0bce977019cf9b28d7ffe38763">addZeroInflationFixingDate</a> (const QuantLib::Date &amp;fixingDate, const std::string &amp;indexName, const bool indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const CPI::InterpolationType coupopnInterpolation, const Frequency couponFrequency, const QuantLib::Date &amp;payDate=Date::maxDate(), const bool alwaysAddIfPaysOnSettlement=false)</td></tr>
 <tr class="separator:a73e38e0bce977019cf9b28d7ffe38763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba561fec2cf07ba236886b9bb7f513b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a2ba561fec2cf07ba236886b9bb7f513b">addYoYInflationFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const <a class="el" href="classbool.html">bool</a> indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="memitem:a2ba561fec2cf07ba236886b9bb7f513b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a2ba561fec2cf07ba236886b9bb7f513b">addYoYInflationFixingDate</a> (const QuantLib::Date &amp;fixingDate, const std::string &amp;indexName, const bool indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const QuantLib::Date &amp;payDate=Date::maxDate(), const bool alwaysAddIfPaysOnSettlement=false)</td></tr>
 <tr class="separator:a2ba561fec2cf07ba236886b9bb7f513b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
 <tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,9 +127,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aab54e199d0dad042f3d2ac66e7fec268"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> = std::tuple&lt; std::string, QuantLib::Date, QuantLib::Date, <a class="el" href="classbool.html">bool</a> &gt;</td></tr>
+<tr class="memitem:aab54e199d0dad042f3d2ac66e7fec268"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> = std::tuple&lt; std::string, QuantLib::Date, QuantLib::Date, bool &gt;</td></tr>
 <tr class="separator:aab54e199d0dad042f3d2ac66e7fec268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79fa57d0c3504bff50c45d7cf2834023"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> = std::tuple&lt; <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a>, <a class="el" href="classbool.html">bool</a>, Frequency, Period &gt;</td></tr>
+<tr class="memitem:a79fa57d0c3504bff50c45d7cf2834023"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> = std::tuple&lt; <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a>, bool, Frequency, Period &gt;</td></tr>
 <tr class="separator:a79fa57d0c3504bff50c45d7cf2834023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03765784e5d0eaa76bffdd5f5afab6ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a03765784e5d0eaa76bffdd5f5afab6ed">ZeroInflationFixingEntry</a> = std::tuple&lt; <a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a>, CPI::InterpolationType, Frequency &gt;</td></tr>
 <tr class="separator:a03765784e5d0eaa76bffdd5f5afab6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +163,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> =  std::tuple&lt;std::string, QuantLib::Date, QuantLib::Date, <a class="el" href="classbool.html">bool</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> =  std::tuple&lt;std::string, QuantLib::Date, QuantLib::Date, bool&gt;</td>
         </tr>
       </table>
   </td>
@@ -187,7 +187,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> =  std::tuple&lt;<a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a>, <a class="el" href="classbool.html">bool</a>, Frequency, Period&gt;</td>
+          <td class="memname">using <a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> =  std::tuple&lt;<a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a>, bool, Frequency, Period&gt;</td>
         </tr>
       </table>
   </td>
@@ -257,7 +257,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  188</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>) {</div>
 <div class="line"><span class="lineno">  189</span>        <span class="comment">// get the data</span></div>
 <div class="line"><span class="lineno">  190</span>        std::string indexName = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  191</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(f);</div>
+<div class="line"><span class="lineno">  191</span>        Date fixingDate = std::get&lt;1&gt;(f);</div>
 <div class="line"><span class="lineno">  192</span>        Date payDate = std::get&lt;2&gt;(f);</div>
 <div class="line"><span class="lineno">  193</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(f);</div>
 <div class="line"><span class="lineno">  194</span>        <span class="comment">// add to result</span></div>
@@ -275,7 +275,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  206</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> inflationFixingEntry = std::get&lt;0&gt;(f);</div>
 <div class="line"><span class="lineno">  207</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(inflationFixingEntry);</div>
 <div class="line"><span class="lineno">  208</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  209</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  209</span>        Date fixingDate = std::get&lt;1&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  210</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  211</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  212</span>        <span class="keywordtype">bool</span> indexInterpolated = std::get&lt;1&gt;(inflationFixingEntry);</div>
@@ -299,7 +299,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  230</span>        <span class="comment">// get the data</span></div>
 <div class="line"><span class="lineno">  231</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(f);</div>
 <div class="line"><span class="lineno">  232</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  233</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  233</span>        Date fixingDate = std::get&lt;1&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  234</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  235</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  236</span>        <span class="keywordtype">bool</span> indexInterpolated = std::get&lt;1&gt;(f);</div>
@@ -325,23 +325,11 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_a79fa57d0c3504bff50c45d7cf2834023"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">ore::data::RequiredFixings::InflationFixingEntry</a></div><div class="ttdeci">std::tuple&lt; FixingEntry, bool, Frequency, Period &gt; InflationFixingEntry</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00139">fixingdates.hpp:139</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_aab54e199d0dad042f3d2ac66e7fec268"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">ore::data::RequiredFixings::FixingEntry</a></div><div class="ttdeci">std::tuple&lt; std::string, QuantLib::Date, QuantLib::Date, bool &gt; FixingEntry</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00137">fixingdates.hpp:137</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_abfb42812d0036a22dab668e251c8d5bd"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">ore::data::RequiredFixings::fixingDates_</a></div><div class="ttdeci">std::set&lt; FixingEntry &gt; fixingDates_</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00144">fixingdates.hpp:144</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_1_1_zero_inflation_html_a57de786c1c8988b6da9d354282b4b370"><div class="ttname"><a href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a></div><div class="ttdeci">QuantLib::Date fixingDate(const QuantLib::Date &amp;d, const QuantLib::Period obsLag, const QuantLib::Frequency freq, bool interpolated)</div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_cgraph" alt=""/></div>
-<map name="aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_cgraph" id="aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,132,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="180,5,259,31"/>
-</map>
-</div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph" id="aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph">
 <area shape="rect" title=" " alt="" coords="401,5,528,31"/>
@@ -379,7 +367,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>alwaysAddIfPaysOnSettlement</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
@@ -396,68 +384,61 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  257</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(</div>
 <div class="line"><span class="lineno">  258</span>        std::make_tuple(indexName, fixingDate, payDate, payDate == Date::maxDate() || alwaysAddIfPaysOnSettlement));</div>
 <div class="line"><span class="lineno">  259</span>}</div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_cgraph" alt=""/></div>
-<map name="aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_cgraph" id="aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,111,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="159,5,237,31"/>
-</map>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph" id="aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph">
-<area shape="rect" title=" " alt="" coords="780,618,885,643"/>
+<area shape="rect" title=" " alt="" coords="780,717,885,742"/>
 <area shape="rect" href="classore_1_1data_1_1_asian_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="547,5,699,45"/>
 <area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="555,69,691,109"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="527,133,720,173"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="528,197,719,237"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_average_forward.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="529,261,717,301"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_digital_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,325,709,365"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,389,709,429"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_european_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="529,453,718,493"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="541,517,706,557"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="539,581,708,621"/>
-<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="553,646,694,671"/>
-<area shape="rect" href="classore_1_1data_1_1_vanilla_option_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="544,696,703,736"/>
-<area shape="rect" href="classore_1_1data_1_1_forward_rate_agreement.html#a32b57451f66777dd8794b747d0f77224" title=" " alt="" coords="515,760,732,800"/>
-<area shape="rect" href="classore_1_1data_1_1_barrier_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="545,824,702,864"/>
-<area shape="rect" href="classore_1_1data_1_1_convertible_bond.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="536,888,711,928"/>
-<area shape="rect" href="classore_1_1data_1_1_var_swap.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="557,952,690,992"/>
-<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="529,1016,717,1056"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="527,1080,720,1120"/>
-<area shape="rect" href="namespaceore_1_1data.html#a4a1f489aaefd95989a88a7b10ab23cfc" title=" " alt="" coords="535,1145,711,1170"/>
-<area shape="rect" href="classore_1_1data_1_1_fixing_date_getter.html#af22504fe8ea64d6d556af7757c8aad0f" title=" " alt="" coords="534,1195,713,1235"/>
-<area shape="rect" href="fxexotics_8cpp.html#a1bb3d76e35ea3c22bb6f167cc5a2a9fa" title=" " alt="" coords="272,333,463,358"/>
-<area shape="rect" href="fxexotics_8cpp.html#a356626221d09fa0287e4f5d1646ca231" title=" " alt="" coords="272,390,463,415"/>
-<area shape="rect" href="fxexotics_8cpp.html#acfd93f4169abaf3c0d3541c4a297d9de" title=" " alt="" coords="272,439,463,465"/>
-<area shape="rect" href="fxexotics_8cpp.html#ae4a8f5fc2a666b87316a20b9716625b7" title=" " alt="" coords="272,489,463,514"/>
-<area shape="rect" href="fxexotics_8cpp.html#a81ded61bff8d1f143845d1a8063ab363" title=" " alt="" coords="272,538,463,563"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_future_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="271,588,464,628"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="289,652,445,692"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="300,716,435,756"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="275,780,460,820"/>
-<area shape="rect" href="equitytrades_8cpp.html#aa42062877db60fac479ac06add9deb01" title=" " alt="" coords="17,595,208,621"/>
-<area shape="rect" href="equitytrades_8cpp.html#a9157b4f937ae04fa01bdd86ef531a15d" title=" " alt="" coords="17,659,208,685"/>
-<area shape="rect" href="test_2fxoption_8cpp.html#a321417ba3c97d0524c8fa2d8acb97d72" title=" " alt="" coords="17,717,208,742"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_digital_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="21,767,204,807"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_average_price_option.html#a56820373aef8756143bb07c7c7c7cf6e" title="Build a standard option." alt="" coords="5,831,220,871"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="268,844,467,884"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="276,908,459,948"/>
-<area shape="rect" href="fxexotics_8cpp.html#a97f1cf85be4712888f153506afc004be" title=" " alt="" coords="17,895,208,921"/>
-<area shape="rect" href="structore_1_1data_1_1_convertible_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="280,972,455,1012"/>
-<area shape="rect" href="classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="292,1037,443,1062"/>
-<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="293,1145,441,1170"/>
-<area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="17,1087,208,1113"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="37,1137,188,1177"/>
-<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="34,1201,191,1241"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_forward.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="527,133,720,173"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="527,197,720,237"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="528,261,719,301"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_average_forward.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="529,325,717,365"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_digital_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,389,709,429"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="538,453,709,493"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_european_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="529,517,718,557"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_forward.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="552,581,695,621"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="541,645,706,685"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="539,709,708,749"/>
+<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="553,774,694,799"/>
+<area shape="rect" href="classore_1_1data_1_1_vanilla_option_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="544,824,703,864"/>
+<area shape="rect" href="classore_1_1data_1_1_forward_rate_agreement.html#a32b57451f66777dd8794b747d0f77224" title=" " alt="" coords="515,888,732,928"/>
+<area shape="rect" href="classore_1_1data_1_1_barrier_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="545,952,702,992"/>
+<area shape="rect" href="classore_1_1data_1_1_cliquet_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="544,1016,703,1056"/>
+<area shape="rect" href="classore_1_1data_1_1_convertible_bond.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="536,1080,711,1120"/>
+<area shape="rect" href="classore_1_1data_1_1_var_swap.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="557,1144,690,1184"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_spread_option.html#a9af2b9e6d488683123c6e4790595eb2b" title="Implement the build method." alt="" coords="529,1208,717,1248"/>
+<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="529,1272,717,1312"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="527,1336,720,1376"/>
+<area shape="rect" href="namespaceore_1_1data.html#a4a1f489aaefd95989a88a7b10ab23cfc" title=" " alt="" coords="535,1401,711,1426"/>
+<area shape="rect" href="fxexotics_8cpp.html#a1bb3d76e35ea3c22bb6f167cc5a2a9fa" title=" " alt="" coords="272,397,463,422"/>
+<area shape="rect" href="fxexotics_8cpp.html#a356626221d09fa0287e4f5d1646ca231" title=" " alt="" coords="272,461,463,486"/>
+<area shape="rect" href="fxexotics_8cpp.html#acfd93f4169abaf3c0d3541c4a297d9de" title=" " alt="" coords="272,525,463,550"/>
+<area shape="rect" href="fxexotics_8cpp.html#ae4a8f5fc2a666b87316a20b9716625b7" title=" " alt="" coords="272,597,463,622"/>
+<area shape="rect" href="fxexotics_8cpp.html#a81ded61bff8d1f143845d1a8063ab363" title=" " alt="" coords="272,646,463,671"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_future_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="271,696,464,736"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="289,760,445,800"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="300,824,435,864"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="275,888,460,928"/>
+<area shape="rect" href="equitytrades_8cpp.html#aa42062877db60fac479ac06add9deb01" title=" " alt="" coords="17,703,208,729"/>
+<area shape="rect" href="equitytrades_8cpp.html#a9157b4f937ae04fa01bdd86ef531a15d" title=" " alt="" coords="17,767,208,793"/>
+<area shape="rect" href="test_2fxoption_8cpp.html#a321417ba3c97d0524c8fa2d8acb97d72" title=" " alt="" coords="17,825,208,850"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_digital_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="21,875,204,915"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_average_price_option.html#a56820373aef8756143bb07c7c7c7cf6e" title="Build a standard option." alt="" coords="5,939,220,979"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="268,952,467,992"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="276,1016,459,1056"/>
+<area shape="rect" href="fxexotics_8cpp.html#a97f1cf85be4712888f153506afc004be" title=" " alt="" coords="17,1003,208,1029"/>
+<area shape="rect" href="structore_1_1data_1_1_convertible_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="280,1080,455,1120"/>
+<area shape="rect" href="classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="292,1145,443,1170"/>
+<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="293,1401,441,1426"/>
+<area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="17,1311,208,1337"/>
+<area shape="rect" href="classore_1_1data_1_1_cross_currency_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="29,1361,196,1401"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="37,1425,188,1465"/>
+<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="34,1489,191,1529"/>
 </map>
 </div>
 
@@ -490,7 +471,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>alwaysAddIfPaysOnSettlement</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
@@ -508,11 +489,11 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  264</span>        <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(std::make_tuple(indexName, d, payDate, alwaysAddIfPaysOnSettlement));</div>
 <div class="line"><span class="lineno">  265</span>    }</div>
 <div class="line"><span class="lineno">  266</span>}</div>
-</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a75ba515fe0f8043b427bd54677dfa51c_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a75ba515fe0f8043b427bd54677dfa51c_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a75ba515fe0f8043b427bd54677dfa51c_icgraph" id="aclassore_1_1data_1_1_required_fixings_a75ba515fe0f8043b427bd54677dfa51c_icgraph">
 <area shape="rect" title=" " alt="" coords="271,45,383,70"/>
@@ -544,7 +525,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>indexInterpolated</em>, </td>
         </tr>
         <tr>
@@ -580,7 +561,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>alwaysAddIfPaysOnSettlement</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
@@ -599,22 +580,11 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  276</span>                                        indexInterpolated, indexFrequency, indexAvailabilityLag),</div>
 <div class="line"><span class="lineno">  277</span>                        couponInterpolation, couponFrequency));</div>
 <div class="line"><span class="lineno">  278</span>}</div>
-</div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_cgraph" alt=""/></div>
-<map name="aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_cgraph" id="aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,180,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="228,5,307,31"/>
-</map>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph" id="aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph">
 <area shape="rect" title=" " alt="" coords="232,13,407,38"/>
@@ -645,7 +615,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>indexInterpolated</em>, </td>
         </tr>
         <tr>
@@ -669,7 +639,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>alwaysAddIfPaysOnSettlement</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
@@ -687,18 +657,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  285</span>        std::make_tuple(std::make_tuple(indexName, fixingDate, payDate, alwaysAddIfPaysOnSettlement), indexInterpolated,</div>
 <div class="line"><span class="lineno">  286</span>                        indexFrequency, indexAvailabilityLag));</div>
 <div class="line"><span class="lineno">  287</span>}</div>
-</div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_cgraph" alt=""/></div>
-<map name="aclassore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_cgraph" id="aclassore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,180,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="228,5,307,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac8bb3912a3ce86b15842e79d0b421204" name="ac8bb3912a3ce86b15842e79d0b421204"></a>
@@ -723,16 +682,16 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  143</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.clear();</div>
 <div class="line"><span class="lineno">  144</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.clear();</div>
 <div class="line"><span class="lineno">  145</span>}</div>
-</div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph" id="aclassore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph">
-<area shape="rect" title=" " alt="" coords="452,170,503,195"/>
-<area shape="rect" href="classore_1_1data_1_1_c_b_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="257,145,401,170"/>
-<area shape="rect" href="classore_1_1data_1_1_trade.html#ad20897c5c8bd47f5d4005989bead0e55" title="Reset trade, clear all base class data. This does not reset accumulated timings for this trade." alt="" coords="253,194,404,219"/>
+<area shape="rect" title=" " alt="" coords="452,194,503,219"/>
+<area shape="rect" href="classore_1_1data_1_1_c_b_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="257,169,401,194"/>
+<area shape="rect" href="classore_1_1data_1_1_trade.html#ad20897c5c8bd47f5d4005989bead0e55" title="Reset trade, clear all base class data. This does not reset accumulated timings for this trade." alt="" coords="253,218,404,243"/>
 <area shape="rect" href="classore_1_1data_1_1_composite_trade.html#a6e41669675cd185bf3575d07a4ec505f" title="Constructor requires a trade factory so that subtrades can be built." alt="" coords="18,5,193,45"/>
 <area shape="rect" href="classore_1_1data_1_1_trade.html#ad977c1f7ae61e8bfaaa9abab3181970b" title="Base class constructor." alt="" coords="29,70,182,95"/>
 <area shape="rect" href="fxexotics_8cpp.html#ae4a8f5fc2a666b87316a20b9716625b7" title=" " alt="" coords="10,119,201,145"/>
@@ -740,7 +699,8 @@ Friends</h2></td></tr>
 <area shape="rect" href="classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="30,218,181,243"/>
 <area shape="rect" href="classore_1_1data_1_1_commodity_swap.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="16,268,195,308"/>
 <area shape="rect" href="classore_1_1data_1_1_commodity_option_strip.html#a9af2b9e6d488683123c6e4790595eb2b" title="Implement the build method." alt="" coords="13,332,198,372"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_swaption.html#a9af2b9e6d488683123c6e4790595eb2b" title=" " alt="" coords="5,396,205,436"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_spread_option.html#a9af2b9e6d488683123c6e4790595eb2b" title="Implement the build method." alt="" coords="11,396,199,436"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_swaption.html#a9af2b9e6d488683123c6e4790595eb2b" title=" " alt="" coords="5,460,205,500"/>
 </map>
 </div>
 
@@ -771,45 +731,46 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  151</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.insert(requiredFixings.yoyInflationFixingDates_.begin(),</div>
 <div class="line"><span class="lineno">  152</span>                                    requiredFixings.yoyInflationFixingDates_.end());</div>
 <div class="line"><span class="lineno">  153</span>}</div>
-</div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph" id="aclassore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph">
-<area shape="rect" title=" " alt="" coords="965,298,1036,323"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_repo.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="759,55,901,95"/>
-<area shape="rect" href="classore_1_1data_1_1_c_b_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="527,187,671,213"/>
-<area shape="rect" href="classore_1_1data_1_1_composite_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="743,183,917,223"/>
-<area shape="rect" href="classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="763,348,897,388"/>
-<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="759,298,901,323"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_basket.html#ab0d50be3a6ba1c57830b6501983219a0" title=" " alt="" coords="754,119,906,159"/>
-<area shape="rect" href="classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="524,413,675,438"/>
-<area shape="rect" href="classore_1_1data_1_1_convertible_bond.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="743,463,917,503"/>
-<area shape="rect" href="namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="745,527,915,553"/>
-<area shape="rect" href="test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="504,355,695,381"/>
-<area shape="rect" href="structore_1_1data_1_1_convertible_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="512,463,687,503"/>
-<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="519,527,679,553"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="531,577,667,617"/>
-<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,86,424,111"/>
-<area shape="rect" href="classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,168,437,208"/>
-<area shape="rect" href="classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,232,441,272"/>
-<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,296,444,336"/>
-<area shape="rect" href="classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,360,431,400"/>
-<area shape="rect" href="classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,424,430,464"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,488,435,528"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,552,435,592"/>
-<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,616,433,656"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,680,456,720"/>
-<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,744,443,784"/>
-<area shape="rect" href="classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,808,440,848"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,872,439,912"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,936,447,976"/>
+<area shape="rect" title=" " alt="" coords="965,342,1036,367"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_repo.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="759,99,901,139"/>
+<area shape="rect" href="classore_1_1data_1_1_c_b_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="527,231,671,257"/>
+<area shape="rect" href="classore_1_1data_1_1_composite_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="743,227,917,267"/>
+<area shape="rect" href="classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="763,392,897,432"/>
+<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="759,342,901,367"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_basket.html#ab0d50be3a6ba1c57830b6501983219a0" title=" " alt="" coords="754,163,906,203"/>
+<area shape="rect" href="classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="524,457,675,482"/>
+<area shape="rect" href="classore_1_1data_1_1_convertible_bond.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="743,507,917,547"/>
+<area shape="rect" href="namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="745,571,915,597"/>
+<area shape="rect" href="test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="504,399,695,425"/>
+<area shape="rect" href="structore_1_1data_1_1_convertible_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="512,507,687,547"/>
+<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="519,571,679,597"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="531,621,667,661"/>
+<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,127,424,153"/>
+<area shape="rect" href="classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,212,437,252"/>
+<area shape="rect" href="classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,276,441,316"/>
+<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,340,444,380"/>
+<area shape="rect" href="classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,404,431,444"/>
+<area shape="rect" href="classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,468,430,508"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,532,435,572"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,596,435,636"/>
+<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,660,433,700"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,724,456,764"/>
+<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,788,443,828"/>
+<area shape="rect" href="classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,852,440,892"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,916,439,956"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,980,447,1020"/>
 <area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,70,196,95"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,120,176,160"/>
+<area shape="rect" href="classore_1_1data_1_1_cross_currency_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="17,120,184,160"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,184,176,224"/>
 <area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,5,179,45"/>
-<area shape="rect" href="classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,184,194,224"/>
+<area shape="rect" href="classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,248,194,288"/>
 </map>
 </div>
 
@@ -856,37 +817,38 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  176</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a> = newZeroInflationFixingDates;</div>
 <div class="line"><span class="lineno">  177</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a> = newYoYInflationFixingDates;</div>
 <div class="line"><span class="lineno">  178</span>}</div>
-</div><!-- fragment --><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph" id="aclassore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph">
-<area shape="rect" title=" " alt="" coords="929,504,1040,529"/>
-<area shape="rect" href="classore_1_1data_1_1_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="719,439,874,479"/>
-<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="726,504,867,529"/>
-<area shape="rect" href="namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="712,553,881,579"/>
-<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="504,524,664,549"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="516,574,652,614"/>
-<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,80,424,105"/>
-<area shape="rect" href="classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,165,437,205"/>
-<area shape="rect" href="classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,229,441,269"/>
-<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,293,444,333"/>
-<area shape="rect" href="classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,357,431,397"/>
-<area shape="rect" href="classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,421,430,461"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,485,435,525"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,549,435,589"/>
-<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,613,433,653"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,677,456,717"/>
-<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,741,443,781"/>
-<area shape="rect" href="classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,805,440,845"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,869,439,909"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,933,447,973"/>
+<area shape="rect" title=" " alt="" coords="929,551,1040,576"/>
+<area shape="rect" href="classore_1_1data_1_1_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="719,486,874,526"/>
+<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="726,551,867,576"/>
+<area shape="rect" href="namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="712,600,881,625"/>
+<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="504,571,664,596"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="516,621,652,661"/>
+<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,127,424,152"/>
+<area shape="rect" href="classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,211,437,251"/>
+<area shape="rect" href="classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,275,441,315"/>
+<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,339,444,379"/>
+<area shape="rect" href="classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,403,431,443"/>
+<area shape="rect" href="classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,467,430,507"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,531,435,571"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,595,435,635"/>
+<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,659,433,699"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,723,456,763"/>
+<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,787,443,827"/>
+<area shape="rect" href="classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,851,440,891"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,915,439,955"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,979,447,1019"/>
 <area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,5,196,31"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,55,176,95"/>
-<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,119,179,159"/>
-<area shape="rect" href="classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,183,194,223"/>
+<area shape="rect" href="classore_1_1data_1_1_cross_currency_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="17,55,184,95"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,119,176,159"/>
+<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,183,179,223"/>
+<area shape="rect" href="classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,247,194,287"/>
 </map>
 </div>
 
@@ -933,7 +895,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  290</span>    out &lt;&lt; <span class="stringliteral">&quot;IndexName FixingDate PayDate AlwaysAddIfPaysOnSettlement\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  291</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.fixingDates_) {</div>
 <div class="line"><span class="lineno">  292</span>        std::string indexName = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  293</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(f);</div>
+<div class="line"><span class="lineno">  293</span>        Date fixingDate = std::get&lt;1&gt;(f);</div>
 <div class="line"><span class="lineno">  294</span>        Date payDate = std::get&lt;2&gt;(f);</div>
 <div class="line"><span class="lineno">  295</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(f);</div>
 <div class="line"><span class="lineno">  296</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
@@ -943,7 +905,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  300</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">RequiredFixings::InflationFixingEntry</a> inflationFixingEntry = std::get&lt;0&gt;(f);</div>
 <div class="line"><span class="lineno">  301</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">RequiredFixings::FixingEntry</a> fixingEntry = std::get&lt;0&gt;(inflationFixingEntry);</div>
 <div class="line"><span class="lineno">  302</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  303</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  303</span>        Date fixingDate = std::get&lt;1&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  304</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  305</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  306</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
@@ -952,7 +914,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  309</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.yoyInflationFixingDates_) {</div>
 <div class="line"><span class="lineno">  310</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">RequiredFixings::FixingEntry</a> fixingEntry = std::get&lt;0&gt;(f);</div>
 <div class="line"><span class="lineno">  311</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  312</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  312</span>        Date fixingDate = std::get&lt;1&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  313</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  314</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
 <div class="line"><span class="lineno">  315</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>

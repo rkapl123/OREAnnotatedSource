@@ -115,11 +115,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ec56fc6738c790574c0cbc0467d33e3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1ec56fc6738c790574c0cbc0467d33e3"><td class="memTemplItemLeft" align="right" valign="top">static Real&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a1ec56fc6738c790574c0cbc0467d33e3">estimateUncollatValue</a> (const Date &amp;simulationDate, const Real &amp;npv_t0, const Date &amp;date_t0, const vector&lt; vector&lt; T &gt; &gt; &amp;scenPvProfiles, const unsigned &amp;scenIndex, const vector&lt; Date &gt; &amp;dateGrid)</td></tr>
 <tr class="separator:a1ec56fc6738c790574c0cbc0467d33e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08ba6478bcbcaa94647fc616f0bcbf0b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a08ba6478bcbcaa94647fc616f0bcbf0b">updateMarginCall</a> (const boost::shared_ptr&lt; <a class="el" href="classore_1_1analytics_1_1_collateral_account.html">CollateralAccount</a> &gt; &amp;collat, const Real &amp;uncollatValue, const Date &amp;simulationDate, const Real &amp;accrualFactor, const <a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2f">CalculationType</a> &amp;calcType=<a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2fa33e94d2249181e0e1f815e7c0affc69b">Symmetric</a>, const <a class="el" href="classbool.html">bool</a> &amp;eligMarginReqDateUs=true, const <a class="el" href="classbool.html">bool</a> &amp;eligMarginReqDateCtp=true)</td></tr>
+<tr class="memitem:a08ba6478bcbcaa94647fc616f0bcbf0b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a08ba6478bcbcaa94647fc616f0bcbf0b">updateMarginCall</a> (const boost::shared_ptr&lt; <a class="el" href="classore_1_1analytics_1_1_collateral_account.html">CollateralAccount</a> &gt; &amp;collat, const Real &amp;uncollatValue, const Date &amp;simulationDate, const Real &amp;accrualFactor, const <a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2f">CalculationType</a> &amp;calcType=<a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2fa33e94d2249181e0e1f815e7c0affc69b">Symmetric</a>, const bool &amp;eligMarginReqDateUs=true, const bool &amp;eligMarginReqDateCtp=true)</td></tr>
 <tr class="separator:a08ba6478bcbcaa94647fc616f0bcbf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fcd4541222891df8be90619f379c7b6"><td class="memItemLeft" align="right" valign="top">static Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a3fcd4541222891df8be90619f379c7b6">creditSupportAmount</a> (const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_netting_set_definition.html">ore::data::NettingSetDefinition</a> &gt; &amp;nettingSet, const Real &amp;uncollatValueCsaCur)</td></tr>
+<tr class="memitem:a3fcd4541222891df8be90619f379c7b6"><td class="memItemLeft" align="right" valign="top">static Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a3fcd4541222891df8be90619f379c7b6">creditSupportAmount</a> (const boost::shared_ptr&lt; ore::data::NettingSetDefinition &gt; &amp;nettingSet, const Real &amp;uncollatValueCsaCur)</td></tr>
 <tr class="separator:a3fcd4541222891df8be90619f379c7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fcd3bc7669d8253d536cd729bf90525"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; vector&lt; boost::shared_ptr&lt; <a class="el" href="classore_1_1analytics_1_1_collateral_account.html">CollateralAccount</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a0fcd3bc7669d8253d536cd729bf90525">collateralBalancePaths</a> (const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_netting_set_definition.html">NettingSetDefinition</a> &gt; &amp;csaDef, const Real &amp;nettingSetPv, const Date &amp;date_t0, const vector&lt; vector&lt; Real &gt; &gt; &amp;nettingSetValues, const Date &amp;nettingSet_maturity, const vector&lt; Date &gt; &amp;dateGrid, const Real &amp;csaFxTodayRate, const vector&lt; vector&lt; Real &gt; &gt; &amp;csaFxScenarioRates, const Real &amp;csaTodayCollatCurve, const vector&lt; vector&lt; Real &gt; &gt; &amp;csaScenCollatCurves, const <a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2f">CalculationType</a> &amp;calcType=<a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2fa33e94d2249181e0e1f815e7c0affc69b">Symmetric</a>)</td></tr>
+<tr class="memitem:a0fcd3bc7669d8253d536cd729bf90525"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; vector&lt; boost::shared_ptr&lt; <a class="el" href="classore_1_1analytics_1_1_collateral_account.html">CollateralAccount</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a0fcd3bc7669d8253d536cd729bf90525">collateralBalancePaths</a> (const boost::shared_ptr&lt; NettingSetDefinition &gt; &amp;csaDef, const Real &amp;nettingSetPv, const Date &amp;date_t0, const vector&lt; vector&lt; Real &gt; &gt; &amp;nettingSetValues, const Date &amp;nettingSet_maturity, const vector&lt; Date &gt; &amp;dateGrid, const Real &amp;csaFxTodayRate, const vector&lt; vector&lt; Real &gt; &gt; &amp;csaFxScenarioRates, const Real &amp;csaTodayCollatCurve, const vector&lt; vector&lt; Real &gt; &gt; &amp;csaScenCollatCurves, const <a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2f">CalculationType</a> &amp;calcType=<a class="el" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#ae2fb950fc8d1f9388248733404704d2fa33e94d2249181e0e1f815e7c0affc69b">Symmetric</a>)</td></tr>
 <tr class="separator:a0fcd3bc7669d8253d536cd729bf90525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -240,10 +240,8 @@ Static Public Member Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_collateral_exposure_helper_a32b304530ea003c23663098416e24c3f_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_collateral_exposure_helper_a32b304530ea003c23663098416e24c3f_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_collateral_exposure_helper_a32b304530ea003c23663098416e24c3f_cgraph" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_a32b304530ea003c23663098416e24c3f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,165,56"/>
-<area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a3fcd4541222891df8be90619f379c7b6" title=" " alt="" coords="213,31,357,56"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="405,5,452,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="407,55,450,80"/>
+<area shape="rect" title=" " alt="" coords="5,5,165,31"/>
+<area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a3fcd4541222891df8be90619f379c7b6" title=" " alt="" coords="213,5,357,31"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -432,13 +430,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a> &amp;&#160;</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
           <td class="paramname"><em>eligMarginReqDateUs</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbool.html">bool</a> &amp;&#160;</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
           <td class="paramname"><em>eligMarginReqDateCtp</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
@@ -494,11 +492,9 @@ Static Public Member Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_collateral_exposure_helper_a08ba6478bcbcaa94647fc616f0bcbf0b_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_collateral_exposure_helper_a08ba6478bcbcaa94647fc616f0bcbf0b_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_collateral_exposure_helper_a08ba6478bcbcaa94647fc616f0bcbf0b_cgraph" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_a08ba6478bcbcaa94647fc616f0bcbf0b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,128,56"/>
-<area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a32b304530ea003c23663098416e24c3f" title=" " alt="" coords="176,31,336,56"/>
-<area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a3fcd4541222891df8be90619f379c7b6" title=" " alt="" coords="384,31,528,56"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="576,5,623,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="578,55,621,80"/>
+<area shape="rect" title=" " alt="" coords="5,5,128,31"/>
+<area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a32b304530ea003c23663098416e24c3f" title=" " alt="" coords="176,5,336,31"/>
+<area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a3fcd4541222891df8be90619f379c7b6" title=" " alt="" coords="384,5,528,31"/>
 </map>
 </div>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -529,7 +525,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">Real creditSupportAmount </td>
           <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_netting_set_definition.html">ore::data::NettingSetDefinition</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; ore::data::NettingSetDefinition &gt; &amp;&#160;</td>
           <td class="paramname"><em>nettingSet</em>, </td>
         </tr>
         <tr>
@@ -559,34 +555,20 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   87</span>    Real threshold, csa;</div>
 <div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (uncollatValueCsaCur - ia &gt;= 0) {</div>
 <div class="line"><span class="lineno">   89</span>        threshold = nettingSet-&gt;csaDetails()-&gt;thresholdRcv();</div>
-<div class="line"><span class="lineno">   90</span>        csa = <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a>(uncollatValueCsaCur - ia - threshold, 0.0);</div>
+<div class="line"><span class="lineno">   90</span>        csa = max(uncollatValueCsaCur - ia - threshold, 0.0);</div>
 <div class="line"><span class="lineno">   91</span>    }</div>
 <div class="line"><span class="lineno">   92</span>    <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   93</span>        threshold = nettingSet-&gt;csaDetails()-&gt;thresholdPay();</div>
 <div class="line"><span class="lineno">   94</span>        <span class="comment">// N.B. the min and change of sign on threshold.</span></div>
-<div class="line"><span class="lineno">   95</span>        csa = <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a>(uncollatValueCsaCur - ia + threshold, 0.0);</div>
+<div class="line"><span class="lineno">   95</span>        csa = min(uncollatValueCsaCur - ia + threshold, 0.0);</div>
 <div class="line"><span class="lineno">   96</span>    }</div>
 <div class="line"><span class="lineno">   97</span>    <span class="keywordflow">return</span> csa;</div>
 <div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a0780e43df89be3d7f7671eca2418cdd1"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a></div><div class="ttdeci">RandomVariable max(RandomVariable x, const RandomVariable &amp;y)</div></div>
-<div class="ttc" id="anamespace_quant_ext_html_afe4df8f9c3657399dd532e1d3c895dfa"><div class="ttname"><a href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a></div><div class="ttdeci">RandomVariable min(RandomVariable x, const RandomVariable &amp;y)</div></div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_cgraph" alt=""/></div>
-<map name="aclassore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_cgraph" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,149,56"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="197,5,244,31"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="199,55,242,80"/>
-</map>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_icgraph" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_a3fcd4541222891df8be90619f379c7b6_icgraph">
 <area shape="rect" title=" " alt="" coords="1085,13,1229,38"/>
@@ -612,7 +594,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">boost::shared_ptr&lt; vector&lt; boost::shared_ptr&lt; <a class="el" href="classore_1_1analytics_1_1_collateral_account.html">CollateralAccount</a> &gt; &gt; &gt; collateralBalancePaths </td>
           <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_netting_set_definition.html">NettingSetDefinition</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; NettingSetDefinition &gt; &amp;&#160;</td>
           <td class="paramname"><em>csaDef</em>, </td>
         </tr>
         <tr>
@@ -750,11 +732,11 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  250</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_html_a08ba6478bcbcaa94647fc616f0bcbf0b"><div class="ttname"><a href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a08ba6478bcbcaa94647fc616f0bcbf0b">ore::analytics::CollateralExposureHelper::updateMarginCall</a></div><div class="ttdeci">static void updateMarginCall(const boost::shared_ptr&lt; CollateralAccount &gt; &amp;collat, const Real &amp;uncollatValue, const Date &amp;simulationDate, const Real &amp;accrualFactor, const CalculationType &amp;calcType=Symmetric, const bool &amp;eligMarginReqDateUs=true, const bool &amp;eligMarginReqDateCtp=true)</div><div class="ttdef"><b>Definition:</b> <a href="collatexposurehelper_8cpp_source.html#l00155">collatexposurehelper.cpp:155</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_html_a1ec56fc6738c790574c0cbc0467d33e3"><div class="ttname"><a href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a1ec56fc6738c790574c0cbc0467d33e3">ore::analytics::CollateralExposureHelper::estimateUncollatValue</a></div><div class="ttdeci">static Real estimateUncollatValue(const Date &amp;simulationDate, const Real &amp;npv_t0, const Date &amp;date_t0, const vector&lt; vector&lt; T &gt; &gt; &amp;scenPvProfiles, const unsigned &amp;scenIndex, const vector&lt; Date &gt; &amp;dateGrid)</div><div class="ttdef"><b>Definition:</b> <a href="collatexposurehelper_8cpp_source.html#l00101">collatexposurehelper.cpp:101</a></div></div>
-</div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_cgraph" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,160,81"/>
@@ -762,15 +744,13 @@ Static Public Member Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a32b304530ea003c23663098416e24c3f" title=" " alt="" coords="408,81,568,107"/>
 <area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a08ba6478bcbcaa94647fc616f0bcbf0b" title=" " alt="" coords="223,107,345,132"/>
 <area shape="rect" href="classore_1_1analytics_1_1_collateral_exposure_helper.html#a3fcd4541222891df8be90619f379c7b6" title=" " alt="" coords="616,81,760,107"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="808,56,855,81"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="810,105,853,131"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_icgraph" id="aclassore_1_1analytics_1_1_collateral_exposure_helper_a0fcd3bc7669d8253d536cd729bf90525_icgraph">
 <area shape="rect" title=" " alt="" coords="504,13,659,38"/>

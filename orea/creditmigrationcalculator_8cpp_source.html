@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_credit_migration_calculator.html#a7740c7ab195c03ac140f1f75f633470f">   40</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classore_1_1analytics_1_1_credit_migration_calculator.html#a7740c7ab195c03ac140f1f75f633470f">CreditMigrationCalculator::build</a>() {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Credit migration computation started.&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    LOG(<span class="stringliteral">&quot;Credit migration computation started.&quot;</span>);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// checks</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
@@ -160,7 +160,7 @@ $(function() {
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#a14823991172eb3e5214fbf22a5830083">pdf_</a>.clear();</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#aa802a532142d81125e1ede3d59957ca3">creditMigrationTimeSteps_</a>.size(); ++i) {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Generating pnl distribution for timestep &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#aa802a532142d81125e1ede3d59957ca3">creditMigrationTimeSteps_</a>[i]);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        DLOG(<span class="stringliteral">&quot;Generating pnl distribution for timestep &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#aa802a532142d81125e1ede3d59957ca3">creditMigrationTimeSteps_</a>[i]);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#a21007ea0d7425bb288ee06312107192e">cdf_</a>.push_back({});</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#a14823991172eb3e5214fbf22a5830083">pdf_</a>.push_back({});</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        Array dist = hlp.<a class="code hl_function" href="classore_1_1analytics_1_1_credit_migration_helper.html#aabbd68b1099b896275bd967dc584d535">pnlDistribution</a>(<a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#aa802a532142d81125e1ede3d59957ca3">creditMigrationTimeSteps_</a>[i]);</div>
@@ -172,8 +172,8 @@ $(function() {
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            stdev += pnl * pnl * dist[j];</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            sum += dist[j];</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        stdev = <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a>(stdev - mean * mean);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(<span class="stringliteral">&quot;Total PnL at time step &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#aa802a532142d81125e1ede3d59957ca3">creditMigrationTimeSteps_</a>[i] &lt;&lt; <span class="stringliteral">&quot;: Mean &quot;</span> &lt;&lt; std::fixed &lt;&lt; mean &lt;&lt; <span class="stringliteral">&quot; StdDev &quot;</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        stdev = sqrt(stdev - mean * mean);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        TLOG(<span class="stringliteral">&quot;Total PnL at time step &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_credit_migration_calculator.html#aa802a532142d81125e1ede3d59957ca3">creditMigrationTimeSteps_</a>[i] &lt;&lt; <span class="stringliteral">&quot;: Mean &quot;</span> &lt;&lt; std::fixed &lt;&lt; mean &lt;&lt; <span class="stringliteral">&quot; StdDev &quot;</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                                       &lt;&lt; stdev &lt;&lt; <span class="stringliteral">&quot; Prob &quot;</span> &lt;&lt; std::scientific &lt;&lt; sum &lt;&lt; <span class="stringliteral">&quot; Left &quot;</span> &lt;&lt; dist[0]</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                                       &lt;&lt; <span class="stringliteral">&quot; Right &quot;</span> &lt;&lt; dist[hlp.<a class="code hl_function" href="classore_1_1analytics_1_1_credit_migration_helper.html#af9f55cc7e60ee603e508f6ebbcf25804">upperBucketBound</a>().size() - 1]);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        Real p = 0.0;</div>
@@ -184,7 +184,7 @@ $(function() {
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Credit migration computation finished.&quot;</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    LOG(<span class="stringliteral">&quot;Credit migration computation finished.&quot;</span>);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>} <span class="comment">// namespace analytics</span></div>
@@ -210,11 +210,7 @@ $(function() {
 <div class="ttc" id="aclassore_1_1analytics_1_1_credit_migration_helper_html_af9f55cc7e60ee603e508f6ebbcf25804"><div class="ttname"><a href="classore_1_1analytics_1_1_credit_migration_helper.html#af9f55cc7e60ee603e508f6ebbcf25804">ore::analytics::CreditMigrationHelper::upperBucketBound</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; upperBucketBound() const</div><div class="ttdef"><b>Definition:</b> <a href="creditmigrationhelper_8hpp_source.html#l00067">creditmigrationhelper.hpp:67</a></div></div>
 <div class="ttc" id="acreditmigrationcalculator_8hpp_html"><div class="ttname"><a href="creditmigrationcalculator_8hpp.html">creditmigrationcalculator.hpp</a></div><div class="ttdoc">Exposure calculator.</div></div>
 <div class="ttc" id="acreditmigrationhelper_8hpp_html"><div class="ttname"><a href="creditmigrationhelper_8hpp.html">creditmigrationhelper.hpp</a></div><div class="ttdoc">Credit migration helper class.</div></div>
-<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div></div>
-<div class="ttc" id="alog_8hpp_html_a99aeca53f904c71a68070e1f9d310232"><div class="ttname"><a href="../ored/log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a></div><div class="ttdeci">#define TLOG(text)</div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a1b4a64a3620f987e65fec4ccf7cadcf2"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a></div><div class="ttdeci">RandomVariable sqrt(RandomVariable x)</div></div>
-<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
+<div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs_source.html#l00023">namespaces.docs:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

@@ -110,13 +110,13 @@ $(function() {
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;ql/time/calendars/france.hpp&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;ql/time/calendars/thailand.hpp&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;ql/time/daycounters/all.hpp&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/colombia_8hpp.html">qle/calendars/colombia.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/israel_8hpp.html">qle/calendars/israel.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/largejointcalendar_8hpp.html">qle/calendars/largejointcalendar.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/malaysia_8hpp.html">qle/calendars/malaysia.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/netherlands_8hpp.html">qle/calendars/netherlands.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/peru_8hpp.html">qle/calendars/peru.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="codeRef" href="../qle/philippines_8hpp.html">qle/calendars/philippines.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;qle/calendars/colombia.hpp&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;qle/calendars/israel.hpp&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;qle/calendars/largejointcalendar.hpp&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;qle/calendars/malaysia.hpp&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;qle/calendars/netherlands.hpp&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;qle/calendars/peru.hpp&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;qle/calendars/philippines.hpp&gt;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_quant_lib.html">QuantLib</a>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_quant_ext.html">QuantExt</a>;</div>
@@ -209,13 +209,13 @@ $(function() {
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d">ore::data::parseStrike</a>(s).type != expectedType) {</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        BOOST_FAIL(<span class="stringliteral">&quot;unexpected strike type parsed from input string &quot;</span> &lt;&lt; s);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">if</span> (!<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_function" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d">ore::data::parseStrike</a>(s).value, expectedValue)) {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">if</span> (!close_enough(<a class="code hl_function" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d">ore::data::parseStrike</a>(s).value, expectedValue)) {</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        BOOST_FAIL(<span class="stringliteral">&quot;unexpected strike value parsed from input string &quot;</span> &lt;&lt; s);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keywordtype">void</span> <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(<span class="keyword">const</span> std::set&lt;Date&gt;&amp; expectedHolidays, <span class="keyword">const</span> std::vector&lt;Date&gt;&amp; testHolidays) {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keywordtype">void</span> checkCalendars(<span class="keyword">const</span> std::set&lt;Date&gt;&amp; expectedHolidays, <span class="keyword">const</span> std::vector&lt;Date&gt;&amp; testHolidays) {</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> eh : expectedHolidays) {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">if</span> (std::find(testHolidays.begin(), testHolidays.end(), eh) == testHolidays.end())</div>
@@ -1005,15 +1005,15 @@ $(function() {
 <div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    expectedHolidays.insert(Date(2, November, 2018));</div>
 <div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    Calendar peru = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_peru.html">QuantExt::Peru</a>();</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    Calendar peru = QuantExt::Peru();</div>
 <div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span> </div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>    cals.push_back(peru);</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    Calendar joint1 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    Calendar joint1 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span> </div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>    std::vector&lt;Date&gt; hol = joint1.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
 <div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span> </div>
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    <span class="comment">// add columbian holidays</span></div>
 <div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1034,13 +1034,13 @@ $(function() {
 <div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    expectedHolidays.insert(Date(12, November, 2018));</div>
 <div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span> </div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    Calendar col = <a class="code hl_classRef" href="../qle/class_quant_lib_1_1_colombia.html">Colombia</a>();</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    Calendar col = Colombia();</div>
 <div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    cals.push_back(col);</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    Calendar joint2 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    Calendar joint2 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span> </div>
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    hol = joint2.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span> </div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>    <span class="comment">// add philippines holidays</span></div>
 <div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1057,13 +1057,13 @@ $(function() {
 <div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    expectedHolidays.insert(Date(31, December, 2018));</div>
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    Calendar phil = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_philippines.html">Philippines</a>();</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    Calendar phil = Philippines();</div>
 <div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    cals.push_back(phil);</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    Calendar joint3 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    Calendar joint3 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>    hol = joint3.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span> </div>
 <div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>    <span class="comment">// add thailand holidays</span></div>
 <div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1085,11 +1085,11 @@ $(function() {
 <div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span> </div>
 <div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>    Calendar thai = Thailand();</div>
 <div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    cals.push_back(thai);</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    Calendar joint4 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    Calendar joint4 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span> </div>
 <div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>    hol = joint4.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span> </div>
 <div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>    <span class="comment">// add malaysia holidays</span></div>
 <div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1099,13 +1099,13 @@ $(function() {
 <div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>    expectedHolidays.insert(Date(17, September, 2018));</div>
 <div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span> </div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>    Calendar mal = <a class="code hl_classRef" href="../qle/class_quant_lib_1_1_malaysia.html">Malaysia</a>();</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>    Calendar mal = Malaysia();</div>
 <div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    cals.push_back(mal);</div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>    Calendar joint5 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>    Calendar joint5 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span> </div>
 <div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    hol = joint5.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span> </div>
 <div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>    <span class="comment">// add chilean calendar</span></div>
 <div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1125,11 +1125,11 @@ $(function() {
 <div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span> </div>
 <div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>    Calendar chil = Chile();</div>
 <div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>    cals.push_back(chil);</div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>    Calendar joint6 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>    Calendar joint6 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span> </div>
 <div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>    hol = joint6.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span> </div>
 <div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>    <span class="comment">// add netherlands calendar</span></div>
 <div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1141,13 +1141,13 @@ $(function() {
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>    expectedHolidays.insert(Date(26, December, 2018));</div>
 <div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span> </div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    Calendar net = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_netherlands.html">Netherlands</a>();</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    Calendar net = Netherlands();</div>
 <div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>    cals.push_back(net);</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    Calendar joint7 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    Calendar joint7 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span> </div>
 <div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    hol = joint7.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span> </div>
 <div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    <span class="comment">// add French calendar</span></div>
 <div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>    expectedHolidays.insert(Date(1, January, 2018));</div>
@@ -1162,13 +1162,13 @@ $(function() {
 <div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    expectedHolidays.insert(Date(25, December, 2018));</div>
 <div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    expectedHolidays.insert(Date(26, December, 2018));</div>
 <div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span> </div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>    Calendar fre = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_france.html">France</a>();</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>    Calendar fre = France();</div>
 <div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>    cals.push_back(fre);</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>    Calendar joint8 = <a class="code hl_classRef" href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a>(cals);</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>    Calendar joint8 = QuantExt::LargeJointCalendar(cals);</div>
 <div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span> </div>
 <div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>    hol = joint8.holidayList(Date(1, January, 2018), Date(31, December, 2018));</div>
 <div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>    BOOST_CHECK(hol.size() == expectedHolidays.size());</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>    <a class="code hl_functionRef" href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a>(expectedHolidays, hol);</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>    checkCalendars(expectedHolidays, hol);</div>
 <div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>}</div>
 <div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span> </div>
 <div class="line"><a id="l01093" name="l01093"></a><span class="lineno"><a class="line" href="parser_8cpp.html#a802380e7b82c74fd1ccb2117ddb3bbc8"> 1093</a></span><a class="code hl_function" href="parser_8cpp.html#a22f874b8ea9ccb758dc10852473eb2c3">BOOST_AUTO_TEST_CASE</a>(testParseBoostAny) {</div>
@@ -1187,13 +1187,6 @@ $(function() {
 <div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span> </div>
 <div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>BOOST_AUTO_TEST_SUITE_END()</div>
-<div class="ttc" id="aclass_quant_ext_1_1_france_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_france.html">QuantExt::France</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_large_joint_calendar_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_large_joint_calendar.html">QuantExt::LargeJointCalendar</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_netherlands_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_netherlands.html">QuantExt::Netherlands</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_peru_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_peru.html">QuantExt::Peru</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_philippines_html"><div class="ttname"><a href="../qle/class_quant_ext_1_1_philippines.html">QuantExt::Philippines</a></div></div>
-<div class="ttc" id="aclass_quant_lib_1_1_colombia_html"><div class="ttname"><a href="../qle/class_quant_lib_1_1_colombia.html">QuantLib::Colombia</a></div></div>
-<div class="ttc" id="aclass_quant_lib_1_1_malaysia_html"><div class="ttname"><a href="../qle/class_quant_lib_1_1_malaysia.html">QuantLib::Malaysia</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_forward_quote_html"><div class="ttname"><a href="classore_1_1data_1_1_commodity_forward_quote.html">ore::data::CommodityForwardQuote</a></div><div class="ttdoc">Commodity forward quote class.</div><div class="ttdef"><b>Definition:</b> <a href="marketdatum_8hpp_source.html#l01728">marketdatum.hpp:1728</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_spot_quote_html"><div class="ttname"><a href="classore_1_1data_1_1_commodity_spot_quote.html">ore::data::CommoditySpotQuote</a></div><div class="ttdoc">Commodity spot quote class.</div><div class="ttdef"><b>Definition:</b> <a href="marketdatum_8hpp_source.html#l01694">marketdatum.hpp:1694</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_f_x_option_quote_html"><div class="ttname"><a href="classore_1_1data_1_1_f_x_option_quote.html">ore::data::FXOptionQuote</a></div><div class="ttdoc">FX Option data class.</div><div class="ttdef"><b>Definition:</b> <a href="marketdatum_8hpp_source.html#l01187">marketdatum.hpp:1187</a></div></div>
@@ -1210,7 +1203,6 @@ $(function() {
 <div class="ttc" id="aclassore_1_1data_1_1_market_datum_html_aa5b3ec8bb6c730c38b87a73c11dec808a6da7ab78b59d24c57919aa4011b1392e"><div class="ttname"><a href="classore_1_1data_1_1_market_datum.html#aa5b3ec8bb6c730c38b87a73c11dec808a6da7ab78b59d24c57919aa4011b1392e">ore::data::MarketDatum::QuoteType::PRICE</a></div><div class="ttdeci">@ PRICE</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_datum_html_aa5b3ec8bb6c730c38b87a73c11dec808a79521cdea3eff83f517d31c49f9082f5"><div class="ttname"><a href="classore_1_1data_1_1_market_datum.html#aa5b3ec8bb6c730c38b87a73c11dec808a79521cdea3eff83f517d31c49f9082f5">ore::data::MarketDatum::QuoteType::RATE</a></div><div class="ttdeci">@ RATE</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_datum_html_aa5b3ec8bb6c730c38b87a73c11dec808aab45a80ef077c251aaeb07ff7945b58f"><div class="ttname"><a href="classore_1_1data_1_1_market_datum.html#aa5b3ec8bb6c730c38b87a73c11dec808aab45a80ef077c251aaeb07ff7945b58f">ore::data::MarketDatum::QuoteType::RATE_NVOL</a></div><div class="ttdeci">@ RATE_NVOL</div></div>
-<div class="ttc" id="acolombia_8hpp_html"><div class="ttname"><a href="../qle/colombia_8hpp.html">colombia.hpp</a></div></div>
 <div class="ttc" id="agroup__marketdata_html_gafcb88f661ad6cb9bf3c931bcc2fbd299"><div class="ttname"><a href="group__marketdata.html#gafcb88f661ad6cb9bf3c931bcc2fbd299">ore::data::parseMarketDatum</a></div><div class="ttdeci">boost::shared_ptr&lt; MarketDatum &gt; parseMarketDatum(const Date &amp;asof, const string &amp;datumName, const Real &amp;value)</div><div class="ttdoc">Function to parse a market datum.</div><div class="ttdef"><b>Definition:</b> <a href="marketdatumparser_8cpp_source.html#l00220">marketdatumparser.cpp:220</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga2037f312d2920037572bdc0c30a6395d"><div class="ttname"><a href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d">ore::data::parseStrike</a></div><div class="ttdeci">Strike parseStrike(const std::string &amp;s)</div><div class="ttdoc">Convert text to Strike.</div><div class="ttdef"><b>Definition:</b> <a href="ored_2utilities_2strike_8cpp_source.html#l00030">strike.cpp:30</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga4da79166744295d1237e2699d19806b0"><div class="ttname"><a href="group__utilities.html#ga4da79166744295d1237e2699d19806b0">ore::data::parseBoostAny</a></div><div class="ttdeci">pair&lt; string, string &gt; parseBoostAny(const boost::any &amp;anyType, Size precision)</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00805">parsers.cpp:805</a></div></div>
@@ -1220,19 +1212,11 @@ $(function() {
 <div class="ttc" id="agroup__utilities_html_ga8ecdc1d4eace894d29940dc88c5e2043"><div class="ttname"><a href="group__utilities.html#ga8ecdc1d4eace894d29940dc88c5e2043">ore::data::parseFrequency</a></div><div class="ttdeci">Frequency parseFrequency(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Frequency.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00320">parsers.cpp:320</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga9b1841641b66742d2035aad83acdfa4a"><div class="ttname"><a href="group__utilities.html#ga9b1841641b66742d2035aad83acdfa4a">ore::data::parseCompounding</a></div><div class="ttdeci">Compounding parseCompounding(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Compounding;.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00348">parsers.cpp:348</a></div></div>
 <div class="ttc" id="agroup__utilities_html_gaefb008d0de256c79140545d9c7549093"><div class="ttname"><a href="group__utilities.html#gaefb008d0de256c79140545d9c7549093">ore::data::parseDayCounter</a></div><div class="ttdeci">DayCounter parseDayCounter(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::DayCounter.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00201">parsers.cpp:201</a></div></div>
-<div class="ttc" id="aisrael_8hpp_html"><div class="ttname"><a href="../qle/israel_8hpp.html">israel.hpp</a></div></div>
-<div class="ttc" id="alargejointcalendar_8hpp_html"><div class="ttname"><a href="../qle/largejointcalendar_8hpp.html">largejointcalendar.hpp</a></div></div>
-<div class="ttc" id="amalaysia_8hpp_html"><div class="ttname"><a href="../qle/malaysia_8hpp.html">malaysia.hpp</a></div></div>
 <div class="ttc" id="amarketdatumparser_8hpp_html"><div class="ttname"><a href="marketdatumparser_8hpp.html">marketdatumparser.hpp</a></div><div class="ttdoc">Market Datum parser.</div></div>
-<div class="ttc" id="anamespace_quant_ext_html"><div class="ttname"><a href="namespace_quant_ext.html">QuantExt</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div></div>
-<div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="namespace_quant_lib.html">QuantLib</a></div></div>
-<div class="ttc" id="anamespacecheck_html_a8f1ee4ad80881049db0c67bc521e0b2a"><div class="ttname"><a href="../qle/namespacecheck.html#a8f1ee4ad80881049db0c67bc521e0b2a">checkCalendars</a></div><div class="ttdeci">void checkCalendars(const std::vector&lt; Date &gt; &amp;expectedHolidays, const std::vector&lt; Date &gt; &amp;testHolidays)</div></div>
-<div class="ttc" id="anetherlands_8hpp_html"><div class="ttname"><a href="../qle/netherlands_8hpp.html">netherlands.hpp</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html"><div class="ttname"><a href="namespace_quant_ext.html">QuantExt</a></div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00051">fixingdates.hpp:51</a></div></div>
+<div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="namespace_quant_lib.html">QuantLib</a></div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00035">fixingdates.hpp:35</a></div></div>
 <div class="ttc" id="aparser_8cpp_html_a22f874b8ea9ccb758dc10852473eb2c3"><div class="ttname"><a href="parser_8cpp.html#a22f874b8ea9ccb758dc10852473eb2c3">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(testDayCounterParsing)</div><div class="ttdef"><b>Definition:</b> <a href="parser_8cpp_source.html#l00151">parser.cpp:151</a></div></div>
 <div class="ttc" id="aparsers_8hpp_html"><div class="ttname"><a href="parsers_8hpp.html">parsers.hpp</a></div><div class="ttdoc">Map text representations to QuantLib/QuantExt types.</div></div>
-<div class="ttc" id="aperu_8hpp_html"><div class="ttname"><a href="../qle/peru_8hpp.html">peru.hpp</a></div></div>
-<div class="ttc" id="aphilippines_8hpp_html"><div class="ttname"><a href="../qle/philippines_8hpp.html">philippines.hpp</a></div></div>
 <div class="ttc" id="astructore_1_1data_1_1_strike_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="structore_1_1data_1_1_strike.html#a1d1cfd8ffb84e947f82999c682b666a7">ore::data::Strike::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="utilities_2strike_8hpp_source.html#l00033">strike.hpp:33</a></div></div>
 <div class="ttc" id="astructore_1_1data_1_1_strike_html_a1d1cfd8ffb84e947f82999c682b666a7a248a951d4c70561c5179e9852521e8a8"><div class="ttname"><a href="structore_1_1data_1_1_strike.html#a1d1cfd8ffb84e947f82999c682b666a7a248a951d4c70561c5179e9852521e8a8">ore::data::Strike::Type::ATM_Offset</a></div><div class="ttdeci">@ ATM_Offset</div></div>
 <div class="ttc" id="astructore_1_1data_1_1_strike_html_a1d1cfd8ffb84e947f82999c682b666a7a28e499bc3afda89365fae68da810eef2"><div class="ttname"><a href="structore_1_1data_1_1_strike.html#a1d1cfd8ffb84e947f82999c682b666a7a28e499bc3afda89365fae68da810eef2">ore::data::Strike::Type::DeltaPut</a></div><div class="ttdeci">@ DeltaPut</div></div>
