@@ -1,22 +1,25 @@
 <map id="InflationCapFloorVolCurve" name="InflationCapFloorVolCurve">
-<area shape="rect" id="node1" title=" " alt="" coords="5,344,175,369"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_inflation_cap_floor_vol_curve.html#ab760dbc491d345ff3134d91e9651336e" title=" " alt="" coords="236,295,352,320"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_curve_spec.html#afa7a10b4b56522f03c698ac514b0f844" title="returns the unique curve name" alt="" coords="427,114,570,154"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_inflation_cap_floor_vol_curve.html#a6db03d465cb772db36c7c24985edcfeb" title=" " alt="" coords="473,519,524,544"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_inflation_cap_floor_vol_curve.html#a9e672fbb019ea203fd4c9ae04d9ff80b" title=" " alt="" coords="225,344,363,369"/>
-<area shape="rect" id="node20" href="$classore_1_1data_1_1_curve_spec.html#a15e57a287887def554123ab18355c33c" title=" " alt="" coords="223,445,365,485"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="425,295,572,320"/>
-<area shape="rect" id="node5" href="$namespaceore_1_1data.html#ae91b9dc1b2c7a502a7fd8b3351d2b759" title=" " alt="" coords="413,344,584,369"/>
-<area shape="rect" id="node8" href="$group__utilities.html#ga0a5105807b6f15edc34a165313eab45b" title="Convert std::string to QuantLib::ZeroInflationIndex." alt="" coords="857,293,1040,333"/>
-<area shape="rect" id="node15" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="423,245,574,271"/>
-<area shape="rect" id="node16" href="$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="429,417,568,443"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="657,229,785,269"/>
-<area shape="rect" id="node6" href="$namespaceore_1_1data.html#a4cabef9f8164c42065e1fabfc11a6d32" title=" " alt="" coords="633,421,808,461"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_inflation_swap_convention.html#a230dc303e512614da3f9e7e0916f87d8" title=" " alt="" coords="642,293,799,333"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_inflation_swap_convention.html#a21f04ffd173fd3a4f3fab4896d6bcf0c" title=" " alt="" coords="632,357,809,397"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_curve_spec.html#a3d24768215bf6280c80eca3930ea3f55" title=" " alt="" coords="649,50,792,90"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_curve_spec.html#a471fbcf9df5ab7ac2153495b4c8ac723" title=" " alt="" coords="649,114,792,154"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_curve_spec.html#a0106d2fb6472e64456c6ebd018aa6300" title=" " alt="" coords="877,79,1020,119"/>
-<area shape="rect" id="node13" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="883,29,1014,55"/>
-<area shape="rect" id="node19" href="$namespaceore_1_1data.html#a6a0250258f27a26b9e68baa6ff3752ba" title="Imply QuantLib::VolatilityType from CapFloorVolatilityCurveConfig::VolatilityType." alt="" coords="421,568,576,593"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,491,175,516"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_inflation_cap_floor_vol_curve.html#ab760dbc491d345ff3134d91e9651336e" title=" " alt="" coords="236,311,352,336"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_curve_spec.html#afa7a10b4b56522f03c698ac514b0f844" title="returns the unique curve name" alt="" coords="435,485,578,525"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_inflation_cap_floor_vol_curve.html#a6db03d465cb772db36c7c24985edcfeb" title=" " alt="" coords="481,664,532,689"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_inflation_cap_floor_vol_curve.html#a9e672fbb019ea203fd4c9ae04d9ff80b" title=" " alt="" coords="225,437,363,463"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_curve_spec.html#a15e57a287887def554123ab18355c33c" title=" " alt="" coords="223,591,365,631"/>
+<area shape="rect" id="node3" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="424,5,589,31"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="433,335,580,360"/>
+<area shape="rect" id="node6" href="$namespaceore_1_1data.html#ae91b9dc1b2c7a502a7fd8b3351d2b759" title=" " alt="" coords="421,384,592,409"/>
+<area shape="rect" id="node9" href="$group__utilities.html#ga0a5105807b6f15edc34a165313eab45b" title="Convert std::string to QuantLib::ZeroInflationIndex." alt="" coords="873,249,1056,289"/>
+<area shape="rect" id="node16" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="431,212,582,237"/>
+<area shape="rect" id="node17" href="$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="437,285,576,311"/>
+<area shape="rect" id="node18" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_interpolated_yo_y_cap_floor_term_price_surface.html#af67f3fb37ec467b3560fbc0542524a94" title=" " alt="" coords="413,55,600,109"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="673,185,801,225"/>
+<area shape="rect" id="node7" href="$namespaceore_1_1data.html#a4cabef9f8164c42065e1fabfc11a6d32" title=" " alt="" coords="649,377,824,417"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_inflation_swap_convention.html#a230dc303e512614da3f9e7e0916f87d8" title=" " alt="" coords="658,249,815,289"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_inflation_swap_convention.html#a21f04ffd173fd3a4f3fab4896d6bcf0c" title=" " alt="" coords="648,313,825,353"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_curve_spec.html#a3d24768215bf6280c80eca3930ea3f55" title=" " alt="" coords="665,555,808,595"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_curve_spec.html#a471fbcf9df5ab7ac2153495b4c8ac723" title=" " alt="" coords="665,491,808,531"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_curve_spec.html#a0106d2fb6472e64456c6ebd018aa6300" title=" " alt="" coords="893,583,1036,623"/>
+<area shape="rect" id="node14" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="899,533,1030,559"/>
+<area shape="rect" id="node21" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_linear_flat.html#aeebdaea19fcf47f8c30382a178283141" title=" " alt="" coords="435,599,578,639"/>
+<area shape="rect" id="node22" href="$namespaceore_1_1data.html#a6a0250258f27a26b9e68baa6ff3752ba" title="Imply QuantLib::VolatilityType from CapFloorVolatilityCurveConfig::VolatilityType." alt="" coords="429,549,584,575"/>
 </map>

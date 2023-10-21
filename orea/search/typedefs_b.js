@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tradepnlstore_0',['TradePnLStore',['../classore_1_1analytics_1_1_p_n_l_calculator.html#acd72de492ca3237920f17259f79ed5be',1,'ore::analytics::PNLCalculator']]],
-  ['tradepnlstore_1',['TradePnlStore',['../classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173',1,'ore::analytics::HistoricalPnlGenerator::TradePnlStore()'],['../namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727',1,'ore::analytics::TradePnlStore()']]]
+  ['map_5ftype_0',['map_type',['../../ored/classore_1_1data_1_1_calibration_instrument_factory.html#a6cc1d05703f08662782d51a18970483c',1,'ore::data::CalibrationInstrumentFactory::map_type()'],['../../ored/classore_1_1data_1_1_leg_data_factory.html#ab5f9fe91491265b6fe311cca9b071b51',1,'ore::data::LegDataFactory::map_type()'],['../../ored/classore_1_1data_1_1_reference_datum_factory.html#a540a00853df220fe9c647c870f8d13f8',1,'ore::data::ReferenceDatumFactory::map_type()']]],
+  ['margintype_1',['MarginType',['../classore_1_1analytics_1_1_simm_results.html#a37f0476a64890aa4797db50095f787ec',1,'ore::analytics::SimmResults::MarginType()'],['../namespaceore_1_1analytics.html#a37f0476a64890aa4797db50095f787ec',1,'ore::analytics::MarginType()']]]
 ];

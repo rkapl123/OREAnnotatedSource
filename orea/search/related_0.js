@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['access_0',['access',['../classore_1_1analytics_1_1_trade_block.html#ac98d07dd8f7b70e16ccb9a01abf56b9c',1,'ore::analytics::TradeBlock::access()'],['../classore_1_1analytics_1_1_jagged_cube.html#ac98d07dd8f7b70e16ccb9a01abf56b9c',1,'ore::analytics::JaggedCube::access()'],['../classore_1_1analytics_1_1_delta_scenario.html#ac98d07dd8f7b70e16ccb9a01abf56b9c',1,'ore::analytics::DeltaScenario::access()'],['../classore_1_1analytics_1_1_risk_factor_key.html#ac98d07dd8f7b70e16ccb9a01abf56b9c',1,'ore::analytics::RiskFactorKey::access()'],['../classore_1_1analytics_1_1_scenario.html#ac98d07dd8f7b70e16ccb9a01abf56b9c',1,'ore::analytics::Scenario::access()'],['../classore_1_1analytics_1_1_simple_scenario.html#ac98d07dd8f7b70e16ccb9a01abf56b9c',1,'ore::analytics::SimpleScenario::access()']]]
+  ['abs_0',['abs',['../../qle/struct_quant_ext_1_1_random_variable.html#aefbcfaf2757ea58bc4c9daf67808cd0e',1,'QuantExt::RandomVariable']]],
+  ['applyfilter_1',['applyFilter',['../../qle/struct_quant_ext_1_1_random_variable.html#aff4b31ff573c26635200c2181c80f2fb',1,'QuantExt::RandomVariable']]],
+  ['applyinversefilter_2',['applyInverseFilter',['../../qle/struct_quant_ext_1_1_random_variable.html#aed243c10b6d9219cff45b4e398ab8780',1,'QuantExt::RandomVariable']]]
 ];

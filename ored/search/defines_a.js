@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['payment_5fdate_0',['PAYMENT_DATE',['../flowanalysis_8cpp.html#a7f4df418ddf4a697aea96c32b4eacdf9',1,'flowanalysis.cpp']]]
+  ['tlog_0',['TLOG',['../log_8hpp.html#a99aeca53f904c71a68070e1f9d310232',1,'log.hpp']]],
+  ['tloggerstream_1',['TLOGGERSTREAM',['../log_8hpp.html#a4cf6b52b5cb6fdd420eaad750cfc20cc',1,'log.hpp']]]
 ];

@@ -1,47 +1,43 @@
 <map id="currentNotional" name="currentNotional">
-<area shape="rect" id="node1" title=" " alt="" coords="1240,982,1349,1007"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_cap_floor.html#af9ec5dcfee7297ab6cc404d9e4bd83ae" title="returns all additional data returned by the trade once built" alt="" coords="1026,624,1159,664"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_bond.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="1019,689,1166,714"/>
-<area shape="rect" id="node31" href="$classore_1_1data_1_1_bond_repo.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1022,879,1163,919"/>
-<area shape="rect" id="node32" href="$classore_1_1data_1_1_cap_floor.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1026,943,1159,983"/>
-<area shape="rect" id="node33" href="$classore_1_1data_1_1_forward_bond.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1014,1007,1171,1047"/>
-<area shape="rect" id="node34" href="$classore_1_1data_1_1_multi_leg_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1009,1071,1177,1111"/>
-<area shape="rect" id="node35" href="$classore_1_1data_1_1_t_r_s_wrapper_accrual_engine.html#a61eb1a24e5329ccc296715a40dc3a19a" title=" " alt="" coords="993,1135,1192,1175"/>
-<area shape="rect" id="node36" href="$namespaceore_1_1data.html#adbd4062f959d3457e5eebbc395093f9d" title=" " alt="" coords="538,830,661,855"/>
-<area shape="rect" id="node37" href="$classore_1_1data_1_1_credit_linked_swap.html#a70619a91ccb26e89d3e8b56e39fd19ab" title="Return the current notional in npvCurrency. See individual sub&#45;classes for the precise definition." alt="" coords="1000,1223,1185,1263"/>
-<area shape="rect" id="node38" href="$classore_1_1data_1_1_swap.html#a70619a91ccb26e89d3e8b56e39fd19ab" title="Return the current notional in npvCurrency. See individual sub&#45;classes for the precise definition." alt="" coords="516,777,683,802"/>
-<area shape="rect" id="node39" href="$classore_1_1data_1_1_swaption.html#a70619a91ccb26e89d3e8b56e39fd19ab" title="Return the current notional in npvCurrency. See individual sub&#45;classes for the precise definition." alt="" coords="1025,1287,1160,1327"/>
-<area shape="rect" id="node42" href="$classore_1_1data_1_1_trade.html#aedbdf37ffffad588c47ed19da03a23a0" title=" " alt="" coords="1013,1383,1173,1423"/>
-<area shape="rect" id="node4" href="$structore_1_1data_1_1_vanilla_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="749,649,939,689"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_convertible_bond.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="757,713,931,753"/>
-<area shape="rect" id="node8" href="$namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="789,531,899,557"/>
-<area shape="rect" id="node30" href="$namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="547,605,651,630"/>
-<area shape="rect" id="node6" href="$structore_1_1data_1_1_convertible_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="512,660,687,700"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_ascot.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="524,725,675,750"/>
-<area shape="rect" id="node9" href="$namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="549,461,650,486"/>
-<area shape="rect" id="node29" href="$classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="531,524,667,564"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,774,424,799"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,581,437,621"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,824,441,864"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,645,444,685"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,5,431,45"/>
-<area shape="rect" id="node20" href="$classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,69,430,109"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,133,435,173"/>
-<area shape="rect" id="node22" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,709,435,749"/>
-<area shape="rect" id="node23" href="$classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,197,433,237"/>
-<area shape="rect" id="node24" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,261,456,301"/>
-<area shape="rect" id="node25" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,325,443,365"/>
-<area shape="rect" id="node26" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,389,440,429"/>
-<area shape="rect" id="node27" href="$classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,453,439,493"/>
-<area shape="rect" id="node28" href="$classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,517,447,557"/>
-<area shape="rect" id="node11" href="$test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,802,196,827"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_cross_currency_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="17,852,184,892"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,673,176,713"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,737,179,777"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,581,194,621"/>
-<area shape="rect" id="node40" href="$classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="777,1271,911,1311"/>
-<area shape="rect" id="node41" href="$test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="504,1278,695,1303"/>
-<area shape="rect" id="node43" href="$classore_1_1data_1_1_credit_default_swap.html#af9ec5dcfee7297ab6cc404d9e4bd83ae" title="returns all additional data returned by the trade once built" alt="" coords="767,1335,921,1375"/>
-<area shape="rect" id="node44" href="$classore_1_1data_1_1_index_credit_default_swap.html#af9ec5dcfee7297ab6cc404d9e4bd83ae" title="returns all additional data returned by the trade once built" alt="" coords="751,1399,937,1439"/>
-<area shape="rect" id="node45" href="$classore_1_1data_1_1_swap.html#af9ec5dcfee7297ab6cc404d9e4bd83ae" title="returns all additional data returned by the trade once built" alt="" coords="743,1463,945,1489"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1240,846,1349,871"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_cap_floor.html#af9ec5dcfee7297ab6cc404d9e4bd83ae" title="returns all additional data returned by the trade once built" alt="" coords="1026,367,1159,407"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_bond.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="1019,431,1166,457"/>
+<area shape="rect" id="node28" href="$classore_1_1data_1_1_bond_repo.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1022,743,1163,783"/>
+<area shape="rect" id="node29" href="$classore_1_1data_1_1_cap_floor.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1026,807,1159,847"/>
+<area shape="rect" id="node30" href="$classore_1_1data_1_1_forward_bond.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1014,871,1171,911"/>
+<area shape="rect" id="node31" href="$classore_1_1data_1_1_multi_leg_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="1009,935,1177,975"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_t_r_s_wrapper_accrual_engine.html#a61eb1a24e5329ccc296715a40dc3a19a" title=" " alt="" coords="993,999,1192,1039"/>
+<area shape="rect" id="node33" href="$namespaceore_1_1data.html#adbd4062f959d3457e5eebbc395093f9d" title=" " alt="" coords="538,795,661,821"/>
+<area shape="rect" id="node34" href="$classore_1_1data_1_1_credit_linked_swap.html#a70619a91ccb26e89d3e8b56e39fd19ab" title="Return the current notional in npvCurrency. See individual sub&#45;classes for the precise definition." alt="" coords="1000,1063,1185,1103"/>
+<area shape="rect" id="node35" href="$classore_1_1data_1_1_swap.html#a70619a91ccb26e89d3e8b56e39fd19ab" title="Return the current notional in npvCurrency. See individual sub&#45;classes for the precise definition." alt="" coords="516,709,683,734"/>
+<area shape="rect" id="node36" href="$classore_1_1data_1_1_swaption.html#a70619a91ccb26e89d3e8b56e39fd19ab" title="Return the current notional in npvCurrency. See individual sub&#45;classes for the precise definition." alt="" coords="1025,1127,1160,1167"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_trade.html#aedbdf37ffffad588c47ed19da03a23a0" title=" " alt="" coords="1013,1191,1173,1231"/>
+<area shape="rect" id="node4" href="$structore_1_1data_1_1_vanilla_bond_builder.html#a52b6c7548b369069c4f81d608eaaeb50" title=" " alt="" coords="749,332,939,372"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_convertible_bond.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="757,396,931,436"/>
+<area shape="rect" id="node6" href="$namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="789,461,899,486"/>
+<area shape="rect" id="node27" href="$namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="547,81,651,106"/>
+<area shape="rect" id="node7" href="$namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="549,461,650,486"/>
+<area shape="rect" id="node26" href="$classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="531,396,667,436"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,774,424,799"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,197,437,237"/>
+<area shape="rect" id="node14" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,824,441,864"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,261,444,301"/>
+<area shape="rect" id="node16" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,325,431,365"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,389,430,429"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,453,435,493"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,5,435,45"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,517,433,557"/>
+<area shape="rect" id="node21" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,581,456,621"/>
+<area shape="rect" id="node22" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,645,443,685"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,709,440,749"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,69,439,109"/>
+<area shape="rect" id="node25" href="$classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,133,447,173"/>
+<area shape="rect" id="node9" href="$test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,717,196,742"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,767,176,807"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,831,179,871"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,197,194,237"/>
+<area shape="rect" id="node37" href="$classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="777,1127,911,1167"/>
+<area shape="rect" id="node38" href="$test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="504,1134,695,1159"/>
+<area shape="rect" id="node40" href="$classore_1_1data_1_1_credit_default_swap.html#af9ec5dcfee7297ab6cc404d9e4bd83ae" title="returns all additional data returned by the trade once built" alt="" coords="767,1244,921,1284"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_swap.html#af9ec5dcfee7297ab6cc404d9e4bd83ae" title="returns all additional data returned by the trade once built" alt="" coords="743,1194,945,1219"/>
 </map>

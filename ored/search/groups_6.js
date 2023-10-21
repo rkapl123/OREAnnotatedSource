@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utilities_0',['Utilities',['../group__utilities.html',1,'']]]
+  ['quotes_0',['Quotes',['../../qle/group__quotes.html',1,'']]]
 ];

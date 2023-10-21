@@ -1,38 +1,36 @@
 <map id="paymentCalendar" name="paymentCalendar">
-<area shape="rect" id="node1" title=" " alt="" coords="792,474,915,499"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="556,5,692,45"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_commodity_option_strip.html#a89d2212a4c2a5285712c7f33b7414913" title="Build an average price option strip." alt="" coords="531,69,717,109"/>
-<area shape="rect" id="node5" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="534,133,714,173"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="535,197,713,237"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="527,261,721,301"/>
-<area shape="rect" id="node8" href="$namespaceore_1_1data.html#a4a1f489aaefd95989a88a7b10ab23cfc" title=" " alt="" coords="536,326,712,351"/>
-<area shape="rect" id="node14" href="$namespaceore_1_1data.html#a09a8ec8a163bbbf1ee56eb814303ca79" title=" " alt="" coords="543,425,705,450"/>
-<area shape="rect" id="node16" href="$namespaceore_1_1data.html#a2ed33f45dd9d923ec0bee0e0638d72ad" title=" " alt="" coords="543,627,705,653"/>
-<area shape="rect" id="node18" href="$namespaceore_1_1data.html#ac28799d3498879c3805dd3ff35b6661b" title=" " alt="" coords="522,686,726,711"/>
-<area shape="rect" id="node20" href="$namespaceore_1_1data.html#a38f155688aea2edee4b6aa052820134e" title=" " alt="" coords="547,523,701,549"/>
-<area shape="rect" id="node23" href="$namespaceore_1_1data.html#a91983c9d752af1b946742e1996be5c26" title=" " alt="" coords="504,747,744,773"/>
-<area shape="rect" id="node25" href="$namespaceore_1_1data.html#a483c49c1d960bcbb22096fb7771a95fe" title=" " alt="" coords="539,810,709,835"/>
-<area shape="rect" id="node27" href="$namespaceore_1_1data.html#adffc190d22c61f2181d0822f48fbace4" title=" " alt="" coords="541,887,707,913"/>
-<area shape="rect" id="node31" href="$namespaceore_1_1data.html#a7dbd0c5ebd861067c306ebb62e856b17" title=" " alt="" coords="547,474,701,499"/>
-<area shape="rect" id="node32" href="$namespaceore_1_1data.html#af777e2e6e0788c6f4e59c1b165076b3f" title=" " alt="" coords="546,375,702,401"/>
-<area shape="rect" id="node33" href="$namespaceore_1_1data.html#adc9907c6ba09dda17e50f0ba3f534b7c" title=" " alt="" coords="545,573,703,598"/>
-<area shape="rect" id="node35" href="$namespaceore_1_1data.html#adbd4062f959d3457e5eebbc395093f9d" title=" " alt="" coords="533,975,715,1001"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_commodity_option_strip.html#a9af2b9e6d488683123c6e4790595eb2b" title="Implement the build method." alt="" coords="257,69,443,109"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,318,424,343"/>
-<area shape="rect" id="node10" href="$test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,407,196,433"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_cross_currency_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="17,215,184,255"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,279,176,319"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,343,179,383"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,368,444,408"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,624,435,664"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,688,456,728"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_cap_floor.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="283,496,417,536"/>
-<area shape="rect" id="node22" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,432,431,472"/>
-<area shape="rect" id="node24" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,752,443,792"/>
-<area shape="rect" id="node26" href="$classore_1_1data_1_1_equity_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="261,816,439,856"/>
-<area shape="rect" id="node28" href="$classore_1_1data_1_1_synthetic_c_d_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="268,944,432,984"/>
-<area shape="rect" id="node29" href="$classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,880,437,920"/>
-<area shape="rect" id="node30" href="$classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,880,194,920"/>
-<area shape="rect" id="node34" href="$classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,560,430,600"/>
-<area shape="rect" id="node36" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,1008,441,1048"/>
+<area shape="rect" id="node1" title=" " alt="" coords="792,435,915,461"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_commodity_option_strip.html#a89d2212a4c2a5285712c7f33b7414913" title="Build an average price option strip." alt="" coords="531,5,717,45"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="534,69,714,109"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="535,133,713,173"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="527,197,721,237"/>
+<area shape="rect" id="node7" href="$namespaceore_1_1data.html#a4a1f489aaefd95989a88a7b10ab23cfc" title=" " alt="" coords="536,262,712,287"/>
+<area shape="rect" id="node12" href="$namespaceore_1_1data.html#a09a8ec8a163bbbf1ee56eb814303ca79" title=" " alt="" coords="543,311,705,337"/>
+<area shape="rect" id="node14" href="$namespaceore_1_1data.html#a2ed33f45dd9d923ec0bee0e0638d72ad" title=" " alt="" coords="543,563,705,589"/>
+<area shape="rect" id="node16" href="$namespaceore_1_1data.html#ac28799d3498879c3805dd3ff35b6661b" title=" " alt="" coords="522,622,726,647"/>
+<area shape="rect" id="node18" href="$namespaceore_1_1data.html#a38f155688aea2edee4b6aa052820134e" title=" " alt="" coords="547,459,701,485"/>
+<area shape="rect" id="node21" href="$namespaceore_1_1data.html#a91983c9d752af1b946742e1996be5c26" title=" " alt="" coords="504,683,744,709"/>
+<area shape="rect" id="node23" href="$namespaceore_1_1data.html#a483c49c1d960bcbb22096fb7771a95fe" title=" " alt="" coords="539,746,709,771"/>
+<area shape="rect" id="node25" href="$namespaceore_1_1data.html#adffc190d22c61f2181d0822f48fbace4" title=" " alt="" coords="541,823,707,849"/>
+<area shape="rect" id="node29" href="$namespaceore_1_1data.html#a7dbd0c5ebd861067c306ebb62e856b17" title=" " alt="" coords="547,410,701,435"/>
+<area shape="rect" id="node30" href="$namespaceore_1_1data.html#af777e2e6e0788c6f4e59c1b165076b3f" title=" " alt="" coords="546,361,702,386"/>
+<area shape="rect" id="node31" href="$namespaceore_1_1data.html#adc9907c6ba09dda17e50f0ba3f534b7c" title=" " alt="" coords="545,509,703,534"/>
+<area shape="rect" id="node33" href="$namespaceore_1_1data.html#adbd4062f959d3457e5eebbc395093f9d" title=" " alt="" coords="533,911,715,937"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_commodity_option_strip.html#a9af2b9e6d488683123c6e4790595eb2b" title="Implement the build method." alt="" coords="257,5,443,45"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,254,424,279"/>
+<area shape="rect" id="node9" href="$test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,197,196,222"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,247,176,287"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,311,179,351"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,304,444,344"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,560,435,600"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,624,456,664"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_cap_floor.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="283,432,417,472"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,368,431,408"/>
+<area shape="rect" id="node22" href="$classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,688,443,728"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_equity_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="261,752,439,792"/>
+<area shape="rect" id="node26" href="$classore_1_1data_1_1_synthetic_c_d_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="268,880,432,920"/>
+<area shape="rect" id="node27" href="$classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,816,437,856"/>
+<area shape="rect" id="node28" href="$classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,816,194,856"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,496,430,536"/>
+<area shape="rect" id="node34" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,944,441,984"/>
 </map>

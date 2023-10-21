@@ -1,41 +1,54 @@
 <map id="FXVolCurve" name="FXVolCurve">
-<area shape="rect" id="node1" title="Detailed constructor." alt="" coords="5,278,93,304"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_f_x_vol_curve.html#af8a8fa2b7d9d22dad02c8b6341e6ea54" title=" " alt="" coords="141,561,180,586"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_f_x_vol_curve.html#af0f1be52552a1e5147607f5ae5fb757b" title=" " alt="" coords="532,100,583,125"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_f_x_vol_curve.html#a37a99344b9351a354b2b0b13f0f57a73" title=" " alt="" coords="251,46,397,72"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_f_x_vol_curve.html#ac577aafa354590f22b4794e345864570" title=" " alt="" coords="241,248,407,273"/>
-<area shape="rect" id="node10" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="482,149,633,174"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_f_x_vol_curve.html#a87da590396c5fda9c4350915f3f47b3d" title=" " alt="" coords="255,297,393,322"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_f_x_vol_curve.html#a831238f8488b833c9b2c0b250fd30915" title=" " alt="" coords="252,396,396,421"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_delta_string.html#a397f8534c2b3d08642e5040c40426ab7" title=" " alt="" coords="485,564,630,604"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_delta_string.html#a33677d9992d9935c8dda721c7e90c488" title=" " alt="" coords="485,628,630,668"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_delta_string.html#a24f2d93e33ef1aba7e9b5dbeda088e98" title=" " alt="" coords="485,692,630,732"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_f_x_vol_curve.html#ac824030c91268c38cc2ab5ba9f5d30d3" title=" " alt="" coords="228,346,420,372"/>
-<area shape="rect" id="node22" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="492,514,623,540"/>
-<area shape="rect" id="node23" href="$classore_1_1data_1_1_curve_spec.html#a15e57a287887def554123ab18355c33c" title=" " alt="" coords="253,712,395,752"/>
-<area shape="rect" id="node24" href="$classore_1_1data_1_1_report_config.html#a4e7f096baca32e79358e09ada698bdce" title=" " alt="" coords="480,756,635,796"/>
-<area shape="rect" id="node25" href="$namespaceore_1_1data.html#a5e51bfe798b6a12ac603d4578c144c6b" title=" " alt="" coords="241,980,407,1020"/>
-<area shape="rect" id="node26" href="$classore_1_1data_1_1_report_config.html#a82578f32908fbaf6c03607239312437d" title=" " alt="" coords="480,820,635,860"/>
-<area shape="rect" id="node27" href="$classore_1_1data_1_1_report_config.html#aee007654632574a63d04e7c6d0bc048f" title=" " alt="" coords="480,884,635,924"/>
-<area shape="rect" id="node28" href="$classore_1_1data_1_1_report_config.html#a13b426492274e696ee57b64ee0905f8b" title=" " alt="" coords="480,1268,635,1308"/>
-<area shape="rect" id="node29" href="$classore_1_1data_1_1_report_config.html#a56ab5896ba11edc3f435cefc0c45085a" title=" " alt="" coords="472,1332,643,1372"/>
-<area shape="rect" id="node35" href="$classore_1_1data_1_1_f_x_triangulation.html#ae9daa055d4ae016b45ea582dfcd7e74b" title=" " alt="" coords="239,1146,409,1186"/>
-<area shape="rect" id="node36" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="229,1322,419,1348"/>
-<area shape="rect" id="node38" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="242,96,406,121"/>
-<area shape="rect" id="node39" href="$group__curves.html#gae597dfd414f8c21f8b68b41f5b43a348" title="function to convert a string into a curve spec" alt="" coords="237,460,411,485"/>
-<area shape="rect" id="node4" href="$namespaceore_1_1data.html#a82e45b7da51a59b17e528f2d0ae29b96" title=" " alt="" coords="477,35,638,75"/>
-<area shape="rect" id="node5" href="$namespaceore_1_1data.html#ac1ff7842665a0c9bc7ff5785babcd435" title=" " alt="" coords="695,42,861,68"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_f_x_volatility_curve_spec.html#a3d358ea6ebc33cd2ab59484401f77d54" title=" " alt="" coords="468,362,647,402"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="484,248,631,273"/>
-<area shape="rect" id="node11" href="$group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="484,198,631,224"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_f_x_volatility_curve_spec.html#a8accfec7a5d4efba265e093095cc5cbc" title=" " alt="" coords="468,298,647,338"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="714,244,842,284"/>
-<area shape="rect" id="node12" href="$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="709,194,847,220"/>
-<area shape="rect" id="node20" href="$classore_1_1data_1_1_delta_string.html#abd751388e9fe4ca670f88a12a9bf3356" title=" " alt="" coords="485,426,630,466"/>
-<area shape="rect" id="node30" href="$classore_1_1data_1_1_report_config.html#a74e55eb606801e93e03464e36edc3954" title=" " alt="" coords="480,1012,635,1052"/>
-<area shape="rect" id="node31" href="$classore_1_1data_1_1_report_config.html#a5552ccfe35e93f625d97ce7912182770" title=" " alt="" coords="468,1076,647,1116"/>
-<area shape="rect" id="node32" href="$classore_1_1data_1_1_report_config.html#a3e27de23896c5cad96fe8b54be7efbfc" title=" " alt="" coords="480,1140,635,1180"/>
-<area shape="rect" id="node33" href="$classore_1_1data_1_1_report_config.html#af8d226e2763da6112782a272b6bf454b" title=" " alt="" coords="480,1204,635,1244"/>
-<area shape="rect" id="node34" href="$classore_1_1data_1_1_report_config.html#a17329bf807a1070ecbc7e03e3cc94df3" title=" " alt="" coords="480,948,635,988"/>
-<area shape="rect" id="node37" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="491,1396,623,1436"/>
+<area shape="rect" id="node1" title="Detailed constructor." alt="" coords="5,470,93,496"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_f_x_vol_curve.html#af8a8fa2b7d9d22dad02c8b6341e6ea54" title=" " alt="" coords="141,968,180,993"/>
+<area shape="rect" id="node16" href="$classore_1_1data_1_1_f_x_vol_curve.html#af0f1be52552a1e5147607f5ae5fb757b" title=" " alt="" coords="544,344,595,369"/>
+<area shape="rect" id="node3" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#ab389c65095cf5cf8101a6244a48a4102" title=" " alt="" coords="237,170,423,196"/>
+<area shape="rect" id="node4" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_marginal_probability.html#a2c9e9c3980a73aa98162a2149d7b0604" title=" " alt="" coords="231,220,429,260"/>
+<area shape="rect" id="node5" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_surface.html#a2c9e9c3980a73aa98162a2149d7b0604" title=" " alt="" coords="234,284,426,324"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_f_x_vol_curve.html#a37a99344b9351a354b2b0b13f0f57a73" title=" " alt="" coords="257,56,403,81"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_f_x_vol_curve.html#ac577aafa354590f22b4794e345864570" title=" " alt="" coords="247,450,413,476"/>
+<area shape="rect" id="node13" href="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="494,393,645,418"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_f_x_vol_curve.html#a87da590396c5fda9c4350915f3f47b3d" title=" " alt="" coords="261,500,399,525"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_f_x_vol_curve.html#a831238f8488b833c9b2c0b250fd30915" title=" " alt="" coords="258,598,402,624"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_delta_string.html#a397f8534c2b3d08642e5040c40426ab7" title=" " alt="" coords="497,810,642,850"/>
+<area shape="rect" id="node21" href="$classore_1_1data_1_1_delta_string.html#a33677d9992d9935c8dda721c7e90c488" title=" " alt="" coords="497,874,642,914"/>
+<area shape="rect" id="node22" href="$classore_1_1data_1_1_delta_string.html#a24f2d93e33ef1aba7e9b5dbeda088e98" title=" " alt="" coords="497,1059,642,1099"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_f_x_vol_curve.html#ac824030c91268c38cc2ab5ba9f5d30d3" title=" " alt="" coords="234,549,426,574"/>
+<area shape="rect" id="node25" href="$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="504,760,635,785"/>
+<area shape="rect" id="node26" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_marginal_probability.html#a050154669e2d6571151716c8e7c0cb34" title=" " alt="" coords="231,800,429,840"/>
+<area shape="rect" id="node27" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_surface.html#a08d0363135af67ef063a51bee340d460" title=" " alt="" coords="234,864,426,904"/>
+<area shape="rect" id="node28" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_surface.html#a367f9077f0c218edcd60507be81bbac6" title=" " alt="" coords="234,928,426,968"/>
+<area shape="rect" id="node29" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_marginal_probability.html#a8e9a460f12d8d5c9001a36bf087a6a8a" title=" " alt="" coords="228,992,432,1032"/>
+<area shape="rect" id="node30" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_surface.html#abdede4413de05babce69513924456c5b" title=" " alt="" coords="234,1056,426,1096"/>
+<area shape="rect" id="node31" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="247,1121,413,1146"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_curve_spec.html#a15e57a287887def554123ab18355c33c" title=" " alt="" coords="259,1171,401,1211"/>
+<area shape="rect" id="node33" href="$classore_1_1data_1_1_report_config.html#a4e7f096baca32e79358e09ada698bdce" title=" " alt="" coords="492,1246,647,1286"/>
+<area shape="rect" id="node34" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_marginal_probability.html#ac92c479ebb5da27bcb6cf6f806bd3860" title=" " alt="" coords="231,1286,429,1326"/>
+<area shape="rect" id="node35" href="$namespaceore_1_1data.html#a5e51bfe798b6a12ac603d4578c144c6b" title=" " alt="" coords="247,1502,413,1542"/>
+<area shape="rect" id="node36" href="$classore_1_1data_1_1_report_config.html#a82578f32908fbaf6c03607239312437d" title=" " alt="" coords="492,1310,647,1350"/>
+<area shape="rect" id="node37" href="$classore_1_1data_1_1_report_config.html#aee007654632574a63d04e7c6d0bc048f" title=" " alt="" coords="492,1374,647,1414"/>
+<area shape="rect" id="node38" href="$classore_1_1data_1_1_report_config.html#a13b426492274e696ee57b64ee0905f8b" title=" " alt="" coords="492,1758,647,1798"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_report_config.html#a56ab5896ba11edc3f435cefc0c45085a" title=" " alt="" coords="484,1822,655,1862"/>
+<area shape="rect" id="node45" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a097163251a347e24846dd4f1b569493c" title=" " alt="" coords="249,1617,411,1642"/>
+<area shape="rect" id="node46" href="$classore_1_1data_1_1_f_x_triangulation.html#ae9daa055d4ae016b45ea582dfcd7e74b" title=" " alt="" coords="245,1667,415,1707"/>
+<area shape="rect" id="node47" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#afbdda05b0f8c22a55596d604e3c1c652" title=" " alt="" coords="231,1732,429,1757"/>
+<area shape="rect" id="node48" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="235,1932,425,1957"/>
+<area shape="rect" id="node50" href="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="248,1833,412,1858"/>
+<area shape="rect" id="node51" href="$group__curves.html#gae597dfd414f8c21f8b68b41f5b43a348" title="function to convert a string into a curve spec" alt="" coords="243,1882,417,1908"/>
+<area shape="rect" id="node52" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_carr_madan_surface.html#af46a1928b8c0698f1b5208daca238413" title=" " alt="" coords="234,106,426,146"/>
+<area shape="rect" id="node7" href="$namespaceore_1_1data.html#a82e45b7da51a59b17e528f2d0ae29b96" title=" " alt="" coords="489,48,650,88"/>
+<area shape="rect" id="node8" href="$namespaceore_1_1data.html#ac1ff7842665a0c9bc7ff5785babcd435" title=" " alt="" coords="707,56,873,81"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_f_x_volatility_curve_spec.html#a3d358ea6ebc33cd2ab59484401f77d54" title=" " alt="" coords="480,556,659,596"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_loader.html#a1b9199cf1feab53f4fda69ddccc4a63c" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="496,621,643,646"/>
+<area shape="rect" id="node14" href="$group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="496,442,643,468"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_f_x_volatility_curve_spec.html#a8accfec7a5d4efba265e093095cc5cbc" title=" " alt="" coords="480,492,659,532"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_loader.html#a0113deda97c9b9f64d1a436cda884a51" title="get all quotes, TODO change the return value to std::set" alt="" coords="726,614,854,654"/>
+<area shape="rect" id="node15" href="$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="721,442,859,468"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_delta_string.html#abd751388e9fe4ca670f88a12a9bf3356" title=" " alt="" coords="497,671,642,711"/>
+<area shape="rect" id="node40" href="$classore_1_1data_1_1_report_config.html#a74e55eb606801e93e03464e36edc3954" title=" " alt="" coords="492,1630,647,1670"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_report_config.html#a5552ccfe35e93f625d97ce7912182770" title=" " alt="" coords="480,1694,659,1734"/>
+<area shape="rect" id="node42" href="$classore_1_1data_1_1_report_config.html#a3e27de23896c5cad96fe8b54be7efbfc" title=" " alt="" coords="492,1438,647,1478"/>
+<area shape="rect" id="node43" href="$classore_1_1data_1_1_report_config.html#af8d226e2763da6112782a272b6bf454b" title=" " alt="" coords="492,1502,647,1542"/>
+<area shape="rect" id="node44" href="$classore_1_1data_1_1_report_config.html#a17329bf807a1070ecbc7e03e3cc94df3" title=" " alt="" coords="492,1566,647,1606"/>
+<area shape="rect" id="node49" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="503,1924,635,1964"/>
 </map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['paramtype_0',['ParamType',['../namespaceore_1_1data.html#a3a023c0c27667e78ae521eb64f1c7c81',1,'ore::data']]],
-  ['publicationroll_1',['PublicationRoll',['../classore_1_1data_1_1_inflation_swap_convention.html#adcc5f86a1953cfa0aae3dcf4e71527d6',1,'ore::data::InflationSwapConvention']]]
+  ['notionalcalculation_0',['NotionalCalculation',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664c',1,'ore::data::CompositeTrade']]],
+  ['notionaltype_1',['NotionalType',['../classore_1_1data_1_1_t_r_s_1_1_funding_data.html#af42ee0f075f02d3fb8b4916935d16641',1,'ore::data::TRS::FundingData']]]
 ];

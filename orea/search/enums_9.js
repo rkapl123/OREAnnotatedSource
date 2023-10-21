@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['shifttype_0',['ShiftType',['../classore_1_1analytics_1_1_shift_scenario_generator.html#ae6645effb55b498ae924e935d438a900',1,'ore::analytics::ShiftScenarioGenerator']]],
-  ['simmside_1',['SimmSide',['../classore_1_1analytics_1_1_simm_configuration.html#a7350b34aa36058291464dad7368190f1',1,'ore::analytics::SimmConfiguration']]],
-  ['simmversion_2',['SimmVersion',['../namespaceore_1_1analytics.html#a5c1f8b37037e5cd698ccaae388982477',1,'ore::analytics']]]
+  ['legtype_0',['LegType',['../../qle/class_quant_ext_1_1_credit_linked_swap.html#a38a0ef15350f568cffa8bf8bf30a5b44',1,'QuantExt::CreditLinkedSwap']]],
+  ['loanexposuremode_1',['LoanExposureMode',['../classore_1_1analytics_1_1_credit_migration_helper.html#a107e6f4665fc02da5c3ece2c028a0517',1,'ore::analytics::CreditMigrationHelper']]]
 ];

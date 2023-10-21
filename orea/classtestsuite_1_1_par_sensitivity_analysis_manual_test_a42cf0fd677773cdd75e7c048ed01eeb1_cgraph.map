@@ -1,65 +1,90 @@
 <map id="testParSwapBenchmark" name="testParSwapBenchmark">
-<area shape="rect" id="node1" title="Benchmark par conversion against brute&#45;force bump on the par instruments (&quot;None&quot; observation mode)" alt="" coords="5,1322,168,1347"/>
-<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a28915bb1dca6668799c336ea3a953e45" title="align pillars in scenario simulation market parameters with those of the par instruments" alt="" coords="263,776,449,816"/>
-<area shape="rect" id="node3" href="$namespacetestsuite.html#a42359c43fde5ca54a8172a9c9a0dc7a5" title=" " alt="" coords="291,938,421,963"/>
-<area shape="rect" id="node5" href="$namespacetestsuite.html#adcf93a4b3b4221ead9beaa07a61516e1" title=" " alt="" coords="263,987,449,1013"/>
-<area shape="rect" id="node6" href="$namespacetestsuite.html#ab30f7b9c44095d806d2192ff584a9172" title=" " alt="" coords="254,1061,458,1086"/>
-<area shape="rect" id="node7" href="$namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95" title=" " alt="" coords="249,1110,463,1135"/>
-<area shape="rect" id="node8" href="$namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100" title=" " alt="" coords="274,1160,438,1200"/>
-<area shape="rect" id="node9" href="$namespacetestsuite.html#a3c54e055257b56f61fc96e8f4993aacb" title=" " alt="" coords="265,1249,447,1274"/>
-<area shape="rect" id="node10" href="$namespacetestsuite.html#a51b621a66b133e2a519258f56aaa222e" title=" " alt="" coords="288,865,424,890"/>
-<area shape="rect" id="node11" href="$namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758" title=" " alt="" coords="287,1322,425,1347"/>
-<area shape="rect" id="node12" href="$namespacetestsuite.html#aa9df3e61776f919738fb12e21ed049ca" title=" " alt="" coords="261,1371,451,1397"/>
-<area shape="rect" id="node13" href="$namespacetestsuite.html#a306f6ee775460a838c33bcd361cf4cd9" title=" " alt="" coords="255,1445,457,1470"/>
-<area shape="rect" id="node14" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a15667fb454f6579571357dcefa65a559" title="Compute par instrument sensitivities." alt="" coords="216,1495,496,1535"/>
-<area shape="rect" id="node58" href="$classore_1_1analytics_1_1_zero_to_par_cube.html#a6007c0f20ea89d5d2db573b08db43009" title="Return the non&#45;zero par deltas for the given tradeId." alt="" coords="273,1583,439,1623"/>
-<area shape="rect" id="node59" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a8092eccb5ce3a742bec7c90e7599fe71" title="Return computed par sensitivities. Empty if they have not been computed yet." alt="" coords="263,1647,449,1687"/>
-<area shape="rect" id="node60" href="$classtestsuite_1_1_test_configuration_objects.html#ad3905794b6d3b29161c6cd00aa7865df" title="SensitivityScenarioData instance." alt="" coords="234,1711,478,1751"/>
-<area shape="rect" id="node62" href="$classtestsuite_1_1_test_configuration_objects.html#a5d3a5e48cec33ea02c24791b2593cae1" title="ScenarioSimMarketParameters instance." alt="" coords="257,1775,455,1815"/>
-<area shape="rect" id="node63" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#ab397fee73d59f20038b686d3eeff9af3" title="Return the zero rate and par rate absolute shift size for each risk factor key." alt="" coords="263,1839,449,1879"/>
-<area shape="rect" id="node4" href="$namespacetestsuite.html#a7fffb0953112d184642c9d0d7b524894" title=" " alt="" coords="589,902,748,927"/>
-<area shape="rect" id="node15" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#aaf3b4fed233991ba67fc00a89e8fcd57" title="Augment relevant risk factors." alt="" coords="544,1495,793,1535"/>
-<area shape="rect" id="node16" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a03ca088a3dab4c18db2c047232a89780" title="Create par instruments." alt="" coords="841,677,1045,717"/>
-<area shape="rect" id="node38" href="$namespaceore_1_1analytics.html#a6f28870e4c47d867aa859db7fb3c2fed" title=" " alt="" coords="854,1623,1033,1649"/>
-<area shape="rect" id="node54" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#adc1ea5d86780f6a6557b3bb6cf84926e" title="Returns true if risk factor type is applicable for par conversion." alt="" coords="575,1431,762,1471"/>
-<area shape="rect" id="node55" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a25d0c14ef75a713f89ee3117e3c0f304" title="Populate shiftSizes_ for key given the implied fair par rate parRate." alt="" coords="575,1559,763,1599"/>
-<area shape="rect" id="node17" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a79cab2e964334fa8b6fb9472a51aeffe" title=" " alt="" coords="1107,837,1337,877"/>
-<area shape="rect" id="node18" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a335c3820a9ad66b4114eae1b63f57837" title=" " alt="" coords="1137,709,1307,749"/>
-<area shape="rect" id="node19" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a70d248ac62734bf0f55269fd44906f46" title=" " alt="" coords="1109,901,1335,941"/>
-<area shape="rect" id="node20" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a0f272d628eba1221955e73b95896ea6f" title=" " alt="" coords="1101,965,1343,1005"/>
-<area shape="rect" id="node21" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ab4e5b1bca5d2c1234d8cb2375798ea82" title=" " alt="" coords="1110,1029,1334,1069"/>
-<area shape="rect" id="node22" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a84f6a45da03b18ad06f2e6059576d335" title="Create Cap/Floor instrument for implying flat vol sensitivity from optionlet vol sensitivity." alt="" coords="1129,773,1315,813"/>
-<area shape="rect" id="node23" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#ab159350c50880e88ef534864f9466b26" title="Create CDS for implying par rate sensitivity from Hazard Rate sensitivity." alt="" coords="1129,5,1315,45"/>
-<area shape="rect" id="node24" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a0a8cff443db13bb49f84bb402091baae" title="Create Cross Ccy Basis Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1105,69,1339,109"/>
-<area shape="rect" id="node25" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#abc5dd9703405793fd837d16b467ba2a8" title="Create Deposit for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1129,133,1315,173"/>
-<area shape="rect" id="node26" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#ac59b12d3c4bc46e5912a4c7b7ef76307" title="Create FRA for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1129,197,1315,237"/>
-<area shape="rect" id="node27" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a36b2d757640f779381349d234d4627a6" title="Create FX Forwrad for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1129,261,1315,301"/>
-<area shape="rect" id="node28" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a8398135369084ed1a6d98a5c34816e4a" title="Create OIS Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1129,325,1315,365"/>
-<area shape="rect" id="node29" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a7c4856e81fa16c1c0f4c30fe20863df8" title="Create Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1129,389,1315,429"/>
-<area shape="rect" id="node30" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a10ed6e6816f20d1b60164edb508bdb98" title="Create Basis Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1117,453,1327,493"/>
-<area shape="rect" id="node31" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a2abfe3c79d6b13d1865f82b9bae2ea65" title="Create YoY Cap/Floor for implying rate rate sensitivity from yoy optionlet vol sensitivity." alt="" coords="1127,517,1317,557"/>
-<area shape="rect" id="node32" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a9a39605391eba53ee7e55cb504808a9e" title="Create YoY Swap for implying par rate sensitivity from yoy rate sensitivity." alt="" coords="1117,581,1327,621"/>
-<area shape="rect" id="node33" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a15e7d23239efd7bda0bd107f0c568a2f" title="Create Zero Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="1115,645,1329,685"/>
-<area shape="rect" id="node34" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a1ac8230a9773a5d2f2af7e878b2bd276" title=" " alt="" coords="1112,1093,1332,1133"/>
-<area shape="rect" id="node35" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ad13d23727f28ba2e988d4ba685405f73" title=" " alt="" coords="1109,1158,1335,1213"/>
-<area shape="rect" id="node36" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a04bd169bbc4c12c057ea988bcfa5c0c7" title=" " alt="" coords="1119,1237,1325,1291"/>
-<area shape="rect" id="node37" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ab54d5f99e46c2615edb3499eb0d3a79e" title=" " alt="" coords="1117,1315,1327,1370"/>
-<area shape="rect" id="node39" href="$test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4" title=" " alt="" coords="1199,2307,1245,2333"/>
-<area shape="rect" id="node40" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#aa20846f76afb42a5e0a7e907b727e345" title=" " alt="" coords="1097,1795,1347,1835"/>
-<area shape="rect" id="node41" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#aefc1dde6ea364f5790dc4dc75d339dba" title=" " alt="" coords="1121,1859,1323,1899"/>
-<area shape="rect" id="node42" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ac040ad9950aac26ede1935ca320bd0e1" title=" " alt="" coords="1093,1923,1351,1963"/>
-<area shape="rect" id="node43" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#aea45faada7a1e96039510c0eb5e9a51f" title=" " alt="" coords="1100,1987,1344,2027"/>
-<area shape="rect" id="node44" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ad25f69d5465945eb23f43d1146b450a8" title=" " alt="" coords="1104,2051,1340,2091"/>
-<area shape="rect" id="node45" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#af073371655145388cd67182906ad5694" title=" " alt="" coords="1124,2115,1320,2155"/>
-<area shape="rect" id="node46" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a344f4a67200865bd29b118ab0836c168" title=" " alt="" coords="1115,2179,1329,2219"/>
-<area shape="rect" id="node47" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a7ab8bd40826ffcadec9a28c9b47deee0" title=" " alt="" coords="1137,2243,1307,2283"/>
-<area shape="rect" id="node48" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a5781bba7cccea873352ae96390ae06a7" title=" " alt="" coords="1127,1459,1317,1499"/>
-<area shape="rect" id="node49" href="$namespaceore_1_1analytics.html#a5cceb12d217bac14eeda59d5f774f7c1" title=" " alt="" coords="1125,2381,1319,2406"/>
-<area shape="rect" id="node50" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a221481186bf38cc73b261331cda6bcec" title=" " alt="" coords="1119,1523,1325,1563"/>
-<area shape="rect" id="node51" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a878f236e46973bef31d49a6ba7170aad" title=" " alt="" coords="1107,1587,1337,1627"/>
-<area shape="rect" id="node52" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a595f1fc52e87fae0e9d1f1c92d940e2a" title=" " alt="" coords="1119,1651,1325,1691"/>
-<area shape="rect" id="node53" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a9d7b43b0cc7fe85c7336883a552108e6" title=" " alt="" coords="1107,1715,1337,1770"/>
-<area shape="rect" id="node56" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a2d1e0fb4f255552e89bb7fad306cd48b" title="Give back the shift data for the given risk factor type, keyType, with the given name." alt="" coords="860,1559,1027,1599"/>
-<area shape="rect" id="node57" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a5b2ac7fa73674b88cd3c2cc68477b111" title=" " alt="" coords="1111,1395,1333,1435"/>
-<area shape="rect" id="node61" href="$namespacetestsuite.html#aac0663d501b589be0427199becb6d9a8" title=" " alt="" coords="581,1718,756,1743"/>
+<area shape="rect" id="node1" title="Benchmark par conversion against brute&#45;force bump on the par instruments (&quot;None&quot; observation mode)" alt="" coords="5,569,168,594"/>
+<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a28915bb1dca6668799c336ea3a953e45" title="align pillars in scenario simulation market parameters with those of the par instruments" alt="" coords="263,5,449,45"/>
+<area shape="rect" id="node3" href="$namespacetestsuite.html#a42359c43fde5ca54a8172a9c9a0dc7a5" title=" " alt="" coords="291,294,421,319"/>
+<area shape="rect" id="node5" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="1187,419,1318,445"/>
+<area shape="rect" id="node6" href="$namespacetestsuite.html#adcf93a4b3b4221ead9beaa07a61516e1" title=" " alt="" coords="575,346,762,371"/>
+<area shape="rect" id="node7" href="$namespacetestsuite.html#ab30f7b9c44095d806d2192ff584a9172" title=" " alt="" coords="567,419,771,445"/>
+<area shape="rect" id="node8" href="$namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95" title=" " alt="" coords="562,570,775,595"/>
+<area shape="rect" id="node9" href="$namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100" title=" " alt="" coords="877,617,1041,657"/>
+<area shape="rect" id="node10" href="$namespacetestsuite.html#a3c54e055257b56f61fc96e8f4993aacb" title=" " alt="" coords="265,543,447,569"/>
+<area shape="rect" id="node12" href="$namespacetestsuite.html#a51b621a66b133e2a519258f56aaa222e" title=" " alt="" coords="288,367,424,393"/>
+<area shape="rect" id="node13" href="$namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758" title=" " alt="" coords="599,695,738,721"/>
+<area shape="rect" id="node14" href="$namespacetestsuite.html#aa9df3e61776f919738fb12e21ed049ca" title=" " alt="" coords="573,82,764,107"/>
+<area shape="rect" id="node15" href="$namespacetestsuite.html#a306f6ee775460a838c33bcd361cf4cd9" title=" " alt="" coords="255,145,457,170"/>
+<area shape="rect" id="node16" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="1201,581,1304,606"/>
+<area shape="rect" id="node17" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a15667fb454f6579571357dcefa65a559" title="Compute par instrument sensitivities." alt="" coords="216,796,496,836"/>
+<area shape="rect" id="node83" href="$classore_1_1analytics_1_1_zero_to_par_cube.html#a6007c0f20ea89d5d2db573b08db43009" title="Return the non&#45;zero par deltas for the given tradeId." alt="" coords="273,884,439,924"/>
+<area shape="rect" id="node84" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a8092eccb5ce3a742bec7c90e7599fe71" title="Return computed par sensitivities. Empty if they have not been computed yet." alt="" coords="263,948,449,988"/>
+<area shape="rect" id="node85" href="$classtestsuite_1_1_test_configuration_objects.html#ad3905794b6d3b29161c6cd00aa7865df" title="SensitivityScenarioData instance." alt="" coords="234,1012,478,1052"/>
+<area shape="rect" id="node87" href="$classtestsuite_1_1_test_configuration_objects.html#a5d3a5e48cec33ea02c24791b2593cae1" title="ScenarioSimMarketParameters instance." alt="" coords="257,1076,455,1116"/>
+<area shape="rect" id="node88" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#ab397fee73d59f20038b686d3eeff9af3" title="Return the zero rate and par rate absolute shift size for each risk factor key." alt="" coords="263,1140,449,1180"/>
+<area shape="rect" id="node4" href="$namespacetestsuite.html#a7fffb0953112d184642c9d0d7b524894" title=" " alt="" coords="589,297,748,322"/>
+<area shape="rect" id="node11" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title=" " alt="" coords="628,469,709,494"/>
+<area shape="rect" id="node18" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#aaf3b4fed233991ba67fc00a89e8fcd57" title="Augment relevant risk factors." alt="" coords="544,796,793,836"/>
+<area shape="rect" id="node19" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a03ca088a3dab4c18db2c047232a89780" title="Create par instruments." alt="" coords="567,1537,771,1577"/>
+<area shape="rect" id="node63" href="$namespaceore_1_1analytics.html#a6f28870e4c47d867aa859db7fb3c2fed" title=" " alt="" coords="869,2625,1048,2650"/>
+<area shape="rect" id="node79" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#adc1ea5d86780f6a6557b3bb6cf84926e" title="Returns true if risk factor type is applicable for par conversion." alt="" coords="575,860,762,900"/>
+<area shape="rect" id="node80" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a25d0c14ef75a713f89ee3117e3c0f304" title="Populate shiftSizes_ for key given the implied fair par rate parRate." alt="" coords="575,2339,763,2379"/>
+<area shape="rect" id="node20" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a79cab2e964334fa8b6fb9472a51aeffe" title=" " alt="" coords="1137,2585,1368,2625"/>
+<area shape="rect" id="node21" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a335c3820a9ad66b4114eae1b63f57837" title=" " alt="" coords="873,1039,1044,1079"/>
+<area shape="rect" id="node22" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a70d248ac62734bf0f55269fd44906f46" title=" " alt="" coords="1140,2031,1365,2071"/>
+<area shape="rect" id="node23" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a0f272d628eba1221955e73b95896ea6f" title=" " alt="" coords="1131,1967,1374,2007"/>
+<area shape="rect" id="node24" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ab4e5b1bca5d2c1234d8cb2375798ea82" title=" " alt="" coords="1141,2145,1365,2185"/>
+<area shape="rect" id="node25" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a84f6a45da03b18ad06f2e6059576d335" title="Create Cap/Floor instrument for implying flat vol sensitivity from optionlet vol sensitivity." alt="" coords="865,1409,1052,1449"/>
+<area shape="rect" id="node26" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title=" " alt="" coords="1170,1434,1335,1459"/>
+<area shape="rect" id="node27" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#ab159350c50880e88ef534864f9466b26" title="Create CDS for implying par rate sensitivity from Hazard Rate sensitivity." alt="" coords="865,1729,1052,1769"/>
+<area shape="rect" id="node34" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a0a8cff443db13bb49f84bb402091baae" title="Create Cross Ccy Basis Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="841,1601,1076,1641"/>
+<area shape="rect" id="node37" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#abc5dd9703405793fd837d16b467ba2a8" title="Create Deposit for implying par rate sensitivity from zero rate sensitivity." alt="" coords="865,1231,1052,1271"/>
+<area shape="rect" id="node39" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#ac59b12d3c4bc46e5912a4c7b7ef76307" title="Create FRA for implying par rate sensitivity from zero rate sensitivity." alt="" coords="865,1345,1052,1385"/>
+<area shape="rect" id="node40" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a36b2d757640f779381349d234d4627a6" title="Create FX Forwrad for implying par rate sensitivity from zero rate sensitivity." alt="" coords="865,1665,1052,1705"/>
+<area shape="rect" id="node41" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a8398135369084ed1a6d98a5c34816e4a" title="Create OIS Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="865,1473,1052,1513"/>
+<area shape="rect" id="node42" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a7c4856e81fa16c1c0f4c30fe20863df8" title="Create Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="865,1167,1052,1207"/>
+<area shape="rect" id="node51" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a10ed6e6816f20d1b60164edb508bdb98" title="Create Basis Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="854,1537,1063,1577"/>
+<area shape="rect" id="node52" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a2abfe3c79d6b13d1865f82b9bae2ea65" title="Create YoY Cap/Floor for implying rate rate sensitivity from yoy optionlet vol sensitivity." alt="" coords="864,1103,1053,1143"/>
+<area shape="rect" id="node56" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a9a39605391eba53ee7e55cb504808a9e" title="Create YoY Swap for implying par rate sensitivity from yoy rate sensitivity." alt="" coords="853,911,1064,951"/>
+<area shape="rect" id="node58" href="$classore_1_1analytics_1_1_par_sensitivity_analysis.html#a15e7d23239efd7bda0bd107f0c568a2f" title="Create Zero Swap for implying par rate sensitivity from zero rate sensitivity." alt="" coords="852,975,1065,1015"/>
+<area shape="rect" id="node59" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a1ac8230a9773a5d2f2af7e878b2bd276" title=" " alt="" coords="1143,2284,1363,2324"/>
+<area shape="rect" id="node60" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ad13d23727f28ba2e988d4ba685405f73" title=" " alt="" coords="1140,2349,1365,2403"/>
+<area shape="rect" id="node61" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a04bd169bbc4c12c057ea988bcfa5c0c7" title=" " alt="" coords="1150,2427,1355,2482"/>
+<area shape="rect" id="node62" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ab54d5f99e46c2615edb3499eb0d3a79e" title=" " alt="" coords="1148,2506,1357,2561"/>
+<area shape="rect" id="node28" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_credit_default_swap.html#a13afd8ff6e8e79e157b41c54db8b28f0" title=" " alt="" coords="1157,1583,1348,1623"/>
+<area shape="rect" id="node29" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_credit_default_swap.html#a8786a1690bc26d6512e31f517befea73" title=" " alt="" coords="1152,1647,1353,1687"/>
+<area shape="rect" id="node30" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_credit_default_swap.html#a79a5bf709a83cd99efa83faf7a6f0d6f" title=" " alt="" coords="1157,1711,1348,1751"/>
+<area shape="rect" id="node31" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_credit_default_swap.html#a4f6863a09ad0ad21659f5fcf32b418e5" title=" " alt="" coords="1157,1775,1348,1815"/>
+<area shape="rect" id="node32" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_credit_default_swap.html#a1156ccc1f63793734fe12a4535c6f68f" title=" " alt="" coords="1155,1839,1351,1879"/>
+<area shape="rect" id="node33" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_credit_default_swap.html#aef79fd00dc96736bca343d0192c26468" title=" " alt="" coords="1157,1903,1348,1943"/>
+<area shape="rect" id="node35" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title=" " alt="" coords="1170,1483,1335,1509"/>
+<area shape="rect" id="node36" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$namespaceore_1_1data.html#a6048fd87840c79258ed4e959f0555a2f" title=" " alt="" coords="1167,1533,1338,1558"/>
+<area shape="rect" id="node38" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga2f0695fe62430369b6acca7976d7be97" title=" " alt="" coords="1165,1385,1341,1410"/>
+<area shape="rect" id="node43" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title=" " alt="" coords="1161,1335,1344,1361"/>
+<area shape="rect" id="node44" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_fixed_b_m_a_swap.html#aae4aedf88e432de744f6f0ae703bde15" title=" " alt="" coords="1147,887,1358,927"/>
+<area shape="rect" id="node45" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_sub_periods_swap.html#affc41d722d1120518f9948d788431056" title=" " alt="" coords="1158,951,1347,991"/>
+<area shape="rect" id="node46" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_sub_periods_swap.html#a662efe4525f29a7b64e3e50417016fb6" title=" " alt="" coords="1152,1015,1353,1055"/>
+<area shape="rect" id="node47" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_sub_periods_swap.html#ac2f3a56b9130195610d7b30c0f087caa" title=" " alt="" coords="1155,1079,1350,1119"/>
+<area shape="rect" id="node48" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_sub_periods_swap.html#a02282940d3091865100dcff65c695f9b" title=" " alt="" coords="1161,1143,1345,1183"/>
+<area shape="rect" id="node49" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_sub_periods_swap.html#a12463e6245949bc4477529c791f31279" title=" " alt="" coords="1161,1207,1345,1247"/>
+<area shape="rect" id="node50" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_make_sub_periods_swap.html#aa27d877e3cfb8777d52f2ae720d062d3" title=" " alt="" coords="1159,1271,1346,1311"/>
+<area shape="rect" id="node53" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1yoy_inflation_leg.html#a31afff2ccfbd52b6333575ee40c23504" title=" " alt="" coords="1167,823,1338,863"/>
+<area shape="rect" id="node54" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1yoy_inflation_leg.html#a7bd51a0a7da6c232fa3bcc70045d501d" title=" " alt="" coords="1166,695,1339,735"/>
+<area shape="rect" id="node55" href="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1yoy_inflation_leg.html#a0617466d18a23a375cc3d45ec9102b33" title=" " alt="" coords="1167,759,1338,799"/>
+<area shape="rect" id="node57" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$namespaceore_1_1data.html#a4cabef9f8164c42065e1fabfc11a6d32" title=" " alt="" coords="1165,631,1340,671"/>
+<area shape="rect" id="node64" href="$test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4" title=" " alt="" coords="1229,2095,1276,2121"/>
+<area shape="rect" id="node65" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#aa20846f76afb42a5e0a7e907b727e345" title=" " alt="" coords="1127,2713,1378,2753"/>
+<area shape="rect" id="node66" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#aefc1dde6ea364f5790dc4dc75d339dba" title=" " alt="" coords="1152,2777,1353,2817"/>
+<area shape="rect" id="node67" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ac040ad9950aac26ede1935ca320bd0e1" title=" " alt="" coords="1124,2841,1381,2881"/>
+<area shape="rect" id="node68" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#aea45faada7a1e96039510c0eb5e9a51f" title=" " alt="" coords="1131,2905,1375,2945"/>
+<area shape="rect" id="node69" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#ad25f69d5465945eb23f43d1146b450a8" title=" " alt="" coords="1135,3049,1371,3089"/>
+<area shape="rect" id="node70" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#af073371655145388cd67182906ad5694" title=" " alt="" coords="1155,3113,1351,3153"/>
+<area shape="rect" id="node71" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a344f4a67200865bd29b118ab0836c168" title=" " alt="" coords="1145,3177,1360,3217"/>
+<area shape="rect" id="node72" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a7ab8bd40826ffcadec9a28c9b47deee0" title=" " alt="" coords="1167,3241,1338,3281"/>
+<area shape="rect" id="node73" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a5781bba7cccea873352ae96390ae06a7" title=" " alt="" coords="1157,3305,1348,3345"/>
+<area shape="rect" id="node74" href="$namespaceore_1_1analytics.html#a5cceb12d217bac14eeda59d5f774f7c1" title=" " alt="" coords="1155,2234,1350,2259"/>
+<area shape="rect" id="node75" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a221481186bf38cc73b261331cda6bcec" title=" " alt="" coords="1149,3369,1356,3409"/>
+<area shape="rect" id="node76" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a878f236e46973bef31d49a6ba7170aad" title=" " alt="" coords="1137,3433,1368,3473"/>
+<area shape="rect" id="node77" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a595f1fc52e87fae0e9d1f1c92d940e2a" title=" " alt="" coords="1149,2649,1356,2689"/>
+<area shape="rect" id="node78" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a9d7b43b0cc7fe85c7336883a552108e6" title=" " alt="" coords="1138,2970,1367,3025"/>
+<area shape="rect" id="node81" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a2d1e0fb4f255552e89bb7fad306cd48b" title="Give back the shift data for the given risk factor type, keyType, with the given name." alt="" coords="875,2777,1042,2817"/>
+<area shape="rect" id="node82" href="$classore_1_1analytics_1_1_sensitivity_scenario_data.html#a5b2ac7fa73674b88cd3c2cc68477b111" title=" " alt="" coords="1142,3497,1363,3537"/>
+<area shape="rect" id="node86" href="$namespacetestsuite.html#aac0663d501b589be0427199becb6d9a8" title=" " alt="" coords="581,2403,756,2429"/>
 </map>
