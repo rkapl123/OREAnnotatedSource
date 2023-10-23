@@ -118,17 +118,15 @@ $(function() {
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>              Category::Warning, Group::Analytics, warningWhat,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>              std::map&lt;std::string, std::string&gt;({{<span class="stringliteral">&quot;warningType&quot;</span>, warningType}, {<span class="stringliteral">&quot;analyticType&quot;</span>, analyticType}})) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">if</span> (!subFields.empty())</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_variableRef" href="../ored/classore_1_1data_1_1_structured_message.html#a0814a8f24597ac25d752cc65e63e1784">subFields_</a>.insert(subFields.begin(), subFields.end());</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">// namespace analytics</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <span class="comment">// namespace ore</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        addSubFields(subFields);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} <span class="comment">// namespace analytics</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">// namespace ore</span></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_structured_analytics_warning_message_html"><div class="ttname"><a href="classore_1_1analytics_1_1_structured_analytics_warning_message.html">ore::analytics::StructuredAnalyticsWarningMessage</a></div><div class="ttdef"><b>Definition:</b> <a href="structuredanalyticswarning_8hpp_source.html#l00031">structuredanalyticswarning.hpp:31</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_structured_analytics_warning_message_html_aca46f74c11b6d7d443e85c28dd62b530"><div class="ttname"><a href="classore_1_1analytics_1_1_structured_analytics_warning_message.html#aca46f74c11b6d7d443e85c28dd62b530">ore::analytics::StructuredAnalyticsWarningMessage::StructuredAnalyticsWarningMessage</a></div><div class="ttdeci">StructuredAnalyticsWarningMessage(const std::string &amp;analyticType, const std::string &amp;warningType, const std::string &amp;warningWhat, const std::map&lt; std::string, std::string &gt; &amp;subFields={})</div><div class="ttdef"><b>Definition:</b> <a href="structuredanalyticswarning_8hpp_source.html#l00033">structuredanalyticswarning.hpp:33</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_structured_message_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_structured_message.html">ore::data::StructuredMessage</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_structured_message_html_a0814a8f24597ac25d752cc65e63e1784"><div class="ttname"><a href="../ored/classore_1_1data_1_1_structured_message.html#a0814a8f24597ac25d752cc65e63e1784">ore::data::StructuredMessage::subFields_</a></div><div class="ttdeci">std::map&lt; string, string &gt; subFields_</div></div>
 <div class="ttc" id="alog_8hpp_html"><div class="ttname"><a href="../ored/log_8hpp.html">log.hpp</a></div></div>
 <div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

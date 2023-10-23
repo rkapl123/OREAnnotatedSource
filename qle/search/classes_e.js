@@ -31,5 +31,6 @@ var searchData=
   ['overnightindexedcouponpricer_28',['OvernightIndexedCouponPricer',['../class_quant_ext_1_1_overnight_indexed_coupon_pricer.html',1,'QuantExt']]],
   ['overnightindexedcrossccybasisswap_29',['OvernightIndexedCrossCcyBasisSwap',['../class_quant_ext_1_1_overnight_indexed_cross_ccy_basis_swap.html',1,'QuantExt']]],
   ['overnightindexedcrossccybasisswapengine_30',['OvernightIndexedCrossCcyBasisSwapEngine',['../class_quant_ext_1_1_overnight_indexed_cross_ccy_basis_swap_engine.html',1,'QuantExt']]],
-  ['overnightleg_31',['OvernightLeg',['../class_quant_ext_1_1_overnight_leg.html',1,'QuantExt']]]
+  ['overnightindexwithfixingoverride_31',['OvernightIndexWithFixingOverride',['../class_quant_ext_1_1_overnight_index_with_fixing_override.html',1,'QuantExt']]],
+  ['overnightleg_32',['OvernightLeg',['../class_quant_ext_1_1_overnight_leg.html',1,'QuantExt']]]
 ];

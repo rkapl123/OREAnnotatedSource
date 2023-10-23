@@ -87,6 +87,10 @@ $(function() {
 <code>#include &lt;ql/math/generallinearleastsquares.hpp&gt;</code><br />
 <code>#include &lt;ql/math/matrixutilities/qrdecomposition.hpp&gt;</code><br />
 <code>#include &lt;boost/math/distributions/normal.hpp&gt;</code><br />
+<code>#include &lt;boost/accumulators/accumulators.hpp&gt;</code><br />
+<code>#include &lt;boost/accumulators/statistics/stats.hpp&gt;</code><br />
+<code>#include &lt;boost/accumulators/statistics/variance.hpp&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div>
 <p><a href="qle_2math_2randomvariable_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -99,6 +103,8 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a239afc69e4ba77938937ef7dfda4bb6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a239afc69e4ba77938937ef7dfda4bb6f">operator==</a> (const Filter &amp;a, const Filter &amp;b)</td></tr>
 <tr class="separator:a239afc69e4ba77938937ef7dfda4bb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2d6324b3ac89174a5e445506a75482"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a0f2d6324b3ac89174a5e445506a75482">operator!=</a> (const Filter &amp;a, const Filter &amp;b)</td></tr>
+<tr class="separator:a0f2d6324b3ac89174a5e445506a75482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f13b59355eb15aa2bfa0e4e0b58fe8"><td class="memItemLeft" align="right" valign="top">Filter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#aa8f13b59355eb15aa2bfa0e4e0b58fe8">operator&amp;&amp;</a> (Filter x, const Filter &amp;y)</td></tr>
 <tr class="separator:aa8f13b59355eb15aa2bfa0e4e0b58fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada3fe319e7c5ba2907a7e1d14759a21d"><td class="memItemLeft" align="right" valign="top">Filter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#ada3fe319e7c5ba2907a7e1d14759a21d">operator||</a> (Filter x, const Filter &amp;y)</td></tr>
@@ -111,6 +117,8 @@ Functions</h2></td></tr>
 <tr class="separator:add3300ddd9893a167192eba16765ebd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4559af6ff174f7e3a38618c9b118109a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a4559af6ff174f7e3a38618c9b118109a">operator==</a> (const RandomVariable &amp;a, const RandomVariable &amp;b)</td></tr>
 <tr class="separator:a4559af6ff174f7e3a38618c9b118109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7384fabc51d72fbdd6ba7feb2d306b45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a7384fabc51d72fbdd6ba7feb2d306b45">operator!=</a> (const RandomVariable &amp;a, const RandomVariable b)</td></tr>
+<tr class="separator:a7384fabc51d72fbdd6ba7feb2d306b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf1d73c0f98a082ce6cd931e5869ddc9"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#acf1d73c0f98a082ce6cd931e5869ddc9">operator+</a> (RandomVariable x, const RandomVariable &amp;y)</td></tr>
 <tr class="separator:acf1d73c0f98a082ce6cd931e5869ddc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad672faa1f703084997b65de285b35061"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#ad672faa1f703084997b65de285b35061">operator-</a> (RandomVariable x, const RandomVariable &amp;y)</td></tr>
@@ -167,14 +175,16 @@ Functions</h2></td></tr>
 <tr class="separator:ac2c9fc833a3c248658a83c6236b30f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc01c7af2e797f818e655cc43c003a9"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#abcc01c7af2e797f818e655cc43c003a9">applyInverseFilter</a> (RandomVariable x, const Filter &amp;f)</td></tr>
 <tr class="separator:abcc01c7af2e797f818e655cc43c003a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7df53a22f26c6ca1f06b1a45635f341b"><td class="memItemLeft" align="right" valign="top">Array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a7df53a22f26c6ca1f06b1a45635f341b">regressionCoefficients</a> (RandomVariable r, const std::vector&lt; const RandomVariable * &gt; &amp;regressor, const std::vector&lt; std::function&lt; RandomVariable(const std::vector&lt; const RandomVariable * &gt; &amp;)&gt; &gt; &amp;basisFn, const Filter &amp;filter)</td></tr>
-<tr class="separator:a7df53a22f26c6ca1f06b1a45635f341b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548cb27798b6f38a502e71240377a255"><td class="memItemLeft" align="right" valign="top">Array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a548cb27798b6f38a502e71240377a255">regressionCoefficients</a> (RandomVariable r, const std::vector&lt; const RandomVariable * &gt; &amp;regressor, const std::vector&lt; std::function&lt; RandomVariable(const std::vector&lt; const RandomVariable * &gt; &amp;)&gt; &gt; &amp;basisFn, const Filter &amp;filter, const RandomVariableRegressionMethod regressionMethod, const std::string &amp;debugLabel)</td></tr>
+<tr class="separator:a548cb27798b6f38a502e71240377a255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa20ffa6fc84566f721a455a1bb72502b"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#aa20ffa6fc84566f721a455a1bb72502b">conditionalExpectation</a> (const std::vector&lt; const RandomVariable * &gt; &amp;regressor, const std::vector&lt; std::function&lt; RandomVariable(const std::vector&lt; const RandomVariable * &gt; &amp;)&gt; &gt; &amp;basisFn, const Array &amp;coefficients)</td></tr>
 <tr class="separator:aa20ffa6fc84566f721a455a1bb72502b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f33c86a115ca21332c4158a065bde7d"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a3f33c86a115ca21332c4158a065bde7d">conditionalExpectation</a> (const RandomVariable &amp;r, const std::vector&lt; const RandomVariable * &gt; &amp;regressor, const std::vector&lt; std::function&lt; RandomVariable(const std::vector&lt; const RandomVariable * &gt; &amp;)&gt; &gt; &amp;basisFn, const Filter &amp;filter)</td></tr>
-<tr class="separator:a3f33c86a115ca21332c4158a065bde7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3278713bef93090076119d53bef2a80"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#ae3278713bef93090076119d53bef2a80">conditionalExpectation</a> (const RandomVariable &amp;r, const std::vector&lt; const RandomVariable * &gt; &amp;regressor, const std::vector&lt; std::function&lt; RandomVariable(const std::vector&lt; const RandomVariable * &gt; &amp;)&gt; &gt; &amp;basisFn, const Filter &amp;filter, const RandomVariableRegressionMethod regressionMethod)</td></tr>
+<tr class="separator:ae3278713bef93090076119d53bef2a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7149e5256e71f377e1810576ac6b4c"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a8c7149e5256e71f377e1810576ac6b4c">expectation</a> (const RandomVariable &amp;r)</td></tr>
 <tr class="separator:a8c7149e5256e71f377e1810576ac6b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249dd19ff90e20ad4b64b0be1665b5c0"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a> (const RandomVariable &amp;r)</td></tr>
+<tr class="separator:a249dd19ff90e20ad4b64b0be1665b5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7062a4088d99551d70464bc5b50abc2b"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b">black</a> (const RandomVariable &amp;omega, const RandomVariable &amp;t, const RandomVariable &amp;strike, const RandomVariable &amp;forward, const RandomVariable &amp;impliedVol)</td></tr>
 <tr class="separator:a7062a4088d99551d70464bc5b50abc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c36855921db43f8fbe170cde58b23cb"><td class="memItemLeft" align="right" valign="top">RandomVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_ext.html#a6c36855921db43f8fbe170cde58b23cb">indicatorDerivative</a> (const RandomVariable &amp;x, const double eps)</td></tr>

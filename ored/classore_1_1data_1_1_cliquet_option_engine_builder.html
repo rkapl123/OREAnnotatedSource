@@ -102,6 +102,7 @@ $(function() {
 <area shape="rect" href="classore_1_1data_1_1_engine_builder.html" title="Base PricingEngine Builder class for a specific model and engine." alt="" coords="72,5,217,339"/>
 <area shape="rect" href="classore_1_1data_1_1_caching_engine_builder.html" title="Abstract template EngineBuilder class that can cache engines and coupon pricers." alt="" coords="141,388,335,531"/>
 <area shape="rect" href="classore_1_1data_1_1_caching_option_engine_builder.html" title=" " alt="" coords="135,721,346,820"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_cliquet_option_mc_script_engine_builder.html" title=" " alt="" coords="16,1400,223,1499"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -234,7 +235,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p >Engine builder for Cliquet Options. </p>
 <p >Pricing engines are cached by currency </p>
 
-<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00036">36</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00038">38</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a262efd4c98aee373b716c6696956aac6" name="a262efd4c98aee373b716c6696956aac6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a262efd4c98aee373b716c6696956aac6">&#9670;&#160;</a></span>CliquetOptionEngineBuilder()</h2>
@@ -274,8 +275,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00040">40</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>        : <a class="code hl_function" href="classore_1_1data_1_1_caching_option_engine_builder.html#af5d52278e7cc7f7f32a41ede8c25eaa5">CachingOptionEngineBuilder</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a5b42b4fc92c1fab7879d756cce6bc6b9">model</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">engine</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a1ed37a8575bdf2338a7021c7c30c24f8">tradeTypes</a>, assetClass) {}</div>
+<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00042">42</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>        : <a class="code hl_function" href="classore_1_1data_1_1_caching_option_engine_builder.html#af5d52278e7cc7f7f32a41ede8c25eaa5">CachingOptionEngineBuilder</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a5b42b4fc92c1fab7879d756cce6bc6b9">model</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">engine</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a1ed37a8575bdf2338a7021c7c30c24f8">tradeTypes</a>, assetClass) {}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_caching_option_engine_builder_html_af5d52278e7cc7f7f32a41ede8c25eaa5"><div class="ttname"><a href="classore_1_1data_1_1_caching_option_engine_builder.html#af5d52278e7cc7f7f32a41ede8c25eaa5">ore::data::CachingOptionEngineBuilder&lt; std::string, const std::string &amp;, const QuantLib::Currency &amp;, const ore::data::AssetClass &amp; &gt;::CachingOptionEngineBuilder</a></div><div class="ttdeci">CachingOptionEngineBuilder(const string &amp;model, const string &amp;engine, const set&lt; string &gt; &amp;tradeTypes, const AssetClass &amp;assetClass)</div><div class="ttdef"><b>Definition:</b> <a href="builders_2vanillaoption_8hpp_source.html#l00047">vanillaoption.hpp:47</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a163cd3dc5a4afac8f3455002ed3310c5"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">ore::data::EngineBuilder::engine</a></div><div class="ttdeci">const string &amp; engine() const</div><div class="ttdoc">Return the engine name.</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00110">enginefactory.hpp:110</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a1ed37a8575bdf2338a7021c7c30c24f8"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a1ed37a8575bdf2338a7021c7c30c24f8">ore::data::EngineBuilder::tradeTypes</a></div><div class="ttdeci">const set&lt; string &gt; &amp; tradeTypes() const</div><div class="ttdoc">Return the possible trade types.</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00112">enginefactory.hpp:112</a></div></div>
@@ -310,14 +311,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00044">44</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                                                                                                           {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classore_1_1data_1_1_caching_option_engine_builder.html">ore::data::CachingOptionEngineBuilder</a>&lt;std::string, <span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> QuantLib::Currency&amp;,</div>
-<div class="line"><span class="lineno">   46</span>                                                     <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a>&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(assetName, ccy, <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>);</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00046">46</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                                                           {</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classore_1_1data_1_1_caching_option_engine_builder.html">ore::data::CachingOptionEngineBuilder</a>&lt;std::string, <span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> QuantLib::Currency&amp;,</div>
+<div class="line"><span class="lineno">   48</span>                                                     <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a>&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(assetName, ccy, <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>);</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
 <div class="ttc" id="aclassore_1_1data_1_1_caching_option_engine_builder_html"><div class="ttname"><a href="classore_1_1data_1_1_caching_option_engine_builder.html">ore::data::CachingOptionEngineBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="builders_2vanillaoption_8hpp_source.html#l00045">vanillaoption.hpp:45</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_caching_option_engine_builder_html_a54b9dabc759b8ee8e1482e5e0891ee6a"><div class="ttname"><a href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">ore::data::CachingOptionEngineBuilder&lt; std::string, const std::string &amp;, const QuantLib::Currency &amp;, const ore::data::AssetClass &amp; &gt;::assetClass_</a></div><div class="ttdeci">AssetClass assetClass_</div><div class="ttdef"><b>Definition:</b> <a href="builders_2vanillaoption_8hpp_source.html#l00103">vanillaoption.hpp:103</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a257a26b87a296246c696d5931f88840e"><div class="ttname"><a href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a></div><div class="ttdeci">AssetClass</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8hpp_source.html#l00347">parsers.hpp:347</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a257a26b87a296246c696d5931f88840e"><div class="ttname"><a href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a></div><div class="ttdeci">AssetClass</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8hpp_source.html#l00359">parsers.hpp:359</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -358,12 +359,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00049">49</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>                                                                                                              {</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classore_1_1data_1_1_caching_option_engine_builder.html">ore::data::CachingOptionEngineBuilder</a>&lt;std::string, <span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> QuantLib::Currency&amp;,</div>
-<div class="line"><span class="lineno">   51</span>                                                     <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a>&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(ccy1.code(), ccy2,</div>
-<div class="line"><span class="lineno">   52</span>                                                                                           <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>);</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00051">51</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>                                                                                                              {</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classore_1_1data_1_1_caching_option_engine_builder.html">ore::data::CachingOptionEngineBuilder</a>&lt;std::string, <span class="keyword">const</span> std::string&amp;, <span class="keyword">const</span> QuantLib::Currency&amp;,</div>
+<div class="line"><span class="lineno">   53</span>                                                     <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a>&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(ccy1.code(), ccy2,</div>
+<div class="line"><span class="lineno">   54</span>                                                                                           <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>);</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -418,10 +419,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00056">56</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>                                                                              {</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> assetName + <span class="stringliteral">&quot;/&quot;</span> + ccy.code();</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="builders_2cliquetoption_8hpp_source.html#l00058">58</a> of file <a class="el" href="builders_2cliquetoption_8hpp_source.html">cliquetoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                                                                              {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span> assetName + <span class="stringliteral">&quot;/&quot;</span> + ccy.code();</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

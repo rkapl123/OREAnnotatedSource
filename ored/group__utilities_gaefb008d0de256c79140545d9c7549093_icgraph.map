@@ -1,10 +1,10 @@
 <map id="parseDayCounter" name="parseDayCounter">
-<area shape="rect" id="node1" title="Convert text to QuantLib::DayCounter." alt="" coords="1073,1389,1196,1414"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_equity_curve.html#a4fd38f7c9e899d6c320d49ca88e0b5e0" title="Detailed constructor." alt="" coords="845,5,995,45"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_yield_curve.html#a4b705bf1c5123b7cd7eaab64eca1dd5b" title="Constructor." alt="" coords="849,69,991,109"/>
-<area shape="rect" id="node4" href="$namespaceore_1_1data.html#a51a0ccd1027fb275bb214f1baaaa2986" title=" " alt="" coords="857,489,983,514"/>
+<area shape="rect" id="node1" title="Convert text to QuantLib::DayCounter." alt="" coords="1101,1453,1224,1478"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_equity_curve.html#a4fd38f7c9e899d6c320d49ca88e0b5e0" title="Detailed constructor." alt="" coords="859,5,1009,45"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_yield_curve.html#a4b705bf1c5123b7cd7eaab64eca1dd5b" title="Constructor." alt="" coords="863,69,1005,109"/>
+<area shape="rect" id="node4" href="$namespaceore_1_1data.html#a51a0ccd1027fb275bb214f1baaaa2986" title=" " alt="" coords="871,489,997,514"/>
 <area shape="rect" id="node5" href="$classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="545,121,725,161"/>
-<area shape="rect" id="node6" href="$namespaceore_1_1data.html#a09a8ec8a163bbbf1ee56eb814303ca79" title=" " alt="" coords="583,235,687,261"/>
+<area shape="rect" id="node6" href="$namespaceore_1_1data.html#ada50e2ba37a6392c62cb953885a67898" title=" " alt="" coords="583,235,687,261"/>
 <area shape="rect" id="node8" href="$namespaceore_1_1data.html#a2ed33f45dd9d923ec0bee0e0638d72ad" title=" " alt="" coords="583,438,687,463"/>
 <area shape="rect" id="node10" href="$namespaceore_1_1data.html#ac28799d3498879c3805dd3ff35b6661b" title=" " alt="" coords="563,489,708,514"/>
 <area shape="rect" id="node12" href="$namespaceore_1_1data.html#a38f155688aea2edee4b6aa052820134e" title=" " alt="" coords="587,335,683,361"/>
@@ -18,38 +18,40 @@
 <area shape="rect" id="node27" href="$namespaceore_1_1data.html#a7dbd0c5ebd861067c306ebb62e856b17" title=" " alt="" coords="587,286,683,311"/>
 <area shape="rect" id="node28" href="$namespaceore_1_1data.html#af777e2e6e0788c6f4e59c1b165076b3f" title=" " alt="" coords="587,186,684,211"/>
 <area shape="rect" id="node29" href="$namespaceore_1_1data.html#adc9907c6ba09dda17e50f0ba3f534b7c" title=" " alt="" coords="585,386,685,411"/>
-<area shape="rect" id="node31" href="$parser_8cpp.html#a22f874b8ea9ccb758dc10852473eb2c3" title=" " alt="" coords="825,962,1015,987"/>
-<area shape="rect" id="node32" href="$classore_1_1data_1_1_zero_rate_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="822,1012,1018,1052"/>
-<area shape="rect" id="node35" href="$classore_1_1data_1_1_deposit_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="826,1093,1014,1133"/>
-<area shape="rect" id="node38" href="$classore_1_1data_1_1_ois_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="838,1157,1002,1197"/>
-<area shape="rect" id="node41" href="$classore_1_1data_1_1_i_r_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="826,1221,1014,1261"/>
-<area shape="rect" id="node44" href="$classore_1_1data_1_1_average_ois_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="815,1285,1025,1325"/>
-<area shape="rect" id="node47" href="$classore_1_1data_1_1_tenor_basis_two_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="835,1349,1005,1389"/>
-<area shape="rect" id="node50" href="$classore_1_1data_1_1_cross_ccy_fix_float_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="827,1413,1013,1453"/>
-<area shape="rect" id="node53" href="$classore_1_1data_1_1_cds_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="837,1477,1003,1517"/>
-<area shape="rect" id="node56" href="$classore_1_1data_1_1_inflation_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="841,1541,999,1581"/>
-<area shape="rect" id="node59" href="$classore_1_1data_1_1_security_spread_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="835,1605,1005,1645"/>
-<area shape="rect" id="node62" href="$classore_1_1data_1_1_cms_spread_option_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="827,1669,1013,1709"/>
-<area shape="rect" id="node65" href="$classore_1_1data_1_1_bond_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="845,1733,995,1773"/>
-<area shape="rect" id="node66" href="$classore_1_1data_1_1_c_b_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="848,1798,992,1823"/>
-<area shape="rect" id="node67" href="$classore_1_1data_1_1_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="843,1848,997,1888"/>
-<area shape="rect" id="node68" href="$classore_1_1data_1_1_forward_bond.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="841,1912,999,1952"/>
-<area shape="rect" id="node69" href="$classore_1_1data_1_1_index_credit_default_swap_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="827,1976,1013,2016"/>
-<area shape="rect" id="node70" href="$classore_1_1data_1_1_credit_default_swap_option.html#a802a461c439c1c5161db1302f2b4cdff" title="Build CDS option given that no default." alt="" coords="829,2040,1011,2080"/>
-<area shape="rect" id="node72" href="$classore_1_1data_1_1_swaption.html#a909f62d8c8d709750306b4011b544460" title=" " alt="" coords="853,2104,987,2144"/>
-<area shape="rect" id="node76" href="$classore_1_1data_1_1_base_correlation_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="833,2168,1007,2208"/>
-<area shape="rect" id="node77" href="$classore_1_1data_1_1_cap_floor_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="829,2232,1011,2272"/>
-<area shape="rect" id="node78" href="$classore_1_1data_1_1_correlation_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="833,2296,1007,2336"/>
-<area shape="rect" id="node80" href="$classore_1_1data_1_1_default_curve_config_1_1_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="825,2360,1015,2400"/>
-<area shape="rect" id="node82" href="$classore_1_1data_1_1_f_x_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="831,2424,1009,2464"/>
-<area shape="rect" id="node83" href="$classore_1_1data_1_1_generic_yield_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="817,2488,1023,2528"/>
-<area shape="rect" id="node84" href="$classore_1_1data_1_1_inflation_cap_floor_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="821,2552,1019,2592"/>
-<area shape="rect" id="node85" href="$classore_1_1data_1_1_inflation_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="841,2616,999,2656"/>
-<area shape="rect" id="node86" href="$namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="868,2681,972,2706"/>
-<area shape="rect" id="node88" href="$namespaceore_1_1data.html#adbd4062f959d3457e5eebbc395093f9d" title=" " alt="" coords="859,2730,981,2755"/>
-<area shape="rect" id="node90" href="$namespaceore_1_1data.html#a2324e64facf7af93b5ad595f44e70e72" title=" " alt="" coords="867,2779,973,2805"/>
-<area shape="rect" id="node91" href="$group__marketdata.html#gafcb88f661ad6cb9bf3c931bcc2fbd299" title="Function to parse a market datum." alt="" coords="854,2853,986,2878"/>
-<area shape="rect" id="node101" href="$group__utilities.html#ga281c57cfdf098966b931c2d7a1bfac0c" title="Allow for serialization of QuantLib::Period without amending its class (non&#45;intrusive)" alt="" coords="855,2903,985,2943"/>
+<area shape="rect" id="node31" href="$parser_8cpp.html#a22f874b8ea9ccb758dc10852473eb2c3" title=" " alt="" coords="839,962,1029,987"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_zero_rate_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="836,1012,1032,1052"/>
+<area shape="rect" id="node35" href="$classore_1_1data_1_1_deposit_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="840,1093,1028,1133"/>
+<area shape="rect" id="node38" href="$classore_1_1data_1_1_ois_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="852,1157,1016,1197"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_i_r_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="840,1221,1028,1261"/>
+<area shape="rect" id="node44" href="$classore_1_1data_1_1_average_ois_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="829,1285,1039,1325"/>
+<area shape="rect" id="node47" href="$classore_1_1data_1_1_tenor_basis_two_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="849,1349,1019,1389"/>
+<area shape="rect" id="node50" href="$classore_1_1data_1_1_cross_ccy_fix_float_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="841,1413,1027,1453"/>
+<area shape="rect" id="node53" href="$classore_1_1data_1_1_cds_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="851,1477,1017,1517"/>
+<area shape="rect" id="node56" href="$classore_1_1data_1_1_inflation_swap_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="855,1541,1013,1581"/>
+<area shape="rect" id="node59" href="$classore_1_1data_1_1_security_spread_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="849,1605,1019,1645"/>
+<area shape="rect" id="node62" href="$classore_1_1data_1_1_cms_spread_option_convention.html#a9169b2d8ee8001dbb250c4ce2c26818c" title=" " alt="" coords="841,1669,1027,1709"/>
+<area shape="rect" id="node65" href="$classore_1_1data_1_1_bond_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="859,1733,1009,1773"/>
+<area shape="rect" id="node66" href="$classore_1_1data_1_1_c_b_o.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="862,1798,1006,1823"/>
+<area shape="rect" id="node67" href="$classore_1_1data_1_1_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="857,1848,1011,1888"/>
+<area shape="rect" id="node68" href="$classore_1_1data_1_1_forward_bond.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="855,1912,1013,1952"/>
+<area shape="rect" id="node69" href="$classore_1_1data_1_1_index_credit_default_swap_option.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="841,1976,1027,2016"/>
+<area shape="rect" id="node70" href="$classore_1_1data_1_1_credit_default_swap_option.html#a802a461c439c1c5161db1302f2b4cdff" title="Build CDS option given that no default." alt="" coords="843,2040,1025,2080"/>
+<area shape="rect" id="node72" href="$classore_1_1data_1_1_swaption.html#a909f62d8c8d709750306b4011b544460" title=" " alt="" coords="867,2104,1001,2144"/>
+<area shape="rect" id="node76" href="$classore_1_1data_1_1_risk_participation_agreement.html#a63e1d71f3769cbb8a6b4d967e986da4c" title=" " alt="" coords="815,2168,1053,2208"/>
+<area shape="rect" id="node77" href="$classore_1_1data_1_1_base_correlation_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="847,2232,1021,2272"/>
+<area shape="rect" id="node78" href="$classore_1_1data_1_1_cap_floor_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="843,2296,1025,2336"/>
+<area shape="rect" id="node79" href="$classore_1_1data_1_1_correlation_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="847,2360,1021,2400"/>
+<area shape="rect" id="node81" href="$classore_1_1data_1_1_default_curve_config_1_1_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="839,2424,1029,2464"/>
+<area shape="rect" id="node83" href="$classore_1_1data_1_1_f_x_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="845,2488,1023,2528"/>
+<area shape="rect" id="node84" href="$classore_1_1data_1_1_generic_yield_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="831,2552,1037,2592"/>
+<area shape="rect" id="node85" href="$classore_1_1data_1_1_inflation_cap_floor_volatility_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="835,2616,1033,2656"/>
+<area shape="rect" id="node86" href="$classore_1_1data_1_1_inflation_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="855,2680,1013,2720"/>
+<area shape="rect" id="node87" href="$classore_1_1data_1_1_worst_of_basket_swap.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="849,2744,1019,2784"/>
+<area shape="rect" id="node88" href="$namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="882,2809,986,2834"/>
+<area shape="rect" id="node90" href="$namespaceore_1_1data.html#adbd4062f959d3457e5eebbc395093f9d" title=" " alt="" coords="873,2858,995,2883"/>
+<area shape="rect" id="node92" href="$namespaceore_1_1data.html#a2324e64facf7af93b5ad595f44e70e72" title=" " alt="" coords="881,2907,987,2933"/>
+<area shape="rect" id="node93" href="$group__marketdata.html#gafcb88f661ad6cb9bf3c931bcc2fbd299" title="Function to parse a market datum." alt="" coords="868,2981,1000,3006"/>
+<area shape="rect" id="node103" href="$group__utilities.html#ga281c57cfdf098966b931c2d7a1bfac0c" title="Allow for serialization of QuantLib::Period without amending its class (non&#45;intrusive)" alt="" coords="869,3031,999,3071"/>
 <area shape="rect" id="node7" href="$classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,155,444,195"/>
 <area shape="rect" id="node9" href="$classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,411,435,451"/>
 <area shape="rect" id="node11" href="$classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,475,456,515"/>
@@ -87,17 +89,17 @@
 <area shape="rect" id="node73" href="$classore_1_1data_1_1_swaption.html#a5c86b989ca674e6b0769d4e01381b9b3" title="build European Vanilla Swaption" alt="" coords="568,2405,703,2445"/>
 <area shape="rect" id="node74" href="$classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="283,2405,417,2445"/>
 <area shape="rect" id="node75" href="$test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="5,2413,196,2438"/>
-<area shape="rect" id="node79" href="$test_2correlationcurveconfig_8cpp.html#a696fe6eb94b2344fe284da1303c78f2b" title=" " alt="" coords="540,2470,731,2495"/>
-<area shape="rect" id="node81" href="$classore_1_1data_1_1_default_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="541,2520,730,2560"/>
-<area shape="rect" id="node87" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="550,2659,721,2699"/>
-<area shape="rect" id="node89" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="544,2723,727,2763"/>
-<area shape="rect" id="node92" href="$classore_1_1data_1_1_in_memory_loader.html#ab033d7bbd4da0af2f75abb8952fcacce" title=" " alt="" coords="532,2851,739,2877"/>
-<area shape="rect" id="node95" href="$equitymarketdata_8cpp.html#a386ad4b756cebb1ed30e0dcbbf64dcb6" title=" " alt="" coords="540,2901,731,2926"/>
-<area shape="rect" id="node96" href="$classore_1_1data_1_1_dependency_graph.html#a32f251ee6ad9521e1cb321a91d778da5" title=" " alt="" coords="541,2951,729,2991"/>
-<area shape="rect" id="node99" href="$classore_1_1data_1_1_c_s_v_loader.html#af8a277c7dc57076a3daec6356ccc1be3" title=" " alt="" coords="562,2787,709,2827"/>
-<area shape="rect" id="node93" href="$namespaceore_1_1data.html#a42f1390d171c5924c3fa721f51a32200" title=" " alt="" coords="327,2851,373,2877"/>
-<area shape="rect" id="node94" href="$namespaceore_1_1data.html#a22d0bfabdad131343a5f49618b7db10d" title="Utility function for loading market quotes and fixings from an in memory csv buffer." alt="" coords="29,2851,172,2877"/>
-<area shape="rect" id="node97" href="$classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="269,2951,431,2991"/>
-<area shape="rect" id="node98" href="$classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="19,2951,182,2991"/>
-<area shape="rect" id="node100" href="$classore_1_1data_1_1_c_s_v_loader.html#a018b17f5187e6a0647fb5b52a96c5152" title=" " alt="" coords="277,2787,423,2827"/>
+<area shape="rect" id="node80" href="$test_2correlationcurveconfig_8cpp.html#a696fe6eb94b2344fe284da1303c78f2b" title=" " alt="" coords="540,2470,731,2495"/>
+<area shape="rect" id="node82" href="$classore_1_1data_1_1_default_curve_config.html#a7741ae0fc924943de5bfe02928262eb7" title=" " alt="" coords="541,2520,730,2560"/>
+<area shape="rect" id="node89" href="$classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="550,2787,721,2827"/>
+<area shape="rect" id="node91" href="$classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="544,2851,727,2891"/>
+<area shape="rect" id="node94" href="$classore_1_1data_1_1_in_memory_loader.html#ab033d7bbd4da0af2f75abb8952fcacce" title=" " alt="" coords="532,2979,739,3005"/>
+<area shape="rect" id="node97" href="$equitymarketdata_8cpp.html#a386ad4b756cebb1ed30e0dcbbf64dcb6" title=" " alt="" coords="540,3029,731,3054"/>
+<area shape="rect" id="node98" href="$classore_1_1data_1_1_dependency_graph.html#a32f251ee6ad9521e1cb321a91d778da5" title=" " alt="" coords="541,3079,729,3119"/>
+<area shape="rect" id="node101" href="$classore_1_1data_1_1_c_s_v_loader.html#af8a277c7dc57076a3daec6356ccc1be3" title=" " alt="" coords="562,2915,709,2955"/>
+<area shape="rect" id="node95" href="$namespaceore_1_1data.html#a42f1390d171c5924c3fa721f51a32200" title=" " alt="" coords="327,2979,373,3005"/>
+<area shape="rect" id="node96" href="$namespaceore_1_1data.html#a22d0bfabdad131343a5f49618b7db10d" title="Utility function for loading market quotes and fixings from an in memory csv buffer." alt="" coords="29,2979,172,3005"/>
+<area shape="rect" id="node99" href="$classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="269,3079,431,3119"/>
+<area shape="rect" id="node100" href="$classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="19,3079,182,3119"/>
+<area shape="rect" id="node102" href="$classore_1_1data_1_1_c_s_v_loader.html#a018b17f5187e6a0647fb5b52a96c5152" title=" " alt="" coords="277,2915,423,2955"/>
 </map>

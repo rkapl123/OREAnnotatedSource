@@ -237,7 +237,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  178</span> </div>
 <div class="line"><span class="lineno">  179</span>    <span class="comment">// Variance test for the state variable, implicit in the first test above </span></div>
 <div class="line"><span class="lineno">  180</span>    {</div>
-<div class="line"><span class="lineno">  181</span>        Real found = variance(acc_state);</div>
+<div class="line"><span class="lineno">  181</span>        Real found = <a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a>(acc_state);</div>
 <div class="line"><span class="lineno">  182</span>        Real expected = data.parametrization-&gt;variance(t);</div>
 <div class="line"><span class="lineno">  183</span>        <span class="comment">// FIXME: What&#39;s the MC error here? I assume that the mean error is smaller than the error of variance estimate, so re-using it.</span></div>
 <div class="line"><span class="lineno">  184</span>        Real error = error_of&lt;tag::mean&gt;(acc_state); </div>
@@ -259,9 +259,23 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  200</span>    }</div>
 <div class="line"><span class="lineno">  201</span>    </div>
 <div class="line"><span class="lineno">  202</span>} <span class="comment">// testMartingaleProperty</span></div>
+<div class="ttc" id="anamespace_quant_ext_html_a249dd19ff90e20ad4b64b0be1665b5c0"><div class="ttname"><a href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">QuantExt::variance</a></div><div class="ttdeci">RandomVariable variance(const RandomVariable &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l01177">randomvariable.cpp:1177</a></div></div>
 <div class="ttc" id="atest_2commodityschwartzmodel_8cpp_html_a391af7283d1ddfef2b73086f39b487dd"><div class="ttname"><a href="test_2commodityschwartzmodel_8cpp.html#a391af7283d1ddfef2b73086f39b487dd">driftFreeState</a></div><div class="ttdeci">std::vector&lt; bool &gt; driftFreeState</div><div class="ttdef"><b>Definition:</b> <a href="test_2commodityschwartzmodel_8cpp_source.html#l00108">commodityschwartzmodel.cpp:108</a></div></div>
 <div class="ttc" id="atest_2commodityschwartzmodel_8cpp_html_a84e1cc7fe4440301cfe72e7c64be988b"><div class="ttname"><a href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a></div><div class="ttdeci">std::vector&lt; Size &gt; steps</div><div class="ttdef"><b>Definition:</b> <a href="test_2commodityschwartzmodel_8cpp_source.html#l00109">commodityschwartzmodel.cpp:109</a></div></div>
-</div><!-- fragment -->
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="test_2commodityschwartzmodel_8cpp_a115898cdb086b2755699e8c9943511b0_cgraph.png" border="0" usemap="#atest_2commodityschwartzmodel_8cpp_a115898cdb086b2755699e8c9943511b0_cgraph" alt=""/></div>
+<map name="atest_2commodityschwartzmodel_8cpp_a115898cdb086b2755699e8c9943511b0_cgraph" id="atest_2commodityschwartzmodel_8cpp_a115898cdb086b2755699e8c9943511b0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,45,196,70"/>
+<area shape="rect" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0" title=" " alt="" coords="244,45,376,70"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#a6e0fdc031c26ed1d1a956019d2cee4a1" title=" " alt="" coords="424,5,604,45"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a" title=" " alt="" coords="424,69,604,109"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>

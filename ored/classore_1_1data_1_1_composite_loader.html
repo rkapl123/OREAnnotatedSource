@@ -239,13 +239,14 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   40</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_composite_loader.html#adcd418f55037c1296ee2b9e2fd119c55">a_</a>-&gt;loadQuotes(d);</div>
 <div class="line"><span class="lineno">   41</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1data_1_1_composite_loader.html#adcd418f55037c1296ee2b9e2fd119c55">a_</a>)</div>
 <div class="line"><span class="lineno">   42</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_composite_loader.html#ad4fa27d6befc298b05eb7e4fafe1c774">b_</a>-&gt;loadQuotes(d);</div>
-<div class="line"><span class="lineno">   43</span>        std::vector&lt;boost::shared_ptr&lt;MarketDatum&gt;&gt; data;</div>
+<div class="line"><span class="lineno">   43</span>        std::vector&lt;boost::shared_ptr&lt;MarketDatum&gt;&gt; <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>;</div>
 <div class="line"><span class="lineno">   44</span>        <span class="keyword">auto</span> tmp1 = <a class="code hl_variable" href="classore_1_1data_1_1_composite_loader.html#adcd418f55037c1296ee2b9e2fd119c55">a_</a>-&gt;loadQuotes(d);</div>
-<div class="line"><span class="lineno">   45</span>        data.insert(data.end(), tmp1.begin(), tmp1.end());</div>
+<div class="line"><span class="lineno">   45</span>        <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.insert(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.end(), tmp1.begin(), tmp1.end());</div>
 <div class="line"><span class="lineno">   46</span>        <span class="keyword">auto</span> tmp2 = <a class="code hl_variable" href="classore_1_1data_1_1_composite_loader.html#ad4fa27d6befc298b05eb7e4fafe1c774">b_</a>-&gt;loadQuotes(d);</div>
-<div class="line"><span class="lineno">   47</span>        data.insert(data.end(), tmp2.begin(), tmp2.end());</div>
-<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> data;</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.insert(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.end(), tmp2.begin(), tmp2.end());</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>;</div>
 <div class="line"><span class="lineno">   49</span>    }</div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

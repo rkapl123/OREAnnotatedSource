@@ -205,8 +205,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  218</span>        <span class="comment">// Expected result is no required fixings</span></div>
 <div class="line"><span class="lineno">  219</span>        BOOST_CHECK_MESSAGE(m.empty(), <span class="stringliteral">&quot;Expected no required fixings for [&quot;</span></div>
 <div class="line"><span class="lineno">  220</span>                                           &lt;&lt; tradeType &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; tradeCase &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line"><span class="lineno">  221</span>                                           &lt;&lt; <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(includeSettlementDateFlows) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line"><span class="lineno">  222</span>                                           &lt;&lt; <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(enforcesTodaysHistoricFixings)</div>
+<div class="line"><span class="lineno">  221</span>                                           &lt;&lt; <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a>(includeSettlementDateFlows) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line"><span class="lineno">  222</span>                                           &lt;&lt; <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a>(enforcesTodaysHistoricFixings)</div>
 <div class="line"><span class="lineno">  223</span>                                           &lt;&lt; <span class="stringliteral">&quot;] but got a map containing &quot;</span> &lt;&lt; m.size() &lt;&lt; <span class="stringliteral">&quot; indices&quot;</span>);</div>
 <div class="line"><span class="lineno">  224</span> </div>
 <div class="line"><span class="lineno">  225</span>        <span class="comment">// Trade should not throw if we ask for NPV</span></div>
@@ -241,8 +241,8 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_portfolio_html_a48b90275c7bccf5822418ef47bb922ee"><div class="ttname"><a href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee">ore::data::Portfolio::size</a></div><div class="ttdeci">QuantLib::Size size() const</div><div class="ttdoc">Portfolio size.</div><div class="ttdef"><b>Definition:</b> <a href="portfolio_8hpp_source.html#l00067">portfolio.hpp:67</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_portfolio_html_ad63b8b7a5b528b65cd81abe0bbbbc404"><div class="ttname"><a href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">ore::data::Portfolio::trades</a></div><div class="ttdeci">const std::map&lt; std::string, boost::shared_ptr&lt; Trade &gt; &gt; &amp; trades() const</div><div class="ttdoc">Return the map tradeId -&gt; trade.</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2portfolio_8cpp_source.html#l00161">portfolio.cpp:161</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_x_m_l_serializable_html_ac3ac11cf6a3155713cea6a1a67e2b64d"><div class="ttname"><a href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d">ore::data::XMLSerializable::fromFile</a></div><div class="ttdeci">void fromFile(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="xmlutils_8cpp_source.html#l00173">xmlutils.cpp:173</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_html_a11171c842d01ffacc4ec522e398070a9"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a></div><div class="ttdeci">RandomVariable exp(RandomVariable x)</div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 <div class="ttc" id="astruct_quant_ext_1_1_random_variable_html_a52b7b894964a2a061ce79c386c3e3e8f"><div class="ttname"><a href="../qle/struct_quant_ext_1_1_random_variable.html#a52b7b894964a2a061ce79c386c3e3e8f">QuantExt::RandomVariable::at</a></div><div class="ttdeci">Real at(const Size i) const</div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -258,7 +258,7 @@ Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e" title=" " alt="" coords="294,194,422,234"/>
 <area shape="rect" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d" title=" " alt="" coords="271,258,445,298"/>
 <area shape="rect" href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee" title="Portfolio size." alt="" coords="294,322,422,362"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="293,411,423,436"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="293,411,423,436"/>
 <area shape="rect" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404" title="Return the map tradeId &#45;&gt; trade." alt="" coords="294,461,422,501"/>
 <area shape="rect" href="classore_1_1data_1_1_portfolio.html#aa132f7e3db9728b12a14c975c9714c58" title="Does this portfolio build failed trades?" alt="" coords="527,27,657,67"/>
 <area shape="rect" href="namespaceore_1_1data.html#af7851439c1cfcd8eca85761ced5f9f63" title=" " alt="" coords="522,92,662,117"/>
@@ -313,7 +313,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  276</span>                                      fixings.at(kv.first).end());</div>
 <div class="line"><span class="lineno">  277</span>    }</div>
 <div class="line"><span class="lineno">  278</span>}</div>
-<div class="ttc" id="anamespaceore_1_1data_html_a511d2c17ea98f37aa1a00c33b5f7b153"><div class="ttname"><a href="namespaceore_1_1data.html#a511d2c17ea98f37aa1a00c33b5f7b153">ore::data::amendInflationFixingDates</a></div><div class="ttdeci">void amendInflationFixingDates(map&lt; string, set&lt; Date &gt; &gt; &amp;fixings)</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8cpp_source.html#l00545">fixingdates.cpp:545</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a511d2c17ea98f37aa1a00c33b5f7b153"><div class="ttname"><a href="namespaceore_1_1data.html#a511d2c17ea98f37aa1a00c33b5f7b153">ore::data::amendInflationFixingDates</a></div><div class="ttdeci">void amendInflationFixingDates(map&lt; string, set&lt; Date &gt; &gt; &amp;fixings)</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8cpp_source.html#l00703">fixingdates.cpp:703</a></div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -357,7 +357,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  287</span>    <a class="code hl_class" href="classore_1_1data_1_1_todays_market_parameters.html">TodaysMarketParameters</a> mktParams;</div>
 <div class="line"><span class="lineno">  288</span>    mktParams.<a class="code hl_function" href="classore_1_1data_1_1_todays_market_parameters.html#ae1410f74e75b63ffa7b04f033c086e1b">addConfiguration</a>(<a class="code hl_variable" href="classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">Market::defaultConfiguration</a>, <a class="code hl_class" href="classore_1_1data_1_1_market_configuration.html">MarketConfiguration</a>());</div>
 <div class="line"><span class="lineno">  289</span> </div>
-<div class="line"><span class="lineno">  290</span>    <span class="comment">// Add discount curves. Will not influence the result bu should not cause a problem</span></div>
+<div class="line"><span class="lineno">  290</span>    <span class="comment">// Add discount curves, we expect market fixings for EUR-EONIA</span></div>
 <div class="line"><span class="lineno">  291</span>    map&lt;string, string&gt; m = {{<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;Yield/EUR/EUR-EONIA&quot;</span>}, {<span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;Yield/USD/USD-IN-EUR&quot;</span>}};</div>
 <div class="line"><span class="lineno">  292</span>    mktParams.<a class="code hl_function" href="classore_1_1data_1_1_todays_market_parameters.html#a206ec754b770f62e6ca457b1e6ca2a34">addMarketObject</a>(MarketObject::DiscountCurve, <a class="code hl_variable" href="classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">Market::defaultConfiguration</a>, m);</div>
 <div class="line"><span class="lineno">  293</span> </div>
@@ -395,26 +395,27 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  325</span> </div>
 <div class="line"><span class="lineno">  326</span>    map&lt;string, set&lt;Date&gt;&gt; expectedFixings = {{<span class="stringliteral">&quot;EUHICPXT&quot;</span>, inflationDates}, {<span class="stringliteral">&quot;USCPI&quot;</span>, inflationDates},</div>
 <div class="line"><span class="lineno">  327</span>                                              {<span class="stringliteral">&quot;UKRPI&quot;</span>, inflationDates},    {<span class="stringliteral">&quot;EUR-EURIBOR-3M&quot;</span>, iborDates},</div>
-<div class="line"><span class="lineno">  328</span>                                              {<span class="stringliteral">&quot;USD-FedFunds&quot;</span>, oisDates},   {<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, iborDates}};</div>
-<div class="line"><span class="lineno">  329</span> </div>
-<div class="line"><span class="lineno">  330</span>    <span class="comment">// Populate empty fixings map using the function to be tested</span></div>
-<div class="line"><span class="lineno">  331</span>    map&lt;string, set&lt;Date&gt;&gt; fixings;</div>
-<div class="line"><span class="lineno">  332</span>    <a class="code hl_function" href="namespaceore_1_1data.html#a4762d52341d1436be19e245d0e686e47">addMarketFixingDates</a>(asof, fixings, mktParams);</div>
-<div class="line"><span class="lineno">  333</span> </div>
-<div class="line"><span class="lineno">  334</span>    <span class="comment">// Check the results</span></div>
-<div class="line"><span class="lineno">  335</span>    BOOST_CHECK_EQUAL(expectedFixings.size(), fixings.size());</div>
-<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : expectedFixings) {</div>
-<div class="line"><span class="lineno">  337</span>        BOOST_CHECK_MESSAGE(fixings.count(kv.first), <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; kv.first &lt;&lt; <span class="stringliteral">&quot; in retrieved fixings&quot;</span>);</div>
-<div class="line"><span class="lineno">  338</span>        BOOST_CHECK_EQUAL_COLLECTIONS(kv.second.begin(), kv.second.end(), fixings.at(kv.first).begin(),</div>
-<div class="line"><span class="lineno">  339</span>                                      fixings.at(kv.first).end());</div>
-<div class="line"><span class="lineno">  340</span>    }</div>
-<div class="line"><span class="lineno">  341</span>}</div>
+<div class="line"><span class="lineno">  328</span>                                              {<span class="stringliteral">&quot;USD-FedFunds&quot;</span>, oisDates},   {<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, iborDates},</div>
+<div class="line"><span class="lineno">  329</span>                                              {<span class="stringliteral">&quot;EUR-EONIA&quot;</span>, oisDates}};</div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>    <span class="comment">// Populate empty fixings map using the function to be tested</span></div>
+<div class="line"><span class="lineno">  332</span>    map&lt;string, set&lt;Date&gt;&gt; fixings;</div>
+<div class="line"><span class="lineno">  333</span>    <a class="code hl_function" href="namespaceore_1_1data.html#a1c8521cd76249793896bb8f5bd2ba506">addMarketFixingDates</a>(asof, fixings, mktParams);</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>    <span class="comment">// Check the results</span></div>
+<div class="line"><span class="lineno">  336</span>    BOOST_CHECK_EQUAL(expectedFixings.size(), fixings.size());</div>
+<div class="line"><span class="lineno">  337</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : expectedFixings) {</div>
+<div class="line"><span class="lineno">  338</span>        BOOST_CHECK_MESSAGE(fixings.count(kv.first), <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; kv.first &lt;&lt; <span class="stringliteral">&quot; in retrieved fixings&quot;</span>);</div>
+<div class="line"><span class="lineno">  339</span>        BOOST_CHECK_EQUAL_COLLECTIONS(kv.second.begin(), kv.second.end(), fixings.at(kv.first).begin(),</div>
+<div class="line"><span class="lineno">  340</span>                                      fixings.at(kv.first).end());</div>
+<div class="line"><span class="lineno">  341</span>    }</div>
+<div class="line"><span class="lineno">  342</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_configuration_html"><div class="ttname"><a href="classore_1_1data_1_1_market_configuration.html">ore::data::MarketConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="todaysmarketparameters_8hpp_source.html#l00057">todaysmarketparameters.hpp:57</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_ab336651e3455fff1764bf576a5785bbd"><div class="ttname"><a href="classore_1_1data_1_1_market.html#ab336651e3455fff1764bf576a5785bbd">ore::data::Market::defaultConfiguration</a></div><div class="ttdeci">static const string defaultConfiguration</div><div class="ttdoc">Default configuration label.</div><div class="ttdef"><b>Definition:</b> <a href="market_8hpp_source.html#l00296">market.hpp:296</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_todays_market_parameters_html"><div class="ttname"><a href="classore_1_1data_1_1_todays_market_parameters.html">ore::data::TodaysMarketParameters</a></div><div class="ttdoc">Today's Market Parameters.</div><div class="ttdef"><b>Definition:</b> <a href="todaysmarketparameters_8hpp_source.html#l00078">todaysmarketparameters.hpp:78</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_todays_market_parameters_html_a206ec754b770f62e6ca457b1e6ca2a34"><div class="ttname"><a href="classore_1_1data_1_1_todays_market_parameters.html#a206ec754b770f62e6ca457b1e6ca2a34">ore::data::TodaysMarketParameters::addMarketObject</a></div><div class="ttdeci">void addMarketObject(const MarketObject o, const string &amp;id, const map&lt; string, string &gt; &amp;assignments)</div><div class="ttdef"><b>Definition:</b> <a href="todaysmarketparameters_8cpp_source.html#l00279">todaysmarketparameters.cpp:279</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_todays_market_parameters_html_ae1410f74e75b63ffa7b04f033c086e1b"><div class="ttname"><a href="classore_1_1data_1_1_todays_market_parameters.html#ae1410f74e75b63ffa7b04f033c086e1b">ore::data::TodaysMarketParameters::addConfiguration</a></div><div class="ttdeci">void addConfiguration(const string &amp;name, const MarketConfiguration &amp;configuration)</div><div class="ttdef"><b>Definition:</b> <a href="todaysmarketparameters_8cpp_source.html#l00120">todaysmarketparameters.cpp:120</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a4762d52341d1436be19e245d0e686e47"><div class="ttname"><a href="namespaceore_1_1data.html#a4762d52341d1436be19e245d0e686e47">ore::data::addMarketFixingDates</a></div><div class="ttdeci">void addMarketFixingDates(const Date &amp;asof, map&lt; string, set&lt; Date &gt; &gt; &amp;fixings, const TodaysMarketParameters &amp;mktParams, const Period &amp;iborLookback, const Period &amp;oisLookback, const Period &amp;bmaLookback, const Period &amp;inflationLookback, const string &amp;configuration)</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8cpp_source.html#l00569">fixingdates.cpp:569</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a1c8521cd76249793896bb8f5bd2ba506"><div class="ttname"><a href="namespaceore_1_1data.html#a1c8521cd76249793896bb8f5bd2ba506">ore::data::addMarketFixingDates</a></div><div class="ttdeci">void addMarketFixingDates(const Date &amp;asof, map&lt; string, set&lt; Date &gt; &gt; &amp;fixings, const TodaysMarketParameters &amp;mktParams, const Period &amp;iborLookback, const Period &amp;oisLookback, const Period &amp;bmaLookback, const Period &amp;inflationLookback)</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8cpp_source.html#l00727">fixingdates.cpp:727</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -422,24 +423,27 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2fixings_8cpp_a67ada7956eb90fe9fbecd12a611892ab_cgraph.png" border="0" usemap="#atest_2fixings_8cpp_a67ada7956eb90fe9fbecd12a611892ab_cgraph" alt=""/></div>
 <map name="atest_2fixings_8cpp_a67ada7956eb90fe9fbecd12a611892ab_cgraph" id="atest_2fixings_8cpp_a67ada7956eb90fe9fbecd12a611892ab_cgraph">
-<area shape="rect" title=" " alt="" coords="5,449,196,475"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#ae1410f74e75b63ffa7b04f033c086e1b" title=" " alt="" coords="244,442,475,482"/>
-<area shape="rect" href="namespaceore_1_1data.html#a4762d52341d1436be19e245d0e686e47" title=" " alt="" coords="271,267,448,307"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a206ec754b770f62e6ca457b1e6ca2a34" title=" " alt="" coords="244,506,475,546"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a15146782240bf68d7923722c5371feb9" title=" " alt="" coords="1080,405,1311,445"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a75a2c24a3dc2abcc22320092c9ffa2e8" title=" " alt="" coords="523,267,753,307"/>
-<area shape="rect" href="group__utilities.html#ga40fff52b85335fe8cebca19f15c4a81c" title="Return true if the indexName is that of an bma/sifma index, otherwise false." alt="" coords="563,217,713,243"/>
-<area shape="rect" href="group__utilities.html#ga2f0695fe62430369b6acca7976d7be97" title="Return true if the indexName is that of an overnight index, otherwise false." alt="" coords="550,168,726,193"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a451da96d7cc713be6c76c5b288cce4ca" title="EUR =&gt; Yield/EUR/EUR6M, USD =&gt; Yield/USD/USD3M etc." alt="" coords="523,407,753,447"/>
-<area shape="rect" href="namespaceore_1_1data.html#a1d5a62f54d619803ecebbe09dc93d7d9" title=" " alt="" coords="549,91,727,131"/>
-<area shape="rect" href="group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title="Try to convert std::string to QuantLib::IborIndex." alt="" coords="825,217,1008,243"/>
-<area shape="rect" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="1113,217,1278,243"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a3f37b042a1e7cd4bd38fc564de81f0da" title="Check if any parameters." alt="" coords="801,497,1032,537"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#af07dd518bba247175c3e8816becacec7" title="Intermediate id for a given market object and configuration, see the description of configurations_ b..." alt="" coords="801,433,1032,473"/>
-<area shape="rect" href="classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="823,79,1011,119"/>
-<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="847,29,987,55"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="851,168,982,193"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1119,29,1271,55"/>
+<area shape="rect" title=" " alt="" coords="5,231,196,257"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#ae1410f74e75b63ffa7b04f033c086e1b" title=" " alt="" coords="244,59,475,99"/>
+<area shape="rect" href="namespaceore_1_1data.html#a1c8521cd76249793896bb8f5bd2ba506" title=" " alt="" coords="271,224,448,264"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a206ec754b770f62e6ca457b1e6ca2a34" title=" " alt="" coords="244,288,475,328"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a15146782240bf68d7923722c5371feb9" title=" " alt="" coords="1080,7,1311,47"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a2210eacf92c95350a60a48ab96df3c36" title=" " alt="" coords="523,103,753,143"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a75a2c24a3dc2abcc22320092c9ffa2e8" title=" " alt="" coords="523,167,753,207"/>
+<area shape="rect" href="group__utilities.html#ga40fff52b85335fe8cebca19f15c4a81c" title="Return true if the indexName is that of an bma/sifma index, otherwise false." alt="" coords="563,282,713,307"/>
+<area shape="rect" href="group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title="Try to convert std::string to QuantLib::IborIndex." alt="" coords="825,278,1008,303"/>
+<area shape="rect" href="group__utilities.html#ga2f0695fe62430369b6acca7976d7be97" title="Return true if the indexName is that of an overnight index, otherwise false." alt="" coords="550,331,726,357"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a451da96d7cc713be6c76c5b288cce4ca" title="EUR =&gt; Yield/EUR/EUR6M, USD =&gt; Yield/USD/USD3M etc." alt="" coords="523,39,753,79"/>
+<area shape="rect" href="namespaceore_1_1data.html#a1d5a62f54d619803ecebbe09dc93d7d9" title=" " alt="" coords="549,405,727,445"/>
+<area shape="rect" href="group__curves.html#gae597dfd414f8c21f8b68b41f5b43a348" title="function to convert a string into a curve spec" alt="" coords="551,470,725,495"/>
+<area shape="rect" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="1113,278,1278,303"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#a3f37b042a1e7cd4bd38fc564de81f0da" title="Check if any parameters." alt="" coords="801,128,1032,168"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market_parameters.html#af07dd518bba247175c3e8816becacec7" title="Intermediate id for a given market object and configuration, see the description of configurations_ b..." alt="" coords="801,64,1032,104"/>
+<area shape="rect" href="classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="823,328,1011,368"/>
+<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="847,417,987,442"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="851,490,982,515"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1119,393,1271,418"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="1143,442,1248,467"/>
 </map>
 </div>
 
@@ -471,51 +475,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_2fixings_8cpp_source.html#l00343">343</a> of file <a class="el" href="test_2fixings_8cpp_source.html">fixings.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  343</span>                                                                   {</div>
-<div class="line"><span class="lineno">  344</span> </div>
-<div class="line"><span class="lineno">  345</span>    <span class="comment">// Set the flag determining what happens if fixings are required today</span></div>
-<div class="line"><span class="lineno">  346</span>    Settings::instance().enforcesTodaysHistoricFixings() = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  347</span> </div>
-<div class="line"><span class="lineno">  348</span>    <span class="comment">// Set the flag determining what happens when cashflows happen today</span></div>
-<div class="line"><span class="lineno">  349</span>    Settings::instance().includeTodaysCashFlows() = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  350</span> </div>
-<div class="line"><span class="lineno">  351</span>    <span class="comment">// Read in the trade</span></div>
-<div class="line"><span class="lineno">  352</span>    <a class="code hl_class" href="classore_1_1data_1_1_portfolio.html">Portfolio</a> p;</div>
-<div class="line"><span class="lineno">  353</span>    <span class="keywordtype">string</span> portfolioFile = <span class="stringliteral">&quot;trades/xccy_resetting_swap/simple_case_in_first_coupon.xml&quot;</span>;</div>
-<div class="line"><span class="lineno">  354</span>    p.<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d">fromFile</a>(TEST_INPUT_FILE(portfolioFile));</div>
-<div class="line"><span class="lineno">  355</span>    BOOST_REQUIRE_MESSAGE(p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee">size</a>() == 1, <span class="stringliteral">&quot;Expected portfolio to contain a single trade&quot;</span>);</div>
-<div class="line"><span class="lineno">  356</span> </div>
-<div class="line"><span class="lineno">  357</span>    <span class="comment">// Ask for fixings before trades are built should return empty set</span></div>
-<div class="line"><span class="lineno">  358</span>    <span class="keyword">auto</span> m = p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e">fixings</a>(today);</div>
-<div class="line"><span class="lineno">  359</span>    BOOST_CHECK_MESSAGE(m.empty(), <span class="stringliteral">&quot;Expected fixings to be empty when trades not built&quot;</span>);</div>
-<div class="line"><span class="lineno">  360</span> </div>
-<div class="line"><span class="lineno">  361</span>    <span class="comment">// Build the portfolio and retrieve the fixings</span></div>
-<div class="line"><span class="lineno">  362</span>    p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a465da53bfc5c5739485ec876bf514e42">build</a>(engineFactory);</div>
-<div class="line"><span class="lineno">  363</span>    m = p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e">fixings</a>(today);</div>
-<div class="line"><span class="lineno">  364</span> </div>
-<div class="line"><span class="lineno">  365</span>    <span class="comment">// Expected results</span></div>
-<div class="line"><span class="lineno">  366</span>    map&lt;string, Date&gt; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a> = {{<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, Date(5, Feb, 2019)}, {<span class="stringliteral">&quot;EUR-EURIBOR-3M&quot;</span>, Date(5, Feb, 2019)}};</div>
-<div class="line"><span class="lineno">  367</span> </div>
-<div class="line"><span class="lineno">  368</span>    <span class="comment">// Check the expected results against the actual results</span></div>
-<div class="line"><span class="lineno">  369</span>    BOOST_CHECK_EQUAL(m.size(), <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.<a class="code hl_functionRef" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">size</a>());</div>
-<div class="line"><span class="lineno">  370</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : exp) {</div>
-<div class="line"><span class="lineno">  371</span>        BOOST_CHECK_MESSAGE(m.count(kv.first) == 1, <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; kv.first &lt;&lt; <span class="stringliteral">&quot; in retrieved fixings&quot;</span>);</div>
-<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">if</span> (m.count(kv.first) == 1) {</div>
-<div class="line"><span class="lineno">  373</span>            BOOST_CHECK_EQUAL(m.at(kv.first).size(), 1);</div>
-<div class="line"><span class="lineno">  374</span>            BOOST_CHECK_EQUAL(kv.second, *m.at(kv.first).begin());</div>
-<div class="line"><span class="lineno">  375</span>        }</div>
-<div class="line"><span class="lineno">  376</span>    }</div>
-<div class="line"><span class="lineno">  377</span> </div>
-<div class="line"><span class="lineno">  378</span>    <span class="comment">// Trade should throw if we ask for NPV and have not added the fixings</span></div>
-<div class="line"><span class="lineno">  379</span>    BOOST_CHECK_THROW(p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">trades</a>().begin()-&gt;second-&gt;instrument()-&gt;NPV(), Error);</div>
-<div class="line"><span class="lineno">  380</span> </div>
-<div class="line"><span class="lineno">  381</span>    <span class="comment">// Add the fixings</span></div>
-<div class="line"><span class="lineno">  382</span>    loadFixings(m);</div>
-<div class="line"><span class="lineno">  383</span> </div>
-<div class="line"><span class="lineno">  384</span>    <span class="comment">// Trade should now not throw when we try to price it</span></div>
-<div class="line"><span class="lineno">  385</span>    BOOST_CHECK_NO_THROW(p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">trades</a>().begin()-&gt;second-&gt;instrument()-&gt;NPV());</div>
-<div class="line"><span class="lineno">  386</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test_2fixings_8cpp_source.html#l00344">344</a> of file <a class="el" href="test_2fixings_8cpp_source.html">fixings.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  344</span>                                                                   {</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>    <span class="comment">// Set the flag determining what happens if fixings are required today</span></div>
+<div class="line"><span class="lineno">  347</span>    Settings::instance().enforcesTodaysHistoricFixings() = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span>    <span class="comment">// Set the flag determining what happens when cashflows happen today</span></div>
+<div class="line"><span class="lineno">  350</span>    Settings::instance().includeTodaysCashFlows() = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  351</span> </div>
+<div class="line"><span class="lineno">  352</span>    <span class="comment">// Read in the trade</span></div>
+<div class="line"><span class="lineno">  353</span>    <a class="code hl_class" href="classore_1_1data_1_1_portfolio.html">Portfolio</a> p;</div>
+<div class="line"><span class="lineno">  354</span>    <span class="keywordtype">string</span> portfolioFile = <span class="stringliteral">&quot;trades/xccy_resetting_swap/simple_case_in_first_coupon.xml&quot;</span>;</div>
+<div class="line"><span class="lineno">  355</span>    p.<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d">fromFile</a>(TEST_INPUT_FILE(portfolioFile));</div>
+<div class="line"><span class="lineno">  356</span>    BOOST_REQUIRE_MESSAGE(p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee">size</a>() == 1, <span class="stringliteral">&quot;Expected portfolio to contain a single trade&quot;</span>);</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>    <span class="comment">// Ask for fixings before trades are built should return empty set</span></div>
+<div class="line"><span class="lineno">  359</span>    <span class="keyword">auto</span> m = p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e">fixings</a>(today);</div>
+<div class="line"><span class="lineno">  360</span>    BOOST_CHECK_MESSAGE(m.empty(), <span class="stringliteral">&quot;Expected fixings to be empty when trades not built&quot;</span>);</div>
+<div class="line"><span class="lineno">  361</span> </div>
+<div class="line"><span class="lineno">  362</span>    <span class="comment">// Build the portfolio and retrieve the fixings</span></div>
+<div class="line"><span class="lineno">  363</span>    p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a465da53bfc5c5739485ec876bf514e42">build</a>(engineFactory);</div>
+<div class="line"><span class="lineno">  364</span>    m = p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#a253727e32c56e3c75a821f6962e06f2e">fixings</a>(today);</div>
+<div class="line"><span class="lineno">  365</span> </div>
+<div class="line"><span class="lineno">  366</span>    <span class="comment">// Expected results</span></div>
+<div class="line"><span class="lineno">  367</span>    map&lt;string, Date&gt; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a> = {{<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, Date(5, Feb, 2019)}, {<span class="stringliteral">&quot;EUR-EURIBOR-3M&quot;</span>, Date(5, Feb, 2019)}};</div>
+<div class="line"><span class="lineno">  368</span> </div>
+<div class="line"><span class="lineno">  369</span>    <span class="comment">// Check the expected results against the actual results</span></div>
+<div class="line"><span class="lineno">  370</span>    BOOST_CHECK_EQUAL(m.size(), <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.<a class="code hl_functionRef" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">size</a>());</div>
+<div class="line"><span class="lineno">  371</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : exp) {</div>
+<div class="line"><span class="lineno">  372</span>        BOOST_CHECK_MESSAGE(m.count(kv.first) == 1, <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; kv.first &lt;&lt; <span class="stringliteral">&quot; in retrieved fixings&quot;</span>);</div>
+<div class="line"><span class="lineno">  373</span>        <span class="keywordflow">if</span> (m.count(kv.first) == 1) {</div>
+<div class="line"><span class="lineno">  374</span>            BOOST_CHECK_EQUAL(m.at(kv.first).size(), 1);</div>
+<div class="line"><span class="lineno">  375</span>            BOOST_CHECK_EQUAL(kv.second, *m.at(kv.first).begin());</div>
+<div class="line"><span class="lineno">  376</span>        }</div>
+<div class="line"><span class="lineno">  377</span>    }</div>
+<div class="line"><span class="lineno">  378</span> </div>
+<div class="line"><span class="lineno">  379</span>    <span class="comment">// Trade should throw if we ask for NPV and have not added the fixings</span></div>
+<div class="line"><span class="lineno">  380</span>    BOOST_CHECK_THROW(p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">trades</a>().begin()-&gt;second-&gt;instrument()-&gt;NPV(), Error);</div>
+<div class="line"><span class="lineno">  381</span> </div>
+<div class="line"><span class="lineno">  382</span>    <span class="comment">// Add the fixings</span></div>
+<div class="line"><span class="lineno">  383</span>    loadFixings(m);</div>
+<div class="line"><span class="lineno">  384</span> </div>
+<div class="line"><span class="lineno">  385</span>    <span class="comment">// Trade should now not throw when we try to price it</span></div>
+<div class="line"><span class="lineno">  386</span>    BOOST_CHECK_NO_THROW(p.<a class="code hl_function" href="classore_1_1data_1_1_portfolio.html#ad63b8b7a5b528b65cd81abe0bbbbc404">trades</a>().begin()-&gt;second-&gt;instrument()-&gt;NPV());</div>
+<div class="line"><span class="lineno">  387</span>}</div>
 <div class="ttc" id="astruct_quant_ext_1_1_random_variable_html_acce0ab2cacc475b2434f24c65c91685a"><div class="ttname"><a href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">QuantExt::RandomVariable::size</a></div><div class="ttdeci">Size size() const</div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -567,30 +571,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_2fixings_8cpp_source.html#l00388">388</a> of file <a class="el" href="test_2fixings_8cpp_source.html">fixings.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  388</span>                                          {</div>
-<div class="line"><span class="lineno">  389</span> </div>
-<div class="line"><span class="lineno">  390</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> equityName = <span class="stringliteral">&quot;RIC:DMIWO00000GUS&quot;</span>;</div>
-<div class="line"><span class="lineno">  391</span> </div>
-<div class="line"><span class="lineno">  392</span>    <span class="keyword">auto</span> eq = <a class="code hl_function" href="group__utilities.html#ga93446dbb3100534f566787afbf673dbf">parseEquityIndex</a>(<span class="stringliteral">&quot;EQ-&quot;</span> + equityName);</div>
-<div class="line"><span class="lineno">  393</span>    BOOST_REQUIRE_MESSAGE(eq, <span class="stringliteral">&quot;Could not parse equity index EQ-&quot;</span> + equityName);</div>
-<div class="line"><span class="lineno">  394</span> </div>
-<div class="line"><span class="lineno">  395</span>    BOOST_REQUIRE_MESSAGE(DividendManager::instance().hasHistory(eq-&gt;name()),</div>
-<div class="line"><span class="lineno">  396</span>                          <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; eq-&gt;name() &lt;&lt; <span class="stringliteral">&quot; in DividendManager&quot;</span>);</div>
-<div class="line"><span class="lineno">  397</span>    map&lt;Date, QuantExt::Dividend&gt; divMap;</div>
-<div class="line"><span class="lineno">  398</span>    <span class="keyword">const</span> set&lt;QuantExt::Dividend&gt;&amp; dividends = eq-&gt;dividendFixings();</div>
-<div class="line"><span class="lineno">  399</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; d : dividends)</div>
-<div class="line"><span class="lineno">  400</span>        divMap[d.exDate] = d;</div>
-<div class="line"><span class="lineno">  401</span> </div>
-<div class="line"><span class="lineno">  402</span>    <span class="comment">// Expected results</span></div>
-<div class="line"><span class="lineno">  403</span>    map&lt;Date, Real&gt; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a> = {{Date(1, Nov, 2018), 25.313}, {Date(1, Dec, 2018), 15.957}};</div>
-<div class="line"><span class="lineno">  404</span> </div>
-<div class="line"><span class="lineno">  405</span>    BOOST_CHECK_EQUAL(dividends.size(), <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.<a class="code hl_functionRef" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">size</a>());</div>
-<div class="line"><span class="lineno">  406</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : exp) {</div>
-<div class="line"><span class="lineno">  407</span>        BOOST_CHECK_EQUAL(divMap[kv.first].rate, kv.second);</div>
-<div class="line"><span class="lineno">  408</span>    }</div>
-<div class="line"><span class="lineno">  409</span>}</div>
-<div class="ttc" id="agroup__utilities_html_ga93446dbb3100534f566787afbf673dbf"><div class="ttname"><a href="group__utilities.html#ga93446dbb3100534f566787afbf673dbf">ore::data::parseEquityIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantExt::EquityIndex2 &gt; parseEquityIndex(const string &amp;s)</div><div class="ttdoc">Convert std::string (e.g SP5) to QuantExt::EquityIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00231">indexparser.cpp:231</a></div></div>
+<p class="definition">Definition at line <a class="el" href="test_2fixings_8cpp_source.html#l00389">389</a> of file <a class="el" href="test_2fixings_8cpp_source.html">fixings.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  389</span>                                          {</div>
+<div class="line"><span class="lineno">  390</span> </div>
+<div class="line"><span class="lineno">  391</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> equityName = <span class="stringliteral">&quot;RIC:DMIWO00000GUS&quot;</span>;</div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>    <span class="keyword">auto</span> eq = <a class="code hl_function" href="group__utilities.html#ga93446dbb3100534f566787afbf673dbf">parseEquityIndex</a>(<span class="stringliteral">&quot;EQ-&quot;</span> + equityName);</div>
+<div class="line"><span class="lineno">  394</span>    BOOST_REQUIRE_MESSAGE(eq, <span class="stringliteral">&quot;Could not parse equity index EQ-&quot;</span> + equityName);</div>
+<div class="line"><span class="lineno">  395</span> </div>
+<div class="line"><span class="lineno">  396</span>    BOOST_REQUIRE_MESSAGE(DividendManager::instance().hasHistory(eq-&gt;name()),</div>
+<div class="line"><span class="lineno">  397</span>                          <span class="stringliteral">&quot;Could not find index &quot;</span> &lt;&lt; eq-&gt;name() &lt;&lt; <span class="stringliteral">&quot; in DividendManager&quot;</span>);</div>
+<div class="line"><span class="lineno">  398</span>    map&lt;Date, QuantExt::Dividend&gt; divMap;</div>
+<div class="line"><span class="lineno">  399</span>    <span class="keyword">const</span> set&lt;QuantExt::Dividend&gt;&amp; dividends = eq-&gt;dividendFixings();</div>
+<div class="line"><span class="lineno">  400</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; d : dividends)</div>
+<div class="line"><span class="lineno">  401</span>        divMap[d.exDate] = d;</div>
+<div class="line"><span class="lineno">  402</span> </div>
+<div class="line"><span class="lineno">  403</span>    <span class="comment">// Expected results</span></div>
+<div class="line"><span class="lineno">  404</span>    map&lt;Date, Real&gt; <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a> = {{Date(1, Nov, 2018), 25.313}, {Date(1, Dec, 2018), 15.957}};</div>
+<div class="line"><span class="lineno">  405</span> </div>
+<div class="line"><span class="lineno">  406</span>    BOOST_CHECK_EQUAL(dividends.size(), <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>.<a class="code hl_functionRef" href="../qle/struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a">size</a>());</div>
+<div class="line"><span class="lineno">  407</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : exp) {</div>
+<div class="line"><span class="lineno">  408</span>        BOOST_CHECK_EQUAL(divMap[kv.first].rate, kv.second);</div>
+<div class="line"><span class="lineno">  409</span>    }</div>
+<div class="line"><span class="lineno">  410</span>}</div>
+<div class="ttc" id="agroup__utilities_html_ga93446dbb3100534f566787afbf673dbf"><div class="ttname"><a href="group__utilities.html#ga93446dbb3100534f566787afbf673dbf">ore::data::parseEquityIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantExt::EquityIndex2 &gt; parseEquityIndex(const string &amp;s)</div><div class="ttdoc">Convert std::string (e.g SP5) to QuantExt::EquityIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00227">indexparser.cpp:227</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">

@@ -254,385 +254,382 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  417</span>    <span class="comment">// Model</span></div>
 <div class="line"><span class="lineno">  418</span>    boost::shared_ptr&lt;QuantExt::CrossAssetModel&gt; model = ccLgm;</div>
 <div class="line"><span class="lineno">  419</span> </div>
-<div class="line"><span class="lineno">  420</span>    <span class="comment">// State process</span></div>
-<div class="line"><span class="lineno">  421</span>    boost::shared_ptr&lt;StochasticProcess&gt; stateProcess = model-&gt;stateProcess();</div>
-<div class="line"><span class="lineno">  422</span> </div>
-<div class="line"><span class="lineno">  423</span>    <span class="comment">// Simulation market parameters, we just need the yield curve structure here</span></div>
-<div class="line"><span class="lineno">  424</span>    boost::shared_ptr&lt;ScenarioSimMarketParameters&gt; simMarketConfig(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_sim_market_parameters.html">ScenarioSimMarketParameters</a>);</div>
-<div class="line"><span class="lineno">  425</span>    simMarketConfig-&gt;setYieldCurveTenors(<span class="stringliteral">&quot;&quot;</span>, {3 * Months, 6 * Months, 1 * Years, 2 * Years, 3 * Years, 4 * Years,</div>
-<div class="line"><span class="lineno">  426</span>                                              5 * Years, 7 * Years, 10 * Years, 12 * Years, 15 * Years, 20 * Years,</div>
-<div class="line"><span class="lineno">  427</span>                                              30 * Years, 40 * Years, 50 * Years});</div>
-<div class="line"><span class="lineno">  428</span>    simMarketConfig-&gt;setSimulateFXVols(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  429</span> </div>
-<div class="line"><span class="lineno">  430</span>    simMarketConfig-&gt;baseCcy() = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
-<div class="line"><span class="lineno">  431</span>    simMarketConfig-&gt;setDiscountCurveNames({<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>});</div>
-<div class="line"><span class="lineno">  432</span>    simMarketConfig-&gt;ccys() = {<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>};</div>
-<div class="line"><span class="lineno">  433</span>    std::vector&lt;std::string&gt; tmp;</div>
-<div class="line"><span class="lineno">  434</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> c : simMarketConfig-&gt;ccys()) {</div>
-<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">if</span> (c != simMarketConfig-&gt;baseCcy())</div>
-<div class="line"><span class="lineno">  436</span>            tmp.push_back(c + simMarketConfig-&gt;baseCcy());</div>
-<div class="line"><span class="lineno">  437</span>    }</div>
-<div class="line"><span class="lineno">  438</span>    simMarketConfig-&gt;setFxCcyPairs(tmp);</div>
-<div class="line"><span class="lineno">  439</span> </div>
-<div class="line"><span class="lineno">  440</span>    simMarketConfig-&gt;setIndices({<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, <span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>});</div>
-<div class="line"><span class="lineno">  441</span>    simMarketConfig-&gt;interpolation() = <span class="stringliteral">&quot;LogLinear&quot;</span>;</div>
-<div class="line"><span class="lineno">  442</span>    simMarketConfig-&gt;setSwapVolExpiries(<span class="stringliteral">&quot;EUR&quot;</span>, {6 * Months, 1 * Years, 2 * Years, 3 * Years, 5 * Years, 10 * Years});</div>
-<div class="line"><span class="lineno">  443</span>    simMarketConfig-&gt;setSwapVolTerms(<span class="stringliteral">&quot;EUR&quot;</span>, {1 * Years, 2 * Years, 3 * Years, 5 * Years, 7 * Years, 10 * Years});</div>
-<div class="line"><span class="lineno">  444</span> </div>
-<div class="line"><span class="lineno">  445</span>    boost::shared_ptr&lt;ScenarioGeneratorData&gt; sgd(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_generator_data.html">ScenarioGeneratorData</a>);</div>
-<div class="line"><span class="lineno">  446</span>    sgd-&gt;sequenceType() = <a class="code hl_variableRef" href="../qle/namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>;</div>
-<div class="line"><span class="lineno">  447</span>    sgd-&gt;seed() = 42;</div>
-<div class="line"><span class="lineno">  448</span>    sgd-&gt;setGrid(grid);</div>
-<div class="line"><span class="lineno">  449</span> </div>
-<div class="line"><span class="lineno">  450</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_generator_builder.html">ScenarioGeneratorBuilder</a> sgb(sgd);</div>
-<div class="line"><span class="lineno">  451</span>    boost::shared_ptr&lt;ScenarioFactory&gt; sf = boost::make_shared&lt;SimpleScenarioFactory&gt;();</div>
-<div class="line"><span class="lineno">  452</span>    boost::shared_ptr&lt;ScenarioGenerator&gt; sg = sgb.build(model, sf, simMarketConfig, today, market);</div>
+<div class="line"><span class="lineno">  420</span>    <span class="comment">// Simulation market parameters, we just need the yield curve structure here</span></div>
+<div class="line"><span class="lineno">  421</span>    boost::shared_ptr&lt;ScenarioSimMarketParameters&gt; simMarketConfig(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_sim_market_parameters.html">ScenarioSimMarketParameters</a>);</div>
+<div class="line"><span class="lineno">  422</span>    simMarketConfig-&gt;setYieldCurveTenors(<span class="stringliteral">&quot;&quot;</span>, {3 * Months, 6 * Months, 1 * Years, 2 * Years, 3 * Years, 4 * Years,</div>
+<div class="line"><span class="lineno">  423</span>                                              5 * Years, 7 * Years, 10 * Years, 12 * Years, 15 * Years, 20 * Years,</div>
+<div class="line"><span class="lineno">  424</span>                                              30 * Years, 40 * Years, 50 * Years});</div>
+<div class="line"><span class="lineno">  425</span>    simMarketConfig-&gt;setSimulateFXVols(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  426</span> </div>
+<div class="line"><span class="lineno">  427</span>    simMarketConfig-&gt;baseCcy() = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
+<div class="line"><span class="lineno">  428</span>    simMarketConfig-&gt;setDiscountCurveNames({<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>});</div>
+<div class="line"><span class="lineno">  429</span>    simMarketConfig-&gt;ccys() = {<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>};</div>
+<div class="line"><span class="lineno">  430</span>    std::vector&lt;std::string&gt; tmp;</div>
+<div class="line"><span class="lineno">  431</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> c : simMarketConfig-&gt;ccys()) {</div>
+<div class="line"><span class="lineno">  432</span>        <span class="keywordflow">if</span> (c != simMarketConfig-&gt;baseCcy())</div>
+<div class="line"><span class="lineno">  433</span>            tmp.push_back(c + simMarketConfig-&gt;baseCcy());</div>
+<div class="line"><span class="lineno">  434</span>    }</div>
+<div class="line"><span class="lineno">  435</span>    simMarketConfig-&gt;setFxCcyPairs(tmp);</div>
+<div class="line"><span class="lineno">  436</span> </div>
+<div class="line"><span class="lineno">  437</span>    simMarketConfig-&gt;setIndices({<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, <span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>});</div>
+<div class="line"><span class="lineno">  438</span>    simMarketConfig-&gt;interpolation() = <span class="stringliteral">&quot;LogLinear&quot;</span>;</div>
+<div class="line"><span class="lineno">  439</span>    simMarketConfig-&gt;setSwapVolExpiries(<span class="stringliteral">&quot;EUR&quot;</span>, {6 * Months, 1 * Years, 2 * Years, 3 * Years, 5 * Years, 10 * Years});</div>
+<div class="line"><span class="lineno">  440</span>    simMarketConfig-&gt;setSwapVolTerms(<span class="stringliteral">&quot;EUR&quot;</span>, {1 * Years, 2 * Years, 3 * Years, 5 * Years, 7 * Years, 10 * Years});</div>
+<div class="line"><span class="lineno">  441</span> </div>
+<div class="line"><span class="lineno">  442</span>    boost::shared_ptr&lt;ScenarioGeneratorData&gt; sgd(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_generator_data.html">ScenarioGeneratorData</a>);</div>
+<div class="line"><span class="lineno">  443</span>    sgd-&gt;sequenceType() = <a class="code hl_variableRef" href="../qle/namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>;</div>
+<div class="line"><span class="lineno">  444</span>    sgd-&gt;seed() = 42;</div>
+<div class="line"><span class="lineno">  445</span>    sgd-&gt;setGrid(grid);</div>
+<div class="line"><span class="lineno">  446</span> </div>
+<div class="line"><span class="lineno">  447</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_generator_builder.html">ScenarioGeneratorBuilder</a> sgb(sgd);</div>
+<div class="line"><span class="lineno">  448</span>    boost::shared_ptr&lt;ScenarioFactory&gt; sf = boost::make_shared&lt;SimpleScenarioFactory&gt;();</div>
+<div class="line"><span class="lineno">  449</span>    boost::shared_ptr&lt;ScenarioGenerator&gt; sg = sgb.build(model, sf, simMarketConfig, today, market);</div>
+<div class="line"><span class="lineno">  450</span> </div>
+<div class="line"><span class="lineno">  451</span>    <span class="keyword">auto</span> simMarket = boost::make_shared&lt;ScenarioSimMarket&gt;(market, simMarketConfig);</div>
+<div class="line"><span class="lineno">  452</span>    simMarket-&gt;scenarioGenerator() = sg;</div>
 <div class="line"><span class="lineno">  453</span> </div>
-<div class="line"><span class="lineno">  454</span>    <span class="keyword">auto</span> simMarket = boost::make_shared&lt;ScenarioSimMarket&gt;(market, simMarketConfig);</div>
-<div class="line"><span class="lineno">  455</span>    simMarket-&gt;scenarioGenerator() = sg;</div>
-<div class="line"><span class="lineno">  456</span> </div>
-<div class="line"><span class="lineno">  457</span>    <span class="comment">// Bermudan swaption for exposure generation</span></div>
-<div class="line"><span class="lineno">  458</span>    Date startDate = cal.advance(today, 2 * Days);</div>
-<div class="line"><span class="lineno">  459</span>    Date fwdStartDate = cal.advance(startDate, 10 * Years);</div>
-<div class="line"><span class="lineno">  460</span>    Date endDate = cal.advance(fwdStartDate, testCase.swapLen * Years);</div>
-<div class="line"><span class="lineno">  461</span>    Schedule fixedSchedule(fwdStartDate, endDate, 1 * Years, cal, Following, Following, DateGeneration::Forward, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  462</span>    Schedule floatingSchedule(fwdStartDate, endDate, (testCase.inBaseCcy ? 6 : 3) * Months, cal, Following, Following,</div>
-<div class="line"><span class="lineno">  463</span>                              DateGeneration::Forward, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  464</span>    Schedule fixedScheduleSwap(startDate, endDate, 1 * Years, cal, Following, Following, DateGeneration::Forward,</div>
-<div class="line"><span class="lineno">  465</span>                               <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  466</span>    Schedule floatingScheduleSwap(startDate, endDate, (testCase.inBaseCcy ? 6 : 3) * Months, cal, Following, Following,</div>
-<div class="line"><span class="lineno">  467</span>                                  DateGeneration::Forward, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  468</span>    Schedule fixedScheduleSwapShort(startDate, fwdStartDate, 1 * Years, cal, Following, Following,</div>
-<div class="line"><span class="lineno">  469</span>                                    DateGeneration::Forward, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  470</span>    Schedule floatingScheduleSwapShort(startDate, fwdStartDate, (testCase.inBaseCcy ? 6 : 3) * Months, cal, Following,</div>
-<div class="line"><span class="lineno">  471</span>                                       Following, DateGeneration::Forward, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  472</span>    boost::shared_ptr&lt;VanillaSwap&gt; underlying, vanillaswap, vanillaswapshort;</div>
-<div class="line"><span class="lineno">  473</span>    boost::shared_ptr&lt;NonstandardSwap&gt; underlyingNs, vanillaswapNs, vanillaswapshortNs;</div>
-<div class="line"><span class="lineno">  474</span>    <span class="keywordflow">if</span> (!testCase.isAmortising) {</div>
-<div class="line"><span class="lineno">  475</span>        <span class="comment">// Standard Vanilla Swap</span></div>
-<div class="line"><span class="lineno">  476</span>        <span class="keywordflow">if</span> (testCase.inBaseCcy) {</div>
-<div class="line"><span class="lineno">  477</span>            underlying = boost::make_shared&lt;VanillaSwap&gt;(VanillaSwap::Payer, 1.0, fixedSchedule, 0.02, Thirty360(Thirty360::BondBasis),</div>
-<div class="line"><span class="lineno">  478</span>                                                         floatingSchedule, *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>), 0.0,</div>
-<div class="line"><span class="lineno">  479</span>                                                         Actual360());</div>
-<div class="line"><span class="lineno">  480</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  481</span>            underlying = boost::make_shared&lt;VanillaSwap&gt;(VanillaSwap::Payer, 1.0, fixedSchedule, 0.03, Thirty360(Thirty360::BondBasis),</div>
-<div class="line"><span class="lineno">  482</span>                                                         floatingSchedule, *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>), 0.0,</div>
-<div class="line"><span class="lineno">  483</span>                                                         Actual360());</div>
-<div class="line"><span class="lineno">  484</span>        }</div>
-<div class="line"><span class="lineno">  485</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  486</span>        <span class="comment">// Nonstandard Swap</span></div>
-<div class="line"><span class="lineno">  487</span>        std::vector&lt;Real&gt; fixNotionals(fixedSchedule.size() - 1), floatNotionals(floatingSchedule.size() - 1);</div>
-<div class="line"><span class="lineno">  488</span>        std::vector&lt;Real&gt; fixNotionalsSwap(fixedScheduleSwap.size() - 1),</div>
-<div class="line"><span class="lineno">  489</span>            floatNotionalsSwap(floatingScheduleSwap.size() - 1);</div>
-<div class="line"><span class="lineno">  490</span>        std::vector&lt;Real&gt; fixNotionalsShort(fixedScheduleSwapShort.size() - 1),</div>
-<div class="line"><span class="lineno">  491</span>            floatNotionalsShort(floatingScheduleSwapShort.size() - 1);</div>
-<div class="line"><span class="lineno">  492</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; fixNotionals.size(); ++i)</div>
-<div class="line"><span class="lineno">  493</span>            fixNotionals[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(fixNotionals.size());</div>
-<div class="line"><span class="lineno">  494</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; floatNotionals.size(); ++i)</div>
-<div class="line"><span class="lineno">  495</span>            floatNotionals[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(floatNotionals.size());</div>
-<div class="line"><span class="lineno">  496</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; fixNotionalsSwap.size(); ++i)</div>
-<div class="line"><span class="lineno">  497</span>            fixNotionalsSwap[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(fixNotionalsSwap.size());</div>
-<div class="line"><span class="lineno">  498</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; floatNotionalsSwap.size(); ++i)</div>
-<div class="line"><span class="lineno">  499</span>            floatNotionalsSwap[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(floatNotionalsSwap.size());</div>
-<div class="line"><span class="lineno">  500</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; fixNotionalsShort.size(); ++i)</div>
-<div class="line"><span class="lineno">  501</span>            fixNotionalsShort[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(fixNotionalsShort.size());</div>
-<div class="line"><span class="lineno">  502</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; floatNotionalsShort.size(); ++i)</div>
-<div class="line"><span class="lineno">  503</span>            floatNotionalsShort[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(floatNotionalsShort.size());</div>
-<div class="line"><span class="lineno">  504</span> </div>
-<div class="line"><span class="lineno">  505</span>        <span class="keywordflow">if</span> (testCase.inBaseCcy) {</div>
-<div class="line"><span class="lineno">  506</span>            underlyingNs = boost::make_shared&lt;NonstandardSwap&gt;(</div>
-<div class="line"><span class="lineno">  507</span>                VanillaSwap::Payer, fixNotionals, floatNotionals, fixedSchedule,</div>
-<div class="line"><span class="lineno">  508</span>                std::vector&lt;Real&gt;(fixNotionals.size(), 0.02), Thirty360(Thirty360::BondBasis), floatingSchedule,</div>
-<div class="line"><span class="lineno">  509</span>                *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>), 1.0, 0.0, Actual360());</div>
-<div class="line"><span class="lineno">  510</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  511</span>            underlyingNs = boost::make_shared&lt;NonstandardSwap&gt;(</div>
-<div class="line"><span class="lineno">  512</span>                VanillaSwap::Payer, fixNotionals, floatNotionals, fixedSchedule,</div>
-<div class="line"><span class="lineno">  513</span>                std::vector&lt;Real&gt;(fixNotionals.size(), 0.03), Thirty360(Thirty360::BondBasis), floatingSchedule,</div>
-<div class="line"><span class="lineno">  514</span>                *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>), 1.0, 0.0, Actual360());</div>
-<div class="line"><span class="lineno">  515</span>        }</div>
-<div class="line"><span class="lineno">  516</span>    }</div>
-<div class="line"><span class="lineno">  517</span> </div>
-<div class="line"><span class="lineno">  518</span>    <span class="comment">// needed for physical exercise in the option wrapper</span></div>
-<div class="line"><span class="lineno">  519</span>    boost::shared_ptr&lt;PricingEngine&gt; underlyingEngine = boost::make_shared&lt;QuantLib::DiscountingSwapEngine&gt;(</div>
-<div class="line"><span class="lineno">  520</span>        testCase.inBaseCcy ? simMarket-&gt;discountCurve(<span class="stringliteral">&quot;EUR&quot;</span>) : simMarket-&gt;discountCurve(<span class="stringliteral">&quot;USD&quot;</span>));</div>
-<div class="line"><span class="lineno">  521</span>    <span class="keywordflow">if</span> (underlying)</div>
-<div class="line"><span class="lineno">  522</span>        underlying-&gt;setPricingEngine(underlyingEngine);</div>
-<div class="line"><span class="lineno">  523</span>    <span class="keywordflow">if</span> (underlyingNs)</div>
-<div class="line"><span class="lineno">  524</span>        underlyingNs-&gt;setPricingEngine(underlyingEngine);</div>
-<div class="line"><span class="lineno">  525</span>    <span class="keywordflow">if</span> (vanillaswap) {</div>
-<div class="line"><span class="lineno">  526</span>        vanillaswap-&gt;setPricingEngine(underlyingEngine);</div>
-<div class="line"><span class="lineno">  527</span>        vanillaswapshort-&gt;setPricingEngine(underlyingEngine);</div>
-<div class="line"><span class="lineno">  528</span>    }</div>
-<div class="line"><span class="lineno">  529</span>    <span class="keywordflow">if</span> (vanillaswapNs) {</div>
-<div class="line"><span class="lineno">  530</span>        vanillaswapNs-&gt;setPricingEngine(underlyingEngine);</div>
-<div class="line"><span class="lineno">  531</span>        vanillaswapshortNs-&gt;setPricingEngine(underlyingEngine);</div>
-<div class="line"><span class="lineno">  532</span>    }</div>
-<div class="line"><span class="lineno">  533</span> </div>
-<div class="line"><span class="lineno">  534</span>    <span class="comment">// collect fixing dates</span></div>
-<div class="line"><span class="lineno">  535</span>    std::vector&lt;Date&gt; fixingDates;</div>
-<div class="line"><span class="lineno">  536</span>    <span class="keywordflow">if</span> (vanillaswap) {</div>
-<div class="line"><span class="lineno">  537</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; vanillaswap-&gt;leg(1).size(); ++i) {</div>
-<div class="line"><span class="lineno">  538</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(vanillaswap-&gt;leg(1)[i]);</div>
-<div class="line"><span class="lineno">  539</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
-<div class="line"><span class="lineno">  540</span>        }</div>
-<div class="line"><span class="lineno">  541</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (vanillaswapNs) {</div>
-<div class="line"><span class="lineno">  542</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; vanillaswapNs-&gt;leg(1).size(); ++i) {</div>
-<div class="line"><span class="lineno">  543</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(vanillaswapNs-&gt;leg(1)[i]);</div>
-<div class="line"><span class="lineno">  544</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
-<div class="line"><span class="lineno">  545</span>        }</div>
-<div class="line"><span class="lineno">  546</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (underlying) {</div>
-<div class="line"><span class="lineno">  547</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; underlying-&gt;leg(1).size(); ++i) {</div>
-<div class="line"><span class="lineno">  548</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(underlying-&gt;leg(1)[i]);</div>
-<div class="line"><span class="lineno">  549</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
-<div class="line"><span class="lineno">  550</span>        }</div>
-<div class="line"><span class="lineno">  551</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (underlyingNs) {</div>
-<div class="line"><span class="lineno">  552</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; underlyingNs-&gt;leg(1).size(); ++i) {</div>
-<div class="line"><span class="lineno">  553</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(underlyingNs-&gt;leg(1)[i]);</div>
-<div class="line"><span class="lineno">  554</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
-<div class="line"><span class="lineno">  555</span>        }</div>
-<div class="line"><span class="lineno">  556</span>    }</div>
-<div class="line"><span class="lineno">  557</span> </div>
-<div class="line"><span class="lineno">  558</span>    <span class="comment">// exercise dates</span></div>
-<div class="line"><span class="lineno">  559</span>    std::vector&lt;Date&gt; exerciseDates;</div>
-<div class="line"><span class="lineno">  560</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; testCase.numExercises; ++i) {</div>
-<div class="line"><span class="lineno">  561</span>        <span class="keywordflow">if</span> (!testCase.fineGrid)</div>
-<div class="line"><span class="lineno">  562</span>            <span class="comment">// coarse grid</span></div>
-<div class="line"><span class="lineno">  563</span>            exerciseDates.push_back(grid-&gt;dates()[19 + 2 * i]);</div>
-<div class="line"><span class="lineno">  564</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  565</span>            <span class="comment">// find grid</span></div>
-<div class="line"><span class="lineno">  566</span>            exerciseDates.push_back(grid-&gt;dates()[119 + 12 * i]);</div>
-<div class="line"><span class="lineno">  567</span>    }</div>
-<div class="line"><span class="lineno">  568</span> </div>
-<div class="line"><span class="lineno">  569</span>    boost::shared_ptr&lt;QuantLib::Instrument&gt; tmpUnd;</div>
-<div class="line"><span class="lineno">  570</span>    <span class="keywordflow">if</span> (testCase.isAmortising)</div>
-<div class="line"><span class="lineno">  571</span>        tmpUnd = underlyingNs;</div>
-<div class="line"><span class="lineno">  572</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  573</span>        tmpUnd = underlying;</div>
-<div class="line"><span class="lineno">  574</span>    std::vector&lt;boost::shared_ptr&lt;QuantLib::Instrument&gt;&gt; undInst(exerciseDates.size(), tmpUnd);</div>
-<div class="line"><span class="lineno">  575</span> </div>
-<div class="line"><span class="lineno">  576</span>    boost::shared_ptr&lt;Exercise&gt; exercise = boost::make_shared&lt;BermudanExercise&gt;(exerciseDates);</div>
-<div class="line"><span class="lineno">  577</span>    boost::shared_ptr&lt;Instrument&gt; swaption;</div>
-<div class="line"><span class="lineno">  578</span>    Settlement::Type settlementType = testCase.isPhysical ? Settlement::Physical : Settlement::Cash;</div>
-<div class="line"><span class="lineno">  579</span>    Settlement::Method settlementMethod =</div>
-<div class="line"><span class="lineno">  580</span>        testCase.isPhysical ? Settlement::PhysicalOTC : Settlement::CollateralizedCashPrice;</div>
-<div class="line"><span class="lineno">  581</span>    <span class="keywordflow">if</span> (testCase.isAmortising)</div>
-<div class="line"><span class="lineno">  582</span>        swaption = boost::make_shared&lt;NonstandardSwaption&gt;(underlyingNs, exercise, settlementType, settlementMethod);</div>
-<div class="line"><span class="lineno">  583</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  584</span>        swaption = boost::make_shared&lt;Swaption&gt;(underlying, exercise, settlementType, settlementMethod);</div>
-<div class="line"><span class="lineno">  585</span> </div>
-<div class="line"><span class="lineno">  586</span>    boost::shared_ptr&lt;IrLgm1fParametrization&gt; param;</div>
-<div class="line"><span class="lineno">  587</span>    <span class="comment">// vol and rev must be consistent to CAM&#39;s LGM models in TestData</span></div>
-<div class="line"><span class="lineno">  588</span>    Array emptyTimes;</div>
-<div class="line"><span class="lineno">  589</span>    Array alphaEur(1), kappaEur(1), alphaUsd(1), kappaUsd(1);</div>
-<div class="line"><span class="lineno">  590</span>    alphaEur[0] = lgm_eur-&gt;parametrization()-&gt;hullWhiteSigma(1.0);</div>
-<div class="line"><span class="lineno">  591</span>    kappaEur[0] = lgm_eur-&gt;parametrization()-&gt;kappa(1.0);</div>
-<div class="line"><span class="lineno">  592</span>    alphaUsd[0] = lgm_usd-&gt;parametrization()-&gt;hullWhiteSigma(1.0);</div>
-<div class="line"><span class="lineno">  593</span>    kappaUsd[0] = lgm_usd-&gt;parametrization()-&gt;kappa(1.0);</div>
-<div class="line"><span class="lineno">  594</span>    <span class="keywordflow">if</span> (testCase.inBaseCcy)</div>
+<div class="line"><span class="lineno">  454</span>    <span class="comment">// Bermudan swaption for exposure generation</span></div>
+<div class="line"><span class="lineno">  455</span>    Date startDate = cal.advance(today, 2 * Days);</div>
+<div class="line"><span class="lineno">  456</span>    Date fwdStartDate = cal.advance(startDate, 10 * Years);</div>
+<div class="line"><span class="lineno">  457</span>    Date endDate = cal.advance(fwdStartDate, testCase.swapLen * Years);</div>
+<div class="line"><span class="lineno">  458</span>    Schedule fixedSchedule(fwdStartDate, endDate, 1 * Years, cal, Following, Following, DateGeneration::Forward, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  459</span>    Schedule floatingSchedule(fwdStartDate, endDate, (testCase.inBaseCcy ? 6 : 3) * Months, cal, Following, Following,</div>
+<div class="line"><span class="lineno">  460</span>                              DateGeneration::Forward, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  461</span>    Schedule fixedScheduleSwap(startDate, endDate, 1 * Years, cal, Following, Following, DateGeneration::Forward,</div>
+<div class="line"><span class="lineno">  462</span>                               <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  463</span>    Schedule floatingScheduleSwap(startDate, endDate, (testCase.inBaseCcy ? 6 : 3) * Months, cal, Following, Following,</div>
+<div class="line"><span class="lineno">  464</span>                                  DateGeneration::Forward, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  465</span>    Schedule fixedScheduleSwapShort(startDate, fwdStartDate, 1 * Years, cal, Following, Following,</div>
+<div class="line"><span class="lineno">  466</span>                                    DateGeneration::Forward, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  467</span>    Schedule floatingScheduleSwapShort(startDate, fwdStartDate, (testCase.inBaseCcy ? 6 : 3) * Months, cal, Following,</div>
+<div class="line"><span class="lineno">  468</span>                                       Following, DateGeneration::Forward, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  469</span>    boost::shared_ptr&lt;VanillaSwap&gt; underlying, vanillaswap, vanillaswapshort;</div>
+<div class="line"><span class="lineno">  470</span>    boost::shared_ptr&lt;NonstandardSwap&gt; underlyingNs, vanillaswapNs, vanillaswapshortNs;</div>
+<div class="line"><span class="lineno">  471</span>    <span class="keywordflow">if</span> (!testCase.isAmortising) {</div>
+<div class="line"><span class="lineno">  472</span>        <span class="comment">// Standard Vanilla Swap</span></div>
+<div class="line"><span class="lineno">  473</span>        <span class="keywordflow">if</span> (testCase.inBaseCcy) {</div>
+<div class="line"><span class="lineno">  474</span>            underlying = boost::make_shared&lt;VanillaSwap&gt;(VanillaSwap::Payer, 1.0, fixedSchedule, 0.02, Thirty360(Thirty360::BondBasis),</div>
+<div class="line"><span class="lineno">  475</span>                                                         floatingSchedule, *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>), 0.0,</div>
+<div class="line"><span class="lineno">  476</span>                                                         Actual360());</div>
+<div class="line"><span class="lineno">  477</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  478</span>            underlying = boost::make_shared&lt;VanillaSwap&gt;(VanillaSwap::Payer, 1.0, fixedSchedule, 0.03, Thirty360(Thirty360::BondBasis),</div>
+<div class="line"><span class="lineno">  479</span>                                                         floatingSchedule, *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>), 0.0,</div>
+<div class="line"><span class="lineno">  480</span>                                                         Actual360());</div>
+<div class="line"><span class="lineno">  481</span>        }</div>
+<div class="line"><span class="lineno">  482</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  483</span>        <span class="comment">// Nonstandard Swap</span></div>
+<div class="line"><span class="lineno">  484</span>        std::vector&lt;Real&gt; fixNotionals(fixedSchedule.size() - 1), floatNotionals(floatingSchedule.size() - 1);</div>
+<div class="line"><span class="lineno">  485</span>        std::vector&lt;Real&gt; fixNotionalsSwap(fixedScheduleSwap.size() - 1),</div>
+<div class="line"><span class="lineno">  486</span>            floatNotionalsSwap(floatingScheduleSwap.size() - 1);</div>
+<div class="line"><span class="lineno">  487</span>        std::vector&lt;Real&gt; fixNotionalsShort(fixedScheduleSwapShort.size() - 1),</div>
+<div class="line"><span class="lineno">  488</span>            floatNotionalsShort(floatingScheduleSwapShort.size() - 1);</div>
+<div class="line"><span class="lineno">  489</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; fixNotionals.size(); ++i)</div>
+<div class="line"><span class="lineno">  490</span>            fixNotionals[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(fixNotionals.size());</div>
+<div class="line"><span class="lineno">  491</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; floatNotionals.size(); ++i)</div>
+<div class="line"><span class="lineno">  492</span>            floatNotionals[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(floatNotionals.size());</div>
+<div class="line"><span class="lineno">  493</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; fixNotionalsSwap.size(); ++i)</div>
+<div class="line"><span class="lineno">  494</span>            fixNotionalsSwap[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(fixNotionalsSwap.size());</div>
+<div class="line"><span class="lineno">  495</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; floatNotionalsSwap.size(); ++i)</div>
+<div class="line"><span class="lineno">  496</span>            floatNotionalsSwap[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(floatNotionalsSwap.size());</div>
+<div class="line"><span class="lineno">  497</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; fixNotionalsShort.size(); ++i)</div>
+<div class="line"><span class="lineno">  498</span>            fixNotionalsShort[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(fixNotionalsShort.size());</div>
+<div class="line"><span class="lineno">  499</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; floatNotionalsShort.size(); ++i)</div>
+<div class="line"><span class="lineno">  500</span>            floatNotionalsShort[i] = 1.0 - <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(i) / <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(floatNotionalsShort.size());</div>
+<div class="line"><span class="lineno">  501</span> </div>
+<div class="line"><span class="lineno">  502</span>        <span class="keywordflow">if</span> (testCase.inBaseCcy) {</div>
+<div class="line"><span class="lineno">  503</span>            underlyingNs = boost::make_shared&lt;NonstandardSwap&gt;(</div>
+<div class="line"><span class="lineno">  504</span>                VanillaSwap::Payer, fixNotionals, floatNotionals, fixedSchedule,</div>
+<div class="line"><span class="lineno">  505</span>                std::vector&lt;Real&gt;(fixNotionals.size(), 0.02), Thirty360(Thirty360::BondBasis), floatingSchedule,</div>
+<div class="line"><span class="lineno">  506</span>                *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>), 1.0, 0.0, Actual360());</div>
+<div class="line"><span class="lineno">  507</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  508</span>            underlyingNs = boost::make_shared&lt;NonstandardSwap&gt;(</div>
+<div class="line"><span class="lineno">  509</span>                VanillaSwap::Payer, fixNotionals, floatNotionals, fixedSchedule,</div>
+<div class="line"><span class="lineno">  510</span>                std::vector&lt;Real&gt;(fixNotionals.size(), 0.03), Thirty360(Thirty360::BondBasis), floatingSchedule,</div>
+<div class="line"><span class="lineno">  511</span>                *simMarket-&gt;iborIndex(<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>), 1.0, 0.0, Actual360());</div>
+<div class="line"><span class="lineno">  512</span>        }</div>
+<div class="line"><span class="lineno">  513</span>    }</div>
+<div class="line"><span class="lineno">  514</span> </div>
+<div class="line"><span class="lineno">  515</span>    <span class="comment">// needed for physical exercise in the option wrapper</span></div>
+<div class="line"><span class="lineno">  516</span>    boost::shared_ptr&lt;PricingEngine&gt; underlyingEngine = boost::make_shared&lt;QuantLib::DiscountingSwapEngine&gt;(</div>
+<div class="line"><span class="lineno">  517</span>        testCase.inBaseCcy ? simMarket-&gt;discountCurve(<span class="stringliteral">&quot;EUR&quot;</span>) : simMarket-&gt;discountCurve(<span class="stringliteral">&quot;USD&quot;</span>));</div>
+<div class="line"><span class="lineno">  518</span>    <span class="keywordflow">if</span> (underlying)</div>
+<div class="line"><span class="lineno">  519</span>        underlying-&gt;setPricingEngine(underlyingEngine);</div>
+<div class="line"><span class="lineno">  520</span>    <span class="keywordflow">if</span> (underlyingNs)</div>
+<div class="line"><span class="lineno">  521</span>        underlyingNs-&gt;setPricingEngine(underlyingEngine);</div>
+<div class="line"><span class="lineno">  522</span>    <span class="keywordflow">if</span> (vanillaswap) {</div>
+<div class="line"><span class="lineno">  523</span>        vanillaswap-&gt;setPricingEngine(underlyingEngine);</div>
+<div class="line"><span class="lineno">  524</span>        vanillaswapshort-&gt;setPricingEngine(underlyingEngine);</div>
+<div class="line"><span class="lineno">  525</span>    }</div>
+<div class="line"><span class="lineno">  526</span>    <span class="keywordflow">if</span> (vanillaswapNs) {</div>
+<div class="line"><span class="lineno">  527</span>        vanillaswapNs-&gt;setPricingEngine(underlyingEngine);</div>
+<div class="line"><span class="lineno">  528</span>        vanillaswapshortNs-&gt;setPricingEngine(underlyingEngine);</div>
+<div class="line"><span class="lineno">  529</span>    }</div>
+<div class="line"><span class="lineno">  530</span> </div>
+<div class="line"><span class="lineno">  531</span>    <span class="comment">// collect fixing dates</span></div>
+<div class="line"><span class="lineno">  532</span>    std::vector&lt;Date&gt; fixingDates;</div>
+<div class="line"><span class="lineno">  533</span>    <span class="keywordflow">if</span> (vanillaswap) {</div>
+<div class="line"><span class="lineno">  534</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; vanillaswap-&gt;leg(1).size(); ++i) {</div>
+<div class="line"><span class="lineno">  535</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(vanillaswap-&gt;leg(1)[i]);</div>
+<div class="line"><span class="lineno">  536</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
+<div class="line"><span class="lineno">  537</span>        }</div>
+<div class="line"><span class="lineno">  538</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (vanillaswapNs) {</div>
+<div class="line"><span class="lineno">  539</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; vanillaswapNs-&gt;leg(1).size(); ++i) {</div>
+<div class="line"><span class="lineno">  540</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(vanillaswapNs-&gt;leg(1)[i]);</div>
+<div class="line"><span class="lineno">  541</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
+<div class="line"><span class="lineno">  542</span>        }</div>
+<div class="line"><span class="lineno">  543</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (underlying) {</div>
+<div class="line"><span class="lineno">  544</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; underlying-&gt;leg(1).size(); ++i) {</div>
+<div class="line"><span class="lineno">  545</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(underlying-&gt;leg(1)[i]);</div>
+<div class="line"><span class="lineno">  546</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
+<div class="line"><span class="lineno">  547</span>        }</div>
+<div class="line"><span class="lineno">  548</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (underlyingNs) {</div>
+<div class="line"><span class="lineno">  549</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; underlyingNs-&gt;leg(1).size(); ++i) {</div>
+<div class="line"><span class="lineno">  550</span>            boost::shared_ptr&lt;IborCoupon&gt; c = boost::dynamic_pointer_cast&lt;IborCoupon&gt;(underlyingNs-&gt;leg(1)[i]);</div>
+<div class="line"><span class="lineno">  551</span>            fixingDates.push_back(c-&gt;fixingDate());</div>
+<div class="line"><span class="lineno">  552</span>        }</div>
+<div class="line"><span class="lineno">  553</span>    }</div>
+<div class="line"><span class="lineno">  554</span> </div>
+<div class="line"><span class="lineno">  555</span>    <span class="comment">// exercise dates</span></div>
+<div class="line"><span class="lineno">  556</span>    std::vector&lt;Date&gt; exerciseDates;</div>
+<div class="line"><span class="lineno">  557</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; testCase.numExercises; ++i) {</div>
+<div class="line"><span class="lineno">  558</span>        <span class="keywordflow">if</span> (!testCase.fineGrid)</div>
+<div class="line"><span class="lineno">  559</span>            <span class="comment">// coarse grid</span></div>
+<div class="line"><span class="lineno">  560</span>            exerciseDates.push_back(grid-&gt;dates()[19 + 2 * i]);</div>
+<div class="line"><span class="lineno">  561</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  562</span>            <span class="comment">// find grid</span></div>
+<div class="line"><span class="lineno">  563</span>            exerciseDates.push_back(grid-&gt;dates()[119 + 12 * i]);</div>
+<div class="line"><span class="lineno">  564</span>    }</div>
+<div class="line"><span class="lineno">  565</span> </div>
+<div class="line"><span class="lineno">  566</span>    boost::shared_ptr&lt;QuantLib::Instrument&gt; tmpUnd;</div>
+<div class="line"><span class="lineno">  567</span>    <span class="keywordflow">if</span> (testCase.isAmortising)</div>
+<div class="line"><span class="lineno">  568</span>        tmpUnd = underlyingNs;</div>
+<div class="line"><span class="lineno">  569</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  570</span>        tmpUnd = underlying;</div>
+<div class="line"><span class="lineno">  571</span>    std::vector&lt;boost::shared_ptr&lt;QuantLib::Instrument&gt;&gt; undInst(exerciseDates.size(), tmpUnd);</div>
+<div class="line"><span class="lineno">  572</span> </div>
+<div class="line"><span class="lineno">  573</span>    boost::shared_ptr&lt;Exercise&gt; exercise = boost::make_shared&lt;BermudanExercise&gt;(exerciseDates);</div>
+<div class="line"><span class="lineno">  574</span>    boost::shared_ptr&lt;Instrument&gt; swaption;</div>
+<div class="line"><span class="lineno">  575</span>    Settlement::Type settlementType = testCase.isPhysical ? Settlement::Physical : Settlement::Cash;</div>
+<div class="line"><span class="lineno">  576</span>    Settlement::Method settlementMethod =</div>
+<div class="line"><span class="lineno">  577</span>        testCase.isPhysical ? Settlement::PhysicalOTC : Settlement::CollateralizedCashPrice;</div>
+<div class="line"><span class="lineno">  578</span>    <span class="keywordflow">if</span> (testCase.isAmortising)</div>
+<div class="line"><span class="lineno">  579</span>        swaption = boost::make_shared&lt;NonstandardSwaption&gt;(underlyingNs, exercise, settlementType, settlementMethod);</div>
+<div class="line"><span class="lineno">  580</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  581</span>        swaption = boost::make_shared&lt;Swaption&gt;(underlying, exercise, settlementType, settlementMethod);</div>
+<div class="line"><span class="lineno">  582</span> </div>
+<div class="line"><span class="lineno">  583</span>    boost::shared_ptr&lt;IrLgm1fParametrization&gt; param;</div>
+<div class="line"><span class="lineno">  584</span>    <span class="comment">// vol and rev must be consistent to CAM&#39;s LGM models in TestData</span></div>
+<div class="line"><span class="lineno">  585</span>    Array emptyTimes;</div>
+<div class="line"><span class="lineno">  586</span>    Array alphaEur(1), kappaEur(1), alphaUsd(1), kappaUsd(1);</div>
+<div class="line"><span class="lineno">  587</span>    alphaEur[0] = lgm_eur-&gt;parametrization()-&gt;hullWhiteSigma(1.0);</div>
+<div class="line"><span class="lineno">  588</span>    kappaEur[0] = lgm_eur-&gt;parametrization()-&gt;kappa(1.0);</div>
+<div class="line"><span class="lineno">  589</span>    alphaUsd[0] = lgm_usd-&gt;parametrization()-&gt;hullWhiteSigma(1.0);</div>
+<div class="line"><span class="lineno">  590</span>    kappaUsd[0] = lgm_usd-&gt;parametrization()-&gt;kappa(1.0);</div>
+<div class="line"><span class="lineno">  591</span>    <span class="keywordflow">if</span> (testCase.inBaseCcy)</div>
+<div class="line"><span class="lineno">  592</span>        param = boost::make_shared&lt;IrLgm1fPiecewiseConstantHullWhiteAdaptor&gt;(</div>
+<div class="line"><span class="lineno">  593</span>            EURCurrency(), simMarket-&gt;discountCurve(<span class="stringliteral">&quot;EUR&quot;</span>), emptyTimes, alphaEur, emptyTimes, kappaEur);</div>
+<div class="line"><span class="lineno">  594</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  595</span>        param = boost::make_shared&lt;IrLgm1fPiecewiseConstantHullWhiteAdaptor&gt;(</div>
-<div class="line"><span class="lineno">  596</span>            EURCurrency(), simMarket-&gt;discountCurve(<span class="stringliteral">&quot;EUR&quot;</span>), emptyTimes, alphaEur, emptyTimes, kappaEur);</div>
-<div class="line"><span class="lineno">  597</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  598</span>        param = boost::make_shared&lt;IrLgm1fPiecewiseConstantHullWhiteAdaptor&gt;(</div>
-<div class="line"><span class="lineno">  599</span>            USDCurrency(), simMarket-&gt;discountCurve(<span class="stringliteral">&quot;USD&quot;</span>), emptyTimes, alphaUsd, emptyTimes, kappaUsd);</div>
-<div class="line"><span class="lineno">  600</span>    boost::shared_ptr&lt;LinearGaussMarkovModel&gt; bermmodel = boost::make_shared&lt;LinearGaussMarkovModel&gt;(param);</div>
-<div class="line"><span class="lineno">  601</span> </div>
-<div class="line"><span class="lineno">  602</span>    <span class="comment">// apply horizon shift</span></div>
-<div class="line"><span class="lineno">  603</span>    <span class="comment">// for grid engine</span></div>
-<div class="line"><span class="lineno">  604</span>    param-&gt;shift() = -param-&gt;H(testCase.horizonShift);</div>
-<div class="line"><span class="lineno">  605</span>    <span class="comment">// for CAM and EUR AMC engine</span></div>
-<div class="line"><span class="lineno">  606</span>    boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_eur-&gt;parametrization())-&gt;shift() =</div>
-<div class="line"><span class="lineno">  607</span>        -boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_eur-&gt;parametrization())-&gt;H(testCase.horizonShift);</div>
-<div class="line"><span class="lineno">  608</span>    <span class="comment">// for USD AMC engine (in CAM no effect)</span></div>
-<div class="line"><span class="lineno">  609</span>    boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_usd-&gt;parametrization())-&gt;shift() =</div>
-<div class="line"><span class="lineno">  610</span>        -boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_usd-&gt;parametrization())-&gt;H(testCase.horizonShift);</div>
-<div class="line"><span class="lineno">  611</span> </div>
-<div class="line"><span class="lineno">  612</span>    <span class="comment">// grid engine</span></div>
-<div class="line"><span class="lineno">  613</span> </div>
-<div class="line"><span class="lineno">  614</span>    boost::shared_ptr&lt;PricingEngine&gt; engineGrid;</div>
-<div class="line"><span class="lineno">  615</span>    <span class="keywordflow">if</span> (testCase.isAmortising)</div>
-<div class="line"><span class="lineno">  616</span>        engineGrid = boost::make_shared&lt;NumericLgmNonstandardSwaptionEngine&gt;(bermmodel, Real(testCase.sx), testCase.nx,</div>
-<div class="line"><span class="lineno">  617</span>                                                                             Real(testCase.sx), testCase.nx);</div>
-<div class="line"><span class="lineno">  618</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  619</span>        engineGrid = boost::make_shared&lt;NumericLgmSwaptionEngine&gt;(bermmodel, Real(testCase.sx), testCase.nx,</div>
-<div class="line"><span class="lineno">  620</span>                                                                  Real(testCase.sx), testCase.nx);</div>
-<div class="line"><span class="lineno">  621</span> </div>
-<div class="line"><span class="lineno">  622</span>    <span class="comment">// mc engine</span></div>
-<div class="line"><span class="lineno">  623</span>    std::vector&lt;Size&gt; externalModelIndices = testCase.inBaseCcy ? std::vector&lt;Size&gt;{0} : std::vector&lt;Size&gt;{1};</div>
-<div class="line"><span class="lineno">  624</span>    boost::shared_ptr&lt;PricingEngine&gt; engineMc;</div>
-<div class="line"><span class="lineno">  625</span>    <span class="keywordflow">if</span> (testCase.isAmortising) {</div>
-<div class="line"><span class="lineno">  626</span>        engineMc = boost::make_shared&lt;McLgmNonstandardSwaptionEngine&gt;(</div>
-<div class="line"><span class="lineno">  627</span>            testCase.inBaseCcy ? lgm_eur : lgm_usd, MersenneTwisterAntithetic, SobolBrownianBridge,</div>
-<div class="line"><span class="lineno">  628</span>            testCase.trainingPaths, 0, 4711, 4712, 6, LsmBasisSystem::Monomial, SobolBrownianGenerator::Steps,</div>
-<div class="line"><span class="lineno">  629</span>            SobolRsg::JoeKuoD7, Handle&lt;YieldTermStructure&gt;(), grid-&gt;dates(), externalModelIndices);</div>
-<div class="line"><span class="lineno">  630</span>        swaption-&gt;setPricingEngine(engineMc);</div>
-<div class="line"><span class="lineno">  631</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  632</span>        engineMc = boost::make_shared&lt;McLgmSwaptionEngine&gt;(</div>
-<div class="line"><span class="lineno">  633</span>            testCase.inBaseCcy ? lgm_eur : lgm_usd, MersenneTwisterAntithetic, SobolBrownianBridge,</div>
-<div class="line"><span class="lineno">  634</span>            testCase.trainingPaths, 0, 4711, 4712, 6, LsmBasisSystem::Monomial, SobolBrownianGenerator::Steps,</div>
-<div class="line"><span class="lineno">  635</span>            SobolRsg::JoeKuoD7, Handle&lt;YieldTermStructure&gt;(), grid-&gt;dates(), externalModelIndices);</div>
-<div class="line"><span class="lineno">  636</span>        swaption-&gt;setPricingEngine(engineMc);</div>
-<div class="line"><span class="lineno">  637</span>    }</div>
-<div class="line"><span class="lineno">  638</span> </div>
-<div class="line"><span class="lineno">  639</span>    <span class="comment">// wrapper (long option)</span></div>
-<div class="line"><span class="lineno">  640</span> </div>
-<div class="line"><span class="lineno">  641</span>    boost::shared_ptr&lt;InstrumentWrapper&gt; wrapperGrid = boost::make_shared&lt;BermudanOptionWrapper&gt;(</div>
-<div class="line"><span class="lineno">  642</span>        swaption, vanillaswap ? <span class="keyword">false</span> : <span class="keyword">true</span>, exerciseDates, testCase.isPhysical, undInst);</div>
-<div class="line"><span class="lineno">  643</span>    wrapperGrid-&gt;initialise(grid-&gt;dates());</div>
-<div class="line"><span class="lineno">  644</span> </div>
-<div class="line"><span class="lineno">  645</span>    <span class="comment">// collect discounted epe</span></div>
-<div class="line"><span class="lineno">  646</span>    std::vector&lt;Real&gt; swaption_epe_grid(grid-&gt;dates().size(), 0.0);</div>
-<div class="line"><span class="lineno">  647</span>    std::vector&lt;Real&gt; swaption_epe_amc(grid-&gt;dates().size(), 0.0);</div>
-<div class="line"><span class="lineno">  648</span> </div>
-<div class="line"><span class="lineno">  649</span>    <span class="comment">// amc valuation</span></div>
-<div class="line"><span class="lineno">  650</span>    swaption-&gt;setPricingEngine(engineMc);</div>
-<div class="line"><span class="lineno">  651</span>    <span class="keyword">class </span>TestTrade : <span class="keyword">public</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_trade.html">Trade</a> {</div>
-<div class="line"><span class="lineno">  652</span>    <span class="keyword">public</span>:</div>
-<div class="line"><span class="lineno">  653</span>        TestTrade(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; tradeType, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; curr, <span class="keyword">const</span> boost::shared_ptr&lt;InstrumentWrapper&gt;&amp; inst)</div>
-<div class="line"><span class="lineno">  654</span>            : <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_trade.html">Trade</a>(tradeType) {</div>
-<div class="line"><span class="lineno">  655</span>            instrument_ = inst;</div>
-<div class="line"><span class="lineno">  656</span>            npvCurrency_ = curr;</div>
-<div class="line"><span class="lineno">  657</span>        }</div>
-<div class="line"><span class="lineno">  658</span>        <span class="keywordtype">void</span> <a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_trade.html#a7eae03123e9dd766ae5368ba681a7d8e">build</a>(<span class="keyword">const</span> boost::shared_ptr&lt;EngineFactory&gt;&amp;)<span class="keyword"> override </span>{}</div>
-<div class="line"><span class="lineno">  659</span>    };</div>
-<div class="line"><span class="lineno">  660</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_a_m_c_valuation_engine.html">AMCValuationEngine</a> amcValEngine(model, sgd, boost::shared_ptr&lt;Market&gt;(), std::vector&lt;string&gt;(),</div>
-<div class="line"><span class="lineno">  661</span>                                    std::vector&lt;string&gt;());</div>
-<div class="line"><span class="lineno">  662</span>    <span class="keyword">auto</span> trade = boost::make_shared&lt;TestTrade&gt;(<span class="stringliteral">&quot;BermudanSwaption&quot;</span>, testCase.inBaseCcy ? <span class="stringliteral">&quot;EUR&quot;</span> : <span class="stringliteral">&quot;USD&quot;</span>,</div>
-<div class="line"><span class="lineno">  663</span>                                               boost::make_shared&lt;VanillaInstrument&gt;(swaption));</div>
-<div class="line"><span class="lineno">  664</span>    trade-&gt;id() = <span class="stringliteral">&quot;DummyTradeId&quot;</span>;</div>
-<div class="line"><span class="lineno">  665</span>    <span class="keyword">auto</span> portfolio = boost::make_shared&lt;Portfolio&gt;();</div>
-<div class="line"><span class="lineno">  666</span>    portfolio-&gt;add(trade);</div>
-<div class="line"><span class="lineno">  667</span>    boost::shared_ptr&lt;NPVCube&gt; outputCube = boost::make_shared&lt;DoublePrecisionInMemoryCube&gt;(</div>
-<div class="line"><span class="lineno">  668</span>        referenceDate, std::set&lt;string&gt;{<span class="stringliteral">&quot;DummyTradeId&quot;</span>}, grid-&gt;dates(), testCase.samples);</div>
-<div class="line"><span class="lineno">  669</span>    boost::timer::cpu_timer timer;</div>
-<div class="line"><span class="lineno">  670</span>    amcValEngine.buildCube(portfolio, outputCube);</div>
-<div class="line"><span class="lineno">  671</span>    timer.stop();</div>
-<div class="line"><span class="lineno">  672</span>    Real amcTime = timer.elapsed().wall * 1e-9;</div>
-<div class="line"><span class="lineno">  673</span> </div>
-<div class="line"><span class="lineno">  674</span>    <span class="comment">// epe computation (this is divided by the number of samples below)</span></div>
-<div class="line"><span class="lineno">  675</span>    <span class="keywordflow">for</span> (Size j = 0; j &lt; grid-&gt;dates().size(); ++j) {</div>
-<div class="line"><span class="lineno">  676</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; testCase.samples; ++i) {</div>
-<div class="line"><span class="lineno">  677</span>            swaption_epe_amc[j] += std::max(outputCube-&gt;get(0, j, i, 0), 0.0);</div>
-<div class="line"><span class="lineno">  678</span>        }</div>
-<div class="line"><span class="lineno">  679</span>    }</div>
-<div class="line"><span class="lineno">  680</span> </div>
-<div class="line"><span class="lineno">  681</span>    Real fx = 1.0;</div>
-<div class="line"><span class="lineno">  682</span>    <span class="keywordflow">if</span> (!testCase.inBaseCcy)</div>
-<div class="line"><span class="lineno">  683</span>        fx = simMarket-&gt;fxRate(<span class="stringliteral">&quot;USDEUR&quot;</span>)-&gt;value();</div>
-<div class="line"><span class="lineno">  684</span> </div>
-<div class="line"><span class="lineno">  685</span>    Real amcNPV = outputCube-&gt;getT0(0, 0) / fx; <span class="comment">// convert back to USD, cube contains base ccy values</span></div>
-<div class="line"><span class="lineno">  686</span> </div>
-<div class="line"><span class="lineno">  687</span>    timer.start();</div>
-<div class="line"><span class="lineno">  688</span>    swaption-&gt;setPricingEngine(engineGrid);</div>
-<div class="line"><span class="lineno">  689</span>    Real gridNPV = swaption-&gt;NPV();</div>
-<div class="line"><span class="lineno">  690</span>    timer.stop();</div>
-<div class="line"><span class="lineno">  691</span>    Real gridTime0 = timer.elapsed().wall * 1e-9;</div>
-<div class="line"><span class="lineno">  692</span> </div>
-<div class="line"><span class="lineno">  693</span>    BOOST_CHECK_MESSAGE((std::abs(gridNPV - amcNPV) &lt;= testCase.tolerance),</div>
-<div class="line"><span class="lineno">  694</span>                        <span class="stringliteral">&quot;Can not verify gridNPV (&quot;</span> &lt;&lt; gridNPV &lt;&lt; <span class="stringliteral">&quot;) and amcNPV (&quot;</span> &lt;&lt; amcNPV &lt;&lt; <span class="stringliteral">&quot;)&quot;</span></div>
-<div class="line"><span class="lineno">  695</span>                                                   &lt;&lt; <span class="stringliteral">&quot;, difference is &quot;</span> &lt;&lt; gridNPV - amcNPV &lt;&lt; <span class="stringliteral">&quot;, tolerance is &quot;</span></div>
-<div class="line"><span class="lineno">  696</span>                                                   &lt;&lt; testCase.tolerance);</div>
-<div class="line"><span class="lineno">  697</span> </div>
-<div class="line"><span class="lineno">  698</span>    <span class="comment">// grid engine simulation (only if not cached, this takes a long time)</span></div>
-<div class="line"><span class="lineno">  699</span>    <span class="keywordflow">if</span> (useCachedResults) {</div>
-<div class="line"><span class="lineno">  700</span>        <span class="keywordflow">for</span> (Size t = 0; t &lt; grid-&gt;dates().size(); ++t) {</div>
-<div class="line"><span class="lineno">  701</span>            swaption_epe_grid.at(t) = testCase.cachedResults.at(t).at(1) * <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(testCase.samples);</div>
-<div class="line"><span class="lineno">  702</span>        }</div>
-<div class="line"><span class="lineno">  703</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  704</span>        Real updateTime = 0.0;</div>
-<div class="line"><span class="lineno">  705</span>        Real gridTime = 0.0;</div>
-<div class="line"><span class="lineno">  706</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;running &quot;</span> &lt;&lt; testCase.samples &lt;&lt; <span class="stringliteral">&quot; samples simulation over &quot;</span> &lt;&lt; grid-&gt;dates().size()</div>
-<div class="line"><span class="lineno">  707</span>                                      &lt;&lt; <span class="stringliteral">&quot; time steps&quot;</span>);</div>
-<div class="line"><span class="lineno">  708</span>        boost::shared_ptr&lt;IborIndex&gt; index =</div>
-<div class="line"><span class="lineno">  709</span>            *(testCase.inBaseCcy ? simMarket-&gt;iborIndex(<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>) : simMarket-&gt;iborIndex(<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>));</div>
-<div class="line"><span class="lineno">  710</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; testCase.samples; ++i) {</div>
-<div class="line"><span class="lineno">  711</span>            <span class="keywordflow">if</span> (i % 100 == 0)</div>
-<div class="line"><span class="lineno">  712</span>                BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Sample &quot;</span> &lt;&lt; i);</div>
-<div class="line"><span class="lineno">  713</span>            Size idx = 0, fixIdx = 0;</div>
-<div class="line"><span class="lineno">  714</span>            Size gridCnt = testCase.gridEvalEachNth;</div>
-<div class="line"><span class="lineno">  715</span>            <span class="keywordflow">for</span> (Date date : grid-&gt;dates()) {</div>
-<div class="line"><span class="lineno">  716</span>                timer.start();</div>
-<div class="line"><span class="lineno">  717</span>                <span class="comment">// if we use cached results, we do not need the sim market</span></div>
-<div class="line"><span class="lineno">  718</span>                simMarket-&gt;update(date);</div>
-<div class="line"><span class="lineno">  719</span>                <span class="comment">// set fixings</span></div>
-<div class="line"><span class="lineno">  720</span>                Real v = index-&gt;fixing(date);</div>
-<div class="line"><span class="lineno">  721</span>                <span class="keywordflow">while</span> (fixIdx &lt; fixingDates.size() &amp;&amp; fixingDates[fixIdx] &lt;= date) {</div>
-<div class="line"><span class="lineno">  722</span>                    index-&gt;addFixing(fixingDates[fixIdx], v);</div>
-<div class="line"><span class="lineno">  723</span>                    ++fixIdx;</div>
-<div class="line"><span class="lineno">  724</span>                }</div>
-<div class="line"><span class="lineno">  725</span>                <span class="comment">// we do not use the valuation engine, so in case updates are disabled we need to</span></div>
-<div class="line"><span class="lineno">  726</span>                <span class="comment">// take care of the instrument update ourselves</span></div>
-<div class="line"><span class="lineno">  727</span>                <span class="comment">// this is only relevant for the discrete sim market, not the model sim market</span></div>
-<div class="line"><span class="lineno">  728</span>                swaption-&gt;update();</div>
-<div class="line"><span class="lineno">  729</span>                <span class="keywordflow">if</span> (underlying)</div>
-<div class="line"><span class="lineno">  730</span>                    underlying-&gt;update();</div>
-<div class="line"><span class="lineno">  731</span>                <span class="keywordflow">if</span> (underlyingNs)</div>
-<div class="line"><span class="lineno">  732</span>                    underlyingNs-&gt;update();</div>
-<div class="line"><span class="lineno">  733</span>                <span class="keywordflow">if</span> (vanillaswap) {</div>
-<div class="line"><span class="lineno">  734</span>                    vanillaswap-&gt;update();</div>
-<div class="line"><span class="lineno">  735</span>                    vanillaswapshort-&gt;update();</div>
-<div class="line"><span class="lineno">  736</span>                }</div>
-<div class="line"><span class="lineno">  737</span>                <span class="keywordflow">if</span> (vanillaswapNs) {</div>
-<div class="line"><span class="lineno">  738</span>                    vanillaswapNs-&gt;update();</div>
-<div class="line"><span class="lineno">  739</span>                    vanillaswapshortNs-&gt;update();</div>
-<div class="line"><span class="lineno">  740</span>                }</div>
-<div class="line"><span class="lineno">  741</span>                timer.stop();</div>
-<div class="line"><span class="lineno">  742</span>                updateTime += timer.elapsed().wall * 1e-9;</div>
-<div class="line"><span class="lineno">  743</span>                Real numeraire = simMarket-&gt;numeraire();</div>
-<div class="line"><span class="lineno">  744</span>                Real fx = 1.0;</div>
-<div class="line"><span class="lineno">  745</span>                <span class="keywordflow">if</span> (!testCase.inBaseCcy)</div>
-<div class="line"><span class="lineno">  746</span>                    fx = simMarket-&gt;fxRate(<span class="stringliteral">&quot;USDEUR&quot;</span>)-&gt;value();</div>
-<div class="line"><span class="lineno">  747</span>                <span class="comment">// swaption epe accumulation</span></div>
-<div class="line"><span class="lineno">  748</span>                <span class="keywordflow">if</span> (--gridCnt == 0) {</div>
-<div class="line"><span class="lineno">  749</span>                    timer.start();</div>
-<div class="line"><span class="lineno">  750</span>                    swaption_epe_grid[idx] += std::max(wrapperGrid-&gt;NPV() * fx, 0.0) / numeraire;</div>
-<div class="line"><span class="lineno">  751</span>                    timer.stop();</div>
-<div class="line"><span class="lineno">  752</span>                    gridTime += timer.elapsed().wall * 1e-9;</div>
-<div class="line"><span class="lineno">  753</span>                    gridCnt = testCase.gridEvalEachNth;</div>
-<div class="line"><span class="lineno">  754</span>                }</div>
-<div class="line"><span class="lineno">  755</span>                idx++;</div>
-<div class="line"><span class="lineno">  756</span>            }</div>
-<div class="line"><span class="lineno">  757</span>            wrapperGrid-&gt;reset();</div>
-<div class="line"><span class="lineno">  758</span>            index-&gt;clearFixings();</div>
-<div class="line"><span class="lineno">  759</span>        }</div>
-<div class="line"><span class="lineno">  760</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Simulation time, grid &quot;</span> &lt;&lt; gridTime &lt;&lt; <span class="stringliteral">&quot;, updates &quot;</span> &lt;&lt; updateTime);</div>
-<div class="line"><span class="lineno">  761</span>    }</div>
-<div class="line"><span class="lineno">  762</span> </div>
-<div class="line"><span class="lineno">  763</span>    <span class="comment">// compute summary statistics for swaption and check results</span></div>
-<div class="line"><span class="lineno">  764</span>    <span class="keywordflow">if</span> (outputResults) {</div>
-<div class="line"><span class="lineno">  765</span>        std::clog &lt;&lt; <span class="stringliteral">&quot;time swaption_epe_grid swaption_epe_amc&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  766</span>    }</div>
-<div class="line"><span class="lineno">  767</span>    Size gridCnt = testCase.gridEvalEachNth;</div>
-<div class="line"><span class="lineno">  768</span>    Real maxSwaptionErr = 0.0;</div>
-<div class="line"><span class="lineno">  769</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; swaption_epe_grid.size(); ++i) {</div>
-<div class="line"><span class="lineno">  770</span>        Real t = grid-&gt;timeGrid()[i + 1];</div>
-<div class="line"><span class="lineno">  771</span>        swaption_epe_grid[i] /= testCase.samples;</div>
-<div class="line"><span class="lineno">  772</span>        swaption_epe_amc[i] /= testCase.samples;</div>
-<div class="line"><span class="lineno">  773</span>        <span class="keywordflow">if</span> (outputResults) {</div>
-<div class="line"><span class="lineno">  774</span>            <span class="keywordflow">if</span> (useCachedResults) {</div>
-<div class="line"><span class="lineno">  775</span>                <span class="comment">// output all results</span></div>
-<div class="line"><span class="lineno">  776</span>                std::clog &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; swaption_epe_grid[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; swaption_epe_amc[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  777</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  778</span>                <span class="comment">// output results in a format that makes it easy to insert them as cached results in the code above</span></div>
-<div class="line"><span class="lineno">  779</span>                std::clog &lt;&lt; <span class="stringliteral">&quot;{&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; swaption_epe_grid[i] &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  780</span>            }</div>
-<div class="line"><span class="lineno">  781</span>        }</div>
-<div class="line"><span class="lineno">  782</span>        <span class="keywordflow">if</span> (--gridCnt == 0) {</div>
-<div class="line"><span class="lineno">  783</span>            <span class="keywordflow">if</span> (!outputResults) {</div>
-<div class="line"><span class="lineno">  784</span>                BOOST_CHECK_MESSAGE((std::abs(swaption_epe_grid[i] - swaption_epe_amc[i]) &lt;= testCase.tolerance),</div>
-<div class="line"><span class="lineno">  785</span>                                    <span class="stringliteral">&quot;Can not verify swaption epe at grid point t=&quot;</span></div>
-<div class="line"><span class="lineno">  786</span>                                        &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;, grid = &quot;</span> &lt;&lt; swaption_epe_grid[i] &lt;&lt; <span class="stringliteral">&quot;, amc = &quot;</span> &lt;&lt; swaption_epe_amc[i]</div>
-<div class="line"><span class="lineno">  787</span>                                        &lt;&lt; <span class="stringliteral">&quot;, difference &quot;</span> &lt;&lt; (swaption_epe_grid[i] - swaption_epe_amc[i])</div>
-<div class="line"><span class="lineno">  788</span>                                        &lt;&lt; <span class="stringliteral">&quot;, tolerance &quot;</span> &lt;&lt; testCase.tolerance);</div>
-<div class="line"><span class="lineno">  789</span>            }</div>
-<div class="line"><span class="lineno">  790</span>            maxSwaptionErr = std::max(maxSwaptionErr, std::abs(swaption_epe_grid[i] - swaption_epe_amc[i]));</div>
-<div class="line"><span class="lineno">  791</span>            gridCnt = testCase.gridEvalEachNth;</div>
-<div class="line"><span class="lineno">  792</span>        }</div>
-<div class="line"><span class="lineno">  793</span>    }</div>
-<div class="line"><span class="lineno">  794</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;AMC simulation time = &quot;</span> &lt;&lt; amcTime &lt;&lt; <span class="stringliteral">&quot;s, T0 NPV (AMC) = &quot;</span> &lt;&lt; amcNPV</div>
-<div class="line"><span class="lineno">  795</span>                                                &lt;&lt; <span class="stringliteral">&quot;, T0 NPV (Grid) = &quot;</span> &lt;&lt; gridNPV &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; gridTime0 * 1000.0</div>
-<div class="line"><span class="lineno">  796</span>                                                &lt;&lt; <span class="stringliteral">&quot; ms), Max Error Swaption = &quot;</span> &lt;&lt; maxSwaptionErr);</div>
-<div class="line"><span class="lineno">  797</span> </div>
-<div class="line"><span class="lineno">  798</span>} <span class="comment">// testBermudanSwaptionExposure</span></div>
+<div class="line"><span class="lineno">  596</span>            USDCurrency(), simMarket-&gt;discountCurve(<span class="stringliteral">&quot;USD&quot;</span>), emptyTimes, alphaUsd, emptyTimes, kappaUsd);</div>
+<div class="line"><span class="lineno">  597</span>    boost::shared_ptr&lt;LinearGaussMarkovModel&gt; bermmodel = boost::make_shared&lt;LinearGaussMarkovModel&gt;(param);</div>
+<div class="line"><span class="lineno">  598</span> </div>
+<div class="line"><span class="lineno">  599</span>    <span class="comment">// apply horizon shift</span></div>
+<div class="line"><span class="lineno">  600</span>    <span class="comment">// for grid engine</span></div>
+<div class="line"><span class="lineno">  601</span>    param-&gt;shift() = -param-&gt;H(testCase.horizonShift);</div>
+<div class="line"><span class="lineno">  602</span>    <span class="comment">// for CAM and EUR AMC engine</span></div>
+<div class="line"><span class="lineno">  603</span>    boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_eur-&gt;parametrization())-&gt;shift() =</div>
+<div class="line"><span class="lineno">  604</span>        -boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_eur-&gt;parametrization())-&gt;H(testCase.horizonShift);</div>
+<div class="line"><span class="lineno">  605</span>    <span class="comment">// for USD AMC engine (in CAM no effect)</span></div>
+<div class="line"><span class="lineno">  606</span>    boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_usd-&gt;parametrization())-&gt;shift() =</div>
+<div class="line"><span class="lineno">  607</span>        -boost::static_pointer_cast&lt;IrLgm1fParametrization&gt;(lgm_usd-&gt;parametrization())-&gt;H(testCase.horizonShift);</div>
+<div class="line"><span class="lineno">  608</span> </div>
+<div class="line"><span class="lineno">  609</span>    <span class="comment">// grid engine</span></div>
+<div class="line"><span class="lineno">  610</span> </div>
+<div class="line"><span class="lineno">  611</span>    boost::shared_ptr&lt;PricingEngine&gt; engineGrid;</div>
+<div class="line"><span class="lineno">  612</span>    <span class="keywordflow">if</span> (testCase.isAmortising)</div>
+<div class="line"><span class="lineno">  613</span>        engineGrid = boost::make_shared&lt;NumericLgmNonstandardSwaptionEngine&gt;(bermmodel, Real(testCase.sx), testCase.nx,</div>
+<div class="line"><span class="lineno">  614</span>                                                                             Real(testCase.sx), testCase.nx);</div>
+<div class="line"><span class="lineno">  615</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  616</span>        engineGrid = boost::make_shared&lt;NumericLgmSwaptionEngine&gt;(bermmodel, Real(testCase.sx), testCase.nx,</div>
+<div class="line"><span class="lineno">  617</span>                                                                  Real(testCase.sx), testCase.nx);</div>
+<div class="line"><span class="lineno">  618</span> </div>
+<div class="line"><span class="lineno">  619</span>    <span class="comment">// mc engine</span></div>
+<div class="line"><span class="lineno">  620</span>    std::vector&lt;Size&gt; externalModelIndices = testCase.inBaseCcy ? std::vector&lt;Size&gt;{0} : std::vector&lt;Size&gt;{1};</div>
+<div class="line"><span class="lineno">  621</span>    boost::shared_ptr&lt;PricingEngine&gt; engineMc;</div>
+<div class="line"><span class="lineno">  622</span>    <span class="keywordflow">if</span> (testCase.isAmortising) {</div>
+<div class="line"><span class="lineno">  623</span>        engineMc = boost::make_shared&lt;McLgmNonstandardSwaptionEngine&gt;(</div>
+<div class="line"><span class="lineno">  624</span>            testCase.inBaseCcy ? lgm_eur : lgm_usd, MersenneTwisterAntithetic, SobolBrownianBridge,</div>
+<div class="line"><span class="lineno">  625</span>            testCase.trainingPaths, 0, 4711, 4712, 6, LsmBasisSystem::Monomial, SobolBrownianGenerator::Steps,</div>
+<div class="line"><span class="lineno">  626</span>            SobolRsg::JoeKuoD7, Handle&lt;YieldTermStructure&gt;(), grid-&gt;dates(), externalModelIndices);</div>
+<div class="line"><span class="lineno">  627</span>        swaption-&gt;setPricingEngine(engineMc);</div>
+<div class="line"><span class="lineno">  628</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  629</span>        engineMc = boost::make_shared&lt;McLgmSwaptionEngine&gt;(</div>
+<div class="line"><span class="lineno">  630</span>            testCase.inBaseCcy ? lgm_eur : lgm_usd, MersenneTwisterAntithetic, SobolBrownianBridge,</div>
+<div class="line"><span class="lineno">  631</span>            testCase.trainingPaths, 0, 4711, 4712, 6, LsmBasisSystem::Monomial, SobolBrownianGenerator::Steps,</div>
+<div class="line"><span class="lineno">  632</span>            SobolRsg::JoeKuoD7, Handle&lt;YieldTermStructure&gt;(), grid-&gt;dates(), externalModelIndices);</div>
+<div class="line"><span class="lineno">  633</span>        swaption-&gt;setPricingEngine(engineMc);</div>
+<div class="line"><span class="lineno">  634</span>    }</div>
+<div class="line"><span class="lineno">  635</span> </div>
+<div class="line"><span class="lineno">  636</span>    <span class="comment">// wrapper (long option)</span></div>
+<div class="line"><span class="lineno">  637</span> </div>
+<div class="line"><span class="lineno">  638</span>    boost::shared_ptr&lt;InstrumentWrapper&gt; wrapperGrid = boost::make_shared&lt;BermudanOptionWrapper&gt;(</div>
+<div class="line"><span class="lineno">  639</span>        swaption, vanillaswap ? <span class="keyword">false</span> : <span class="keyword">true</span>, exerciseDates, testCase.isPhysical, undInst);</div>
+<div class="line"><span class="lineno">  640</span>    wrapperGrid-&gt;initialise(grid-&gt;dates());</div>
+<div class="line"><span class="lineno">  641</span> </div>
+<div class="line"><span class="lineno">  642</span>    <span class="comment">// collect discounted epe</span></div>
+<div class="line"><span class="lineno">  643</span>    std::vector&lt;Real&gt; swaption_epe_grid(grid-&gt;dates().size(), 0.0);</div>
+<div class="line"><span class="lineno">  644</span>    std::vector&lt;Real&gt; swaption_epe_amc(grid-&gt;dates().size(), 0.0);</div>
+<div class="line"><span class="lineno">  645</span> </div>
+<div class="line"><span class="lineno">  646</span>    <span class="comment">// amc valuation</span></div>
+<div class="line"><span class="lineno">  647</span>    swaption-&gt;setPricingEngine(engineMc);</div>
+<div class="line"><span class="lineno">  648</span>    <span class="keyword">class </span>TestTrade : <span class="keyword">public</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_trade.html">Trade</a> {</div>
+<div class="line"><span class="lineno">  649</span>    <span class="keyword">public</span>:</div>
+<div class="line"><span class="lineno">  650</span>        TestTrade(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; tradeType, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; curr, <span class="keyword">const</span> boost::shared_ptr&lt;InstrumentWrapper&gt;&amp; inst)</div>
+<div class="line"><span class="lineno">  651</span>            : <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_trade.html">Trade</a>(tradeType) {</div>
+<div class="line"><span class="lineno">  652</span>            instrument_ = inst;</div>
+<div class="line"><span class="lineno">  653</span>            npvCurrency_ = curr;</div>
+<div class="line"><span class="lineno">  654</span>        }</div>
+<div class="line"><span class="lineno">  655</span>        <span class="keywordtype">void</span> <a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_trade.html#a7eae03123e9dd766ae5368ba681a7d8e">build</a>(<span class="keyword">const</span> boost::shared_ptr&lt;EngineFactory&gt;&amp;)<span class="keyword"> override </span>{}</div>
+<div class="line"><span class="lineno">  656</span>    };</div>
+<div class="line"><span class="lineno">  657</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_a_m_c_valuation_engine.html">AMCValuationEngine</a> amcValEngine(model, sgd, boost::shared_ptr&lt;Market&gt;(), std::vector&lt;string&gt;(),</div>
+<div class="line"><span class="lineno">  658</span>                                    std::vector&lt;string&gt;(), 0);</div>
+<div class="line"><span class="lineno">  659</span>    <span class="keyword">auto</span> trade = boost::make_shared&lt;TestTrade&gt;(<span class="stringliteral">&quot;BermudanSwaption&quot;</span>, testCase.inBaseCcy ? <span class="stringliteral">&quot;EUR&quot;</span> : <span class="stringliteral">&quot;USD&quot;</span>,</div>
+<div class="line"><span class="lineno">  660</span>                                               boost::make_shared&lt;VanillaInstrument&gt;(swaption));</div>
+<div class="line"><span class="lineno">  661</span>    trade-&gt;id() = <span class="stringliteral">&quot;DummyTradeId&quot;</span>;</div>
+<div class="line"><span class="lineno">  662</span>    <span class="keyword">auto</span> portfolio = boost::make_shared&lt;Portfolio&gt;();</div>
+<div class="line"><span class="lineno">  663</span>    portfolio-&gt;add(trade);</div>
+<div class="line"><span class="lineno">  664</span>    boost::shared_ptr&lt;NPVCube&gt; outputCube = boost::make_shared&lt;DoublePrecisionInMemoryCube&gt;(</div>
+<div class="line"><span class="lineno">  665</span>        referenceDate, std::set&lt;string&gt;{<span class="stringliteral">&quot;DummyTradeId&quot;</span>}, grid-&gt;dates(), testCase.samples);</div>
+<div class="line"><span class="lineno">  666</span>    boost::timer::cpu_timer timer;</div>
+<div class="line"><span class="lineno">  667</span>    amcValEngine.buildCube(portfolio, outputCube);</div>
+<div class="line"><span class="lineno">  668</span>    timer.stop();</div>
+<div class="line"><span class="lineno">  669</span>    Real amcTime = timer.elapsed().wall * 1e-9;</div>
+<div class="line"><span class="lineno">  670</span> </div>
+<div class="line"><span class="lineno">  671</span>    <span class="comment">// epe computation (this is divided by the number of samples below)</span></div>
+<div class="line"><span class="lineno">  672</span>    <span class="keywordflow">for</span> (Size j = 0; j &lt; grid-&gt;dates().size(); ++j) {</div>
+<div class="line"><span class="lineno">  673</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; testCase.samples; ++i) {</div>
+<div class="line"><span class="lineno">  674</span>            swaption_epe_amc[j] += std::max(outputCube-&gt;get(0, j, i, 0), 0.0);</div>
+<div class="line"><span class="lineno">  675</span>        }</div>
+<div class="line"><span class="lineno">  676</span>    }</div>
+<div class="line"><span class="lineno">  677</span> </div>
+<div class="line"><span class="lineno">  678</span>    Real fx = 1.0;</div>
+<div class="line"><span class="lineno">  679</span>    <span class="keywordflow">if</span> (!testCase.inBaseCcy)</div>
+<div class="line"><span class="lineno">  680</span>        fx = simMarket-&gt;fxRate(<span class="stringliteral">&quot;USDEUR&quot;</span>)-&gt;value();</div>
+<div class="line"><span class="lineno">  681</span> </div>
+<div class="line"><span class="lineno">  682</span>    Real amcNPV = outputCube-&gt;getT0(0, 0) / fx; <span class="comment">// convert back to USD, cube contains base ccy values</span></div>
+<div class="line"><span class="lineno">  683</span> </div>
+<div class="line"><span class="lineno">  684</span>    timer.start();</div>
+<div class="line"><span class="lineno">  685</span>    swaption-&gt;setPricingEngine(engineGrid);</div>
+<div class="line"><span class="lineno">  686</span>    Real gridNPV = swaption-&gt;NPV();</div>
+<div class="line"><span class="lineno">  687</span>    timer.stop();</div>
+<div class="line"><span class="lineno">  688</span>    Real gridTime0 = timer.elapsed().wall * 1e-9;</div>
+<div class="line"><span class="lineno">  689</span> </div>
+<div class="line"><span class="lineno">  690</span>    BOOST_CHECK_MESSAGE((std::abs(gridNPV - amcNPV) &lt;= testCase.tolerance),</div>
+<div class="line"><span class="lineno">  691</span>                        <span class="stringliteral">&quot;Can not verify gridNPV (&quot;</span> &lt;&lt; gridNPV &lt;&lt; <span class="stringliteral">&quot;) and amcNPV (&quot;</span> &lt;&lt; amcNPV &lt;&lt; <span class="stringliteral">&quot;)&quot;</span></div>
+<div class="line"><span class="lineno">  692</span>                                                   &lt;&lt; <span class="stringliteral">&quot;, difference is &quot;</span> &lt;&lt; gridNPV - amcNPV &lt;&lt; <span class="stringliteral">&quot;, tolerance is &quot;</span></div>
+<div class="line"><span class="lineno">  693</span>                                                   &lt;&lt; testCase.tolerance);</div>
+<div class="line"><span class="lineno">  694</span> </div>
+<div class="line"><span class="lineno">  695</span>    <span class="comment">// grid engine simulation (only if not cached, this takes a long time)</span></div>
+<div class="line"><span class="lineno">  696</span>    <span class="keywordflow">if</span> (useCachedResults) {</div>
+<div class="line"><span class="lineno">  697</span>        <span class="keywordflow">for</span> (Size t = 0; t &lt; grid-&gt;dates().size(); ++t) {</div>
+<div class="line"><span class="lineno">  698</span>            swaption_epe_grid.at(t) = testCase.cachedResults.at(t).at(1) * <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(testCase.samples);</div>
+<div class="line"><span class="lineno">  699</span>        }</div>
+<div class="line"><span class="lineno">  700</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  701</span>        Real updateTime = 0.0;</div>
+<div class="line"><span class="lineno">  702</span>        Real gridTime = 0.0;</div>
+<div class="line"><span class="lineno">  703</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;running &quot;</span> &lt;&lt; testCase.samples &lt;&lt; <span class="stringliteral">&quot; samples simulation over &quot;</span> &lt;&lt; grid-&gt;dates().size()</div>
+<div class="line"><span class="lineno">  704</span>                                      &lt;&lt; <span class="stringliteral">&quot; time steps&quot;</span>);</div>
+<div class="line"><span class="lineno">  705</span>        boost::shared_ptr&lt;IborIndex&gt; index =</div>
+<div class="line"><span class="lineno">  706</span>            *(testCase.inBaseCcy ? simMarket-&gt;iborIndex(<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>) : simMarket-&gt;iborIndex(<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>));</div>
+<div class="line"><span class="lineno">  707</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; testCase.samples; ++i) {</div>
+<div class="line"><span class="lineno">  708</span>            <span class="keywordflow">if</span> (i % 100 == 0)</div>
+<div class="line"><span class="lineno">  709</span>                BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Sample &quot;</span> &lt;&lt; i);</div>
+<div class="line"><span class="lineno">  710</span>            Size idx = 0, fixIdx = 0;</div>
+<div class="line"><span class="lineno">  711</span>            Size gridCnt = testCase.gridEvalEachNth;</div>
+<div class="line"><span class="lineno">  712</span>            <span class="keywordflow">for</span> (Date date : grid-&gt;dates()) {</div>
+<div class="line"><span class="lineno">  713</span>                timer.start();</div>
+<div class="line"><span class="lineno">  714</span>                <span class="comment">// if we use cached results, we do not need the sim market</span></div>
+<div class="line"><span class="lineno">  715</span>                simMarket-&gt;update(date);</div>
+<div class="line"><span class="lineno">  716</span>                <span class="comment">// set fixings</span></div>
+<div class="line"><span class="lineno">  717</span>                Real v = index-&gt;fixing(date);</div>
+<div class="line"><span class="lineno">  718</span>                <span class="keywordflow">while</span> (fixIdx &lt; fixingDates.size() &amp;&amp; fixingDates[fixIdx] &lt;= date) {</div>
+<div class="line"><span class="lineno">  719</span>                    index-&gt;addFixing(fixingDates[fixIdx], v);</div>
+<div class="line"><span class="lineno">  720</span>                    ++fixIdx;</div>
+<div class="line"><span class="lineno">  721</span>                }</div>
+<div class="line"><span class="lineno">  722</span>                <span class="comment">// we do not use the valuation engine, so in case updates are disabled we need to</span></div>
+<div class="line"><span class="lineno">  723</span>                <span class="comment">// take care of the instrument update ourselves</span></div>
+<div class="line"><span class="lineno">  724</span>                <span class="comment">// this is only relevant for the discrete sim market, not the model sim market</span></div>
+<div class="line"><span class="lineno">  725</span>                swaption-&gt;update();</div>
+<div class="line"><span class="lineno">  726</span>                <span class="keywordflow">if</span> (underlying)</div>
+<div class="line"><span class="lineno">  727</span>                    underlying-&gt;update();</div>
+<div class="line"><span class="lineno">  728</span>                <span class="keywordflow">if</span> (underlyingNs)</div>
+<div class="line"><span class="lineno">  729</span>                    underlyingNs-&gt;update();</div>
+<div class="line"><span class="lineno">  730</span>                <span class="keywordflow">if</span> (vanillaswap) {</div>
+<div class="line"><span class="lineno">  731</span>                    vanillaswap-&gt;update();</div>
+<div class="line"><span class="lineno">  732</span>                    vanillaswapshort-&gt;update();</div>
+<div class="line"><span class="lineno">  733</span>                }</div>
+<div class="line"><span class="lineno">  734</span>                <span class="keywordflow">if</span> (vanillaswapNs) {</div>
+<div class="line"><span class="lineno">  735</span>                    vanillaswapNs-&gt;update();</div>
+<div class="line"><span class="lineno">  736</span>                    vanillaswapshortNs-&gt;update();</div>
+<div class="line"><span class="lineno">  737</span>                }</div>
+<div class="line"><span class="lineno">  738</span>                timer.stop();</div>
+<div class="line"><span class="lineno">  739</span>                updateTime += timer.elapsed().wall * 1e-9;</div>
+<div class="line"><span class="lineno">  740</span>                Real numeraire = simMarket-&gt;numeraire();</div>
+<div class="line"><span class="lineno">  741</span>                Real fx = 1.0;</div>
+<div class="line"><span class="lineno">  742</span>                <span class="keywordflow">if</span> (!testCase.inBaseCcy)</div>
+<div class="line"><span class="lineno">  743</span>                    fx = simMarket-&gt;fxRate(<span class="stringliteral">&quot;USDEUR&quot;</span>)-&gt;value();</div>
+<div class="line"><span class="lineno">  744</span>                <span class="comment">// swaption epe accumulation</span></div>
+<div class="line"><span class="lineno">  745</span>                <span class="keywordflow">if</span> (--gridCnt == 0) {</div>
+<div class="line"><span class="lineno">  746</span>                    timer.start();</div>
+<div class="line"><span class="lineno">  747</span>                    swaption_epe_grid[idx] += std::max(wrapperGrid-&gt;NPV() * fx, 0.0) / numeraire;</div>
+<div class="line"><span class="lineno">  748</span>                    timer.stop();</div>
+<div class="line"><span class="lineno">  749</span>                    gridTime += timer.elapsed().wall * 1e-9;</div>
+<div class="line"><span class="lineno">  750</span>                    gridCnt = testCase.gridEvalEachNth;</div>
+<div class="line"><span class="lineno">  751</span>                }</div>
+<div class="line"><span class="lineno">  752</span>                idx++;</div>
+<div class="line"><span class="lineno">  753</span>            }</div>
+<div class="line"><span class="lineno">  754</span>            wrapperGrid-&gt;reset();</div>
+<div class="line"><span class="lineno">  755</span>            index-&gt;clearFixings();</div>
+<div class="line"><span class="lineno">  756</span>        }</div>
+<div class="line"><span class="lineno">  757</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Simulation time, grid &quot;</span> &lt;&lt; gridTime &lt;&lt; <span class="stringliteral">&quot;, updates &quot;</span> &lt;&lt; updateTime);</div>
+<div class="line"><span class="lineno">  758</span>    }</div>
+<div class="line"><span class="lineno">  759</span> </div>
+<div class="line"><span class="lineno">  760</span>    <span class="comment">// compute summary statistics for swaption and check results</span></div>
+<div class="line"><span class="lineno">  761</span>    <span class="keywordflow">if</span> (outputResults) {</div>
+<div class="line"><span class="lineno">  762</span>        std::clog &lt;&lt; <span class="stringliteral">&quot;time swaption_epe_grid swaption_epe_amc&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  763</span>    }</div>
+<div class="line"><span class="lineno">  764</span>    Size gridCnt = testCase.gridEvalEachNth;</div>
+<div class="line"><span class="lineno">  765</span>    Real maxSwaptionErr = 0.0;</div>
+<div class="line"><span class="lineno">  766</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; swaption_epe_grid.size(); ++i) {</div>
+<div class="line"><span class="lineno">  767</span>        Real t = grid-&gt;timeGrid()[i + 1];</div>
+<div class="line"><span class="lineno">  768</span>        swaption_epe_grid[i] /= testCase.samples;</div>
+<div class="line"><span class="lineno">  769</span>        swaption_epe_amc[i] /= testCase.samples;</div>
+<div class="line"><span class="lineno">  770</span>        <span class="keywordflow">if</span> (outputResults) {</div>
+<div class="line"><span class="lineno">  771</span>            <span class="keywordflow">if</span> (useCachedResults) {</div>
+<div class="line"><span class="lineno">  772</span>                <span class="comment">// output all results</span></div>
+<div class="line"><span class="lineno">  773</span>                std::clog &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; swaption_epe_grid[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; swaption_epe_amc[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  774</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  775</span>                <span class="comment">// output results in a format that makes it easy to insert them as cached results in the code above</span></div>
+<div class="line"><span class="lineno">  776</span>                std::clog &lt;&lt; <span class="stringliteral">&quot;{&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; swaption_epe_grid[i] &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  777</span>            }</div>
+<div class="line"><span class="lineno">  778</span>        }</div>
+<div class="line"><span class="lineno">  779</span>        <span class="keywordflow">if</span> (--gridCnt == 0) {</div>
+<div class="line"><span class="lineno">  780</span>            <span class="keywordflow">if</span> (!outputResults) {</div>
+<div class="line"><span class="lineno">  781</span>                BOOST_CHECK_MESSAGE((std::abs(swaption_epe_grid[i] - swaption_epe_amc[i]) &lt;= testCase.tolerance),</div>
+<div class="line"><span class="lineno">  782</span>                                    <span class="stringliteral">&quot;Can not verify swaption epe at grid point t=&quot;</span></div>
+<div class="line"><span class="lineno">  783</span>                                        &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;, grid = &quot;</span> &lt;&lt; swaption_epe_grid[i] &lt;&lt; <span class="stringliteral">&quot;, amc = &quot;</span> &lt;&lt; swaption_epe_amc[i]</div>
+<div class="line"><span class="lineno">  784</span>                                        &lt;&lt; <span class="stringliteral">&quot;, difference &quot;</span> &lt;&lt; (swaption_epe_grid[i] - swaption_epe_amc[i])</div>
+<div class="line"><span class="lineno">  785</span>                                        &lt;&lt; <span class="stringliteral">&quot;, tolerance &quot;</span> &lt;&lt; testCase.tolerance);</div>
+<div class="line"><span class="lineno">  786</span>            }</div>
+<div class="line"><span class="lineno">  787</span>            maxSwaptionErr = std::max(maxSwaptionErr, std::abs(swaption_epe_grid[i] - swaption_epe_amc[i]));</div>
+<div class="line"><span class="lineno">  788</span>            gridCnt = testCase.gridEvalEachNth;</div>
+<div class="line"><span class="lineno">  789</span>        }</div>
+<div class="line"><span class="lineno">  790</span>    }</div>
+<div class="line"><span class="lineno">  791</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;AMC simulation time = &quot;</span> &lt;&lt; amcTime &lt;&lt; <span class="stringliteral">&quot;s, T0 NPV (AMC) = &quot;</span> &lt;&lt; amcNPV</div>
+<div class="line"><span class="lineno">  792</span>                                                &lt;&lt; <span class="stringliteral">&quot;, T0 NPV (Grid) = &quot;</span> &lt;&lt; gridNPV &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; gridTime0 * 1000.0</div>
+<div class="line"><span class="lineno">  793</span>                                                &lt;&lt; <span class="stringliteral">&quot; ms), Max Error Swaption = &quot;</span> &lt;&lt; maxSwaptionErr);</div>
+<div class="line"><span class="lineno">  794</span> </div>
+<div class="line"><span class="lineno">  795</span>} <span class="comment">// testBermudanSwaptionExposure</span></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_a_m_c_valuation_engine_html"><div class="ttname"><a href="classore_1_1analytics_1_1_a_m_c_valuation_engine.html">ore::analytics::AMCValuationEngine</a></div><div class="ttdoc">AMC Valuation Engine.</div><div class="ttdef"><b>Definition:</b> <a href="amcvaluationengine_8hpp_source.html#l00042">amcvaluationengine.hpp:42</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_generator_builder_html"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_generator_builder.html">ore::analytics::ScenarioGeneratorBuilder</a></div><div class="ttdoc">Build a ScenarioGenerator.</div><div class="ttdef"><b>Definition:</b> <a href="scenariogeneratorbuilder_8hpp_source.html#l00054">scenariogeneratorbuilder.hpp:54</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_generator_data_html"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_generator_data.html">ore::analytics::ScenarioGeneratorData</a></div><div class="ttdoc">Scenario Generator description.</div><div class="ttdef"><b>Definition:</b> <a href="scenariogeneratordata_8hpp_source.html#l00052">scenariogeneratordata.hpp:52</a></div></div>

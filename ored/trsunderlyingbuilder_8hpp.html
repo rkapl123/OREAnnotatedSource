@@ -79,7 +79,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">trsunderlyingbuilder.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -87,6 +88,8 @@ $(function() {
 <code>#include &lt;<a class="el" href="simmcreditqualifiermapping_8hpp_source.html">ored/portfolio/simmcreditqualifiermapping.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="equityposition_8hpp_source.html">ored/portfolio/equityposition.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="commodityposition_8hpp_source.html">ored/portfolio/commodityposition.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="bondindexbuilder_8hpp_source.html">ored/utilities/bondindexbuilder.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/cashflows/trscashflow.hpp&gt;</code><br />
 </div>
 <p><a href="trsunderlyingbuilder_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -123,6 +126,13 @@ Typedefs</h2></td></tr>
 <tr class="separator:a9eae8ac800ba46d1de4c95185f9a95cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846faeef61365801a4e8b9f53000028b"><td class="memItemLeft" align="right" valign="top">typedef AssetPositionTrsUnderlyingBuilder&lt; <a class="el" href="classore_1_1data_1_1_commodity_position.html">ore::data::CommodityPosition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a846faeef61365801a4e8b9f53000028b">CommodityPositionTrsUnderlyingBuilder</a></td></tr>
 <tr class="separator:a846faeef61365801a4e8b9f53000028b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a918b05e5e3264b9adb7cf7cbdf82c6fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a918b05e5e3264b9adb7cf7cbdf82c6fb">modifyBondTRSLeg</a> (QuantLib::Leg &amp;leg, QuantLib::Date issueDate)</td></tr>
+<tr class="separator:a918b05e5e3264b9adb7cf7cbdf82c6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad01bd7d83cd5ba5e8c1bdcd63009c62f"><td class="memItemLeft" align="right" valign="top">Leg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#ad01bd7d83cd5ba5e8c1bdcd63009c62f">makeBondTRSLeg</a> (const std::vector&lt; Date &gt; &amp;valuationDates, const std::vector&lt; Date &gt; &amp;paymentDates, const BondIndexBuilder &amp;bondIndexBuilder, QuantLib::Real initialPrice=QuantLib::Null&lt; QuantLib::Real &gt;(), QuantLib::ext::shared_ptr&lt; <a class="elRef" href="../qle/class_quant_ext_1_1_fx_index.html">QuantExt::FxIndex</a> &gt; fxIndex=nullptr)</td></tr>
+<tr class="separator:ad01bd7d83cd5ba5e8c1bdcd63009c62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

@@ -80,6 +80,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">log.hpp File Reference<div class="ingroups"><a class="el" href="group__utilities.html">Utilities</a></div></div></div>
 </div><!--header-->
@@ -92,6 +94,15 @@ $(function() {
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;boost/algorithm/string.hpp&gt;</code><br />
+<code>#include &lt;boost/log/attributes/mutable_constant.hpp&gt;</code><br />
+<code>#include &lt;boost/log/utility/manipulators/add_value.hpp&gt;</code><br />
+<code>#include &lt;boost/log/attributes.hpp&gt;</code><br />
+<code>#include &lt;boost/log/expressions.hpp&gt;</code><br />
+<code>#include &lt;boost/log/expressions/formatters/date_time.hpp&gt;</code><br />
+<code>#include &lt;boost/log/sinks.hpp&gt;</code><br />
+<code>#include &lt;boost/log/sources/global_logger_storage.hpp&gt;</code><br />
+<code>#include &lt;boost/log/sources/record_ostream.hpp&gt;</code><br />
+<code>#include &lt;boost/log/sources/severity_logger.hpp&gt;</code><br />
 <code>#include &lt;boost/filesystem.hpp&gt;</code><br />
 <code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -122,17 +133,28 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_buffer_logger.html">BufferLogger</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classore_1_1data_1_1_buffer_logger.html" title="BufferLogger.">BufferLogger</a>.  <a href="classore_1_1data_1_1_buffer_logger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_independent_logger.html">IndependentLogger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base <a class="el" href="classore_1_1data_1_1_log.html" title="Global static Log class.">Log</a> handler class that utilises Boost logging to create log sinks.  <a href="classore_1_1data_1_1_independent_logger.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_progress_logger.html">ProgressLogger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_structured_logger.html">StructuredLogger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_log.html">Log</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global static <a class="el" href="classore_1_1data_1_1_log.html" title="Global static Log class.">Log</a> class.  <a href="classore_1_1data_1_1_log.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_logger_stream.html">LoggerStream</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classore_1_1data_1_1_logger_stream.html" title="LoggerStream class that is a std::ostream replacement that will log each line.">LoggerStream</a> class that is a std::ostream replacement that will log each line.  <a href="classore_1_1data_1_1_logger_stream.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_j_s_o_n_message.html">JSONMessage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_structured_message.html">StructuredMessage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_structured_logging_error_message.html">StructuredLoggingErrorMessage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_event_message.html">EventMessage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_progress_message.html">ProgressMessage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_console_log.html">ConsoleLog</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton to control console logging.  <a href="classore_1_1data_1_1_console_log.html#details">More...</a><br /></td></tr>
@@ -166,28 +188,28 @@ Macros</h2></td></tr>
 <tr class="separator:a7920e5b0d1d614a135374d8d1b075105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bb7fbadda66b3cc6af671ec86b11568"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(mask,  text)</td></tr>
 <tr class="separator:a8bb7fbadda66b3cc6af671ec86b11568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35cb05f674d9e764ca12cff351b064f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#afa24ba35e425ef45a72bb39ebbd81efa">ORE_ALERT</a>, text);</td></tr>
+<tr class="memitem:a35cb05f674d9e764ca12cff351b064f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de">oreSeverity::alert</a>, text);</td></tr>
 <tr class="memdesc:a35cb05f674d9e764ca12cff351b064f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging Macro (Level = Alert)  <a href="log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">More...</a><br /></td></tr>
 <tr class="separator:a35cb05f674d9e764ca12cff351b064f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b03dabac6eaa837b94e8dbd01c4b84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a45b03dabac6eaa837b94e8dbd01c4b84">CLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a774f604dd85577bd2e7ede6a7e7f76e4">ORE_CRITICAL</a>, text)</td></tr>
+<tr class="memitem:a45b03dabac6eaa837b94e8dbd01c4b84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a45b03dabac6eaa837b94e8dbd01c4b84">CLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d">oreSeverity::critical</a>, text)</td></tr>
 <tr class="memdesc:a45b03dabac6eaa837b94e8dbd01c4b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging Macro (Level = Critical)  <a href="log_8hpp.html#a45b03dabac6eaa837b94e8dbd01c4b84">More...</a><br /></td></tr>
 <tr class="separator:a45b03dabac6eaa837b94e8dbd01c4b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162fbfad7c960fdab84f7ff46f0c413c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a162fbfad7c960fdab84f7ff46f0c413c">ELOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#ac295f40c5d23a58012eb2b1cabac8425">ORE_ERROR</a>, text)</td></tr>
+<tr class="memitem:a162fbfad7c960fdab84f7ff46f0c413c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a162fbfad7c960fdab84f7ff46f0c413c">ELOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="model_2utilities_8cpp.html#ae00ecbfbe7c0f2b69c514b9e70fe8c04">oreSeverity::error</a>, text)</td></tr>
 <tr class="memdesc:a162fbfad7c960fdab84f7ff46f0c413c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging Macro (Level = Error)  <a href="log_8hpp.html#a162fbfad7c960fdab84f7ff46f0c413c">More...</a><br /></td></tr>
 <tr class="separator:a162fbfad7c960fdab84f7ff46f0c413c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9622ca943201e814041f051b7a10b3ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d">ORE_WARNING</a>, text)</td></tr>
+<tr class="memitem:a9622ca943201e814041f051b7a10b3ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492">oreSeverity::warning</a>, text)</td></tr>
 <tr class="memdesc:a9622ca943201e814041f051b7a10b3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging Macro (Level = Warning)  <a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">More...</a><br /></td></tr>
 <tr class="separator:a9622ca943201e814041f051b7a10b3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a158e0f085ddedfe5c8ed069986039f50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#aab273ded9acf83717d0243f1e54766df">ORE_NOTICE</a>, text)</td></tr>
+<tr class="memitem:a158e0f085ddedfe5c8ed069986039f50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d">oreSeverity::notice</a>, text)</td></tr>
 <tr class="memdesc:a158e0f085ddedfe5c8ed069986039f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging Macro (Level = Notice)  <a href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">More...</a><br /></td></tr>
 <tr class="separator:a158e0f085ddedfe5c8ed069986039f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c7c8cde9b91d2eee82d7b9a0b66fd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a1f5f49f3425e4098fd8a671deac32572">ORE_DEBUG</a>, text)</td></tr>
+<tr class="memitem:a34c7c8cde9b91d2eee82d7b9a0b66fd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da">oreSeverity::debug</a>, text)</td></tr>
 <tr class="memdesc:a34c7c8cde9b91d2eee82d7b9a0b66fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging Macro (Level = Debug)  <a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">More...</a><br /></td></tr>
 <tr class="separator:a34c7c8cde9b91d2eee82d7b9a0b66fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99aeca53f904c71a68070e1f9d310232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a88b16fdb80dd1c4bae1df0ae1817b04c">ORE_DATA</a>, text)</td></tr>
+<tr class="memitem:a99aeca53f904c71a68070e1f9d310232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(text)&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">oreSeverity::data</a>, text)</td></tr>
 <tr class="memdesc:a99aeca53f904c71a68070e1f9d310232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging Macro (Level = Data)  <a href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">More...</a><br /></td></tr>
 <tr class="separator:a99aeca53f904c71a68070e1f9d310232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016524a97fed701aa01ea913a0f5ae96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a016524a97fed701aa01ea913a0f5ae96">MEM_LOG</a>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a392f86eb6ccabe97e8d90bf599153d5e">MEM_LOG_USING_LEVEL</a>(<a class="el" href="log_8hpp.html#a7920e5b0d1d614a135374d8d1b075105">ORE_MEMORY</a>)</td></tr>
+<tr class="memitem:a016524a97fed701aa01ea913a0f5ae96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a016524a97fed701aa01ea913a0f5ae96">MEM_LOG</a>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a392f86eb6ccabe97e8d90bf599153d5e">MEM_LOG_USING_LEVEL</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec">oreSeverity::memory</a>)</td></tr>
 <tr class="memdesc:a016524a97fed701aa01ea913a0f5ae96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging macro specifically for logging memory usage.  <a href="log_8hpp.html#a016524a97fed701aa01ea913a0f5ae96">More...</a><br /></td></tr>
 <tr class="separator:a016524a97fed701aa01ea913a0f5ae96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a392f86eb6ccabe97e8d90bf599153d5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a392f86eb6ccabe97e8d90bf599153d5e">MEM_LOG_USING_LEVEL</a>(LEVEL)</td></tr>
@@ -213,8 +235,35 @@ Macros</h2></td></tr>
 <tr class="memitem:a990cc4a3444c1b8bbc1af5dea43c898d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a990cc4a3444c1b8bbc1af5dea43c898d">CONSOLE</a>(text)</td></tr>
 <tr class="separator:a990cc4a3444c1b8bbc1af5dea43c898d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:adbcbe666be974a54b446768e3b1a6bb7"><td class="memItemLeft" align="right" valign="top">typedef boost::log::sinks::synchronous_sink&lt; boost::log::sinks::text_file_backend &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#adbcbe666be974a54b446768e3b1a6bb7">file_sink</a></td></tr>
+<tr class="separator:adbcbe666be974a54b446768e3b1a6bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada892807ebd1690654e0af1f08e4cbbb"><td class="memItemLeft" align="right" valign="top">typedef boost::log::sinks::synchronous_sink&lt; boost::log::sinks::text_ostream_backend &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#ada892807ebd1690654e0af1f08e4cbbb">cout_sink</a></td></tr>
+<tr class="separator:ada892807ebd1690654e0af1f08e4cbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a08cf33440c824c6fda734c566a726536"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536">oreSeverity</a> { <br />
+&#160;&#160;<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de">alert</a> = 1
+, <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d">critical</a> = 2
+, <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad606e435413ea0944dd00d49e901e4ed">error</a> = 4
+, <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492">warning</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d">notice</a> = 16
+, <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da">debug</a> = 32
+, <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> = 64
+, <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec">memory</a> = 128
+<br />
+ }</td></tr>
+<tr class="separator:a08cf33440c824c6fda734c566a726536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a61cbd6983f5654c4ff565f6e5731419d"><td class="memTemplParams" colspan="2">template&lt;typename CharT , typename TraitsT &gt; </td></tr>
+<tr class="memitem:a61cbd6983f5654c4ff565f6e5731419d"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; CharT, TraitsT &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="log_8hpp.html#a61cbd6983f5654c4ff565f6e5731419d">operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, TraitsT &gt; &amp;strm, <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536">oreSeverity</a> lvl)</td></tr>
+<tr class="memdesc:a61cbd6983f5654c4ff565f6e5731419d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs stringized representation of the severity level to the stream.  <a href="log_8hpp.html#a61cbd6983f5654c4ff565f6e5731419d">More...</a><br /></td></tr>
+<tr class="separator:a61cbd6983f5654c4ff565f6e5731419d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ed22387601ad43bc915ab6c649287c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#ac5ed22387601ad43bc915ab6c649287c">operator&lt;&lt;</a> (std::ostream &amp;out, const StructuredMessage::Category &amp;category)</td></tr>
 <tr class="separator:ac5ed22387601ad43bc915ab6c649287c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad88b223deb2df5d7fbbdcc97adaa5d46"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#ad88b223deb2df5d7fbbdcc97adaa5d46">operator&lt;&lt;</a> (std::ostream &amp;out, const StructuredMessage::Group &amp;group)</td></tr>
@@ -223,6 +272,8 @@ Functions</h2></td></tr>
 <tr class="separator:ade0dd2d3135c9a622baa676b987ccd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27e59a56f66bbc0ec2b5ec38f331d8c5"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a27e59a56f66bbc0ec2b5ec38f331d8c5">operator&lt;&lt;</a> (std::ostream &amp;out, const EventMessage &amp;em)</td></tr>
 <tr class="separator:a27e59a56f66bbc0ec2b5ec38f331d8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b5607f6c729fd4663c601ce8ecd15f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a88b5607f6c729fd4663c601ce8ecd15f">operator&lt;&lt;</a> (std::ostream &amp;out, const ProgressMessage &amp;pm)</td></tr>
+<tr class="separator:a88b5607f6c729fd4663c601ce8ecd15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Classes and functions for log message handling. </p>
@@ -383,18 +434,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    {                                                                                                                  \</div>
-<div class="line">        if (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().filter(mask)) {                         \</div>
+<div class="line">        if (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().<a class="code hl_variable" href="computationgraphbuilder_8cpp.html#abd640cc39af07965a8475be310893006">filter</a>(mask)) {                         \</div>
 <div class="line">            std::ostringstream __ore_mlog_tmp_stringstream__;                                                          \</div>
 <div class="line">            __ore_mlog_tmp_stringstream__ &lt;&lt; text;                                                                     \</div>
-<div class="line">            boost::unique_lock&lt;boost::shared_mutex&gt; lock(ore::data::Log::instance().mutex());                          \</div>
-<div class="line">            ore::data::Log::instance().header(mask, __FILE__, __LINE__);                                               \</div>
-<div class="line">            ore::data::Log::instance().logStream() &lt;&lt; __ore_mlog_tmp_stringstream__.str();                             \</div>
-<div class="line">            ore::data::Log::instance().log(mask);                                                                      \</div>
+<div class="line">            if (!ore::data::Log::instance().checkExcludeFilters(__ore_mlog_tmp_stringstream__.str())) {                \</div>
+<div class="line">                boost::unique_lock&lt;boost::shared_mutex&gt; lock(ore::data::Log::instance().mutex());                      \</div>
+<div class="line">                ore::data::Log::instance().header(mask, __FILE__, __LINE__);                                           \</div>
+<div class="line">                ore::data::Log::instance().logStream() &lt;&lt; __ore_mlog_tmp_stringstream__.str();                         \</div>
+<div class="line">                ore::data::Log::instance().log(mask);                                                                  \</div>
+<div class="line">            }                                                                                                          \</div>
 <div class="line">        }                                                                                                              \</div>
 <div class="line">    }</div>
+<div class="ttc" id="acomputationgraphbuilder_8cpp_html_abd640cc39af07965a8475be310893006"><div class="ttname"><a href="computationgraphbuilder_8cpp.html#abd640cc39af07965a8475be310893006">filter</a></div><div class="ttdeci">SafeStack&lt; Filter &gt; filter</div><div class="ttdef"><b>Definition:</b> <a href="computationgraphbuilder_8cpp_source.html#l01474">computationgraphbuilder.cpp:1474</a></div></div>
 </div><!-- fragment --><p >Main Logging macro, do not use this directly, use on of the below 6 macros instead </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00345">345</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00483">483</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -409,14 +463,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">text</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#afa24ba35e425ef45a72bb39ebbd81efa">ORE_ALERT</a>, text);</td>
+          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de">oreSeverity::alert</a>, text);</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging Macro (Level = Alert) </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00358">358</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00498">498</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -431,14 +485,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">text</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a774f604dd85577bd2e7ede6a7e7f76e4">ORE_CRITICAL</a>, text)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d">oreSeverity::critical</a>, text)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging Macro (Level = Critical) </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00360">360</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00500">500</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,14 +507,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">text</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#ac295f40c5d23a58012eb2b1cabac8425">ORE_ERROR</a>, text)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="model_2utilities_8cpp.html#ae00ecbfbe7c0f2b69c514b9e70fe8c04">oreSeverity::error</a>, text)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging Macro (Level = Error) </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00362">362</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00502">502</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -475,14 +529,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">text</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d">ORE_WARNING</a>, text)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492">oreSeverity::warning</a>, text)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging Macro (Level = Warning) </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00364">364</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00504">504</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -497,14 +551,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">text</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#aab273ded9acf83717d0243f1e54766df">ORE_NOTICE</a>, text)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d">oreSeverity::notice</a>, text)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging Macro (Level = Notice) </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00366">366</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00506">506</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -519,14 +573,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">text</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a1f5f49f3425e4098fd8a671deac32572">ORE_DEBUG</a>, text)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da">oreSeverity::debug</a>, text)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging Macro (Level = Debug) </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00368">368</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00508">508</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -541,14 +595,14 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">text</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a88b16fdb80dd1c4bae1df0ae1817b04c">ORE_DATA</a>, text)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a8bb7fbadda66b3cc6af671ec86b11568">MLOG</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">oreSeverity::data</a>, text)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging Macro (Level = Data) </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00370">370</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00510">510</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -559,14 +613,14 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MEM_LOG&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a392f86eb6ccabe97e8d90bf599153d5e">MEM_LOG_USING_LEVEL</a>(<a class="el" href="log_8hpp.html#a7920e5b0d1d614a135374d8d1b075105">ORE_MEMORY</a>)</td>
+          <td class="memname">#define MEM_LOG&#160;&#160;&#160;<a class="el" href="log_8hpp.html#a392f86eb6ccabe97e8d90bf599153d5e">MEM_LOG_USING_LEVEL</a>(<a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec">oreSeverity::memory</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Logging macro specifically for logging memory usage. </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00373">373</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00513">513</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -585,19 +639,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                                                                                                                  \</div>
-<div class="line">        if (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().filter(LEVEL)) {                        \</div>
-<div class="line">            boost::unique_lock&lt;boost::shared_mutex&gt; lock(ore::data::Log::instance().mutex());                          \</div>
-<div class="line">            ore::data::Log::instance().header(LEVEL, __FILE__, __LINE__);                                              \</div>
-<div class="line">            ore::data::Log::instance().logStream() &lt;&lt; std::to_string(<a class="code hl_function" href="group__utilities.html#gac1e20ad2e46d25e5aee62e43907cfb9c">ore::data::os::getPeakMemoryUsageBytes</a>()) &lt;&lt; <span class="stringliteral">&quot;|&quot;</span>; \</div>
-<div class="line">            ore::data::Log::instance().logStream() &lt;&lt; std::to_string(<a class="code hl_function" href="group__utilities.html#gafe2116da04fbbb9197987e36e26487b9">ore::data::os::getMemoryUsageBytes</a>());            \</div>
-<div class="line">            ore::data::Log::instance().log(LEVEL);                                                                     \</div>
-<div class="line">        }                                                                                                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">    {                                                                                                                   \</div>
+<div class="line">        if (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().<a class="code hl_variable" href="computationgraphbuilder_8cpp.html#abd640cc39af07965a8475be310893006">filter</a>(LEVEL)) {                         \</div>
+<div class="line">            boost::unique_lock&lt;boost::shared_mutex&gt; lock(ore::data::Log::instance().mutex());                           \</div>
+<div class="line">            ore::data::Log::instance().header(LEVEL, __FILE__, __LINE__);                                               \</div>
+<div class="line">            ore::data::Log::instance().logStream() &lt;&lt; std::to_string(<a class="code hl_function" href="group__utilities.html#gac1e20ad2e46d25e5aee62e43907cfb9c">ore::data::os::getPeakMemoryUsageBytes</a>()) &lt;&lt; <span class="stringliteral">&quot;|&quot;</span>;  \</div>
+<div class="line">            ore::data::Log::instance().logStream() &lt;&lt; std::to_string(<a class="code hl_function" href="group__utilities.html#gafe2116da04fbbb9197987e36e26487b9">ore::data::os::getMemoryUsageBytes</a>());             \</div>
+<div class="line">            ore::data::Log::instance().log(LEVEL);                                                                      \</div>
+<div class="line">        }                                                                                                               \</div>
 <div class="line">    }</div>
 <div class="ttc" id="agroup__utilities_html_gac1e20ad2e46d25e5aee62e43907cfb9c"><div class="ttname"><a href="group__utilities.html#gac1e20ad2e46d25e5aee62e43907cfb9c">ore::data::os::getPeakMemoryUsageBytes</a></div><div class="ttdeci">unsigned long long getPeakMemoryUsageBytes()</div><div class="ttdoc">Returns the current process peak memory usage in bytes.</div><div class="ttdef"><b>Definition:</b> <a href="osutils_8cpp_source.html#l00196">osutils.cpp:196</a></div></div>
 <div class="ttc" id="agroup__utilities_html_gafe2116da04fbbb9197987e36e26487b9"><div class="ttname"><a href="group__utilities.html#gafe2116da04fbbb9197987e36e26487b9">ore::data::os::getMemoryUsageBytes</a></div><div class="ttdeci">unsigned long long getMemoryUsageBytes()</div><div class="ttdef"><b>Definition:</b> <a href="osutils_8cpp_source.html#l00326">osutils.cpp:326</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00375">375</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00515">515</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -626,12 +680,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().filter(LEVEL)) {                            \</div>
-<div class="line">        (std::ostream&amp;)<a class="code hl_class" href="classore_1_1data_1_1_logger_stream.html">ore::data::LoggerStream</a>(LEVEL, __FILE__, __LINE__) &lt;&lt; text;                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().<a class="code hl_variable" href="computationgraphbuilder_8cpp.html#abd640cc39af07965a8475be310893006">filter</a>(LEVEL)) {     \</div>
+<div class="line">        (std::ostream&amp;)<a class="code hl_class" href="classore_1_1data_1_1_logger_stream.html">ore::data::LoggerStream</a>(LEVEL, __FILE__, __LINE__) &lt;&lt; text;              \</div>
 <div class="line">    }</div>
-<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html">ore::data::LoggerStream</a></div><div class="ttdoc">LoggerStream class that is a std::ostream replacement that will log each line.</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00419">log.hpp:419</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html">ore::data::LoggerStream</a></div><div class="ttdoc">LoggerStream class that is a std::ostream replacement that will log each line.</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00559">log.hpp:559</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00436">436</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00576">576</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -651,7 +705,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00441">441</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00581">581</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -671,7 +725,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00442">442</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00582">582</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -691,7 +745,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00443">443</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00583">583</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -711,7 +765,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00444">444</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00584">584</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -731,7 +785,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00445">445</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00585">585</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -751,7 +805,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00446">446</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00586">586</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -771,7 +825,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00447">447</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00587">587</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -804,7 +858,7 @@ Functions</h2></td></tr>
 <div class="line">        }                                                                                                              \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00590">590</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00748">748</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -833,8 +887,126 @@ Functions</h2></td></tr>
 <div class="line">        }                                                                                                              \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00605">605</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00763">763</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a08cf33440c824c6fda734c566a726536" name="a08cf33440c824c6fda734c566a726536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08cf33440c824c6fda734c566a726536">&#9670;&#160;</a></span>oreSeverity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536">oreSeverity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de" name="a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de"></a>alert&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d" name="a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d"></a>critical&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536ad606e435413ea0944dd00d49e901e4ed" name="a08cf33440c824c6fda734c566a726536ad606e435413ea0944dd00d49e901e4ed"></a>error&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492" name="a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492"></a>warning&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d" name="a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d"></a>notice&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da" name="a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da"></a>debug&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b" name="a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"></a>data&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec" name="a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec"></a>memory&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00070">70</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                 {</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de">alert</a> = <a class="code hl_define" href="log_8hpp.html#afa24ba35e425ef45a72bb39ebbd81efa">ORE_ALERT</a>,</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d">critical</a> = <a class="code hl_define" href="log_8hpp.html#a774f604dd85577bd2e7ede6a7e7f76e4">ORE_CRITICAL</a>,</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad606e435413ea0944dd00d49e901e4ed">error</a> = <a class="code hl_define" href="log_8hpp.html#ac295f40c5d23a58012eb2b1cabac8425">ORE_ERROR</a>,</div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492">warning</a> = <a class="code hl_define" href="log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d">ORE_WARNING</a>,</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d">notice</a> = <a class="code hl_define" href="log_8hpp.html#aab273ded9acf83717d0243f1e54766df">ORE_NOTICE</a>,</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da">debug</a> = <a class="code hl_define" href="log_8hpp.html#a1f5f49f3425e4098fd8a671deac32572">ORE_DEBUG</a>,</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> = <a class="code hl_define" href="log_8hpp.html#a88b16fdb80dd1c4bae1df0ae1817b04c">ORE_DATA</a>,</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec">memory</a> = <a class="code hl_define" href="log_8hpp.html#a7920e5b0d1d614a135374d8d1b075105">ORE_MEMORY</a></div>
+<div class="line"><span class="lineno">   79</span>};</div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d">notice</a></div><div class="ttdeci">@ notice</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00075">log.hpp:75</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da">debug</a></div><div class="ttdeci">@ debug</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00076">log.hpp:76</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d">critical</a></div><div class="ttdeci">@ critical</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00072">log.hpp:72</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492">warning</a></div><div class="ttdeci">@ warning</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00074">log.hpp:74</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec">memory</a></div><div class="ttdeci">@ memory</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00079">log.hpp:78</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536ad606e435413ea0944dd00d49e901e4ed"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad606e435413ea0944dd00d49e901e4ed">error</a></div><div class="ttdeci">@ error</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00073">log.hpp:73</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de">alert</a></div><div class="ttdeci">@ alert</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00071">log.hpp:71</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a1f5f49f3425e4098fd8a671deac32572"><div class="ttname"><a href="log_8hpp.html#a1f5f49f3425e4098fd8a671deac32572">ORE_DEBUG</a></div><div class="ttdeci">#define ORE_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00032">log.hpp:32</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a774f604dd85577bd2e7ede6a7e7f76e4"><div class="ttname"><a href="log_8hpp.html#a774f604dd85577bd2e7ede6a7e7f76e4">ORE_CRITICAL</a></div><div class="ttdeci">#define ORE_CRITICAL</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00028">log.hpp:28</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a7920e5b0d1d614a135374d8d1b075105"><div class="ttname"><a href="log_8hpp.html#a7920e5b0d1d614a135374d8d1b075105">ORE_MEMORY</a></div><div class="ttdeci">#define ORE_MEMORY</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00034">log.hpp:34</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a88b16fdb80dd1c4bae1df0ae1817b04c"><div class="ttname"><a href="log_8hpp.html#a88b16fdb80dd1c4bae1df0ae1817b04c">ORE_DATA</a></div><div class="ttdeci">#define ORE_DATA</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00033">log.hpp:33</a></div></div>
+<div class="ttc" id="alog_8hpp_html_aab273ded9acf83717d0243f1e54766df"><div class="ttname"><a href="log_8hpp.html#aab273ded9acf83717d0243f1e54766df">ORE_NOTICE</a></div><div class="ttdeci">#define ORE_NOTICE</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00031">log.hpp:31</a></div></div>
+<div class="ttc" id="alog_8hpp_html_ac295f40c5d23a58012eb2b1cabac8425"><div class="ttname"><a href="log_8hpp.html#ac295f40c5d23a58012eb2b1cabac8425">ORE_ERROR</a></div><div class="ttdeci">#define ORE_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00029">log.hpp:29</a></div></div>
+<div class="ttc" id="alog_8hpp_html_af2662f3bb57d4149cdb9d20c59acd95d"><div class="ttname"><a href="log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d">ORE_WARNING</a></div><div class="ttdeci">#define ORE_WARNING</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00030">log.hpp:30</a></div></div>
+<div class="ttc" id="alog_8hpp_html_afa24ba35e425ef45a72bb39ebbd81efa"><div class="ttname"><a href="log_8hpp.html#afa24ba35e425ef45a72bb39ebbd81efa">ORE_ALERT</a></div><div class="ttdeci">#define ORE_ALERT</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00027">log.hpp:27</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a61cbd6983f5654c4ff565f6e5731419d" name="a61cbd6983f5654c4ff565f6e5731419d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cbd6983f5654c4ff565f6e5731419d">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_ostream&lt; CharT, TraitsT &gt; &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; CharT, TraitsT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536">oreSeverity</a>&#160;</td>
+          <td class="paramname"><em>lvl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Outputs stringized representation of the severity level to the stream. </p>
+
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00001">1</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>                                                                                                             {</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">switch</span> (lvl) {</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536adb24f4ef34c1115e9fb2a696d98a51de">oreSeverity::alert</a>:</div>
+<div class="line"><span class="lineno">   87</span>        strm &lt;&lt; <span class="stringliteral">&quot;ALERT&quot;</span>;</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5fe0ea375791d13455a34f3d40dc9c7d">oreSeverity::critical</a>:</div>
+<div class="line"><span class="lineno">   90</span>        strm &lt;&lt; <span class="stringliteral">&quot;CRITICAL&quot;</span>;</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad606e435413ea0944dd00d49e901e4ed">oreSeverity::error</a>:</div>
+<div class="line"><span class="lineno">   93</span>        strm &lt;&lt; <span class="stringliteral">&quot;ERROR&quot;</span>;</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a8de9aef05fc85e519a0cfce33573f492">oreSeverity::warning</a>:</div>
+<div class="line"><span class="lineno">   96</span>        strm &lt;&lt; <span class="stringliteral">&quot;WARNING&quot;</span>;</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a1947748888b7be287264b77a59951f5d">oreSeverity::notice</a>:</div>
+<div class="line"><span class="lineno">   99</span>        strm &lt;&lt; <span class="stringliteral">&quot;NOTICE&quot;</span>;</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a5be0fd270d9cbf6a0b7445db855089da">oreSeverity::debug</a>:</div>
+<div class="line"><span class="lineno">  102</span>        strm &lt;&lt; <span class="stringliteral">&quot;DEBUG&quot;</span>;</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">oreSeverity::data</a>:</div>
+<div class="line"><span class="lineno">  105</span>        strm &lt;&lt; <span class="stringliteral">&quot;DATA&quot;</span>;</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec">oreSeverity::memory</a>:</div>
+<div class="line"><span class="lineno">  108</span>        strm &lt;&lt; <span class="stringliteral">&quot;MEMORY&quot;</span>;</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  111</span>        strm &lt;&lt; <span class="stringliteral">&quot;UNKNOWN&quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">return</span> strm;</div>
+<div class="line"><span class="lineno">  115</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

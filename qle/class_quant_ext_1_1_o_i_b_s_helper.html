@@ -121,7 +121,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa56febe3de3ef5a0e6c3a46e592391a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_o_i_b_s_helper.html#aa56febe3de3ef5a0e6c3a46e592391a5">OIBSHelper</a> (Natural settlementDays, const Period &amp;tenor, const Handle&lt; Quote &gt; &amp;oisSpread, const boost::shared_ptr&lt; OvernightIndex &gt; &amp;overnightIndex, const boost::shared_ptr&lt; IborIndex &gt; &amp;iborIndex, const Handle&lt; YieldTermStructure &gt; &amp;discount=Handle&lt; YieldTermStructure &gt;(), const <a class="el" href="classbool.html">bool</a> telescopicValueDates=false)</td></tr>
+<tr class="memitem:aa56febe3de3ef5a0e6c3a46e592391a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_o_i_b_s_helper.html#aa56febe3de3ef5a0e6c3a46e592391a5">OIBSHelper</a> (Natural settlementDays, const Period &amp;tenor, const Handle&lt; Quote &gt; &amp;oisSpread, const boost::shared_ptr&lt; OvernightIndex &gt; &amp;overnightIndex, const boost::shared_ptr&lt; <a class="el" href="class_ibor_index.html">IborIndex</a> &gt; &amp;iborIndex, const Handle&lt; YieldTermStructure &gt; &amp;discount=Handle&lt; YieldTermStructure &gt;(), const <a class="el" href="classbool.html">bool</a> telescopicValueDates=false)</td></tr>
 <tr class="separator:aa56febe3de3ef5a0e6c3a46e592391a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">RateHelper interface</div></td></tr>
 <tr class="memitem:ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_o_i_b_s_helper.html#ab5f37fe136acee4d7bfd196bcf8bb315">impliedQuote</a> () const override</td></tr>
@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f1e4aec3cba6f7cea92368273728ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a692e32fbdb1ea4abf8e1fd5620a699fa"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; OvernightIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a></td></tr>
 <tr class="separator:a692e32fbdb1ea4abf8e1fd5620a699fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a211475384befbdc6d1d92bfe69635cd0"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; IborIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a></td></tr>
+<tr class="memitem:a211475384befbdc6d1d92bfe69635cd0"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_ibor_index.html">IborIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a></td></tr>
 <tr class="separator:a211475384befbdc6d1d92bfe69635cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42418822361f7c1c04a78b99efb36016"><td class="memItemLeft" align="right" valign="top">Handle&lt; YieldTermStructure &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a></td></tr>
 <tr class="separator:a42418822361f7c1c04a78b99efb36016"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +194,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::shared_ptr&lt; IborIndex &gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="class_ibor_index.html">IborIndex</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>iborIndex</em>, </td>
         </tr>
         <tr>
@@ -217,70 +217,70 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00032">32</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>    : <a class="code hl_typedef" href="namespace_quant_ext.html#abcf7a30c4534a94e3433dac11c8444e4">RelativeDateRateHelper</a>(oisSpread), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a8cb58608de54286272715a08a7492a7e">settlementDays_</a>(settlementDays), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a6f1e4aec3cba6f7cea92368273728ec8">tenor_</a>(tenor),</div>
-<div class="line"><span class="lineno">   38</span>      <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>(overnightIndex), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>(iborIndex), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>(discount),</div>
-<div class="line"><span class="lineno">   39</span>      <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a187b5edd65f0805534b303324609fa7c">telescopicValueDates_</a>(telescopicValueDates) {</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <span class="comment">/* depending on the given curves we proceed as outlined in the following table</span></div>
+<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00029">29</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>    : <a class="code hl_typedef" href="namespace_quant_ext.html#abcf7a30c4534a94e3433dac11c8444e4">RelativeDateRateHelper</a>(oisSpread), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a8cb58608de54286272715a08a7492a7e">settlementDays_</a>(settlementDays), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a6f1e4aec3cba6f7cea92368273728ec8">tenor_</a>(tenor),</div>
+<div class="line"><span class="lineno">   35</span>      <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>(overnightIndex), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>(iborIndex), <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>(discount),</div>
+<div class="line"><span class="lineno">   36</span>      <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a187b5edd65f0805534b303324609fa7c">telescopicValueDates_</a>(telescopicValueDates) {</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">/* depending on the given curves we proceed as outlined in the following table</span></div>
+<div class="line"><span class="lineno">   39</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   40</span><span class="comment">       x = curve is given</span></div>
+<div class="line"><span class="lineno">   41</span><span class="comment">       . = curve is missing</span></div>
 <div class="line"><span class="lineno">   42</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   43</span><span class="comment">       x = curve is given</span></div>
-<div class="line"><span class="lineno">   44</span><span class="comment">       . = curve is missing</span></div>
-<div class="line"><span class="lineno">   45</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   46</span><span class="comment">       Case | OIS | Ibor | Discount | Action</span></div>
-<div class="line"><span class="lineno">   47</span><span class="comment">       =========================================</span></div>
-<div class="line"><span class="lineno">   48</span><span class="comment">         0  |  .  |   .  |    .     | throw exception</span></div>
-<div class="line"><span class="lineno">   49</span><span class="comment">         1  |  .  |   .  |    x     | throw exception</span></div>
-<div class="line"><span class="lineno">   50</span><span class="comment">         2  |  .  |   x  |    .     | imply OIS = Discount</span></div>
-<div class="line"><span class="lineno">   51</span><span class="comment">         3  |  .  |   x  |    x     | imply OIS</span></div>
-<div class="line"><span class="lineno">   52</span><span class="comment">         4  |  x  |   .  |    .     | imply Ibor, set Discount = OIS</span></div>
-<div class="line"><span class="lineno">   53</span><span class="comment">         5  |  x  |   .  |    x     | imply Ibor</span></div>
-<div class="line"><span class="lineno">   54</span><span class="comment">         6  |  x  |   x  |    .     | imply Discount</span></div>
-<div class="line"><span class="lineno">   55</span><span class="comment">         7  |  x  |   x  |    x     | throw exception</span></div>
-<div class="line"><span class="lineno">   56</span><span class="comment"></span> </div>
-<div class="line"><span class="lineno">   57</span><span class="comment">    */</span></div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordtype">bool</span> oisGiven = !<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;forwardingTermStructure().empty();</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordtype">bool</span> iborGiven = !<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;forwardingTermStructure().empty();</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordtype">bool</span> discountGiven = !<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>.empty();</div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (!oisGiven &amp;&amp; !iborGiven &amp;&amp; !discountGiven) {</div>
-<div class="line"><span class="lineno">   64</span>        <span class="comment">// case 0</span></div>
-<div class="line"><span class="lineno">   65</span>        QL_FAIL(<span class="stringliteral">&quot;no curve given&quot;</span>);</div>
-<div class="line"><span class="lineno">   66</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!oisGiven &amp;&amp; !iborGiven &amp;&amp; discountGiven) {</div>
-<div class="line"><span class="lineno">   67</span>        <span class="comment">// case 1</span></div>
-<div class="line"><span class="lineno">   68</span>        QL_FAIL(<span class="stringliteral">&quot;neither OIS nor Ibor curve is given&quot;</span>);</div>
-<div class="line"><span class="lineno">   69</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!oisGiven &amp;&amp; iborGiven &amp;&amp; !discountGiven) {</div>
-<div class="line"><span class="lineno">   70</span>        <span class="comment">// case 2</span></div>
-<div class="line"><span class="lineno">   71</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a> = boost::static_pointer_cast&lt;OvernightIndex&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>));</div>
-<div class="line"><span class="lineno">   72</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
-<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   74</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!oisGiven &amp;&amp; iborGiven &amp;&amp; discountGiven) {</div>
-<div class="line"><span class="lineno">   75</span>        <span class="comment">// case 3</span></div>
-<div class="line"><span class="lineno">   76</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a> = boost::static_pointer_cast&lt;OvernightIndex&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>));</div>
-<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
-<div class="line"><span class="lineno">   78</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; !iborGiven &amp;&amp; !discountGiven) {</div>
-<div class="line"><span class="lineno">   79</span>        <span class="comment">// case 4</span></div>
-<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a> = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
-<div class="line"><span class="lineno">   81</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
-<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;forwardingTermStructure());</div>
-<div class="line"><span class="lineno">   83</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; !iborGiven &amp;&amp; discountGiven) {</div>
-<div class="line"><span class="lineno">   84</span>        <span class="comment">// case 5</span></div>
-<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a> = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
-<div class="line"><span class="lineno">   86</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
-<div class="line"><span class="lineno">   87</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; iborGiven &amp;&amp; !discountGiven) {</div>
-<div class="line"><span class="lineno">   88</span>        <span class="comment">// case 6</span></div>
-<div class="line"><span class="lineno">   89</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   90</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; iborGiven &amp;&amp; discountGiven) {</div>
-<div class="line"><span class="lineno">   91</span>        <span class="comment">// case 7</span></div>
-<div class="line"><span class="lineno">   92</span>        QL_FAIL(<span class="stringliteral">&quot;OIS, Ibor and Discount curves are all given&quot;</span>);</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
-<div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>);</div>
-<div class="line"><span class="lineno">   96</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>);</div>
-<div class="line"><span class="lineno">   97</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>);</div>
-<div class="line"><span class="lineno">   98</span>    <a class="code hl_function" href="class_quant_ext_1_1_o_i_b_s_helper.html#a99d980fe812ceb975a5e391d34d36439">initializeDates</a>();</div>
-<div class="line"><span class="lineno">   99</span>}</div>
+<div class="line"><span class="lineno">   43</span><span class="comment">       Case | OIS | Ibor | Discount | Action</span></div>
+<div class="line"><span class="lineno">   44</span><span class="comment">       =========================================</span></div>
+<div class="line"><span class="lineno">   45</span><span class="comment">         0  |  .  |   .  |    .     | throw exception</span></div>
+<div class="line"><span class="lineno">   46</span><span class="comment">         1  |  .  |   .  |    x     | throw exception</span></div>
+<div class="line"><span class="lineno">   47</span><span class="comment">         2  |  .  |   x  |    .     | imply OIS = Discount</span></div>
+<div class="line"><span class="lineno">   48</span><span class="comment">         3  |  .  |   x  |    x     | imply OIS</span></div>
+<div class="line"><span class="lineno">   49</span><span class="comment">         4  |  x  |   .  |    .     | imply Ibor, set Discount = OIS</span></div>
+<div class="line"><span class="lineno">   50</span><span class="comment">         5  |  x  |   .  |    x     | imply Ibor</span></div>
+<div class="line"><span class="lineno">   51</span><span class="comment">         6  |  x  |   x  |    .     | imply Discount</span></div>
+<div class="line"><span class="lineno">   52</span><span class="comment">         7  |  x  |   x  |    x     | throw exception</span></div>
+<div class="line"><span class="lineno">   53</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   54</span><span class="comment">    */</span></div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordtype">bool</span> oisGiven = !<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;forwardingTermStructure().empty();</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordtype">bool</span> iborGiven = !<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;forwardingTermStructure().empty();</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">bool</span> discountGiven = !<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>.empty();</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (!oisGiven &amp;&amp; !iborGiven &amp;&amp; !discountGiven) {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="comment">// case 0</span></div>
+<div class="line"><span class="lineno">   62</span>        QL_FAIL(<span class="stringliteral">&quot;no curve given&quot;</span>);</div>
+<div class="line"><span class="lineno">   63</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!oisGiven &amp;&amp; !iborGiven &amp;&amp; discountGiven) {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="comment">// case 1</span></div>
+<div class="line"><span class="lineno">   65</span>        QL_FAIL(<span class="stringliteral">&quot;neither OIS nor Ibor curve is given&quot;</span>);</div>
+<div class="line"><span class="lineno">   66</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!oisGiven &amp;&amp; iborGiven &amp;&amp; !discountGiven) {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="comment">// case 2</span></div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a> = boost::static_pointer_cast&lt;OvernightIndex&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>));</div>
+<div class="line"><span class="lineno">   69</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   71</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!oisGiven &amp;&amp; iborGiven &amp;&amp; discountGiven) {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="comment">// case 3</span></div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a> = boost::static_pointer_cast&lt;OvernightIndex&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>));</div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
+<div class="line"><span class="lineno">   75</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; !iborGiven &amp;&amp; !discountGiven) {</div>
+<div class="line"><span class="lineno">   76</span>        <span class="comment">// case 4</span></div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a> = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;forwardingTermStructure());</div>
+<div class="line"><span class="lineno">   80</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; !iborGiven &amp;&amp; discountGiven) {</div>
+<div class="line"><span class="lineno">   81</span>        <span class="comment">// case 5</span></div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a> = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>);</div>
+<div class="line"><span class="lineno">   84</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; iborGiven &amp;&amp; !discountGiven) {</div>
+<div class="line"><span class="lineno">   85</span>        <span class="comment">// case 6</span></div>
+<div class="line"><span class="lineno">   86</span>        <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   87</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (oisGiven &amp;&amp; iborGiven &amp;&amp; discountGiven) {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="comment">// case 7</span></div>
+<div class="line"><span class="lineno">   89</span>        QL_FAIL(<span class="stringliteral">&quot;OIS, Ibor and Discount curves are all given&quot;</span>);</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>);</div>
+<div class="line"><span class="lineno">   93</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>);</div>
+<div class="line"><span class="lineno">   94</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>);</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_function" href="class_quant_ext_1_1_o_i_b_s_helper.html#a99d980fe812ceb975a5e391d34d36439">initializeDates</a>();</div>
+<div class="line"><span class="lineno">   96</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a11983310cace758fa0f027631ce25843"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">QuantExt::OIBSHelper::discountRelinkableHandle_</a></div><div class="ttdeci">RelinkableHandle&lt; YieldTermStructure &gt; discountRelinkableHandle_</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8hpp_source.html#l00069">oibasisswaphelper.hpp:69</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a187b5edd65f0805534b303324609fa7c"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a187b5edd65f0805534b303324609fa7c">QuantExt::OIBSHelper::telescopicValueDates_</a></div><div class="ttdeci">bool telescopicValueDates_</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8hpp_source.html#l00065">oibasisswaphelper.hpp:65</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a211475384befbdc6d1d92bfe69635cd0"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">QuantExt::OIBSHelper::iborIndex_</a></div><div class="ttdeci">boost::shared_ptr&lt; IborIndex &gt; iborIndex_</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8hpp_source.html#l00063">oibasisswaphelper.hpp:63</a></div></div>
@@ -289,7 +289,7 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a692e32fbdb1ea4abf8e1fd5620a699fa"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">QuantExt::OIBSHelper::overnightIndex_</a></div><div class="ttdeci">boost::shared_ptr&lt; OvernightIndex &gt; overnightIndex_</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8hpp_source.html#l00062">oibasisswaphelper.hpp:62</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a6f1e4aec3cba6f7cea92368273728ec8"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a6f1e4aec3cba6f7cea92368273728ec8">QuantExt::OIBSHelper::tenor_</a></div><div class="ttdeci">Period tenor_</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8hpp_source.html#l00061">oibasisswaphelper.hpp:61</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a8cb58608de54286272715a08a7492a7e"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a8cb58608de54286272715a08a7492a7e">QuantExt::OIBSHelper::settlementDays_</a></div><div class="ttdeci">Natural settlementDays_</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8hpp_source.html#l00060">oibasisswaphelper.hpp:60</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a99d980fe812ceb975a5e391d34d36439"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a99d980fe812ceb975a5e391d34d36439">QuantExt::OIBSHelper::initializeDates</a></div><div class="ttdeci">void initializeDates() override</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8cpp_source.html#l00101">oibasisswaphelper.cpp:101</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a99d980fe812ceb975a5e391d34d36439"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a99d980fe812ceb975a5e391d34d36439">QuantExt::OIBSHelper::initializeDates</a></div><div class="ttdeci">void initializeDates() override</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8cpp_source.html#l00098">oibasisswaphelper.cpp:98</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_html_abcf7a30c4534a94e3433dac11c8444e4"><div class="ttname"><a href="namespace_quant_ext.html#abcf7a30c4534a94e3433dac11c8444e4">QuantExt::RelativeDateRateHelper</a></div><div class="ttdeci">RelativeDateBootstrapHelper&lt; YieldTermStructure &gt; RelativeDateRateHelper</div><div class="ttdef"><b>Definition:</b> <a href="immfraratehelper_8hpp_source.html#l00034">immfraratehelper.hpp:34</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -329,13 +329,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00142">142</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  142</span>                                    {</div>
-<div class="line"><span class="lineno">  143</span>    QL_REQUIRE(termStructure_ != 0, <span class="stringliteral">&quot;term structure not set&quot;</span>);</div>
-<div class="line"><span class="lineno">  144</span>    <span class="comment">// we didn&#39;t register as observers - force calculation</span></div>
-<div class="line"><span class="lineno">  145</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;deepUpdate();</div>
-<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;fairOvernightSpread();</div>
-<div class="line"><span class="lineno">  147</span>}</div>
+<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00139">139</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                                    {</div>
+<div class="line"><span class="lineno">  140</span>    QL_REQUIRE(termStructure_ != 0, <span class="stringliteral">&quot;term structure not set&quot;</span>);</div>
+<div class="line"><span class="lineno">  141</span>    <span class="comment">// we didn&#39;t register as observers - force calculation</span></div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;deepUpdate();</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;fairOvernightSpread();</div>
+<div class="line"><span class="lineno">  144</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_o_i_b_s_helper_html_a9a569cdecaeb36a7422ea93f6d969a23"><div class="ttname"><a href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">QuantExt::OIBSHelper::swap_</a></div><div class="ttdeci">boost::shared_ptr&lt; OvernightIndexedBasisSwap &gt; swap_</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswaphelper_8hpp_source.html#l00067">oibasisswaphelper.hpp:67</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -353,7 +353,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void setTermStructure </td>
           <td>(</td>
           <td class="paramtype">YieldTermStructure *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -364,13 +364,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00135">135</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>                                                       {</div>
-<div class="line"><span class="lineno">  136</span>    <span class="comment">// do not set the relinkable handle as an observer -</span></div>
-<div class="line"><span class="lineno">  137</span>    <span class="comment">// force recalculation when needed</span></div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>.linkTo(shared_ptr&lt;YieldTermStructure&gt;(t, no_deletion), <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  139</span>    RelativeDateRateHelper::setTermStructure(t);</div>
-<div class="line"><span class="lineno">  140</span>}</div>
+<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00132">132</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>                                                       {</div>
+<div class="line"><span class="lineno">  133</span>    <span class="comment">// do not set the relinkable handle as an observer -</span></div>
+<div class="line"><span class="lineno">  134</span>    <span class="comment">// force recalculation when needed</span></div>
+<div class="line"><span class="lineno">  135</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a2e8f394e2be5705b297a1316eea82056">termStructureHandle_</a>.linkTo(boost::shared_ptr&lt;YieldTermStructure&gt;(t, null_deleter()), <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  136</span>    RelativeDateRateHelper::setTermStructure(t);</div>
+<div class="line"><span class="lineno">  137</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -418,14 +418,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00149">149</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  149</span>                                         {</div>
-<div class="line"><span class="lineno">  150</span>    Visitor&lt;OIBSHelper&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;OIBSHelper&gt;*<span class="keyword">&gt;</span>(&amp;v);</div>
-<div class="line"><span class="lineno">  151</span>    <span class="keywordflow">if</span> (v1 != 0)</div>
-<div class="line"><span class="lineno">  152</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  154</span>        RateHelper::accept(v);</div>
-<div class="line"><span class="lineno">  155</span>}</div>
+<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00146">146</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  146</span>                                         {</div>
+<div class="line"><span class="lineno">  147</span>    Visitor&lt;OIBSHelper&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;OIBSHelper&gt;*<span class="keyword">&gt;</span>(&amp;v);</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">if</span> (v1 != 0)</div>
+<div class="line"><span class="lineno">  149</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  151</span>        RateHelper::accept(v);</div>
+<div class="line"><span class="lineno">  152</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -452,40 +452,40 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00101">101</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>                                 {</div>
-<div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    Date asof = Settings::instance().evaluationDate();</div>
-<div class="line"><span class="lineno">  104</span>    <span class="comment">// if the evaluation date is not a business day</span></div>
-<div class="line"><span class="lineno">  105</span>    <span class="comment">// then move to the next business day</span></div>
-<div class="line"><span class="lineno">  106</span>    asof = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;fixingCalendar().adjust(asof);</div>
-<div class="line"><span class="lineno">  107</span> </div>
-<div class="line"><span class="lineno">  108</span>    Date settlementDate = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;fixingCalendar().advance(asof, <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a8cb58608de54286272715a08a7492a7e">settlementDays_</a>, Days);</div>
-<div class="line"><span class="lineno">  109</span>    Schedule oisSchedule = MakeSchedule()</div>
-<div class="line"><span class="lineno">  110</span>                               .from(settlementDate)</div>
-<div class="line"><span class="lineno">  111</span>                               .to(settlementDate + <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a6f1e4aec3cba6f7cea92368273728ec8">tenor_</a>)</div>
-<div class="line"><span class="lineno">  112</span>                               .withTenor(1 * Years)</div>
-<div class="line"><span class="lineno">  113</span>                               .withCalendar(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;fixingCalendar())</div>
-<div class="line"><span class="lineno">  114</span>                               .withConvention(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;businessDayConvention())</div>
-<div class="line"><span class="lineno">  115</span>                               .forwards();</div>
-<div class="line"><span class="lineno">  116</span>    Schedule iborSchedule = MakeSchedule()</div>
-<div class="line"><span class="lineno">  117</span>                                .from(settlementDate)</div>
-<div class="line"><span class="lineno">  118</span>                                .to(settlementDate + <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a6f1e4aec3cba6f7cea92368273728ec8">tenor_</a>)</div>
-<div class="line"><span class="lineno">  119</span>                                .withTenor(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;tenor())</div>
-<div class="line"><span class="lineno">  120</span>                                .withCalendar(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;fixingCalendar())</div>
-<div class="line"><span class="lineno">  121</span>                                .withConvention(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;businessDayConvention())</div>
-<div class="line"><span class="lineno">  122</span>                                .forwards();</div>
-<div class="line"><span class="lineno">  123</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a> = boost::shared_ptr&lt;OvernightIndexedBasisSwap&gt;(</div>
-<div class="line"><span class="lineno">  124</span>        <span class="keyword">new</span> OvernightIndexedBasisSwap(<a class="code hl_enumvalue" href="class_quant_ext_1_1_overnight_indexed_basis_swap.html#a1d1cfd8ffb84e947f82999c682b666a7a9ca3b60bb6eb8726ba5e66e5afa8b6a0">OvernightIndexedBasisSwap::Payer</a>,</div>
-<div class="line"><span class="lineno">  125</span>                                      10000.0, <span class="comment">// arbitrary</span></div>
-<div class="line"><span class="lineno">  126</span>                                      oisSchedule, <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>, iborSchedule, <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>, 0.0, 0.0, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  127</span>    boost::shared_ptr&lt;PricingEngine&gt; engine(</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keyword">new</span> DiscountingSwapEngine(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>.empty() ? <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a> : <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>));</div>
-<div class="line"><span class="lineno">  129</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;setPricingEngine(engine);</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>    earliestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;startDate();</div>
-<div class="line"><span class="lineno">  132</span>    latestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;maturityDate();</div>
-<div class="line"><span class="lineno">  133</span>}</div>
+<p class="definition">Definition at line <a class="el" href="oibasisswaphelper_8cpp_source.html#l00098">98</a> of file <a class="el" href="oibasisswaphelper_8cpp_source.html">oibasisswaphelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>                                 {</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    Date asof = Settings::instance().evaluationDate();</div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// if the evaluation date is not a business day</span></div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// then move to the next business day</span></div>
+<div class="line"><span class="lineno">  103</span>    asof = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;fixingCalendar().adjust(asof);</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    Date settlementDate = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;fixingCalendar().advance(asof, <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a8cb58608de54286272715a08a7492a7e">settlementDays_</a>, Days);</div>
+<div class="line"><span class="lineno">  106</span>    Schedule oisSchedule = MakeSchedule()</div>
+<div class="line"><span class="lineno">  107</span>                               .from(settlementDate)</div>
+<div class="line"><span class="lineno">  108</span>                               .to(settlementDate + <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a6f1e4aec3cba6f7cea92368273728ec8">tenor_</a>)</div>
+<div class="line"><span class="lineno">  109</span>                               .withTenor(1 * Years)</div>
+<div class="line"><span class="lineno">  110</span>                               .withCalendar(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;fixingCalendar())</div>
+<div class="line"><span class="lineno">  111</span>                               .withConvention(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>-&gt;businessDayConvention())</div>
+<div class="line"><span class="lineno">  112</span>                               .forwards();</div>
+<div class="line"><span class="lineno">  113</span>    Schedule iborSchedule = MakeSchedule()</div>
+<div class="line"><span class="lineno">  114</span>                                .from(settlementDate)</div>
+<div class="line"><span class="lineno">  115</span>                                .to(settlementDate + <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a6f1e4aec3cba6f7cea92368273728ec8">tenor_</a>)</div>
+<div class="line"><span class="lineno">  116</span>                                .withTenor(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;tenor())</div>
+<div class="line"><span class="lineno">  117</span>                                .withCalendar(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;fixingCalendar())</div>
+<div class="line"><span class="lineno">  118</span>                                .withConvention(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>-&gt;businessDayConvention())</div>
+<div class="line"><span class="lineno">  119</span>                                .forwards();</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a> = boost::shared_ptr&lt;OvernightIndexedBasisSwap&gt;(</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keyword">new</span> OvernightIndexedBasisSwap(<a class="code hl_enumvalue" href="class_quant_ext_1_1_overnight_indexed_basis_swap.html#a1d1cfd8ffb84e947f82999c682b666a7a9ca3b60bb6eb8726ba5e66e5afa8b6a0">OvernightIndexedBasisSwap::Payer</a>,</div>
+<div class="line"><span class="lineno">  122</span>                                      10000.0, <span class="comment">// arbitrary</span></div>
+<div class="line"><span class="lineno">  123</span>                                      oisSchedule, <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>, iborSchedule, <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a211475384befbdc6d1d92bfe69635cd0">iborIndex_</a>, 0.0, 0.0, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  124</span>    boost::shared_ptr&lt;PricingEngine&gt; engine(</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keyword">new</span> DiscountingSwapEngine(<a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>.empty() ? <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a11983310cace758fa0f027631ce25843">discountRelinkableHandle_</a> : <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a42418822361f7c1c04a78b99efb36016">discount_</a>));</div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;setPricingEngine(engine);</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    earliestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;startDate();</div>
+<div class="line"><span class="lineno">  129</span>    latestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_o_i_b_s_helper.html#a9a569cdecaeb36a7422ea93f6d969a23">swap_</a>-&gt;maturityDate();</div>
+<div class="line"><span class="lineno">  130</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_overnight_indexed_basis_swap_html_a1d1cfd8ffb84e947f82999c682b666a7a9ca3b60bb6eb8726ba5e66e5afa8b6a0"><div class="ttname"><a href="class_quant_ext_1_1_overnight_indexed_basis_swap.html#a1d1cfd8ffb84e947f82999c682b666a7a9ca3b60bb6eb8726ba5e66e5afa8b6a0">QuantExt::OvernightIndexedBasisSwap::Payer</a></div><div class="ttdeci">@ Payer</div><div class="ttdef"><b>Definition:</b> <a href="oibasisswap_8hpp_source.html#l00045">oibasisswap.hpp:45</a></div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -584,7 +584,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;IborIndex&gt; iborIndex_</td>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_ibor_index.html">IborIndex</a>&gt; iborIndex_</td>
         </tr>
       </table>
   </td>

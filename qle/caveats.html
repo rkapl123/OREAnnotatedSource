@@ -77,115 +77,108 @@ $(function() {
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Class <a class="el" href="class_quant_ext_1_1_analytic_lgm_swaption_engine.html">AnalyticLgmSwaptionEngine</a>  </dt>
-<dd><a class="anchor" id="_caveats000040"></a> <a class="el" href="class_quant_ext_1_1_cash.html">Cash</a> settled swaptions are not supported </dd>
-<dt>Class <a class="el" href="class_quant_ext_1_1_a_u_dbbsw.html">AUDbbsw</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_caveats000002"></a> Convention should be Modified Following Bimonthly. </p>
-<p class="interdd"></p>
-<p class="enddd">Check EOM.  </p>
-</dd>
+<dd><a class="anchor" id="_caveats000038"></a> <a class="el" href="class_quant_ext_1_1_cash.html">Cash</a> settled swaptions are not supported </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_black_volatility_constant_spread.html">BlackVolatilityConstantSpread</a>  </dt>
-<dd><a class="anchor" id="_caveats000043"></a> the given atm vol structure should be strike independent, this is not checked  </dd>
+<dd><a class="anchor" id="_caveats000041"></a> the given atm vol structure should be strike independent, this is not checked  </dd>
 <dt>Member <a class="el" href="class_quant_ext_1_1_bucketed_distribution.html#a10112a02f5588cfc58de29b1ebc43b28">BucketedDistribution::erase</a>  (QuantLib::Size n)</dt>
-<dd><a class="anchor" id="_caveats000031"></a> This may invalidate the distribution if the buckets erased do not have negligible probability.  </dd>
+<dd><a class="anchor" id="_caveats000029"></a> This may invalidate the distribution if the buckets erased do not have negligible probability.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_c_n_h_hibor.html">CNHHibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000003"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000002"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_c_n_h_shibor.html">CNHShibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000004"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000003"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_constant_interpolation.html">ConstantInterpolation</a>  </dt>
-<dd><a class="anchor" id="_caveats000032"></a> See the Interpolation class for information about the required lifetime of the underlying data.  </dd>
+<dd><a class="anchor" id="_caveats000030"></a> See the Interpolation class for information about the required lifetime of the underlying data.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_c_z_k_pribor.html">CZKPribor</a>  </dt>
-<dd><a class="anchor" id="_caveats000005"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000004"></a> Check roll convention and EOM.  </dd>
 <dt>Member <a class="el" href="class_quant_ext_1_1_default_latent_model.html#a5ecfe2190404d92a4641d3478d82c067">DefaultLatentModel&lt; copulaPolicy &gt;::conditionalDefaultProbability</a>  (Probability prob, Size iName, const std::vector&lt; Real &gt; &amp;mktFactors) const</dt>
-<dd><a class="anchor" id="_caveats000038"></a> Most often it is preferred to use the method below avoiding the cumulative inversion.  </dd>
+<dd><a class="anchor" id="_caveats000036"></a> Most often it is preferred to use the method below avoiding the cumulative inversion.  </dd>
 <dt>Member <a class="el" href="class_quant_ext_1_1_default_latent_model.html#a019be29faf648e301108d06cc4ddfac9">DefaultLatentModel&lt; copulaPolicy &gt;::DefaultLatentModel</a>  (const std::vector&lt; std::vector&lt; Real &gt; &gt; &amp;factorWeights, LatentModelIntegrationType::LatentModelIntegrationType integralType, const initTraits &amp;ini=<a class="el" href="class_quant_ext_1_1_default_latent_model.html#abd0a297b55c09cecea3c91a955982388">initTraits()</a>)</dt>
-<dd><a class="anchor" id="_caveats000037"></a> Baskets with realized defaults not tested/WIP.  </dd>
+<dd><a class="anchor" id="_caveats000035"></a> Baskets with realized defaults not tested/WIP.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_discounting_swap_engine_multi_curve.html">DiscountingSwapEngineMultiCurve</a>  </dt>
-<dd><a class="anchor" id="_caveats000041"></a> if an IborCoupon with non-natural fixing and/or accrual period is present, the NPV will be false </dd>
+<dd><a class="anchor" id="_caveats000039"></a> if an IborCoupon with non-natural fixing and/or accrual period is present, the NPV will be false </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_discount_ratio_modified_curve.html">DiscountRatioModifiedCurve</a>  </dt>
-<dd><a class="anchor" id="_caveats000044"></a> One must be careful about mixing floating reference date and fixed reference date curves together as the underlying curves in this yield curve and then moving Settings::instance().evaluationDate(). This is alluded to in the corresponding unit tests. If the <code>moving_</code> member variable of <a class="el" href="class_term_structure.html">TermStructure</a> had an inspector method, then we could enforce that all underlying curves here are either floating or fixed reference date curves.  </dd>
+<dd><a class="anchor" id="_caveats000042"></a> One must be careful about mixing floating reference date and fixed reference date curves together as the underlying curves in this yield curve and then moving Settings::instance().evaluationDate(). This is alluded to in the corresponding unit tests. If the <code>moving_</code> member variable of <a class="el" href="class_term_structure.html">TermStructure</a> had an inspector method, then we could enforce that all underlying curves here are either floating or fixed reference date curves.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_d_k_k_cibor.html">DKKCibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000006"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000005"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_dynamic_optionlet_volatility_structure.html">DynamicOptionletVolatilityStructure</a>  </dt>
-<dd><a class="anchor" id="_caveats000045"></a> No checks are performed that the supplied OptionletVolatilityStructure has a fixed reference date  </dd>
+<dd><a class="anchor" id="_caveats000043"></a> No checks are performed that the supplied OptionletVolatilityStructure has a fixed reference date  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_dynamic_swaption_volatility_matrix.html">DynamicSwaptionVolatilityMatrix</a>  </dt>
-<dd><a class="anchor" id="_caveats000046"></a> the vols from the source ts are read using strike null (indicating atm) </dd>
+<dd><a class="anchor" id="_caveats000044"></a> the vols from the source ts are read using strike null (indicating atm) </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_dynamic_yo_y_optionlet_volatility_surface.html">DynamicYoYOptionletVolatilitySurface</a>  </dt>
-<dd><a class="anchor" id="_caveats000047"></a> No checks are performed that the supplied <a class="el" href="class_yo_y_optionlet_volatility_surface.html">YoYOptionletVolatilitySurface</a> has a fixed reference date </dd>
+<dd><a class="anchor" id="_caveats000045"></a> No checks are performed that the supplied <a class="el" href="class_yo_y_optionlet_volatility_surface.html">YoYOptionletVolatilitySurface</a> has a fixed reference date </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_h_k_d_hibor.html">HKDHibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000007"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000006"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_h_u_f_bubor.html">HUFBubor</a>  </dt>
-<dd><a class="anchor" id="_caveats000008"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000007"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_i_d_r_idrfix.html">IDRIdrfix</a>  </dt>
-<dd><a class="anchor" id="_caveats000009"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000008"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_index_cds_tranche_engine.html">IndexCdsTrancheEngine</a>  </dt>
-<dd><a class="anchor" id="_caveats000042"></a> We do not cover the possibility that recovery amounts decrease the tranche notional on which the premium is paid. For tranche detachment points met in practice, it is rare that recovery amounts exceed the notional of the super-senior tranche and thus erode the notional of the other tranches. If we want to cover this possibility we would need to extend the basket loss model algorithms so that they account for losses on a tranche notional due to recovery amounts in addition to the losses due to default. In summary, do not expect this pricing engine to work well for tranches with high detachment points which are likely to be breached by the sum of recovered amounts as the premium leg will be over-estimated in those situations.  </dd>
+<dd><a class="anchor" id="_caveats000040"></a> We do not cover the possibility that recovery amounts decrease the tranche notional on which the premium is paid. For tranche detachment points met in practice, it is rare that recovery amounts exceed the notional of the super-senior tranche and thus erode the notional of the other tranches. If we want to cover this possibility we would need to extend the basket loss model algorithms so that they account for losses on a tranche notional due to recovery amounts in addition to the losses due to default. In summary, do not expect this pricing engine to work well for tranches with high detachment points which are likely to be breached by the sum of recovered amounts as the premium leg will be over-estimated in those situations.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_i_n_r_mibor_ois.html">INRMiborOis</a>  </dt>
-<dd><a class="anchor" id="_caveats000010"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000009"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_i_n_r_mifor.html">INRMifor</a>  </dt>
-<dd><a class="anchor" id="_caveats000011"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000010"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_interpolated_price_curve.html">InterpolatedPriceCurve&lt; Interpolator &gt;</a>  </dt>
-<dd><a class="anchor" id="_caveats000049"></a> for consistency, if curve is constructed by inferring times from dates using a given day counter, pass the same day counter to the constructor </dd>
+<dd><a class="anchor" id="_caveats000047"></a> for consistency, if curve is constructed by inferring times from dates using a given day counter, pass the same day counter to the constructor </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_j_p_y_e_y_t_i_b_o_r.html">JPYEYTIBOR</a>  </dt>
-<dd><a class="anchor" id="_caveats000012"></a> This is the offshore rate fixed by JBA.  </dd>
+<dd><a class="anchor" id="_caveats000011"></a> This is the offshore rate fixed by JBA.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_k_r_w_cd.html">KRWCd</a>  </dt>
-<dd><a class="anchor" id="_caveats000013"></a> Check roll convention and EOM. </dd>
+<dd><a class="anchor" id="_caveats000012"></a> Check roll convention and EOM. </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_k_r_w_koribor.html">KRWKoribor</a>  </dt>
-<dd><a class="anchor" id="_caveats000014"></a> Check roll convention and EOM. </dd>
+<dd><a class="anchor" id="_caveats000013"></a> Check roll convention and EOM. </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_lgm1f_piecewise_linear_parametrization.html">Lgm1fPiecewiseLinearParametrization&lt; TS &gt;</a>  </dt>
-<dd><a class="anchor" id="_caveats000039"></a> this class is considered experimental, it is not tested well and might have conceptual issues (e.g. kappa is zero almost everywhere); you might rather want to rely on the piecewise constant parametrization </dd>
+<dd><a class="anchor" id="_caveats000037"></a> this class is considered experimental, it is not tested well and might have conceptual issues (e.g. kappa is zero almost everywhere); you might rather want to rely on the piecewise constant parametrization </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_log_quadratic_interpolation.html">LogQuadraticInterpolation</a>  </dt>
-<dd><a class="anchor" id="_caveats000033"></a> See the Interpolation class for information about the required lifetime of the underlying data.  </dd>
+<dd><a class="anchor" id="_caveats000031"></a> See the Interpolation class for information about the required lifetime of the underlying data.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_multi_ccy_composite_instrument.html">MultiCcyCompositeInstrument</a>  </dt>
-<dd><a class="anchor" id="_caveats000029"></a> Methods that drive the calculation directly (such as recalculate(), freeze() and others) might not work correctly. </dd>
+<dd><a class="anchor" id="_caveats000027"></a> Methods that drive the calculation directly (such as recalculate(), freeze() and others) might not work correctly. </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_m_x_n_tiie.html">MXNTiie</a>  </dt>
-<dd><a class="anchor" id="_caveats000015"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000014"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_m_y_r_klibor.html">MYRKlibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000016"></a> Check roll convention and EOM. </dd>
+<dd><a class="anchor" id="_caveats000015"></a> Check roll convention and EOM. </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_n_o_k_nibor.html">NOKNibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000017"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000016"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_n_z_d_b_k_b_m.html">NZDBKBM</a>  </dt>
-<dd><a class="anchor" id="_caveats000018"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000017"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_overnight_indexed_coupon.html">OvernightIndexedCoupon</a>  </dt>
 <dd><a class="anchor" id="_caveats000001"></a> telescopicValueDates optimizes the schedule for calculation speed, but might fail to produce correct results if the coupon ages by more than a grace period of 7 days. It is therefore recommended not to set this flag to true unless you know exactly what you are doing. The intended use is rather by the <a class="el" href="class_quant_ext_1_1_o_i_s_rate_helper.html" title="Rate helper for bootstrapping using Overnight Indexed Swaps.">OISRateHelper</a> which is safe, since it reinitialises the instrument each time the evaluation date changes. </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_piecewise_price_curve.html">PiecewisePriceCurve&lt; Interpolator, Bootstrap &gt;</a>  </dt>
-<dd><a class="anchor" id="_caveats000048"></a> The bootstrapping algorithm raises an exception if any two instruments have the same maturity date. </dd>
-<dt>Class <a class="el" href="class_quant_ext_1_1_p_l_n_wibor.html">PLNWibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000019"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000046"></a> The bootstrapping algorithm raises an exception if any two instruments have the same maturity date. </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_problem___m_t.html">Problem_MT</a>  </dt>
-<dd><a class="anchor" id="_caveats000034"></a> The passed <a class="el" href="class_constraint.html">Constraint</a> instances are stored by reference. The user of this class must make sure that they are not destroyed before the Problem instance.  </dd>
+<dd><a class="anchor" id="_caveats000032"></a> The passed <a class="el" href="class_constraint.html">Constraint</a> instances are stored by reference. The user of this class must make sure that they are not destroyed before the Problem instance.  </dd>
 <dt>Member <a class="el" href="class_quant_ext_1_1_problem___m_t.html#ad20897c5c8bd47f5d4005989bead0e55">Problem_MT::reset</a>  ()</dt>
-<dd><a class="anchor" id="_caveats000035"></a> it does not reset the current minumum to any initial value  </dd>
+<dd><a class="anchor" id="_caveats000033"></a> it does not reset the current minumum to any initial value  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_quadratic_interpolation.html">QuadraticInterpolation</a>  </dt>
-<dd><a class="anchor" id="_caveats000036"></a> See the Interpolation class for information about the required lifetime of the underlying data.  </dd>
+<dd><a class="anchor" id="_caveats000034"></a> See the Interpolation class for information about the required lifetime of the underlying data.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_s_aibor.html">SAibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000020"></a> Check roll convention and EOM. </dd>
+<dd><a class="anchor" id="_caveats000018"></a> Check roll convention and EOM. </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_s_e_k_stibor.html">SEKStibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000021"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000019"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_s_g_d_sibor.html">SGDSibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000022"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000020"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_s_g_d_sor.html">SGDSor</a>  </dt>
-<dd><a class="anchor" id="_caveats000023"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000021"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_s_k_k_bribor.html">SKKBribor</a>  </dt>
-<dd><a class="anchor" id="_caveats000024"></a> Check roll convention and EOM.  </dd>
+<dd><a class="anchor" id="_caveats000022"></a> Check roll convention and EOM.  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_swaption_volatility_constant_spread.html">SwaptionVolatilityConstantSpread</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_caveats000051"></a> the given atm vol structure should be strike independent, this is not checked </p>
+<dd><p class="startdd"><a class="anchor" id="_caveats000049"></a> the given atm vol structure should be strike independent, this is not checked </p>
 <p class="interdd"></p>
 <p class="enddd">the given cube must provide smile sections that provide an ATM level </p>
 </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_swaption_volatility_converter.html">SwaptionVolatilityConverter</a>  </dt>
-<dd><a class="anchor" id="_caveats000050"></a> the converted <code><a class="el" href="class_swaption_volatility_structure.html">SwaptionVolatilityStructure</a></code> object has a fixed reference date equal to <code>asof</code> and fixed market data regardless of the type of reference date and market data of the original <code><a class="el" href="class_swaption_volatility_structure.html">SwaptionVolatilityStructure</a></code> that is passed in  </dd>
+<dd><a class="anchor" id="_caveats000048"></a> the converted <code><a class="el" href="class_swaption_volatility_structure.html">SwaptionVolatilityStructure</a></code> object has a fixed reference date equal to <code>asof</code> and fixed market data regardless of the type of reference date and market data of the original <code><a class="el" href="class_swaption_volatility_structure.html">SwaptionVolatilityStructure</a></code> that is passed in  </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_t_h_b_thor.html">THBThor</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_caveats000025"></a> Check roll convention and EOM.</p>
+<dd><p class="startdd"><a class="anchor" id="_caveats000023"></a> Check roll convention and EOM.</p>
 <p class="enddd"></p>
 </dd>
 <dt>Class <a class="el" href="class_quant_ext_1_1_t_w_d_taibor.html">TWDTaibor</a>  </dt>
-<dd><a class="anchor" id="_caveats000026"></a> Check roll convention and EOM. </dd>
-<dt>Class <a class="el" href="class_quant_ext_1_1_variance_swap.html">VarianceSwap</a>  </dt>
-<dd><a class="anchor" id="_caveats000030"></a> This class does not manage seasoned variance swaps. </dd>
+<dd><a class="anchor" id="_caveats000024"></a> Check roll convention and EOM. </dd>
+<dt>Class <a class="el" href="class_quant_ext_1_1_variance_swap2.html">VarianceSwap2</a>  </dt>
+<dd><a class="anchor" id="_caveats000028"></a> This class does not manage seasoned variance swaps. </dd>
 <dt>Member <a class="el" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#a6c1767eeb3fb49aa0ee2a8be6be44eed">YoYInflationIndexWrapper::fixing</a>  (const Date &amp;fixingDate, bool forecastTodaysFixing=false) const override</dt>
-<dd><a class="anchor" id="_caveats000028"></a> the forecastTodaysFixing parameter (required by the Index interface) is currently ignored.  </dd>
+<dd><a class="anchor" id="_caveats000026"></a> the forecastTodaysFixing parameter (required by the Index interface) is currently ignored.  </dd>
 <dt>Member <a class="el" href="class_quant_ext_1_1_zero_inflation_index_wrapper.html#a47f00379abf8a83607d2212304d5c97b">ZeroInflationIndexWrapper::fixing</a>  (const Date &amp;fixingDate, bool forecastTodaysFixing=false) const override</dt>
-<dd><a class="anchor" id="_caveats000027"></a> the forecastTodaysFixing parameter (required by the Index interface) is currently ignored. </dd>
+<dd><a class="anchor" id="_caveats000025"></a> the forecastTodaysFixing parameter (required by the Index interface) is currently ignored. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

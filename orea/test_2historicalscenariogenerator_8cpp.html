@@ -82,10 +82,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;oret/toplevelfixture.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="testmarket_8hpp_source.html">test/testmarket.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="simplescenario_8hpp_source.html">orea/scenario/simplescenario.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="simplescenariofactory_8hpp_source.html">orea/scenario/simplescenariofactory.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="historicalscenariogenerator_8hpp_source.html">orea/scenario/historicalscenariogenerator.hpp</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="testmarket_8hpp_source.html">testmarket.hpp</a>&quot;</code><br />
 </div>
 <p><a href="test_2historicalscenariogenerator_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -111,89 +111,89 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_2historicalscenariogenerator_8cpp_source.html#l00024">24</a> of file <a class="el" href="test_2historicalscenariogenerator_8cpp_source.html">historicalscenariogenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>                                                               {</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>    BOOST_TEST_MESSAGE(</div>
-<div class="line"><span class="lineno">   27</span>        <span class="stringliteral">&quot;Checking transformation of discount factors to zero rates in Historical Scenario Generator Transform...&quot;</span>);</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    vector&lt;boost::shared_ptr&lt;Scenario&gt;&gt; scenarios;</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>    <span class="comment">// Make up some scenarios</span></div>
-<div class="line"><span class="lineno">   32</span>    Date d1 = Date(14, April, 2016);</div>
-<div class="line"><span class="lineno">   33</span>    Date d2 = d1 + Period(1, Days);</div>
-<div class="line"><span class="lineno">   34</span>    Settings::instance().evaluationDate() = d2;</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    map&lt;RiskFactorKey, Real&gt; rfks = {{{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 3}, 0.999},</div>
-<div class="line"><span class="lineno">   37</span>                                     {{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 4}, 0.995},</div>
-<div class="line"><span class="lineno">   38</span>                                     {{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 5}, 0.99},</div>
-<div class="line"><span class="lineno">   39</span>                                     {{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 6}, 0.981},</div>
-<div class="line"><span class="lineno">   40</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 3}, 0.997},</div>
-<div class="line"><span class="lineno">   41</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 4}, 0.985},</div>
-<div class="line"><span class="lineno">   42</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 5}, 0.979},</div>
-<div class="line"><span class="lineno">   43</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 6}, 0.965},</div>
-<div class="line"><span class="lineno">   44</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 1}, 0.920},</div>
-<div class="line"><span class="lineno">   45</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 2}, 0.905},</div>
-<div class="line"><span class="lineno">   46</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 3}, 0.875},</div>
-<div class="line"><span class="lineno">   47</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 4}, 0.861}};</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    boost::shared_ptr&lt;Scenario&gt; s1 = boost::make_shared&lt;SimpleScenario&gt;(d1);</div>
-<div class="line"><span class="lineno">   50</span>    boost::shared_ptr&lt;Scenario&gt; s2 = boost::make_shared&lt;SimpleScenario&gt;(d2);</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> rf : rfks) {</div>
-<div class="line"><span class="lineno">   53</span>        s1-&gt;add(rf.first, 1);</div>
-<div class="line"><span class="lineno">   54</span>        s2-&gt;add(rf.first, rf.second);</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    scenarios.push_back(s1);</div>
-<div class="line"><span class="lineno">   58</span>    scenarios.push_back(s2);</div>
-<div class="line"><span class="lineno">   59</span>    boost::shared_ptr&lt;HistoricalScenarioLoader&gt; histScenariosLoader = boost::make_shared&lt;HistoricalScenarioLoader&gt;();</div>
-<div class="line"><span class="lineno">   60</span>    histScenariosLoader-&gt;historicalScenarios() = scenarios;</div>
-<div class="line"><span class="lineno">   61</span>    histScenariosLoader-&gt;dates() = vector&lt;Date&gt;{d1, d2};</div>
-<div class="line"><span class="lineno">   62</span>    boost::shared_ptr&lt;HistoricalScenarioGenerator&gt; histScenarios = boost::make_shared&lt;HistoricalScenarioGenerator&gt;(</div>
-<div class="line"><span class="lineno">   63</span>        histScenariosLoader, boost::make_shared&lt;SimpleScenarioFactory&gt;(), TARGET(), 1);</div>
-<div class="line"><span class="lineno">   64</span>    histScenarios-&gt;baseScenario() = s1;</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    <span class="comment">// Init market</span></div>
-<div class="line"><span class="lineno">   67</span>    <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#aa4097b5644f3a3d744f694d1281f5b73">testsuite::TestConfigurationObjects::setConventions</a>();</div>
-<div class="line"><span class="lineno">   68</span>    boost::shared_ptr&lt;Market&gt; initMarket = boost::make_shared&lt;testsuite::TestMarketParCurves&gt;(d2);</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <span class="comment">// build scen sim market params</span></div>
-<div class="line"><span class="lineno">   71</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarketParameters&gt; simMarketData =</div>
-<div class="line"><span class="lineno">   72</span>        <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#a5d3a5e48cec33ea02c24791b2593cae1">testsuite::TestConfigurationObjects::setupSimMarketData</a>();</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <span class="comment">// build scenario sim market</span></div>
-<div class="line"><span class="lineno">   75</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarket&gt; simMarket =</div>
-<div class="line"><span class="lineno">   76</span>        boost::make_shared&lt;analytics::ScenarioSimMarket&gt;(initMarket, simMarketData);</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>    boost::shared_ptr&lt;HistoricalScenarioGeneratorTransform&gt; histScenTrasform =</div>
-<div class="line"><span class="lineno">   79</span>        boost::make_shared&lt;HistoricalScenarioGeneratorTransform&gt;(histScenarios, simMarket, simMarketData);</div>
-<div class="line"><span class="lineno">   80</span>    histScenTrasform-&gt;reset();</div>
-<div class="line"><span class="lineno">   81</span>    boost::shared_ptr&lt;Scenario&gt; scenarioTransform = histScenTrasform-&gt;next(d2);</div>
-<div class="line"><span class="lineno">   82</span> </div>
-<div class="line"><span class="lineno">   83</span>    DayCounter dc;</div>
-<div class="line"><span class="lineno">   84</span>    vector&lt;Period&gt; tenors;</div>
-<div class="line"><span class="lineno">   85</span>    Real tolerance = 0.0001;</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> rfk : rfks) {</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keyword">auto</span> rf = rfk.first;</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">if</span> (rf.keytype == RiskFactorKey::KeyType::DiscountCurve) {</div>
-<div class="line"><span class="lineno">   89</span>            dc = simMarket-&gt;discountCurve(rf.name)-&gt;dayCounter();</div>
-<div class="line"><span class="lineno">   90</span>            tenors = simMarketData-&gt;yieldCurveTenors(rf.name);</div>
-<div class="line"><span class="lineno">   91</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rf.keytype == RiskFactorKey::KeyType::IndexCurve) {</div>
-<div class="line"><span class="lineno">   92</span>            dc = simMarket-&gt;iborIndex(rf.name)-&gt;dayCounter();</div>
-<div class="line"><span class="lineno">   93</span>            tenors = simMarketData-&gt;yieldCurveTenors(rf.name);</div>
-<div class="line"><span class="lineno">   94</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rf.keytype == RiskFactorKey::KeyType::SurvivalProbability) {</div>
-<div class="line"><span class="lineno">   95</span>            dc = simMarket-&gt;defaultCurve(rf.name)-&gt;curve()-&gt;dayCounter();</div>
-<div class="line"><span class="lineno">   96</span>            tenors = simMarketData-&gt;defaultTenors(rf.name);</div>
-<div class="line"><span class="lineno">   97</span>        }</div>
-<div class="line"><span class="lineno">   98</span>        Time t = dc.yearFraction(d2, d2 + tenors[rf.index]);</div>
-<div class="line"><span class="lineno">   99</span>        Real expected = std::log(1 / rfk.second) / t;</div>
-<div class="line"><span class="lineno">  100</span>        Real transform = scenarioTransform-&gt;get(rf);</div>
-<div class="line"><span class="lineno">  101</span>        BOOST_CHECK_MESSAGE(fabs(expected - transform) &lt; tolerance,</div>
-<div class="line"><span class="lineno">  102</span>                            <span class="stringliteral">&quot;Difference between expected and transformed rate &gt; than &quot;</span> &lt;&lt; tolerance &lt;&lt; <span class="stringliteral">&quot; for key &quot;</span></div>
-<div class="line"><span class="lineno">  103</span>                                                                                       &lt;&lt; rf.name);</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-<div class="line"><span class="lineno">  105</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test_2historicalscenariogenerator_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_2historicalscenariogenerator_8cpp_source.html">historicalscenariogenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                                               {</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    BOOST_TEST_MESSAGE(</div>
+<div class="line"><span class="lineno">   28</span>        <span class="stringliteral">&quot;Checking transformation of discount factors to zero rates in Historical Scenario Generator Transform...&quot;</span>);</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    vector&lt;boost::shared_ptr&lt;Scenario&gt;&gt; scenarios;</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <span class="comment">// Make up some scenarios</span></div>
+<div class="line"><span class="lineno">   33</span>    Date d1 = Date(14, April, 2016);</div>
+<div class="line"><span class="lineno">   34</span>    Date d2 = d1 + Period(1, Days);</div>
+<div class="line"><span class="lineno">   35</span>    Settings::instance().evaluationDate() = d2;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    map&lt;RiskFactorKey, Real&gt; rfks = {{{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 3}, 0.999},</div>
+<div class="line"><span class="lineno">   38</span>                                     {{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 4}, 0.995},</div>
+<div class="line"><span class="lineno">   39</span>                                     {{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 5}, 0.99},</div>
+<div class="line"><span class="lineno">   40</span>                                     {{RiskFactorKey::KeyType::DiscountCurve, <span class="stringliteral">&quot;EUR&quot;</span>, 6}, 0.981},</div>
+<div class="line"><span class="lineno">   41</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 3}, 0.997},</div>
+<div class="line"><span class="lineno">   42</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 4}, 0.985},</div>
+<div class="line"><span class="lineno">   43</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 5}, 0.979},</div>
+<div class="line"><span class="lineno">   44</span>                                     {{RiskFactorKey::KeyType::IndexCurve, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, 6}, 0.965},</div>
+<div class="line"><span class="lineno">   45</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 1}, 0.920},</div>
+<div class="line"><span class="lineno">   46</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 2}, 0.905},</div>
+<div class="line"><span class="lineno">   47</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 3}, 0.875},</div>
+<div class="line"><span class="lineno">   48</span>                                     {{RiskFactorKey::KeyType::SurvivalProbability, <span class="stringliteral">&quot;dc&quot;</span>, 4}, 0.861}};</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    boost::shared_ptr&lt;Scenario&gt; s1 = boost::make_shared&lt;SimpleScenario&gt;(d1);</div>
+<div class="line"><span class="lineno">   51</span>    boost::shared_ptr&lt;Scenario&gt; s2 = boost::make_shared&lt;SimpleScenario&gt;(d2);</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> rf : rfks) {</div>
+<div class="line"><span class="lineno">   54</span>        s1-&gt;add(rf.first, 1);</div>
+<div class="line"><span class="lineno">   55</span>        s2-&gt;add(rf.first, rf.second);</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    scenarios.push_back(s1);</div>
+<div class="line"><span class="lineno">   59</span>    scenarios.push_back(s2);</div>
+<div class="line"><span class="lineno">   60</span>    boost::shared_ptr&lt;HistoricalScenarioLoader&gt; histScenariosLoader = boost::make_shared&lt;HistoricalScenarioLoader&gt;();</div>
+<div class="line"><span class="lineno">   61</span>    histScenariosLoader-&gt;historicalScenarios() = scenarios;</div>
+<div class="line"><span class="lineno">   62</span>    histScenariosLoader-&gt;dates() = vector&lt;Date&gt;{d1, d2};</div>
+<div class="line"><span class="lineno">   63</span>    boost::shared_ptr&lt;HistoricalScenarioGenerator&gt; histScenarios = boost::make_shared&lt;HistoricalScenarioGenerator&gt;(</div>
+<div class="line"><span class="lineno">   64</span>        histScenariosLoader, boost::make_shared&lt;SimpleScenarioFactory&gt;(), TARGET(), <span class="keyword">nullptr</span>, 1);</div>
+<div class="line"><span class="lineno">   65</span>    histScenarios-&gt;baseScenario() = s1;</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="comment">// Init market</span></div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#aa4097b5644f3a3d744f694d1281f5b73">testsuite::TestConfigurationObjects::setConventions</a>();</div>
+<div class="line"><span class="lineno">   69</span>    boost::shared_ptr&lt;Market&gt; initMarket = boost::make_shared&lt;testsuite::TestMarketParCurves&gt;(d2);</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    <span class="comment">// build scen sim market params</span></div>
+<div class="line"><span class="lineno">   72</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarketParameters&gt; simMarketData =</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#a5d3a5e48cec33ea02c24791b2593cae1">testsuite::TestConfigurationObjects::setupSimMarketData</a>();</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// build scenario sim market</span></div>
+<div class="line"><span class="lineno">   76</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarket&gt; simMarket =</div>
+<div class="line"><span class="lineno">   77</span>        boost::make_shared&lt;analytics::ScenarioSimMarket&gt;(initMarket, simMarketData);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    boost::shared_ptr&lt;HistoricalScenarioGeneratorTransform&gt; histScenTrasform =</div>
+<div class="line"><span class="lineno">   80</span>        boost::make_shared&lt;HistoricalScenarioGeneratorTransform&gt;(histScenarios, simMarket, simMarketData);</div>
+<div class="line"><span class="lineno">   81</span>    histScenTrasform-&gt;reset();</div>
+<div class="line"><span class="lineno">   82</span>    boost::shared_ptr&lt;Scenario&gt; scenarioTransform = histScenTrasform-&gt;next(d2);</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>    DayCounter dc;</div>
+<div class="line"><span class="lineno">   85</span>    vector&lt;Period&gt; tenors;</div>
+<div class="line"><span class="lineno">   86</span>    Real tolerance = 0.0001;</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> rfk : rfks) {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keyword">auto</span> rf = rfk.first;</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">if</span> (rf.keytype == RiskFactorKey::KeyType::DiscountCurve) {</div>
+<div class="line"><span class="lineno">   90</span>            dc = simMarket-&gt;discountCurve(rf.name)-&gt;dayCounter();</div>
+<div class="line"><span class="lineno">   91</span>            tenors = simMarketData-&gt;yieldCurveTenors(rf.name);</div>
+<div class="line"><span class="lineno">   92</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rf.keytype == RiskFactorKey::KeyType::IndexCurve) {</div>
+<div class="line"><span class="lineno">   93</span>            dc = simMarket-&gt;iborIndex(rf.name)-&gt;dayCounter();</div>
+<div class="line"><span class="lineno">   94</span>            tenors = simMarketData-&gt;yieldCurveTenors(rf.name);</div>
+<div class="line"><span class="lineno">   95</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rf.keytype == RiskFactorKey::KeyType::SurvivalProbability) {</div>
+<div class="line"><span class="lineno">   96</span>            dc = simMarket-&gt;defaultCurve(rf.name)-&gt;curve()-&gt;dayCounter();</div>
+<div class="line"><span class="lineno">   97</span>            tenors = simMarketData-&gt;defaultTenors(rf.name);</div>
+<div class="line"><span class="lineno">   98</span>        }</div>
+<div class="line"><span class="lineno">   99</span>        Time t = dc.yearFraction(d2, d2 + tenors[rf.index]);</div>
+<div class="line"><span class="lineno">  100</span>        Real expected = std::log(1 / rfk.second) / t;</div>
+<div class="line"><span class="lineno">  101</span>        Real transform = scenarioTransform-&gt;get(rf);</div>
+<div class="line"><span class="lineno">  102</span>        BOOST_CHECK_MESSAGE(fabs(expected - transform) &lt; tolerance,</div>
+<div class="line"><span class="lineno">  103</span>                            <span class="stringliteral">&quot;Difference between expected and transformed rate &gt; than &quot;</span> &lt;&lt; tolerance &lt;&lt; <span class="stringliteral">&quot; for key &quot;</span></div>
+<div class="line"><span class="lineno">  104</span>                                                                                       &lt;&lt; rf.name);</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span>}</div>
 <div class="ttc" id="aclasstestsuite_1_1_test_configuration_objects_html_a5d3a5e48cec33ea02c24791b2593cae1"><div class="ttname"><a href="classtestsuite_1_1_test_configuration_objects.html#a5d3a5e48cec33ea02c24791b2593cae1">testsuite::TestConfigurationObjects::setupSimMarketData</a></div><div class="ttdeci">static boost::shared_ptr&lt; ore::analytics::ScenarioSimMarketParameters &gt; setupSimMarketData(bool hasSwapVolCube=false, bool hasYYCapVols=false)</div><div class="ttdoc">ScenarioSimMarketParameters instance.</div><div class="ttdef"><b>Definition:</b> <a href="testmarket_8cpp_source.html#l01245">testmarket.cpp:1245</a></div></div>
 <div class="ttc" id="aclasstestsuite_1_1_test_configuration_objects_html_aa4097b5644f3a3d744f694d1281f5b73"><div class="ttname"><a href="classtestsuite_1_1_test_configuration_objects.html#aa4097b5644f3a3d744f694d1281f5b73">testsuite::TestConfigurationObjects::setConventions</a></div><div class="ttdeci">static void setConventions()</div><div class="ttdoc">Set Conventions.</div><div class="ttdef"><b>Definition:</b> <a href="testmarket_8cpp_source.html#l01181">testmarket.cpp:1181</a></div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">

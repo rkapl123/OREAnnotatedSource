@@ -132,7 +132,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classore_1_1data_1_1_logger_stream.html" title="LoggerStream class that is a std::ostream replacement that will log each line.">LoggerStream</a> class that is a std::ostream replacement that will log each line. </p>
-<p ><a class="el" href="classore_1_1data_1_1_logger_stream.html" title="LoggerStream class that is a std::ostream replacement that will log each line.">LoggerStream</a> is a simple wrapper around a string stream, it has an explicit cast std::ostream&amp; method so it can be used in place of any std::ostream, this can be used with <a class="el" href="namespace_quant_ext.html">QuantExt</a> methods that take a std::ostream&amp; for logging purposes.</p>
+<p ><a class="el" href="classore_1_1data_1_1_logger_stream.html" title="LoggerStream class that is a std::ostream replacement that will log each line.">LoggerStream</a> is a simple wrapper around a std::string stream, it has an explicit cast std::ostream&amp; method so it can be used in place of any std::ostream, this can be used with <a class="el" href="namespace_quant_ext.html">QuantExt</a> methods that take a std::ostream&amp; for logging purposes.</p>
 <p >Once the stream falls out of focus, it's destructor will take the buffered log messages and pass them the main ore::data::Log::instance().</p>
 <p >Note the following</p><ul>
 <li>The timestamps for each log message will correspond to when the <a class="el" href="classore_1_1data_1_1_logger_stream.html" title="LoggerStream class that is a std::ostream replacement that will log each line.">LoggerStream</a> destructor has been called, this may not correspond to the actual time the event occurred.</li>
@@ -148,9 +148,9 @@ Private Attributes</h2></td></tr>
 <div class="line">  function (3, 4, <a class="code hl_define" href="log_8hpp.html#a545b0734263ec086d9f61ad2da63f9a0">LOGGERSTREAM</a>);</div>
 <div class="line">  <span class="comment">// All logging will be completed before this line</span></div>
 <div class="line">}</div>
-<div class="ttc" id="alog_8hpp_html_a545b0734263ec086d9f61ad2da63f9a0"><div class="ttname"><a href="log_8hpp.html#a545b0734263ec086d9f61ad2da63f9a0">LOGGERSTREAM</a></div><div class="ttdeci">#define LOGGERSTREAM(text)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00445">log.hpp:445</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a545b0734263ec086d9f61ad2da63f9a0"><div class="ttname"><a href="log_8hpp.html#a545b0734263ec086d9f61ad2da63f9a0">LOGGERSTREAM</a></div><div class="ttdeci">#define LOGGERSTREAM(text)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00585">log.hpp:585</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00419">419</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00559">559</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a677fa219fb704e704b97aa66e8339fd9" name="a677fa219fb704e704b97aa66e8339fd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a677fa219fb704e704b97aa66e8339fd9">&#9670;&#160;</a></span>LoggerStream()</h2>
@@ -184,16 +184,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8cpp_source.html#l00212">212</a> of file <a class="el" href="log_8cpp_source.html">log.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  213</span>    : <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>(mask), <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#afd1c78dd42c6ae7ed8f363a616c7427d">filename_</a>(filename), <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#aa3fce0f310d9710f2a9634c7aa78ad59">lineNo_</a>(lineNo), <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ss_</a>() {</div>
-<div class="line"><span class="lineno">  214</span>    QL_REQUIRE(mask == <a class="code hl_define" href="log_8hpp.html#afa24ba35e425ef45a72bb39ebbd81efa">ORE_ALERT</a> || mask == <a class="code hl_define" href="log_8hpp.html#a774f604dd85577bd2e7ede6a7e7f76e4">ORE_CRITICAL</a> || mask == <a class="code hl_define" href="log_8hpp.html#ac295f40c5d23a58012eb2b1cabac8425">ORE_ERROR</a> || mask == <a class="code hl_define" href="log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d">ORE_WARNING</a> ||</div>
-<div class="line"><span class="lineno">  215</span>                   mask == <a class="code hl_define" href="log_8hpp.html#aab273ded9acf83717d0243f1e54766df">ORE_NOTICE</a> || mask == <a class="code hl_define" href="log_8hpp.html#a1f5f49f3425e4098fd8a671deac32572">ORE_DEBUG</a> || mask == <a class="code hl_define" href="log_8hpp.html#a88b16fdb80dd1c4bae1df0ae1817b04c">ORE_DATA</a>,</div>
-<div class="line"><span class="lineno">  216</span>               <span class="stringliteral">&quot;Invalid log mask &quot;</span> &lt;&lt; mask);</div>
-<div class="line"><span class="lineno">  217</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_a065edc56e5be8aad4371029305796707"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">ore::data::LoggerStream::mask_</a></div><div class="ttdeci">unsigned mask_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00430">log.hpp:430</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_a39c16de4c160d50c9f956e8384ba3398"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ore::data::LoggerStream::ss_</a></div><div class="ttdeci">std::stringstream ss_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00433">log.hpp:433</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_aa3fce0f310d9710f2a9634c7aa78ad59"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#aa3fce0f310d9710f2a9634c7aa78ad59">ore::data::LoggerStream::lineNo_</a></div><div class="ttdeci">unsigned lineNo_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00432">log.hpp:432</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_afd1c78dd42c6ae7ed8f363a616c7427d"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#afd1c78dd42c6ae7ed8f363a616c7427d">ore::data::LoggerStream::filename_</a></div><div class="ttdeci">const char * filename_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00431">log.hpp:431</a></div></div>
+<p class="definition">Definition at line <a class="el" href="log_8cpp_source.html#l00318">318</a> of file <a class="el" href="log_8cpp_source.html">log.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  319</span>    : <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>(mask), <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#afd1c78dd42c6ae7ed8f363a616c7427d">filename_</a>(filename), <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#aa3fce0f310d9710f2a9634c7aa78ad59">lineNo_</a>(lineNo), <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ss_</a>() {</div>
+<div class="line"><span class="lineno">  320</span>    QL_REQUIRE(mask == <a class="code hl_define" href="log_8hpp.html#afa24ba35e425ef45a72bb39ebbd81efa">ORE_ALERT</a> || mask == <a class="code hl_define" href="log_8hpp.html#a774f604dd85577bd2e7ede6a7e7f76e4">ORE_CRITICAL</a> || mask == <a class="code hl_define" href="log_8hpp.html#ac295f40c5d23a58012eb2b1cabac8425">ORE_ERROR</a> || mask == <a class="code hl_define" href="log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d">ORE_WARNING</a> ||</div>
+<div class="line"><span class="lineno">  321</span>                   mask == <a class="code hl_define" href="log_8hpp.html#aab273ded9acf83717d0243f1e54766df">ORE_NOTICE</a> || mask == <a class="code hl_define" href="log_8hpp.html#a1f5f49f3425e4098fd8a671deac32572">ORE_DEBUG</a> || mask == <a class="code hl_define" href="log_8hpp.html#a88b16fdb80dd1c4bae1df0ae1817b04c">ORE_DATA</a>,</div>
+<div class="line"><span class="lineno">  322</span>               <span class="stringliteral">&quot;Invalid log mask &quot;</span> &lt;&lt; mask);</div>
+<div class="line"><span class="lineno">  323</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_a065edc56e5be8aad4371029305796707"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">ore::data::LoggerStream::mask_</a></div><div class="ttdeci">unsigned mask_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00570">log.hpp:570</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_a39c16de4c160d50c9f956e8384ba3398"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ore::data::LoggerStream::ss_</a></div><div class="ttdeci">std::stringstream ss_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00573">log.hpp:573</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_aa3fce0f310d9710f2a9634c7aa78ad59"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#aa3fce0f310d9710f2a9634c7aa78ad59">ore::data::LoggerStream::lineNo_</a></div><div class="ttdeci">unsigned lineNo_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00572">log.hpp:572</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_logger_stream_html_afd1c78dd42c6ae7ed8f363a616c7427d"><div class="ttname"><a href="classore_1_1data_1_1_logger_stream.html#afd1c78dd42c6ae7ed8f363a616c7427d">ore::data::LoggerStream::filename_</a></div><div class="ttdeci">const char * filename_</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00571">log.hpp:571</a></div></div>
 <div class="ttc" id="alog_8hpp_html_a1f5f49f3425e4098fd8a671deac32572"><div class="ttname"><a href="log_8hpp.html#a1f5f49f3425e4098fd8a671deac32572">ORE_DEBUG</a></div><div class="ttdeci">#define ORE_DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00032">log.hpp:32</a></div></div>
 <div class="ttc" id="alog_8hpp_html_a774f604dd85577bd2e7ede6a7e7f76e4"><div class="ttname"><a href="log_8hpp.html#a774f604dd85577bd2e7ede6a7e7f76e4">ORE_CRITICAL</a></div><div class="ttdeci">#define ORE_CRITICAL</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00028">log.hpp:28</a></div></div>
 <div class="ttc" id="alog_8hpp_html_a88b16fdb80dd1c4bae1df0ae1817b04c"><div class="ttname"><a href="log_8hpp.html#a88b16fdb80dd1c4bae1df0ae1817b04c">ORE_DATA</a></div><div class="ttdeci">#define ORE_DATA</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00033">log.hpp:33</a></div></div>
@@ -221,19 +221,20 @@ Private Attributes</h2></td></tr>
 
 <p>destructor - this is when the logging takes place. </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8cpp_source.html#l00219">219</a> of file <a class="el" href="log_8cpp_source.html">log.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  219</span>                            {</div>
-<div class="line"><span class="lineno">  220</span>    <span class="keywordtype">string</span> text;</div>
-<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">while</span> (getline(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ss_</a>, text)) {</div>
-<div class="line"><span class="lineno">  222</span>        <span class="comment">// we expand the MLOG macro here so we can overwrite __FILE__ and __LINE__</span></div>
-<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">if</span> (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().filter(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>)) {</div>
-<div class="line"><span class="lineno">  224</span>            boost::unique_lock&lt;boost::shared_mutex&gt; lock(ore::data::Log::instance().mutex());</div>
-<div class="line"><span class="lineno">  225</span>            ore::data::Log::instance().header(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#afd1c78dd42c6ae7ed8f363a616c7427d">filename_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#aa3fce0f310d9710f2a9634c7aa78ad59">lineNo_</a>);</div>
-<div class="line"><span class="lineno">  226</span>            ore::data::Log::instance().logStream() &lt;&lt; text;</div>
-<div class="line"><span class="lineno">  227</span>            ore::data::Log::instance().log(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>);</div>
-<div class="line"><span class="lineno">  228</span>        }</div>
-<div class="line"><span class="lineno">  229</span>    }</div>
-<div class="line"><span class="lineno">  230</span>}</div>
+<p class="definition">Definition at line <a class="el" href="log_8cpp_source.html#l00325">325</a> of file <a class="el" href="log_8cpp_source.html">log.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  325</span>                            {</div>
+<div class="line"><span class="lineno">  326</span>    <span class="keywordtype">string</span> text;</div>
+<div class="line"><span class="lineno">  327</span>    <span class="keywordflow">while</span> (getline(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ss_</a>, text)) {</div>
+<div class="line"><span class="lineno">  328</span>        <span class="comment">// we expand the MLOG macro here so we can overwrite __FILE__ and __LINE__</span></div>
+<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">if</span> (ore::data::Log::instance().enabled() &amp;&amp; ore::data::Log::instance().<a class="code hl_variable" href="computationgraphbuilder_8cpp.html#abd640cc39af07965a8475be310893006">filter</a>(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>)) {</div>
+<div class="line"><span class="lineno">  330</span>            boost::unique_lock&lt;boost::shared_mutex&gt; lock(ore::data::Log::instance().mutex());</div>
+<div class="line"><span class="lineno">  331</span>            ore::data::Log::instance().header(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#afd1c78dd42c6ae7ed8f363a616c7427d">filename_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#aa3fce0f310d9710f2a9634c7aa78ad59">lineNo_</a>);</div>
+<div class="line"><span class="lineno">  332</span>            ore::data::Log::instance().logStream() &lt;&lt; text;</div>
+<div class="line"><span class="lineno">  333</span>            ore::data::Log::instance().log(<a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a065edc56e5be8aad4371029305796707">mask_</a>);</div>
+<div class="line"><span class="lineno">  334</span>        }</div>
+<div class="line"><span class="lineno">  335</span>    }</div>
+<div class="line"><span class="lineno">  336</span>}</div>
+<div class="ttc" id="acomputationgraphbuilder_8cpp_html_abd640cc39af07965a8475be310893006"><div class="ttname"><a href="computationgraphbuilder_8cpp.html#abd640cc39af07965a8475be310893006">filter</a></div><div class="ttdeci">SafeStack&lt; Filter &gt; filter</div><div class="ttdef"><b>Definition:</b> <a href="computationgraphbuilder_8cpp_source.html#l01474">computationgraphbuilder.cpp:1474</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -255,8 +256,8 @@ Private Attributes</h2></td></tr>
 
 <p>cast this <a class="el" href="classore_1_1data_1_1_logger_stream.html" title="LoggerStream class that is a std::ostream replacement that will log each line.">LoggerStream</a> as a ostream&amp; </p>
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00427">427</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  427</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ss_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00567">567</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  567</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_logger_stream.html#a39c16de4c160d50c9f956e8384ba3398">ss_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -281,7 +282,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00430">430</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00570">570</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +306,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00431">431</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00571">571</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +330,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00432">432</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00572">572</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>
@@ -353,7 +354,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00433">433</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="log_8hpp_source.html#l00573">573</a> of file <a class="el" href="log_8hpp_source.html">log.hpp</a>.</p>
 
 </div>
 </div>

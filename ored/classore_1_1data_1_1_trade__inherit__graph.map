@@ -1,81 +1,124 @@
 <map id="Trade" name="Trade">
-<area shape="rect" id="node1" title="Trade base class." alt="" coords="4269,196,4471,1351"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_ascot.html" title="Serializable Convertible Bond." alt="" coords="5,1883,148,2113"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_asian_option.html" title="Serializable Asian Option." alt="" coords="172,1758,341,2238"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_barrier_option.html" title="Serializable FX Barrier Option." alt="" coords="4826,2645,4994,3111"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_bond.html" title="Serializable Bond." alt="" coords="529,1912,672,2084"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_bond_option.html" title="Serializable Bond Option." alt="" coords="696,1831,839,2165"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_bond_position.html" title=" " alt="" coords="863,1839,1059,2157"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_bond_repo.html" title=" " alt="" coords="1083,1890,1260,2106"/>
-<area shape="rect" id="node19" href="$classore_1_1data_1_1_bond_t_r_s.html" title=" " alt="" coords="1284,1721,1507,2275"/>
-<area shape="rect" id="node20" href="$classore_1_1data_1_1_c_b_o.html" title=" " alt="" coords="1531,1743,1721,2253"/>
-<area shape="rect" id="node21" href="$classore_1_1data_1_1_cap_floor.html" title="Serializable cap, floor, collar." alt="" coords="1745,1861,1867,2135"/>
-<area shape="rect" id="node22" href="$classore_1_1data_1_1_cliquet_option.html" title="Serializable Equity Cliquet Option." alt="" coords="1891,1604,2033,2392"/>
-<area shape="rect" id="node23" href="$classore_1_1data_1_1_commodity_average_price_option.html" title=" " alt="" coords="2057,1399,2285,2597"/>
-<area shape="rect" id="node24" href="$classore_1_1data_1_1_commodity_digital_average_price_option.html" title=" " alt="" coords="2310,1406,2529,2590"/>
-<area shape="rect" id="node25" href="$classore_1_1data_1_1_commodity_digital_option.html" title="Commodity digital option trade representation as call spread." alt="" coords="2553,1809,2741,2187"/>
-<area shape="rect" id="node26" href="$classore_1_1data_1_1_commodity_forward.html" title=" " alt="" coords="2766,1575,2926,2421"/>
-<area shape="rect" id="node27" href="$classore_1_1data_1_1_commodity_option_strip.html" title=" " alt="" coords="2950,1553,3129,2443"/>
-<area shape="rect" id="node28" href="$classore_1_1data_1_1_commodity_position.html" title="Serializable Commodity Position." alt="" coords="3153,1861,3349,2135"/>
-<area shape="rect" id="node29" href="$classore_1_1data_1_1_commodity_spread_option.html" title=" " alt="" coords="3373,1853,3567,2143"/>
-<area shape="rect" id="node30" href="$classore_1_1data_1_1_commodity_swap.html" title=" " alt="" coords="3591,1875,3738,2121"/>
-<area shape="rect" id="node31" href="$classore_1_1data_1_1_commodity_swaption.html" title=" " alt="" coords="3763,1809,3929,2187"/>
-<area shape="rect" id="node32" href="$classore_1_1data_1_1_composite_trade.html" title="Composite Trade class." alt="" coords="3953,1780,4104,2216"/>
-<area shape="rect" id="node33" href="$classore_1_1data_1_1_convertible_bond.html" title="Serializable Convertible Bond." alt="" coords="4128,1905,4271,2091"/>
-<area shape="rect" id="node34" href="$classore_1_1data_1_1_credit_default_swap.html" title=" " alt="" coords="4295,1912,4445,2084"/>
-<area shape="rect" id="node35" href="$classore_1_1data_1_1_credit_default_swap_option.html" title=" " alt="" coords="4470,1758,4681,2238"/>
-<area shape="rect" id="node36" href="$classore_1_1data_1_1_credit_linked_swap.html" title=" " alt="" coords="4705,1875,4872,2121"/>
-<area shape="rect" id="node37" href="$classore_1_1data_1_1_equity_derivative.html" title="Base class for all Equity Derivaties." alt="" coords="366,1963,505,2033"/>
-<area shape="rect" id="node42" href="$classore_1_1data_1_1_equity_forward.html" title="Serializable Equity Forward contract." alt="" coords="4948,1831,5091,2165"/>
-<area shape="rect" id="node43" href="$classore_1_1data_1_1_equity_option_position.html" title="Serializable Equity Option Position." alt="" coords="5115,1817,5311,2179"/>
-<area shape="rect" id="node44" href="$classore_1_1data_1_1_equity_position.html" title="Serializable Equity Position." alt="" coords="5335,1861,5531,2135"/>
-<area shape="rect" id="node45" href="$classore_1_1data_1_1_failed_trade.html" title=" " alt="" coords="5555,1919,5737,2077"/>
-<area shape="rect" id="node46" href="$classore_1_1data_1_1_forward_bond.html" title=" " alt="" coords="5761,1743,5963,2253"/>
-<area shape="rect" id="node47" href="$classore_1_1data_1_1_forward_rate_agreement.html" title="Serializable ForwardRateAgreement." alt="" coords="5987,1883,6169,2113"/>
-<area shape="rect" id="node48" href="$classore_1_1data_1_1_fx_average_forward.html" title="Serializable Fx Average Forward." alt="" coords="6193,1729,6347,2267"/>
-<area shape="rect" id="node49" href="$classore_1_1data_1_1_fx_derivative.html" title="Base class for all FX Derivaties." alt="" coords="6372,1963,6488,2033"/>
-<area shape="rect" id="node57" href="$classore_1_1data_1_1_fx_forward.html" title="Serializable FX Forward." alt="" coords="6513,1736,6651,2260"/>
-<area shape="rect" id="node58" href="$classore_1_1data_1_1_fx_swap.html" title="Serializable FX Swap." alt="" coords="6675,1714,6835,2282"/>
-<area shape="rect" id="node59" href="$classore_1_1data_1_1_index_credit_default_swap.html" title=" " alt="" coords="6860,1875,7045,2121"/>
-<area shape="rect" id="node60" href="$classore_1_1data_1_1_index_credit_default_swap_option.html" title=" " alt="" coords="7069,1751,7292,2245"/>
-<area shape="rect" id="node61" href="$classore_1_1data_1_1_multi_leg_option.html" title=" " alt="" coords="7316,1890,7448,2106"/>
-<area shape="rect" id="node62" href="$classore_1_1data_1_1_swap.html" title="Serializable Swap, Single and Cross Currency." alt="" coords="7472,1831,7641,2165"/>
-<area shape="rect" id="node66" href="$classore_1_1data_1_1_swaption.html" title="Serializable Swaption." alt="" coords="7665,1802,7832,2194"/>
-<area shape="rect" id="node67" href="$classore_1_1data_1_1_synthetic_c_d_o.html" title="Serializable CDS Index Tranche (Synthetic CDO)" alt="" coords="7856,1677,8063,2319"/>
-<area shape="rect" id="node68" href="$classore_1_1data_1_1_t_r_s.html" title=" " alt="" coords="8087,1824,8263,2172"/>
-<area shape="rect" id="node70" href="$classore_1_1data_1_1_vanilla_option_trade.html" title="Serializable Vanilla Option." alt="" coords="8288,1773,8452,2223"/>
-<area shape="rect" id="node76" href="$classore_1_1data_1_1_var_swap.html" title=" " alt="" coords="8768,1736,8937,2260"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="4296,5,4444,148"/>
+<area shape="rect" id="node1" title="Trade base class." alt="" coords="4423,196,4626,1351"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_ascot.html" title="Serializable Convertible Bond." alt="" coords="200,1883,343,2113"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_asian_option.html" title="Serializable Asian Option." alt="" coords="367,1758,536,2238"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_barrier_option.html" title="Serializable FX Barrier Option." alt="" coords="781,2645,940,3111"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_bond.html" title="Serializable Bond." alt="" coords="940,1912,1083,2084"/>
+<area shape="rect" id="node16" href="$classore_1_1data_1_1_bond_option.html" title="Serializable Bond Option." alt="" coords="1107,1831,1249,2165"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_bond_position.html" title=" " alt="" coords="1273,1839,1469,2157"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_bond_repo.html" title=" " alt="" coords="1493,1890,1671,2106"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_bond_t_r_s.html" title=" " alt="" coords="1695,1721,1917,2275"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_c_b_o.html" title=" " alt="" coords="1941,1743,2132,2253"/>
+<area shape="rect" id="node21" href="$classore_1_1data_1_1_cap_floor.html" title="Serializable cap, floor, collar." alt="" coords="2156,1861,2277,2135"/>
+<area shape="rect" id="node22" href="$classore_1_1data_1_1_cliquet_option.html" title="Serializable Equity Cliquet Option." alt="" coords="2301,1604,2444,2392"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_commodity_average_price_option.html" title=" " alt="" coords="2468,1399,2696,2597"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_commodity_digital_average_price_option.html" title=" " alt="" coords="2721,1406,2939,2590"/>
+<area shape="rect" id="node25" href="$classore_1_1data_1_1_commodity_digital_option.html" title="Commodity digital option trade representation as call spread." alt="" coords="2964,1809,3152,2187"/>
+<area shape="rect" id="node26" href="$classore_1_1data_1_1_commodity_forward.html" title=" " alt="" coords="3177,1575,3337,2421"/>
+<area shape="rect" id="node27" href="$classore_1_1data_1_1_commodity_option_strip.html" title=" " alt="" coords="3361,1553,3539,2443"/>
+<area shape="rect" id="node28" href="$classore_1_1data_1_1_commodity_position.html" title="Serializable Commodity Position." alt="" coords="3564,1861,3760,2135"/>
+<area shape="rect" id="node29" href="$classore_1_1data_1_1_commodity_spread_option.html" title=" " alt="" coords="3784,1890,3977,2106"/>
+<area shape="rect" id="node30" href="$classore_1_1data_1_1_commodity_swap.html" title=" " alt="" coords="4002,1875,4149,2121"/>
+<area shape="rect" id="node31" href="$classore_1_1data_1_1_commodity_swaption.html" title=" " alt="" coords="4173,1809,4340,2187"/>
+<area shape="rect" id="node32" href="$classore_1_1data_1_1_composite_trade.html" title="Composite Trade class." alt="" coords="4364,1780,4515,2216"/>
+<area shape="rect" id="node33" href="$classore_1_1data_1_1_convertible_bond.html" title="Serializable Convertible Bond." alt="" coords="4539,1905,4681,2091"/>
+<area shape="rect" id="node34" href="$classore_1_1data_1_1_credit_default_swap.html" title=" " alt="" coords="4705,1912,4856,2084"/>
+<area shape="rect" id="node35" href="$classore_1_1data_1_1_credit_default_swap_option.html" title=" " alt="" coords="4881,1758,5091,2238"/>
+<area shape="rect" id="node36" href="$classore_1_1data_1_1_credit_linked_swap.html" title=" " alt="" coords="5116,1875,5283,2121"/>
+<area shape="rect" id="node37" href="$classore_1_1data_1_1_equity_derivative.html" title="Base class for all Equity Derivaties." alt="" coords="586,1963,725,2033"/>
+<area shape="rect" id="node42" href="$classore_1_1data_1_1_equity_forward.html" title="Serializable Equity Forward contract." alt="" coords="5307,1831,5449,2165"/>
+<area shape="rect" id="node43" href="$classore_1_1data_1_1_equity_option_position.html" title="Serializable Equity Option Position." alt="" coords="5473,1817,5669,2179"/>
+<area shape="rect" id="node44" href="$classore_1_1data_1_1_equity_position.html" title="Serializable Equity Position." alt="" coords="5693,1861,5889,2135"/>
+<area shape="rect" id="node45" href="$classore_1_1data_1_1_failed_trade.html" title=" " alt="" coords="5914,1919,6095,2077"/>
+<area shape="rect" id="node46" href="$classore_1_1data_1_1_forward_bond.html" title=" " alt="" coords="6119,1743,6322,2253"/>
+<area shape="rect" id="node47" href="$classore_1_1data_1_1_fx_average_forward.html" title="Serializable Fx Average Forward." alt="" coords="6346,1729,6501,2267"/>
+<area shape="rect" id="node48" href="$classore_1_1data_1_1_fx_derivative.html" title="Base class for all FX Derivaties." alt="" coords="800,1963,916,2033"/>
+<area shape="rect" id="node56" href="$classore_1_1data_1_1_fx_forward.html" title="Serializable FX Forward." alt="" coords="6525,1736,6663,2260"/>
+<area shape="rect" id="node57" href="$classore_1_1data_1_1_fx_swap.html" title="Serializable FX Swap." alt="" coords="6687,1714,6847,2282"/>
+<area shape="rect" id="node58" href="$classore_1_1data_1_1_index_credit_default_swap.html" title=" " alt="" coords="6872,1875,7057,2121"/>
+<area shape="rect" id="node59" href="$classore_1_1data_1_1_index_credit_default_swap_option.html" title=" " alt="" coords="7081,1751,7304,2245"/>
+<area shape="rect" id="node60" href="$classore_1_1data_1_1_multi_leg_option.html" title=" " alt="" coords="7328,1890,7460,2106"/>
+<area shape="rect" id="node61" href="$classore_1_1data_1_1_risk_participation_agreement.html" title="Serializable risk participation agreement." alt="" coords="7484,1751,7693,2245"/>
+<area shape="rect" id="node62" href="$classore_1_1data_1_1_scripted_trade.html" title=" " alt="" coords="7717,1743,7889,2253"/>
+<area shape="rect" id="node104" href="$classore_1_1data_1_1_swap.html" title="Serializable Swap, Single and Cross Currency." alt="" coords="8599,1824,8768,2172"/>
+<area shape="rect" id="node109" href="$classore_1_1data_1_1_swaption.html" title="Serializable Swaption." alt="" coords="8792,1795,8959,2201"/>
+<area shape="rect" id="node110" href="$classore_1_1data_1_1_synthetic_c_d_o.html" title="Serializable CDS Index Tranche (Synthetic CDO)" alt="" coords="8983,1677,9189,2319"/>
+<area shape="rect" id="node111" href="$classore_1_1data_1_1_t_r_s.html" title=" " alt="" coords="9261,1824,9437,2172"/>
+<area shape="rect" id="node113" href="$classore_1_1data_1_1_vanilla_option_trade.html" title="Serializable Vanilla Option." alt="" coords="9632,1773,9796,2223"/>
+<area shape="rect" id="node119" href="$classore_1_1data_1_1_var_swap.html" title=" " alt="" coords="10193,1736,10363,2260"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_x_m_l_serializable.html" title="Base class for all serializable classes." alt="" coords="4451,5,4599,148"/>
 <area shape="rect" id="node5" href="$classore_1_1data_1_1_commodity_asian_option.html" title=" " alt="" coords="164,2836,349,2920"/>
 <area shape="rect" id="node6" href="$classore_1_1data_1_1_equity_asian_option.html" title=" " alt="" coords="373,2836,529,2920"/>
 <area shape="rect" id="node7" href="$classore_1_1data_1_1_fx_asian_option.html" title=" " alt="" coords="5,2836,140,2920"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_equity_option_with_barrier.html" title=" " alt="" coords="3699,3239,3887,3587"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_fx_option_with_barrier.html" title=" " alt="" coords="5036,3225,5203,3602"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_equity_barrier_option.html" title="Serializable EQ Barrier Option." alt="" coords="3605,3716,3773,3829"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_equity_double_barrier_option.html" title="Serializable Equity Double Barrier Option." alt="" coords="3797,3716,3999,3829"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_fx_barrier_option.html" title="Serializable FX Barrier Option." alt="" coords="4937,3716,5105,3829"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_fx_double_barrier_option.html" title="Serializable FX Double Barrier Option." alt="" coords="5129,3716,5307,3829"/>
-<area shape="rect" id="node38" href="$classore_1_1data_1_1_equity_single_asset_derivative.html" title="Base class for all single asset Equity Derivaties." alt="" coords="1469,2829,1671,2927"/>
-<area shape="rect" id="node39" href="$classore_1_1data_1_1_equity_digital_option.html" title="Serializable EQ Digital Option." alt="" coords="1288,3247,1447,3580"/>
-<area shape="rect" id="node40" href="$classore_1_1data_1_1_equity_double_touch_option.html" title="SerializableEQ Double One&#45;Touch/No&#45;Touch Option." alt="" coords="1471,3181,1669,3646"/>
-<area shape="rect" id="node41" href="$classore_1_1data_1_1_equity_touch_option.html" title="Serializable EQ One&#45;Touch/No&#45;Touch Option." alt="" coords="1693,3173,1852,3653"/>
-<area shape="rect" id="node50" href="$classore_1_1data_1_1_fx_single_asset_derivative.html" title="Base class for all single asset FX Derivaties." alt="" coords="6015,2785,6195,2971"/>
-<area shape="rect" id="node51" href="$classore_1_1data_1_1_fx_digital_barrier_option.html" title="Serializable FX Digital Barrier Option." alt="" coords="5552,3181,5727,3646"/>
-<area shape="rect" id="node52" href="$classore_1_1data_1_1_fx_digital_option.html" title="Serializable FX Digital Option." alt="" coords="5751,3261,5888,3565"/>
-<area shape="rect" id="node53" href="$classore_1_1data_1_1_fx_double_touch_option.html" title="Serializable FX Double One&#45;Touch/No&#45;Touch Option." alt="" coords="5913,3159,6089,3668"/>
-<area shape="rect" id="node54" href="$classore_1_1data_1_1_fx_european_barrier_option.html" title="Serializable FX European Barrier Option." alt="" coords="6113,3239,6307,3587"/>
-<area shape="rect" id="node55" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html" title="Serializable FX KIKO Barrier Option." alt="" coords="6331,3195,6502,3631"/>
-<area shape="rect" id="node56" href="$classore_1_1data_1_1_fx_touch_option.html" title="Serializable FX One&#45;Touch/No&#45;Touch Option." alt="" coords="6526,3173,6662,3653"/>
-<area shape="rect" id="node63" href="$classore_1_1data_1_1_cross_currency_swap.html" title="Serializable Cross Currency Swap contract." alt="" coords="7459,2821,7654,2935"/>
-<area shape="rect" id="node64" href="$classore_1_1data_1_1_equity_swap.html" title="Serializable Equity Swap contract." alt="" coords="7678,2799,7825,2957"/>
-<area shape="rect" id="node65" href="$classore_1_1data_1_1_inflation_swap.html" title="Serializable Cross Currency Swap contract." alt="" coords="7281,2821,7435,2935"/>
-<area shape="rect" id="node69" href="$classore_1_1data_1_1_c_f_d.html" title=" " alt="" coords="7934,2843,8009,2913"/>
-<area shape="rect" id="node71" href="$classore_1_1data_1_1_commodity_option.html" title="Commodity option trade representation." alt="" coords="8542,2755,8694,3001"/>
-<area shape="rect" id="node72" href="$classore_1_1data_1_1_equity_future_option.html" title="Serializable EQ Futures Option." alt="" coords="8033,2777,8193,2979"/>
-<area shape="rect" id="node73" href="$classore_1_1data_1_1_equity_option.html" title="Serializable Equity Option." alt="" coords="8217,2770,8360,2986"/>
-<area shape="rect" id="node75" href="$classore_1_1data_1_1_fx_option.html" title="Serializable FX Option." alt="" coords="8385,2741,8518,3015"/>
-<area shape="rect" id="node74" href="$classore_1_1data_1_1_equity_european_barrier_option.html" title="Serializable EQ European Barrier Option." alt="" coords="8181,3335,8397,3492"/>
-<area shape="rect" id="node77" href="$classore_1_1data_1_1_com_var_swap.html" title=" " alt="" coords="8857,2836,9000,2920"/>
-<area shape="rect" id="node78" href="$classore_1_1data_1_1_eq_var_swap.html" title=" " alt="" coords="9024,2836,9167,2920"/>
-<area shape="rect" id="node79" href="$classore_1_1data_1_1_fx_var_swap.html" title=" " alt="" coords="8718,2843,8833,2913"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_equity_option_with_barrier.html" title=" " alt="" coords="759,3239,947,3587"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_fx_option_with_barrier.html" title=" " alt="" coords="972,3225,1139,3602"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_equity_barrier_option.html" title="Serializable EQ Barrier Option." alt="" coords="567,3716,728,3829"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_equity_double_barrier_option.html" title="Serializable Equity Double Barrier Option." alt="" coords="752,3716,953,3829"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_fx_barrier_option.html" title="Serializable FX Barrier Option." alt="" coords="977,3716,1136,3829"/>
+<area shape="rect" id="node14" href="$classore_1_1data_1_1_fx_double_barrier_option.html" title="Serializable FX Double Barrier Option." alt="" coords="1161,3716,1339,3829"/>
+<area shape="rect" id="node38" href="$classore_1_1data_1_1_equity_single_asset_derivative.html" title="Base class for all single asset Equity Derivaties." alt="" coords="554,2829,757,2927"/>
+<area shape="rect" id="node39" href="$classore_1_1data_1_1_equity_digital_option.html" title="Serializable EQ Digital Option." alt="" coords="171,3247,329,3580"/>
+<area shape="rect" id="node40" href="$classore_1_1data_1_1_equity_double_touch_option.html" title="SerializableEQ Double One&#45;Touch/No&#45;Touch Option." alt="" coords="353,3181,552,3646"/>
+<area shape="rect" id="node41" href="$classore_1_1data_1_1_equity_touch_option.html" title="Serializable EQ One&#45;Touch/No&#45;Touch Option." alt="" coords="576,3173,735,3653"/>
+<area shape="rect" id="node49" href="$classore_1_1data_1_1_fx_single_asset_derivative.html" title="Base class for all single asset FX Derivaties." alt="" coords="1465,2785,1645,2971"/>
+<area shape="rect" id="node50" href="$classore_1_1data_1_1_fx_digital_barrier_option.html" title="Serializable FX Digital Barrier Option." alt="" coords="1737,3181,1912,3646"/>
+<area shape="rect" id="node51" href="$classore_1_1data_1_1_fx_digital_option.html" title="Serializable FX Digital Option." alt="" coords="1936,3261,2073,3565"/>
+<area shape="rect" id="node52" href="$classore_1_1data_1_1_fx_double_touch_option.html" title="Serializable FX Double One&#45;Touch/No&#45;Touch Option." alt="" coords="2098,3159,2274,3668"/>
+<area shape="rect" id="node53" href="$classore_1_1data_1_1_fx_european_barrier_option.html" title="Serializable FX European Barrier Option." alt="" coords="1163,3239,1358,3587"/>
+<area shape="rect" id="node54" href="$classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html" title="Serializable FX KIKO Barrier Option." alt="" coords="1382,3195,1553,3631"/>
+<area shape="rect" id="node55" href="$classore_1_1data_1_1_fx_touch_option.html" title="Serializable FX One&#45;Touch/No&#45;Touch Option." alt="" coords="1577,3173,1713,3653"/>
+<area shape="rect" id="node63" href="$classore_1_1data_1_1_accumulator.html" title=" " alt="" coords="7858,2689,8021,3067"/>
+<area shape="rect" id="node67" href="$classore_1_1data_1_1_autocallable__01.html" title=" " alt="" coords="8045,2741,8204,3015"/>
+<area shape="rect" id="node68" href="$classore_1_1data_1_1_basket_option.html" title=" " alt="" coords="8229,2763,8367,2993"/>
+<area shape="rect" id="node72" href="$classore_1_1data_1_1_basket_variance_swap.html" title=" " alt="" coords="8392,2741,8561,3015"/>
+<area shape="rect" id="node76" href="$classore_1_1data_1_1_best_entry_option.html" title=" " alt="" coords="4581,2704,4722,3052"/>
+<area shape="rect" id="node80" href="$classore_1_1data_1_1_double_digital_option.html" title=" " alt="" coords="5001,2719,5160,3037"/>
+<area shape="rect" id="node81" href="$classore_1_1data_1_1_european_option_barrier.html" title=" " alt="" coords="5185,2697,5361,3059"/>
+<area shape="rect" id="node82" href="$classore_1_1data_1_1_generic_barrier_option.html" title=" " alt="" coords="5385,2675,5574,3081"/>
+<area shape="rect" id="node86" href="$classore_1_1data_1_1_knock_out_swap.html" title=" " alt="" coords="5775,2799,5909,2957"/>
+<area shape="rect" id="node87" href="$classore_1_1data_1_1_performance_option__01.html" title=" " alt="" coords="5933,2741,6111,3015"/>
+<area shape="rect" id="node88" href="$classore_1_1data_1_1_rainbow_option.html" title=" " alt="" coords="6135,2770,6267,2986"/>
+<area shape="rect" id="node92" href="$classore_1_1data_1_1_ta_r_f.html" title=" " alt="" coords="6379,2697,6542,3059"/>
+<area shape="rect" id="node96" href="$classore_1_1data_1_1_window_barrier_option.html" title=" " alt="" coords="6965,2748,7135,3008"/>
+<area shape="rect" id="node100" href="$classore_1_1data_1_1_worst_of_basket_swap.html" title=" " alt="" coords="7553,2660,7779,3096"/>
+<area shape="rect" id="node64" href="$classore_1_1data_1_1_commodity_accumulator.html" title=" " alt="" coords="7975,3386,8162,3441"/>
+<area shape="rect" id="node65" href="$classore_1_1data_1_1_equity_accumulator.html" title=" " alt="" coords="8187,3386,8345,3441"/>
+<area shape="rect" id="node66" href="$classore_1_1data_1_1_fx_accumulator.html" title=" " alt="" coords="8370,3386,8506,3441"/>
+<area shape="rect" id="node69" href="$classore_1_1data_1_1_commodity_basket_option.html" title=" " alt="" coords="8531,3386,8724,3441"/>
+<area shape="rect" id="node70" href="$classore_1_1data_1_1_equity_basket_option.html" title=" " alt="" coords="8748,3386,8912,3441"/>
+<area shape="rect" id="node71" href="$classore_1_1data_1_1_fx_basket_option.html" title=" " alt="" coords="8936,3386,9079,3441"/>
+<area shape="rect" id="node73" href="$classore_1_1data_1_1_commodity_basket_variance_swap.html" title=" " alt="" coords="9103,3386,9341,3441"/>
+<area shape="rect" id="node74" href="$classore_1_1data_1_1_equity_basket_variance_swap.html" title=" " alt="" coords="9365,3386,9575,3441"/>
+<area shape="rect" id="node75" href="$classore_1_1data_1_1_fx_basket_variance_swap.html" title=" " alt="" coords="9599,3386,9786,3441"/>
+<area shape="rect" id="node77" href="$classore_1_1data_1_1_commodity_best_entry_option.html" title=" " alt="" coords="4229,3386,4439,3441"/>
+<area shape="rect" id="node78" href="$classore_1_1data_1_1_equity_best_entry_option.html" title=" " alt="" coords="4463,3386,4645,3441"/>
+<area shape="rect" id="node79" href="$classore_1_1data_1_1_fx_best_entry_option.html" title=" " alt="" coords="4669,3386,4828,3441"/>
+<area shape="rect" id="node83" href="$classore_1_1data_1_1_commodity_generic_barrier_option.html" title=" " alt="" coords="4853,3386,5087,3441"/>
+<area shape="rect" id="node84" href="$classore_1_1data_1_1_equity_generic_barrier_option.html" title=" " alt="" coords="5112,3379,5319,3448"/>
+<area shape="rect" id="node85" href="$classore_1_1data_1_1_fx_generic_barrier_option.html" title=" " alt="" coords="5343,3386,5527,3441"/>
+<area shape="rect" id="node89" href="$classore_1_1data_1_1_commodity_rainbow_option.html" title=" " alt="" coords="5552,3386,5753,3441"/>
+<area shape="rect" id="node90" href="$classore_1_1data_1_1_equity_rainbow_option.html" title=" " alt="" coords="5777,3386,5949,3441"/>
+<area shape="rect" id="node91" href="$classore_1_1data_1_1_fx_rainbow_option.html" title=" " alt="" coords="5973,3386,6124,3441"/>
+<area shape="rect" id="node93" href="$classore_1_1data_1_1_commodity_ta_r_f.html" title=" " alt="" coords="6148,3386,6293,3441"/>
+<area shape="rect" id="node94" href="$classore_1_1data_1_1_equity_ta_r_f.html" title=" " alt="" coords="6317,3386,6433,3441"/>
+<area shape="rect" id="node95" href="$classore_1_1data_1_1_fx_ta_r_f.html" title=" " alt="" coords="6457,3386,6552,3441"/>
+<area shape="rect" id="node97" href="$classore_1_1data_1_1_commodity_window_barrier_option.html" title=" " alt="" coords="6576,3386,6812,3441"/>
+<area shape="rect" id="node98" href="$classore_1_1data_1_1_equity_window_barrier_option.html" title=" " alt="" coords="6836,3386,7043,3441"/>
+<area shape="rect" id="node99" href="$classore_1_1data_1_1_fx_window_barrier_option.html" title=" " alt="" coords="7067,3386,7252,3441"/>
+<area shape="rect" id="node101" href="$classore_1_1data_1_1_commodity_worst_of_basket_swap.html" title=" " alt="" coords="7277,3386,7511,3441"/>
+<area shape="rect" id="node102" href="$classore_1_1data_1_1_equity_worst_of_basket_swap.html" title=" " alt="" coords="7536,3386,7743,3441"/>
+<area shape="rect" id="node103" href="$classore_1_1data_1_1_fx_worst_of_basket_swap.html" title=" " alt="" coords="7767,3386,7951,3441"/>
+<area shape="rect" id="node105" href="$classore_1_1data_1_1_cross_currency_swap.html" title="Serializable Cross Currency Swap contract." alt="" coords="8586,2821,8781,2935"/>
+<area shape="rect" id="node106" href="$classore_1_1data_1_1_equity_swap.html" title="Serializable Equity Swap contract." alt="" coords="8805,2799,8951,2957"/>
+<area shape="rect" id="node107" href="$classore_1_1data_1_1_forward_rate_agreement.html" title="Serializable ForwardRateAgreement." alt="" coords="8975,2763,9157,2993"/>
+<area shape="rect" id="node108" href="$classore_1_1data_1_1_inflation_swap.html" title="Serializable Cross Currency Swap contract." alt="" coords="9181,2821,9335,2935"/>
+<area shape="rect" id="node112" href="$classore_1_1data_1_1_c_f_d.html" title=" " alt="" coords="9359,2843,9434,2913"/>
+<area shape="rect" id="node114" href="$classore_1_1data_1_1_commodity_option.html" title="Commodity option trade representation." alt="" coords="9458,2755,9610,3001"/>
+<area shape="rect" id="node115" href="$classore_1_1data_1_1_equity_future_option.html" title="Serializable EQ Futures Option." alt="" coords="9634,2777,9794,2979"/>
+<area shape="rect" id="node116" href="$classore_1_1data_1_1_equity_option.html" title="Serializable Equity Option." alt="" coords="9819,2770,9961,2986"/>
+<area shape="rect" id="node118" href="$classore_1_1data_1_1_fx_option.html" title="Serializable FX Option." alt="" coords="9986,2741,10119,3015"/>
+<area shape="rect" id="node117" href="$classore_1_1data_1_1_equity_european_barrier_option.html" title="Serializable EQ European Barrier Option." alt="" coords="9810,3335,10026,3492"/>
+<area shape="rect" id="node120" href="$classore_1_1data_1_1_com_var_swap.html" title=" " alt="" coords="10283,2836,10425,2920"/>
+<area shape="rect" id="node121" href="$classore_1_1data_1_1_eq_var_swap.html" title=" " alt="" coords="10449,2836,10592,2920"/>
+<area shape="rect" id="node122" href="$classore_1_1data_1_1_fx_var_swap.html" title=" " alt="" coords="10143,2843,10258,2913"/>
 </map>

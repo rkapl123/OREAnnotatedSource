@@ -692,7 +692,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a9818b86f23d4bad4675371a5d067cd21">getGenericValue</a>(cube, tradeIdx, dateIdx + 1, sampleIdx, <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#af59bc884f7a9f711cb488fc001a40237">defaultDateNpvIndex_</a>);</div>
 <div class="line"><span class="lineno">   96</span>}</div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_cube_interpretation_html_a59e35dd56b07c1cadaa1d9623d68ed6a"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_interpretation.html#a59e35dd56b07c1cadaa1d9623d68ed6a">ore::analytics::CubeInterpretation::getCloseOutAggregationScenarioData</a></div><div class="ttdeci">Real getCloseOutAggregationScenarioData(const AggregationScenarioDataType &amp;dataType, Size dateIdx, Size sampleIdx, const std::string &amp;qualifier=&quot;&quot;) const</div><div class="ttdoc">Retrieve a (default date) simulated risk factor value from AggregationScenarioData.</div><div class="ttdef"><b>Definition:</b> <a href="cubeinterpretation_8cpp_source.html#l00134">cubeinterpretation.cpp:134</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_cube_interpretation_html_a59e35dd56b07c1cadaa1d9623d68ed6a"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_interpretation.html#a59e35dd56b07c1cadaa1d9623d68ed6a">ore::analytics::CubeInterpretation::getCloseOutAggregationScenarioData</a></div><div class="ttdeci">Real getCloseOutAggregationScenarioData(const AggregationScenarioDataType &amp;dataType, Size dateIdx, Size sampleIdx, const std::string &amp;qualifier=&quot;&quot;) const</div><div class="ttdoc">Retrieve a (default date) simulated risk factor value from AggregationScenarioData.</div><div class="ttdef"><b>Definition:</b> <a href="cubeinterpretation_8cpp_source.html#l00138">cubeinterpretation.cpp:138</a></div></div>
 <div class="ttc" id="anamespaceore_1_1analytics_html_a67a4daffa92198fec5c6701605bbcff8a1ea18b5d9353d5a4aec9e4389adc8f4d"><div class="ttname"><a href="namespaceore_1_1analytics.html#a67a4daffa92198fec5c6701605bbcff8a1ea18b5d9353d5a4aec9e4389adc8f4d">ore::analytics::AggregationScenarioDataType::Numeraire</a></div><div class="ttdeci">@ Numeraire</div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -752,15 +752,17 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00098">98</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   99</span>                                                                   {</div>
-<div class="line"><span class="lineno">  100</span>    Real aggMporFlowsVal = 0.0;</div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  102</span>        aggMporFlowsVal = <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a9818b86f23d4bad4675371a5d067cd21">getGenericValue</a>(cube, tradeIdx, dateIdx, sampleIdx, <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a59ecc5c5e86331352dcaa2932afa65c1">mporFlowsIndex_</a>);</div>
-<div class="line"><span class="lineno">  103</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
-<div class="line"><span class="lineno">  104</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Unable to retrieve MPOR flows for trade &quot;</span> &lt;&lt; tradeIdx &lt;&lt; <span class="stringliteral">&quot;, date &quot;</span> &lt;&lt; dateIdx &lt;&lt; <span class="stringliteral">&quot;, sample &quot;</span> &lt;&lt; sampleIdx</div>
-<div class="line"><span class="lineno">  105</span>                                                        &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; e.what());</div>
-<div class="line"><span class="lineno">  106</span>    }</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">return</span> aggMporFlowsVal;</div>
-<div class="line"><span class="lineno">  108</span>}</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a59ecc5c5e86331352dcaa2932afa65c1">mporFlowsIndex_</a> == QuantLib::Null&lt;Size&gt;())</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><span class="lineno">  102</span>    Real aggMporFlowsVal = 0.0;</div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  104</span>        aggMporFlowsVal = <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a9818b86f23d4bad4675371a5d067cd21">getGenericValue</a>(cube, tradeIdx, dateIdx, sampleIdx, <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a59ecc5c5e86331352dcaa2932afa65c1">mporFlowsIndex_</a>);</div>
+<div class="line"><span class="lineno">  105</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  106</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Unable to retrieve MPOR flows for trade &quot;</span> &lt;&lt; tradeIdx &lt;&lt; <span class="stringliteral">&quot;, date &quot;</span> &lt;&lt; dateIdx &lt;&lt; <span class="stringliteral">&quot;, sample &quot;</span> &lt;&lt; sampleIdx</div>
+<div class="line"><span class="lineno">  107</span>                                                        &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; e.what());</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">return</span> aggMporFlowsVal;</div>
+<div class="line"><span class="lineno">  110</span>}</div>
 <div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -827,17 +829,19 @@ Private Attributes</h2></td></tr>
 
 <p>Retrieve the aggregate value of Margin Period of Risk negative cashflows from the Cube. </p>
 
-<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00110">110</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>                                                                   {</div>
-<div class="line"><span class="lineno">  112</span>    Real aggMporFlowsVal = 0.0;</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  114</span>        aggMporFlowsVal = <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a9818b86f23d4bad4675371a5d067cd21">getGenericValue</a>(cube, tradeIdx, dateIdx, sampleIdx, <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a59ecc5c5e86331352dcaa2932afa65c1">mporFlowsIndex_</a> + 1);</div>
-<div class="line"><span class="lineno">  115</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
-<div class="line"><span class="lineno">  116</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Unable to retrieve MPOR flows for trade &quot;</span> &lt;&lt; tradeIdx &lt;&lt; <span class="stringliteral">&quot;, date &quot;</span> &lt;&lt; dateIdx &lt;&lt; <span class="stringliteral">&quot;, sample &quot;</span> &lt;&lt; sampleIdx</div>
-<div class="line"><span class="lineno">  117</span>                                                        &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; e.what());</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">return</span> aggMporFlowsVal;</div>
-<div class="line"><span class="lineno">  120</span>}</div>
+<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00112">112</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>                                                                   {</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a59ecc5c5e86331352dcaa2932afa65c1">mporFlowsIndex_</a> == QuantLib::Null&lt;Size&gt;())</div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><span class="lineno">  116</span>    Real aggMporFlowsVal = 0.0;</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  118</span>        aggMporFlowsVal = <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a9818b86f23d4bad4675371a5d067cd21">getGenericValue</a>(cube, tradeIdx, dateIdx, sampleIdx, <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a59ecc5c5e86331352dcaa2932afa65c1">mporFlowsIndex_</a> + 1);</div>
+<div class="line"><span class="lineno">  119</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Unable to retrieve MPOR flows for trade &quot;</span> &lt;&lt; tradeIdx &lt;&lt; <span class="stringliteral">&quot;, date &quot;</span> &lt;&lt; dateIdx &lt;&lt; <span class="stringliteral">&quot;, sample &quot;</span> &lt;&lt; sampleIdx</div>
+<div class="line"><span class="lineno">  121</span>                                                        &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; e.what());</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">return</span> aggMporFlowsVal;</div>
+<div class="line"><span class="lineno">  124</span>}</div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -903,12 +907,12 @@ Private Attributes</h2></td></tr>
 
 <p>Retrieve the aggregate value of Margin Period of Risk cashflows from the Cube. </p>
 
-<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00122">122</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  123</span>                                                            {</div>
-<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a7059b6422af73a5e835a42cadf1b8a90">getMporPositiveFlows</a>(cube, tradeIdx, dateIdx, sampleIdx) + <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a9605cfee7e3bb1b94c4b90a96fe60baa">getMporNegativeFlows</a>(cube, tradeIdx, dateIdx, sampleIdx) ;</div>
-<div class="line"><span class="lineno">  125</span>}</div>
+<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00126">126</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>                                                            {</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a7059b6422af73a5e835a42cadf1b8a90">getMporPositiveFlows</a>(cube, tradeIdx, dateIdx, sampleIdx) + <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a9605cfee7e3bb1b94c4b90a96fe60baa">getMporNegativeFlows</a>(cube, tradeIdx, dateIdx, sampleIdx) ;</div>
+<div class="line"><span class="lineno">  129</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_cube_interpretation_html_a7059b6422af73a5e835a42cadf1b8a90"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_interpretation.html#a7059b6422af73a5e835a42cadf1b8a90">ore::analytics::CubeInterpretation::getMporPositiveFlows</a></div><div class="ttdeci">Real getMporPositiveFlows(const boost::shared_ptr&lt; NPVCube &gt; &amp;cube, Size tradeIdx, Size dateIdx, Size sampleIdx) const</div><div class="ttdoc">Retrieve the aggregate value of Margin Period of Risk positive cashflows from the Cube.</div><div class="ttdef"><b>Definition:</b> <a href="cubeinterpretation_8cpp_source.html#l00098">cubeinterpretation.cpp:98</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_cube_interpretation_html_a9605cfee7e3bb1b94c4b90a96fe60baa"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_interpretation.html#a9605cfee7e3bb1b94c4b90a96fe60baa">ore::analytics::CubeInterpretation::getMporNegativeFlows</a></div><div class="ttdeci">Real getMporNegativeFlows(const boost::shared_ptr&lt; NPVCube &gt; &amp;cube, Size tradeIdx, Size dateIdx, Size sampleIdx) const</div><div class="ttdoc">Retrieve the aggregate value of Margin Period of Risk negative cashflows from the Cube.</div><div class="ttdef"><b>Definition:</b> <a href="cubeinterpretation_8cpp_source.html#l00110">cubeinterpretation.cpp:110</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_cube_interpretation_html_a9605cfee7e3bb1b94c4b90a96fe60baa"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_interpretation.html#a9605cfee7e3bb1b94c4b90a96fe60baa">ore::analytics::CubeInterpretation::getMporNegativeFlows</a></div><div class="ttdeci">Real getMporNegativeFlows(const boost::shared_ptr&lt; NPVCube &gt; &amp;cube, Size tradeIdx, Size dateIdx, Size sampleIdx) const</div><div class="ttdoc">Retrieve the aggregate value of Margin Period of Risk negative cashflows from the Cube.</div><div class="ttdef"><b>Definition:</b> <a href="cubeinterpretation_8cpp_source.html#l00112">cubeinterpretation.cpp:112</a></div></div>
 </div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -965,12 +969,12 @@ Private Attributes</h2></td></tr>
 
 <p>Retrieve a (default date) simulated risk factor value from <a class="el" href="classore_1_1analytics_1_1_aggregation_scenario_data.html" title="Container for storing simulated market data.">AggregationScenarioData</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00127">127</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  128</span>                                                                                                             {</div>
-<div class="line"><span class="lineno">  129</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>.empty(),</div>
-<div class="line"><span class="lineno">  130</span>               <span class="stringliteral">&quot;CubeInterpretation::getDefaultAggregationScenarioData(): no aggregation scenario data given&quot;</span>);</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>-&gt;get(dateIdx, sampleIdx, dataType, qualifier);</div>
-<div class="line"><span class="lineno">  132</span>}</div>
+<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00131">131</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>                                                                                                             {</div>
+<div class="line"><span class="lineno">  133</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>.empty(),</div>
+<div class="line"><span class="lineno">  134</span>               <span class="stringliteral">&quot;CubeInterpretation::getDefaultAggregationScenarioData(): no aggregation scenario data given&quot;</span>);</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>-&gt;get(dateIdx, sampleIdx, dataType, qualifier);</div>
+<div class="line"><span class="lineno">  136</span>}</div>
 </div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1026,20 +1030,20 @@ Private Attributes</h2></td></tr>
 
 <p>Retrieve a (default date) simulated risk factor value from <a class="el" href="classore_1_1analytics_1_1_aggregation_scenario_data.html" title="Container for storing simulated market data.">AggregationScenarioData</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00134">134</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>                                                                                                              {</div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a72455abea601b3458181cc229a6bfc32">withCloseOutLag_</a>) {</div>
-<div class="line"><span class="lineno">  137</span>        QL_REQUIRE(dataType == <a class="code hl_enumvalue" href="namespaceore_1_1analytics.html#a67a4daffa92198fec5c6701605bbcff8a1ea18b5d9353d5a4aec9e4389adc8f4d">AggregationScenarioDataType::Numeraire</a>,</div>
-<div class="line"><span class="lineno">  138</span>                   <span class="stringliteral">&quot;close out aggr scen data only available for numeraire&quot;</span>);</div>
-<div class="line"><span class="lineno">  139</span>        <span class="comment">// this is an approximation</span></div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a5001aabe1aa6f44f22e1de78f6fc4098">getDefaultAggregationScenarioData</a>(dataType, dateIdx, sampleIdx, qualifier);</div>
-<div class="line"><span class="lineno">  141</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  142</span>        QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>.empty(), <span class="stringliteral">&quot;CubeInterpretation::getCloseOutAggregationScenarioData(): no &quot;</span></div>
-<div class="line"><span class="lineno">  143</span>                                                      <span class="stringliteral">&quot;aggregation scenario data given&quot;</span>);</div>
-<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>-&gt;get(dateIdx + 1, sampleIdx, dataType, qualifier);</div>
-<div class="line"><span class="lineno">  145</span>    }</div>
-<div class="line"><span class="lineno">  146</span>}</div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_cube_interpretation_html_a5001aabe1aa6f44f22e1de78f6fc4098"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_interpretation.html#a5001aabe1aa6f44f22e1de78f6fc4098">ore::analytics::CubeInterpretation::getDefaultAggregationScenarioData</a></div><div class="ttdeci">Real getDefaultAggregationScenarioData(const AggregationScenarioDataType &amp;dataType, Size dateIdx, Size sampleIdx, const std::string &amp;qualifier=&quot;&quot;) const</div><div class="ttdoc">Retrieve a (default date) simulated risk factor value from AggregationScenarioData.</div><div class="ttdef"><b>Definition:</b> <a href="cubeinterpretation_8cpp_source.html#l00127">cubeinterpretation.cpp:127</a></div></div>
+<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00138">138</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                                                                                                              {</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a72455abea601b3458181cc229a6bfc32">withCloseOutLag_</a>) {</div>
+<div class="line"><span class="lineno">  141</span>        QL_REQUIRE(dataType == <a class="code hl_enumvalue" href="namespaceore_1_1analytics.html#a67a4daffa92198fec5c6701605bbcff8a1ea18b5d9353d5a4aec9e4389adc8f4d">AggregationScenarioDataType::Numeraire</a>,</div>
+<div class="line"><span class="lineno">  142</span>                   <span class="stringliteral">&quot;close out aggr scen data only available for numeraire&quot;</span>);</div>
+<div class="line"><span class="lineno">  143</span>        <span class="comment">// this is an approximation</span></div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1analytics_1_1_cube_interpretation.html#a5001aabe1aa6f44f22e1de78f6fc4098">getDefaultAggregationScenarioData</a>(dataType, dateIdx, sampleIdx, qualifier);</div>
+<div class="line"><span class="lineno">  145</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  146</span>        QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>.empty(), <span class="stringliteral">&quot;CubeInterpretation::getCloseOutAggregationScenarioData(): no &quot;</span></div>
+<div class="line"><span class="lineno">  147</span>                                                      <span class="stringliteral">&quot;aggregation scenario data given&quot;</span>);</div>
+<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#add03d9f25c44ac92294ed6b6f153fca6">aggregationScenarioData_</a>-&gt;get(dateIdx + 1, sampleIdx, dataType, qualifier);</div>
+<div class="line"><span class="lineno">  149</span>    }</div>
+<div class="line"><span class="lineno">  150</span>}</div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_cube_interpretation_html_a5001aabe1aa6f44f22e1de78f6fc4098"><div class="ttname"><a href="classore_1_1analytics_1_1_cube_interpretation.html#a5001aabe1aa6f44f22e1de78f6fc4098">ore::analytics::CubeInterpretation::getDefaultAggregationScenarioData</a></div><div class="ttdeci">Real getDefaultAggregationScenarioData(const AggregationScenarioDataType &amp;dataType, Size dateIdx, Size sampleIdx, const std::string &amp;qualifier=&quot;&quot;) const</div><div class="ttdoc">Retrieve a (default date) simulated risk factor value from AggregationScenarioData.</div><div class="ttdef"><b>Definition:</b> <a href="cubeinterpretation_8cpp_source.html#l00131">cubeinterpretation.cpp:131</a></div></div>
 </div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1093,18 +1097,18 @@ Private Attributes</h2></td></tr>
 
 <p>Number of Calendar Days between a given default date and corresponding close-out date. </p>
 
-<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00148">148</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  148</span>                                                                                                     {</div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a72455abea601b3458181cc229a6bfc32">withCloseOutLag_</a>) {</div>
-<div class="line"><span class="lineno">  150</span>        QuantLib::Date dd = <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#ad98b46c7346ced8d1e310271f9254620">dateGrid_</a>-&gt;valuationDates()[dateIdx];</div>
-<div class="line"><span class="lineno">  151</span>        QuantLib::Date cd = <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#ad98b46c7346ced8d1e310271f9254620">dateGrid_</a>-&gt;closeOutDates()[dateIdx];</div>
-<div class="line"><span class="lineno">  152</span>        QL_REQUIRE(cd &gt; dd, <span class="stringliteral">&quot;close-out date (&quot;</span> &lt;&lt; cd &lt;&lt; <span class="stringliteral">&quot;) must be greater than default date (&quot;</span> &lt;&lt; dd &lt;&lt; <span class="stringliteral">&quot;) at index &quot;</span></div>
-<div class="line"><span class="lineno">  153</span>                                               &lt;&lt; dateIdx);</div>
-<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> (cd - dd);</div>
-<div class="line"><span class="lineno">  155</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">return</span> cube-&gt;dates()[dateIdx + 1] - cube-&gt;dates()[dateIdx];</div>
-<div class="line"><span class="lineno">  157</span>    }</div>
-<div class="line"><span class="lineno">  158</span>}</div>
+<p class="definition">Definition at line <a class="el" href="cubeinterpretation_8cpp_source.html#l00152">152</a> of file <a class="el" href="cubeinterpretation_8cpp_source.html">cubeinterpretation.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  152</span>                                                                                                     {</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#a72455abea601b3458181cc229a6bfc32">withCloseOutLag_</a>) {</div>
+<div class="line"><span class="lineno">  154</span>        QuantLib::Date dd = <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#ad98b46c7346ced8d1e310271f9254620">dateGrid_</a>-&gt;valuationDates()[dateIdx];</div>
+<div class="line"><span class="lineno">  155</span>        QuantLib::Date cd = <a class="code hl_variable" href="classore_1_1analytics_1_1_cube_interpretation.html#ad98b46c7346ced8d1e310271f9254620">dateGrid_</a>-&gt;closeOutDates()[dateIdx];</div>
+<div class="line"><span class="lineno">  156</span>        QL_REQUIRE(cd &gt; dd, <span class="stringliteral">&quot;close-out date (&quot;</span> &lt;&lt; cd &lt;&lt; <span class="stringliteral">&quot;) must be greater than default date (&quot;</span> &lt;&lt; dd &lt;&lt; <span class="stringliteral">&quot;) at index &quot;</span></div>
+<div class="line"><span class="lineno">  157</span>                                               &lt;&lt; dateIdx);</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> (cd - dd);</div>
+<div class="line"><span class="lineno">  159</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">return</span> cube-&gt;dates()[dateIdx + 1] - cube-&gt;dates()[dateIdx];</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

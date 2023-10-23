@@ -195,29 +195,29 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00031">31</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>    : <a class="code hl_typedef" href="namespace_quant_ext.html#abcf7a30c4534a94e3433dac11c8444e4">RelativeDateRateHelper</a>(fixedRate), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0bb5a2dacd3b831922ff423eb30cc551">swapTenor_</a>(swapTenor), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>(brlCdiIndex),</div>
-<div class="line"><span class="lineno">   35</span>      <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a187b5edd65f0805534b303324609fa7c">telescopicValueDates_</a>(telescopicValueDates), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>(discountingCurve) {</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordtype">bool</span> onIndexHasCurve = !<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;forwardingTermStructure().empty();</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">bool</span> haveDiscountCurve = !<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>.empty();</div>
-<div class="line"><span class="lineno">   39</span>    QL_REQUIRE(!(onIndexHasCurve &amp;&amp; haveDiscountCurve), <span class="stringliteral">&quot;Have both curves nothing to solve for.&quot;</span>);</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (!onIndexHasCurve) {</div>
-<div class="line"><span class="lineno">   42</span>        boost::shared_ptr&lt;IborIndex&gt; clonedIborIndex(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a4dec7a6666074eb9e1c82a39290927a3">termStructureHandle_</a>));</div>
-<div class="line"><span class="lineno">   43</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a> = boost::dynamic_pointer_cast&lt;BRLCdi&gt;(clonedIborIndex);</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a4dec7a6666074eb9e1c82a39290927a3">termStructureHandle_</a>);</div>
-<div class="line"><span class="lineno">   45</span>    }</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>);</div>
-<div class="line"><span class="lineno">   48</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>);</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_function" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a99d980fe812ceb975a5e391d34d36439">initializeDates</a>();</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00028">28</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    : <a class="code hl_typedef" href="namespace_quant_ext.html#abcf7a30c4534a94e3433dac11c8444e4">RelativeDateRateHelper</a>(fixedRate), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0bb5a2dacd3b831922ff423eb30cc551">swapTenor_</a>(swapTenor), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>(brlCdiIndex),</div>
+<div class="line"><span class="lineno">   32</span>      <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a187b5edd65f0805534b303324609fa7c">telescopicValueDates_</a>(telescopicValueDates), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>(discountingCurve) {</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordtype">bool</span> onIndexHasCurve = !<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;forwardingTermStructure().empty();</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordtype">bool</span> haveDiscountCurve = !<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>.empty();</div>
+<div class="line"><span class="lineno">   36</span>    QL_REQUIRE(!(onIndexHasCurve &amp;&amp; haveDiscountCurve), <span class="stringliteral">&quot;Have both curves nothing to solve for.&quot;</span>);</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (!onIndexHasCurve) {</div>
+<div class="line"><span class="lineno">   39</span>        boost::shared_ptr&lt;IborIndex&gt; clonedIborIndex(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;clone(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a4dec7a6666074eb9e1c82a39290927a3">termStructureHandle_</a>));</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a> = boost::dynamic_pointer_cast&lt;BRLCdi&gt;(clonedIborIndex);</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;unregisterWith(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a4dec7a6666074eb9e1c82a39290927a3">termStructureHandle_</a>);</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>);</div>
+<div class="line"><span class="lineno">   45</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>);</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_function" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a99d980fe812ceb975a5e391d34d36439">initializeDates</a>();</div>
+<div class="line"><span class="lineno">   47</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_a0b623844447eb3b316ae657f85f002bd"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">QuantExt::BRLCdiRateHelper::brlCdiIndex_</a></div><div class="ttdeci">boost::shared_ptr&lt; BRLCdi &gt; brlCdiIndex_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8hpp_source.html#l00064">brlcdiratehelper.hpp:64</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_a0bb5a2dacd3b831922ff423eb30cc551"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0bb5a2dacd3b831922ff423eb30cc551">QuantExt::BRLCdiRateHelper::swapTenor_</a></div><div class="ttdeci">QuantLib::Period swapTenor_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8hpp_source.html#l00063">brlcdiratehelper.hpp:63</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_a187b5edd65f0805534b303324609fa7c"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a187b5edd65f0805534b303324609fa7c">QuantExt::BRLCdiRateHelper::telescopicValueDates_</a></div><div class="ttdeci">bool telescopicValueDates_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8hpp_source.html#l00066">brlcdiratehelper.hpp:66</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_a4dec7a6666074eb9e1c82a39290927a3"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a4dec7a6666074eb9e1c82a39290927a3">QuantExt::BRLCdiRateHelper::termStructureHandle_</a></div><div class="ttdeci">QuantLib::RelinkableHandle&lt; QuantLib::YieldTermStructure &gt; termStructureHandle_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8hpp_source.html#l00068">brlcdiratehelper.hpp:68</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_a99d980fe812ceb975a5e391d34d36439"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a99d980fe812ceb975a5e391d34d36439">QuantExt::BRLCdiRateHelper::initializeDates</a></div><div class="ttdeci">void initializeDates() override</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8cpp_source.html#l00052">brlcdiratehelper.cpp:52</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_a99d980fe812ceb975a5e391d34d36439"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a99d980fe812ceb975a5e391d34d36439">QuantExt::BRLCdiRateHelper::initializeDates</a></div><div class="ttdeci">void initializeDates() override</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8cpp_source.html#l00049">brlcdiratehelper.cpp:49</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_ae002a47a27f30a0ff0e68c3eb22d0f75"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">QuantExt::BRLCdiRateHelper::discountHandle_</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantLib::YieldTermStructure &gt; discountHandle_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8hpp_source.html#l00069">brlcdiratehelper.hpp:69</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_html_abcf7a30c4534a94e3433dac11c8444e4"><div class="ttname"><a href="namespace_quant_ext.html#abcf7a30c4534a94e3433dac11c8444e4">QuantExt::RelativeDateRateHelper</a></div><div class="ttdeci">RelativeDateBootstrapHelper&lt; YieldTermStructure &gt; RelativeDateRateHelper</div><div class="ttdef"><b>Definition:</b> <a href="immfraratehelper_8hpp_source.html#l00034">immfraratehelper.hpp:34</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -279,12 +279,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00094">94</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>                                          {</div>
-<div class="line"><span class="lineno">   95</span>    QL_REQUIRE(termStructure_ != 0, <span class="stringliteral">&quot;BRLCdiRateHelper&#39;s term structure not set&quot;</span>);</div>
-<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;deepUpdate();</div>
-<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;fairRate();</div>
-<div class="line"><span class="lineno">   98</span>}</div>
+<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00091">91</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>                                          {</div>
+<div class="line"><span class="lineno">   92</span>    QL_REQUIRE(termStructure_ != 0, <span class="stringliteral">&quot;BRLCdiRateHelper&#39;s term structure not set&quot;</span>);</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;deepUpdate();</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;fairRate();</div>
+<div class="line"><span class="lineno">   95</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,20 +312,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00080">80</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                                                             {</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordtype">bool</span> observer = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   83</span>    boost::shared_ptr&lt;YieldTermStructure&gt; temp(t, no_deletion);</div>
-<div class="line"><span class="lineno">   84</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a4dec7a6666074eb9e1c82a39290927a3">termStructureHandle_</a>.linkTo(temp, observer);</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>.empty())</div>
-<div class="line"><span class="lineno">   87</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a017e1b571bf87a75946f986d71733292">discountRelinkableHandle_</a>.linkTo(temp, observer);</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   89</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a017e1b571bf87a75946f986d71733292">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>, observer);</div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    RelativeDateRateHelper::setTermStructure(t);</div>
-<div class="line"><span class="lineno">   92</span>}</div>
+<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00077">77</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                             {</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordtype">bool</span> observer = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   80</span>    boost::shared_ptr&lt;YieldTermStructure&gt; temp(t, null_deleter());</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a4dec7a6666074eb9e1c82a39290927a3">termStructureHandle_</a>.linkTo(temp, observer);</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>.empty())</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a017e1b571bf87a75946f986d71733292">discountRelinkableHandle_</a>.linkTo(temp, observer);</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   86</span>        <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a017e1b571bf87a75946f986d71733292">discountRelinkableHandle_</a>.linkTo(*<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#ae002a47a27f30a0ff0e68c3eb22d0f75">discountHandle_</a>, observer);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    RelativeDateRateHelper::setTermStructure(t);</div>
+<div class="line"><span class="lineno">   89</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_rate_helper_html_a017e1b571bf87a75946f986d71733292"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a017e1b571bf87a75946f986d71733292">QuantExt::BRLCdiRateHelper::discountRelinkableHandle_</a></div><div class="ttdeci">QuantLib::RelinkableHandle&lt; QuantLib::YieldTermStructure &gt; discountRelinkableHandle_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiratehelper_8hpp_source.html#l00070">brlcdiratehelper.hpp:70</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -354,13 +354,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00100">100</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>                                               {</div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (Visitor&lt;BRLCdiRateHelper&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;BRLCdiRateHelper&gt;*<span class="keyword">&gt;</span>(&amp;v))</div>
-<div class="line"><span class="lineno">  102</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  104</span>        RateHelper::accept(v);</div>
-<div class="line"><span class="lineno">  105</span>}</div>
+<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00097">97</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>                                               {</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (Visitor&lt;BRLCdiRateHelper&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;BRLCdiRateHelper&gt;*<span class="keyword">&gt;</span>(&amp;v))</div>
+<div class="line"><span class="lineno">   99</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  101</span>        RateHelper::accept(v);</div>
+<div class="line"><span class="lineno">  102</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -387,34 +387,34 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00052">52</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>                                       {</div>
+<p class="definition">Definition at line <a class="el" href="brlcdiratehelper_8cpp_source.html#l00049">49</a> of file <a class="el" href="brlcdiratehelper_8cpp_source.html">brlcdiratehelper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                       {</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// Use the overnight index&#39;s calendar for all business day adjustments</span></div>
+<div class="line"><span class="lineno">   52</span>    Calendar calendar = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;fixingCalendar();</div>
 <div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span>    <span class="comment">// Use the overnight index&#39;s calendar for all business day adjustments</span></div>
-<div class="line"><span class="lineno">   55</span>    Calendar calendar = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>-&gt;fixingCalendar();</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    <span class="comment">// Adjust reference date to next good business day if necessary</span></div>
-<div class="line"><span class="lineno">   58</span>    Date referenceDate = Settings::instance().evaluationDate();</div>
-<div class="line"><span class="lineno">   59</span>    referenceDate = calendar.adjust(referenceDate);</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>    <span class="comment">// Determine the start date</span></div>
-<div class="line"><span class="lineno">   62</span>    Date startDate = calendar.advance(referenceDate, 2 * Days);</div>
-<div class="line"><span class="lineno">   63</span>    startDate = calendar.adjust(startDate, Following);</div>
+<div class="line"><span class="lineno">   54</span>    <span class="comment">// Adjust reference date to next good business day if necessary</span></div>
+<div class="line"><span class="lineno">   55</span>    Date referenceDate = Settings::instance().evaluationDate();</div>
+<div class="line"><span class="lineno">   56</span>    referenceDate = calendar.adjust(referenceDate);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <span class="comment">// Determine the start date</span></div>
+<div class="line"><span class="lineno">   59</span>    Date startDate = calendar.advance(referenceDate, 2 * Days);</div>
+<div class="line"><span class="lineno">   60</span>    startDate = calendar.adjust(startDate, Following);</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// Determine the end date</span></div>
+<div class="line"><span class="lineno">   63</span>    Date endDate = startDate + <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0bb5a2dacd3b831922ff423eb30cc551">swapTenor_</a>;</div>
 <div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>    <span class="comment">// Determine the end date</span></div>
-<div class="line"><span class="lineno">   66</span>    Date endDate = startDate + <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0bb5a2dacd3b831922ff423eb30cc551">swapTenor_</a>;</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    <span class="comment">// Create the BRL CDI swap</span></div>
-<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a> = boost::make_shared&lt;BRLCdiSwap&gt;(OvernightIndexedSwap::Payer, 1.0, startDate, endDate, 0.01, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>,</div>
-<div class="line"><span class="lineno">   70</span>                                           0.0, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a187b5edd65f0805534b303324609fa7c">telescopicValueDates_</a>);</div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">// Create the BRL CDI swap</span></div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a> = boost::make_shared&lt;BRLCdiSwap&gt;(OvernightIndexedSwap::Payer, 1.0, startDate, endDate, 0.01, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a0b623844447eb3b316ae657f85f002bd">brlCdiIndex_</a>,</div>
+<div class="line"><span class="lineno">   67</span>                                           0.0, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a187b5edd65f0805534b303324609fa7c">telescopicValueDates_</a>);</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <span class="comment">// Set the pricing engine</span></div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;setPricingEngine(boost::make_shared&lt;DiscountingSwapEngine&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a017e1b571bf87a75946f986d71733292">discountRelinkableHandle_</a>));</div>
 <div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>    <span class="comment">// Set the pricing engine</span></div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;setPricingEngine(boost::make_shared&lt;DiscountingSwapEngine&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a017e1b571bf87a75946f986d71733292">discountRelinkableHandle_</a>));</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="comment">// Update earliest and latest dates</span></div>
-<div class="line"><span class="lineno">   76</span>    earliestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;startDate();</div>
-<div class="line"><span class="lineno">   77</span>    latestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;maturityDate();</div>
-<div class="line"><span class="lineno">   78</span>}</div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">// Update earliest and latest dates</span></div>
+<div class="line"><span class="lineno">   73</span>    earliestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;startDate();</div>
+<div class="line"><span class="lineno">   74</span>    latestDate_ = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_rate_helper.html#a72c78081b6eaa199b9943617970351ef">swap_</a>-&gt;maturityDate();</div>
+<div class="line"><span class="lineno">   75</span>}</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">

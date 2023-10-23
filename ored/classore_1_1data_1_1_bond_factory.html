@@ -132,7 +132,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="bond_8hpp_source.html#l00205">205</a> of file <a class="el" href="bond_8hpp_source.html">bond.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bond_8hpp_source.html#l00204">204</a> of file <a class="el" href="bond_8hpp_source.html">bond.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8c718831769668aaa79a1c4f6078830a" name="a8c718831769668aaa79a1c4f6078830a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c718831769668aaa79a1c4f6078830a">&#9670;&#160;</a></span>build()</h2>
@@ -171,17 +171,19 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  333</span>    boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_bond_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
 <div class="line"><span class="lineno">  334</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; b : <a class="code hl_variable" href="classore_1_1data_1_1_bond_factory.html#afa79e65aaa950417a6f12750b842d701">builders_</a>) {</div>
 <div class="line"><span class="lineno">  335</span>        <span class="keywordflow">if</span> (referenceData-&gt;hasData(b.first, securityId)) {</div>
-<div class="line"><span class="lineno">  336</span>            <span class="keywordflow">return</span> b.second-&gt;build(engineFactory, referenceData, securityId);</div>
-<div class="line"><span class="lineno">  337</span>        }</div>
-<div class="line"><span class="lineno">  338</span>    }</div>
-<div class="line"><span class="lineno">  339</span> </div>
-<div class="line"><span class="lineno">  340</span>    QL_FAIL(<span class="stringliteral">&quot;BondFactory: could not build bond &#39;&quot;</span></div>
-<div class="line"><span class="lineno">  341</span>            &lt;&lt; securityId</div>
-<div class="line"><span class="lineno">  342</span>            &lt;&lt; <span class="stringliteral">&quot;&#39;: no reference data given or no suitable builder registered. Check if bond is set up in the reference &quot;</span></div>
-<div class="line"><span class="lineno">  343</span>               <span class="stringliteral">&quot;data and that there is a builder for the reference data type.&quot;</span>);</div>
-<div class="line"><span class="lineno">  344</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_bond_factory_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_bond_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::BondFactory::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="bond_8hpp_source.html#l00207">bond.hpp:207</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_bond_factory_html_afa79e65aaa950417a6f12750b842d701"><div class="ttname"><a href="classore_1_1data_1_1_bond_factory.html#afa79e65aaa950417a6f12750b842d701">ore::data::BondFactory::builders_</a></div><div class="ttdeci">map&lt; std::string, boost::shared_ptr&lt; BondBuilder &gt; &gt; builders_</div><div class="ttdef"><b>Definition:</b> <a href="bond_8hpp_source.html#l00206">bond.hpp:206</a></div></div>
+<div class="line"><span class="lineno">  336</span>            <span class="keyword">auto</span> tmp = b.second-&gt;build(engineFactory, referenceData, securityId);</div>
+<div class="line"><span class="lineno">  337</span>            tmp.builderLabel = b.first;</div>
+<div class="line"><span class="lineno">  338</span>            <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><span class="lineno">  339</span>        }</div>
+<div class="line"><span class="lineno">  340</span>    }</div>
+<div class="line"><span class="lineno">  341</span> </div>
+<div class="line"><span class="lineno">  342</span>    QL_FAIL(<span class="stringliteral">&quot;BondFactory: could not build bond &#39;&quot;</span></div>
+<div class="line"><span class="lineno">  343</span>            &lt;&lt; securityId</div>
+<div class="line"><span class="lineno">  344</span>            &lt;&lt; <span class="stringliteral">&quot;&#39;: no reference data given or no suitable builder registered. Check if bond is set up in the reference &quot;</span></div>
+<div class="line"><span class="lineno">  345</span>               <span class="stringliteral">&quot;data and that there is a builder for the reference data type.&quot;</span>);</div>
+<div class="line"><span class="lineno">  346</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_bond_factory_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_bond_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::BondFactory::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="bond_8hpp_source.html#l00206">bond.hpp:206</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_bond_factory_html_afa79e65aaa950417a6f12750b842d701"><div class="ttname"><a href="classore_1_1data_1_1_bond_factory.html#afa79e65aaa950417a6f12750b842d701">ore::data::BondFactory::builders_</a></div><div class="ttdeci">map&lt; std::string, boost::shared_ptr&lt; BondBuilder &gt; &gt; builders_</div><div class="ttdef"><b>Definition:</b> <a href="bond_8hpp_source.html#l00205">bond.hpp:205</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,12 +219,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2portfolio_2bond_8cpp_source.html#l00346">346</a> of file <a class="el" href="ored_2portfolio_2bond_8cpp_source.html">bond.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  347</span>                                                        {</div>
-<div class="line"><span class="lineno">  348</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_bond_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">  349</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_bond_factory.html#afa79e65aaa950417a6f12750b842d701">builders_</a>.insert(std::make_pair(referenceDataType, builder)).second || allowOverwrite,</div>
-<div class="line"><span class="lineno">  350</span>               <span class="stringliteral">&quot;BondFactory::addBuilder(&quot;</span> &lt;&lt; referenceDataType &lt;&lt; <span class="stringliteral">&quot;): builder for key already exists.&quot;</span>);</div>
-<div class="line"><span class="lineno">  351</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2portfolio_2bond_8cpp_source.html#l00348">348</a> of file <a class="el" href="ored_2portfolio_2bond_8cpp_source.html">bond.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  349</span>                                                        {</div>
+<div class="line"><span class="lineno">  350</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_bond_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">  351</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_bond_factory.html#afa79e65aaa950417a6f12750b842d701">builders_</a>.insert(std::make_pair(referenceDataType, builder)).second || allowOverwrite,</div>
+<div class="line"><span class="lineno">  352</span>               <span class="stringliteral">&quot;BondFactory::addBuilder(&quot;</span> &lt;&lt; referenceDataType &lt;&lt; <span class="stringliteral">&quot;): builder for key already exists.&quot;</span>);</div>
+<div class="line"><span class="lineno">  353</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -247,7 +249,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bond_8hpp_source.html#l00206">206</a> of file <a class="el" href="bond_8hpp_source.html">bond.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bond_8hpp_source.html#l00205">205</a> of file <a class="el" href="bond_8hpp_source.html">bond.hpp</a>.</p>
 
 </div>
 </div>
@@ -271,7 +273,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bond_8hpp_source.html#l00207">207</a> of file <a class="el" href="bond_8hpp_source.html">bond.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bond_8hpp_source.html#l00206">206</a> of file <a class="el" href="bond_8hpp_source.html">bond.hpp</a>.</p>
 
 </div>
 </div>

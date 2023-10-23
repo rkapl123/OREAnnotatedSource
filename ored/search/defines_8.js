@@ -14,11 +14,12 @@ var searchData=
   ['ore_5fregister_5famc_5fengine_5fbuilder_11',['ORE_REGISTER_AMC_ENGINE_BUILDER',['../initbuilders_8hpp.html#ad2013226186b9900ea3b2ab1bf4f6a82',1,'initbuilders.hpp']]],
   ['ore_5fregister_5fbond_5fbuilder_12',['ORE_REGISTER_BOND_BUILDER',['../initbuilders_8hpp.html#a9f340e2d7253745fc3466ffdf34c4059',1,'initbuilders.hpp']]],
   ['ore_5fregister_5fcalibration_5finstrument_13',['ORE_REGISTER_CALIBRATION_INSTRUMENT',['../initbuilders_8hpp.html#aa0623082d91e247bd3db7d48af126723',1,'initbuilders.hpp']]],
-  ['ore_5fregister_5fengine_5fbuilder_14',['ORE_REGISTER_ENGINE_BUILDER',['../initbuilders_8hpp.html#ad35802b77dd46f635e61911c18142c10',1,'initbuilders.hpp']]],
-  ['ore_5fregister_5fleg_5fdata_15',['ORE_REGISTER_LEG_DATA',['../initbuilders_8hpp.html#a39e3e6fa3f476878de441db621cf6aa5',1,'initbuilders.hpp']]],
-  ['ore_5fregister_5flegbuilder_16',['ORE_REGISTER_LEGBUILDER',['../initbuilders_8hpp.html#a3e7f3c58e266716b10ee2e3a955033bb',1,'initbuilders.hpp']]],
-  ['ore_5fregister_5freference_5fdatum_17',['ORE_REGISTER_REFERENCE_DATUM',['../initbuilders_8hpp.html#a795a5f519db24c66e76362f3605ff4a4',1,'initbuilders.hpp']]],
-  ['ore_5fregister_5ftrade_5fbuilder_18',['ORE_REGISTER_TRADE_BUILDER',['../initbuilders_8hpp.html#aa9aa96fd38cff0177a647c944ab9c14b',1,'initbuilders.hpp']]],
-  ['ore_5fregister_5ftrs_5funderlying_5fbuilder_19',['ORE_REGISTER_TRS_UNDERLYING_BUILDER',['../initbuilders_8hpp.html#a57a8ec7d5e4b4b159ab70c7f5e48e987',1,'initbuilders.hpp']]],
-  ['ore_5fwarning_20',['ORE_WARNING',['../log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d',1,'log.hpp']]]
+  ['ore_5fregister_5fcompute_5fframework_5fcreator_14',['ORE_REGISTER_COMPUTE_FRAMEWORK_CREATOR',['../initbuilders_8hpp.html#aa08deb9543cfee29c11c06aacebb84f1',1,'initbuilders.hpp']]],
+  ['ore_5fregister_5fengine_5fbuilder_15',['ORE_REGISTER_ENGINE_BUILDER',['../initbuilders_8hpp.html#ad35802b77dd46f635e61911c18142c10',1,'initbuilders.hpp']]],
+  ['ore_5fregister_5fleg_5fdata_16',['ORE_REGISTER_LEG_DATA',['../initbuilders_8hpp.html#a39e3e6fa3f476878de441db621cf6aa5',1,'initbuilders.hpp']]],
+  ['ore_5fregister_5flegbuilder_17',['ORE_REGISTER_LEGBUILDER',['../initbuilders_8hpp.html#a3e7f3c58e266716b10ee2e3a955033bb',1,'initbuilders.hpp']]],
+  ['ore_5fregister_5freference_5fdatum_18',['ORE_REGISTER_REFERENCE_DATUM',['../initbuilders_8hpp.html#a795a5f519db24c66e76362f3605ff4a4',1,'initbuilders.hpp']]],
+  ['ore_5fregister_5ftrade_5fbuilder_19',['ORE_REGISTER_TRADE_BUILDER',['../initbuilders_8hpp.html#aa9aa96fd38cff0177a647c944ab9c14b',1,'initbuilders.hpp']]],
+  ['ore_5fregister_5ftrs_5funderlying_5fbuilder_20',['ORE_REGISTER_TRS_UNDERLYING_BUILDER',['../initbuilders_8hpp.html#a57a8ec7d5e4b4b159ab70c7f5e48e987',1,'initbuilders.hpp']]],
+  ['ore_5fwarning_21',['ORE_WARNING',['../log_8hpp.html#af2662f3bb57d4149cdb9d20c59acd95d',1,'log.hpp']]]
 ];

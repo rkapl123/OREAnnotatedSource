@@ -317,93 +317,93 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00053">53</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>    : <a class="code hl_class" href="class_floating_rate_coupon.html">FloatingRateCoupon</a>(paymentDate, nominal, startDate, endDate, fixingDays, <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>, gearing, spread,</div>
-<div class="line"><span class="lineno">   62</span>                         refPeriodStart, refPeriodEnd, dayCounter, <span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">   63</span>      <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a241be8d3888d037a2108b2296fcc431e">includeSpread_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a35b9043b1bc2282604ddcdf20593dc01">includeSpread</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ace0a2c7f28ed82b38e40027e9152ded6">lookback_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a0bd23973747166b7af3896981f0936e4">rateCutoff</a>),</div>
-<div class="line"><span class="lineno">   64</span>      <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a33909527edf374ecf2b9501142ce4922">rateComputationStartDate_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a5d20d555049eeff99320d353daf46fe2">rateComputationStartDate</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ab221fb495c7e8b3ca65e9ac23a7d149f">rateComputationEndDate_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a60069a67bee3e400ef58d28119792ecc">rateComputationEndDate</a>) {</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>    Date valueStart = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a33909527edf374ecf2b9501142ce4922">rateComputationStartDate_</a> == Null&lt;Date&gt;() ? startDate : <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a33909527edf374ecf2b9501142ce4922">rateComputationStartDate_</a>;</div>
-<div class="line"><span class="lineno">   67</span>    Date valueEnd = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ab221fb495c7e8b3ca65e9ac23a7d149f">rateComputationEndDate_</a> == Null&lt;Date&gt;() ? endDate : <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ab221fb495c7e8b3ca65e9ac23a7d149f">rateComputationEndDate_</a>;</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a> != 0 * Days) {</div>
-<div class="line"><span class="lineno">   69</span>        BusinessDayConvention bdc = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>.length() &gt; 0 ? Preceding : Following;</div>
-<div class="line"><span class="lineno">   70</span>        valueStart = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(valueStart, -<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>, bdc);</div>
-<div class="line"><span class="lineno">   71</span>        valueEnd = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(valueEnd, -<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>, bdc);</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <span class="comment">// value dates</span></div>
-<div class="line"><span class="lineno">   75</span>    Date tmpEndDate = valueEnd;</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">/* For the coupon&#39;s valuation only the first and last future valuation</span></div>
-<div class="line"><span class="lineno">   78</span><span class="comment">       dates matter, therefore we can avoid to construct the whole series</span></div>
-<div class="line"><span class="lineno">   79</span><span class="comment">       of valuation dates, a front and back stub will do. However notice</span></div>
-<div class="line"><span class="lineno">   80</span><span class="comment">       that if the global evaluation date moves forward it might run past</span></div>
-<div class="line"><span class="lineno">   81</span><span class="comment">       the front stub of valuation dates we build here (which incorporates</span></div>
-<div class="line"><span class="lineno">   82</span><span class="comment">       a grace period of 7 business after the evaluation date). This will</span></div>
-<div class="line"><span class="lineno">   83</span><span class="comment">       lead to false coupon projections (see the warning the class header). */</span></div>
-<div class="line"><span class="lineno">   84</span> </div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (telescopicValueDates) {</div>
-<div class="line"><span class="lineno">   86</span>        <span class="comment">// build optimised value dates schedule: front stub goes</span></div>
-<div class="line"><span class="lineno">   87</span>        <span class="comment">// from start date to max(evalDate,valueStart) + 7bd</span></div>
-<div class="line"><span class="lineno">   88</span>        Date evalDate = Settings::instance().evaluationDate();</div>
-<div class="line"><span class="lineno">   89</span>        tmpEndDate = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(std::max(valueStart, evalDate), 7, Days, Following);</div>
-<div class="line"><span class="lineno">   90</span>        tmpEndDate = std::min(tmpEndDate, valueEnd);</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="line"><span class="lineno">   92</span>    Schedule sch = MakeSchedule()</div>
-<div class="line"><span class="lineno">   93</span>                       .from(valueStart)</div>
-<div class="line"><span class="lineno">   94</span>                       <span class="comment">// .to(valueEnd)</span></div>
-<div class="line"><span class="lineno">   95</span>                       .to(tmpEndDate)</div>
-<div class="line"><span class="lineno">   96</span>                       .withTenor(1 * Days)</div>
-<div class="line"><span class="lineno">   97</span>                       .withCalendar(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar())</div>
-<div class="line"><span class="lineno">   98</span>                       .withConvention(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;businessDayConvention())</div>
-<div class="line"><span class="lineno">   99</span>                       .backwards();</div>
-<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a> = sch.dates();</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">if</span> (telescopicValueDates) {</div>
-<div class="line"><span class="lineno">  103</span>        <span class="comment">// build optimised value dates schedule: back stub</span></div>
-<div class="line"><span class="lineno">  104</span>        <span class="comment">// contains at least two dates and enough periods to cover rate cutoff</span></div>
-<div class="line"><span class="lineno">  105</span>        Date tmp2 = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().adjust(valueEnd, <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;businessDayConvention());</div>
-<div class="line"><span class="lineno">  106</span>        Date tmp1 = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(tmp2, -std::max&lt;Size&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>, 1), Days, Preceding);</div>
-<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">while</span> (tmp1 &lt;= tmp2) {</div>
-<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">if</span> (tmp1 &gt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.back())</div>
-<div class="line"><span class="lineno">  109</span>                <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.push_back(tmp1);</div>
-<div class="line"><span class="lineno">  110</span>            tmp1 = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(tmp1, 1, Days, Following);</div>
-<div class="line"><span class="lineno">  111</span>        }</div>
-<div class="line"><span class="lineno">  112</span>    }</div>
-<div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>    QL_ENSURE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.size() &gt;= 2 + <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>, <span class="stringliteral">&quot;degenerate schedule&quot;</span>);</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    <span class="comment">// the first and last value date should be the unadjusted input value dates</span></div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.front() != valueStart)</div>
-<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.front() = valueStart;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.back() != valueEnd)</div>
-<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.back() = valueEnd;</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.size() - 1;</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[0] != <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[1],</div>
-<div class="line"><span class="lineno">  125</span>               <span class="stringliteral">&quot;internal error: first two value dates of on coupon are equal: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[0]);</div>
-<div class="line"><span class="lineno">  126</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>] != <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> - 1],</div>
-<div class="line"><span class="lineno">  127</span>               <span class="stringliteral">&quot;internal error: last two value dates of on coupon are equal: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>]);</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>    <span class="comment">// fixing dates</span></div>
-<div class="line"><span class="lineno">  130</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a385ec624b35f431becf19c48a3698e07">fixingDates_</a>.resize(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>);</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>; ++i)</div>
-<div class="line"><span class="lineno">  132</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a385ec624b35f431becf19c48a3698e07">fixingDates_</a>[i] = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(</div>
-<div class="line"><span class="lineno">  133</span>            <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[i], -<span class="keyword">static_cast&lt;</span>Integer<span class="keyword">&gt;</span>(FloatingRateCoupon::fixingDays()), Days, Preceding);</div>
-<div class="line"><span class="lineno">  134</span> </div>
-<div class="line"><span class="lineno">  135</span>    <span class="comment">// accrual (compounding) periods</span></div>
-<div class="line"><span class="lineno">  136</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a2d4469cea4b7a580aa23f08c62603745">dt_</a>.resize(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>);</div>
-<div class="line"><span class="lineno">  137</span>    <span class="keyword">const</span> DayCounter&amp; dc = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;dayCounter();</div>
-<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>; ++i)</div>
-<div class="line"><span class="lineno">  139</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a2d4469cea4b7a580aa23f08c62603745">dt_</a>[i] = dc.yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[i + 1]);</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>    setPricer(ext::shared_ptr&lt;FloatingRateCouponPricer&gt;(<span class="keyword">new</span> OvernightIndexedCouponPricer));</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>    <span class="comment">// check that rate cutoff is &lt; number of fixing dates</span></div>
-<div class="line"><span class="lineno">  144</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a> &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>,</div>
-<div class="line"><span class="lineno">  145</span>               <span class="stringliteral">&quot;rate cutoff (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a> &lt;&lt; <span class="stringliteral">&quot;) must be less than number of fixings in period (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">  146</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00054">54</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>    : <a class="code hl_class" href="class_floating_rate_coupon.html">FloatingRateCoupon</a>(paymentDate, nominal, startDate, endDate, fixingDays, <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>, gearing, spread,</div>
+<div class="line"><span class="lineno">   63</span>                         refPeriodStart, refPeriodEnd, dayCounter, <span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   64</span>      <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a692e32fbdb1ea4abf8e1fd5620a699fa">overnightIndex_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a241be8d3888d037a2108b2296fcc431e">includeSpread_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a35b9043b1bc2282604ddcdf20593dc01">includeSpread</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ace0a2c7f28ed82b38e40027e9152ded6">lookback_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a0bd23973747166b7af3896981f0936e4">rateCutoff</a>),</div>
+<div class="line"><span class="lineno">   65</span>      <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a33909527edf374ecf2b9501142ce4922">rateComputationStartDate_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a5d20d555049eeff99320d353daf46fe2">rateComputationStartDate</a>), <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ab221fb495c7e8b3ca65e9ac23a7d149f">rateComputationEndDate_</a>(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a60069a67bee3e400ef58d28119792ecc">rateComputationEndDate</a>) {</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    Date valueStart = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a33909527edf374ecf2b9501142ce4922">rateComputationStartDate_</a> == Null&lt;Date&gt;() ? startDate : <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a33909527edf374ecf2b9501142ce4922">rateComputationStartDate_</a>;</div>
+<div class="line"><span class="lineno">   68</span>    Date valueEnd = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ab221fb495c7e8b3ca65e9ac23a7d149f">rateComputationEndDate_</a> == Null&lt;Date&gt;() ? endDate : <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#ab221fb495c7e8b3ca65e9ac23a7d149f">rateComputationEndDate_</a>;</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a> != 0 * Days) {</div>
+<div class="line"><span class="lineno">   70</span>        BusinessDayConvention bdc = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>.length() &gt; 0 ? Preceding : Following;</div>
+<div class="line"><span class="lineno">   71</span>        valueStart = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(valueStart, -<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>, bdc);</div>
+<div class="line"><span class="lineno">   72</span>        valueEnd = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(valueEnd, -<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa16757e45faa54148484824ee25f27dd">lookback</a>, bdc);</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// value dates</span></div>
+<div class="line"><span class="lineno">   76</span>    Date tmpEndDate = valueEnd;</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">/* For the coupon&#39;s valuation only the first and last future valuation</span></div>
+<div class="line"><span class="lineno">   79</span><span class="comment">       dates matter, therefore we can avoid to construct the whole series</span></div>
+<div class="line"><span class="lineno">   80</span><span class="comment">       of valuation dates, a front and back stub will do. However notice</span></div>
+<div class="line"><span class="lineno">   81</span><span class="comment">       that if the global evaluation date moves forward it might run past</span></div>
+<div class="line"><span class="lineno">   82</span><span class="comment">       the front stub of valuation dates we build here (which incorporates</span></div>
+<div class="line"><span class="lineno">   83</span><span class="comment">       a grace period of 7 business after the evaluation date). This will</span></div>
+<div class="line"><span class="lineno">   84</span><span class="comment">       lead to false coupon projections (see the warning the class header). */</span></div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (telescopicValueDates) {</div>
+<div class="line"><span class="lineno">   87</span>        <span class="comment">// build optimised value dates schedule: front stub goes</span></div>
+<div class="line"><span class="lineno">   88</span>        <span class="comment">// from start date to max(evalDate,valueStart) + 7bd</span></div>
+<div class="line"><span class="lineno">   89</span>        Date evalDate = Settings::instance().evaluationDate();</div>
+<div class="line"><span class="lineno">   90</span>        tmpEndDate = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(std::max(valueStart, evalDate), 7, Days, Following);</div>
+<div class="line"><span class="lineno">   91</span>        tmpEndDate = std::min(tmpEndDate, valueEnd);</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span>    Schedule sch = MakeSchedule()</div>
+<div class="line"><span class="lineno">   94</span>                       .from(valueStart)</div>
+<div class="line"><span class="lineno">   95</span>                       <span class="comment">// .to(valueEnd)</span></div>
+<div class="line"><span class="lineno">   96</span>                       .to(tmpEndDate)</div>
+<div class="line"><span class="lineno">   97</span>                       .withTenor(1 * Days)</div>
+<div class="line"><span class="lineno">   98</span>                       .withCalendar(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar())</div>
+<div class="line"><span class="lineno">   99</span>                       .withConvention(<a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;businessDayConvention())</div>
+<div class="line"><span class="lineno">  100</span>                       .backwards();</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a> = sch.dates();</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">if</span> (telescopicValueDates) {</div>
+<div class="line"><span class="lineno">  104</span>        <span class="comment">// build optimised value dates schedule: back stub</span></div>
+<div class="line"><span class="lineno">  105</span>        <span class="comment">// contains at least two dates and enough periods to cover rate cutoff</span></div>
+<div class="line"><span class="lineno">  106</span>        Date tmp2 = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().adjust(valueEnd, <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;businessDayConvention());</div>
+<div class="line"><span class="lineno">  107</span>        Date tmp1 = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(tmp2, -std::max&lt;Size&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>, 1), Days, Preceding);</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">while</span> (tmp1 &lt;= tmp2) {</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">if</span> (tmp1 &gt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.back())</div>
+<div class="line"><span class="lineno">  110</span>                <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.push_back(tmp1);</div>
+<div class="line"><span class="lineno">  111</span>            tmp1 = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(tmp1, 1, Days, Following);</div>
+<div class="line"><span class="lineno">  112</span>        }</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>    QL_ENSURE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.size() &gt;= 2 + <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>, <span class="stringliteral">&quot;degenerate schedule&quot;</span>);</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">// the first and last value date should be the unadjusted input value dates</span></div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.front() != valueStart)</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.front() = valueStart;</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.back() != valueEnd)</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.back() = valueEnd;</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>.size() - 1;</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[0] != <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[1],</div>
+<div class="line"><span class="lineno">  126</span>               <span class="stringliteral">&quot;internal error: first two value dates of on coupon are equal: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[0]);</div>
+<div class="line"><span class="lineno">  127</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>] != <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> - 1],</div>
+<div class="line"><span class="lineno">  128</span>               <span class="stringliteral">&quot;internal error: last two value dates of on coupon are equal: &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>]);</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>    <span class="comment">// fixing dates</span></div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a385ec624b35f431becf19c48a3698e07">fixingDates_</a>.resize(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>);</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>; ++i)</div>
+<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a385ec624b35f431becf19c48a3698e07">fixingDates_</a>[i] = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;fixingCalendar().advance(</div>
+<div class="line"><span class="lineno">  134</span>            <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[i], -<span class="keyword">static_cast&lt;</span>Integer<span class="keyword">&gt;</span>(FloatingRateCoupon::fixingDays()), Days, Preceding);</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="comment">// accrual (compounding) periods</span></div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a2d4469cea4b7a580aa23f08c62603745">dt_</a>.resize(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>);</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keyword">const</span> DayCounter&amp; dc = <a class="code hl_function" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a446ccda8e87e12f2c8adf8f2f0a98dd3">overnightIndex</a>-&gt;dayCounter();</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>; ++i)</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a2d4469cea4b7a580aa23f08c62603745">dt_</a>[i] = dc.yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#aa73b8b675cd4c690343f64b4be74c784">valueDates_</a>[i + 1]);</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    setPricer(ext::shared_ptr&lt;FloatingRateCouponPricer&gt;(<span class="keyword">new</span> OvernightIndexedCouponPricer));</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    <span class="comment">// check that rate cutoff is &lt; number of fixing dates</span></div>
+<div class="line"><span class="lineno">  145</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a> &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>,</div>
+<div class="line"><span class="lineno">  146</span>               <span class="stringliteral">&quot;rate cutoff (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a> &lt;&lt; <span class="stringliteral">&quot;) must be less than number of fixings in period (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><span class="lineno">  147</span>}</div>
 <div class="ttc" id="aclass_floating_rate_coupon_html"><div class="ttname"><a href="class_floating_rate_coupon.html">FloatingRateCoupon</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_overnight_indexed_coupon_html_a0bd23973747166b7af3896981f0936e4"><div class="ttname"><a href="class_quant_ext_1_1_overnight_indexed_coupon.html#a0bd23973747166b7af3896981f0936e4">QuantExt::OvernightIndexedCoupon::rateCutoff</a></div><div class="ttdeci">Natural rateCutoff() const</div><div class="ttdoc">rate cutoff</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00103">overnightindexedcoupon.hpp:103</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_overnight_indexed_coupon_html_a241be8d3888d037a2108b2296fcc431e"><div class="ttname"><a href="class_quant_ext_1_1_overnight_indexed_coupon.html#a241be8d3888d037a2108b2296fcc431e">QuantExt::OvernightIndexedCoupon::includeSpread_</a></div><div class="ttdeci">bool includeSpread_</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00126">overnightindexedcoupon.hpp:126</a></div></div>
@@ -528,20 +528,20 @@ Public Member Functions</h2></td></tr>
 
 <p>fixings to be compounded </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00148">148</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  148</span>                                                               {</div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>.resize(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>);</div>
-<div class="line"><span class="lineno">  150</span>    Size i;</div>
-<div class="line"><span class="lineno">  151</span>    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>; ++i) {</div>
-<div class="line"><span class="lineno">  152</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>[i] = index_-&gt;fixing(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a385ec624b35f431becf19c48a3698e07">fixingDates_</a>[i]);</div>
-<div class="line"><span class="lineno">  153</span>    }</div>
-<div class="line"><span class="lineno">  154</span>    Rate cutoffFixing = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>[i - 1];</div>
-<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">while</span> (i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>) {</div>
-<div class="line"><span class="lineno">  156</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>[i] = cutoffFixing;</div>
-<div class="line"><span class="lineno">  157</span>        i++;</div>
-<div class="line"><span class="lineno">  158</span>    }</div>
-<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>;</div>
-<div class="line"><span class="lineno">  160</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00149">149</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>                                                               {</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>.resize(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>);</div>
+<div class="line"><span class="lineno">  151</span>    Size i;</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#af69488da743effa2c3bb7414feae1316">rateCutoff_</a>; ++i) {</div>
+<div class="line"><span class="lineno">  153</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>[i] = index_-&gt;fixing(<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a385ec624b35f431becf19c48a3698e07">fixingDates_</a>[i]);</div>
+<div class="line"><span class="lineno">  154</span>    }</div>
+<div class="line"><span class="lineno">  155</span>    Rate cutoffFixing = <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>[i - 1];</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">while</span> (i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a9bedbbacb0b82a55c579510cee137603">n_</a>) {</div>
+<div class="line"><span class="lineno">  157</span>        <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>[i] = cutoffFixing;</div>
+<div class="line"><span class="lineno">  158</span>        i++;</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">fixings_</a>;</div>
+<div class="line"><span class="lineno">  161</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_overnight_indexed_coupon_html_a70b037964ba05f503e9ec78fbdbc129a"><div class="ttname"><a href="class_quant_ext_1_1_overnight_indexed_coupon.html#a70b037964ba05f503e9ec78fbdbc129a">QuantExt::OvernightIndexedCoupon::fixings_</a></div><div class="ttdeci">std::vector&lt; Rate &gt; fixings_</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00123">overnightindexedcoupon.hpp:123</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -620,15 +620,15 @@ Public Member Functions</h2></td></tr>
 <li>effectiveSpread = spread() if includeSpread = false </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00171">171</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  171</span>                                                   {</div>
-<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a241be8d3888d037a2108b2296fcc431e">includeSpread_</a>)</div>
-<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">return</span> spread();</div>
-<div class="line"><span class="lineno">  174</span>    <span class="keyword">auto</span> p = ext::dynamic_pointer_cast&lt;OvernightIndexedCouponPricer&gt;(pricer());</div>
-<div class="line"><span class="lineno">  175</span>    QL_REQUIRE(p, <span class="stringliteral">&quot;OvernightIndexedCoupon::effectiveSpread(): expected OvernightIndexedCouponPricer&quot;</span>);</div>
-<div class="line"><span class="lineno">  176</span>    p-&gt;initialize(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">return</span> p-&gt;effectiveSpread();</div>
-<div class="line"><span class="lineno">  178</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00172">172</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>                                                   {</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_quant_ext_1_1_overnight_indexed_coupon.html#a241be8d3888d037a2108b2296fcc431e">includeSpread_</a>)</div>
+<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">return</span> spread();</div>
+<div class="line"><span class="lineno">  175</span>    <span class="keyword">auto</span> p = ext::dynamic_pointer_cast&lt;OvernightIndexedCouponPricer&gt;(pricer());</div>
+<div class="line"><span class="lineno">  176</span>    QL_REQUIRE(p, <span class="stringliteral">&quot;OvernightIndexedCoupon::effectiveSpread(): expected OvernightIndexedCouponPricer&quot;</span>);</div>
+<div class="line"><span class="lineno">  177</span>    p-&gt;initialize(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">return</span> p-&gt;effectiveSpread();</div>
+<div class="line"><span class="lineno">  179</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -647,13 +647,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00180">180</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  180</span>                                                        {</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keyword">auto</span> p = ext::dynamic_pointer_cast&lt;OvernightIndexedCouponPricer&gt;(pricer());</div>
-<div class="line"><span class="lineno">  182</span>    QL_REQUIRE(p, <span class="stringliteral">&quot;OvernightIndexedCoupon::effectiveSpread(): expected OvernightIndexedCouponPricer&quot;</span>);</div>
-<div class="line"><span class="lineno">  183</span>    p-&gt;initialize(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">return</span> p-&gt;effectiveIndexFixing();</div>
-<div class="line"><span class="lineno">  185</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00181">181</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  181</span>                                                        {</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keyword">auto</span> p = ext::dynamic_pointer_cast&lt;OvernightIndexedCouponPricer&gt;(pricer());</div>
+<div class="line"><span class="lineno">  183</span>    QL_REQUIRE(p, <span class="stringliteral">&quot;OvernightIndexedCoupon::effectiveSpread(): expected OvernightIndexedCouponPricer&quot;</span>);</div>
+<div class="line"><span class="lineno">  184</span>    p-&gt;initialize(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">return</span> p-&gt;effectiveIndexFixing();</div>
+<div class="line"><span class="lineno">  186</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -857,15 +857,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00162">162</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  162</span>                                                     {</div>
-<div class="line"><span class="lineno">  163</span>    Visitor&lt;OvernightIndexedCoupon&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;OvernightIndexedCoupon&gt;*<span class="keyword">&gt;</span>(&amp;v);</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">if</span> (v1 != 0) {</div>
-<div class="line"><span class="lineno">  165</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  166</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  167</span>        FloatingRateCoupon::accept(v);</div>
-<div class="line"><span class="lineno">  168</span>    }</div>
-<div class="line"><span class="lineno">  169</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00163">163</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>                                                     {</div>
+<div class="line"><span class="lineno">  164</span>    Visitor&lt;OvernightIndexedCoupon&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;OvernightIndexedCoupon&gt;*<span class="keyword">&gt;</span>(&amp;v);</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">if</span> (v1 != 0) {</div>
+<div class="line"><span class="lineno">  166</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  167</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  168</span>        FloatingRateCoupon::accept(v);</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+<div class="line"><span class="lineno">  170</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

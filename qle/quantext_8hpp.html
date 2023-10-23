@@ -79,7 +79,13 @@ $(function() {
   <div class="headertitle"><div class="title">quantext.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="amendedcalendar_8hpp_source.html">qle/calendars/amendedcalendar.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="backwardderivatives_8hpp_source.html">qle/ad/backwardderivatives.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="computationgraph_8hpp_source.html">qle/ad/computationgraph.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="external__randomvariable__ops_8hpp_source.html">qle/ad/external_randomvariable_ops.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="forwardderivatives_8hpp_source.html">qle/ad/forwardderivatives.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="forwardevaluation_8hpp_source.html">qle/ad/forwardevaluation.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ssaform_8hpp_source.html">qle/ad/ssaform.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="amendedcalendar_8hpp_source.html">qle/calendars/amendedcalendar.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="austria_8hpp_source.html">qle/calendars/austria.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="belgium_8hpp_source.html">qle/calendars/belgium.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cme_8hpp_source.html">qle/calendars/cme.hpp</a>&gt;</code><br />
@@ -105,10 +111,12 @@ $(function() {
 <code>#include &lt;<a class="el" href="wmr_8hpp_source.html">qle/calendars/wmr.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="averageonindexedcoupon_8hpp_source.html">qle/cashflows/averageonindexedcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="averageonindexedcouponpricer_8hpp_source.html">qle/cashflows/averageonindexedcouponpricer.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="blackaveragebmacouponpricer_8hpp_source.html">qle/cashflows/blackaveragebmacouponpricer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="blackovernightindexedcouponpricer_8hpp_source.html">qle/cashflows/blackovernightindexedcouponpricer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="bondtrscashflow_8hpp_source.html">qle/cashflows/bondtrscashflow.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="brlcdicouponpricer_8hpp_source.html">qle/cashflows/brlcdicouponpricer.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="cashflows_8hpp_source.html">qle/cashflows/cashflows.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cappedflooredaveragebmacoupon_8hpp_source.html">qle/cashflows/cappedflooredaveragebmacoupon.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cashflows_2cashflows_8hpp_source.html">qle/cashflows/cashflows.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cashflowtable_8hpp_source.html">qle/cashflows/cashflowtable.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cmbcoupon_8hpp_source.html">qle/cashflows/cmbcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="commoditycashflow_8hpp_source.html">qle/cashflows/commoditycashflow.hpp</a>&gt;</code><br />
@@ -128,6 +136,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="floatingannuitynominal_8hpp_source.html">qle/cashflows/floatingannuitynominal.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="floatingratefxlinkednotionalcoupon_8hpp_source.html">qle/cashflows/floatingratefxlinkednotionalcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxlinkedcashflow_8hpp_source.html">qle/cashflows/fxlinkedcashflow.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="iborfracoupon_8hpp_source.html">qle/cashflows/iborfracoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="indexedcoupon_8hpp_source.html">qle/cashflows/indexedcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="jyyoyinflationcouponpricer_8hpp_source.html">qle/cashflows/jyyoyinflationcouponpricer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="lognormalcmsspreadpricer_8hpp_source.html">qle/cashflows/lognormalcmsspreadpricer.hpp</a>&gt;</code><br />
@@ -141,6 +150,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="strippedcapflooredyoyinflationcoupon_8hpp_source.html">qle/cashflows/strippedcapflooredyoyinflationcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="subperiodscoupon_8hpp_source.html">qle/cashflows/subperiodscoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="subperiodscouponpricer_8hpp_source.html">qle/cashflows/subperiodscouponpricer.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="trscashflow_8hpp_source.html">qle/cashflows/trscashflow.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="yoyinflationcoupon_8hpp_source.html">qle/cashflows/yoyinflationcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="zerofixedcoupon_8hpp_source.html">qle/cashflows/zerofixedcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="africa_8hpp_source.html">qle/currencies/africa.hpp</a>&gt;</code><br />
@@ -172,7 +182,6 @@ $(function() {
 <code>#include &lt;<a class="el" href="genericindex_8hpp_source.html">qle/indexes/genericindex.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ambor_8hpp_source.html">qle/indexes/ibor/ambor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ameribor_8hpp_source.html">qle/indexes/ibor/ameribor.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="audbbsw_8hpp_source.html">qle/indexes/ibor/audbbsw.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="boebaserate_8hpp_source.html">qle/indexes/ibor/boebaserate.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="brlcdi_8hpp_source.html">qle/indexes/ibor/brlcdi.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="chfsaron_8hpp_source.html">qle/indexes/ibor/chfsaron.hpp</a>&gt;</code><br />
@@ -188,7 +197,6 @@ $(function() {
 <code>#include &lt;<a class="el" href="dkkcibor_8hpp_source.html">qle/indexes/ibor/dkkcibor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dkkcita_8hpp_source.html">qle/indexes/ibor/dkkcita.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dkkois_8hpp_source.html">qle/indexes/ibor/dkkois.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ester_8hpp_source.html">qle/indexes/ibor/ester.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hkdhibor_8hpp_source.html">qle/indexes/ibor/hkdhibor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hkdhonia_8hpp_source.html">qle/indexes/ibor/hkdhonia.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hufbubor_8hpp_source.html">qle/indexes/ibor/hufbubor.hpp</a>&gt;</code><br />
@@ -207,10 +215,8 @@ $(function() {
 <code>#include &lt;<a class="el" href="nzdbkbm_8hpp_source.html">qle/indexes/ibor/nzdbkbm.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="phpphiref_8hpp_source.html">qle/indexes/ibor/phpphiref.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="plnpolonia_8hpp_source.html">qle/indexes/ibor/plnpolonia.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="plnwibor_8hpp_source.html">qle/indexes/ibor/plnwibor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="primeindex_8hpp_source.html">qle/indexes/ibor/primeindex.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rubkeyrate_8hpp_source.html">qle/indexes/ibor/rubkeyrate.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rubmosprime_8hpp_source.html">qle/indexes/ibor/rubmosprime.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="saibor_8hpp_source.html">qle/indexes/ibor/saibor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="seksior_8hpp_source.html">qle/indexes/ibor/seksior.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sekstibor_8hpp_source.html">qle/indexes/ibor/sekstibor.hpp</a>&gt;</code><br />
@@ -226,6 +232,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="thor_8hpp_source.html">qle/indexes/ibor/thor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tonar_8hpp_source.html">qle/indexes/ibor/tonar.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="twdtaibor_8hpp_source.html">qle/indexes/ibor/twdtaibor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="iborindexfixingoverride_8hpp_source.html">qle/indexes/iborindexfixingoverride.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="inflationindexobserver_8hpp_source.html">qle/indexes/inflationindexobserver.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="inflationindexwrapper_8hpp_source.html">qle/indexes/inflationindexwrapper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="offpeakpowerindex_8hpp_source.html">qle/indexes/offpeakpowerindex.hpp</a>&gt;</code><br />
@@ -256,10 +263,10 @@ $(function() {
 <code>#include &lt;<a class="el" href="crossccyswap_8hpp_source.html">qle/instruments/crossccyswap.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="currencyswap_8hpp_source.html">qle/instruments/currencyswap.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="deposit_8hpp_source.html">qle/instruments/deposit.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="doubleoibasisswap_8hpp_source.html">qle/instruments/doubleoibasisswap.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="equityforward_8hpp_source.html">qle/instruments/equityforward.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fixedbmaswap_8hpp_source.html">qle/instruments/fixedbmaswap.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="forwardbond_8hpp_source.html">qle/instruments/forwardbond.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="forwardrateagreement_8hpp_source.html">qle/instruments/forwardrateagreement.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxforward_8hpp_source.html">qle/instruments/fxforward.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="genericswaption_8hpp_source.html">qle/instruments/genericswaption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="impliedbondspread_8hpp_source.html">qle/instruments/impliedbondspread.hpp</a>&gt;</code><br />
@@ -283,6 +290,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="vanillaforwardoption_8hpp_source.html">qle/instruments/vanillaforwardoption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="varianceswap_8hpp_source.html">qle/instruments/varianceswap.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="optioninterpolator2d_8hpp_source.html">qle/interpolators/optioninterpolator2d.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="basiccpuenvironment_8hpp_source.html">qle/math/basiccpuenvironment.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="blockmatrixinverse_8hpp_source.html">qle/math/blockmatrixinverse.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="bucketeddistribution_8hpp_source.html">qle/math/bucketeddistribution.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="computeenvironment_8hpp_source.html">qle/math/computeenvironment.hpp</a>&gt;</code><br />
@@ -294,6 +302,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="fillemptymatrix_8hpp_source.html">qle/math/fillemptymatrix.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="flatextrapolation_8hpp_source.html">qle/math/flatextrapolation.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="flatextrapolation2d_8hpp_source.html">qle/math/flatextrapolation2d.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="kendallrankcorrelation_8hpp_source.html">qle/math/kendallrankcorrelation.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logquadraticinterpolation_8hpp_source.html">qle/math/logquadraticinterpolation.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="matrixfunctions_8hpp_source.html">qle/math/matrixfunctions.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="method__mt_8hpp_source.html">qle/math/method_mt.hpp</a>&gt;</code><br />
@@ -304,12 +313,16 @@ $(function() {
 <code>#include &lt;<a class="el" href="randomvariable_8hpp_source.html">qle/math/randomvariable.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="randomvariable__io_8hpp_source.html">qle/math/randomvariable_io.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="randomvariable__opcodes_8hpp_source.html">qle/math/randomvariable_opcodes.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="randomvariable__ops_8hpp_source.html">qle/math/randomvariable_ops.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="randomvariablelsmbasissystem_8hpp_source.html">qle/math/randomvariablelsmbasissystem.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stabilisedglls_8hpp_source.html">qle/math/stabilisedglls.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="trace_8hpp_source.html">qle/math/trace.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="brownianbridgepathinterpolator_8hpp_source.html">qle/methods/brownianbridgepathinterpolator.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fdmblackscholesmesher_8hpp_source.html">qle/methods/fdmblackscholesmesher.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fdmblackscholesop_8hpp_source.html">qle/methods/fdmblackscholesop.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fdmdefaultableequityjumpdiffusionfokkerplanckop_8hpp_source.html">qle/methods/fdmdefaultableequityjumpdiffusionfokkerplanckop.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fdmdefaultableequityjumpdiffusionop_8hpp_source.html">qle/methods/fdmdefaultableequityjumpdiffusionop.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="interpolatedvariatemultipathgenerator_8hpp_source.html">qle/methods/interpolatedvariatemultipathgenerator.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fdmquantohelper_8hpp_source.html">qle/methods/fdmquantohelper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="multipathgeneratorbase_8hpp_source.html">qle/methods/multipathgeneratorbase.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="multipathvariategenerator_8hpp_source.html">qle/methods/multipathvariategenerator.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pathgeneratorfactory_8hpp_source.html">qle/methods/pathgeneratorfactory.hpp</a>&gt;</code><br />
@@ -365,6 +378,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="hwmodel_8hpp_source.html">qle/models/hwmodel.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hwparametrization_8hpp_source.html">qle/models/hwparametrization.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="infdkparametrization_8hpp_source.html">qle/models/infdkparametrization.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="infdkvectorised_8hpp_source.html">qle/models/infdkvectorised.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="infjyparameterization_8hpp_source.html">qle/models/infjyparameterization.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="inhomogeneouspooldef_8hpp_source.html">qle/models/inhomogeneouspooldef.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="irlgm1fconstantparametrization_8hpp_source.html">qle/models/irlgm1fconstantparametrization.hpp</a>&gt;</code><br />
@@ -395,6 +409,8 @@ $(function() {
 <code>#include &lt;<a class="el" href="poollossmodel_8hpp_source.html">qle/models/poollossmodel.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="projectedcrossassetmodel_8hpp_source.html">qle/models/projectedcrossassetmodel.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pseudoparameter_8hpp_source.html">qle/models/pseudoparameter.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="representativefxoption_8hpp_source.html">qle/models/representativefxoption.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="representativeswaption_8hpp_source.html">qle/models/representativeswaption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transitionmatrix_8hpp_source.html">qle/models/transitionmatrix.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="yoycapfloorhelper_8hpp_source.html">qle/models/yoycapfloorhelper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="yoyinflationmodeltermstructure_8hpp_source.html">qle/models/yoyinflationmodeltermstructure.hpp</a>&gt;</code><br />
@@ -454,7 +470,6 @@ $(function() {
 <code>#include &lt;<a class="el" href="mccamcurrencyswapengine_8hpp_source.html">qle/pricingengines/mccamcurrencyswapengine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mccamfxforwardengine_8hpp_source.html">qle/pricingengines/mccamfxforwardengine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mccamfxoptionengine_8hpp_source.html">qle/pricingengines/mccamfxoptionengine.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="mclgmfraengine_8hpp_source.html">qle/pricingengines/mclgmfraengine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mclgmswapengine_8hpp_source.html">qle/pricingengines/mclgmswapengine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mclgmswaptionengine_8hpp_source.html">qle/pricingengines/mclgmswaptionengine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mcmultilegbaseengine_8hpp_source.html">qle/pricingengines/mcmultilegbaseengine.hpp</a>&gt;</code><br />
@@ -524,6 +539,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="datedstrippedoptionletadapter_8hpp_source.html">qle/termstructures/datedstrippedoptionletadapter.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="datedstrippedoptionletbase_8hpp_source.html">qle/termstructures/datedstrippedoptionletbase.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="discountratiomodifiedcurve_8hpp_source.html">qle/termstructures/discountratiomodifiedcurve.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="doubleoibasisswaphelper_8hpp_source.html">qle/termstructures/doubleoibasisswaphelper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dynamicblackvoltermstructure_8hpp_source.html">qle/termstructures/dynamicblackvoltermstructure.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dynamiccpivolatilitystructure_8hpp_source.html">qle/termstructures/dynamiccpivolatilitystructure.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="dynamicoptionletvolatilitystructure_8hpp_source.html">qle/termstructures/dynamicoptionletvolatilitystructure.hpp</a>&gt;</code><br />
@@ -533,6 +549,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="eqcommoptionsurfacestripper_8hpp_source.html">qle/termstructures/eqcommoptionsurfacestripper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="equityforwardcurvestripper_8hpp_source.html">qle/termstructures/equityforwardcurvestripper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="flatcorrelation_8hpp_source.html">qle/termstructures/flatcorrelation.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="flatforwarddividendcurve_8hpp_source.html">qle/termstructures/flatforwarddividendcurve.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="futurepricehelper_8hpp_source.html">qle/termstructures/futurepricehelper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxblackvolsurface_8hpp_source.html">qle/termstructures/fxblackvolsurface.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxsmilesection_8hpp_source.html">qle/termstructures/fxsmilesection.hpp</a>&gt;</code><br />
@@ -615,6 +632,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="dateutilities_8hpp_source.html">qle/time/dateutilities.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="futureexpirycalculator_8hpp_source.html">qle/time/futureexpirycalculator.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="yearcounter_8hpp_source.html">qle/time/yearcounter.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="utilities_2cashflows_8hpp_source.html">qle/utilities/cashflows.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="commodity_8hpp_source.html">qle/utilities/commodity.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="inflation_8hpp_source.html">qle/utilities/inflation.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="interpolation_8hpp_source.html">qle/utilities/interpolation.hpp</a>&gt;</code><br />

@@ -96,8 +96,9 @@ $(function() {
 <map name="a_market_impl_inherit__map" id="a_market_impl_inherit__map">
 <area shape="rect" title="Market Implementation." alt="" coords="80,1501,274,2524"/>
 <area shape="rect" title=" " alt="" coords="122,2792,232,2891"/>
-<area shape="rect" href="classore_1_1data_1_1_fitted_bond_curve_helper_market.html" title=" " alt="" coords="256,2785,476,2898"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html" title="Today&#39;s Market." alt="" coords="500,2572,715,3111"/>
+<area shape="rect" href="class_ored_test_market.html" title="Simple flat market setup to be used in the test suite, plain copy from OREAP test suite." alt="" coords="257,2770,398,2913"/>
+<area shape="rect" href="classore_1_1data_1_1_fitted_bond_curve_helper_market.html" title=" " alt="" coords="423,2785,643,2898"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html" title="Today&#39;s Market." alt="" coords="667,2572,882,3111"/>
 <area shape="rect" href="classore_1_1data_1_1_market.html" title="Market." alt="" coords="78,5,276,1453"/>
 </map>
 </div>
@@ -552,8 +553,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a6c7ff8d8c31e2f85fbb37384bcac3290"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a6c7ff8d8c31e2f85fbb37384bcac3290">ore::data::MarketImpl::yieldCurves_</a></div><div class="ttdeci">map&lt; tuple&lt; string, YieldCurveType, string &gt;, Handle&lt; YieldTermStructure &gt; &gt; yieldCurves_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00208">marketimpl.hpp:208</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_aea15232be6eb71feca2c59137631f732"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#aea15232be6eb71feca2c59137631f732">ore::data::MarketImpl::iborIndex</a></div><div class="ttdeci">Handle&lt; IborIndex &gt; iborIndex(const string &amp;indexName, const string &amp;configuration=Market::defaultConfiguration) const override</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8cpp_source.html#l00107">marketimpl.cpp:107</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_af2e760ddfcac8f64fa739d3e8bf6362b"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b">ore::data::MarketImpl::require</a></div><div class="ttdeci">virtual void require(const MarketObject o, const string &amp;name, const string &amp;configuration, const bool forceBuild=false) const</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00201">marketimpl.hpp:201</a></div></div>
-<div class="ttc" id="agroup__utilities_html_gaf17e7976e4fe2449bb4e226ee19c0fd9"><div class="ttname"><a href="group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9">ore::data::tryParseIborIndex</a></div><div class="ttdeci">bool tryParseIborIndex(const string &amp;s, boost::shared_ptr&lt; IborIndex &gt; &amp;index)</div><div class="ttdoc">Try to convert std::string to QuantLib::IborIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00248">indexparser.cpp:248</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00368">log.hpp:368</a></div></div>
+<div class="ttc" id="agroup__utilities_html_gaf17e7976e4fe2449bb4e226ee19c0fd9"><div class="ttname"><a href="group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9">ore::data::tryParseIborIndex</a></div><div class="ttdeci">bool tryParseIborIndex(const string &amp;s, boost::shared_ptr&lt; IborIndex &gt; &amp;index)</div><div class="ttdoc">Try to convert std::string to QuantLib::IborIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00244">indexparser.cpp:244</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00508">log.hpp:508</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66dac180e16777ec55d7f8be3f91ab6c0313"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66dac180e16777ec55d7f8be3f91ab6c0313">ore::data::MarketObject::DiscountCurve</a></div><div class="ttdeci">@ DiscountCurve</div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66dac8dbbdbb04d984dd976732914ab27738"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66dac8dbbdbb04d984dd976732914ab27738">ore::data::MarketObject::YieldCurve</a></div><div class="ttdeci">@ YieldCurve</div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66dafc2a216729556993cde58743597e4b31"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66dafc2a216729556993cde58743597e4b31">ore::data::MarketObject::EquityCurve</a></div><div class="ttdeci">@ EquityCurve</div></div>
@@ -581,13 +582,14 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ae7d29fd30616cfe3c462d7d84eaf4ef9_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ae7d29fd30616cfe3c462d7d84eaf4ef9_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ae7d29fd30616cfe3c462d7d84eaf4ef9_icgraph" id="aclassore_1_1data_1_1_market_impl_ae7d29fd30616cfe3c462d7d84eaf4ef9_icgraph">
-<area shape="rect" title="Yield Curves." alt="" coords="1003,56,1084,81"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="848,5,955,31"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="637,23,800,63"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a468f6942c6cd702ce1b0a6368e94ee92" title=" " alt="" coords="861,107,942,132"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,23,379,63"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,63,589,103"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,23,168,63"/>
+<area shape="rect" title="Yield Curves." alt="" coords="1016,79,1097,105"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="637,5,813,45"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="861,54,968,79"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="644,79,807,119"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a468f6942c6cd702ce1b0a6368e94ee92" title=" " alt="" coords="874,155,955,181"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,79,379,119"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,119,589,159"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,79,168,119"/>
 </map>
 </div>
 
@@ -770,14 +772,15 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_aea15232be6eb71feca2c59137631f732_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_aea15232be6eb71feca2c59137631f732_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_aea15232be6eb71feca2c59137631f732_icgraph" id="aclassore_1_1data_1_1_market_impl_aea15232be6eb71feca2c59137631f732_icgraph">
-<area shape="rect" title=" " alt="" coords="1132,74,1207,99"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="848,74,955,99"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="637,67,800,107"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ae7d29fd30616cfe3c462d7d84eaf4ef9" title="Yield Curves." alt="" coords="1003,23,1084,49"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,67,379,107"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,107,589,147"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,67,168,107"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a468f6942c6cd702ce1b0a6368e94ee92" title=" " alt="" coords="861,25,942,50"/>
+<area shape="rect" title=" " alt="" coords="1145,157,1220,183"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="861,157,968,183"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="644,150,807,190"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ae7d29fd30616cfe3c462d7d84eaf4ef9" title="Yield Curves." alt="" coords="1016,107,1097,132"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="637,67,813,107"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,150,379,190"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,190,589,230"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,150,168,190"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a468f6942c6cd702ce1b0a6368e94ee92" title=" " alt="" coords="874,5,955,31"/>
 </map>
 </div>
 
@@ -844,12 +847,13 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ac59684278372260fbf998460e3ddf949_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ac59684278372260fbf998460e3ddf949_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ac59684278372260fbf998460e3ddf949_icgraph" id="aclassore_1_1data_1_1_market_impl_ac59684278372260fbf998460e3ddf949_icgraph">
-<area shape="rect" title=" " alt="" coords="1003,13,1085,38"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="848,13,955,38"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="637,5,800,45"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,5,379,45"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,45,589,85"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,5,168,45"/>
+<area shape="rect" title=" " alt="" coords="1016,38,1099,63"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="637,5,813,45"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="861,63,968,89"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="644,69,807,109"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,69,379,109"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,109,589,149"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,69,168,109"/>
 </map>
 </div>
 
@@ -1000,6 +1004,17 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="596,55,761,80"/>
 </map>
 </div>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_market_impl_a0dd15d7307d3eabe0b1d9012e64cd3aa_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a0dd15d7307d3eabe0b1d9012e64cd3aa_icgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_market_impl_a0dd15d7307d3eabe0b1d9012e64cd3aa_icgraph" id="aclassore_1_1data_1_1_market_impl_a0dd15d7307d3eabe0b1d9012e64cd3aa_icgraph">
+<area shape="rect" title=" " alt="" coords="229,13,373,38"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="5,5,181,45"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1043,11 +1058,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  188</span>                                                                                     {</div>
 <div class="line"><span class="lineno">  189</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#aa45917dddb7b165b446f5853f20d439f">swapIndexBases</a>(key, configuration).second;</div>
 <div class="line"><span class="lineno">  190</span>}</div>
-</div><!-- fragment --><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_cgraph" id="aclassore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,119,56"/>
@@ -1055,6 +1070,17 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="395,5,457,31"/>
 <area shape="rect" href="group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title="Try to convert std::string to QuantLib::IborIndex." alt="" coords="335,55,517,80"/>
 <area shape="rect" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="565,55,731,80"/>
+</map>
+</div>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_icgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_icgraph" id="aclassore_1_1data_1_1_market_impl_a1177363d3c16f7c943b873d8ebd14f4d_icgraph">
+<area shape="rect" title=" " alt="" coords="229,13,343,38"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="5,5,181,45"/>
 </map>
 </div>
 
@@ -1106,11 +1132,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  197</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ae14cb3cad5042b1b2cdb640b4a11a3c6"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#ae14cb3cad5042b1b2cdb640b4a11a3c6">ore::data::MarketImpl::yieldVolCurves_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; QuantLib::SwaptionVolatilityStructure &gt; &gt; yieldVolCurves_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00213">marketimpl.hpp:213</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da154e3b12b9456528098b8d6746c7f337"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da154e3b12b9456528098b8d6746c7f337">ore::data::MarketObject::YieldVol</a></div><div class="ttdeci">@ YieldVol</div></div>
-</div><!-- fragment --><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_af32816f8f26575ae1b76f6c12692ffa0_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_af32816f8f26575ae1b76f6c12692ffa0_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_af32816f8f26575ae1b76f6c12692ffa0_cgraph" id="aclassore_1_1data_1_1_market_impl_af32816f8f26575ae1b76f6c12692ffa0_cgraph">
 <area shape="rect" title="Yield volatility." alt="" coords="5,5,73,31"/>
@@ -1166,11 +1192,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  203</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_a8d884a61027d5434d524779453a5b918"><div class="ttname"><a href="classore_1_1data_1_1_market.html#a8d884a61027d5434d524779453a5b918">ore::data::Market::fxIndex</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantExt::FxIndex &gt; fxIndex(const string &amp;fxIndex, const string &amp;configuration=Market::defaultConfiguration) const</div><div class="ttdef"><b>Definition:</b> <a href="market_8cpp_source.html#l00150">market.cpp:150</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_aebd84149ccdd275a57060c025be3cacf"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#aebd84149ccdd275a57060c025be3cacf">ore::data::MarketImpl::fx_</a></div><div class="ttdeci">boost::shared_ptr&lt; FXTriangulation &gt; fx_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00206">marketimpl.hpp:206</a></div></div>
-</div><!-- fragment --><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a78775af5754336e57ae363f4cbb43315_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a78775af5754336e57ae363f4cbb43315_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a78775af5754336e57ae363f4cbb43315_cgraph" id="aclassore_1_1data_1_1_market_impl_a78775af5754336e57ae363f4cbb43315_cgraph">
 <area shape="rect" title="FX." alt="" coords="5,230,92,255"/>
@@ -1237,11 +1263,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  208</span>        <span class="keywordflow">return</span> Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(1.0));</div>
 <div class="line"><span class="lineno">  209</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1data_1_1_market.html#a8d884a61027d5434d524779453a5b918">fxIndex</a>(ccypair, configuration)-&gt;fxQuote();</div>
 <div class="line"><span class="lineno">  210</span>}</div>
-</div><!-- fragment --><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_aaaa8bd6429c01a971334f6b7cc24bdb0_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_aaaa8bd6429c01a971334f6b7cc24bdb0_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_aaaa8bd6429c01a971334f6b7cc24bdb0_cgraph" id="aclassore_1_1data_1_1_market_impl_aaaa8bd6429c01a971334f6b7cc24bdb0_cgraph">
 <area shape="rect" title=" " alt="" coords="5,230,88,255"/>
@@ -1307,11 +1333,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  214</span>        <span class="keywordflow">return</span> Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(1.0));</div>
 <div class="line"><span class="lineno">  215</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1data_1_1_market.html#a8d884a61027d5434d524779453a5b918">fxIndex</a>(ccypair, configuration)-&gt;fxQuote(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  216</span>}</div>
-</div><!-- fragment --><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a509be6c04b926b4c867b45e402fed19a_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a509be6c04b926b4c867b45e402fed19a_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a509be6c04b926b4c867b45e402fed19a_cgraph" id="aclassore_1_1data_1_1_market_impl_a509be6c04b926b4c867b45e402fed19a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,230,88,255"/>
@@ -1401,11 +1427,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_a5b97563fda6d29885fa5b3e8931bc6d4"><div class="ttname"><a href="classore_1_1data_1_1_market.html#a5b97563fda6d29885fa5b3e8931bc6d4">ore::data::Market::fxVol</a></div><div class="ttdeci">Handle&lt; BlackVolTermStructure &gt; fxVol(const string &amp;ccypair, const string &amp;configuration=Market::defaultConfiguration) const</div><div class="ttdef"><b>Definition:</b> <a href="market_8cpp_source.html#l00290">market.cpp:290</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a5b8442b6d8873c160be5e0e52c8b3071"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a5b8442b6d8873c160be5e0e52c8b3071">ore::data::MarketImpl::fxVols_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; BlackVolTermStructure &gt; &gt; fxVols_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00214">marketimpl.hpp:214</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66daf2b916a15bbd64d669d89509ab1d0ad6"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66daf2b916a15bbd64d669d89509ab1d0ad6">ore::data::MarketObject::FXVol</a></div><div class="ttdeci">@ FXVol</div></div>
-</div><!-- fragment --><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a5216216380b983d0c4f0d0d8bf8f8e95_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a5216216380b983d0c4f0d0d8bf8f8e95_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a5216216380b983d0c4f0d0d8bf8f8e95_cgraph" id="aclassore_1_1data_1_1_market_impl_a5216216380b983d0c4f0d0d8bf8f8e95_cgraph">
 <area shape="rect" title=" " alt="" coords="5,214,80,239"/>
@@ -1468,22 +1494,22 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  248</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a6fbc788235c5a4e14315fb5f117c4d35"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a6fbc788235c5a4e14315fb5f117c4d35">ore::data::MarketImpl::defaultCurves_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; QuantExt::CreditCurve &gt; &gt; defaultCurves_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00215">marketimpl.hpp:215</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66dade64ebba2dbf29dfa0cd33ed5c91116a"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66dade64ebba2dbf29dfa0cd33ed5c91116a">ore::data::MarketObject::DefaultCurve</a></div><div class="ttdeci">@ DefaultCurve</div></div>
-</div><!-- fragment --><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_cgraph" id="aclassore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_cgraph">
 <area shape="rect" title="Default Curves and Recovery Rates." alt="" coords="5,5,97,31"/>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="145,5,207,31"/>
 </map>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_icgraph" id="aclassore_1_1data_1_1_market_impl_a816b9cd7808e94b1aebd46ef23f76f97_icgraph">
 <area shape="rect" title="Default Curves and Recovery Rates." alt="" coords="848,13,940,38"/>
@@ -1541,11 +1567,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  255</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ab0192d884dd8d1a6bc1c887bf251b0bc"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#ab0192d884dd8d1a6bc1c887bf251b0bc">ore::data::MarketImpl::recoveryRates_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; Quote &gt; &gt; recoveryRates_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00218">marketimpl.hpp:218</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da2fae32629d4ef4fc6341f1751b405e45"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da2fae32629d4ef4fc6341f1751b405e45">ore::data::MarketObject::Security</a></div><div class="ttdeci">@ Security</div></div>
-</div><!-- fragment --><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_aaf97013f8bcc3d9ad31cd4dfdb362cfc_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_aaf97013f8bcc3d9ad31cd4dfdb362cfc_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_aaf97013f8bcc3d9ad31cd4dfdb362cfc_cgraph" id="aclassore_1_1data_1_1_market_impl_aaf97013f8bcc3d9ad31cd4dfdb362cfc_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,103,31"/>
@@ -1600,11 +1626,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  260</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a8bd2645934bf424bec9d60d3a146554e"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a8bd2645934bf424bec9d60d3a146554e">ore::data::MarketImpl::cdsVols_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; QuantExt::CreditVolCurve &gt; &gt; cdsVols_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00216">marketimpl.hpp:216</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da8bd91e681e866c2614916a067816daad"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da8bd91e681e866c2614916a067816daad">ore::data::MarketObject::CDSVol</a></div><div class="ttdeci">@ CDSVol</div></div>
-</div><!-- fragment --><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a5b7629364e5c05d0e15739d25a2592b6_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a5b7629364e5c05d0e15739d25a2592b6_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a5b7629364e5c05d0e15739d25a2592b6_cgraph" id="aclassore_1_1data_1_1_market_impl_a5b7629364e5c05d0e15739d25a2592b6_cgraph">
 <area shape="rect" title="CDS volatilities." alt="" coords="5,5,68,31"/>
@@ -1660,11 +1686,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  267</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_aa7e08433597ac99460ac5bfc347173c0"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#aa7e08433597ac99460ac5bfc347173c0">ore::data::MarketImpl::baseCorrelations_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; QuantExt::BaseCorrelationTermStructure &gt; &gt; baseCorrelations_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00217">marketimpl.hpp:217</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da3b4f5bcd113ba3a759fed5a53a6605ba"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da3b4f5bcd113ba3a759fed5a53a6605ba">ore::data::MarketObject::BaseCorrelation</a></div><div class="ttdeci">@ BaseCorrelation</div></div>
-</div><!-- fragment --><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a19d11313dd07fa55bb3a33b33aa5c770_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a19d11313dd07fa55bb3a33b33aa5c770_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a19d11313dd07fa55bb3a33b33aa5c770_cgraph" id="aclassore_1_1data_1_1_market_impl_a19d11313dd07fa55bb3a33b33aa5c770_cgraph">
 <area shape="rect" title="Base correlation structures." alt="" coords="5,5,117,31"/>
@@ -1747,11 +1773,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  300</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a0b4a7aa3ac7df041878c7e173a3c64ec"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a0b4a7aa3ac7df041878c7e173a3c64ec">ore::data::MarketImpl::capFloorCurves_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; OptionletVolatilityStructure &gt; &gt; capFloorCurves_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00219">marketimpl.hpp:219</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da4f532b03f9f86ce5bcc0e02bcdba704b"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da4f532b03f9f86ce5bcc0e02bcdba704b">ore::data::MarketObject::CapFloorVol</a></div><div class="ttdeci">@ CapFloorVol</div></div>
-</div><!-- fragment --><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ad70d4ddc47d3221152b30f58df835cdf_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ad70d4ddc47d3221152b30f58df835cdf_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ad70d4ddc47d3221152b30f58df835cdf_cgraph" id="aclassore_1_1data_1_1_market_impl_ad70d4ddc47d3221152b30f58df835cdf_cgraph">
 <area shape="rect" title="CapFloor volatilities." alt="" coords="5,31,96,56"/>
@@ -1833,11 +1859,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  333</span>    <span class="keywordflow">return</span> std::make_pair(<span class="keywordtype">string</span>(), 0 * Days);</div>
 <div class="line"><span class="lineno">  334</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_afea30f55f4e6ac11d14c3389276aa3d7"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#afea30f55f4e6ac11d14c3389276aa3d7">ore::data::MarketImpl::capFloorIndexBase_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, std::pair&lt; string, QuantLib::Period &gt; &gt; capFloorIndexBase_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00220">marketimpl.hpp:220</a></div></div>
-</div><!-- fragment --><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_acc90f11798a50d031cfbed369c6f3a92_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_acc90f11798a50d031cfbed369c6f3a92_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_acc90f11798a50d031cfbed369c6f3a92_cgraph" id="aclassore_1_1data_1_1_market_impl_acc90f11798a50d031cfbed369c6f3a92_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,157,56"/>
@@ -1895,11 +1921,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  340</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a7cad6ae2928d269c2dbbaf607d3d15d8"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a7cad6ae2928d269c2dbbaf607d3d15d8">ore::data::MarketImpl::yoyCapFloorVolSurfaces_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; YoYOptionletVolatilitySurface &gt; &gt; yoyCapFloorVolSurfaces_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00221">marketimpl.hpp:221</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da80732177cf5571c68c7c9da027362b4d"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da80732177cf5571c68c7c9da027362b4d">ore::data::MarketObject::YoYInflationCapFloorVol</a></div><div class="ttdeci">@ YoYInflationCapFloorVol</div></div>
-</div><!-- fragment --><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a92e2fa33b29d555c00925751d95b91b1_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a92e2fa33b29d555c00925751d95b91b1_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a92e2fa33b29d555c00925751d95b91b1_cgraph" id="aclassore_1_1data_1_1_market_impl_a92e2fa33b29d555c00925751d95b91b1_cgraph">
 <area shape="rect" title="YoY Inflation CapFloor volatilities." alt="" coords="5,5,120,31"/>
@@ -1954,11 +1980,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  345</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ac4b30e0d4ca91a8246986ea7173164fc"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#ac4b30e0d4ca91a8246986ea7173164fc">ore::data::MarketImpl::zeroInflationIndices_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; ZeroInflationIndex &gt; &gt; zeroInflationIndices_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00222">marketimpl.hpp:222</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da1b9077b75e9e77e2b989363fd63a5023"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da1b9077b75e9e77e2b989363fd63a5023">ore::data::MarketObject::ZeroInflationCurve</a></div><div class="ttdeci">@ ZeroInflationCurve</div></div>
-</div><!-- fragment --><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a2043641bdf8622ce37e5fa96d83cd8e9_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a2043641bdf8622ce37e5fa96d83cd8e9_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a2043641bdf8622ce37e5fa96d83cd8e9_cgraph" id="aclassore_1_1data_1_1_market_impl_a2043641bdf8622ce37e5fa96d83cd8e9_cgraph">
 <area shape="rect" title="Inflation Indexes." alt="" coords="5,5,128,31"/>
@@ -2011,11 +2037,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  350</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a8873185426918c5d252bd2457a92ce1d"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a8873185426918c5d252bd2457a92ce1d">ore::data::MarketImpl::yoyInflationIndices_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; YoYInflationIndex &gt; &gt; yoyInflationIndices_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00223">marketimpl.hpp:223</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66daad7a4415513da5f62869964dbd864401"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66daad7a4415513da5f62869964dbd864401">ore::data::MarketObject::YoYInflationCurve</a></div><div class="ttdeci">@ YoYInflationCurve</div></div>
-</div><!-- fragment --><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ade1b633ccf740828de4e98b038f3ba39_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ade1b633ccf740828de4e98b038f3ba39_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ade1b633ccf740828de4e98b038f3ba39_cgraph" id="aclassore_1_1data_1_1_market_impl_ade1b633ccf740828de4e98b038f3ba39_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,124,31"/>
@@ -2071,11 +2097,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  357</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a589f42a64e6ab40d77a122443976d382"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a589f42a64e6ab40d77a122443976d382">ore::data::MarketImpl::cpiInflationCapFloorVolatilitySurfaces_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; CPIVolatilitySurface &gt; &gt; cpiInflationCapFloorVolatilitySurfaces_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00224">marketimpl.hpp:224</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66daf8a15e8d991d46bc3127d14630a3163e"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66daf8a15e8d991d46bc3127d14630a3163e">ore::data::MarketObject::ZeroInflationCapFloorVol</a></div><div class="ttdeci">@ ZeroInflationCapFloorVol</div></div>
-</div><!-- fragment --><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a5a8d28d57ee5fb98efc218a82f075575_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a5a8d28d57ee5fb98efc218a82f075575_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a5a8d28d57ee5fb98efc218a82f075575_cgraph" id="aclassore_1_1data_1_1_market_impl_a5a8d28d57ee5fb98efc218a82f075575_cgraph">
 <area shape="rect" title="Inflation Cap Floor Volatility Surfaces." alt="" coords="5,5,191,45"/>
@@ -2129,29 +2155,30 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  361</span>    <span class="keywordflow">return</span> lookup&lt;Handle&lt;Quote&gt;&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_market_impl.html#a9b352f577f3990c44c91b4b8ffa93a48">equitySpots_</a>, key, configuration, <span class="stringliteral">&quot;equity spot&quot;</span>);</div>
 <div class="line"><span class="lineno">  362</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a9b352f577f3990c44c91b4b8ffa93a48"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a9b352f577f3990c44c91b4b8ffa93a48">ore::data::MarketImpl::equitySpots_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; Quote &gt; &gt; equitySpots_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00225">marketimpl.hpp:225</a></div></div>
-</div><!-- fragment --><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_cgraph" id="aclassore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_cgraph">
 <area shape="rect" title="Equity curves." alt="" coords="5,5,89,31"/>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="137,5,199,31"/>
 </map>
 </div>
-<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_icgraph" id="aclassore_1_1data_1_1_market_impl_ab33fff7168b7c7af1e957d68565e4ee4_icgraph">
-<area shape="rect" title="Equity curves." alt="" coords="848,13,932,38"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="637,5,800,45"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,5,379,45"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,45,589,85"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,5,168,45"/>
+<area shape="rect" title="Equity curves." alt="" coords="861,45,945,70"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="637,5,813,45"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="644,69,807,109"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,69,379,109"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,109,589,149"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,69,168,109"/>
 </map>
 </div>
 
@@ -2199,22 +2226,22 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  366</span>    <span class="keywordflow">return</span> lookup&lt;Handle&lt;QuantExt::EquityIndex2&gt;&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_market_impl.html#a4d4b29028a553466f69f9d816eaada5c">equityCurves_</a>, key, configuration, <span class="stringliteral">&quot;equity curve&quot;</span>);</div>
 <div class="line"><span class="lineno">  367</span>};</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a4d4b29028a553466f69f9d816eaada5c"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a4d4b29028a553466f69f9d816eaada5c">ore::data::MarketImpl::equityCurves_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, QuantLib::Handle&lt; QuantExt::EquityIndex2 &gt; &gt; equityCurves_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00232">marketimpl.hpp:232</a></div></div>
-</div><!-- fragment --><div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_cgraph" id="aclassore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,95,31"/>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="143,5,204,31"/>
 </map>
 </div>
-<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_icgraph" id="aclassore_1_1data_1_1_market_impl_a21e2bf8d9c6e49a938c4259d491f0efa_icgraph">
 <area shape="rect" title=" " alt="" coords="848,42,937,67"/>
@@ -2270,22 +2297,22 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  371</span>    <span class="keywordflow">return</span> lookup&lt;Handle&lt;YieldTermStructure&gt;&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_market_impl.html#a6c7ff8d8c31e2f85fbb37384bcac3290">yieldCurves_</a>, key, <a class="code hl_enumvalue" href="namespaceore_1_1data.html#ac6f42eb3486232f025ca701de91409ccad524939f612dd922f745bd5880583e2b">YieldCurveType::EquityDividend</a>, configuration,</div>
 <div class="line"><span class="lineno">  372</span>                                              <span class="stringliteral">&quot;dividend yield curve&quot;</span>);</div>
 <div class="line"><span class="lineno">  373</span>}</div>
-</div><!-- fragment --><div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_cgraph" id="aclassore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,143,31"/>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="191,5,252,31"/>
 </map>
 </div>
-<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_icgraph" id="aclassore_1_1data_1_1_market_impl_a74205069d128d1ea28e02d8164897fc2_icgraph">
 <area shape="rect" title=" " alt="" coords="848,13,985,38"/>
@@ -2343,11 +2370,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  378</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ada78e1e842b03e527818f6d6b9fc3bcf"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#ada78e1e842b03e527818f6d6b9fc3bcf">ore::data::MarketImpl::equityVols_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; BlackVolTermStructure &gt; &gt; equityVols_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00226">marketimpl.hpp:226</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66dac824183f01840e1b78ed986116211471"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66dac824183f01840e1b78ed986116211471">ore::data::MarketObject::EquityVol</a></div><div class="ttdeci">@ EquityVol</div></div>
-</div><!-- fragment --><div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a26fcb04b7d3cc1f9c220318c71051ee8_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a26fcb04b7d3cc1f9c220318c71051ee8_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a26fcb04b7d3cc1f9c220318c71051ee8_cgraph" id="aclassore_1_1data_1_1_market_impl_a26fcb04b7d3cc1f9c220318c71051ee8_cgraph">
 <area shape="rect" title="Equity volatilities." alt="" coords="5,5,81,31"/>
@@ -2401,11 +2428,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  382</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#a21e2bf8d9c6e49a938c4259d491f0efa">equityCurve</a>(eqName, configuration)-&gt;equityForecastCurve();</div>
 <div class="line"><span class="lineno">  383</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a21e2bf8d9c6e49a938c4259d491f0efa"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a21e2bf8d9c6e49a938c4259d491f0efa">ore::data::MarketImpl::equityCurve</a></div><div class="ttdeci">Handle&lt; QuantExt::EquityIndex2 &gt; equityCurve(const string &amp;eqName, const string &amp;configuration=Market::defaultConfiguration) const override</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8cpp_source.html#l00364">marketimpl.cpp:364</a></div></div>
-</div><!-- fragment --><div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div id="dynsection-38-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_afbee2a26a4993a8a77ead14217e32a14_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_afbee2a26a4993a8a77ead14217e32a14_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_afbee2a26a4993a8a77ead14217e32a14_cgraph" id="aclassore_1_1data_1_1_market_impl_afbee2a26a4993a8a77ead14217e32a14_cgraph">
 <area shape="rect" title="Equity forecasting curves." alt="" coords="5,31,145,56"/>
@@ -2460,11 +2487,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  387</span>    <span class="keywordflow">return</span> lookup&lt;Handle&lt;Quote&gt;&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_market_impl.html#ae73ab4348cb8a38e480b6b4f36502acd">securitySpreads_</a>, key, configuration, <span class="stringliteral">&quot;security spread&quot;</span>);</div>
 <div class="line"><span class="lineno">  388</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ae73ab4348cb8a38e480b6b4f36502acd"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#ae73ab4348cb8a38e480b6b4f36502acd">ore::data::MarketImpl::securitySpreads_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; Quote &gt; &gt; securitySpreads_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00227">marketimpl.hpp:227</a></div></div>
-</div><!-- fragment --><div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-37-content" class="dyncontent" style="display:none;">
+<div id="dynsection-39-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a17072a7a0f5ccf9a132ea530c2968a2b_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a17072a7a0f5ccf9a132ea530c2968a2b_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a17072a7a0f5ccf9a132ea530c2968a2b_cgraph" id="aclassore_1_1data_1_1_market_impl_a17072a7a0f5ccf9a132ea530c2968a2b_cgraph">
 <area shape="rect" title="Bond Spreads." alt="" coords="5,5,115,31"/>
@@ -2508,11 +2535,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  392</span>    <span class="keywordflow">return</span> lookup&lt;Handle&lt;QuantExt::InflationIndexObserver&gt;&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_market_impl.html#a598238b952f3026fc385030cfa02b5dd">baseCpis_</a>, key, configuration, <span class="stringliteral">&quot;base CPI&quot;</span>);</div>
 <div class="line"><span class="lineno">  393</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a598238b952f3026fc385030cfa02b5dd"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a598238b952f3026fc385030cfa02b5dd">ore::data::MarketImpl::baseCpis_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; QuantExt::InflationIndexObserver &gt; &gt; baseCpis_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00228">marketimpl.hpp:228</a></div></div>
-</div><!-- fragment --><div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-38-content" class="dyncontent" style="display:none;">
+<div id="dynsection-40-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a320a82af8e6a68f66b46b401c5b3b33b_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a320a82af8e6a68f66b46b401c5b3b33b_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a320a82af8e6a68f66b46b401c5b3b33b_cgraph" id="aclassore_1_1data_1_1_market_impl_a320a82af8e6a68f66b46b401c5b3b33b_cgraph">
 <area shape="rect" title="Cpi Base Quotes." alt="" coords="5,5,81,31"/>
@@ -2565,11 +2592,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  397</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#a060fec48de83d55fa494933357fa3e9d">commodityIndex</a>(commodityName, configuration)-&gt;priceCurve();</div>
 <div class="line"><span class="lineno">  398</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a060fec48de83d55fa494933357fa3e9d"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a060fec48de83d55fa494933357fa3e9d">ore::data::MarketImpl::commodityIndex</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantExt::CommodityIndex &gt; commodityIndex(const std::string &amp;commodityName, const std::string &amp;configuration=Market::defaultConfiguration) const override</div><div class="ttdoc">Commodity index.</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8cpp_source.html#l00400">marketimpl.cpp:400</a></div></div>
-</div><!-- fragment --><div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-39-content" class="dyncontent" style="display:none;">
+<div id="dynsection-41-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_cgraph" id="aclassore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_cgraph">
 <area shape="rect" title="Commodity curves." alt="" coords="5,5,153,31"/>
@@ -2577,11 +2604,11 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="367,5,428,31"/>
 </map>
 </div>
-<div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-40-content" class="dyncontent" style="display:none;">
+<div id="dynsection-42-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_icgraph" id="aclassore_1_1data_1_1_market_impl_ab22c6188a5f378934b69965aa7c6cb39_icgraph">
 <area shape="rect" title="Commodity curves." alt="" coords="848,13,996,38"/>
@@ -2639,22 +2666,22 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  403</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a6c9a8e7f8ce0fb904eda53256b2a17db"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a6c9a8e7f8ce0fb904eda53256b2a17db">ore::data::MarketImpl::commodityIndices_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, QuantLib::Handle&lt; QuantExt::CommodityIndex &gt; &gt; commodityIndices_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00230">marketimpl.hpp:230</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66dae47e467708876f2be8f90cdd8bc65d88"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66dae47e467708876f2be8f90cdd8bc65d88">ore::data::MarketObject::CommodityCurve</a></div><div class="ttdeci">@ CommodityCurve</div></div>
-</div><!-- fragment --><div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-41-content" class="dyncontent" style="display:none;">
+<div id="dynsection-43-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_cgraph" id="aclassore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_cgraph">
 <area shape="rect" title="Commodity index." alt="" coords="5,5,123,31"/>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="171,5,232,31"/>
 </map>
 </div>
-<div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-42-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-42-content" class="dyncontent" style="display:none;">
+<div id="dynsection-44-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_icgraph" id="aclassore_1_1data_1_1_market_impl_a060fec48de83d55fa494933357fa3e9d_icgraph">
 <area shape="rect" title="Commodity index." alt="" coords="1044,13,1161,38"/>
@@ -2713,11 +2740,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  409</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_aec9f1b5af32d4247654bb8bf5c20bef9"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#aec9f1b5af32d4247654bb8bf5c20bef9">ore::data::MarketImpl::commodityVols_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, QuantLib::Handle&lt; QuantLib::BlackVolTermStructure &gt; &gt; commodityVols_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00231">marketimpl.hpp:231</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66daae3e9d76749d0836ed0a77d47db75807"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66daae3e9d76749d0836ed0a77d47db75807">ore::data::MarketObject::CommodityVolatility</a></div><div class="ttdeci">@ CommodityVolatility</div></div>
-</div><!-- fragment --><div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-43-content" class="dyncontent" style="display:none;">
+<div id="dynsection-45-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_af497cb1a23fea3ee208b83076f76e6aa_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_af497cb1a23fea3ee208b83076f76e6aa_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_af497cb1a23fea3ee208b83076f76e6aa_cgraph" id="aclassore_1_1data_1_1_market_impl_af497cb1a23fea3ee208b83076f76e6aa_cgraph">
 <area shape="rect" title="Commodity volatility." alt="" coords="5,5,141,31"/>
@@ -2829,14 +2856,14 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  466</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_a21f5030728e25a766476309c37b67149"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#a21f5030728e25a766476309c37b67149">ore::data::MarketImpl::correlationCurves_</a></div><div class="ttdeci">map&lt; tuple&lt; string, string, string &gt;, Handle&lt; QuantExt::CorrelationTermStructure &gt; &gt; correlationCurves_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00229">marketimpl.hpp:229</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ad449ed0141640824d2167e88ac863e06"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#ad449ed0141640824d2167e88ac863e06">ore::data::MarketImpl::correlationCurve</a></div><div class="ttdeci">Handle&lt; QuantExt::CorrelationTermStructure &gt; correlationCurve(const string &amp;index1, const string &amp;index2, const string &amp;configuration=Market::defaultConfiguration) const override</div><div class="ttdoc">Correlation curves.</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8cpp_source.html#l00411">marketimpl.cpp:411</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a123e19b0fac4f5124a8c26bad300de0e"><div class="ttname"><a href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e">ore::data::isFxIndex</a></div><div class="ttdeci">bool isFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01031">indexparser.cpp:1031</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a123e19b0fac4f5124a8c26bad300de0e"><div class="ttname"><a href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e">ore::data::isFxIndex</a></div><div class="ttdeci">bool isFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01027">indexparser.cpp:1027</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a64fa7957018b15e7967bb30da5ddd66da5f750c3076b1c419d3d1684019d36b16"><div class="ttname"><a href="namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da5f750c3076b1c419d3d1684019d36b16">ore::data::MarketObject::Correlation</a></div><div class="ttdeci">@ Correlation</div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_ac1ff7842665a0c9bc7ff5785babcd435"><div class="ttname"><a href="namespaceore_1_1data.html#ac1ff7842665a0c9bc7ff5785babcd435">ore::data::inverseFxIndex</a></div><div class="ttdeci">std::string inverseFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01037">indexparser.cpp:1037</a></div></div>
-</div><!-- fragment --><div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
+<div class="ttc" id="anamespaceore_1_1data_html_ac1ff7842665a0c9bc7ff5785babcd435"><div class="ttname"><a href="namespaceore_1_1data.html#ac1ff7842665a0c9bc7ff5785babcd435">ore::data::inverseFxIndex</a></div><div class="ttdeci">std::string inverseFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01033">indexparser.cpp:1033</a></div></div>
+</div><!-- fragment --><div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-44-content" class="dyncontent" style="display:none;">
+<div id="dynsection-46-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_cgraph" id="aclassore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_cgraph">
 <area shape="rect" title="Correlation curves." alt="" coords="5,55,120,80"/>
@@ -2845,11 +2872,11 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="221,104,282,129"/>
 </map>
 </div>
-<div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-45-content" class="dyncontent" style="display:none;">
+<div id="dynsection-47-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_icgraph" id="aclassore_1_1data_1_1_market_impl_ad449ed0141640824d2167e88ac863e06_icgraph">
 <area shape="rect" title="Correlation curves." alt="" coords="5,29,120,55"/>
@@ -2900,11 +2927,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  470</span>    <span class="keywordflow">return</span> lookup&lt;Handle&lt;Quote&gt;&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_market_impl.html#aa94a1440fdab7170ac9d69e82622239b">cprs_</a>, securityID, configuration, <span class="stringliteral">&quot;cpr&quot;</span>);</div>
 <div class="line"><span class="lineno">  471</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_aa94a1440fdab7170ac9d69e82622239b"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#aa94a1440fdab7170ac9d69e82622239b">ore::data::MarketImpl::cprs_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, Handle&lt; Quote &gt; &gt; cprs_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00233">marketimpl.hpp:233</a></div></div>
-</div><!-- fragment --><div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-46-content" class="dyncontent" style="display:none;">
+<div id="dynsection-48-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_aa871e1771f29abeefabe1f71c554ad39_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_aa871e1771f29abeefabe1f71c554ad39_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_aa871e1771f29abeefabe1f71c554ad39_cgraph" id="aclassore_1_1data_1_1_market_impl_aa871e1771f29abeefabe1f71c554ad39_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,45,31"/>
@@ -3140,52 +3167,53 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="marketimpl_8hpp_source.html#l00201">201</a> of file <a class="el" href="marketimpl_8hpp_source.html">marketimpl.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  202</span>                                                              {}</div>
-</div><!-- fragment --><div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-49" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-49-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-47-content" class="dyncontent" style="display:none;">
+<div id="dynsection-49-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_af2e760ddfcac8f64fa739d3e8bf6362b_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_af2e760ddfcac8f64fa739d3e8bf6362b_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_af2e760ddfcac8f64fa739d3e8bf6362b_icgraph" id="aclassore_1_1data_1_1_market_impl_af2e760ddfcac8f64fa739d3e8bf6362b_icgraph">
-<area shape="rect" title=" " alt="" coords="1469,708,1531,733"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a19d11313dd07fa55bb3a33b33aa5c770" title="Base correlation structures." alt="" coords="1273,5,1385,31"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a320a82af8e6a68f66b46b401c5b3b33b" title="Cpi Base Quotes." alt="" coords="1291,55,1367,80"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ad70d4ddc47d3221152b30f58df835cdf" title="CapFloor volatilities." alt="" coords="1283,104,1374,129"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#acc90f11798a50d031cfbed369c6f3a92" title=" " alt="" coords="1253,153,1405,179"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a5b7629364e5c05d0e15739d25a2592b6" title="CDS volatilities." alt="" coords="1297,203,1360,228"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a060fec48de83d55fa494933357fa3e9d" title="Commodity index." alt="" coords="1270,252,1387,277"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af497cb1a23fea3ee208b83076f76e6aa" title="Commodity volatility." alt="" coords="1261,708,1397,733"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ad449ed0141640824d2167e88ac863e06" title="Correlation curves." alt="" coords="1271,781,1386,807"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a5a8d28d57ee5fb98efc218a82f075575" title="Inflation Cap Floor Volatility Surfaces." alt="" coords="1236,831,1421,871"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aa871e1771f29abeefabe1f71c554ad39" title=" " alt="" coords="1309,896,1349,921"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a816b9cd7808e94b1aebd46ef23f76f97" title="Default Curves and Recovery Rates." alt="" coords="876,303,968,328"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a480fc1dd443cef1efb182e31b9197cb8" title=" " alt="" coords="1265,945,1392,971"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a21e2bf8d9c6e49a938c4259d491f0efa" title=" " alt="" coords="1284,353,1373,379"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#afbee2a26a4993a8a77ead14217e32a14" title="Equity forecasting curves." alt="" coords="1046,404,1186,429"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a74205069d128d1ea28e02d8164897fc2" title=" " alt="" coords="1047,455,1185,480"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ab33fff7168b7c7af1e957d68565e4ee4" title="Equity curves." alt="" coords="880,505,964,531"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a26fcb04b7d3cc1f9c220318c71051ee8" title="Equity volatilities." alt="" coords="1291,995,1367,1020"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a5216216380b983d0c4f0d0d8bf8f8e95" title=" " alt="" coords="1291,1044,1366,1069"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aea15232be6eb71feca2c59137631f732" title=" " alt="" coords="1291,607,1366,632"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ae7d29fd30616cfe3c462d7d84eaf4ef9" title="Yield Curves." alt="" coords="1075,708,1157,733"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aaf97013f8bcc3d9ad31cd4dfdb362cfc" title=" " alt="" coords="1280,1093,1377,1119"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a17072a7a0f5ccf9a132ea530c2968a2b" title="Bond Spreads." alt="" coords="1274,1143,1383,1168"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949" title=" " alt="" coords="1075,556,1157,581"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aa45917dddb7b165b446f5853f20d439f" title=" " alt="" coords="1269,1192,1389,1217"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a1c37e6656d0d18a7ddc19dc4d406a766" title="Swaptions." alt="" coords="1283,1241,1375,1267"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af32816f8f26575ae1b76f6c12692ffa0" title="Yield volatility." alt="" coords="1295,1291,1363,1316"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a92e2fa33b29d555c00925751d95b91b1" title="YoY Inflation CapFloor volatilities." alt="" coords="1271,1340,1386,1365"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ade1b633ccf740828de4e98b038f3ba39" title=" " alt="" coords="1269,1389,1388,1415"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a2043641bdf8622ce37e5fa96d83cd8e9" title="Inflation Indexes." alt="" coords="1267,1439,1390,1464"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ab22c6188a5f378934b69965aa7c6cb39" title="Commodity curves." alt="" coords="848,253,996,279"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="637,473,800,513"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,473,379,513"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,513,589,553"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,473,168,513"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="869,581,975,607"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a468f6942c6cd702ce1b0a6368e94ee92" title=" " alt="" coords="881,708,963,733"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a0dd15d7307d3eabe0b1d9012e64cd3aa" title=" " alt="" coords="1044,1168,1188,1193"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a1177363d3c16f7c943b873d8ebd14f4d" title=" " alt="" coords="1059,1217,1173,1243"/>
+<area shape="rect" title=" " alt="" coords="1483,708,1544,733"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a19d11313dd07fa55bb3a33b33aa5c770" title="Base correlation structures." alt="" coords="1286,5,1398,31"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a320a82af8e6a68f66b46b401c5b3b33b" title="Cpi Base Quotes." alt="" coords="1304,55,1380,80"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ad70d4ddc47d3221152b30f58df835cdf" title="CapFloor volatilities." alt="" coords="1297,104,1387,129"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#acc90f11798a50d031cfbed369c6f3a92" title=" " alt="" coords="1266,153,1418,179"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a5b7629364e5c05d0e15739d25a2592b6" title="CDS volatilities." alt="" coords="1311,203,1373,228"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a060fec48de83d55fa494933357fa3e9d" title="Commodity index." alt="" coords="1283,252,1401,277"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af497cb1a23fea3ee208b83076f76e6aa" title="Commodity volatility." alt="" coords="1274,759,1410,784"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ad449ed0141640824d2167e88ac863e06" title="Correlation curves." alt="" coords="1285,832,1399,857"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a5a8d28d57ee5fb98efc218a82f075575" title="Inflation Cap Floor Volatility Surfaces." alt="" coords="1249,882,1435,922"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aa871e1771f29abeefabe1f71c554ad39" title=" " alt="" coords="1322,947,1362,972"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a816b9cd7808e94b1aebd46ef23f76f97" title="Default Curves and Recovery Rates." alt="" coords="1081,303,1173,328"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a480fc1dd443cef1efb182e31b9197cb8" title=" " alt="" coords="1279,996,1405,1021"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a21e2bf8d9c6e49a938c4259d491f0efa" title=" " alt="" coords="1297,455,1387,480"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#afbee2a26a4993a8a77ead14217e32a14" title="Equity forecasting curves." alt="" coords="1057,404,1197,429"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a74205069d128d1ea28e02d8164897fc2" title=" " alt="" coords="865,353,1002,379"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ab33fff7168b7c7af1e957d68565e4ee4" title="Equity curves." alt="" coords="891,505,975,531"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a26fcb04b7d3cc1f9c220318c71051ee8" title="Equity volatilities." alt="" coords="1304,1045,1380,1071"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a5216216380b983d0c4f0d0d8bf8f8e95" title=" " alt="" coords="1305,1095,1379,1120"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aea15232be6eb71feca2c59137631f732" title=" " alt="" coords="1305,556,1379,581"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ae7d29fd30616cfe3c462d7d84eaf4ef9" title="Yield Curves." alt="" coords="1087,607,1168,632"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aaf97013f8bcc3d9ad31cd4dfdb362cfc" title=" " alt="" coords="1293,1144,1391,1169"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a17072a7a0f5ccf9a132ea530c2968a2b" title="Bond Spreads." alt="" coords="1287,1193,1397,1219"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949" title=" " alt="" coords="1086,708,1169,733"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aa45917dddb7b165b446f5853f20d439f" title=" " alt="" coords="1067,809,1187,835"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a1c37e6656d0d18a7ddc19dc4d406a766" title="Swaptions." alt="" coords="1296,1243,1388,1268"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af32816f8f26575ae1b76f6c12692ffa0" title="Yield volatility." alt="" coords="1308,1292,1376,1317"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a92e2fa33b29d555c00925751d95b91b1" title="YoY Inflation CapFloor volatilities." alt="" coords="1285,1341,1399,1367"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ade1b633ccf740828de4e98b038f3ba39" title=" " alt="" coords="1283,1391,1401,1416"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a2043641bdf8622ce37e5fa96d83cd8e9" title="Inflation Indexes." alt="" coords="1281,1440,1403,1465"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ab22c6188a5f378934b69965aa7c6cb39" title="Commodity curves." alt="" coords="1053,252,1201,277"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="644,422,807,462"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,422,379,462"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,462,589,502"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,422,168,462"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="637,726,813,766"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc" title="add a swap index to the market" alt="" coords="880,708,987,733"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a468f6942c6cd702ce1b0a6368e94ee92" title=" " alt="" coords="893,607,974,632"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a0dd15d7307d3eabe0b1d9012e64cd3aa" title=" " alt="" coords="861,859,1005,884"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a1177363d3c16f7c943b873d8ebd14f4d" title=" " alt="" coords="877,809,990,835"/>
 </map>
 </div>
 
@@ -3242,7 +3270,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  478</span>        split(tokens, <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949">swapIndex</a>, boost::is_any_of(<span class="stringliteral">&quot;-&quot;</span>));</div>
 <div class="line"><span class="lineno">  479</span>        QL_REQUIRE(tokens.size() == 3 || tokens.size() == 4,</div>
 <div class="line"><span class="lineno">  480</span>                   <span class="stringliteral">&quot;three or four tokens required in &quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949">swapIndex</a> &lt;&lt; <span class="stringliteral">&quot;: CCY-CMS-TENOR or CCY-CMS-TAG-TENOR&quot;</span>);</div>
-<div class="line"><span class="lineno">  481</span>        QL_REQUIRE(tokens[0].size() == 3, <span class="stringliteral">&quot;invalid currency code in &quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949">swapIndex</a>);</div>
+<div class="line"><span class="lineno">  481</span>        QL_REQUIRE(tokens[0].<a class="code hl_function" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">size</a>() == 3, <span class="stringliteral">&quot;invalid currency code in &quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949">swapIndex</a>);</div>
 <div class="line"><span class="lineno">  482</span>        QL_REQUIRE(tokens[1] == <span class="stringliteral">&quot;CMS&quot;</span>, <span class="stringliteral">&quot;expected CMS as second token in &quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949">swapIndex</a>);</div>
 <div class="line"><span class="lineno">  483</span> </div>
 <div class="line"><span class="lineno">  484</span>        Handle&lt;YieldTermStructure&gt; discounting, forwarding;</div>
@@ -3274,41 +3302,44 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  510</span>    }</div>
 <div class="line"><span class="lineno">  511</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_ac59684278372260fbf998460e3ddf949"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949">ore::data::MarketImpl::swapIndex</a></div><div class="ttdeci">Handle&lt; SwapIndex &gt; swapIndex(const string &amp;indexName, const string &amp;configuration=Market::defaultConfiguration) const override</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8cpp_source.html#l00112">marketimpl.cpp:112</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga46dfe85b4a8c5b926d377f65d1231065"><div class="ttname"><a href="group__utilities.html#ga46dfe85b4a8c5b926d377f65d1231065">ore::data::parseSwapIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; SwapIndex &gt; parseSwapIndex(const string &amp;s, const Handle&lt; YieldTermStructure &gt; &amp;f, const Handle&lt; YieldTermStructure &gt; &amp;d)</div><div class="ttdoc">Convert std::string to QuantLib::SwapIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00505">indexparser.cpp:505</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga8d96085a49a07c7e9b6aa3b982385ae1"><div class="ttname"><a href="group__utilities.html#ga8d96085a49a07c7e9b6aa3b982385ae1">ore::data::isGenericIborIndex</a></div><div class="ttdeci">bool isGenericIborIndex(const string &amp;indexName)</div><div class="ttdoc">Return true if the indexName is that of a generic ibor index, otherwise false.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00446">indexparser.cpp:446</a></div></div>
-</div><!-- fragment --><div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
+<div class="ttc" id="agroup__utilities_html_ga46dfe85b4a8c5b926d377f65d1231065"><div class="ttname"><a href="group__utilities.html#ga46dfe85b4a8c5b926d377f65d1231065">ore::data::parseSwapIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; SwapIndex &gt; parseSwapIndex(const string &amp;s, const Handle&lt; YieldTermStructure &gt; &amp;f, const Handle&lt; YieldTermStructure &gt; &amp;d)</div><div class="ttdoc">Convert std::string to QuantLib::SwapIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00501">indexparser.cpp:501</a></div></div>
+<div class="ttc" id="agroup__utilities_html_ga8d96085a49a07c7e9b6aa3b982385ae1"><div class="ttname"><a href="group__utilities.html#ga8d96085a49a07c7e9b6aa3b982385ae1">ore::data::isGenericIborIndex</a></div><div class="ttdeci">bool isGenericIborIndex(const string &amp;indexName)</div><div class="ttdoc">Return true if the indexName is that of a generic ibor index, otherwise false.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00442">indexparser.cpp:442</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a777e216dee6069b548bb87da7152699e"><div class="ttname"><a href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">ore::data::size</a></div><div class="ttdeci">Size size(const ValueType &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2scripting_2value_8cpp_source.html#l00145">value.cpp:145</a></div></div>
+</div><!-- fragment --><div id="dynsection-50" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-50-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-48-content" class="dyncontent" style="display:none;">
+<div id="dynsection-50-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_cgraph" id="aclassore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_cgraph">
-<area shape="rect" title="add a swap index to the market" alt="" coords="5,132,112,157"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aea15232be6eb71feca2c59137631f732" title=" " alt="" coords="438,56,513,81"/>
-<area shape="rect" href="group__utilities.html#ga8d96085a49a07c7e9b6aa3b982385ae1" title="Return true if the indexName is that of a generic ibor index, otherwise false." alt="" coords="169,207,327,247"/>
-<area shape="rect" href="group__utilities.html#ga46dfe85b4a8c5b926d377f65d1231065" title="Convert std::string to QuantLib::SwapIndex." alt="" coords="160,272,336,297"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949" title=" " alt="" coords="207,5,289,31"/>
-<area shape="rect" href="group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title="Try to convert std::string to QuantLib::IborIndex." alt="" coords="384,157,567,183"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ae7d29fd30616cfe3c462d7d84eaf4ef9" title="Yield Curves." alt="" coords="207,107,289,132"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="667,56,728,81"/>
-<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="393,272,557,297"/>
-<area shape="rect" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="393,321,558,347"/>
-<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="400,223,551,248"/>
-<area shape="rect" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="615,157,780,183"/>
+<area shape="rect" title="add a swap index to the market" alt="" coords="5,220,112,245"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#aea15232be6eb71feca2c59137631f732" title=" " alt="" coords="438,271,513,296"/>
+<area shape="rect" href="group__utilities.html#ga8d96085a49a07c7e9b6aa3b982385ae1" title="Return true if the indexName is that of a generic ibor index, otherwise false." alt="" coords="169,105,327,145"/>
+<area shape="rect" href="group__utilities.html#ga46dfe85b4a8c5b926d377f65d1231065" title="Convert std::string to QuantLib::SwapIndex." alt="" coords="160,55,336,80"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="423,161,528,187"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ac59684278372260fbf998460e3ddf949" title=" " alt="" coords="207,220,289,245"/>
+<area shape="rect" href="group__utilities.html#gaf17e7976e4fe2449bb4e226ee19c0fd9" title="Try to convert std::string to QuantLib::IborIndex." alt="" coords="384,372,567,397"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#ae7d29fd30616cfe3c462d7d84eaf4ef9" title="Yield Curves." alt="" coords="207,321,289,347"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#af2e760ddfcac8f64fa739d3e8bf6362b" title=" " alt="" coords="667,271,728,296"/>
+<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="393,104,557,129"/>
+<area shape="rect" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="393,5,558,31"/>
+<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="400,55,551,80"/>
+<area shape="rect" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="615,372,780,397"/>
 </map>
 </div>
-<div id="dynsection-49" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-49-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-51-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-49-content" class="dyncontent" style="display:none;">
+<div id="dynsection-51-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_icgraph" id="aclassore_1_1data_1_1_market_impl_af731b404daf72d32a4986990c5190bcc_icgraph">
-<area shape="rect" title="add a swap index to the market" alt="" coords="848,13,955,38"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="637,5,800,45"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,5,379,45"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,45,589,85"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,5,168,45"/>
+<area shape="rect" title="add a swap index to the market" alt="" coords="861,45,968,70"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="637,5,813,45"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721" title=" " alt="" coords="644,69,807,109"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,69,379,109"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408" title=" " alt="" coords="427,109,589,149"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,69,168,109"/>
 </map>
 </div>
 
@@ -3382,11 +3413,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  181</span>    QL_FAIL(<span class="stringliteral">&quot;did not find swaption index bases for key &#39;&quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
 <div class="line"><span class="lineno">  182</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_impl_html_acb886da44dcd5171d9371487aca3b1cf"><div class="ttname"><a href="classore_1_1data_1_1_market_impl.html#acb886da44dcd5171d9371487aca3b1cf">ore::data::MarketImpl::swaptionIndexBases_</a></div><div class="ttdeci">map&lt; pair&lt; string, string &gt;, pair&lt; string, string &gt; &gt; swaptionIndexBases_</div><div class="ttdef"><b>Definition:</b> <a href="marketimpl_8hpp_source.html#l00212">marketimpl.hpp:212</a></div></div>
-</div><!-- fragment --><div id="dynsection-50" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-50-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-52-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-50-content" class="dyncontent" style="display:none;">
+<div id="dynsection-52-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_cgraph" id="aclassore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,125,56"/>
@@ -3395,16 +3426,17 @@ Additional Inherited Members</h2></td></tr>
 <area shape="rect" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex." alt="" coords="404,55,569,80"/>
 </map>
 </div>
-<div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-51-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-53" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-53-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-53-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-51-content" class="dyncontent" style="display:none;">
+<div id="dynsection-53-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_icgraph" id="aclassore_1_1data_1_1_market_impl_aa45917dddb7b165b446f5853f20d439f_icgraph">
-<area shape="rect" title=" " alt="" coords="197,31,317,56"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a0dd15d7307d3eabe0b1d9012e64cd3aa" title=" " alt="" coords="5,5,149,31"/>
-<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a1177363d3c16f7c943b873d8ebd14f4d" title=" " alt="" coords="21,55,134,80"/>
+<area shape="rect" title=" " alt="" coords="421,31,541,56"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a0dd15d7307d3eabe0b1d9012e64cd3aa" title=" " alt="" coords="229,5,373,31"/>
+<area shape="rect" href="classore_1_1data_1_1_market_impl.html#a1177363d3c16f7c943b873d8ebd14f4d" title=" " alt="" coords="245,55,358,80"/>
+<area shape="rect" href="class_ored_test_market.html#ab19dad4599472bbfab0270154f542504" title=" " alt="" coords="5,23,181,63"/>
 </map>
 </div>
 

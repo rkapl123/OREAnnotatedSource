@@ -375,40 +375,40 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multithreadedvaluationengine_8cpp_source.html#l00043">43</a> of file <a class="el" href="multithreadedvaluationengine_8cpp_source.html">multithreadedvaluationengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>    : <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a>(nThreads), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>(today), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>(dateGrid), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>(nSamples), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a59e20612739310a0c316f00c519e95ed">loader_</a>(loader),</div>
-<div class="line"><span class="lineno">   66</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a739ffaa86d2581fef5bb476f2281058a">scenarioGenerator_</a>(scenarioGenerator), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a88182e6c9d972097bfaaf76a5f50d876">engineData_</a>(engineData), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>(curveConfigs),</div>
-<div class="line"><span class="lineno">   67</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>(todaysMarketParams), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">configuration_</a>(configuration), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0671a4d2aecc55c7fd25215501654aa6">simMarketData_</a>(simMarketData),</div>
-<div class="line"><span class="lineno">   68</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a53cfefe400aac2623306853c887ef20a">useSpreadedTermStructures_</a>(useSpreadedTermStructures), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac8084e71c12327fddaa89613722b4624">cacheSimData_</a>(cacheSimData),</div>
-<div class="line"><span class="lineno">   69</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab1930588b1efe428a621da010d5db46a">scenarioFilter_</a>(scenarioFilter), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>(referenceData), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>(iborFallbackConfig),</div>
-<div class="line"><span class="lineno">   70</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#aad3aff778580c555abc37376208780ae">handlePseudoCurrenciesTodaysMarket_</a>(handlePseudoCurrenciesTodaysMarket),</div>
-<div class="line"><span class="lineno">   71</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a00a2b9d16fb73a544eca0d1df397231d">handlePseudoCurrenciesSimMarket_</a>(handlePseudoCurrenciesSimMarket), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a>(cubeFactory),</div>
-<div class="line"><span class="lineno">   72</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a>(nettingSetCubeFactory), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a>(cptyCubeFactory), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac7e3495695d601c65c517f1b2e97bc83">context_</a>(context) {</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a> != 0, <span class="stringliteral">&quot;MultiThreadedValuationEngine: nThreads must be &gt; 0&quot;</span>);</div>
-<div class="line"><span class="lineno">   75</span> </div>
-<div class="line"><span class="lineno">   76</span>    <span class="comment">// check whether sessions are enabled, if not exit with an error</span></div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span><span class="preprocessor">#ifndef QL_ENABLE_SESSIONS</span></div>
-<div class="line"><span class="lineno">   79</span>    QL_FAIL(<span class="stringliteral">&quot;MultiThreadedValuationEngine requires a build with QL_ENABLE_SESSIONS = ON.&quot;</span>);</div>
-<div class="line"><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    <span class="comment">// if no cube factory is given, create a default one</span></div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a>)</div>
-<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a> = [](<span class="keyword">const</span> QuantLib::Date&amp; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, <span class="keyword">const</span> std::set&lt;std::string&gt;&amp; ids,</div>
-<div class="line"><span class="lineno">   86</span>                          <span class="keyword">const</span> std::vector&lt;QuantLib::Date&gt;&amp; dates, <span class="keyword">const</span> Size samples) {</div>
-<div class="line"><span class="lineno">   87</span>            <span class="keywordflow">return</span> boost::make_shared&lt;ore::analytics::DoublePrecisionInMemoryCube&gt;(<a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, ids, dates, samples);</div>
-<div class="line"><span class="lineno">   88</span>        };</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a>)</div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a> = [](<span class="keyword">const</span> QuantLib::Date&amp; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, <span class="keyword">const</span> std::vector&lt;QuantLib::Date&gt;&amp; dates,</div>
-<div class="line"><span class="lineno">   92</span>                                    <span class="keyword">const</span> Size samples) { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a>)</div>
-<div class="line"><span class="lineno">   95</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a> = [](<span class="keyword">const</span> QuantLib::Date&amp; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, <span class="keyword">const</span> std::set&lt;std::string&gt;&amp; ids,</div>
-<div class="line"><span class="lineno">   96</span>                              <span class="keyword">const</span> std::vector&lt;QuantLib::Date&gt;&amp; dates, <span class="keyword">const</span> Size samples) { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
-<div class="line"><span class="lineno">   97</span>}</div>
+<p class="definition">Definition at line <a class="el" href="multithreadedvaluationengine_8cpp_source.html#l00042">42</a> of file <a class="el" href="multithreadedvaluationengine_8cpp_source.html">multithreadedvaluationengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>    : <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a>(nThreads), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>(today), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>(dateGrid), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>(nSamples), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a59e20612739310a0c316f00c519e95ed">loader_</a>(loader),</div>
+<div class="line"><span class="lineno">   65</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a739ffaa86d2581fef5bb476f2281058a">scenarioGenerator_</a>(scenarioGenerator), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a88182e6c9d972097bfaaf76a5f50d876">engineData_</a>(engineData), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>(curveConfigs),</div>
+<div class="line"><span class="lineno">   66</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>(todaysMarketParams), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">configuration_</a>(configuration), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0671a4d2aecc55c7fd25215501654aa6">simMarketData_</a>(simMarketData),</div>
+<div class="line"><span class="lineno">   67</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a53cfefe400aac2623306853c887ef20a">useSpreadedTermStructures_</a>(useSpreadedTermStructures), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac8084e71c12327fddaa89613722b4624">cacheSimData_</a>(cacheSimData),</div>
+<div class="line"><span class="lineno">   68</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab1930588b1efe428a621da010d5db46a">scenarioFilter_</a>(scenarioFilter), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>(referenceData), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>(iborFallbackConfig),</div>
+<div class="line"><span class="lineno">   69</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#aad3aff778580c555abc37376208780ae">handlePseudoCurrenciesTodaysMarket_</a>(handlePseudoCurrenciesTodaysMarket),</div>
+<div class="line"><span class="lineno">   70</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a00a2b9d16fb73a544eca0d1df397231d">handlePseudoCurrenciesSimMarket_</a>(handlePseudoCurrenciesSimMarket), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a>(cubeFactory),</div>
+<div class="line"><span class="lineno">   71</span>      <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a>(nettingSetCubeFactory), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a>(cptyCubeFactory), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac7e3495695d601c65c517f1b2e97bc83">context_</a>(context) {</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a> != 0, <span class="stringliteral">&quot;MultiThreadedValuationEngine: nThreads must be &gt; 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// check whether sessions are enabled, if not exit with an error</span></div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span><span class="preprocessor">#ifndef QL_ENABLE_SESSIONS</span></div>
+<div class="line"><span class="lineno">   78</span>    QL_FAIL(<span class="stringliteral">&quot;MultiThreadedValuationEngine requires a build with QL_ENABLE_SESSIONS = ON.&quot;</span>);</div>
+<div class="line"><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>    <span class="comment">// if no cube factory is given, create a default one</span></div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a>)</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a> = [](<span class="keyword">const</span> QuantLib::Date&amp; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, <span class="keyword">const</span> std::set&lt;std::string&gt;&amp; ids,</div>
+<div class="line"><span class="lineno">   85</span>                          <span class="keyword">const</span> std::vector&lt;QuantLib::Date&gt;&amp; dates, <span class="keyword">const</span> Size samples) {</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">return</span> boost::make_shared&lt;ore::analytics::DoublePrecisionInMemoryCube&gt;(<a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, ids, dates, samples);</div>
+<div class="line"><span class="lineno">   87</span>        };</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a>)</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a> = [](<span class="keyword">const</span> QuantLib::Date&amp; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, <span class="keyword">const</span> std::vector&lt;QuantLib::Date&gt;&amp; dates,</div>
+<div class="line"><span class="lineno">   91</span>                                    <span class="keyword">const</span> Size samples) { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a>)</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a> = [](<span class="keyword">const</span> QuantLib::Date&amp; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>, <span class="keyword">const</span> std::set&lt;std::string&gt;&amp; ids,</div>
+<div class="line"><span class="lineno">   95</span>                              <span class="keyword">const</span> std::vector&lt;QuantLib::Date&gt;&amp; dates, <span class="keyword">const</span> Size samples) { <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
+<div class="line"><span class="lineno">   96</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_a00a2b9d16fb73a544eca0d1df397231d"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a00a2b9d16fb73a544eca0d1df397231d">ore::analytics::MultiThreadedValuationEngine::handlePseudoCurrenciesSimMarket_</a></div><div class="ttdeci">bool handlePseudoCurrenciesSimMarket_</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00111">multithreadedvaluationengine.hpp:111</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_a0671a4d2aecc55c7fd25215501654aa6"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0671a4d2aecc55c7fd25215501654aa6">ore::analytics::MultiThreadedValuationEngine::simMarketData_</a></div><div class="ttdeci">boost::shared_ptr&lt; ore::analytics::ScenarioSimMarketParameters &gt; simMarketData_</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00104">multithreadedvaluationengine.hpp:104</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_a0a4b08299a79a3b3b4d4eaad5bd28e99"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">ore::analytics::MultiThreadedValuationEngine::configuration_</a></div><div class="ttdeci">std::string configuration_</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00103">multithreadedvaluationengine.hpp:103</a></div></div>
@@ -463,10 +463,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multithreadedvaluationengine_8cpp_source.html#l00099">99</a> of file <a class="el" href="multithreadedvaluationengine_8cpp_source.html">multithreadedvaluationengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>                                                                             {</div>
-<div class="line"><span class="lineno">  101</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#acbdd64916819c0105e1afa32ac0039a8">aggregationScenarioData_</a> = aggregationScenarioData;</div>
-<div class="line"><span class="lineno">  102</span>}</div>
+<p class="definition">Definition at line <a class="el" href="multithreadedvaluationengine_8cpp_source.html#l00098">98</a> of file <a class="el" href="multithreadedvaluationengine_8cpp_source.html">multithreadedvaluationengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>                                                                             {</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#acbdd64916819c0105e1afa32ac0039a8">aggregationScenarioData_</a> = aggregationScenarioData;</div>
+<div class="line"><span class="lineno">  101</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_acbdd64916819c0105e1afa32ac0039a8"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#acbdd64916819c0105e1afa32ac0039a8">ore::analytics::MultiThreadedValuationEngine::aggregationScenarioData_</a></div><div class="ttdeci">boost::shared_ptr&lt; AggregationScenarioData &gt; aggregationScenarioData_</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00123">multithreadedvaluationengine.hpp:123</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -515,307 +515,309 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multithreadedvaluationengine_8cpp_source.html#l00104">104</a> of file <a class="el" href="multithreadedvaluationengine_8cpp_source.html">multithreadedvaluationengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>                                      {</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    boost::timer::cpu_timer timer;</div>
-<div class="line"><span class="lineno">  111</span> </div>
-<div class="line"><span class="lineno">  112</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;MultiThreadedValuationEngine::buildCube() was called&quot;</span>);</div>
-<div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>    <span class="comment">// extract pricing stats accumulated so far and clear them</span></div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Extract pricing stats and clear them in the current portfolio&quot;</span>);</div>
-<div class="line"><span class="lineno">  117</span> </div>
-<div class="line"><span class="lineno">  118</span>    std::map&lt;std::string, std::pair&lt;std::size_t, boost::timer::nanosecond_type&gt;&gt; pricingStats;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades())</div>
-<div class="line"><span class="lineno">  120</span>        pricingStats[tid] = std::make_pair(t-&gt;getNumberOfPricings(), t-&gt;getCumulativePricingTime());</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    <span class="comment">// build portfolio against init market and trigger single pricing to generate pricing stats</span></div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Reset and build portfolio against init market to produce pricing stats from a single pricing.&quot;</span>);</div>
-<div class="line"><span class="lineno">  125</span> </div>
-<div class="line"><span class="lineno">  126</span>    boost::shared_ptr&lt;ore::data::Market&gt; initMarket = boost::make_shared&lt;ore::data::TodaysMarket&gt;(</div>
-<div class="line"><span class="lineno">  127</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a59e20612739310a0c316f00c519e95ed">loader_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>, <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>, <span class="keyword">false</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#aad3aff778580c555abc37376208780ae">handlePseudoCurrenciesTodaysMarket_</a>);</div>
-<div class="line"><span class="lineno">  129</span> </div>
-<div class="line"><span class="lineno">  130</span>    <span class="keyword">auto</span> engineFactory = boost::make_shared&lt;ore::data::EngineFactory&gt;(</div>
-<div class="line"><span class="lineno">  131</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a88182e6c9d972097bfaaf76a5f50d876">engineData_</a>, initMarket,</div>
-<div class="line"><span class="lineno">  132</span>        std::map&lt;ore::data::MarketContext, string&gt;{{ore::data::MarketContext::pricing, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">configuration_</a>}}, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>,</div>
-<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>);</div>
-<div class="line"><span class="lineno">  134</span> </div>
-<div class="line"><span class="lineno">  135</span>    portfolio-&gt;build(engineFactory, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac7e3495695d601c65c517f1b2e97bc83">context_</a>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  136</span> </div>
-<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades()) {</div>
-<div class="line"><span class="lineno">  138</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(<span class="stringliteral">&quot;got npv for &quot;</span> &lt;&lt; tid &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; std::setprecision(12) &lt;&lt; t-&gt;instrument()-&gt;NPV() &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><span class="lineno">  139</span>                            &lt;&lt; t-&gt;npvCurrency());</div>
-<div class="line"><span class="lineno">  140</span>    }</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>    <span class="comment">// split portfolio into nThreads parts such that each part has an approximately similar total avg pricing time</span></div>
-<div class="line"><span class="lineno">  143</span> </div>
-<div class="line"><span class="lineno">  144</span>    Size eff_nThreads = std::min(portfolio-&gt;size(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a>);</div>
-<div class="line"><span class="lineno">  145</span> </div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Splitting portfolio.&quot;</span>);</div>
-<div class="line"><span class="lineno">  147</span> </div>
-<div class="line"><span class="lineno">  148</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;portfolio size = &quot;</span> &lt;&lt; portfolio-&gt;size());</div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;nThreads       = &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a>);</div>
-<div class="line"><span class="lineno">  150</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;eff nThreads   = &quot;</span> &lt;&lt; eff_nThreads);</div>
-<div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>    QL_REQUIRE(eff_nThreads &gt; 0, <span class="stringliteral">&quot;effective threads are zero, this is not allowed.&quot;</span>);</div>
-<div class="line"><span class="lineno">  153</span> </div>
-<div class="line"><span class="lineno">  154</span>    std::vector&lt;boost::shared_ptr&lt;ore::data::Portfolio&gt;&gt; portfolios;</div>
-<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i)</div>
-<div class="line"><span class="lineno">  156</span>        portfolios.push_back(boost::make_shared&lt;ore::data::Portfolio&gt;());</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordtype">double</span> totalAvgPricingTime = 0.0;</div>
-<div class="line"><span class="lineno">  159</span>    std::vector&lt;std::pair&lt;std::string, double&gt;&gt; timings;</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades()) {</div>
-<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">if</span> (t-&gt;getNumberOfPricings() != 0) {</div>
-<div class="line"><span class="lineno">  162</span>            <span class="keywordtype">double</span> dt = t-&gt;getCumulativePricingTime() / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(t-&gt;getNumberOfPricings());</div>
-<div class="line"><span class="lineno">  163</span>            timings.push_back(std::make_pair(tid, dt));</div>
-<div class="line"><span class="lineno">  164</span>            totalAvgPricingTime += dt;</div>
-<div class="line"><span class="lineno">  165</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  166</span>            <span class="comment">// trade might be a failed trade</span></div>
-<div class="line"><span class="lineno">  167</span>            timings.push_back(std::make_pair(tid, 0.0));</div>
-<div class="line"><span class="lineno">  168</span>        }</div>
-<div class="line"><span class="lineno">  169</span>    }</div>
-<div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>    std::sort(timings.begin(), timings.end(),</div>
-<div class="line"><span class="lineno">  172</span>              [](<span class="keyword">const</span> std::pair&lt;std::string, double&gt;&amp; p1, <span class="keyword">const</span> std::pair&lt;std::string, double&gt; p2) {</div>
-<div class="line"><span class="lineno">  173</span>                  if (p1.second == p2.second)</div>
-<div class="line"><span class="lineno">  174</span>                      return p1.first &lt; p2.first;</div>
-<div class="line"><span class="lineno">  175</span>                  else</div>
-<div class="line"><span class="lineno">  176</span>                      return p1.second &gt; p2.second;</div>
-<div class="line"><span class="lineno">  177</span>              });</div>
-<div class="line"><span class="lineno">  178</span> </div>
-<div class="line"><span class="lineno">  179</span>    std::vector&lt;double&gt; portfolioTotalAvgPricingTime(portfolios.size());</div>
-<div class="line"><span class="lineno">  180</span>    Size portfolioIndex = 0;</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; t : timings) {</div>
-<div class="line"><span class="lineno">  182</span>        portfolios[portfolioIndex]-&gt;add(portfolio-&gt;get(t.first));</div>
-<div class="line"><span class="lineno">  183</span>        portfolioTotalAvgPricingTime[portfolioIndex] += t.second;</div>
-<div class="line"><span class="lineno">  184</span>        <span class="keywordflow">if</span> (++portfolioIndex &gt;= eff_nThreads)</div>
-<div class="line"><span class="lineno">  185</span>            portfolioIndex = 0;</div>
-<div class="line"><span class="lineno">  186</span>    }</div>
-<div class="line"><span class="lineno">  187</span> </div>
-<div class="line"><span class="lineno">  188</span>    <span class="comment">// output the portfolios into strings so that the worker threads can load them from there</span></div>
-<div class="line"><span class="lineno">  189</span> </div>
-<div class="line"><span class="lineno">  190</span>    std::vector&lt;std::string&gt; portfoliosAsString;</div>
-<div class="line"><span class="lineno">  191</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; p : portfolios) {</div>
-<div class="line"><span class="lineno">  192</span>        portfoliosAsString.emplace_back(p-&gt;toXMLString());</div>
-<div class="line"><span class="lineno">  193</span>    }</div>
-<div class="line"><span class="lineno">  194</span> </div>
-<div class="line"><span class="lineno">  195</span>    <span class="comment">// log info on the portfolio split</span></div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Total avg pricing time     : &quot;</span> &lt;&lt; totalAvgPricingTime / 1E6 &lt;&lt; <span class="stringliteral">&quot; ms&quot;</span>);</div>
-<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i) {</div>
-<div class="line"><span class="lineno">  199</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Portfolio #&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; number of trades       : &quot;</span> &lt;&lt; portfolios[i]-&gt;size());</div>
-<div class="line"><span class="lineno">  200</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Portfolio #&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; total avg pricing time : &quot;</span> &lt;&lt; portfolioTotalAvgPricingTime[i] / 1E6 &lt;&lt; <span class="stringliteral">&quot; ms&quot;</span>);</div>
-<div class="line"><span class="lineno">  201</span>    }</div>
-<div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>    <span class="comment">// build scenario generators for each thread as clones of the original one</span></div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Cloning scenario generators for &quot;</span> &lt;&lt; eff_nThreads &lt;&lt; <span class="stringliteral">&quot; threads...&quot;</span>);</div>
-<div class="line"><span class="lineno">  206</span>    std::vector&lt;boost::shared_ptr&lt;ore::analytics::ScenarioGenerator&gt;&gt; scenarioGenerators;</div>
-<div class="line"><span class="lineno">  207</span>    <span class="keyword">auto</span> tmp =</div>
-<div class="line"><span class="lineno">  208</span>        boost::make_shared&lt;ore::analytics::ClonedScenarioGenerator&gt;(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a739ffaa86d2581fef5bb476f2281058a">scenarioGenerator_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>);</div>
-<div class="line"><span class="lineno">  209</span>    scenarioGenerators.push_back(tmp);</div>
-<div class="line"><span class="lineno">  210</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;generator for thread 1 cloned.&quot;</span>);</div>
-<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">for</span> (Size i = 1; i &lt; eff_nThreads; ++i) {</div>
-<div class="line"><span class="lineno">  212</span>        scenarioGenerators.push_back(boost::make_shared&lt;ore::analytics::ClonedScenarioGenerator&gt;(*tmp));</div>
-<div class="line"><span class="lineno">  213</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;generator for thread &quot;</span> &lt;&lt; (i + 1) &lt;&lt; <span class="stringliteral">&quot; cloned.&quot;</span>);</div>
-<div class="line"><span class="lineno">  214</span>    }</div>
-<div class="line"><span class="lineno">  215</span> </div>
-<div class="line"><span class="lineno">  216</span>    <span class="comment">// build loaders for each thread as clones of the original one</span></div>
-<div class="line"><span class="lineno">  217</span> </div>
-<div class="line"><span class="lineno">  218</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Cloning loaders for &quot;</span> &lt;&lt; eff_nThreads &lt;&lt; <span class="stringliteral">&quot; threads...&quot;</span>);</div>
-<div class="line"><span class="lineno">  219</span>    std::vector&lt;boost::shared_ptr&lt;ore::data::ClonedLoader&gt;&gt; loaders;</div>
-<div class="line"><span class="lineno">  220</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i)</div>
-<div class="line"><span class="lineno">  221</span>        loaders.push_back(boost::make_shared&lt;ore::data::ClonedLoader&gt;(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a59e20612739310a0c316f00c519e95ed">loader_</a>));</div>
-<div class="line"><span class="lineno">  222</span> </div>
-<div class="line"><span class="lineno">  223</span>    <span class="comment">// build nThreads mini-cubes to which each thread writes its results</span></div>
-<div class="line"><span class="lineno">  224</span> </div>
-<div class="line"><span class="lineno">  225</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Build &quot;</span> &lt;&lt; eff_nThreads &lt;&lt; <span class="stringliteral">&quot; mini result cubes...&quot;</span>);</div>
-<div class="line"><span class="lineno">  226</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a164bab4029046f99913e026d067db272">miniCubes_</a>.clear();</div>
-<div class="line"><span class="lineno">  227</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ae2e81baadf7a185df60c1a2cbe7bd3ed">miniNettingSetCubes_</a>.clear();</div>
-<div class="line"><span class="lineno">  228</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#adc1bb1628ca52a87714163eb705d96ce">miniCptyCubes_</a>.clear();</div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i) {</div>
-<div class="line"><span class="lineno">  230</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a164bab4029046f99913e026d067db272">miniCubes_</a>.push_back(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a>(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, portfolios[i]-&gt;ids(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>));</div>
-<div class="line"><span class="lineno">  231</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ae2e81baadf7a185df60c1a2cbe7bd3ed">miniNettingSetCubes_</a>.push_back(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a>(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>));</div>
-<div class="line"><span class="lineno">  232</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#adc1bb1628ca52a87714163eb705d96ce">miniCptyCubes_</a>.push_back(</div>
-<div class="line"><span class="lineno">  233</span>            <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a>(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, portfolios[i]-&gt;counterparties(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>));</div>
-<div class="line"><span class="lineno">  234</span>    }</div>
-<div class="line"><span class="lineno">  235</span> </div>
-<div class="line"><span class="lineno">  236</span>    <span class="comment">// build progress indicator consolidating the results from the threads</span></div>
-<div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>    <span class="keyword">auto</span> progressIndicator =</div>
-<div class="line"><span class="lineno">  239</span>        boost::make_shared&lt;ore::analytics::MultiThreadedProgressIndicator&gt;(this-&gt;<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_progress_reporter.html#a78975c49a3fa7d51b73612475e431f5a">progressIndicators</a>());</div>
-<div class="line"><span class="lineno">  240</span> </div>
-<div class="line"><span class="lineno">  241</span>    <span class="comment">// create the thread pool with eff_nThreads and queue size = eff_nThreads as well</span></div>
-<div class="line"><span class="lineno">  242</span> </div>
-<div class="line"><span class="lineno">  243</span>    <span class="comment">// LOG(&quot;Create thread pool with &quot; &lt;&lt; eff_nThreads);</span></div>
-<div class="line"><span class="lineno">  244</span>    <span class="comment">// ctpl::thread_pool threadPool(eff_nThreads);</span></div>
-<div class="line"><span class="lineno">  245</span> </div>
-<div class="line"><span class="lineno">  246</span>    <span class="comment">// create the jobs and push them to the pool</span></div>
-<div class="line"><span class="lineno">  247</span> </div>
-<div class="line"><span class="lineno">  248</span>    <span class="keyword">using </span>resultType = int;</div>
-<div class="line"><span class="lineno">  249</span>    std::vector&lt;std::future&lt;resultType&gt;&gt; results(eff_nThreads);</div>
-<div class="line"><span class="lineno">  250</span> </div>
-<div class="line"><span class="lineno">  251</span>    std::vector&lt;std::thread&gt; jobs; <span class="comment">// not needed if thread pool is used</span></div>
-<div class="line"><span class="lineno">  252</span> </div>
-<div class="line"><span class="lineno">  253</span>    <span class="comment">// pricing stats accumulated in worker threads</span></div>
-<div class="line"><span class="lineno">  254</span>    std::vector&lt;std::map&lt;std::string, std::pair&lt;std::size_t, boost::timer::nanosecond_type&gt;&gt;&gt; workerPricingStats(</div>
-<div class="line"><span class="lineno">  255</span>        eff_nThreads);</div>
-<div class="line"><span class="lineno">  256</span> </div>
-<div class="line"><span class="lineno">  257</span>    <span class="comment">// get obs mode of main thread, so that we can set this mode in the worker threads below</span></div>
-<div class="line"><span class="lineno">  258</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ore::analytics::ObservationMode::Mode</a> obsMode = ore::analytics::ObservationMode::instance().mode();</div>
-<div class="line"><span class="lineno">  259</span> </div>
-<div class="line"><span class="lineno">  260</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i) {</div>
-<div class="line"><span class="lineno">  261</span> </div>
-<div class="line"><span class="lineno">  262</span>        <span class="keyword">auto</span> job = [<span class="keyword">this</span>, obsMode, dryRun, &amp;calculators, &amp;cptyCalculators, mporStickyDate, &amp;portfoliosAsString,</div>
-<div class="line"><span class="lineno">  263</span>                    &amp;scenarioGenerators, &amp;loaders, &amp;workerPricingStats, &amp;progressIndicator](<span class="keywordtype">int</span> id) -&gt; resultType {</div>
-<div class="line"><span class="lineno">  264</span>            <span class="comment">// set thread local singletons</span></div>
-<div class="line"><span class="lineno">  265</span> </div>
-<div class="line"><span class="lineno">  266</span>            QuantLib::Settings::instance().evaluationDate() = <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>;</div>
-<div class="line"><span class="lineno">  267</span>            ore::analytics::ObservationMode::instance().setMode(obsMode);</div>
-<div class="line"><span class="lineno">  268</span> </div>
-<div class="line"><span class="lineno">  269</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Start thread &quot;</span> &lt;&lt; <span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">  270</span> </div>
-<div class="line"><span class="lineno">  271</span>            <span class="keywordtype">int</span> rc;</div>
-<div class="line"><span class="lineno">  272</span> </div>
-<div class="line"><span class="lineno">  273</span>            <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  274</span> </div>
-<div class="line"><span class="lineno">  275</span>                <span class="comment">// build todays market using cloned market data</span></div>
-<div class="line"><span class="lineno">  276</span> </div>
-<div class="line"><span class="lineno">  277</span>                boost::shared_ptr&lt;ore::data::Market&gt; initMarket = boost::make_shared&lt;ore::data::TodaysMarket&gt;(</div>
-<div class="line"><span class="lineno">  278</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>, loaders[<span class="keywordtype">id</span>], <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>, <span class="keyword">false</span>,</div>
-<div class="line"><span class="lineno">  279</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>, <span class="keyword">false</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#aad3aff778580c555abc37376208780ae">handlePseudoCurrenciesTodaysMarket_</a>);</div>
-<div class="line"><span class="lineno">  280</span> </div>
-<div class="line"><span class="lineno">  281</span>                <span class="comment">// build sim market</span></div>
-<div class="line"><span class="lineno">  282</span> </div>
-<div class="line"><span class="lineno">  283</span>                boost::shared_ptr&lt;ore::analytics::ScenarioSimMarket&gt; simMarket =</div>
-<div class="line"><span class="lineno">  284</span>                    boost::make_shared&lt;ore::analytics::ScenarioSimMarketPlus&gt;(</div>
-<div class="line"><span class="lineno">  285</span>                        initMarket, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0671a4d2aecc55c7fd25215501654aa6">simMarketData_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">configuration_</a>, *<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>, *<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  286</span>                        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a53cfefe400aac2623306853c887ef20a">useSpreadedTermStructures_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac8084e71c12327fddaa89613722b4624">cacheSimData_</a>, <span class="keyword">false</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>,</div>
-<div class="line"><span class="lineno">  287</span>                        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a00a2b9d16fb73a544eca0d1df397231d">handlePseudoCurrenciesSimMarket_</a>);</div>
-<div class="line"><span class="lineno">  288</span> </div>
-<div class="line"><span class="lineno">  289</span>                <span class="comment">// set aggregation scenario data, but only in one of the sim markets, that&#39;s sufficient to populate it</span></div>
-<div class="line"><span class="lineno">  290</span> </div>
-<div class="line"><span class="lineno">  291</span>                <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == 0 &amp;&amp; <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#acbdd64916819c0105e1afa32ac0039a8">aggregationScenarioData_</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  292</span>                    simMarket-&gt;aggregationScenarioData() = <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#acbdd64916819c0105e1afa32ac0039a8">aggregationScenarioData_</a>;</div>
-<div class="line"><span class="lineno">  293</span> </div>
-<div class="line"><span class="lineno">  294</span>                <span class="comment">// link scenario generator to sim market</span></div>
-<div class="line"><span class="lineno">  295</span> </div>
-<div class="line"><span class="lineno">  296</span>                simMarket-&gt;scenarioGenerator() = scenarioGenerators[id];</div>
-<div class="line"><span class="lineno">  297</span> </div>
-<div class="line"><span class="lineno">  298</span>                <span class="comment">// set scenario filter</span></div>
-<div class="line"><span class="lineno">  299</span> </div>
-<div class="line"><span class="lineno">  300</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab1930588b1efe428a621da010d5db46a">scenarioFilter_</a>)</div>
-<div class="line"><span class="lineno">  301</span>                    simMarket-&gt;filter() = <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab1930588b1efe428a621da010d5db46a">scenarioFilter_</a>;</div>
-<div class="line"><span class="lineno">  302</span> </div>
-<div class="line"><span class="lineno">  303</span>                <span class="comment">// build portfolio against sim market</span></div>
-<div class="line"><span class="lineno">  304</span> </div>
-<div class="line"><span class="lineno">  305</span>                <span class="keyword">auto</span> portfolio = boost::make_shared&lt;ore::data::Portfolio&gt;();</div>
-<div class="line"><span class="lineno">  306</span>                portfolio-&gt;fromXMLString(portfoliosAsString[<span class="keywordtype">id</span>]);</div>
-<div class="line"><span class="lineno">  307</span>                <span class="keyword">auto</span> engineFactory = boost::make_shared&lt;ore::data::EngineFactory&gt;(</div>
-<div class="line"><span class="lineno">  308</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a88182e6c9d972097bfaaf76a5f50d876">engineData_</a>, simMarket, std::map&lt;ore::data::MarketContext, string&gt;(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>,</div>
-<div class="line"><span class="lineno">  309</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>);</div>
-<div class="line"><span class="lineno">  310</span> </div>
-<div class="line"><span class="lineno">  311</span>                portfolio-&gt;build(engineFactory, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac7e3495695d601c65c517f1b2e97bc83">context_</a>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  312</span> </div>
-<div class="line"><span class="lineno">  313</span>                <span class="comment">// build valuation engine</span></div>
-<div class="line"><span class="lineno">  314</span> </div>
-<div class="line"><span class="lineno">  315</span>                <span class="keyword">auto</span> valEngine = boost::make_shared&lt;ore::analytics::ValuationEngine&gt;(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>, simMarket,</div>
-<div class="line"><span class="lineno">  316</span>                                                                                     engineFactory-&gt;modelBuilders());</div>
-<div class="line"><span class="lineno">  317</span>                valEngine-&gt;registerProgressIndicator(progressIndicator);</div>
-<div class="line"><span class="lineno">  318</span> </div>
-<div class="line"><span class="lineno">  319</span>                <span class="comment">// build mini-cube</span></div>
-<div class="line"><span class="lineno">  320</span> </div>
-<div class="line"><span class="lineno">  321</span>                valEngine-&gt;buildCube(portfolio, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a164bab4029046f99913e026d067db272">miniCubes_</a>[<span class="keywordtype">id</span>], calculators(), mporStickyDate, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ae2e81baadf7a185df60c1a2cbe7bd3ed">miniNettingSetCubes_</a>[<span class="keywordtype">id</span>],</div>
-<div class="line"><span class="lineno">  322</span>                                     <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#adc1bb1628ca52a87714163eb705d96ce">miniCptyCubes_</a>[<span class="keywordtype">id</span>],</div>
-<div class="line"><span class="lineno">  323</span>                                     cptyCalculators ? cptyCalculators()</div>
-<div class="line"><span class="lineno">  324</span>                                                     : std::vector&lt;boost::shared_ptr&lt;CounterpartyCalculator&gt;&gt;(),</div>
-<div class="line"><span class="lineno">  325</span>                                     dryRun);</div>
-<div class="line"><span class="lineno">  326</span> </div>
-<div class="line"><span class="lineno">  327</span>                <span class="comment">// set pricing stats for val engine run</span></div>
-<div class="line"><span class="lineno">  328</span> </div>
-<div class="line"><span class="lineno">  329</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades())</div>
-<div class="line"><span class="lineno">  330</span>                    workerPricingStats[id][tid] =</div>
-<div class="line"><span class="lineno">  331</span>                        std::make_pair(t-&gt;getNumberOfPricings(), t-&gt;getCumulativePricingTime());</div>
-<div class="line"><span class="lineno">  332</span> </div>
-<div class="line"><span class="lineno">  333</span>                <span class="comment">// return code 0 = ok</span></div>
-<div class="line"><span class="lineno">  334</span> </div>
-<div class="line"><span class="lineno">  335</span>                <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Thread &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot; successfully finished.&quot;</span>);</div>
-<div class="line"><span class="lineno">  336</span> </div>
-<div class="line"><span class="lineno">  337</span>                rc = 0;</div>
-<div class="line"><span class="lineno">  338</span> </div>
-<div class="line"><span class="lineno">  339</span>            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><span class="lineno">  340</span> </div>
-<div class="line"><span class="lineno">  341</span>                <span class="comment">// log error and return code 1 = not ok</span></div>
-<div class="line"><span class="lineno">  342</span> </div>
-<div class="line"><span class="lineno">  343</span>                <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<a class="code hl_class" href="classore_1_1analytics_1_1_structured_analytics_error_message.html">ore::analytics::StructuredAnalyticsErrorMessage</a>(<span class="stringliteral">&quot;Multithreaded Valuation Engine&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, e.what()));</div>
-<div class="line"><span class="lineno">  344</span>                rc = 1;</div>
-<div class="line"><span class="lineno">  345</span>            }</div>
-<div class="line"><span class="lineno">  346</span> </div>
-<div class="line"><span class="lineno">  347</span>            <span class="comment">// exit</span></div>
-<div class="line"><span class="lineno">  348</span> </div>
-<div class="line"><span class="lineno">  349</span>            <span class="keywordflow">return</span> rc;</div>
-<div class="line"><span class="lineno">  350</span>        };</div>
-<div class="line"><span class="lineno">  351</span> </div>
-<div class="line"><span class="lineno">  352</span>        <span class="comment">// results[i] = threadPool.push(job);</span></div>
-<div class="line"><span class="lineno">  353</span> </div>
-<div class="line"><span class="lineno">  354</span>        <span class="comment">// not needed if thread pool is used</span></div>
-<div class="line"><span class="lineno">  355</span>        std::packaged_task&lt;resultType(<span class="keywordtype">int</span>)&gt; task(job);</div>
-<div class="line"><span class="lineno">  356</span>        results[i] = task.get_future();</div>
-<div class="line"><span class="lineno">  357</span>        std::thread thread(std::move(task), i);</div>
-<div class="line"><span class="lineno">  358</span>        jobs.emplace_back(std::move(thread));</div>
-<div class="line"><span class="lineno">  359</span>    }</div>
-<div class="line"><span class="lineno">  360</span> </div>
-<div class="line"><span class="lineno">  361</span>    <span class="comment">// check return codes from jobs</span></div>
-<div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>    <span class="comment">// not needed if thread pool is used</span></div>
-<div class="line"><span class="lineno">  364</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; t : jobs)</div>
-<div class="line"><span class="lineno">  365</span>        t.join();</div>
-<div class="line"><span class="lineno">  366</span> </div>
-<div class="line"><span class="lineno">  367</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; results.size(); ++i) {</div>
-<div class="line"><span class="lineno">  368</span>        results[i].wait();</div>
-<div class="line"><span class="lineno">  369</span>    }</div>
-<div class="line"><span class="lineno">  370</span> </div>
-<div class="line"><span class="lineno">  371</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; results.size(); ++i) {</div>
-<div class="line"><span class="lineno">  372</span>        QL_REQUIRE(results[i].valid(), <span class="stringliteral">&quot;internal error: did not get a valid result&quot;</span>);</div>
-<div class="line"><span class="lineno">  373</span>        <span class="keywordtype">int</span> rc = results[i].get();</div>
-<div class="line"><span class="lineno">  374</span>        QL_REQUIRE(rc == 0, <span class="stringliteral">&quot;error: thread &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; exited with return code &quot;</span> &lt;&lt; rc</div>
-<div class="line"><span class="lineno">  375</span>                                             &lt;&lt; <span class="stringliteral">&quot;. Check for structured errors from &#39;MultiThreaded Valuation Engine&#39;.&quot;</span>);</div>
-<div class="line"><span class="lineno">  376</span>    }</div>
-<div class="line"><span class="lineno">  377</span> </div>
-<div class="line"><span class="lineno">  378</span>    <span class="comment">// stop the thread pool, wait for unfinished jobs</span></div>
-<div class="line"><span class="lineno">  379</span> </div>
-<div class="line"><span class="lineno">  380</span>    <span class="comment">// LOG(&quot;Stop thread pool&quot;);</span></div>
-<div class="line"><span class="lineno">  381</span>    <span class="comment">// threadPool.stop(true);</span></div>
-<div class="line"><span class="lineno">  382</span> </div>
-<div class="line"><span class="lineno">  383</span>    <span class="comment">// set updated pricing stats in original portfolio</span></div>
-<div class="line"><span class="lineno">  384</span> </div>
-<div class="line"><span class="lineno">  385</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Update pricing stats of trades.&quot;</span>);</div>
-<div class="line"><span class="lineno">  386</span> </div>
-<div class="line"><span class="lineno">  387</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades()) {</div>
-<div class="line"><span class="lineno">  388</span>        <span class="keyword">auto</span> p = pricingStats[tid];</div>
-<div class="line"><span class="lineno">  389</span>        std::size_t n = p.first;</div>
-<div class="line"><span class="lineno">  390</span>        boost::timer::nanosecond_type d = p.second;</div>
-<div class="line"><span class="lineno">  391</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; w : workerPricingStats) {</div>
-<div class="line"><span class="lineno">  392</span>            <span class="keyword">auto</span> p = w.find(tid);</div>
-<div class="line"><span class="lineno">  393</span>            <span class="keywordflow">if</span> (p != w.end()) {</div>
-<div class="line"><span class="lineno">  394</span>                n += p-&gt;second.first;</div>
-<div class="line"><span class="lineno">  395</span>                d += p-&gt;second.second;</div>
-<div class="line"><span class="lineno">  396</span>            }</div>
-<div class="line"><span class="lineno">  397</span>        }</div>
-<div class="line"><span class="lineno">  398</span>        t-&gt;resetPricingStats(n, d);</div>
-<div class="line"><span class="lineno">  399</span>    }</div>
-<div class="line"><span class="lineno">  400</span> </div>
-<div class="line"><span class="lineno">  401</span>    <span class="comment">// log timings and return the result mini-cubes</span></div>
-<div class="line"><span class="lineno">  402</span> </div>
-<div class="line"><span class="lineno">  403</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;MultiThreadedValuationEngine::buildCube() successfully finished, timings: &quot;</span></div>
-<div class="line"><span class="lineno">  404</span>        &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(timer.elapsed().wall) / 1.0E9 &lt;&lt; <span class="stringliteral">&quot;s Wall, &quot;</span></div>
-<div class="line"><span class="lineno">  405</span>        &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(timer.elapsed().user) / 1.0E9 &lt;&lt; <span class="stringliteral">&quot;s User, &quot;</span></div>
-<div class="line"><span class="lineno">  406</span>        &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(timer.elapsed().system) / 1.0E9 &lt;&lt; <span class="stringliteral">&quot;s System.&quot;</span>);</div>
-<div class="line"><span class="lineno">  407</span>}</div>
+<p class="definition">Definition at line <a class="el" href="multithreadedvaluationengine_8cpp_source.html#l00103">103</a> of file <a class="el" href="multithreadedvaluationengine_8cpp_source.html">multithreadedvaluationengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                                      {</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>    boost::timer::cpu_timer timer;</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;MultiThreadedValuationEngine::buildCube() was called&quot;</span>);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">// extract pricing stats accumulated so far and clear them</span></div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Extract pricing stats and clear them in the current portfolio&quot;</span>);</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    std::map&lt;std::string, std::pair&lt;std::size_t, boost::timer::nanosecond_type&gt;&gt; pricingStats;</div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades())</div>
+<div class="line"><span class="lineno">  119</span>        pricingStats[tid] = std::make_pair(t-&gt;getNumberOfPricings(), t-&gt;getCumulativePricingTime());</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    <span class="comment">// build portfolio against init market and trigger single pricing to generate pricing stats</span></div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Reset and build portfolio against init market to produce pricing stats from a single pricing. Using pricing &quot;</span></div>
+<div class="line"><span class="lineno">  124</span>        <span class="stringliteral">&quot;configuration &#39;&quot;</span></div>
+<div class="line"><span class="lineno">  125</span>        &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">configuration_</a> &lt;&lt; <span class="stringliteral">&quot;&#39;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>    boost::shared_ptr&lt;ore::data::Market&gt; initMarket = boost::make_shared&lt;ore::data::TodaysMarket&gt;(</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a59e20612739310a0c316f00c519e95ed">loader_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  129</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>, <span class="keyword">false</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#aad3aff778580c555abc37376208780ae">handlePseudoCurrenciesTodaysMarket_</a>);</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    <span class="keyword">auto</span> engineFactory = boost::make_shared&lt;ore::data::EngineFactory&gt;(</div>
+<div class="line"><span class="lineno">  132</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a88182e6c9d972097bfaaf76a5f50d876">engineData_</a>, initMarket,</div>
+<div class="line"><span class="lineno">  133</span>        std::map&lt;ore::data::MarketContext, string&gt;{{ore::data::MarketContext::pricing, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">configuration_</a>}}, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>,</div>
+<div class="line"><span class="lineno">  134</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>);</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    portfolio-&gt;build(engineFactory, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac7e3495695d601c65c517f1b2e97bc83">context_</a>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades()) {</div>
+<div class="line"><span class="lineno">  139</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(<span class="stringliteral">&quot;got npv for &quot;</span> &lt;&lt; tid &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; std::setprecision(12) &lt;&lt; t-&gt;instrument()-&gt;NPV() &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  140</span>                            &lt;&lt; t-&gt;npvCurrency());</div>
+<div class="line"><span class="lineno">  141</span>    }</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <span class="comment">// split portfolio into nThreads parts such that each part has an approximately similar total avg pricing time</span></div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    Size eff_nThreads = std::min(portfolio-&gt;size(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a>);</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Splitting portfolio.&quot;</span>);</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;portfolio size = &quot;</span> &lt;&lt; portfolio-&gt;size());</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;nThreads       = &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a93b2e163e8841953e3a77efdcc596d08">nThreads_</a>);</div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;eff nThreads   = &quot;</span> &lt;&lt; eff_nThreads);</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    QL_REQUIRE(eff_nThreads &gt; 0, <span class="stringliteral">&quot;effective threads are zero, this is not allowed.&quot;</span>);</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    std::vector&lt;boost::shared_ptr&lt;ore::data::Portfolio&gt;&gt; portfolios;</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i)</div>
+<div class="line"><span class="lineno">  157</span>        portfolios.push_back(boost::make_shared&lt;ore::data::Portfolio&gt;());</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordtype">double</span> totalAvgPricingTime = 0.0;</div>
+<div class="line"><span class="lineno">  160</span>    std::vector&lt;std::pair&lt;std::string, double&gt;&gt; timings;</div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades()) {</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">if</span> (t-&gt;getNumberOfPricings() != 0) {</div>
+<div class="line"><span class="lineno">  163</span>            <span class="keywordtype">double</span> dt = t-&gt;getCumulativePricingTime() / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(t-&gt;getNumberOfPricings());</div>
+<div class="line"><span class="lineno">  164</span>            timings.push_back(std::make_pair(tid, dt));</div>
+<div class="line"><span class="lineno">  165</span>            totalAvgPricingTime += dt;</div>
+<div class="line"><span class="lineno">  166</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  167</span>            <span class="comment">// trade might be a failed trade</span></div>
+<div class="line"><span class="lineno">  168</span>            timings.push_back(std::make_pair(tid, 0.0));</div>
+<div class="line"><span class="lineno">  169</span>        }</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    std::sort(timings.begin(), timings.end(),</div>
+<div class="line"><span class="lineno">  173</span>              [](<span class="keyword">const</span> std::pair&lt;std::string, double&gt;&amp; p1, <span class="keyword">const</span> std::pair&lt;std::string, double&gt; p2) {</div>
+<div class="line"><span class="lineno">  174</span>                  if (p1.second == p2.second)</div>
+<div class="line"><span class="lineno">  175</span>                      return p1.first &lt; p2.first;</div>
+<div class="line"><span class="lineno">  176</span>                  else</div>
+<div class="line"><span class="lineno">  177</span>                      return p1.second &gt; p2.second;</div>
+<div class="line"><span class="lineno">  178</span>              });</div>
+<div class="line"><span class="lineno">  179</span> </div>
+<div class="line"><span class="lineno">  180</span>    std::vector&lt;double&gt; portfolioTotalAvgPricingTime(portfolios.size());</div>
+<div class="line"><span class="lineno">  181</span>    Size portfolioIndex = 0;</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; t : timings) {</div>
+<div class="line"><span class="lineno">  183</span>        portfolios[portfolioIndex]-&gt;add(portfolio-&gt;get(t.first));</div>
+<div class="line"><span class="lineno">  184</span>        portfolioTotalAvgPricingTime[portfolioIndex] += t.second;</div>
+<div class="line"><span class="lineno">  185</span>        <span class="keywordflow">if</span> (++portfolioIndex &gt;= eff_nThreads)</div>
+<div class="line"><span class="lineno">  186</span>            portfolioIndex = 0;</div>
+<div class="line"><span class="lineno">  187</span>    }</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>    <span class="comment">// output the portfolios into strings so that the worker threads can load them from there</span></div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>    std::vector&lt;std::string&gt; portfoliosAsString;</div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; p : portfolios) {</div>
+<div class="line"><span class="lineno">  193</span>        portfoliosAsString.emplace_back(p-&gt;toXMLString());</div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>    <span class="comment">// log info on the portfolio split</span></div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Total avg pricing time     : &quot;</span> &lt;&lt; totalAvgPricingTime / 1E6 &lt;&lt; <span class="stringliteral">&quot; ms&quot;</span>);</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i) {</div>
+<div class="line"><span class="lineno">  200</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Portfolio #&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; number of trades       : &quot;</span> &lt;&lt; portfolios[i]-&gt;size());</div>
+<div class="line"><span class="lineno">  201</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Portfolio #&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; total avg pricing time : &quot;</span> &lt;&lt; portfolioTotalAvgPricingTime[i] / 1E6 &lt;&lt; <span class="stringliteral">&quot; ms&quot;</span>);</div>
+<div class="line"><span class="lineno">  202</span>    }</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>    <span class="comment">// build scenario generators for each thread as clones of the original one</span></div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Cloning scenario generators for &quot;</span> &lt;&lt; eff_nThreads &lt;&lt; <span class="stringliteral">&quot; threads...&quot;</span>);</div>
+<div class="line"><span class="lineno">  207</span>    std::vector&lt;boost::shared_ptr&lt;ore::analytics::ScenarioGenerator&gt;&gt; scenarioGenerators;</div>
+<div class="line"><span class="lineno">  208</span>    <span class="keyword">auto</span> tmp =</div>
+<div class="line"><span class="lineno">  209</span>        boost::make_shared&lt;ore::analytics::ClonedScenarioGenerator&gt;(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a739ffaa86d2581fef5bb476f2281058a">scenarioGenerator_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>);</div>
+<div class="line"><span class="lineno">  210</span>    scenarioGenerators.push_back(tmp);</div>
+<div class="line"><span class="lineno">  211</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;generator for thread 1 cloned.&quot;</span>);</div>
+<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">for</span> (Size i = 1; i &lt; eff_nThreads; ++i) {</div>
+<div class="line"><span class="lineno">  213</span>        scenarioGenerators.push_back(boost::make_shared&lt;ore::analytics::ClonedScenarioGenerator&gt;(*tmp));</div>
+<div class="line"><span class="lineno">  214</span>        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;generator for thread &quot;</span> &lt;&lt; (i + 1) &lt;&lt; <span class="stringliteral">&quot; cloned.&quot;</span>);</div>
+<div class="line"><span class="lineno">  215</span>    }</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>    <span class="comment">// build loaders for each thread as clones of the original one</span></div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Cloning loaders for &quot;</span> &lt;&lt; eff_nThreads &lt;&lt; <span class="stringliteral">&quot; threads...&quot;</span>);</div>
+<div class="line"><span class="lineno">  220</span>    std::vector&lt;boost::shared_ptr&lt;ore::data::ClonedLoader&gt;&gt; loaders;</div>
+<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i)</div>
+<div class="line"><span class="lineno">  222</span>        loaders.push_back(boost::make_shared&lt;ore::data::ClonedLoader&gt;(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a59e20612739310a0c316f00c519e95ed">loader_</a>));</div>
+<div class="line"><span class="lineno">  223</span> </div>
+<div class="line"><span class="lineno">  224</span>    <span class="comment">// build nThreads mini-cubes to which each thread writes its results</span></div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Build &quot;</span> &lt;&lt; eff_nThreads &lt;&lt; <span class="stringliteral">&quot; mini result cubes...&quot;</span>);</div>
+<div class="line"><span class="lineno">  227</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a164bab4029046f99913e026d067db272">miniCubes_</a>.clear();</div>
+<div class="line"><span class="lineno">  228</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ae2e81baadf7a185df60c1a2cbe7bd3ed">miniNettingSetCubes_</a>.clear();</div>
+<div class="line"><span class="lineno">  229</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#adc1bb1628ca52a87714163eb705d96ce">miniCptyCubes_</a>.clear();</div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i) {</div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a164bab4029046f99913e026d067db272">miniCubes_</a>.push_back(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a12ad3f109ba5f9db148ff83c96a12982">cubeFactory_</a>(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, portfolios[i]-&gt;ids(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>));</div>
+<div class="line"><span class="lineno">  232</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ae2e81baadf7a185df60c1a2cbe7bd3ed">miniNettingSetCubes_</a>.push_back(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a93a9c5e715da32b0260a49896d98f7">nettingSetCubeFactory_</a>(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>));</div>
+<div class="line"><span class="lineno">  233</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#adc1bb1628ca52a87714163eb705d96ce">miniCptyCubes_</a>.push_back(</div>
+<div class="line"><span class="lineno">  234</span>            <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a679c677560aefbe605b5cc5c530ae604">cptyCubeFactory_</a>(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, portfolios[i]-&gt;counterparties(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>-&gt;dates(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a752ebaa2844dd711456ba03a1bc33170">nSamples_</a>));</div>
+<div class="line"><span class="lineno">  235</span>    }</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>    <span class="comment">// build progress indicator consolidating the results from the threads</span></div>
+<div class="line"><span class="lineno">  238</span> </div>
+<div class="line"><span class="lineno">  239</span>    <span class="keyword">auto</span> progressIndicator =</div>
+<div class="line"><span class="lineno">  240</span>        boost::make_shared&lt;ore::analytics::MultiThreadedProgressIndicator&gt;(this-&gt;<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_progress_reporter.html#a78975c49a3fa7d51b73612475e431f5a">progressIndicators</a>());</div>
+<div class="line"><span class="lineno">  241</span> </div>
+<div class="line"><span class="lineno">  242</span>    <span class="comment">// create the thread pool with eff_nThreads and queue size = eff_nThreads as well</span></div>
+<div class="line"><span class="lineno">  243</span> </div>
+<div class="line"><span class="lineno">  244</span>    <span class="comment">// LOG(&quot;Create thread pool with &quot; &lt;&lt; eff_nThreads);</span></div>
+<div class="line"><span class="lineno">  245</span>    <span class="comment">// ctpl::thread_pool threadPool(eff_nThreads);</span></div>
+<div class="line"><span class="lineno">  246</span> </div>
+<div class="line"><span class="lineno">  247</span>    <span class="comment">// create the jobs and push them to the pool</span></div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>    <span class="keyword">using </span>resultType = int;</div>
+<div class="line"><span class="lineno">  250</span>    std::vector&lt;std::future&lt;resultType&gt;&gt; results(eff_nThreads);</div>
+<div class="line"><span class="lineno">  251</span> </div>
+<div class="line"><span class="lineno">  252</span>    std::vector&lt;std::thread&gt; jobs; <span class="comment">// not needed if thread pool is used</span></div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>    <span class="comment">// pricing stats accumulated in worker threads</span></div>
+<div class="line"><span class="lineno">  255</span>    std::vector&lt;std::map&lt;std::string, std::pair&lt;std::size_t, boost::timer::nanosecond_type&gt;&gt;&gt; workerPricingStats(</div>
+<div class="line"><span class="lineno">  256</span>        eff_nThreads);</div>
+<div class="line"><span class="lineno">  257</span> </div>
+<div class="line"><span class="lineno">  258</span>    <span class="comment">// get obs mode of main thread, so that we can set this mode in the worker threads below</span></div>
+<div class="line"><span class="lineno">  259</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ore::analytics::ObservationMode::Mode</a> obsMode = ore::analytics::ObservationMode::instance().mode();</div>
+<div class="line"><span class="lineno">  260</span> </div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; eff_nThreads; ++i) {</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>        <span class="keyword">auto</span> job = [<span class="keyword">this</span>, obsMode, dryRun, &amp;calculators, &amp;cptyCalculators, mporStickyDate, &amp;portfoliosAsString,</div>
+<div class="line"><span class="lineno">  264</span>                    &amp;scenarioGenerators, &amp;loaders, &amp;workerPricingStats, &amp;progressIndicator](<span class="keywordtype">int</span> id) -&gt; resultType {</div>
+<div class="line"><span class="lineno">  265</span>            <span class="comment">// set thread local singletons</span></div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>            QuantLib::Settings::instance().evaluationDate() = <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>;</div>
+<div class="line"><span class="lineno">  268</span>            ore::analytics::ObservationMode::instance().setMode(obsMode);</div>
+<div class="line"><span class="lineno">  269</span> </div>
+<div class="line"><span class="lineno">  270</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Start thread &quot;</span> &lt;&lt; <span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>            <span class="keywordtype">int</span> rc;</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  275</span> </div>
+<div class="line"><span class="lineno">  276</span>                <span class="comment">// build todays market using cloned market data</span></div>
+<div class="line"><span class="lineno">  277</span> </div>
+<div class="line"><span class="lineno">  278</span>                boost::shared_ptr&lt;ore::data::Market&gt; initMarket = boost::make_shared&lt;ore::data::TodaysMarket&gt;(</div>
+<div class="line"><span class="lineno">  279</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>, loaders[<span class="keywordtype">id</span>], <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  280</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>, <span class="keyword">false</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#aad3aff778580c555abc37376208780ae">handlePseudoCurrenciesTodaysMarket_</a>);</div>
+<div class="line"><span class="lineno">  281</span> </div>
+<div class="line"><span class="lineno">  282</span>                <span class="comment">// build sim market</span></div>
+<div class="line"><span class="lineno">  283</span> </div>
+<div class="line"><span class="lineno">  284</span>                boost::shared_ptr&lt;ore::analytics::ScenarioSimMarket&gt; simMarket =</div>
+<div class="line"><span class="lineno">  285</span>                    boost::make_shared&lt;ore::analytics::ScenarioSimMarket&gt;(</div>
+<div class="line"><span class="lineno">  286</span>                        initMarket, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0671a4d2aecc55c7fd25215501654aa6">simMarketData_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a0a4b08299a79a3b3b4d4eaad5bd28e99">configuration_</a>, *<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab6ba94ec0da0ec6eb22754aa327a76f9">curveConfigs_</a>, *<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a62c71f789cd0dd773bf6e8a1441f071f">todaysMarketParams_</a>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  287</span>                        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a53cfefe400aac2623306853c887ef20a">useSpreadedTermStructures_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac8084e71c12327fddaa89613722b4624">cacheSimData_</a>, <span class="keyword">false</span>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>,</div>
+<div class="line"><span class="lineno">  288</span>                        <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a00a2b9d16fb73a544eca0d1df397231d">handlePseudoCurrenciesSimMarket_</a>);</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>                <span class="comment">// set aggregation scenario data, but only in one of the sim markets, that&#39;s sufficient to populate it</span></div>
+<div class="line"><span class="lineno">  291</span> </div>
+<div class="line"><span class="lineno">  292</span>                <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == 0 &amp;&amp; <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#acbdd64916819c0105e1afa32ac0039a8">aggregationScenarioData_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  293</span>                    simMarket-&gt;aggregationScenarioData() = <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#acbdd64916819c0105e1afa32ac0039a8">aggregationScenarioData_</a>;</div>
+<div class="line"><span class="lineno">  294</span> </div>
+<div class="line"><span class="lineno">  295</span>                <span class="comment">// link scenario generator to sim market</span></div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>                simMarket-&gt;scenarioGenerator() = scenarioGenerators[id];</div>
+<div class="line"><span class="lineno">  298</span> </div>
+<div class="line"><span class="lineno">  299</span>                <span class="comment">// set scenario filter</span></div>
+<div class="line"><span class="lineno">  300</span> </div>
+<div class="line"><span class="lineno">  301</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab1930588b1efe428a621da010d5db46a">scenarioFilter_</a>)</div>
+<div class="line"><span class="lineno">  302</span>                    simMarket-&gt;filter() = <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab1930588b1efe428a621da010d5db46a">scenarioFilter_</a>;</div>
+<div class="line"><span class="lineno">  303</span> </div>
+<div class="line"><span class="lineno">  304</span>                <span class="comment">// build portfolio against sim market</span></div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>                <span class="keyword">auto</span> portfolio = boost::make_shared&lt;ore::data::Portfolio&gt;();</div>
+<div class="line"><span class="lineno">  307</span>                portfolio-&gt;fromXMLString(portfoliosAsString[<span class="keywordtype">id</span>]);</div>
+<div class="line"><span class="lineno">  308</span>                <span class="keyword">auto</span> engineFactory = boost::make_shared&lt;ore::data::EngineFactory&gt;(</div>
+<div class="line"><span class="lineno">  309</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a88182e6c9d972097bfaaf76a5f50d876">engineData_</a>, simMarket, std::map&lt;ore::data::MarketContext, string&gt;(), <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ad3e31f952b118bfb2675407e25fa5b94">referenceData_</a>,</div>
+<div class="line"><span class="lineno">  310</span>                    <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ab10c8b1041d06fa6ba5661a8a9ef8dc6">iborFallbackConfig_</a>);</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>                portfolio-&gt;build(engineFactory, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ac7e3495695d601c65c517f1b2e97bc83">context_</a>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>                <span class="comment">// build valuation engine</span></div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>                <span class="keyword">auto</span> valEngine = boost::make_shared&lt;ore::analytics::ValuationEngine&gt;(<a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a9041b7403f2c731d682332ce00ed05fe">today_</a>, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a826d8f475af3c7137af15e9dd6b171a2">dateGrid_</a>, simMarket,</div>
+<div class="line"><span class="lineno">  317</span>                                                                                     engineFactory-&gt;modelBuilders());</div>
+<div class="line"><span class="lineno">  318</span>                valEngine-&gt;registerProgressIndicator(progressIndicator);</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>                <span class="comment">// build mini-cube</span></div>
+<div class="line"><span class="lineno">  321</span> </div>
+<div class="line"><span class="lineno">  322</span>                valEngine-&gt;buildCube(portfolio, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a164bab4029046f99913e026d067db272">miniCubes_</a>[<span class="keywordtype">id</span>], calculators(), mporStickyDate, <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ae2e81baadf7a185df60c1a2cbe7bd3ed">miniNettingSetCubes_</a>[<span class="keywordtype">id</span>],</div>
+<div class="line"><span class="lineno">  323</span>                                     <a class="code hl_variable" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#adc1bb1628ca52a87714163eb705d96ce">miniCptyCubes_</a>[<span class="keywordtype">id</span>],</div>
+<div class="line"><span class="lineno">  324</span>                                     cptyCalculators ? cptyCalculators()</div>
+<div class="line"><span class="lineno">  325</span>                                                     : std::vector&lt;boost::shared_ptr&lt;CounterpartyCalculator&gt;&gt;(),</div>
+<div class="line"><span class="lineno">  326</span>                                     dryRun);</div>
+<div class="line"><span class="lineno">  327</span> </div>
+<div class="line"><span class="lineno">  328</span>                <span class="comment">// set pricing stats for val engine run</span></div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades())</div>
+<div class="line"><span class="lineno">  331</span>                    workerPricingStats[id][tid] =</div>
+<div class="line"><span class="lineno">  332</span>                        std::make_pair(t-&gt;getNumberOfPricings(), t-&gt;getCumulativePricingTime());</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>                <span class="comment">// return code 0 = ok</span></div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>                <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Thread &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot; successfully finished.&quot;</span>);</div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>                rc = 0;</div>
+<div class="line"><span class="lineno">  339</span> </div>
+<div class="line"><span class="lineno">  340</span>            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  341</span> </div>
+<div class="line"><span class="lineno">  342</span>                <span class="comment">// log error and return code 1 = not ok</span></div>
+<div class="line"><span class="lineno">  343</span> </div>
+<div class="line"><span class="lineno">  344</span>                <a class="code hl_defineRef" href="../ored/log_8hpp.html#a35cb05f674d9e764ca12cff351b064f2">ALOG</a>(<a class="code hl_class" href="classore_1_1analytics_1_1_structured_analytics_error_message.html">ore::analytics::StructuredAnalyticsErrorMessage</a>(<span class="stringliteral">&quot;Multithreaded Valuation Engine&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, e.what()));</div>
+<div class="line"><span class="lineno">  345</span>                rc = 1;</div>
+<div class="line"><span class="lineno">  346</span>            }</div>
+<div class="line"><span class="lineno">  347</span> </div>
+<div class="line"><span class="lineno">  348</span>            <span class="comment">// exit</span></div>
+<div class="line"><span class="lineno">  349</span> </div>
+<div class="line"><span class="lineno">  350</span>            <span class="keywordflow">return</span> rc;</div>
+<div class="line"><span class="lineno">  351</span>        };</div>
+<div class="line"><span class="lineno">  352</span> </div>
+<div class="line"><span class="lineno">  353</span>        <span class="comment">// results[i] = threadPool.push(job);</span></div>
+<div class="line"><span class="lineno">  354</span> </div>
+<div class="line"><span class="lineno">  355</span>        <span class="comment">// not needed if thread pool is used</span></div>
+<div class="line"><span class="lineno">  356</span>        std::packaged_task&lt;resultType(<span class="keywordtype">int</span>)&gt; task(job);</div>
+<div class="line"><span class="lineno">  357</span>        results[i] = task.get_future();</div>
+<div class="line"><span class="lineno">  358</span>        std::thread thread(std::move(task), i);</div>
+<div class="line"><span class="lineno">  359</span>        jobs.emplace_back(std::move(thread));</div>
+<div class="line"><span class="lineno">  360</span>    }</div>
+<div class="line"><span class="lineno">  361</span> </div>
+<div class="line"><span class="lineno">  362</span>    <span class="comment">// check return codes from jobs</span></div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>    <span class="comment">// not needed if thread pool is used</span></div>
+<div class="line"><span class="lineno">  365</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; t : jobs)</div>
+<div class="line"><span class="lineno">  366</span>        t.join();</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; results.size(); ++i) {</div>
+<div class="line"><span class="lineno">  369</span>        results[i].wait();</div>
+<div class="line"><span class="lineno">  370</span>    }</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; results.size(); ++i) {</div>
+<div class="line"><span class="lineno">  373</span>        QL_REQUIRE(results[i].valid(), <span class="stringliteral">&quot;internal error: did not get a valid result&quot;</span>);</div>
+<div class="line"><span class="lineno">  374</span>        <span class="keywordtype">int</span> rc = results[i].get();</div>
+<div class="line"><span class="lineno">  375</span>        QL_REQUIRE(rc == 0, <span class="stringliteral">&quot;error: thread &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; exited with return code &quot;</span> &lt;&lt; rc</div>
+<div class="line"><span class="lineno">  376</span>                                             &lt;&lt; <span class="stringliteral">&quot;. Check for structured errors from &#39;MultiThreaded Valuation Engine&#39;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  377</span>    }</div>
+<div class="line"><span class="lineno">  378</span> </div>
+<div class="line"><span class="lineno">  379</span>    <span class="comment">// stop the thread pool, wait for unfinished jobs</span></div>
+<div class="line"><span class="lineno">  380</span> </div>
+<div class="line"><span class="lineno">  381</span>    <span class="comment">// LOG(&quot;Stop thread pool&quot;);</span></div>
+<div class="line"><span class="lineno">  382</span>    <span class="comment">// threadPool.stop(true);</span></div>
+<div class="line"><span class="lineno">  383</span> </div>
+<div class="line"><span class="lineno">  384</span>    <span class="comment">// set updated pricing stats in original portfolio</span></div>
+<div class="line"><span class="lineno">  385</span> </div>
+<div class="line"><span class="lineno">  386</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Update pricing stats of trades.&quot;</span>);</div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [tid, t] : portfolio-&gt;trades()) {</div>
+<div class="line"><span class="lineno">  389</span>        <span class="keyword">auto</span> p = pricingStats[tid];</div>
+<div class="line"><span class="lineno">  390</span>        std::size_t n = p.first;</div>
+<div class="line"><span class="lineno">  391</span>        boost::timer::nanosecond_type d = p.second;</div>
+<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; w : workerPricingStats) {</div>
+<div class="line"><span class="lineno">  393</span>            <span class="keyword">auto</span> p = w.find(tid);</div>
+<div class="line"><span class="lineno">  394</span>            <span class="keywordflow">if</span> (p != w.end()) {</div>
+<div class="line"><span class="lineno">  395</span>                n += p-&gt;second.first;</div>
+<div class="line"><span class="lineno">  396</span>                d += p-&gt;second.second;</div>
+<div class="line"><span class="lineno">  397</span>            }</div>
+<div class="line"><span class="lineno">  398</span>        }</div>
+<div class="line"><span class="lineno">  399</span>        t-&gt;resetPricingStats(n, d);</div>
+<div class="line"><span class="lineno">  400</span>    }</div>
+<div class="line"><span class="lineno">  401</span> </div>
+<div class="line"><span class="lineno">  402</span>    <span class="comment">// log timings and return the result mini-cubes</span></div>
+<div class="line"><span class="lineno">  403</span> </div>
+<div class="line"><span class="lineno">  404</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;MultiThreadedValuationEngine::buildCube() successfully finished, timings: &quot;</span></div>
+<div class="line"><span class="lineno">  405</span>        &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(timer.elapsed().wall) / 1.0E9 &lt;&lt; <span class="stringliteral">&quot;s Wall, &quot;</span></div>
+<div class="line"><span class="lineno">  406</span>        &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(timer.elapsed().user) / 1.0E9 &lt;&lt; <span class="stringliteral">&quot;s User, &quot;</span></div>
+<div class="line"><span class="lineno">  407</span>        &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(timer.elapsed().system) / 1.0E9 &lt;&lt; <span class="stringliteral">&quot;s System.&quot;</span>);</div>
+<div class="line"><span class="lineno">  408</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_a164bab4029046f99913e026d067db272"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a164bab4029046f99913e026d067db272">ore::analytics::MultiThreadedValuationEngine::miniCubes_</a></div><div class="ttdeci">std::vector&lt; boost::shared_ptr&lt; ore::analytics::NPVCube &gt; &gt; miniCubes_</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00125">multithreadedvaluationengine.hpp:125</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_adc1bb1628ca52a87714163eb705d96ce"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#adc1bb1628ca52a87714163eb705d96ce">ore::analytics::MultiThreadedValuationEngine::miniCptyCubes_</a></div><div class="ttdeci">std::vector&lt; boost::shared_ptr&lt; ore::analytics::NPVCube &gt; &gt; miniCptyCubes_</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00127">multithreadedvaluationengine.hpp:127</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_ae2e81baadf7a185df60c1a2cbe7bd3ed"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#ae2e81baadf7a185df60c1a2cbe7bd3ed">ore::analytics::MultiThreadedValuationEngine::miniNettingSetCubes_</a></div><div class="ttdeci">std::vector&lt; boost::shared_ptr&lt; ore::analytics::NPVCube &gt; &gt; miniNettingSetCubes_</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00126">multithreadedvaluationengine.hpp:126</a></div></div>
@@ -844,10 +846,10 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_multi_threaded_valuation_engine_a30978b77ff4ae4476fa37080c9d05089_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_a30978b77ff4ae4476fa37080c9d05089_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_a30978b77ff4ae4476fa37080c9d05089_icgraph" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_a30978b77ff4ae4476fa37080c9d05089_icgraph">
-<area shape="rect" title=" " alt="" coords="724,77,803,102"/>
-<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#aa17a62bfeb01430e5abd317529572b0c" title=" " alt="" coords="476,5,651,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a68ff9ac37fb4ab9ef6713e031d4260a9" title=" " alt="" coords="470,69,657,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_sensitivity_analysis_plus.html#a7454fa08bae704eae05695d4a2b685e1" title=" " alt="" coords="451,133,676,173"/>
+<area shape="rect" title=" " alt="" coords="697,77,776,102"/>
+<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#aa17a62bfeb01430e5abd317529572b0c" title=" " alt="" coords="463,5,637,45"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a68ff9ac37fb4ab9ef6713e031d4260a9" title=" " alt="" coords="457,69,643,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_sensitivity_analysis.html#a9ad70ccfe33c92586f8b8536102fdbc8" title="Generate the Sensitivities." alt="" coords="451,133,649,173"/>
 <area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#a5752a6ba9ab71d2e3552e6ba1797047d" title=" " alt="" coords="228,5,403,45"/>
 <area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#afe30cd07f7a3f42e16a3d987440434ad" title=" " alt="" coords="5,5,180,45"/>
 </map>
@@ -879,10 +881,10 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_multi_threaded_valuation_engine_a38243f31e3b0d2562eb266c380d8bed8_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_a38243f31e3b0d2562eb266c380d8bed8_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_a38243f31e3b0d2562eb266c380d8bed8_icgraph" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_a38243f31e3b0d2562eb266c380d8bed8_icgraph">
-<area shape="rect" title=" " alt="" coords="724,77,819,102"/>
-<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#aa17a62bfeb01430e5abd317529572b0c" title=" " alt="" coords="476,5,651,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a68ff9ac37fb4ab9ef6713e031d4260a9" title=" " alt="" coords="470,69,657,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_sensitivity_analysis_plus.html#a7454fa08bae704eae05695d4a2b685e1" title=" " alt="" coords="451,133,676,173"/>
+<area shape="rect" title=" " alt="" coords="697,77,792,102"/>
+<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#aa17a62bfeb01430e5abd317529572b0c" title=" " alt="" coords="463,5,637,45"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a68ff9ac37fb4ab9ef6713e031d4260a9" title=" " alt="" coords="457,69,643,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_sensitivity_analysis.html#a9ad70ccfe33c92586f8b8536102fdbc8" title="Generate the Sensitivities." alt="" coords="451,133,649,173"/>
 <area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#a5752a6ba9ab71d2e3552e6ba1797047d" title=" " alt="" coords="228,5,403,45"/>
 <area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#afe30cd07f7a3f42e16a3d987440434ad" title=" " alt="" coords="5,5,180,45"/>
 </map>

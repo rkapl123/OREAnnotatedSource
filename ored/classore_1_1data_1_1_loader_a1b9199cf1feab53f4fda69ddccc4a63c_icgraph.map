@@ -1,5 +1,5 @@
 <map id="get" name="get">
-<area shape="rect" id="node1" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="1199,1101,1239,1126"/>
+<area shape="rect" id="node1" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="1199,1151,1239,1177"/>
 <area shape="rect" id="node2" href="$classore_1_1data_1_1_correlation_curve.html#acac20a4bd9ed917e740fda49980377d3" title="Detailed constructor." alt="" coords="701,25,876,65"/>
 <area shape="rect" id="node3" href="$classore_1_1data_1_1_default_curve.html#a0fb79c48d8e8b4debf08bd87c4bdd3c8" title="Detailed constructor." alt="" coords="712,111,865,151"/>
 <area shape="rect" id="node4" href="$classore_1_1data_1_1_equity_curve.html#a4fd38f7c9e899d6c320d49ca88e0b5e0" title="Detailed constructor." alt="" coords="975,1252,1126,1292"/>
@@ -42,11 +42,13 @@
 <area shape="rect" id="node48" href="$classore_1_1data_1_1_commodity_curve.html#a8f12d0e659e33dda4a8a1a90005acbe7" title="Get the configured quotes. If filter is true, remove tenor based quotes and quotes with expiry before..." alt="" coords="961,2276,1140,2316"/>
 <area shape="rect" id="node53" href="$classore_1_1data_1_1_commodity_curve.html#a9c85da3df3c4e4a6a8c9b8a597823852" title="Populate data with dates and prices from the loader." alt="" coords="699,2340,878,2380"/>
 <area shape="rect" id="node54" href="$classore_1_1data_1_1_loader.html#acb476f7db0733b669e38e0a4359b5745" title="Default implementation, returns false if get throws or returns a null pointer." alt="" coords="1029,175,1072,201"/>
-<area shape="rect" id="node55" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#a035a09494a019bf91a7e48c09fc7d1d8" title="Get a shift quote value from the configured quotes." alt="" coords="959,2391,1143,2431"/>
+<area shape="rect" id="node55" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#a7bedf4af378b26f30fa5cd61bedb28ff" title="Build ATM optionlet curve from optionlet vol." alt="" coords="959,2391,1143,2431"/>
+<area shape="rect" id="node56" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#a8822852df6c2c4fb170cf3acc3787721" title="Build optionlet surface from optionlet vol." alt="" coords="959,2455,1143,2495"/>
+<area shape="rect" id="node57" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#a035a09494a019bf91a7e48c09fc7d1d8" title="Get a shift quote value from the configured quotes." alt="" coords="959,2519,1143,2559"/>
 <area shape="rect" id="node9" href="$classore_1_1data_1_1_yield_curve.html#a9926d222ab68411efb749aa1e6cbd0b1" title=" " alt="" coords="207,628,373,668"/>
 <area shape="rect" id="node10" href="$classore_1_1data_1_1_yield_curve.html#a4b705bf1c5123b7cd7eaab64eca1dd5b" title="Constructor." alt="" coords="5,1055,148,1095"/>
-<area shape="rect" id="node23" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#af3fdea2a8fc37055a1a2b678a8847f87" title="Build ATM optionlet curve." alt="" coords="697,1444,881,1484"/>
-<area shape="rect" id="node24" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#a218a8e0cd7fd4dcc18086864260e25eb" title="Build optionlet surface." alt="" coords="697,1508,881,1548"/>
+<area shape="rect" id="node23" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#ac14d1bfe54c022e24eb543a9e7190f2a" title="Build ATM optionlet curve from term vol." alt="" coords="697,1444,881,1484"/>
+<area shape="rect" id="node24" href="$classore_1_1data_1_1_cap_floor_vol_curve.html#a656cb9f94a85ba3f851859064eeae9bf" title="Build optionlet surface from term vol." alt="" coords="697,1508,881,1548"/>
 <area shape="rect" id="node29" href="$classore_1_1data_1_1_inflation_cap_floor_vol_curve.html#a88fc31fe7b0bb10f152b89988b83ab2e" title=" " alt="" coords="675,1604,903,1644"/>
 <area shape="rect" id="node32" href="$classore_1_1data_1_1_f_x_vol_curve.html#af8a8fa2b7d9d22dad02c8b6341e6ea54" title=" " alt="" coords="715,1796,862,1836"/>
 <area shape="rect" id="node33" href="$classore_1_1data_1_1_f_x_vol_curve.html#a7ee4c7d8a2c13896b1e241036efc8004" title="Detailed constructor." alt="" coords="456,1796,603,1836"/>

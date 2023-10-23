@@ -97,7 +97,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_return_configuration__coll__graph.png" border="0" usemap="#a_return_configuration_coll__map" alt="Collaboration graph"/></div>
 <map name="a_return_configuration_coll__map" id="a_return_configuration_coll__map">
-<area shape="rect" title="Return type for historical scenario generation (absolute, relative, log)" alt="" coords="73,343,234,456"/>
+<area shape="rect" title="Return type for historical scenario generation (absolute, relative, log)" alt="" coords="73,343,234,471"/>
 <area shape="rect" title=" " alt="" coords="70,225,237,280"/>
 <area shape="rect" title=" " alt="" coords="5,108,83,148"/>
 <area shape="rect" title=" " alt="" coords="107,108,199,148"/>
@@ -128,6 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f45fd8b98b12fe253284c174b7c41b5"><td class="memItemLeft" align="right" valign="top">QuantLib::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_return_configuration.html#a5f45fd8b98b12fe253284c174b7c41b5">applyReturn</a> (const <a class="el" href="classore_1_1analytics_1_1_risk_factor_key.html">RiskFactorKey</a> &amp;key, const QuantLib::Real baseValue, const QuantLib::Real <a class="el" href="classore_1_1analytics_1_1_return_configuration.html#aec9c57e2613e44495a7639174615e5a0">returnValue</a>) const</td></tr>
 <tr class="memdesc:a5f45fd8b98b12fe253284c174b7c41b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply return from v1, v2 to base value  <a href="classore_1_1analytics_1_1_return_configuration.html#a5f45fd8b98b12fe253284c174b7c41b5">More...</a><br /></td></tr>
 <tr class="separator:a5f45fd8b98b12fe253284c174b7c41b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d18986aa62767aabf696c1b65fe157"><td class="memItemLeft" align="right" valign="top">const std::map&lt; <a class="el" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238c">RiskFactorKey::KeyType</a>, <a class="el" href="classore_1_1analytics_1_1_return_configuration.html#a36a419f0b50a0c1d2d4cf712e0ba64cc">ReturnType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_return_configuration.html#aa3d18986aa62767aabf696c1b65fe157">returnTypes</a> () const</td></tr>
+<tr class="memdesc:aa3d18986aa62767aabf696c1b65fe157"><td class="mdescLeft">&#160;</td><td class="mdescRight">get return types  <a href="classore_1_1analytics_1_1_return_configuration.html#aa3d18986aa62767aabf696c1b65fe157">More...</a><br /></td></tr>
+<tr class="separator:aa3d18986aa62767aabf696c1b65fe157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -224,7 +227,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   58</span>                   {<a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238caae3e9d76749d0836ed0a77d47db75807">RiskFactorKey::KeyType::CommodityVolatility</a>, <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_return_configuration.html#a36a419f0b50a0c1d2d4cf712e0ba64cca2ca9469819fb0fb61ff98e914a7ccca0">ReturnConfiguration::ReturnType::Relative</a>},</div>
 <div class="line"><span class="lineno">   59</span>                   {<a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238cacd59a2a4ff9ac8cc9915a32422983f23">RiskFactorKey::KeyType::SecuritySpread</a>, <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_return_configuration.html#a36a419f0b50a0c1d2d4cf712e0ba64ccab51ca26c6c89cfc9bec338f7a0d3e0c8">ReturnConfiguration::ReturnType::Absolute</a>},</div>
 <div class="line"><span class="lineno">   60</span>                   {<a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca5f750c3076b1c419d3d1684019d36b16">RiskFactorKey::KeyType::Correlation</a>, <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_return_configuration.html#a36a419f0b50a0c1d2d4cf712e0ba64ccab51ca26c6c89cfc9bec338f7a0d3e0c8">ReturnConfiguration::ReturnType::Absolute</a>}}) {}</div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_return_configuration_html_a2ad118e08bc9ab609c97c2f86f6d9193"><div class="ttname"><a href="classore_1_1analytics_1_1_return_configuration.html#a2ad118e08bc9ab609c97c2f86f6d9193">ore::analytics::ReturnConfiguration::returnType_</a></div><div class="ttdeci">const std::map&lt; RiskFactorKey::KeyType, ReturnType &gt; returnType_</div><div class="ttdef"><b>Definition:</b> <a href="historicalscenariogenerator_8hpp_source.html#l00062">historicalscenariogenerator.hpp:62</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_return_configuration_html_a2ad118e08bc9ab609c97c2f86f6d9193"><div class="ttname"><a href="classore_1_1analytics_1_1_return_configuration.html#a2ad118e08bc9ab609c97c2f86f6d9193">ore::analytics::ReturnConfiguration::returnType_</a></div><div class="ttdeci">const std::map&lt; RiskFactorKey::KeyType, ReturnType &gt; returnType_</div><div class="ttdef"><b>Definition:</b> <a href="historicalscenariogenerator_8hpp_source.html#l00065">historicalscenariogenerator.hpp:65</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_risk_factor_key_html_aab0feaba617470cb4aa830dc5935238ca07cf31a470614797e8fde5ef0ec16d00"><div class="ttname"><a href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca07cf31a470614797e8fde5ef0ec16d00">ore::analytics::RiskFactorKey::KeyType::YoYInflationCapFloorVolatility</a></div><div class="ttdeci">@ YoYInflationCapFloorVolatility</div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_risk_factor_key_html_aab0feaba617470cb4aa830dc5935238ca093e4fe6b3d4a9ec87bc625fc3cd57c4"><div class="ttname"><a href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca093e4fe6b3d4a9ec87bc625fc3cd57c4">ore::analytics::RiskFactorKey::KeyType::SwaptionVolatility</a></div><div class="ttdeci">@ SwaptionVolatility</div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_risk_factor_key_html_aab0feaba617470cb4aa830dc5935238ca1865917ae0607c5cd6bda79dd0ca7fa3"><div class="ttname"><a href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca1865917ae0607c5cd6bda79dd0ca7fa3">ore::analytics::RiskFactorKey::KeyType::FXSpot</a></div><div class="ttdeci">@ FXSpot</div></div>
@@ -376,9 +379,10 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_icgraph" id="aclassore_1_1analytics_1_1_return_configuration_aec9c57e2613e44495a7639174615e5a0_icgraph">
-<area shape="rect" title=" " alt="" coords="355,31,443,56"/>
-<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#a5f45fd8b98b12fe253284c174b7c41b5" title="apply return from v1, v2 to base value" alt="" coords="216,5,307,31"/>
-<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title="Return the next scenario for the given date." alt="" coords="5,23,168,63"/>
+<area shape="rect" title=" " alt="" coords="623,31,711,56"/>
+<area shape="rect" href="classore_1_1analytics_1_1_return_configuration.html#a5f45fd8b98b12fe253284c174b7c41b5" title="apply return from v1, v2 to base value" alt="" coords="484,5,575,31"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title="Return the next scenario for the given date." alt="" coords="273,23,436,63"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator_transform.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title=" " alt="" coords="5,23,225,63"/>
 </map>
 </div>
 
@@ -479,8 +483,45 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_icgraph" id="aclassore_1_1analytics_1_1_return_configuration_a5f45fd8b98b12fe253284c174b7c41b5_icgraph">
-<area shape="rect" title="apply return from v1, v2 to base value" alt="" coords="216,13,307,38"/>
-<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title="Return the next scenario for the given date." alt="" coords="5,5,168,45"/>
+<area shape="rect" title="apply return from v1, v2 to base value" alt="" coords="484,13,575,38"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title="Return the next scenario for the given date." alt="" coords="273,5,436,45"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator_transform.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title=" " alt="" coords="5,5,225,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa3d18986aa62767aabf696c1b65fe157" name="aa3d18986aa62767aabf696c1b65fe157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d18986aa62767aabf696c1b65fe157">&#9670;&#160;</a></span>returnTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::map&lt; <a class="el" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238c">RiskFactorKey::KeyType</a>, <a class="el" href="classore_1_1analytics_1_1_return_configuration.html#a36a419f0b50a0c1d2d4cf712e0ba64cc">ReturnConfiguration::ReturnType</a> &gt; returnTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get return types </p>
+
+<p class="definition">Definition at line <a class="el" href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html#l00140">140</a> of file <a class="el" href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html">historicalscenariogenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>                                                                                                         {</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_return_configuration.html#a2ad118e08bc9ab609c97c2f86f6d9193">returnType_</a>;</div>
+<div class="line"><span class="lineno">  142</span>}</div>
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1analytics_1_1_return_configuration_aa3d18986aa62767aabf696c1b65fe157_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_return_configuration_aa3d18986aa62767aabf696c1b65fe157_icgraph" alt=""/></div>
+<map name="aclassore_1_1analytics_1_1_return_configuration_aa3d18986aa62767aabf696c1b65fe157_icgraph" id="aclassore_1_1analytics_1_1_return_configuration_aa3d18986aa62767aabf696c1b65fe157_icgraph">
+<area shape="rect" title="get return types" alt="" coords="484,13,575,38"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title="Return the next scenario for the given date." alt="" coords="273,5,436,45"/>
+<area shape="rect" href="classore_1_1analytics_1_1_historical_scenario_generator_transform.html#a068aeee5da28b61cf8ba2ae9dd5bf61a" title=" " alt="" coords="5,5,225,45"/>
 </map>
 </div>
 
@@ -512,14 +553,14 @@ Private Attributes</h2></td></tr>
 
 <p>Perform checks on key. </p>
 
-<p class="definition">Definition at line <a class="el" href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html#l00140">140</a> of file <a class="el" href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html">historicalscenariogenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  140</span>                                                              {</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>    <span class="keyword">auto</span> keyType = key.keytype;</div>
-<div class="line"><span class="lineno">  143</span>    QL_REQUIRE(keyType != <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca6adf97f83acf6453d4a6a4b1070f3754">RiskFactorKey::KeyType::None</a>, <span class="stringliteral">&quot;unsupported key type none for key &quot;</span> &lt;&lt; key);</div>
-<div class="line"><span class="lineno">  144</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1analytics_1_1_return_configuration.html#a2ad118e08bc9ab609c97c2f86f6d9193">returnType_</a>.find(keyType) != <a class="code hl_variable" href="classore_1_1analytics_1_1_return_configuration.html#a2ad118e08bc9ab609c97c2f86f6d9193">returnType_</a>.end(),</div>
-<div class="line"><span class="lineno">  145</span>               <span class="stringliteral">&quot;ReturnConfiguration: key type &quot;</span> &lt;&lt; keyType &lt;&lt; <span class="stringliteral">&quot; for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; not found&quot;</span>);</div>
-<div class="line"><span class="lineno">  146</span>}</div>
+<p class="definition">Definition at line <a class="el" href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html#l00157">157</a> of file <a class="el" href="orea_2scenario_2historicalscenariogenerator_8cpp_source.html">historicalscenariogenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>                                                              {</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="keyword">auto</span> keyType = key.keytype;</div>
+<div class="line"><span class="lineno">  160</span>    QL_REQUIRE(keyType != <a class="code hl_enumvalue" href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca6adf97f83acf6453d4a6a4b1070f3754">RiskFactorKey::KeyType::None</a>, <span class="stringliteral">&quot;unsupported key type none for key &quot;</span> &lt;&lt; key);</div>
+<div class="line"><span class="lineno">  161</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1analytics_1_1_return_configuration.html#a2ad118e08bc9ab609c97c2f86f6d9193">returnType_</a>.find(keyType) != <a class="code hl_variable" href="classore_1_1analytics_1_1_return_configuration.html#a2ad118e08bc9ab609c97c2f86f6d9193">returnType_</a>.end(),</div>
+<div class="line"><span class="lineno">  162</span>               <span class="stringliteral">&quot;ReturnConfiguration: key type &quot;</span> &lt;&lt; keyType &lt;&lt; <span class="stringliteral">&quot; for key &quot;</span> &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; not found&quot;</span>);</div>
+<div class="line"><span class="lineno">  163</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_risk_factor_key_html_aab0feaba617470cb4aa830dc5935238ca6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="classore_1_1analytics_1_1_risk_factor_key.html#aab0feaba617470cb4aa830dc5935238ca6adf97f83acf6453d4a6a4b1070f3754">ore::analytics::RiskFactorKey::KeyType::None</a></div><div class="ttdeci">@ None</div></div>
 </div><!-- fragment -->
 </div>
@@ -545,7 +586,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="historicalscenariogenerator_8hpp_source.html#l00062">62</a> of file <a class="el" href="historicalscenariogenerator_8hpp_source.html">historicalscenariogenerator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="historicalscenariogenerator_8hpp_source.html#l00065">65</a> of file <a class="el" href="historicalscenariogenerator_8hpp_source.html">historicalscenariogenerator.hpp</a>.</p>
 
 </div>
 </div>

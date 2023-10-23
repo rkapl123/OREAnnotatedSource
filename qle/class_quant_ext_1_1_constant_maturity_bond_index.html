@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p ><a class="el" href="class_quant_ext_1_1_constant.html" title="Constant-interpolation factory and traits">Constant</a> Maturity Bond Index. </p>
 <p >The purpose of this object is converting generic bond prices into yields and to use the yields as fixings in the context of floating rate coupons </p>
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00196">196</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00199">199</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a573a5f41aaf4be5f951ffa00edd16f8f" name="a573a5f41aaf4be5f951ffa00edd16f8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a573a5f41aaf4be5f951ffa00edd16f8f">&#9670;&#160;</a></span>ConstantMaturityBondIndex()</h2>
@@ -274,33 +274,33 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00198">198</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  217</span>      : <a class="code hl_class" href="class_interest_rate_index.html">InterestRateIndex</a>(familyName, tenor, settlementDays, currency, fixingCalendar, dayCounter),</div>
-<div class="line"><span class="lineno">  218</span>    <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">convention_</a>(<a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a829d41c311811fcfeb79a4398b581afa">convention</a>), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">endOfMonth_</a>(<a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a76bf4d1422680b11983bf2908b42a9d5">endOfMonth</a>),</div>
-<div class="line"><span class="lineno">  219</span>    <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>(<a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a1b9d5f7a9b746c04b72283dd932df5c6">bond</a>), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a4017b03bddec618f5120a549c1a371e8">compounding_</a>(compounding), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ae358763dc753768bb42e898365204a9a">frequency_</a>(frequency),</div>
-<div class="line"><span class="lineno">  220</span>    <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a9ee5ac7e44b518c6da03615672cb6e9b">accuracy_</a>(accuracy), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ad1fbba98763c2a0de29a5700ad331942">maxEvaluations_</a>(maxEvaluations), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a3bcba80d1781db1260ee5887e9e4ee5f">guess_</a>(guess), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0c18defc323fa8ed3cfb7e2e96816d5d">priceType_</a>(priceType) {</div>
-<div class="line"><span class="lineno">  221</span>        std::ostringstream o;</div>
-<div class="line"><span class="lineno">  222</span>    o &lt;&lt; familyName_ &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; tenor_;</div>
-<div class="line"><span class="lineno">  223</span>    name_ = o.str();</div>
-<div class="line"><span class="lineno">  224</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>) {</div>
-<div class="line"><span class="lineno">  225</span>        registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>);</div>
-<div class="line"><span class="lineno">  226</span>        <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">bondStartDate_</a> = <a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a1b9d5f7a9b746c04b72283dd932df5c6">bond</a>-&gt;startDate();</div>
-<div class="line"><span class="lineno">  227</span>    }</div>
-<div class="line"><span class="lineno">  228</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00201">201</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  220</span>      : <a class="code hl_class" href="class_interest_rate_index.html">InterestRateIndex</a>(familyName, tenor, settlementDays, currency, fixingCalendar, dayCounter),</div>
+<div class="line"><span class="lineno">  221</span>    <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">convention_</a>(<a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a829d41c311811fcfeb79a4398b581afa">convention</a>), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">endOfMonth_</a>(<a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a76bf4d1422680b11983bf2908b42a9d5">endOfMonth</a>),</div>
+<div class="line"><span class="lineno">  222</span>    <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>(<a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a1b9d5f7a9b746c04b72283dd932df5c6">bond</a>), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a4017b03bddec618f5120a549c1a371e8">compounding_</a>(compounding), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ae358763dc753768bb42e898365204a9a">frequency_</a>(frequency),</div>
+<div class="line"><span class="lineno">  223</span>    <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a9ee5ac7e44b518c6da03615672cb6e9b">accuracy_</a>(accuracy), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ad1fbba98763c2a0de29a5700ad331942">maxEvaluations_</a>(maxEvaluations), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a3bcba80d1781db1260ee5887e9e4ee5f">guess_</a>(guess), <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0c18defc323fa8ed3cfb7e2e96816d5d">priceType_</a>(priceType) {</div>
+<div class="line"><span class="lineno">  224</span>        std::ostringstream o;</div>
+<div class="line"><span class="lineno">  225</span>    o &lt;&lt; familyName_ &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; tenor_;</div>
+<div class="line"><span class="lineno">  226</span>    name_ = o.str();</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>) {</div>
+<div class="line"><span class="lineno">  228</span>        registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>);</div>
+<div class="line"><span class="lineno">  229</span>        <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">bondStartDate_</a> = <a class="code hl_function" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a1b9d5f7a9b746c04b72283dd932df5c6">bond</a>-&gt;startDate();</div>
+<div class="line"><span class="lineno">  230</span>    }</div>
+<div class="line"><span class="lineno">  231</span>    }</div>
 <div class="ttc" id="aclass_interest_rate_index_html"><div class="ttname"><a href="class_interest_rate_index.html">InterestRateIndex</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a0c18defc323fa8ed3cfb7e2e96816d5d"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0c18defc323fa8ed3cfb7e2e96816d5d">QuantExt::ConstantMaturityBondIndex::priceType_</a></div><div class="ttdeci">Bond::Price::Type priceType_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00256">bondindex.hpp:256</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a0f9cce4f14d75f9e75dcba9a025ee764"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">QuantExt::ConstantMaturityBondIndex::endOfMonth_</a></div><div class="ttdeci">bool endOfMonth_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00249">bondindex.hpp:249</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a1b9d5f7a9b746c04b72283dd932df5c6"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a1b9d5f7a9b746c04b72283dd932df5c6">QuantExt::ConstantMaturityBondIndex::bond</a></div><div class="ttdeci">const ext::shared_ptr&lt; Bond &gt; &amp; bond() const</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00244">bondindex.hpp:244</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a3bcba80d1781db1260ee5887e9e4ee5f"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a3bcba80d1781db1260ee5887e9e4ee5f">QuantExt::ConstantMaturityBondIndex::guess_</a></div><div class="ttdeci">Real guess_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00255">bondindex.hpp:255</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a4017b03bddec618f5120a549c1a371e8"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a4017b03bddec618f5120a549c1a371e8">QuantExt::ConstantMaturityBondIndex::compounding_</a></div><div class="ttdeci">Compounding compounding_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00251">bondindex.hpp:251</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a76bf4d1422680b11983bf2908b42a9d5"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a76bf4d1422680b11983bf2908b42a9d5">QuantExt::ConstantMaturityBondIndex::endOfMonth</a></div><div class="ttdeci">bool endOfMonth() const</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00243">bondindex.hpp:243</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a80921adec5b2e5641608d33585ec2a17"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">QuantExt::ConstantMaturityBondIndex::convention_</a></div><div class="ttdeci">BusinessDayConvention convention_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00248">bondindex.hpp:248</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a829d41c311811fcfeb79a4398b581afa"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a829d41c311811fcfeb79a4398b581afa">QuantExt::ConstantMaturityBondIndex::convention</a></div><div class="ttdeci">BusinessDayConvention convention() const</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00242">bondindex.hpp:242</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a925f3c7db8445046511d638ef946a592"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">QuantExt::ConstantMaturityBondIndex::bondStartDate_</a></div><div class="ttdeci">Date bondStartDate_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00257">bondindex.hpp:257</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a9ee5ac7e44b518c6da03615672cb6e9b"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a9ee5ac7e44b518c6da03615672cb6e9b">QuantExt::ConstantMaturityBondIndex::accuracy_</a></div><div class="ttdeci">Real accuracy_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00253">bondindex.hpp:253</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_ac1537062854ef9919d4ec63f83f88a3b"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">QuantExt::ConstantMaturityBondIndex::bond_</a></div><div class="ttdeci">ext::shared_ptr&lt; Bond &gt; bond_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00250">bondindex.hpp:250</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_ad1fbba98763c2a0de29a5700ad331942"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#ad1fbba98763c2a0de29a5700ad331942">QuantExt::ConstantMaturityBondIndex::maxEvaluations_</a></div><div class="ttdeci">Size maxEvaluations_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00254">bondindex.hpp:254</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_ae358763dc753768bb42e898365204a9a"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#ae358763dc753768bb42e898365204a9a">QuantExt::ConstantMaturityBondIndex::frequency_</a></div><div class="ttdeci">Frequency frequency_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00252">bondindex.hpp:252</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a0c18defc323fa8ed3cfb7e2e96816d5d"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0c18defc323fa8ed3cfb7e2e96816d5d">QuantExt::ConstantMaturityBondIndex::priceType_</a></div><div class="ttdeci">Bond::Price::Type priceType_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00259">bondindex.hpp:259</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a0f9cce4f14d75f9e75dcba9a025ee764"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">QuantExt::ConstantMaturityBondIndex::endOfMonth_</a></div><div class="ttdeci">bool endOfMonth_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00252">bondindex.hpp:252</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a1b9d5f7a9b746c04b72283dd932df5c6"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a1b9d5f7a9b746c04b72283dd932df5c6">QuantExt::ConstantMaturityBondIndex::bond</a></div><div class="ttdeci">const ext::shared_ptr&lt; Bond &gt; &amp; bond() const</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00247">bondindex.hpp:247</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a3bcba80d1781db1260ee5887e9e4ee5f"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a3bcba80d1781db1260ee5887e9e4ee5f">QuantExt::ConstantMaturityBondIndex::guess_</a></div><div class="ttdeci">Real guess_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00258">bondindex.hpp:258</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a4017b03bddec618f5120a549c1a371e8"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a4017b03bddec618f5120a549c1a371e8">QuantExt::ConstantMaturityBondIndex::compounding_</a></div><div class="ttdeci">Compounding compounding_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00254">bondindex.hpp:254</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a76bf4d1422680b11983bf2908b42a9d5"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a76bf4d1422680b11983bf2908b42a9d5">QuantExt::ConstantMaturityBondIndex::endOfMonth</a></div><div class="ttdeci">bool endOfMonth() const</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00246">bondindex.hpp:246</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a80921adec5b2e5641608d33585ec2a17"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">QuantExt::ConstantMaturityBondIndex::convention_</a></div><div class="ttdeci">BusinessDayConvention convention_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00251">bondindex.hpp:251</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a829d41c311811fcfeb79a4398b581afa"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a829d41c311811fcfeb79a4398b581afa">QuantExt::ConstantMaturityBondIndex::convention</a></div><div class="ttdeci">BusinessDayConvention convention() const</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00245">bondindex.hpp:245</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a925f3c7db8445046511d638ef946a592"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">QuantExt::ConstantMaturityBondIndex::bondStartDate_</a></div><div class="ttdeci">Date bondStartDate_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00260">bondindex.hpp:260</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_a9ee5ac7e44b518c6da03615672cb6e9b"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#a9ee5ac7e44b518c6da03615672cb6e9b">QuantExt::ConstantMaturityBondIndex::accuracy_</a></div><div class="ttdeci">Real accuracy_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00256">bondindex.hpp:256</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_ac1537062854ef9919d4ec63f83f88a3b"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">QuantExt::ConstantMaturityBondIndex::bond_</a></div><div class="ttdeci">ext::shared_ptr&lt; Bond &gt; bond_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00253">bondindex.hpp:253</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_ad1fbba98763c2a0de29a5700ad331942"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#ad1fbba98763c2a0de29a5700ad331942">QuantExt::ConstantMaturityBondIndex::maxEvaluations_</a></div><div class="ttdeci">Size maxEvaluations_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00257">bondindex.hpp:257</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_constant_maturity_bond_index_html_ae358763dc753768bb42e898365204a9a"><div class="ttname"><a href="class_quant_ext_1_1_constant_maturity_bond_index.html#ae358763dc753768bb42e898365204a9a">QuantExt::ConstantMaturityBondIndex::frequency_</a></div><div class="ttdeci">Frequency frequency_</div><div class="ttdef"><b>Definition:</b> <a href="bondindex_8hpp_source.html#l00255">bondindex.hpp:255</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -340,11 +340,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8cpp_source.html#l00202">202</a> of file <a class="el" href="bondindex_8cpp_source.html">bondindex.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  202</span>                                                                        {</div>
-<div class="line"><span class="lineno">  203</span>    <span class="comment">// same as IborIndex</span></div>
-<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">return</span> fixingCalendar().advance(valueDate, tenor_, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">convention_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">endOfMonth_</a>);</div>
-<div class="line"><span class="lineno">  205</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bondindex_8cpp_source.html#l00207">207</a> of file <a class="el" href="bondindex_8cpp_source.html">bondindex.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  207</span>                                                                        {</div>
+<div class="line"><span class="lineno">  208</span>    <span class="comment">// same as IborIndex</span></div>
+<div class="line"><span class="lineno">  209</span>    <span class="keywordflow">return</span> fixingCalendar().advance(valueDate, tenor_, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">convention_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">endOfMonth_</a>);</div>
+<div class="line"><span class="lineno">  210</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -372,13 +372,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8cpp_source.html#l00207">207</a> of file <a class="el" href="bondindex_8cpp_source.html">bondindex.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  207</span>                                                                           {</div>
-<div class="line"><span class="lineno">  208</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>, <span class="stringliteral">&quot;cannot forecast ConstantMaturityBondIndex fixing, because underlying bond not set&quot;</span>);</div>
-<div class="line"><span class="lineno">  209</span>    QL_REQUIRE(fixingDate == <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">bondStartDate_</a>, <span class="stringliteral">&quot;bond yield fixing only available at bond start date, &quot;</span></div>
-<div class="line"><span class="lineno">  210</span>           &lt;&lt; io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; != &quot;</span> &lt;&lt; io::iso_date(<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">bondStartDate_</a>));</div>
-<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>-&gt;yield(dayCounter_, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a4017b03bddec618f5120a549c1a371e8">compounding_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ae358763dc753768bb42e898365204a9a">frequency_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a9ee5ac7e44b518c6da03615672cb6e9b">accuracy_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ad1fbba98763c2a0de29a5700ad331942">maxEvaluations_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a3bcba80d1781db1260ee5887e9e4ee5f">guess_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0c18defc323fa8ed3cfb7e2e96816d5d">priceType_</a>);</div>
-<div class="line"><span class="lineno">  212</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bondindex_8cpp_source.html#l00212">212</a> of file <a class="el" href="bondindex_8cpp_source.html">bondindex.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  212</span>                                                                           {</div>
+<div class="line"><span class="lineno">  213</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>, <span class="stringliteral">&quot;cannot forecast ConstantMaturityBondIndex fixing, because underlying bond not set&quot;</span>);</div>
+<div class="line"><span class="lineno">  214</span>    QL_REQUIRE(fixingDate == <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">bondStartDate_</a>, <span class="stringliteral">&quot;bond yield fixing only available at bond start date, &quot;</span></div>
+<div class="line"><span class="lineno">  215</span>           &lt;&lt; io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; != &quot;</span> &lt;&lt; io::iso_date(<a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a925f3c7db8445046511d638ef946a592">bondStartDate_</a>));</div>
+<div class="line"><span class="lineno">  216</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>-&gt;yield(dayCounter_, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a4017b03bddec618f5120a549c1a371e8">compounding_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ae358763dc753768bb42e898365204a9a">frequency_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a9ee5ac7e44b518c6da03615672cb6e9b">accuracy_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ad1fbba98763c2a0de29a5700ad331942">maxEvaluations_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a3bcba80d1781db1260ee5887e9e4ee5f">guess_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0c18defc323fa8ed3cfb7e2e96816d5d">priceType_</a>);</div>
+<div class="line"><span class="lineno">  217</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -397,8 +397,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00242">242</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  242</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">convention_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00245">245</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  245</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a80921adec5b2e5641608d33585ec2a17">convention_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -417,8 +417,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00243">243</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  243</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">endOfMonth_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00246">246</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  246</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#a0f9cce4f14d75f9e75dcba9a025ee764">endOfMonth_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -437,8 +437,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00244">244</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  244</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00247">247</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  247</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_constant_maturity_bond_index.html#ac1537062854ef9919d4ec63f83f88a3b">bond_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -474,7 +474,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00248">248</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00251">251</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00249">249</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00252">252</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00250">250</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00253">253</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -546,7 +546,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00251">251</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00254">254</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -570,7 +570,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00252">252</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00255">255</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -594,7 +594,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00253">253</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00256">256</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00254">254</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00257">257</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -642,7 +642,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00255">255</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00258">258</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -666,7 +666,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00256">256</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00259">259</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -690,7 +690,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00257">257</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00260">260</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00258">258</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00261">261</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00259">259</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bondindex_8hpp_source.html#l00262">262</a> of file <a class="el" href="bondindex_8hpp_source.html">bondindex.hpp</a>.</p>
 
 </div>
 </div>

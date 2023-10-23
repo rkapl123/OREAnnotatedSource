@@ -201,26 +201,24 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="proxyoptionletvolatility_8cpp_source.html#l00051">51</a> of file <a class="el" href="proxyoptionletvolatility_8cpp_source.html">proxyoptionletvolatility.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>    : OptionletVolatilityStructure(baseVol-&gt;businessDayConvention(), baseVol-&gt;dayCounter()), <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a2d53be2290b10e1acc9d254d60e6b1e7">baseVol_</a>(baseVol),</div>
-<div class="line"><span class="lineno">   57</span>      <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a8b3c55af84b30ba9f3a0c9eb327c80d7">baseIndex_</a>(baseIndex), <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a6ce14d6debb0ab86b955af40876565af">targetIndex_</a>(targetIndex), <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a7914ad8e5dcdac9d893e69e0152ac68c">baseRateComputationPeriod_</a>(baseRateComputationPeriod),</div>
-<div class="line"><span class="lineno">   58</span>      <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#af0869e9b72328c7f98ef9005a76039c2">targetRateComputationPeriod_</a>(targetRateComputationPeriod) {</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    QL_REQUIRE(baseIndex != <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;ProxyOptionletVolatility: no base index given.&quot;</span>);</div>
-<div class="line"><span class="lineno">   61</span>    QL_REQUIRE(targetIndex != <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;ProxyOptionletVolatility: no target index given.&quot;</span>);</div>
-<div class="line"><span class="lineno">   62</span>    QL_REQUIRE(boost::dynamic_pointer_cast&lt;QuantLib::OvernightIndex&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a6ce14d6debb0ab86b955af40876565af">targetIndex_</a>) == <span class="keyword">nullptr</span> ||</div>
-<div class="line"><span class="lineno">   63</span>                   targetRateComputationPeriod != 0 * Days,</div>
-<div class="line"><span class="lineno">   64</span>               <span class="stringliteral">&quot;ProxyOptionletVolatility: target index is OIS (&quot;</span></div>
-<div class="line"><span class="lineno">   65</span>                   &lt;&lt; targetIndex-&gt;name() &lt;&lt; <span class="stringliteral">&quot;), so targetRateComputationPeriod must be given and != 0D.&quot;</span>);</div>
-<div class="line"><span class="lineno">   66</span>    QL_REQUIRE(boost::dynamic_pointer_cast&lt;QuantLib::OvernightIndex&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a8b3c55af84b30ba9f3a0c9eb327c80d7">baseIndex_</a>) == <span class="keyword">nullptr</span> ||</div>
-<div class="line"><span class="lineno">   67</span>                   baseRateComputationPeriod != 0 * Days,</div>
-<div class="line"><span class="lineno">   68</span>               <span class="stringliteral">&quot;ProxyOptionletVolatility: base index is OIS (&quot;</span></div>
-<div class="line"><span class="lineno">   69</span>                   &lt;&lt; baseIndex-&gt;name() &lt;&lt; <span class="stringliteral">&quot;), so baseRateComputationPeriod must be given and != 0D.&quot;</span>);</div>
-<div class="line"><span class="lineno">   70</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a2d53be2290b10e1acc9d254d60e6b1e7">baseVol_</a>);</div>
-<div class="line"><span class="lineno">   71</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a8b3c55af84b30ba9f3a0c9eb327c80d7">baseIndex_</a>);</div>
-<div class="line"><span class="lineno">   72</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a6ce14d6debb0ab86b955af40876565af">targetIndex_</a>);</div>
-<div class="line"><span class="lineno">   73</span>    enableExtrapolation(baseVol-&gt;allowsExtrapolation());</div>
-<div class="line"><span class="lineno">   74</span>}</div>
+<p class="definition">Definition at line <a class="el" href="proxyoptionletvolatility_8cpp_source.html#l00046">46</a> of file <a class="el" href="proxyoptionletvolatility_8cpp_source.html">proxyoptionletvolatility.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>    : OptionletVolatilityStructure(baseVol-&gt;businessDayConvention(), baseVol-&gt;dayCounter()), <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a2d53be2290b10e1acc9d254d60e6b1e7">baseVol_</a>(baseVol),</div>
+<div class="line"><span class="lineno">   52</span>      <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a8b3c55af84b30ba9f3a0c9eb327c80d7">baseIndex_</a>(baseIndex), <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a6ce14d6debb0ab86b955af40876565af">targetIndex_</a>(targetIndex), <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a7914ad8e5dcdac9d893e69e0152ac68c">baseRateComputationPeriod_</a>(baseRateComputationPeriod),</div>
+<div class="line"><span class="lineno">   53</span>      <a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#af0869e9b72328c7f98ef9005a76039c2">targetRateComputationPeriod_</a>(targetRateComputationPeriod) {</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    QL_REQUIRE(baseIndex != <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;ProxyOptionletVolatility: no base index given.&quot;</span>);</div>
+<div class="line"><span class="lineno">   56</span>    QL_REQUIRE(targetIndex != <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;ProxyOptionletVolatility: no target index given.&quot;</span>);</div>
+<div class="line"><span class="lineno">   57</span>    QL_REQUIRE((!isOis(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a6ce14d6debb0ab86b955af40876565af">targetIndex_</a>) &amp;&amp; !isBMA(targetIndex)) || targetRateComputationPeriod != 0 * Days,</div>
+<div class="line"><span class="lineno">   58</span>               <span class="stringliteral">&quot;ProxyOptionletVolatility: target index is OIS or BMA/SIFMA (&quot;</span></div>
+<div class="line"><span class="lineno">   59</span>                   &lt;&lt; targetIndex-&gt;name() &lt;&lt; <span class="stringliteral">&quot;), so targetRateComputationPeriod must be given and != 0D.&quot;</span>);</div>
+<div class="line"><span class="lineno">   60</span>    QL_REQUIRE((!isOis(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a8b3c55af84b30ba9f3a0c9eb327c80d7">baseIndex_</a>) &amp;&amp; !isBMA(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a8b3c55af84b30ba9f3a0c9eb327c80d7">baseIndex_</a>)) || baseRateComputationPeriod != 0 * Days,</div>
+<div class="line"><span class="lineno">   61</span>               <span class="stringliteral">&quot;ProxyOptionletVolatility: base index is OIS or BMA/SIFMA (&quot;</span></div>
+<div class="line"><span class="lineno">   62</span>                   &lt;&lt; baseIndex-&gt;name() &lt;&lt; <span class="stringliteral">&quot;), so baseRateComputationPeriod must be given and != 0D.&quot;</span>);</div>
+<div class="line"><span class="lineno">   63</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a2d53be2290b10e1acc9d254d60e6b1e7">baseVol_</a>);</div>
+<div class="line"><span class="lineno">   64</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a8b3c55af84b30ba9f3a0c9eb327c80d7">baseIndex_</a>);</div>
+<div class="line"><span class="lineno">   65</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a6ce14d6debb0ab86b955af40876565af">targetIndex_</a>);</div>
+<div class="line"><span class="lineno">   66</span>    enableExtrapolation(baseVol-&gt;allowsExtrapolation());</div>
+<div class="line"><span class="lineno">   67</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_proxy_optionlet_volatility_html_a2d53be2290b10e1acc9d254d60e6b1e7"><div class="ttname"><a href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a2d53be2290b10e1acc9d254d60e6b1e7">QuantExt::ProxyOptionletVolatility::baseVol_</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantLib::OptionletVolatilityStructure &gt; baseVol_</div><div class="ttdef"><b>Definition:</b> <a href="proxyoptionletvolatility_8hpp_source.html#l00051">proxyoptionletvolatility.hpp:51</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_proxy_optionlet_volatility_html_a6ce14d6debb0ab86b955af40876565af"><div class="ttname"><a href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a6ce14d6debb0ab86b955af40876565af">QuantExt::ProxyOptionletVolatility::targetIndex_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::IborIndex &gt; targetIndex_</div><div class="ttdef"><b>Definition:</b> <a href="proxyoptionletvolatility_8hpp_source.html#l00053">proxyoptionletvolatility.hpp:53</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_proxy_optionlet_volatility_html_a7914ad8e5dcdac9d893e69e0152ac68c"><div class="ttname"><a href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a7914ad8e5dcdac9d893e69e0152ac68c">QuantExt::ProxyOptionletVolatility::baseRateComputationPeriod_</a></div><div class="ttdeci">QuantLib::Period baseRateComputationPeriod_</div><div class="ttdef"><b>Definition:</b> <a href="proxyoptionletvolatility_8hpp_source.html#l00054">proxyoptionletvolatility.hpp:54</a></div></div>
@@ -498,12 +496,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="proxyoptionletvolatility_8cpp_source.html#l00076">76</a> of file <a class="el" href="proxyoptionletvolatility_8cpp_source.html">proxyoptionletvolatility.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                                                                              {</div>
-<div class="line"><span class="lineno">   77</span>    <span class="comment">// imply a fixing date from the optionTime</span></div>
-<div class="line"><span class="lineno">   78</span>    Date <a class="code hl_function" href="namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = <a class="code hl_function" href="namespace_quant_ext.html#a6be4f3ac72d5ee0b595740e3caad092e">lowerDate</a>(optionTime, <a class="code hl_function" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#af9244ef5e7c166b9bd47a48283472991">referenceDate</a>(), dayCounter());</div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a420507bc93ccaa97795b06cab014649c">smileSectionImpl</a>(fixingDate);</div>
-<div class="line"><span class="lineno">   80</span>}</div>
+<p class="definition">Definition at line <a class="el" href="proxyoptionletvolatility_8cpp_source.html#l00069">69</a> of file <a class="el" href="proxyoptionletvolatility_8cpp_source.html">proxyoptionletvolatility.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                                                                                                              {</div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// imply a fixing date from the optionTime</span></div>
+<div class="line"><span class="lineno">   71</span>    Date <a class="code hl_function" href="namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = <a class="code hl_function" href="namespace_quant_ext.html#a6be4f3ac72d5ee0b595740e3caad092e">lowerDate</a>(optionTime, <a class="code hl_function" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#af9244ef5e7c166b9bd47a48283472991">referenceDate</a>(), dayCounter());</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a420507bc93ccaa97795b06cab014649c">smileSectionImpl</a>(fixingDate);</div>
+<div class="line"><span class="lineno">   73</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_proxy_optionlet_volatility_html_a420507bc93ccaa97795b06cab014649c"><div class="ttname"><a href="class_quant_ext_1_1_proxy_optionlet_volatility.html#a420507bc93ccaa97795b06cab014649c">QuantExt::ProxyOptionletVolatility::smileSectionImpl</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::SmileSection &gt; smileSectionImpl(const QuantLib::Date &amp;optionDate) const override</div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_proxy_optionlet_volatility_html_af9244ef5e7c166b9bd47a48283472991"><div class="ttname"><a href="class_quant_ext_1_1_proxy_optionlet_volatility.html#af9244ef5e7c166b9bd47a48283472991">QuantExt::ProxyOptionletVolatility::referenceDate</a></div><div class="ttdeci">const QuantLib::Date &amp; referenceDate() const override</div><div class="ttdef"><b>Definition:</b> <a href="proxyoptionletvolatility_8hpp_source.html#l00041">proxyoptionletvolatility.hpp:41</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_1_1_zero_inflation_html_a57de786c1c8988b6da9d354282b4b370"><div class="ttname"><a href="namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">QuantExt::ZeroInflation::fixingDate</a></div><div class="ttdeci">QuantLib::Date fixingDate(const QuantLib::Date &amp;d, const QuantLib::Period obsLag, const QuantLib::Frequency freq, bool interpolated)</div><div class="ttdef"><b>Definition:</b> <a href="inflation_8cpp_source.html#l00147">inflation.cpp:147</a></div></div>
@@ -559,10 +557,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="proxyoptionletvolatility_8cpp_source.html#l00101">101</a> of file <a class="el" href="proxyoptionletvolatility_8cpp_source.html">proxyoptionletvolatility.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>                                                                                      {</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> smileSection(optionTime)-&gt;volatility(strike);</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<p class="definition">Definition at line <a class="el" href="proxyoptionletvolatility_8cpp_source.html#l00108">108</a> of file <a class="el" href="proxyoptionletvolatility_8cpp_source.html">proxyoptionletvolatility.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>                                                                                      {</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">return</span> smileSection(optionTime)-&gt;volatility(strike);</div>
+<div class="line"><span class="lineno">  110</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -117,6 +117,8 @@ Macros</h2></td></tr>
 <tr class="separator:ad35802b77dd46f635e61911c18142c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57a8ec7d5e4b4b159ab70c7f5e48e987"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="initbuilders_8hpp.html#a57a8ec7d5e4b4b159ab70c7f5e48e987">ORE_REGISTER_TRS_UNDERLYING_BUILDER</a>(NAME,  CLASS,  OVERWRITE)&#160;&#160;&#160;    ore::data::TrsUnderlyingBuilderFactory::instance().addBuilder(NAME, boost::make_shared&lt;CLASS&gt;(), OVERWRITE);</td></tr>
 <tr class="separator:a57a8ec7d5e4b4b159ab70c7f5e48e987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08deb9543cfee29c11c06aacebb84f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="initbuilders_8hpp.html#aa08deb9543cfee29c11c06aacebb84f1">ORE_REGISTER_COMPUTE_FRAMEWORK_CREATOR</a>(NAME,  CLASS,  OVERWRITE)&#160;&#160;&#160;    QuantExt::ComputeFrameworkRegistry::instance().add(NAME, &amp;QuantExt::createComputeFrameworkCreator&lt;CLASS&gt;, OVERWRITE);</td></tr>
+<tr class="separator:aa08deb9543cfee29c11c06aacebb84f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -453,6 +455,42 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="initbuilders_8hpp_source.html#l00057">57</a> of file <a class="el" href="initbuilders_8hpp_source.html">initbuilders.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa08deb9543cfee29c11c06aacebb84f1" name="aa08deb9543cfee29c11c06aacebb84f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08deb9543cfee29c11c06aacebb84f1">&#9670;&#160;</a></span>ORE_REGISTER_COMPUTE_FRAMEWORK_CREATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORE_REGISTER_COMPUTE_FRAMEWORK_CREATOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CLASS, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OVERWRITE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    QuantExt::ComputeFrameworkRegistry::instance().add(NAME, &amp;QuantExt::createComputeFrameworkCreator&lt;CLASS&gt;, OVERWRITE);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="initbuilders_8hpp_source.html#l00060">60</a> of file <a class="el" href="initbuilders_8hpp_source.html">initbuilders.hpp</a>.</p>
 
 </div>
 </div>

@@ -191,7 +191,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00113">113</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00110">110</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae26e38f89ead35fd7cbe08f68b2e19d7" name="ae26e38f89ead35fd7cbe08f68b2e19d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae26e38f89ead35fd7cbe08f68b2e19d7">&#9670;&#160;</a></span>validate()</h2>
@@ -216,18 +216,18 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8cpp_source.html#l00161">161</a> of file <a class="el" href="trswrapper_8cpp_source.html">trswrapper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  161</span>                                         {</div>
-<div class="line"><span class="lineno">  162</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#ab523039e8f574f9d8a0c7c319f491351">initialPriceCurrency_</a>.empty(), <span class="stringliteral">&quot;empty initial price currency&quot;</span>);</div>
-<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; a : <a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a9b18d1c224fff446fcfef96aa1b7d75e">assetCurrency_</a>)</div>
-<div class="line"><span class="lineno">  164</span>        QL_REQUIRE(!a.empty(), <span class="stringliteral">&quot;empty asset currency&quot;</span>);</div>
-<div class="line"><span class="lineno">  165</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a4742dd6e0effe3bb320aeba886981187">returnCurrency_</a>.empty(), <span class="stringliteral">&quot;empty return currency&quot;</span>);</div>
-<div class="line"><span class="lineno">  166</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a93dac16af17714c084410849f8fdec19">fundingCurrency_</a>.empty(), <span class="stringliteral">&quot;empty funding currency&quot;</span>);</div>
-<div class="line"><span class="lineno">  167</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_a4742dd6e0effe3bb320aeba886981187"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a4742dd6e0effe3bb320aeba886981187">ore::data::TRSWrapper::arguments::returnCurrency_</a></div><div class="ttdeci">QuantLib::Currency returnCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00123">trswrapper.hpp:123</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_a93dac16af17714c084410849f8fdec19"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a93dac16af17714c084410849f8fdec19">ore::data::TRSWrapper::arguments::fundingCurrency_</a></div><div class="ttdeci">QuantLib::Currency fundingCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00127">trswrapper.hpp:127</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_a9b18d1c224fff446fcfef96aa1b7d75e"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a9b18d1c224fff446fcfef96aa1b7d75e">ore::data::TRSWrapper::arguments::assetCurrency_</a></div><div class="ttdeci">std::vector&lt; QuantLib::Currency &gt; assetCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00122">trswrapper.hpp:122</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_ab523039e8f574f9d8a0c7c319f491351"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#ab523039e8f574f9d8a0c7c319f491351">ore::data::TRSWrapper::arguments::initialPriceCurrency_</a></div><div class="ttdeci">QuantLib::Currency initialPriceCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00121">trswrapper.hpp:121</a></div></div>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8cpp_source.html#l00163">163</a> of file <a class="el" href="trswrapper_8cpp_source.html">trswrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>                                         {</div>
+<div class="line"><span class="lineno">  164</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#ab523039e8f574f9d8a0c7c319f491351">initialPriceCurrency_</a>.empty(), <span class="stringliteral">&quot;empty initial price currency&quot;</span>);</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; a : <a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a9b18d1c224fff446fcfef96aa1b7d75e">assetCurrency_</a>)</div>
+<div class="line"><span class="lineno">  166</span>        QL_REQUIRE(!a.empty(), <span class="stringliteral">&quot;empty asset currency&quot;</span>);</div>
+<div class="line"><span class="lineno">  167</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a4742dd6e0effe3bb320aeba886981187">returnCurrency_</a>.empty(), <span class="stringliteral">&quot;empty return currency&quot;</span>);</div>
+<div class="line"><span class="lineno">  168</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a93dac16af17714c084410849f8fdec19">fundingCurrency_</a>.empty(), <span class="stringliteral">&quot;empty funding currency&quot;</span>);</div>
+<div class="line"><span class="lineno">  169</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_a4742dd6e0effe3bb320aeba886981187"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a4742dd6e0effe3bb320aeba886981187">ore::data::TRSWrapper::arguments::returnCurrency_</a></div><div class="ttdeci">QuantLib::Currency returnCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00120">trswrapper.hpp:120</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_a93dac16af17714c084410849f8fdec19"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a93dac16af17714c084410849f8fdec19">ore::data::TRSWrapper::arguments::fundingCurrency_</a></div><div class="ttdeci">QuantLib::Currency fundingCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00124">trswrapper.hpp:124</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_a9b18d1c224fff446fcfef96aa1b7d75e"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#a9b18d1c224fff446fcfef96aa1b7d75e">ore::data::TRSWrapper::arguments::assetCurrency_</a></div><div class="ttdeci">std::vector&lt; QuantLib::Currency &gt; assetCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00119">trswrapper.hpp:119</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_t_r_s_wrapper_1_1arguments_html_ab523039e8f574f9d8a0c7c319f491351"><div class="ttname"><a href="classore_1_1data_1_1_t_r_s_wrapper_1_1arguments.html#ab523039e8f574f9d8a0c7c319f491351">ore::data::TRSWrapper::arguments::initialPriceCurrency_</a></div><div class="ttdeci">QuantLib::Currency initialPriceCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="trswrapper_8hpp_source.html#l00118">trswrapper.hpp:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -244,7 +244,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00116">116</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00113">113</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00117">117</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00114">114</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00118">118</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00115">115</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00119">119</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00116">116</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00120">120</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00117">117</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00121">121</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00118">118</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00122">122</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00119">119</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00123">123</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00120">120</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00124">124</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00121">121</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00124">124</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00121">121</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -404,7 +404,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00125">125</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00122">122</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00126">126</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00123">123</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00127">127</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00124">124</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00128">128</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00125">125</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -468,7 +468,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00129">129</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00126">126</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -484,7 +484,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00129">129</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00126">126</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -500,7 +500,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00129">129</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00126">126</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00130">130</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00127">127</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +532,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00131">131</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00128">128</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -548,7 +548,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00132">132</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00129">129</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00133">133</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00130">130</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00134">134</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00131">131</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00134">134</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00131">131</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +612,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00135">135</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trswrapper_8hpp_source.html#l00132">132</a> of file <a class="el" href="trswrapper_8hpp_source.html">trswrapper.hpp</a>.</p>
 
 </div>
 </div>

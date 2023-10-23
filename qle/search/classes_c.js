@@ -13,7 +13,7 @@ var searchData=
   ['mccamcurrencyswapengine_10',['McCamCurrencySwapEngine',['../class_quant_ext_1_1_mc_cam_currency_swap_engine.html',1,'QuantExt']]],
   ['mccamfxforwardengine_11',['McCamFxForwardEngine',['../class_quant_ext_1_1_mc_cam_fx_forward_engine.html',1,'QuantExt']]],
   ['mccamfxoptionengine_12',['McCamFxOptionEngine',['../class_quant_ext_1_1_mc_cam_fx_option_engine.html',1,'QuantExt']]],
-  ['mclgmfraengine_13',['McLgmFraEngine',['../class_quant_ext_1_1_mc_lgm_fra_engine.html',1,'QuantExt']]],
+  ['mcenginestats_13',['McEngineStats',['../struct_quant_ext_1_1_mc_engine_stats.html',1,'QuantExt']]],
   ['mclgmnonstandardswaptionengine_14',['McLgmNonstandardSwaptionEngine',['../class_quant_ext_1_1_mc_lgm_nonstandard_swaption_engine.html',1,'QuantExt']]],
   ['mclgmswapengine_15',['McLgmSwapEngine',['../class_quant_ext_1_1_mc_lgm_swap_engine.html',1,'QuantExt']]],
   ['mclgmswaptionengine_16',['McLgmSwaptionEngine',['../class_quant_ext_1_1_mc_lgm_swaption_engine.html',1,'QuantExt']]],

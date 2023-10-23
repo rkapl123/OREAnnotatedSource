@@ -237,10 +237,10 @@ $(function() {
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_class" href="classore_1_1data_1_1_lgm_reversion_transformation.html">LgmReversionTransformation</a> rt(1.0, 1.0);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    boost::shared_ptr&lt;InfDkData&gt; data = boost::make_shared&lt;InfDkData&gt;(CalibrationType::Bootstrap, calibrationBaskets,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    boost::shared_ptr&lt;InfDkData&gt; <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> = boost::make_shared&lt;InfDkData&gt;(CalibrationType::Bootstrap, calibrationBaskets,</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;EUHICPXT&quot;</span>, reversion, volatility, rt);</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">return</span> {data};</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">return</span> {<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>};</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>boost::shared_ptr&lt;vector&lt;boost::shared_ptr&lt;FxBsData&gt;&gt;&gt; fxConfigsData() {</div>
@@ -408,13 +408,13 @@ $(function() {
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing toXML/fromXML...&quot;</span>);</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_class" href="classore_1_1data_1_1_cross_asset_model_data.html">data::CrossAssetModelData</a> data = *crossAssetData();</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_class" href="classore_1_1data_1_1_cross_asset_model_data.html">data::CrossAssetModelData</a> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> = *crossAssetData();</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <a class="code hl_class" href="classore_1_1data_1_1_x_m_l_document.html">XMLDocument</a> OutDoc;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <a class="code hl_class" href="classrapidxml_1_1xml__node.html">XMLNode</a>* simulationNode = OutDoc.<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_document.html#a8717c517803f0df2e693e3cadefeafd7">allocNode</a>(<span class="stringliteral">&quot;Simulation&quot;</span>);</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    OutDoc.<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_document.html#a079b7b275c5d8cd0b3aef9dd8c29b5ae">appendNode</a>(simulationNode);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <a class="code hl_class" href="classrapidxml_1_1xml__node.html">XMLNode</a>* crossAssetModelNode = data.<a class="code hl_function" href="classore_1_1data_1_1_cross_asset_model_data.html#a0881d80390ae17ef0094dcd8c91c4936">toXML</a>(OutDoc);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <a class="code hl_class" href="classrapidxml_1_1xml__node.html">XMLNode</a>* crossAssetModelNode = <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.toXML(OutDoc);</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#ae646b9cdf949a88f35c36c18bf90b370">XMLUtils::appendNode</a>(simulationNode, crossAssetModelNode);</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    std::string filename = TEST_OUTPUT_FILE(<span class="stringliteral">&quot;simulationtest.xml&quot;</span>);</div>
@@ -423,10 +423,10 @@ $(function() {
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <a class="code hl_class" href="classore_1_1data_1_1_cross_asset_model_data.html">data::CrossAssetModelData</a> newData;</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    newData.<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d">fromFile</a>(filename);</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    BOOST_CHECK(data == newData);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    BOOST_CHECK(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> == newData);</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    newData.<a class="code hl_function" href="classore_1_1data_1_1_cross_asset_model_data.html#ae55dbaf8d796cf2a70e66d4e4f5fa639">irConfigs</a>() = {};</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    BOOST_CHECK(data != newData);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    BOOST_CHECK(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> != newData);</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>}</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>BOOST_AUTO_TEST_SUITE_END()</div>
@@ -439,7 +439,6 @@ $(function() {
 <div class="ttc" id="aclassore_1_1data_1_1_cr_cir_data_html"><div class="ttname"><a href="classore_1_1data_1_1_cr_cir_data.html">ore::data::CrCirData</a></div><div class="ttdef"><b>Definition:</b> <a href="crcirdata_8hpp_source.html#l00040">crcirdata.hpp:40</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_cr_lgm_data_html"><div class="ttname"><a href="classore_1_1data_1_1_cr_lgm_data.html">ore::data::CrLgmData</a></div><div class="ttdoc">CR LGM Model Parameters.</div><div class="ttdef"><b>Definition:</b> <a href="crlgmdata_8hpp_source.html#l00048">crlgmdata.hpp:48</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_cross_asset_model_data_html"><div class="ttname"><a href="classore_1_1data_1_1_cross_asset_model_data.html">ore::data::CrossAssetModelData</a></div><div class="ttdoc">Cross Asset Model Parameters.</div><div class="ttdef"><b>Definition:</b> <a href="crossassetmodeldata_8hpp_source.html#l00115">crossassetmodeldata.hpp:115</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_cross_asset_model_data_html_a0881d80390ae17ef0094dcd8c91c4936"><div class="ttname"><a href="classore_1_1data_1_1_cross_asset_model_data.html#a0881d80390ae17ef0094dcd8c91c4936">ore::data::CrossAssetModelData::toXML</a></div><div class="ttdeci">virtual XMLNode * toXML(XMLDocument &amp;doc) override</div><div class="ttdef"><b>Definition:</b> <a href="ored_2model_2crossassetmodeldata_8cpp_source.html#l00776">crossassetmodeldata.cpp:776</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_cross_asset_model_data_html_ae55dbaf8d796cf2a70e66d4e4f5fa639"><div class="ttname"><a href="classore_1_1data_1_1_cross_asset_model_data.html#ae55dbaf8d796cf2a70e66d4e4f5fa639">ore::data::CrossAssetModelData::irConfigs</a></div><div class="ttdeci">const vector&lt; boost::shared_ptr&lt; IrModelData &gt; &gt; &amp; irConfigs() const</div><div class="ttdef"><b>Definition:</b> <a href="crossassetmodeldata_8hpp_source.html#l00224">crossassetmodeldata.hpp:224</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_eq_bs_data_html"><div class="ttname"><a href="classore_1_1data_1_1_eq_bs_data.html">ore::data::EqBsData</a></div><div class="ttdoc">EQ Model Parameters.</div><div class="ttdef"><b>Definition:</b> <a href="eqbsdata_8hpp_source.html#l00050">eqbsdata.hpp:50</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_fx_bs_data_html"><div class="ttname"><a href="classore_1_1data_1_1_fx_bs_data.html">ore::data::FxBsData</a></div><div class="ttdoc">FX Model Parameters.</div><div class="ttdef"><b>Definition:</b> <a href="fxbsdata_8hpp_source.html#l00050">fxbsdata.hpp:50</a></div></div>
@@ -458,6 +457,7 @@ $(function() {
 <div class="ttc" id="acrossassetmodeldata_8hpp_html"><div class="ttname"><a href="crossassetmodeldata_8hpp.html">crossassetmodeldata.hpp</a></div><div class="ttdoc">Cross asset model data.</div></div>
 <div class="ttc" id="ainfdkdata_8hpp_html"><div class="ttname"><a href="infdkdata_8hpp.html">infdkdata.hpp</a></div><div class="ttdoc">Dodgson Kainth inflation model component data for the cross asset model.</div></div>
 <div class="ttc" id="airlgmdata_8hpp_html"><div class="ttname"><a href="irlgmdata_8hpp.html">irlgmdata.hpp</a></div><div class="ttdoc">IR component data for the cross asset model.</div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
 <div class="ttc" id="amodel_2calibrationinstruments_2cpicapfloor_8hpp_html"><div class="ttname"><a href="model_2calibrationinstruments_2cpicapfloor_8hpp.html">cpicapfloor.hpp</a></div><div class="ttdoc">class for holding details of a zero coupon CPI cap floor calibration instrument.</div></div>
 <div class="ttc" id="anamespace_quant_ext_html"><div class="ttname"><a href="namespace_quant_ext.html">QuantExt</a></div></div>
 <div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="namespace_quant_lib.html">QuantLib</a></div></div>

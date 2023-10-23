@@ -1014,16 +1014,17 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  540</span>    <span class="comment">//-------------------------------------------</span></div>
 <div class="line"><span class="lineno">  541</span> </div>
 <div class="line"><span class="lineno">  542</span>    vector&lt;Distributionpair&gt; x1pm1 = a.get();</div>
-<div class="line"><span class="lineno">  543</span>    Real b_ = b;</div>
+<div class="line"><span class="lineno">  543</span>    Real <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a> = b;</div>
 <div class="line"><span class="lineno">  544</span>    vector&lt;Distributionpair&gt; scalarmult;</div>
 <div class="line"><span class="lineno">  545</span> </div>
 <div class="line"><span class="lineno">  546</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
 <div class="line"><span class="lineno">  547</span> </div>
-<div class="line"><span class="lineno">  548</span>        Distributionpair xp(x1pm1[i].x_, x1pm1[i].y_ * b_);</div>
+<div class="line"><span class="lineno">  548</span>        Distributionpair xp(x1pm1[i].x_, x1pm1[i].y_ * <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>);</div>
 <div class="line"><span class="lineno">  549</span>        scalarmult.push_back(xp);</div>
 <div class="line"><span class="lineno">  550</span>    }</div>
 <div class="line"><span class="lineno">  551</span>    <span class="keywordflow">return</span> DiscreteDistribution(scalarmult);</div>
 <div class="line"><span class="lineno">  552</span>}</div>
+<div class="ttc" id="aqle_2math_2randomvariablelsmbasissystem_8cpp_html_a348c18cf6f6480c5806950ba9b795c2d"><div class="ttname"><a href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a></div><div class="ttdeci">const VF_R b_</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariablelsmbasissystem_8cpp_source.html#l00104">randomvariablelsmbasissystem.cpp:104</a></div></div>
 </div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1078,12 +1079,12 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  556</span>    <span class="comment">//-------------------------------------------</span></div>
 <div class="line"><span class="lineno">  557</span> </div>
 <div class="line"><span class="lineno">  558</span>    vector&lt;Distributionpair&gt; x1pm1 = a.get();</div>
-<div class="line"><span class="lineno">  559</span>    Real b_ = b;</div>
+<div class="line"><span class="lineno">  559</span>    Real <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a> = b;</div>
 <div class="line"><span class="lineno">  560</span>    vector&lt;Distributionpair&gt; scalarmult;</div>
 <div class="line"><span class="lineno">  561</span> </div>
 <div class="line"><span class="lineno">  562</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
 <div class="line"><span class="lineno">  563</span> </div>
-<div class="line"><span class="lineno">  564</span>        Distributionpair xp(b_ * x1pm1[i].x_, x1pm1[i].y_);</div>
+<div class="line"><span class="lineno">  564</span>        Distributionpair xp(<a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a> * x1pm1[i].x_, x1pm1[i].y_);</div>
 <div class="line"><span class="lineno">  565</span>        scalarmult.push_back(xp);</div>
 <div class="line"><span class="lineno">  566</span>    }</div>
 <div class="line"><span class="lineno">  567</span>    <span class="keywordflow">return</span> DiscreteDistribution(scalarmult);</div>
@@ -1142,12 +1143,12 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  572</span>    <span class="comment">//-------------------------------------------</span></div>
 <div class="line"><span class="lineno">  573</span> </div>
 <div class="line"><span class="lineno">  574</span>    vector&lt;Distributionpair&gt; x1pm1 = a.get();</div>
-<div class="line"><span class="lineno">  575</span>    Real b_ = b;</div>
+<div class="line"><span class="lineno">  575</span>    Real <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a> = b;</div>
 <div class="line"><span class="lineno">  576</span>    vector&lt;Distributionpair&gt; scalarmult;</div>
 <div class="line"><span class="lineno">  577</span> </div>
 <div class="line"><span class="lineno">  578</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
 <div class="line"><span class="lineno">  579</span> </div>
-<div class="line"><span class="lineno">  580</span>        Distributionpair xp(x1pm1[i].x_ + b_, x1pm1[i].y_);</div>
+<div class="line"><span class="lineno">  580</span>        Distributionpair xp(x1pm1[i].x_ + <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>, x1pm1[i].y_);</div>
 <div class="line"><span class="lineno">  581</span>        scalarmult.push_back(xp);</div>
 <div class="line"><span class="lineno">  582</span>    }</div>
 <div class="line"><span class="lineno">  583</span>    <span class="keywordflow">return</span> DiscreteDistribution(scalarmult);</div>
@@ -1206,7 +1207,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  588</span>    <span class="comment">//-------------------------------------------</span></div>
 <div class="line"><span class="lineno">  589</span> </div>
 <div class="line"><span class="lineno">  590</span>    vector&lt;Distributionpair&gt; x1pm1 = a.get();</div>
-<div class="line"><span class="lineno">  591</span>    Real b_ = b;</div>
+<div class="line"><span class="lineno">  591</span>    Real <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a> = b;</div>
 <div class="line"><span class="lineno">  592</span>    vector&lt;Distributionpair&gt; func;</div>
 <div class="line"><span class="lineno">  593</span> </div>
 <div class="line"><span class="lineno">  594</span>    std::sort(x1pm1.begin(), x1pm1.end());</div>
@@ -1214,23 +1215,23 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  596</span>    Real temp = 0.;</div>
 <div class="line"><span class="lineno">  597</span> </div>
 <div class="line"><span class="lineno">  598</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
-<div class="line"><span class="lineno">  599</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &lt;= b_) {</div>
+<div class="line"><span class="lineno">  599</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &lt;= <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>) {</div>
 <div class="line"><span class="lineno">  600</span>            temp += x1pm1[i].y_;</div>
 <div class="line"><span class="lineno">  601</span>        }</div>
 <div class="line"><span class="lineno">  602</span>    }</div>
-<div class="line"><span class="lineno">  603</span>    Distributionpair xp(b_, temp);</div>
+<div class="line"><span class="lineno">  603</span>    Distributionpair xp(<a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>, temp);</div>
 <div class="line"><span class="lineno">  604</span>    func.push_back(xp);</div>
 <div class="line"><span class="lineno">  605</span> </div>
 <div class="line"><span class="lineno">  606</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
-<div class="line"><span class="lineno">  607</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &gt; b_) {</div>
-<div class="line"><span class="lineno">  608</span>            Distributionpair xp(<a class="code hl_function" href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a>(x1pm1[i].x_, b_), x1pm1[i].y_);</div>
+<div class="line"><span class="lineno">  607</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &gt; <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>) {</div>
+<div class="line"><span class="lineno">  608</span>            Distributionpair xp(<a class="code hl_function" href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a>(x1pm1[i].x_, <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>), x1pm1[i].y_);</div>
 <div class="line"><span class="lineno">  609</span>            func.push_back(xp);</div>
 <div class="line"><span class="lineno">  610</span>        }</div>
 <div class="line"><span class="lineno">  611</span>    }</div>
 <div class="line"><span class="lineno">  612</span> </div>
 <div class="line"><span class="lineno">  613</span>    <span class="keywordflow">return</span> DiscreteDistribution(func);</div>
 <div class="line"><span class="lineno">  614</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a0780e43df89be3d7f7671eca2418cdd1"><div class="ttname"><a href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">QuantExt::max</a></div><div class="ttdeci">RandomVariable max(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00387">randomvariable.cpp:387</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a0780e43df89be3d7f7671eca2418cdd1"><div class="ttname"><a href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">QuantExt::max</a></div><div class="ttdeci">RandomVariable max(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00636">randomvariable.cpp:636</a></div></div>
 </div><!-- fragment --><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -1346,14 +1347,14 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  618</span>    <span class="comment">//-------------------------------------------</span></div>
 <div class="line"><span class="lineno">  619</span> </div>
 <div class="line"><span class="lineno">  620</span>    vector&lt;Distributionpair&gt; x1pm1 = a.get();</div>
-<div class="line"><span class="lineno">  621</span>    Real b_ = b;</div>
+<div class="line"><span class="lineno">  621</span>    Real <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a> = b;</div>
 <div class="line"><span class="lineno">  622</span>    vector&lt;Distributionpair&gt; func;</div>
 <div class="line"><span class="lineno">  623</span> </div>
 <div class="line"><span class="lineno">  624</span>    std::sort(x1pm1.begin(), x1pm1.end());</div>
 <div class="line"><span class="lineno">  625</span> </div>
 <div class="line"><span class="lineno">  626</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
-<div class="line"><span class="lineno">  627</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &lt; b_) {</div>
-<div class="line"><span class="lineno">  628</span>            Distributionpair xp(<a class="code hl_function" href="namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a>(x1pm1[i].x_, b_), x1pm1[i].y_);</div>
+<div class="line"><span class="lineno">  627</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &lt; <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>) {</div>
+<div class="line"><span class="lineno">  628</span>            Distributionpair xp(<a class="code hl_function" href="namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a>(x1pm1[i].x_, <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>), x1pm1[i].y_);</div>
 <div class="line"><span class="lineno">  629</span>            func.push_back(xp);</div>
 <div class="line"><span class="lineno">  630</span>        }</div>
 <div class="line"><span class="lineno">  631</span>    }</div>
@@ -1361,16 +1362,16 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  633</span>    Real temp = 0.;</div>
 <div class="line"><span class="lineno">  634</span> </div>
 <div class="line"><span class="lineno">  635</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
-<div class="line"><span class="lineno">  636</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &gt;= b_) {</div>
+<div class="line"><span class="lineno">  636</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ &gt;= <a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>) {</div>
 <div class="line"><span class="lineno">  637</span>            temp += x1pm1[i].y_;</div>
 <div class="line"><span class="lineno">  638</span>        }</div>
 <div class="line"><span class="lineno">  639</span>    }</div>
-<div class="line"><span class="lineno">  640</span>    Distributionpair xp(b_, temp);</div>
+<div class="line"><span class="lineno">  640</span>    Distributionpair xp(<a class="code hl_variable" href="qle_2math_2randomvariablelsmbasissystem_8cpp.html#a348c18cf6f6480c5806950ba9b795c2d">b_</a>, temp);</div>
 <div class="line"><span class="lineno">  641</span>    func.push_back(xp);</div>
 <div class="line"><span class="lineno">  642</span> </div>
 <div class="line"><span class="lineno">  643</span>    <span class="keywordflow">return</span> DiscreteDistribution(func);</div>
 <div class="line"><span class="lineno">  644</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_afe4df8f9c3657399dd532e1d3c895dfa"><div class="ttname"><a href="namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">QuantExt::min</a></div><div class="ttdeci">RandomVariable min(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00401">randomvariable.cpp:401</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_afe4df8f9c3657399dd532e1d3c895dfa"><div class="ttname"><a href="namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">QuantExt::min</a></div><div class="ttdeci">RandomVariable min(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00656">randomvariable.cpp:656</a></div></div>
 </div><!-- fragment --><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1424,7 +1425,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  656</span>    }</div>
 <div class="line"><span class="lineno">  657</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>;</div>
 <div class="line"><span class="lineno">  658</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a11171c842d01ffacc4ec522e398070a9"><div class="ttname"><a href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">QuantExt::exp</a></div><div class="ttdeci">RandomVariable exp(RandomVariable x)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00445">randomvariable.cpp:445</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a11171c842d01ffacc4ec522e398070a9"><div class="ttname"><a href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">QuantExt::exp</a></div><div class="ttdeci">RandomVariable exp(RandomVariable x)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00724">randomvariable.cpp:724</a></div></div>
 </div><!-- fragment --><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1483,19 +1484,20 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  663</span> </div>
 <div class="line"><span class="lineno">  664</span>    vector&lt;Distributionpair&gt; x1pm1 = a.get();</div>
 <div class="line"><span class="lineno">  665</span>    Real mu = <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7bca818d50e0fdf4802d092b9c4bb530">MDD::expectation</a>(a);</div>
-<div class="line"><span class="lineno">  666</span>    Real variance = 0.0;</div>
+<div class="line"><span class="lineno">  666</span>    Real <a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a> = 0.0;</div>
 <div class="line"><span class="lineno">  667</span> </div>
 <div class="line"><span class="lineno">  668</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
 <div class="line"><span class="lineno">  669</span> </div>
-<div class="line"><span class="lineno">  670</span>        variance += <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>((x1pm1[i].x_ - mu), 2) * x1pm1[i].y_;</div>
+<div class="line"><span class="lineno">  670</span>        <a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a> += <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>((x1pm1[i].x_ - mu), 2) * x1pm1[i].y_;</div>
 <div class="line"><span class="lineno">  671</span>    }</div>
-<div class="line"><span class="lineno">  672</span>    Real <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b">stdev</a> = <a class="code hl_function" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a>(variance);</div>
+<div class="line"><span class="lineno">  672</span>    Real <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b">stdev</a> = <a class="code hl_function" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a>(<a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a>);</div>
 <div class="line"><span class="lineno">  673</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b">stdev</a>;</div>
 <div class="line"><span class="lineno">  674</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_m_d_d_html_a7bca818d50e0fdf4802d092b9c4bb530"><div class="ttname"><a href="class_quant_ext_1_1_m_d_d.html#a7bca818d50e0fdf4802d092b9c4bb530">QuantExt::MDD::expectation</a></div><div class="ttdeci">static Real expectation(const DiscreteDistribution &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="discretedistribution_8cpp_source.html#l00647">discretedistribution.cpp:647</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_m_d_d_html_a7f28f1bcf8a9d94c5b80a2af4cbf8c2b"><div class="ttname"><a href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b">QuantExt::MDD::stdev</a></div><div class="ttdeci">static Real stdev(const DiscreteDistribution &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="discretedistribution_8cpp_source.html#l00661">discretedistribution.cpp:661</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a1b4a64a3620f987e65fec4ccf7cadcf2"><div class="ttname"><a href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">QuantExt::sqrt</a></div><div class="ttdeci">RandomVariable sqrt(RandomVariable x)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00459">randomvariable.cpp:459</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a33845c3e343e646697955b3813b5ccbb"><div class="ttname"><a href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">QuantExt::pow</a></div><div class="ttdeci">RandomVariable pow(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00415">randomvariable.cpp:415</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a1b4a64a3620f987e65fec4ccf7cadcf2"><div class="ttname"><a href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">QuantExt::sqrt</a></div><div class="ttdeci">RandomVariable sqrt(RandomVariable x)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00750">randomvariable.cpp:750</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a249dd19ff90e20ad4b64b0be1665b5c0"><div class="ttname"><a href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">QuantExt::variance</a></div><div class="ttdeci">RandomVariable variance(const RandomVariable &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l01177">randomvariable.cpp:1177</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a33845c3e343e646697955b3813b5ccbb"><div class="ttname"><a href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">QuantExt::pow</a></div><div class="ttdeci">RandomVariable pow(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00676">randomvariable.cpp:676</a></div></div>
 </div><!-- fragment --><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -1503,12 +1505,15 @@ Static Public Member Functions</h2></td></tr>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_ext_1_1_m_d_d_a7f28f1bcf8a9d94c5b80a2af4cbf8c2b_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1_m_d_d_a7f28f1bcf8a9d94c5b80a2af4cbf8c2b_cgraph" alt=""/></div>
 <map name="aclass_quant_ext_1_1_m_d_d_a7f28f1bcf8a9d94c5b80a2af4cbf8c2b_cgraph" id="aclass_quant_ext_1_1_m_d_d_a7f28f1bcf8a9d94c5b80a2af4cbf8c2b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,57,107"/>
-<area shape="rect" href="class_quant_ext_1_1_m_d_d.html#a7bca818d50e0fdf4802d092b9c4bb530" title=" " alt="" coords="115,5,204,31"/>
-<area shape="rect" href="class_quant_ext_1_1_discrete_distribution.html#a45a05ec3f8b04e9fa362e4012876ee0f" title=" " alt="" coords="261,55,485,80"/>
-<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="105,107,213,132"/>
-<area shape="rect" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2" title=" " alt="" coords="106,156,213,181"/>
-<area shape="rect" href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="320,5,427,31"/>
+<area shape="rect" title=" " alt="" coords="6,107,58,132"/>
+<area shape="rect" href="class_quant_ext_1_1_m_d_d.html#a7bca818d50e0fdf4802d092b9c4bb530" title=" " alt="" coords="127,5,216,31"/>
+<area shape="rect" href="class_quant_ext_1_1_discrete_distribution.html#a45a05ec3f8b04e9fa362e4012876ee0f" title=" " alt="" coords="286,56,510,81"/>
+<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="118,107,226,132"/>
+<area shape="rect" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2" title=" " alt="" coords="118,156,225,181"/>
+<area shape="rect" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0" title=" " alt="" coords="106,205,238,231"/>
+<area shape="rect" href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="344,5,451,31"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#a6e0fdc031c26ed1d1a956019d2cee4a1" title=" " alt="" coords="308,166,488,206"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a" title=" " alt="" coords="308,230,488,270"/>
 </map>
 </div>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1556,13 +1561,13 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  679</span> </div>
 <div class="line"><span class="lineno">  680</span>    vector&lt;Distributionpair&gt; x1pm1 = a.get();</div>
 <div class="line"><span class="lineno">  681</span>    Real mu = <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7bca818d50e0fdf4802d092b9c4bb530">MDD::expectation</a>(a);</div>
-<div class="line"><span class="lineno">  682</span>    Real variance = 0.0;</div>
+<div class="line"><span class="lineno">  682</span>    Real <a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a> = 0.0;</div>
 <div class="line"><span class="lineno">  683</span> </div>
 <div class="line"><span class="lineno">  684</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; x1pm1.size(); i++) {</div>
 <div class="line"><span class="lineno">  685</span>        <span class="keywordflow">if</span> (x1pm1[i].x_ - mu &lt; 0.0)</div>
-<div class="line"><span class="lineno">  686</span>            variance += <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>((x1pm1[i].x_ - mu), 2) * x1pm1[i].y_;</div>
+<div class="line"><span class="lineno">  686</span>            <a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a> += <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>((x1pm1[i].x_ - mu), 2) * x1pm1[i].y_;</div>
 <div class="line"><span class="lineno">  687</span>    }</div>
-<div class="line"><span class="lineno">  688</span>    Real <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b">stdev</a> = <a class="code hl_function" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a>(variance);</div>
+<div class="line"><span class="lineno">  688</span>    Real <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b">stdev</a> = <a class="code hl_function" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2">sqrt</a>(<a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a>);</div>
 <div class="line"><span class="lineno">  689</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b">stdev</a>;</div>
 <div class="line"><span class="lineno">  690</span>}</div>
 </div><!-- fragment --><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1573,12 +1578,15 @@ Static Public Member Functions</h2></td></tr>
 <div class="center"><img src="class_quant_ext_1_1_m_d_d_aadad6c133603d14dd18475c9017c4c82_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1_m_d_d_aadad6c133603d14dd18475c9017c4c82_cgraph" alt=""/></div>
 <map name="aclass_quant_ext_1_1_m_d_d_aadad6c133603d14dd18475c9017c4c82_cgraph" id="aclass_quant_ext_1_1_m_d_d_aadad6c133603d14dd18475c9017c4c82_cgraph">
 <area shape="rect" title=" " alt="" coords="5,131,75,156"/>
-<area shape="rect" href="class_quant_ext_1_1_m_d_d.html#a7bca818d50e0fdf4802d092b9c4bb530" title=" " alt="" coords="232,5,321,31"/>
-<area shape="rect" href="class_quant_ext_1_1_discrete_distribution.html#a45a05ec3f8b04e9fa362e4012876ee0f" title=" " alt="" coords="379,56,603,81"/>
-<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="223,176,331,201"/>
-<area shape="rect" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2" title=" " alt="" coords="223,225,330,251"/>
-<area shape="rect" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b" title=" " alt="" coords="123,131,175,156"/>
-<area shape="rect" href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="437,5,544,31"/>
+<area shape="rect" href="class_quant_ext_1_1_m_d_d.html#a7bca818d50e0fdf4802d092b9c4bb530" title=" " alt="" coords="244,5,333,31"/>
+<area shape="rect" href="class_quant_ext_1_1_discrete_distribution.html#a45a05ec3f8b04e9fa362e4012876ee0f" title=" " alt="" coords="403,105,627,131"/>
+<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="235,55,343,80"/>
+<area shape="rect" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2" title=" " alt="" coords="235,156,342,181"/>
+<area shape="rect" href="class_quant_ext_1_1_m_d_d.html#a7f28f1bcf8a9d94c5b80a2af4cbf8c2b" title=" " alt="" coords="123,105,175,131"/>
+<area shape="rect" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0" title=" " alt="" coords="223,257,355,283"/>
+<area shape="rect" href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9" title=" " alt="" coords="461,5,568,31"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#a6e0fdc031c26ed1d1a956019d2cee4a1" title=" " alt="" coords="425,218,605,258"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a" title=" " alt="" coords="425,282,605,322"/>
 </map>
 </div>
 

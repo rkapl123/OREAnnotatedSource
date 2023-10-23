@@ -287,9 +287,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="equitycompositeoption_8hpp_source.html#l00052">52</a> of file <a class="el" href="equitycompositeoption_8hpp_source.html">equitycompositeoption.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>                                                        {</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> equityName + <span class="stringliteral">&quot;/&quot;</span> + equityCcy.code() + <span class="stringliteral">&quot;/&quot;</span> + strikeCcy.code() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(expiry);</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> equityName + <span class="stringliteral">&quot;/&quot;</span> + equityCcy.code() + <span class="stringliteral">&quot;/&quot;</span> + strikeCcy.code() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">to_string</a>(expiry);</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -298,7 +298,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classore_1_1data_1_1_equity_european_composite_engine_builder_a51a8e1e1c8bec3414e7dd873d287a7c0_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_equity_european_composite_engine_builder_a51a8e1e1c8bec3414e7dd873d287a7c0_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_equity_european_composite_engine_builder_a51a8e1e1c8bec3414e7dd873d287a7c0_cgraph" id="aclassore_1_1data_1_1_equity_european_composite_engine_builder_a51a8e1e1c8bec3414e7dd873d287a7c0_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,72,55"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="120,29,251,55"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="120,29,251,55"/>
 </map>
 </div>
 
@@ -405,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  109</span>    }</div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a82226e669d4e6cd7376d1423c5b60077"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">ore::data::EngineBuilder::market_</a></div><div class="ttdeci">boost::shared_ptr&lt; Market &gt; market_</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00154">enginefactory.hpp:154</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_aaacbfbb4007edcf8c34df2f37f8ebae5"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#aaacbfbb4007edcf8c34df2f37f8ebae5">ore::data::EngineBuilder::configuration</a></div><div class="ttdeci">const string &amp; configuration(const MarketContext &amp;key)</div><div class="ttdoc">Return a configuration (or the default one if key not found)</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00115">enginefactory.hpp:115</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00364">log.hpp:364</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a81db05f0ea371a4a14cac6e955ecd5cca59aab28b54594c59dab8d19afd9478e4"><div class="ttname"><a href="namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cca59aab28b54594c59dab8d19afd9478e4">ore::data::MarketContext::pricing</a></div><div class="ttdeci">@ pricing</div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>

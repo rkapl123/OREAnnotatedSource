@@ -292,7 +292,7 @@ class QuantExt::detail::QuadraticInterpolationImpl&lt; I1, I2 &gt;</div>
 <div class="line"><span class="lineno">  132</span>                 <span class="comment">// Error will be thrown when calling value or</span></div>
 <div class="line"><span class="lineno">  133</span>                 <span class="comment">// derivative functions</span></div>
 <div class="line"><span class="lineno">  134</span>                 <span class="keywordflow">for</span>(Size i=0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a145c97fe1cab3e048650ddbadd37505d">n_</a>; ++i) {</div>
-<div class="line"><span class="lineno">  135</span>                     <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i] &lt;= 0 || <a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a71a6c36122b9ef005c4c52bda3890e24">y_</a>[i], 0.0)) {</div>
+<div class="line"><span class="lineno">  135</span>                     <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i] &lt;= 0 || QuantLib::close_enough(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a71a6c36122b9ef005c4c52bda3890e24">y_</a>[i], 0.0)) {</div>
 <div class="line"><span class="lineno">  136</span>                         <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a9240c051245987806f3bc3aefdfde5fe">p_</a> = Null&lt;Real&gt;();</div>
 <div class="line"><span class="lineno">  137</span>                         <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  138</span>                     }</div>
@@ -303,9 +303,9 @@ class QuantExt::detail::QuadraticInterpolationImpl&lt; I1, I2 &gt;</div>
 <div class="line"><span class="lineno">  143</span>                     q[i][0] = q[<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a145c97fe1cab3e048650ddbadd37505d">n_</a>][i+1] = <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i];</div>
 <div class="line"><span class="lineno">  144</span> </div>
 <div class="line"><span class="lineno">  145</span>                     <span class="keywordflow">for</span>(Size j=0; j&lt;i; ++j) {</div>
-<div class="line"><span class="lineno">  146</span>                         q[i][j+1] += <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i] - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[j], 3) / 6.0;</div>
+<div class="line"><span class="lineno">  146</span>                         q[i][j+1] += std::pow(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i] - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[j], 3) / 6.0;</div>
 <div class="line"><span class="lineno">  147</span>                     }</div>
-<div class="line"><span class="lineno">  148</span>                     Time t = -<a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i], 3) / 6.0;</div>
+<div class="line"><span class="lineno">  148</span>                     Time t = -std::pow(<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i], 3) / 6.0;</div>
 <div class="line"><span class="lineno">  149</span>                     <span class="keywordflow">for</span>(Size j=1; j&lt;<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a145c97fe1cab3e048650ddbadd37505d">n_</a>+1; ++j) {</div>
 <div class="line"><span class="lineno">  150</span>                         q[i][j] += t;</div>
 <div class="line"><span class="lineno">  151</span>                     }</div>
@@ -323,21 +323,7 @@ class QuantExt::detail::QuadraticInterpolationImpl&lt; I1, I2 &gt;</div>
 <div class="line"><span class="lineno">  163</span>                 }</div>
 <div class="line"><span class="lineno">  164</span>             }</div>
 <div class="ttc" id="aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_html_a9240c051245987806f3bc3aefdfde5fe"><div class="ttname"><a href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a9240c051245987806f3bc3aefdfde5fe">QuantExt::detail::QuadraticInterpolationImpl::p_</a></div><div class="ttdeci">Real p_</div><div class="ttdef"><b>Definition:</b> <a href="quadraticinterpolation_8hpp_source.html#l00203">quadraticinterpolation.hpp:203</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00496">randomvariable.cpp:496</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a33845c3e343e646697955b3813b5ccbb"><div class="ttname"><a href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">QuantExt::pow</a></div><div class="ttdeci">RandomVariable pow(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00415">randomvariable.cpp:415</a></div></div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a44137bb65de2396875934e48a6ee5099_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a44137bb65de2396875934e48a6ee5099_cgraph" alt=""/></div>
-<map name="aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a44137bb65de2396875934e48a6ee5099_cgraph" id="aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a44137bb65de2396875934e48a6ee5099_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,67,56"/>
-<area shape="rect" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="115,5,280,31"/>
-<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="143,55,251,80"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a39e5009a0f44dcd2f3b7b4c382e60498" name="a39e5009a0f44dcd2f3b7b4c382e60498"></a>
@@ -371,23 +357,12 @@ class QuantExt::detail::QuadraticInterpolationImpl&lt; I1, I2 &gt;</div>
 <div class="line"><span class="lineno">  168</span>                 Real l = <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a1889c083cdbb7a0a8290c68ba0daa50b">lambdas_</a>[0] * x;</div>
 <div class="line"><span class="lineno">  169</span>                 Real b = 0;</div>
 <div class="line"><span class="lineno">  170</span>                 <span class="keywordflow">for</span> (Size i=0; i&lt;<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a145c97fe1cab3e048650ddbadd37505d">n_</a> &amp;&amp; <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i]&lt;x; ++i) {</div>
-<div class="line"><span class="lineno">  171</span>                     b += <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a1889c083cdbb7a0a8290c68ba0daa50b">lambdas_</a>[i+1] * <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(x - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i], 3);</div>
+<div class="line"><span class="lineno">  171</span>                     b += <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a1889c083cdbb7a0a8290c68ba0daa50b">lambdas_</a>[i+1] * std::pow(x - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i], 3);</div>
 <div class="line"><span class="lineno">  172</span>                 }</div>
-<div class="line"><span class="lineno">  173</span>                 l += (b - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a9240c051245987806f3bc3aefdfde5fe">p_</a> * <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(x, 3)) / 6.0;</div>
+<div class="line"><span class="lineno">  173</span>                 l += (b - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a9240c051245987806f3bc3aefdfde5fe">p_</a> * std::pow(x, 3)) / 6.0;</div>
 <div class="line"><span class="lineno">  174</span>                 <span class="keywordflow">return</span> (l - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#ab2c76671c87519231cea0b5a29eea57f">y_offset_</a>) / <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a7c53f3f4b0fb92736d5d572d449c4659">y_mul_</a>;</div>
 <div class="line"><span class="lineno">  175</span>             }</div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a39e5009a0f44dcd2f3b7b4c382e60498_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a39e5009a0f44dcd2f3b7b4c382e60498_cgraph" alt=""/></div>
-<map name="aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a39e5009a0f44dcd2f3b7b4c382e60498_cgraph" id="aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a39e5009a0f44dcd2f3b7b4c382e60498_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,56,31"/>
-<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="104,5,212,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab9124910b7d248cd2e88c96a840b0ee7" name="ab9124910b7d248cd2e88c96a840b0ee7"></a>
@@ -452,23 +427,12 @@ class QuantExt::detail::QuadraticInterpolationImpl&lt; I1, I2 &gt;</div>
 <div class="line"><span class="lineno">  182</span>                 Real l = <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a1889c083cdbb7a0a8290c68ba0daa50b">lambdas_</a>[0];</div>
 <div class="line"><span class="lineno">  183</span>                 Real b = 0;</div>
 <div class="line"><span class="lineno">  184</span>                 <span class="keywordflow">for</span> (Size i=0; i&lt;<a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a145c97fe1cab3e048650ddbadd37505d">n_</a> &amp;&amp; <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i]&lt;x; ++i) {</div>
-<div class="line"><span class="lineno">  185</span>                     b += <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a1889c083cdbb7a0a8290c68ba0daa50b">lambdas_</a>[i+1] * <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(x - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i], 2);</div>
+<div class="line"><span class="lineno">  185</span>                     b += <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a1889c083cdbb7a0a8290c68ba0daa50b">lambdas_</a>[i+1] * std::pow(x - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#aebf1678a4b6fdac6c3b3bf2c8dba9bee">x_</a>[i], 2);</div>
 <div class="line"><span class="lineno">  186</span>                 }</div>
-<div class="line"><span class="lineno">  187</span>                 l += (b - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a9240c051245987806f3bc3aefdfde5fe">p_</a> * <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(x, 2)) / 2.0;</div>
+<div class="line"><span class="lineno">  187</span>                 l += (b - <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a9240c051245987806f3bc3aefdfde5fe">p_</a> * std::pow(x, 2)) / 2.0;</div>
 <div class="line"><span class="lineno">  188</span>                 <span class="keywordflow">return</span> l / <a class="code hl_variable" href="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl.html#a7c53f3f4b0fb92736d5d572d449c4659">y_mul_</a>;</div>
 <div class="line"><span class="lineno">  189</span>             }</div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a7499a6a08c868cf282514aa8b319a99b_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a7499a6a08c868cf282514aa8b319a99b_cgraph" alt=""/></div>
-<map name="aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a7499a6a08c868cf282514aa8b319a99b_cgraph" id="aclass_quant_ext_1_1detail_1_1_quadratic_interpolation_impl_a7499a6a08c868cf282514aa8b319a99b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,80,31"/>
-<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="128,5,236,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad1487e5c91c797d90ac1e7684cd8e6d2" name="ad1487e5c91c797d90ac1e7684cd8e6d2"></a>

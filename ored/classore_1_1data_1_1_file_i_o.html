@@ -325,7 +325,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   50</span>    <a class="code hl_define" href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Setting FileOpen max retries to &quot;</span> &lt;&lt; n);</div>
 <div class="line"><span class="lineno">   51</span>    _s_maxRetries = n;</div>
 <div class="line"><span class="lineno">   52</span>}</div>
-<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div><div class="ttdoc">Logging Macro (Level = Notice)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00366">log.hpp:366</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div><div class="ttdoc">Logging Macro (Level = Notice)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00506">log.hpp:506</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -436,7 +436,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   67</span> </div>
 <div class="line"><span class="lineno">   68</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt;= <a class="code hl_function" href="classore_1_1data_1_1_file_i_o.html#a7b4c3165ded4410d0be9f0369c5b2113">maxRetries</a>(); i++) {</div>
 <div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (i &gt; 0) {</div>
-<div class="line"><span class="lineno">   70</span>            <span class="keyword">auto</span> em = EventMessage(<span class="stringliteral">&quot;Error opening file &#39;&quot;</span> + std::string(filename) + <span class="stringliteral">&quot;&#39;. Retrying...&quot;</span>);</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keyword">auto</span> em = EventMessage(<span class="stringliteral">&quot;Error opening file &#39;&quot;</span> + std::string(filename) + <span class="stringliteral">&quot;&#39;. Retrying...&quot;</span>, <span class="stringliteral">&quot;exception_message&quot;</span>);</div>
 <div class="line"><span class="lineno">   71</span>            em.set(<span class="stringliteral">&quot;retry_count&quot;</span>, i);</div>
 <div class="line"><span class="lineno">   72</span>            Real backoffMillis = currentBackoff * 1000;</div>
 <div class="line"><span class="lineno">   73</span>            em.set(<span class="stringliteral">&quot;retry_interval&quot;</span>, backoffMillis);</div>
@@ -456,7 +456,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_file_i_o_html_a1daa2e3edf57698976d9a2fca1f6819e"><div class="ttname"><a href="classore_1_1data_1_1_file_i_o.html#a1daa2e3edf57698976d9a2fca1f6819e">ore::data::FileIO::backoff</a></div><div class="ttdeci">static QuantLib::Real backoff()</div><div class="ttdef"><b>Definition:</b> <a href="fileio_8cpp_source.html#l00045">fileio.cpp:45</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_file_i_o_html_a77fced44211da5e22aeaad73ab8055ca"><div class="ttname"><a href="classore_1_1data_1_1_file_i_o.html#a77fced44211da5e22aeaad73ab8055ca">ore::data::FileIO::maxBackoff</a></div><div class="ttdeci">static QuantLib::Real maxBackoff()</div><div class="ttdef"><b>Definition:</b> <a href="fileio_8cpp_source.html#l00047">fileio.cpp:47</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_file_i_o_html_a7b4c3165ded4410d0be9f0369c5b2113"><div class="ttname"><a href="classore_1_1data_1_1_file_i_o.html#a7b4c3165ded4410d0be9f0369c5b2113">ore::data::FileIO::maxRetries</a></div><div class="ttdeci">static QuantLib::Size maxRetries()</div><div class="ttdoc">The maximum number of retries, defaults to 7.</div><div class="ttdef"><b>Definition:</b> <a href="fileio_8cpp_source.html#l00043">fileio.cpp:43</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00364">log.hpp:364</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -521,7 +521,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt;= <a class="code hl_function" href="classore_1_1data_1_1_file_i_o.html#a7b4c3165ded4410d0be9f0369c5b2113">maxRetries</a>(); i++) {</div>
 <div class="line"><span class="lineno">   93</span>        <span class="keywordflow">if</span> (i &gt; 0) {</div>
-<div class="line"><span class="lineno">   94</span>            <span class="keyword">auto</span> em = EventMessage(<span class="stringliteral">&quot;Error creating directory &#39;&quot;</span> + p.string() + <span class="stringliteral">&quot;&#39;. Retrying...&quot;</span>);</div>
+<div class="line"><span class="lineno">   94</span>            <span class="keyword">auto</span> em = EventMessage(<span class="stringliteral">&quot;Error creating directory &#39;&quot;</span> + p.string() + <span class="stringliteral">&quot;&#39;. Retrying...&quot;</span>, <span class="stringliteral">&quot;exception_message&quot;</span>);</div>
 <div class="line"><span class="lineno">   95</span>            em.set(<span class="stringliteral">&quot;retry_count&quot;</span>, i);</div>
 <div class="line"><span class="lineno">   96</span>            Real backoffMillis = currentBackoff * 1000;</div>
 <div class="line"><span class="lineno">   97</span>            em.set(<span class="stringliteral">&quot;retry_interval&quot;</span>, backoffMillis);</div>
@@ -590,7 +590,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  118</span> </div>
 <div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt;= <a class="code hl_function" href="classore_1_1data_1_1_file_i_o.html#a7b4c3165ded4410d0be9f0369c5b2113">maxRetries</a>(); i++) {</div>
 <div class="line"><span class="lineno">  120</span>        <span class="keywordflow">if</span> (i &gt; 0) {</div>
-<div class="line"><span class="lineno">  121</span>            <span class="keyword">auto</span> em = EventMessage(<span class="stringliteral">&quot;Error emptying directory &#39;&quot;</span> + p.string() + <span class="stringliteral">&quot;&#39;. Retrying...&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>            <span class="keyword">auto</span> em = EventMessage(<span class="stringliteral">&quot;Error emptying directory &#39;&quot;</span> + p.string() + <span class="stringliteral">&quot;&#39;. Retrying...&quot;</span>, <span class="stringliteral">&quot;exception_message&quot;</span>);</div>
 <div class="line"><span class="lineno">  122</span>            em.set(<span class="stringliteral">&quot;retry_count&quot;</span>, i);</div>
 <div class="line"><span class="lineno">  123</span>            Real backoffMillis = currentBackoff * 1000;</div>
 <div class="line"><span class="lineno">  124</span>            em.set(<span class="stringliteral">&quot;retry_interval&quot;</span>, backoffMillis);</div>

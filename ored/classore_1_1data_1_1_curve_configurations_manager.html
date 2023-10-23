@@ -125,7 +125,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8hpp_source.html#l00180">180</a> of file <a class="el" href="curveconfigurations_8hpp_source.html">curveconfigurations.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8hpp_source.html#l00183">183</a> of file <a class="el" href="curveconfigurations_8hpp_source.html">curveconfigurations.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a33fe46826adb209d70ea8b63c6aa35b5" name="a33fe46826adb209d70ea8b63c6aa35b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33fe46826adb209d70ea8b63c6aa35b5">&#9670;&#160;</a></span>CurveConfigurationsManager()</h2>
@@ -142,8 +142,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8hpp_source.html#l00182">182</a> of file <a class="el" href="curveconfigurations_8hpp_source.html">curveconfigurations.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  182</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8hpp_source.html#l00185">185</a> of file <a class="el" href="curveconfigurations_8hpp_source.html">curveconfigurations.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  185</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -174,11 +174,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00593">593</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  593</span>                                                                                                           {</div>
-<div class="line"><span class="lineno">  594</span>    <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>[id] = config;</div>
-<div class="line"><span class="lineno">  595</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_curve_configurations_manager_html_a2e30ee87c45f581267715cd1639b7c5c"><div class="ttname"><a href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">ore::data::CurveConfigurationsManager::configs_</a></div><div class="ttdeci">std::map&lt; std::string, QuantLib::ext::shared_ptr&lt; CurveConfigurations &gt; &gt; configs_</div><div class="ttdef"><b>Definition:</b> <a href="curveconfigurations_8hpp_source.html#l00192">curveconfigurations.hpp:192</a></div></div>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00630">630</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  630</span>                                                                                                           {</div>
+<div class="line"><span class="lineno">  631</span>    <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>[id] = config;</div>
+<div class="line"><span class="lineno">  632</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_curve_configurations_manager_html_a2e30ee87c45f581267715cd1639b7c5c"><div class="ttname"><a href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">ore::data::CurveConfigurationsManager::configs_</a></div><div class="ttdeci">std::map&lt; std::string, QuantLib::ext::shared_ptr&lt; CurveConfigurations &gt; &gt; configs_</div><div class="ttdef"><b>Definition:</b> <a href="curveconfigurations_8hpp_source.html#l00195">curveconfigurations.hpp:195</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,12 +198,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00597">597</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  597</span>                                                                                                    { </div>
-<div class="line"><span class="lineno">  598</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.find(<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">  599</span>    QL_REQUIRE(it != <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.end(), <span class="stringliteral">&quot;CurveConfigurationsManager: could not find CurveConfiguration for id &quot;</span> &lt;&lt; <span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">  600</span>    <span class="keywordflow">return</span> it-&gt;second;</div>
-<div class="line"><span class="lineno">  601</span>}</div>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00634">634</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  634</span>                                                                                                    {</div>
+<div class="line"><span class="lineno">  635</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.find(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  636</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.end()) {</div>
+<div class="line"><span class="lineno">  637</span>        <a class="code hl_define" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;CurveConfigurationsManager: could not find CurveConfiguration for id &quot;</span></div>
+<div class="line"><span class="lineno">  638</span>             &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;, attempting to get default curveConfig.&quot;</span>);</div>
+<div class="line"><span class="lineno">  639</span>        it = <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.find(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  640</span>        QL_REQUIRE(it != <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.end(), <span class="stringliteral">&quot;CurveConfigurationsManager: could not find CurveConfiguration for id &quot;</span> &lt;&lt; <span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  641</span>    }</div>
+<div class="line"><span class="lineno">  642</span>    <span class="keywordflow">return</span> it-&gt;second;</div>
+<div class="line"><span class="lineno">  643</span>}</div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -223,11 +229,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00604">604</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  604</span>                                                             { </div>
-<div class="line"><span class="lineno">  605</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.find(<span class="keywordtype">id</span>); </div>
-<div class="line"><span class="lineno">  606</span>    <span class="keywordflow">return</span> it != <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.end();</div>
-<div class="line"><span class="lineno">  607</span>}</div>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00645">645</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  645</span>                                                             { </div>
+<div class="line"><span class="lineno">  646</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.find(<span class="keywordtype">id</span>); </div>
+<div class="line"><span class="lineno">  647</span>    <span class="keywordflow">return</span> it != <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.end();</div>
+<div class="line"><span class="lineno">  648</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -246,10 +252,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00609">609</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  609</span>                                                                                                                           {</div>
-<div class="line"><span class="lineno">  610</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>;</div>
-<div class="line"><span class="lineno">  611</span>}</div>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00650">650</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  650</span>                                                                                                                           {</div>
+<div class="line"><span class="lineno">  651</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>;</div>
+<div class="line"><span class="lineno">  652</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -268,10 +274,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00613">613</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  613</span>                                                   { </div>
-<div class="line"><span class="lineno">  614</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.size() == 0; </div>
-<div class="line"><span class="lineno">  615</span>}</div>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8cpp_source.html#l00654">654</a> of file <a class="el" href="curveconfigurations_8cpp_source.html">curveconfigurations.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  654</span>                                                   { </div>
+<div class="line"><span class="lineno">  655</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_curve_configurations_manager.html#a2e30ee87c45f581267715cd1639b7c5c">configs_</a>.size() == 0; </div>
+<div class="line"><span class="lineno">  656</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,7 +302,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="curveconfigurations_8hpp_source.html#l00192">192</a> of file <a class="el" href="curveconfigurations_8hpp_source.html">curveconfigurations.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="curveconfigurations_8hpp_source.html#l00195">195</a> of file <a class="el" href="curveconfigurations_8hpp_source.html">curveconfigurations.hpp</a>.</p>
 
 </div>
 </div>

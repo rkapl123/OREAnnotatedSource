@@ -197,49 +197,38 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiswap_8cpp_source.html#l00038">38</a> of file <a class="el" href="brlcdiswap_8cpp_source.html">brlcdiswap.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>    : OvernightIndexedSwap(type, nominal,</div>
-<div class="line"><span class="lineno">   41</span>                           Schedule(list_of(startDate)(endDate).convert_to_container&lt;vector&lt;Date&gt; &gt;(), NullCalendar(),</div>
-<div class="line"><span class="lineno">   42</span>                                    QuantLib::Unadjusted, QuantLib::Unadjusted, 100 * Years),</div>
-<div class="line"><span class="lineno">   43</span>                           fixedRate, overnightIndex-&gt;dayCounter(), overnightIndex, spread, 0, ModifiedFollowing,</div>
-<div class="line"><span class="lineno">   44</span>                           overnightIndex-&gt;fixingCalendar(), telescopicValueDates),</div>
-<div class="line"><span class="lineno">   45</span>      <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>(startDate), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>(endDate), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>(overnightIndex) {</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    <span class="comment">// Need to overwrite the fixed leg with the correct fixed leg for a standard BRL CDI swap</span></div>
-<div class="line"><span class="lineno">   48</span>    <span class="comment">// Fixed leg is of the form: N [(1 + k) ^ \delta - 1]</span></div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">// where \delta is the number of BRL business days in the period divided by 252 i.e.</span></div>
-<div class="line"><span class="lineno">   50</span>    <span class="comment">// the day count fraction for the period on a Business252 basis.</span></div>
-<div class="line"><span class="lineno">   51</span>    Time dcf = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>-&gt;dayCounter().yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>);</div>
-<div class="line"><span class="lineno">   52</span>    Real fixedLegPayment = nominal * (<a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(1.0 + fixedRate, dcf) - 1.0);</div>
-<div class="line"><span class="lineno">   53</span>    Date paymentDate = legs_[0].back()-&gt;date();</div>
-<div class="line"><span class="lineno">   54</span>    boost::shared_ptr&lt;CashFlow&gt; fixedCashflow = boost::make_shared&lt;SimpleCashFlow&gt;(fixedLegPayment, paymentDate);</div>
-<div class="line"><span class="lineno">   55</span>    legs_[0].clear();</div>
-<div class="line"><span class="lineno">   56</span>    legs_[0].push_back(fixedCashflow);</div>
-<div class="line"><span class="lineno">   57</span>    registerWith(fixedCashflow);</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <span class="comment">// Set the pricer on the BRL CDI coupon</span></div>
-<div class="line"><span class="lineno">   60</span>    QL_REQUIRE(legs_[1].size() == 1, <span class="stringliteral">&quot;BRLCdiSwap expected exactly one overnight coupon&quot;</span>);</div>
-<div class="line"><span class="lineno">   61</span>    boost::shared_ptr&lt;QuantLib::OvernightIndexedCoupon&gt; coupon =</div>
-<div class="line"><span class="lineno">   62</span>        boost::dynamic_pointer_cast&lt;QuantLib::OvernightIndexedCoupon&gt;(legs_[1][0]);</div>
-<div class="line"><span class="lineno">   63</span>    QL_REQUIRE(coupon, <span class="stringliteral">&quot;BRLCdiSwap: expected QuantLib::OvernightIndexedCoupon&quot;</span>);</div>
-<div class="line"><span class="lineno">   64</span>    coupon-&gt;setPricer(boost::make_shared&lt;BRLCdiCouponPricer&gt;());</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<p class="definition">Definition at line <a class="el" href="brlcdiswap_8cpp_source.html#l00034">34</a> of file <a class="el" href="brlcdiswap_8cpp_source.html">brlcdiswap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>    : OvernightIndexedSwap(type, nominal,</div>
+<div class="line"><span class="lineno">   37</span>                           Schedule({startDate, endDate}, NullCalendar(),</div>
+<div class="line"><span class="lineno">   38</span>                                    QuantLib::Unadjusted, QuantLib::Unadjusted, 100 * Years),</div>
+<div class="line"><span class="lineno">   39</span>                           fixedRate, overnightIndex-&gt;dayCounter(), overnightIndex, spread, 0, ModifiedFollowing,</div>
+<div class="line"><span class="lineno">   40</span>                           overnightIndex-&gt;fixingCalendar(), telescopicValueDates),</div>
+<div class="line"><span class="lineno">   41</span>      <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>(startDate), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>(endDate), <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>(overnightIndex) {</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// Need to overwrite the fixed leg with the correct fixed leg for a standard BRL CDI swap</span></div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// Fixed leg is of the form: N [(1 + k) ^ \delta - 1]</span></div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// where \delta is the number of BRL business days in the period divided by 252 i.e.</span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// the day count fraction for the period on a Business252 basis.</span></div>
+<div class="line"><span class="lineno">   47</span>    Time dcf = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>-&gt;dayCounter().yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>);</div>
+<div class="line"><span class="lineno">   48</span>    Real fixedLegPayment = nominal * (<a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(1.0 + fixedRate, dcf) - 1.0);</div>
+<div class="line"><span class="lineno">   49</span>    Date paymentDate = legs_[0].back()-&gt;date();</div>
+<div class="line"><span class="lineno">   50</span>    boost::shared_ptr&lt;CashFlow&gt; fixedCashflow = boost::make_shared&lt;SimpleCashFlow&gt;(fixedLegPayment, paymentDate);</div>
+<div class="line"><span class="lineno">   51</span>    legs_[0].clear();</div>
+<div class="line"><span class="lineno">   52</span>    legs_[0].push_back(fixedCashflow);</div>
+<div class="line"><span class="lineno">   53</span>    registerWith(fixedCashflow);</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// Set the pricer on the BRL CDI coupon</span></div>
+<div class="line"><span class="lineno">   56</span>    QL_REQUIRE(legs_[1].size() == 1, <span class="stringliteral">&quot;BRLCdiSwap expected exactly one overnight coupon&quot;</span>);</div>
+<div class="line"><span class="lineno">   57</span>    boost::shared_ptr&lt;QuantLib::OvernightIndexedCoupon&gt; coupon =</div>
+<div class="line"><span class="lineno">   58</span>        boost::dynamic_pointer_cast&lt;QuantLib::OvernightIndexedCoupon&gt;(legs_[1][0]);</div>
+<div class="line"><span class="lineno">   59</span>    QL_REQUIRE(coupon, <span class="stringliteral">&quot;BRLCdiSwap: expected QuantLib::OvernightIndexedCoupon&quot;</span>);</div>
+<div class="line"><span class="lineno">   60</span>    coupon-&gt;setPricer(boost::make_shared&lt;BRLCdiCouponPricer&gt;());</div>
+<div class="line"><span class="lineno">   61</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_swap_html_a0e8bdbee1e30641b7e7346b99e41ce90"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">QuantExt::BRLCdiSwap::endDate_</a></div><div class="ttdeci">QuantLib::Date endDate_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiswap_8hpp_source.html#l00047">brlcdiswap.hpp:47</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_swap_html_ad4c9935747d00981e5c4b1a9bd5af319"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">QuantExt::BRLCdiSwap::startDate_</a></div><div class="ttdeci">QuantLib::Date startDate_</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiswap_8hpp_source.html#l00046">brlcdiswap.hpp:46</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_b_r_l_cdi_swap_html_ae06281d512c91141997f462e2953e3e7"><div class="ttname"><a href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">QuantExt::BRLCdiSwap::index_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::OvernightIndex &gt; index_</div><div class="ttdoc">QuantLib does not implement the method OvernightIndexedSwap::overnightIndex() so I need this.</div><div class="ttdef"><b>Definition:</b> <a href="brlcdiswap_8hpp_source.html#l00049">brlcdiswap.hpp:49</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a33845c3e343e646697955b3813b5ccbb"><div class="ttname"><a href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">QuantExt::pow</a></div><div class="ttdeci">RandomVariable pow(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00415">randomvariable.cpp:415</a></div></div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_ext_1_1_b_r_l_cdi_swap_a5e6323434bd53c802d506384d9df5481_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1_b_r_l_cdi_swap_a5e6323434bd53c802d506384d9df5481_cgraph" alt=""/></div>
-<map name="aclass_quant_ext_1_1_b_r_l_cdi_swap_a5e6323434bd53c802d506384d9df5481_cgraph" id="aclass_quant_ext_1_1_b_r_l_cdi_swap_a5e6323434bd53c802d506384d9df5481_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,104,31"/>
-<area shape="rect" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb" title=" " alt="" coords="152,5,260,31"/>
-</map>
-</div>
-
+<div class="ttc" id="anamespace_quant_ext_html_a33845c3e343e646697955b3813b5ccbb"><div class="ttname"><a href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">QuantExt::pow</a></div><div class="ttdeci">RandomVariable pow(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00676">randomvariable.cpp:676</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -258,26 +247,26 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiswap_8cpp_source.html#l00067">67</a> of file <a class="el" href="brlcdiswap_8cpp_source.html">brlcdiswap.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>                                   {</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    calculate();</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keyword">static</span> Spread basisPoint = 1.0e-4;</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (!close(endDiscounts_[0], 0.0) &amp;&amp; endDiscounts_[0] != Null&lt;DiscountFactor&gt;()) {</div>
-<div class="line"><span class="lineno">   73</span>        DiscountFactor df = endDiscounts_[0];</div>
-<div class="line"><span class="lineno">   74</span>        Time dcf = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>-&gt;dayCounter().yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>);</div>
-<div class="line"><span class="lineno">   75</span>        legBPS_[0] = df * nominal() * (<a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(1.0 + fixedRate() + basisPoint, dcf) - <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(1.0 + fixedRate(), dcf));</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> legBPS_[0];</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
-<div class="line"><span class="lineno">   78</span> </div>
-<div class="line"><span class="lineno">   79</span>    QL_FAIL(<span class="stringliteral">&quot;BRLCdiSwap cannot calculate fixed leg BPS because end discount is not populated&quot;</span>);</div>
-<div class="line"><span class="lineno">   80</span>}</div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="brlcdiswap_8cpp_source.html#l00063">63</a> of file <a class="el" href="brlcdiswap_8cpp_source.html">brlcdiswap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                   {</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    calculate();</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="keyword">const</span> Spread basisPoint = 1.0e-4;</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (!close(endDiscounts_[0], 0.0) &amp;&amp; endDiscounts_[0] != Null&lt;DiscountFactor&gt;()) {</div>
+<div class="line"><span class="lineno">   69</span>        DiscountFactor df = payer_[0] * endDiscounts_[0];</div>
+<div class="line"><span class="lineno">   70</span>        Time dcf = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>-&gt;dayCounter().yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>);</div>
+<div class="line"><span class="lineno">   71</span>        legBPS_[0] = df * nominal() * (<a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(1.0 + fixedRate() + basisPoint, dcf) - <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(1.0 + fixedRate(), dcf));</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> legBPS_[0];</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    QL_FAIL(<span class="stringliteral">&quot;BRLCdiSwap cannot calculate fixed leg BPS because end discount is not populated&quot;</span>);</div>
+<div class="line"><span class="lineno">   76</span>}</div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_ext_1_1_b_r_l_cdi_swap_a9920734539e372bb658caf26c9e63f29_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1_b_r_l_cdi_swap_a9920734539e372bb658caf26c9e63f29_cgraph" alt=""/></div>
 <map name="aclass_quant_ext_1_1_b_r_l_cdi_swap_a9920734539e372bb658caf26c9e63f29_cgraph" id="aclass_quant_ext_1_1_b_r_l_cdi_swap_a9920734539e372bb658caf26c9e63f29_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,103,31"/>
@@ -302,24 +291,24 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="brlcdiswap_8cpp_source.html#l00082">82</a> of file <a class="el" href="brlcdiswap_8cpp_source.html">brlcdiswap.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>                                {</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    calculate();</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">if</span> (!close(endDiscounts_[0], 0.0) &amp;&amp; endDiscounts_[0] != Null&lt;DiscountFactor&gt;()) {</div>
-<div class="line"><span class="lineno">   87</span>        DiscountFactor df = endDiscounts_[0];</div>
-<div class="line"><span class="lineno">   88</span>        Time dcf = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>-&gt;dayCounter().yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>);</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(overnightLegNPV() / (nominal() * df) + 1.0, 1.0 / dcf) - 1.0;</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    QL_FAIL(<span class="stringliteral">&quot;BRLCdiSwap cannot calculate fair rate because end discount is not populated&quot;</span>);</div>
-<div class="line"><span class="lineno">   93</span>}</div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="brlcdiswap_8cpp_source.html#l00078">78</a> of file <a class="el" href="brlcdiswap_8cpp_source.html">brlcdiswap.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                                {</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    calculate();</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (!close(endDiscounts_[0], 0.0) &amp;&amp; endDiscounts_[0] != Null&lt;DiscountFactor&gt;()) {</div>
+<div class="line"><span class="lineno">   83</span>        DiscountFactor df = -payer_[0] * endDiscounts_[0];</div>
+<div class="line"><span class="lineno">   84</span>        Time dcf = <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ae06281d512c91141997f462e2953e3e7">index_</a>-&gt;dayCounter().yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#ad4c9935747d00981e5c4b1a9bd5af319">startDate_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_b_r_l_cdi_swap.html#a0e8bdbee1e30641b7e7346b99e41ce90">endDate_</a>);</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_quant_ext.html#a33845c3e343e646697955b3813b5ccbb">pow</a>(overnightLegNPV() / (nominal() * df) + 1.0, 1.0 / dcf) - 1.0;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    QL_FAIL(<span class="stringliteral">&quot;BRLCdiSwap cannot calculate fair rate because end discount is not populated&quot;</span>);</div>
+<div class="line"><span class="lineno">   89</span>}</div>
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_ext_1_1_b_r_l_cdi_swap_a0a1772c51617091536848f886d7a056b_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1_b_r_l_cdi_swap_a0a1772c51617091536848f886d7a056b_cgraph" alt=""/></div>
 <map name="aclass_quant_ext_1_1_b_r_l_cdi_swap_a0a1772c51617091536848f886d7a056b_cgraph" id="aclass_quant_ext_1_1_b_r_l_cdi_swap_a0a1772c51617091536848f886d7a056b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,72,31"/>

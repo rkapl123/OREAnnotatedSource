@@ -95,15 +95,15 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_output_parameters__coll__graph.png" border="0" usemap="#a_output_parameters_coll__map" alt="Collaboration graph"/></div>
 <map name="a_output_parameters_coll__map" id="a_output_parameters_coll__map">
-<area shape="rect" title="Traditional ORE input via ore.xml and various files, output into files." alt="" coords="156,581,356,753"/>
-<area shape="rect" title=" " alt="" coords="377,345,524,399"/>
-<area shape="rect" title=" " alt="" coords="85,108,144,148"/>
-<area shape="rect" title=" " alt="" coords="210,352,353,392"/>
-<area shape="rect" title=" " alt="" coords="41,5,188,45"/>
-<area shape="rect" title=" " alt="" coords="401,108,500,148"/>
-<area shape="rect" title=" " alt="" coords="479,5,518,45"/>
-<area shape="rect" title=" " alt="" coords="335,5,374,45"/>
-<area shape="rect" title=" " alt="" coords="261,108,352,148"/>
+<area shape="rect" title="Traditional ORE input via ore.xml and various files, output into files." alt="" coords="148,581,360,812"/>
+<area shape="rect" title=" " alt="" coords="375,345,522,399"/>
+<area shape="rect" title=" " alt="" coords="83,108,142,148"/>
+<area shape="rect" title=" " alt="" coords="208,352,350,392"/>
+<area shape="rect" title=" " alt="" coords="39,5,186,45"/>
+<area shape="rect" title=" " alt="" coords="399,108,498,148"/>
+<area shape="rect" title=" " alt="" coords="477,5,516,45"/>
+<area shape="rect" title=" " alt="" coords="333,5,372,45"/>
+<area shape="rect" title=" " alt="" coords="259,108,350,148"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -155,11 +155,17 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aa71a7b3ca1533fcf57a66d490cb2386a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89db669abdcb73b55115e3b123febb2d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_output_parameters.html#a89db669abdcb73b55115e3b123febb2d">varFileName_</a></td></tr>
 <tr class="separator:a89db669abdcb73b55115e3b123febb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232819d65a4c4b7b8b9adf4c332f7d7a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_output_parameters.html#a232819d65a4c4b7b8b9adf4c332f7d7a">parConversionOutputFileName_</a></td></tr>
+<tr class="separator:a232819d65a4c4b7b8b9adf4c332f7d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e147460433cbfcca99c79360e944c1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_output_parameters.html#af3e147460433cbfcca99c79360e944c1">parConversionJacobiFileName_</a></td></tr>
+<tr class="separator:af3e147460433cbfcca99c79360e944c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dcd3391c8144d04e56e4dfb47166282"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_output_parameters.html#a9dcd3391c8144d04e56e4dfb47166282">parConversionJacobiInverseFileName_</a></td></tr>
+<tr class="separator:a9dcd3391c8144d04e56e4dfb47166282"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Traditional ORE input via ore.xml and various files, output into files. </p>
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00722">722</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00811">811</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab3c7b042c158c95c8466e2741b7092ff" name="ab3c7b042c158c95c8466e2741b7092ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3c7b042c158c95c8466e2741b7092ff">&#9670;&#160;</a></span>OutputParameters()</h2>
@@ -177,87 +183,95 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8cpp_source.html#l00429">429</a> of file <a class="el" href="inputparameters_8cpp_source.html">inputparameters.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  429</span>                                                                            {</div>
-<div class="line"><span class="lineno">  430</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;OutputFileNameMap called&quot;</span>);</div>
-<div class="line"><span class="lineno">  431</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adbbc86dd4a228382a21094e00d5fc212">npvOutputFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;npv&quot;</span>, <span class="stringliteral">&quot;outputFileName&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  432</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a01557fd48518fde1dd61a34a565550a2">cashflowOutputFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;cashflow&quot;</span>, <span class="stringliteral">&quot;outputFileName&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  433</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adc3ad4540730dbd48c0c0656bb974f56">curvesOutputFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;curves&quot;</span>, <span class="stringliteral">&quot;outputFileName&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  434</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3a670b090e03c80cee9f5134ccd8bf7e">scenarioDumpFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;simulation&quot;</span>, <span class="stringliteral">&quot;scenariodump&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  435</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a49fa3bf0d401db4b71dfb0b7ff13ffd0">cubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;simulation&quot;</span>, <span class="stringliteral">&quot;cubeFile&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  436</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a472c9b054a2b78d880518b890111f0f6">mktCubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;simulation&quot;</span>, <span class="stringliteral">&quot;aggregationScenarioDataFileName&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  437</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a0fd3eda91ba2695c80e1a8fee4298c35">rawCubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;rawCubeOutputFile&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  438</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac374e8272749681c539acfc9876c290e">netCubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;netCubeOutputFile&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  439</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ab9a409bbebffa8c0d690198ea5901753">dimEvolutionFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;dimEvolutionFile&quot;</span>, <span class="keyword">false</span>);    </div>
-<div class="line"><span class="lineno">  440</span>    std::string tmp = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;dimRegressionFiles&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  441</span>    <span class="keywordflow">if</span> (tmp != <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><span class="lineno">  442</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a> = <a class="code hl_functionRef" href="../ored/namespaceore_1_1data.html#a30e976f566a2a562e6b5a9d0c6f34ff0">parseListOfValues</a>(tmp);</div>
-<div class="line"><span class="lineno">  443</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ad692cc54f8bb77a154c54e89830158a1">sensitivityFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;sensitivityOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
-<div class="line"><span class="lineno">  444</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1f8ad4ed4839c46e962233d61c760d2f">parSensitivityFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;parSensitivityOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
-<div class="line"><span class="lineno">  445</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3586d905b0336b9dee637db5b453cae1">jacobiFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;jacobiOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
-<div class="line"><span class="lineno">  446</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1c86e36c70b913b199221618b46b8ae9">jacobiInverseFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;jacobiInverseOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
-<div class="line"><span class="lineno">  447</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a16b9ebb85845531e4c57a4b32563ce61">sensitivityScenarioFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;scenarioOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
-<div class="line"><span class="lineno">  448</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#aa71a7b3ca1533fcf57a66d490cb2386a">stressTestFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;stress&quot;</span>, <span class="stringliteral">&quot;scenarioOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
-<div class="line"><span class="lineno">  449</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a89db669abdcb73b55115e3b123febb2d">varFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;parametricVar&quot;</span>, <span class="stringliteral">&quot;outputFile&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  450</span>    </div>
-<div class="line"><span class="lineno">  451</span>    <span class="comment">// map internal report name to output file name</span></div>
-<div class="line"><span class="lineno">  452</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;npv&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adbbc86dd4a228382a21094e00d5fc212">npvOutputFileName_</a>;</div>
-<div class="line"><span class="lineno">  453</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;cashflow&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a01557fd48518fde1dd61a34a565550a2">cashflowOutputFileName_</a>;</div>
-<div class="line"><span class="lineno">  454</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;curves&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adc3ad4540730dbd48c0c0656bb974f56">curvesOutputFileName_</a>;</div>
-<div class="line"><span class="lineno">  455</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;cube&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a49fa3bf0d401db4b71dfb0b7ff13ffd0">cubeFileName_</a>;</div>
-<div class="line"><span class="lineno">  456</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;scenariodata&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a472c9b054a2b78d880518b890111f0f6">mktCubeFileName_</a>;</div>
-<div class="line"><span class="lineno">  457</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;scenario&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3a670b090e03c80cee9f5134ccd8bf7e">scenarioDumpFileName_</a>;</div>
-<div class="line"><span class="lineno">  458</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;rawcube&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a0fd3eda91ba2695c80e1a8fee4298c35">rawCubeFileName_</a>;</div>
-<div class="line"><span class="lineno">  459</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;netcube&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac374e8272749681c539acfc9876c290e">netCubeFileName_</a>;</div>
-<div class="line"><span class="lineno">  460</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;dim_evolution&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ab9a409bbebffa8c0d690198ea5901753">dimEvolutionFileName_</a>;</div>
-<div class="line"><span class="lineno">  461</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;sensitivity&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ad692cc54f8bb77a154c54e89830158a1">sensitivityFileName_</a>;</div>
-<div class="line"><span class="lineno">  462</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;sensitivity_scenario&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a16b9ebb85845531e4c57a4b32563ce61">sensitivityScenarioFileName_</a>;</div>
-<div class="line"><span class="lineno">  463</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;parSensitivity&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1f8ad4ed4839c46e962233d61c760d2f">parSensitivityFileName_</a>;</div>
-<div class="line"><span class="lineno">  464</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;jacobi&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3586d905b0336b9dee637db5b453cae1">jacobiFileName_</a>;</div>
-<div class="line"><span class="lineno">  465</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;jacobi_inverse&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1c86e36c70b913b199221618b46b8ae9">jacobiInverseFileName_</a>;</div>
-<div class="line"><span class="lineno">  466</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;stress&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#aa71a7b3ca1533fcf57a66d490cb2386a">stressTestFileName_</a>;</div>
-<div class="line"><span class="lineno">  467</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;var&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a89db669abdcb73b55115e3b123febb2d">varFileName_</a>;</div>
-<div class="line"><span class="lineno">  468</span>    </div>
-<div class="line"><span class="lineno">  469</span>    vector&lt;Size&gt; dimOutputGridPoints;</div>
-<div class="line"><span class="lineno">  470</span>    tmp = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;dimOutputGridPoints&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  471</span>    <span class="keywordflow">if</span> (tmp != <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><span class="lineno">  472</span>        dimOutputGridPoints = parseListOfValues&lt;Size&gt;(tmp, parseInteger);</div>
-<div class="line"><span class="lineno">  473</span>    QL_REQUIRE(dimOutputGridPoints.size() == <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>.size(),</div>
-<div class="line"><span class="lineno">  474</span>               <span class="stringliteral">&quot;dim regression output grid points size (&quot;</span> &lt;&lt; dimOutputGridPoints.size() &lt;&lt; <span class="stringliteral">&quot;) &quot;</span></div>
-<div class="line"><span class="lineno">  475</span>               &lt;&lt; <span class="stringliteral">&quot;and file names size (&quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>.size() &lt;&lt; <span class="stringliteral">&quot;) do not match&quot;</span>);</div>
-<div class="line"><span class="lineno">  476</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>.size(); ++i)</div>
-<div class="line"><span class="lineno">  477</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;dim_regression_&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i)] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>[i];</div>
-<div class="line"><span class="lineno">  478</span> </div>
-<div class="line"><span class="lineno">  479</span>    tmp = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;creditMigrationTimeSteps&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  480</span>    <span class="keywordflow">if</span> (tmp != <span class="stringliteral">&quot;&quot;</span>) {</div>
-<div class="line"><span class="lineno">  481</span>        <span class="keyword">auto</span> ts = parseListOfValues&lt;Size&gt;(tmp, &amp;parseInteger);</div>
-<div class="line"><span class="lineno">  482</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; t : ts) {</div>
-<div class="line"><span class="lineno">  483</span>            <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;credit_migration_&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(t)] =</div>
-<div class="line"><span class="lineno">  484</span>                params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;creditMigrationOutputFiles&quot;</span>) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(t);</div>
-<div class="line"><span class="lineno">  485</span>        }</div>
-<div class="line"><span class="lineno">  486</span>    }</div>
-<div class="line"><span class="lineno">  487</span> </div>
-<div class="line"><span class="lineno">  488</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;OutputFileNameMap complete&quot;</span>);</div>
-<div class="line"><span class="lineno">  489</span>}</div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a01557fd48518fde1dd61a34a565550a2"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a01557fd48518fde1dd61a34a565550a2">ore::analytics::OutputParameters::cashflowOutputFileName_</a></div><div class="ttdeci">std::string cashflowOutputFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00732">inputparameters.hpp:732</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a0fd3eda91ba2695c80e1a8fee4298c35"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a0fd3eda91ba2695c80e1a8fee4298c35">ore::analytics::OutputParameters::rawCubeFileName_</a></div><div class="ttdeci">std::string rawCubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00737">inputparameters.hpp:737</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a16b9ebb85845531e4c57a4b32563ce61"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a16b9ebb85845531e4c57a4b32563ce61">ore::analytics::OutputParameters::sensitivityScenarioFileName_</a></div><div class="ttdeci">std::string sensitivityScenarioFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00742">inputparameters.hpp:742</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a1c86e36c70b913b199221618b46b8ae9"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a1c86e36c70b913b199221618b46b8ae9">ore::analytics::OutputParameters::jacobiInverseFileName_</a></div><div class="ttdeci">std::string jacobiInverseFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00745">inputparameters.hpp:745</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a1f8ad4ed4839c46e962233d61c760d2f"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a1f8ad4ed4839c46e962233d61c760d2f">ore::analytics::OutputParameters::parSensitivityFileName_</a></div><div class="ttdeci">std::string parSensitivityFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00743">inputparameters.hpp:743</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a3586d905b0336b9dee637db5b453cae1"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a3586d905b0336b9dee637db5b453cae1">ore::analytics::OutputParameters::jacobiFileName_</a></div><div class="ttdeci">std::string jacobiFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00744">inputparameters.hpp:744</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a3a670b090e03c80cee9f5134ccd8bf7e"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a3a670b090e03c80cee9f5134ccd8bf7e">ore::analytics::OutputParameters::scenarioDumpFileName_</a></div><div class="ttdeci">std::string scenarioDumpFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00734">inputparameters.hpp:734</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a472c9b054a2b78d880518b890111f0f6"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a472c9b054a2b78d880518b890111f0f6">ore::analytics::OutputParameters::mktCubeFileName_</a></div><div class="ttdeci">std::string mktCubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00736">inputparameters.hpp:736</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a49fa3bf0d401db4b71dfb0b7ff13ffd0"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a49fa3bf0d401db4b71dfb0b7ff13ffd0">ore::analytics::OutputParameters::cubeFileName_</a></div><div class="ttdeci">std::string cubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00735">inputparameters.hpp:735</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a78eea9a2bcaae13902dc2c8c5e5fc72a"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">ore::analytics::OutputParameters::fileNameMap_</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; fileNameMap_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00730">inputparameters.hpp:730</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a89db669abdcb73b55115e3b123febb2d"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a89db669abdcb73b55115e3b123febb2d">ore::analytics::OutputParameters::varFileName_</a></div><div class="ttdeci">std::string varFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00747">inputparameters.hpp:747</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_aa71a7b3ca1533fcf57a66d490cb2386a"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#aa71a7b3ca1533fcf57a66d490cb2386a">ore::analytics::OutputParameters::stressTestFileName_</a></div><div class="ttdeci">std::string stressTestFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00746">inputparameters.hpp:746</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ab9a409bbebffa8c0d690198ea5901753"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ab9a409bbebffa8c0d690198ea5901753">ore::analytics::OutputParameters::dimEvolutionFileName_</a></div><div class="ttdeci">std::string dimEvolutionFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00739">inputparameters.hpp:739</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ac374e8272749681c539acfc9876c290e"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ac374e8272749681c539acfc9876c290e">ore::analytics::OutputParameters::netCubeFileName_</a></div><div class="ttdeci">std::string netCubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00738">inputparameters.hpp:738</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ac56fae4aa175a7e2caf0b30a15428a49"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">ore::analytics::OutputParameters::dimRegressionFileNames_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; dimRegressionFileNames_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00740">inputparameters.hpp:740</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ad692cc54f8bb77a154c54e89830158a1"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ad692cc54f8bb77a154c54e89830158a1">ore::analytics::OutputParameters::sensitivityFileName_</a></div><div class="ttdeci">std::string sensitivityFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00741">inputparameters.hpp:741</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_adbbc86dd4a228382a21094e00d5fc212"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#adbbc86dd4a228382a21094e00d5fc212">ore::analytics::OutputParameters::npvOutputFileName_</a></div><div class="ttdeci">std::string npvOutputFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00731">inputparameters.hpp:731</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_adc3ad4540730dbd48c0c0656bb974f56"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#adc3ad4540730dbd48c0c0656bb974f56">ore::analytics::OutputParameters::curvesOutputFileName_</a></div><div class="ttdeci">std::string curvesOutputFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00733">inputparameters.hpp:733</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div></div>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8cpp_source.html#l00462">462</a> of file <a class="el" href="inputparameters_8cpp_source.html">inputparameters.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  462</span>                                                                            {</div>
+<div class="line"><span class="lineno">  463</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;OutputFileNameMap called&quot;</span>);</div>
+<div class="line"><span class="lineno">  464</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adbbc86dd4a228382a21094e00d5fc212">npvOutputFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;npv&quot;</span>, <span class="stringliteral">&quot;outputFileName&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  465</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a01557fd48518fde1dd61a34a565550a2">cashflowOutputFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;cashflow&quot;</span>, <span class="stringliteral">&quot;outputFileName&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  466</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adc3ad4540730dbd48c0c0656bb974f56">curvesOutputFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;curves&quot;</span>, <span class="stringliteral">&quot;outputFileName&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  467</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3a670b090e03c80cee9f5134ccd8bf7e">scenarioDumpFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;simulation&quot;</span>, <span class="stringliteral">&quot;scenariodump&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  468</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a49fa3bf0d401db4b71dfb0b7ff13ffd0">cubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;simulation&quot;</span>, <span class="stringliteral">&quot;cubeFile&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  469</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a472c9b054a2b78d880518b890111f0f6">mktCubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;simulation&quot;</span>, <span class="stringliteral">&quot;aggregationScenarioDataFileName&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  470</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a0fd3eda91ba2695c80e1a8fee4298c35">rawCubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;rawCubeOutputFile&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  471</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac374e8272749681c539acfc9876c290e">netCubeFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;netCubeOutputFile&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  472</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ab9a409bbebffa8c0d690198ea5901753">dimEvolutionFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;dimEvolutionFile&quot;</span>, <span class="keyword">false</span>);    </div>
+<div class="line"><span class="lineno">  473</span>    std::string tmp = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;dimRegressionFiles&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  474</span>    <span class="keywordflow">if</span> (tmp != <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">  475</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a> = <a class="code hl_functionRef" href="../ored/namespaceore_1_1data.html#a30e976f566a2a562e6b5a9d0c6f34ff0">parseListOfValues</a>(tmp);</div>
+<div class="line"><span class="lineno">  476</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ad692cc54f8bb77a154c54e89830158a1">sensitivityFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;sensitivityOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
+<div class="line"><span class="lineno">  477</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1f8ad4ed4839c46e962233d61c760d2f">parSensitivityFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;parSensitivityOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
+<div class="line"><span class="lineno">  478</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3586d905b0336b9dee637db5b453cae1">jacobiFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;jacobiOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
+<div class="line"><span class="lineno">  479</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1c86e36c70b913b199221618b46b8ae9">jacobiInverseFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;jacobiInverseOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
+<div class="line"><span class="lineno">  480</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a16b9ebb85845531e4c57a4b32563ce61">sensitivityScenarioFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;sensitivity&quot;</span>, <span class="stringliteral">&quot;scenarioOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
+<div class="line"><span class="lineno">  481</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#aa71a7b3ca1533fcf57a66d490cb2386a">stressTestFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;stress&quot;</span>, <span class="stringliteral">&quot;scenarioOutputFile&quot;</span>, <span class="keyword">false</span>);    </div>
+<div class="line"><span class="lineno">  482</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a89db669abdcb73b55115e3b123febb2d">varFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;parametricVar&quot;</span>, <span class="stringliteral">&quot;outputFile&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  483</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a232819d65a4c4b7b8b9adf4c332f7d7a">parConversionOutputFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;zeroToParSensiConversion&quot;</span>, <span class="stringliteral">&quot;outputFile&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  484</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#af3e147460433cbfcca99c79360e944c1">parConversionJacobiFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;zeroToParSensiConversion&quot;</span>, <span class="stringliteral">&quot;jacobiOutputFile&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  485</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a9dcd3391c8144d04e56e4dfb47166282">parConversionJacobiInverseFileName_</a> = params-&gt;get(<span class="stringliteral">&quot;zeroToParSensiConversion&quot;</span>, <span class="stringliteral">&quot;jacobiInverseOutputFile&quot;</span>, <span class="keyword">false</span>);  </div>
+<div class="line"><span class="lineno">  486</span> </div>
+<div class="line"><span class="lineno">  487</span>    <span class="comment">// map internal report name to output file name</span></div>
+<div class="line"><span class="lineno">  488</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;npv&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adbbc86dd4a228382a21094e00d5fc212">npvOutputFileName_</a>;</div>
+<div class="line"><span class="lineno">  489</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;cashflow&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a01557fd48518fde1dd61a34a565550a2">cashflowOutputFileName_</a>;</div>
+<div class="line"><span class="lineno">  490</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;curves&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#adc3ad4540730dbd48c0c0656bb974f56">curvesOutputFileName_</a>;</div>
+<div class="line"><span class="lineno">  491</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;cube&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a49fa3bf0d401db4b71dfb0b7ff13ffd0">cubeFileName_</a>;</div>
+<div class="line"><span class="lineno">  492</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;scenariodata&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a472c9b054a2b78d880518b890111f0f6">mktCubeFileName_</a>;</div>
+<div class="line"><span class="lineno">  493</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;scenario&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3a670b090e03c80cee9f5134ccd8bf7e">scenarioDumpFileName_</a>;</div>
+<div class="line"><span class="lineno">  494</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;rawcube&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a0fd3eda91ba2695c80e1a8fee4298c35">rawCubeFileName_</a>;</div>
+<div class="line"><span class="lineno">  495</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;netcube&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac374e8272749681c539acfc9876c290e">netCubeFileName_</a>;</div>
+<div class="line"><span class="lineno">  496</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;dim_evolution&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ab9a409bbebffa8c0d690198ea5901753">dimEvolutionFileName_</a>;</div>
+<div class="line"><span class="lineno">  497</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;sensitivity&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ad692cc54f8bb77a154c54e89830158a1">sensitivityFileName_</a>;</div>
+<div class="line"><span class="lineno">  498</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;sensitivity_scenario&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a16b9ebb85845531e4c57a4b32563ce61">sensitivityScenarioFileName_</a>;</div>
+<div class="line"><span class="lineno">  499</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;par_sensitivity&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1f8ad4ed4839c46e962233d61c760d2f">parSensitivityFileName_</a>;</div>
+<div class="line"><span class="lineno">  500</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;jacobi&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a3586d905b0336b9dee637db5b453cae1">jacobiFileName_</a>;</div>
+<div class="line"><span class="lineno">  501</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;jacobi_inverse&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a1c86e36c70b913b199221618b46b8ae9">jacobiInverseFileName_</a>;</div>
+<div class="line"><span class="lineno">  502</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;stress&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#aa71a7b3ca1533fcf57a66d490cb2386a">stressTestFileName_</a>;</div>
+<div class="line"><span class="lineno">  503</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;var&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a89db669abdcb73b55115e3b123febb2d">varFileName_</a>;</div>
+<div class="line"><span class="lineno">  504</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;parConversionSensitivity&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a232819d65a4c4b7b8b9adf4c332f7d7a">parConversionOutputFileName_</a>;</div>
+<div class="line"><span class="lineno">  505</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;parConversionJacobi&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#af3e147460433cbfcca99c79360e944c1">parConversionJacobiFileName_</a>;</div>
+<div class="line"><span class="lineno">  506</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;parConversionJacobi_inverse&quot;</span>] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a9dcd3391c8144d04e56e4dfb47166282">parConversionJacobiInverseFileName_</a>;</div>
+<div class="line"><span class="lineno">  507</span>    </div>
+<div class="line"><span class="lineno">  508</span>    vector&lt;Size&gt; dimOutputGridPoints;</div>
+<div class="line"><span class="lineno">  509</span>    tmp = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;dimOutputGridPoints&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  510</span>    <span class="keywordflow">if</span> (tmp != <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">  511</span>        dimOutputGridPoints = parseListOfValues&lt;Size&gt;(tmp, parseInteger);</div>
+<div class="line"><span class="lineno">  512</span>    QL_REQUIRE(dimOutputGridPoints.size() == <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>.size(),</div>
+<div class="line"><span class="lineno">  513</span>               <span class="stringliteral">&quot;dim regression output grid points size (&quot;</span> &lt;&lt; dimOutputGridPoints.size() &lt;&lt; <span class="stringliteral">&quot;) &quot;</span></div>
+<div class="line"><span class="lineno">  514</span>               &lt;&lt; <span class="stringliteral">&quot;and file names size (&quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>.size() &lt;&lt; <span class="stringliteral">&quot;) do not match&quot;</span>);</div>
+<div class="line"><span class="lineno">  515</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>.size(); ++i)</div>
+<div class="line"><span class="lineno">  516</span>        <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;dim_regression_&quot;</span> + std::to_string(i)] = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">dimRegressionFileNames_</a>[i];</div>
+<div class="line"><span class="lineno">  517</span> </div>
+<div class="line"><span class="lineno">  518</span>    tmp = params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;creditMigrationTimeSteps&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  519</span>    <span class="keywordflow">if</span> (tmp != <span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><span class="lineno">  520</span>        <span class="keyword">auto</span> ts = parseListOfValues&lt;Size&gt;(tmp, &amp;parseInteger);</div>
+<div class="line"><span class="lineno">  521</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; t : ts) {</div>
+<div class="line"><span class="lineno">  522</span>            <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>[<span class="stringliteral">&quot;credit_migration_&quot;</span> + std::to_string(t)] =</div>
+<div class="line"><span class="lineno">  523</span>                params-&gt;get(<span class="stringliteral">&quot;xva&quot;</span>, <span class="stringliteral">&quot;creditMigrationOutputFiles&quot;</span>) + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(t);</div>
+<div class="line"><span class="lineno">  524</span>        }</div>
+<div class="line"><span class="lineno">  525</span>    }</div>
+<div class="line"><span class="lineno">  526</span> </div>
+<div class="line"><span class="lineno">  527</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;OutputFileNameMap complete&quot;</span>);</div>
+<div class="line"><span class="lineno">  528</span>}</div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a01557fd48518fde1dd61a34a565550a2"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a01557fd48518fde1dd61a34a565550a2">ore::analytics::OutputParameters::cashflowOutputFileName_</a></div><div class="ttdeci">std::string cashflowOutputFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00821">inputparameters.hpp:821</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a0fd3eda91ba2695c80e1a8fee4298c35"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a0fd3eda91ba2695c80e1a8fee4298c35">ore::analytics::OutputParameters::rawCubeFileName_</a></div><div class="ttdeci">std::string rawCubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00826">inputparameters.hpp:826</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a16b9ebb85845531e4c57a4b32563ce61"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a16b9ebb85845531e4c57a4b32563ce61">ore::analytics::OutputParameters::sensitivityScenarioFileName_</a></div><div class="ttdeci">std::string sensitivityScenarioFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00831">inputparameters.hpp:831</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a1c86e36c70b913b199221618b46b8ae9"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a1c86e36c70b913b199221618b46b8ae9">ore::analytics::OutputParameters::jacobiInverseFileName_</a></div><div class="ttdeci">std::string jacobiInverseFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00834">inputparameters.hpp:834</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a1f8ad4ed4839c46e962233d61c760d2f"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a1f8ad4ed4839c46e962233d61c760d2f">ore::analytics::OutputParameters::parSensitivityFileName_</a></div><div class="ttdeci">std::string parSensitivityFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00832">inputparameters.hpp:832</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a232819d65a4c4b7b8b9adf4c332f7d7a"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a232819d65a4c4b7b8b9adf4c332f7d7a">ore::analytics::OutputParameters::parConversionOutputFileName_</a></div><div class="ttdeci">std::string parConversionOutputFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00837">inputparameters.hpp:837</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a3586d905b0336b9dee637db5b453cae1"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a3586d905b0336b9dee637db5b453cae1">ore::analytics::OutputParameters::jacobiFileName_</a></div><div class="ttdeci">std::string jacobiFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00833">inputparameters.hpp:833</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a3a670b090e03c80cee9f5134ccd8bf7e"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a3a670b090e03c80cee9f5134ccd8bf7e">ore::analytics::OutputParameters::scenarioDumpFileName_</a></div><div class="ttdeci">std::string scenarioDumpFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00823">inputparameters.hpp:823</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a472c9b054a2b78d880518b890111f0f6"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a472c9b054a2b78d880518b890111f0f6">ore::analytics::OutputParameters::mktCubeFileName_</a></div><div class="ttdeci">std::string mktCubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00825">inputparameters.hpp:825</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a49fa3bf0d401db4b71dfb0b7ff13ffd0"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a49fa3bf0d401db4b71dfb0b7ff13ffd0">ore::analytics::OutputParameters::cubeFileName_</a></div><div class="ttdeci">std::string cubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00824">inputparameters.hpp:824</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a78eea9a2bcaae13902dc2c8c5e5fc72a"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">ore::analytics::OutputParameters::fileNameMap_</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; fileNameMap_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00819">inputparameters.hpp:819</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a89db669abdcb73b55115e3b123febb2d"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a89db669abdcb73b55115e3b123febb2d">ore::analytics::OutputParameters::varFileName_</a></div><div class="ttdeci">std::string varFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00836">inputparameters.hpp:836</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_a9dcd3391c8144d04e56e4dfb47166282"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#a9dcd3391c8144d04e56e4dfb47166282">ore::analytics::OutputParameters::parConversionJacobiInverseFileName_</a></div><div class="ttdeci">std::string parConversionJacobiInverseFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00839">inputparameters.hpp:839</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_aa71a7b3ca1533fcf57a66d490cb2386a"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#aa71a7b3ca1533fcf57a66d490cb2386a">ore::analytics::OutputParameters::stressTestFileName_</a></div><div class="ttdeci">std::string stressTestFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00835">inputparameters.hpp:835</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ab9a409bbebffa8c0d690198ea5901753"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ab9a409bbebffa8c0d690198ea5901753">ore::analytics::OutputParameters::dimEvolutionFileName_</a></div><div class="ttdeci">std::string dimEvolutionFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00828">inputparameters.hpp:828</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ac374e8272749681c539acfc9876c290e"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ac374e8272749681c539acfc9876c290e">ore::analytics::OutputParameters::netCubeFileName_</a></div><div class="ttdeci">std::string netCubeFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00827">inputparameters.hpp:827</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ac56fae4aa175a7e2caf0b30a15428a49"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ac56fae4aa175a7e2caf0b30a15428a49">ore::analytics::OutputParameters::dimRegressionFileNames_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; dimRegressionFileNames_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00829">inputparameters.hpp:829</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_ad692cc54f8bb77a154c54e89830158a1"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#ad692cc54f8bb77a154c54e89830158a1">ore::analytics::OutputParameters::sensitivityFileName_</a></div><div class="ttdeci">std::string sensitivityFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00830">inputparameters.hpp:830</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_adbbc86dd4a228382a21094e00d5fc212"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#adbbc86dd4a228382a21094e00d5fc212">ore::analytics::OutputParameters::npvOutputFileName_</a></div><div class="ttdeci">std::string npvOutputFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00820">inputparameters.hpp:820</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_adc3ad4540730dbd48c0c0656bb974f56"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#adc3ad4540730dbd48c0c0656bb974f56">ore::analytics::OutputParameters::curvesOutputFileName_</a></div><div class="ttdeci">std::string curvesOutputFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00822">inputparameters.hpp:822</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_output_parameters_html_af3e147460433cbfcca99c79360e944c1"><div class="ttname"><a href="classore_1_1analytics_1_1_output_parameters.html#af3e147460433cbfcca99c79360e944c1">ore::analytics::OutputParameters::parConversionJacobiFileName_</a></div><div class="ttdeci">std::string parConversionJacobiFileName_</div><div class="ttdef"><b>Definition:</b> <a href="inputparameters_8hpp_source.html#l00838">inputparameters.hpp:838</a></div></div>
 <div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a30e976f566a2a562e6b5a9d0c6f34ff0"><div class="ttname"><a href="../ored/namespaceore_1_1data.html#a30e976f566a2a562e6b5a9d0c6f34ff0">parseListOfValues</a></div><div class="ttdeci">std::vector&lt; string &gt; parseListOfValues(string s, const char escape, const char delim, const char quote)</div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -267,10 +281,9 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_output_parameters_ab3c7b042c158c95c8466e2741b7092ff_cgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_output_parameters_ab3c7b042c158c95c8466e2741b7092ff_cgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_output_parameters_ab3c7b042c158c95c8466e2741b7092ff_cgraph" id="aclassore_1_1analytics_1_1_output_parameters_ab3c7b042c158c95c8466e2741b7092ff_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,133,80"/>
+<area shape="rect" title=" " alt="" coords="5,31,133,56"/>
 <area shape="rect" target="_parent" href="../ored/group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title=" " alt="" coords="199,5,292,31"/>
 <area shape="rect" target="_parent" href="../ored/namespaceore_1_1data.html#a30e976f566a2a562e6b5a9d0c6f34ff0" title=" " alt="" coords="181,55,309,80"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="209,104,281,129"/>
 </map>
 </div>
 
@@ -294,8 +307,8 @@ Private Attributes</h2></td></tr>
 
 <p>map internal report name to the configured external file name </p>
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00726">726</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  726</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00815">815</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  815</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,14 +338,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8cpp_source.html#l00491">491</a> of file <a class="el" href="inputparameters_8cpp_source.html">inputparameters.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  491</span>                                                                                                 {</div>
-<div class="line"><span class="lineno">  492</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>.find(internalName);</div>
-<div class="line"><span class="lineno">  493</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>.end() || it-&gt;second == <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><span class="lineno">  494</span>        <span class="keywordflow">return</span> internalName + <span class="stringliteral">&quot;.&quot;</span> + suffix;</div>
-<div class="line"><span class="lineno">  495</span>    <span class="keywordflow">else</span>        </div>
-<div class="line"><span class="lineno">  496</span>        <span class="keywordflow">return</span> it-&gt;second; <span class="comment">// contains suffix</span></div>
-<div class="line"><span class="lineno">  497</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8cpp_source.html#l00530">530</a> of file <a class="el" href="inputparameters_8cpp_source.html">inputparameters.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  530</span>                                                                                                 {</div>
+<div class="line"><span class="lineno">  531</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>.find(internalName);</div>
+<div class="line"><span class="lineno">  532</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classore_1_1analytics_1_1_output_parameters.html#a78eea9a2bcaae13902dc2c8c5e5fc72a">fileNameMap_</a>.end() || it-&gt;second == <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">  533</span>        <span class="keywordflow">return</span> internalName + <span class="stringliteral">&quot;.&quot;</span> + suffix;</div>
+<div class="line"><span class="lineno">  534</span>    <span class="keywordflow">else</span>        </div>
+<div class="line"><span class="lineno">  535</span>        <span class="keywordflow">return</span> it-&gt;second; <span class="comment">// contains suffix</span></div>
+<div class="line"><span class="lineno">  536</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -357,7 +370,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00730">730</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00819">819</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +394,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00731">731</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00820">820</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +418,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00732">732</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00821">821</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -429,7 +442,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00733">733</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00822">822</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,7 +466,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00734">734</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00823">823</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -477,7 +490,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00735">735</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00824">824</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -501,7 +514,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00736">736</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00825">825</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -525,7 +538,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00737">737</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00826">826</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -549,7 +562,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00738">738</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00827">827</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +586,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00739">739</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00828">828</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -597,7 +610,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00740">740</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00829">829</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -621,7 +634,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00741">741</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00830">830</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -645,7 +658,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00742">742</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00831">831</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -669,7 +682,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00743">743</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00832">832</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -693,7 +706,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00744">744</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00833">833</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -717,7 +730,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00745">745</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00834">834</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -741,7 +754,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00746">746</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00835">835</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>
@@ -765,7 +778,79 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00747">747</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00836">836</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a232819d65a4c4b7b8b9adf4c332f7d7a" name="a232819d65a4c4b7b8b9adf4c332f7d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232819d65a4c4b7b8b9adf4c332f7d7a">&#9670;&#160;</a></span>parConversionOutputFileName_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string parConversionOutputFileName_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00837">837</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af3e147460433cbfcca99c79360e944c1" name="af3e147460433cbfcca99c79360e944c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e147460433cbfcca99c79360e944c1">&#9670;&#160;</a></span>parConversionJacobiFileName_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string parConversionJacobiFileName_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00838">838</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9dcd3391c8144d04e56e4dfb47166282" name="a9dcd3391c8144d04e56e4dfb47166282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dcd3391c8144d04e56e4dfb47166282">&#9670;&#160;</a></span>parConversionJacobiInverseFileName_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string parConversionJacobiInverseFileName_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inputparameters_8hpp_source.html#l00839">839</a> of file <a class="el" href="inputparameters_8hpp_source.html">inputparameters.hpp</a>.</p>
 
 </div>
 </div>

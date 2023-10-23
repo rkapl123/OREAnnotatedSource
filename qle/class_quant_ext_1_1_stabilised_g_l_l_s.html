@@ -707,7 +707,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  140</span>            acc(x[i]);</div>
 <div class="line"><span class="lineno">  141</span>        }</div>
 <div class="line"><span class="lineno">  142</span>        <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#a9f85357c30762512c1f400e644b7a132">xShift_</a>[0] = -mean(acc);</div>
-<div class="line"><span class="lineno">  143</span>        Real tmp = variance(acc);</div>
+<div class="line"><span class="lineno">  143</span>        Real tmp = boost::accumulators::variance(acc);</div>
 <div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> (!QuantLib::close_enough(tmp, 0.0))</div>
 <div class="line"><span class="lineno">  145</span>            <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#aa244efd298f0c5b13499d08df826bb14">xMultiplier_</a>[0] = 1.0 / std::sqrt(tmp);</div>
 <div class="line"><span class="lineno">  146</span>        accumulator_set&lt;Real, stats&lt;boost::accumulators::tag::mean, boost::accumulators::tag::variance&gt; &gt; acc2;</div>
@@ -715,7 +715,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  148</span>            acc2(y[i]);</div>
 <div class="line"><span class="lineno">  149</span>        }</div>
 <div class="line"><span class="lineno">  150</span>        <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#a017229b6a9f88fb737192499a841c01a">yShift_</a> = -mean(acc2);</div>
-<div class="line"><span class="lineno">  151</span>        Real tmp2 = variance(acc2);</div>
+<div class="line"><span class="lineno">  151</span>        Real tmp2 = boost::accumulators::variance(acc2);</div>
 <div class="line"><span class="lineno">  152</span>        <span class="keywordflow">if</span> (!QuantLib::close_enough(tmp2, 0.0))</div>
 <div class="line"><span class="lineno">  153</span>            <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#a3076a3e9b5bde1d665df490b8f3b395a">yMultiplier_</a> = 1.0 / std::sqrt(tmp2);</div>
 <div class="line"><span class="lineno">  154</span>        <span class="keywordflow">break</span>;</div>
@@ -837,7 +837,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  213</span>        }</div>
 <div class="line"><span class="lineno">  214</span>        <span class="keywordflow">for</span> (Size j = 0; j &lt; acc.size(); ++j) {</div>
 <div class="line"><span class="lineno">  215</span>            <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#a9f85357c30762512c1f400e644b7a132">xShift_</a>[j] = -mean(acc[j]);</div>
-<div class="line"><span class="lineno">  216</span>            Real tmp = variance(acc[j]);</div>
+<div class="line"><span class="lineno">  216</span>            Real tmp = boost::accumulators::variance(acc[j]);</div>
 <div class="line"><span class="lineno">  217</span>            <span class="keywordflow">if</span> (!QuantLib::close_enough(tmp, 0.0))</div>
 <div class="line"><span class="lineno">  218</span>                <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#aa244efd298f0c5b13499d08df826bb14">xMultiplier_</a>[j] = 1.0 / std::sqrt(tmp);</div>
 <div class="line"><span class="lineno">  219</span>        }</div>
@@ -846,7 +846,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  222</span>            acc2(y[i]);</div>
 <div class="line"><span class="lineno">  223</span>        }</div>
 <div class="line"><span class="lineno">  224</span>        <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#a017229b6a9f88fb737192499a841c01a">yShift_</a> = -mean(acc2);</div>
-<div class="line"><span class="lineno">  225</span>        Real tmp2 = variance(acc2);</div>
+<div class="line"><span class="lineno">  225</span>        Real tmp2 = boost::accumulators::variance(acc2);</div>
 <div class="line"><span class="lineno">  226</span>        <span class="keywordflow">if</span> (!QuantLib::close_enough(tmp2, 0.0))</div>
 <div class="line"><span class="lineno">  227</span>            <a class="code hl_variable" href="class_quant_ext_1_1_stabilised_g_l_l_s.html#a3076a3e9b5bde1d665df490b8f3b395a">yMultiplier_</a> = 1.0 / std::sqrt(tmp2);</div>
 <div class="line"><span class="lineno">  228</span>        <span class="keywordflow">break</span>;</div>

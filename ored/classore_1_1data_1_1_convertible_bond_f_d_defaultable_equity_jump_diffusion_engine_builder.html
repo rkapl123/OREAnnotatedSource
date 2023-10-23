@@ -333,204 +333,223 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2convertiblebond_8cpp_source.html#l00052">52</a> of file <a class="el" href="builders_2convertiblebond_8cpp_source.html">convertiblebond.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                                                                           {</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span>    std::string config = this-&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#aaacbfbb4007edcf8c34df2f37f8ebae5">configuration</a>(<a class="code hl_enumvalue" href="namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cca59aab28b54594c59dab8d19afd9478e4">ore::data::MarketContext::pricing</a>);</div>
+<p class="definition">Definition at line <a class="el" href="builders_2convertiblebond_8cpp_source.html#l00054">54</a> of file <a class="el" href="builders_2convertiblebond_8cpp_source.html">convertiblebond.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                                                                           {</div>
 <div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    <span class="comment">// get pricing engine config</span></div>
+<div class="line"><span class="lineno">   60</span>    std::string config = this-&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#aaacbfbb4007edcf8c34df2f37f8ebae5">configuration</a>(<a class="code hl_enumvalue" href="namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cca59aab28b54594c59dab8d19afd9478e4">ore::data::MarketContext::pricing</a>);</div>
 <div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>    Real p = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;p&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   63</span>    Real eta = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;eta&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordtype">bool</span> staticMesher = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;MesherIsStatic&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   65</span>    Size modelTimeStepsPerYear = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.TimeStepsPerYear&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   66</span>    Size modelStateGridPoints = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.StateGridPoints&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   67</span>    Real modelMesherEpsilon = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.MesherEpsilon&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   68</span>    Real modelMesherScaling = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.MesherScaling&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keyword">auto</span> modelMesherConcentrationStr = <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.MesherConcentration&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   70</span>    Real modelMesherConcentration = Null&lt;Real&gt;();</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (!modelMesherConcentrationStr.empty())</div>
-<div class="line"><span class="lineno">   72</span>        modelMesherConcentration = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(modelMesherConcentrationStr);</div>
-<div class="line"><span class="lineno">   73</span>    <span class="keyword">auto</span> bootstrapModeStr = <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.Mode&quot;</span>, {}, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   74</span>    <a class="code hl_enumerationRef" href="../qle/class_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder.html#aa125f70dd028de45151f4a487a28bb8d">DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode</a> bootstrapMode;</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (bootstrapModeStr == <span class="stringliteral">&quot;Alternating&quot;</span>) {</div>
-<div class="line"><span class="lineno">   76</span>        bootstrapMode = DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode::Alternating;</div>
-<div class="line"><span class="lineno">   77</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bootstrapModeStr == <span class="stringliteral">&quot;Simultaneously&quot;</span>) {</div>
-<div class="line"><span class="lineno">   78</span>        bootstrapMode = DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode::Simultaneously;</div>
-<div class="line"><span class="lineno">   79</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   80</span>        QL_FAIL(<span class="stringliteral">&quot;invalid Bootstrap.Mode, expected Alternating or Simultaneously&quot;</span>);</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="line"><span class="lineno">   82</span>    Size engineTimeStepsPerYear = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.TimeStepsPerYear&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   83</span>    Size engineStateGridPoints = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.StateGridPoints&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   84</span>    Real engineMesherEpsilon = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.MesherEpsilon&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   85</span>    Real engineMesherScaling = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.MesherScaling&quot;</span>, {}, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">   86</span>    std::vector&lt;Real&gt; conversionRatioDiscretisationGrid =</div>
-<div class="line"><span class="lineno">   87</span>        parseListOfValues&lt;Real&gt;(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.ConversionRatioDiscretisationGrid&quot;</span>, {}, <span class="keyword">true</span>), &amp;parseReal);</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="comment">// technical parameters, we might want to review these an replace by less technical settings</span></div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// get pricing engine config</span></div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>    Real p = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;p&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   65</span>    Real eta = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;eta&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordtype">bool</span> staticMesher = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;MesherIsStatic&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   67</span>    Size modelTimeStepsPerYear = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.TimeStepsPerYear&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   68</span>    Size modelStateGridPoints = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.StateGridPoints&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   69</span>    Real modelMesherEpsilon = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.MesherEpsilon&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   70</span>    Real modelMesherScaling = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.MesherScaling&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keyword">auto</span> modelMesherConcentrationStr = <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.MesherConcentration&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   72</span>    Real modelMesherConcentration = Null&lt;Real&gt;();</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (!modelMesherConcentrationStr.empty())</div>
+<div class="line"><span class="lineno">   74</span>        modelMesherConcentration = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(modelMesherConcentrationStr);</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keyword">auto</span> bootstrapModeStr = <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.Mode&quot;</span>, {}, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_enumerationRef" href="../qle/class_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder.html#aa125f70dd028de45151f4a487a28bb8d">DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode</a> bootstrapMode;</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (bootstrapModeStr == <span class="stringliteral">&quot;Alternating&quot;</span>) {</div>
+<div class="line"><span class="lineno">   78</span>        bootstrapMode = DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode::Alternating;</div>
+<div class="line"><span class="lineno">   79</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bootstrapModeStr == <span class="stringliteral">&quot;Simultaneously&quot;</span>) {</div>
+<div class="line"><span class="lineno">   80</span>        bootstrapMode = DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode::Simultaneously;</div>
+<div class="line"><span class="lineno">   81</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   82</span>        QL_FAIL(<span class="stringliteral">&quot;invalid Bootstrap.Mode, expected Alternating or Simultaneously&quot;</span>);</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
+<div class="line"><span class="lineno">   84</span>    Size engineTimeStepsPerYear = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.TimeStepsPerYear&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   85</span>    Size engineStateGridPoints = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.StateGridPoints&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   86</span>    Real engineMesherEpsilon = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.MesherEpsilon&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   87</span>    Real engineMesherScaling = <a class="code hl_function" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">parseReal</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.MesherScaling&quot;</span>, {}, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">   88</span>    std::vector&lt;Real&gt; conversionRatioDiscretisationGrid =</div>
+<div class="line"><span class="lineno">   89</span>        parseListOfValues&lt;Real&gt;(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Pricing.ConversionRatioDiscretisationGrid&quot;</span>, {}, <span class="keyword">true</span>), &amp;parseReal);</div>
 <div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    <span class="keywordtype">bool</span> adjustDiscounting = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustDiscounting&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordtype">bool</span> adjustEquityVolatility = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustEquityVolatility&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
-<div class="line"><span class="lineno">   93</span>    <span class="keywordtype">bool</span> adjustEquityForward = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustEquityForward&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordtype">bool</span> adjustCreditSpreadToRR = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustCreditSpreadToRR&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordtype">bool</span> zeroRecoveryOverwrite = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;ZeroRecoveryOverwrite&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;false&quot;</span>));</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordtype">bool</span> treatSecuritySpreadAsCreditSpread =</div>
-<div class="line"><span class="lineno">   97</span>        <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;TreatSecuritySpreadAsCreditSpread&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;false&quot;</span>));</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <span class="comment">// get equity curve and volatility</span></div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// technical parameters, we might want to review these an replace by less technical settings</span></div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordtype">bool</span> adjustDiscounting = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustDiscounting&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordtype">bool</span> adjustEquityVolatility = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustEquityVolatility&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordtype">bool</span> adjustEquityForward = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustEquityForward&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordtype">bool</span> adjustCreditSpreadToRR = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;AdjustCreditSpreadToRR&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;true&quot;</span>));</div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordtype">bool</span> zeroRecoveryOverwrite = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;ZeroRecoveryOverwrite&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;false&quot;</span>));</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordtype">bool</span> treatSecuritySpreadAsCreditSpread =</div>
+<div class="line"><span class="lineno">   99</span>        <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">modelParameter</a>(<span class="stringliteral">&quot;TreatSecuritySpreadAsCreditSpread&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;false&quot;</span>));</div>
 <div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    std::string equityName = equity-&gt;name();</div>
-<div class="line"><span class="lineno">  102</span>    <span class="keyword">auto</span> volatility = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;equityVol(equityName, config);</div>
-<div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>    <span class="comment">// get bond related curves</span></div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// get equity curve and volatility</span></div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    std::string equityName;</div>
+<div class="line"><span class="lineno">  104</span>    Handle&lt;BlackVolTermStructure&gt; volatility;</div>
 <div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    Handle&lt;YieldTermStructure&gt; referenceCurve;</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">if</span> (adjustDiscounting)</div>
-<div class="line"><span class="lineno">  108</span>        referenceCurve = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;yieldCurve(referenceCurveId, config);</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    Handle&lt;DefaultProbabilityTermStructure&gt; creditCurve;</div>
-<div class="line"><span class="lineno">  111</span>    Real creditCurveRecovery = 0.0;</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (!creditCurveId.empty() &amp;&amp; hasCreditRisk) {</div>
-<div class="line"><span class="lineno">  113</span>        creditCurve = <a class="code hl_function" href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4">securitySpecificCreditCurve</a>(<a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>, securityId, creditCurveId, config)-&gt;curve();</div>
-<div class="line"><span class="lineno">  114</span>        creditCurveRecovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config)-&gt;value();</div>
-<div class="line"><span class="lineno">  115</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">if</span> (!creditCurveId.empty()) {</div>
-<div class="line"><span class="lineno">  117</span>            <a class="code hl_function" href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4">securitySpecificCreditCurve</a>(<a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>, securityId, creditCurveId, config);</div>
-<div class="line"><span class="lineno">  118</span>            <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config)-&gt;value();</div>
-<div class="line"><span class="lineno">  119</span>        }</div>
-<div class="line"><span class="lineno">  120</span>        creditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
-<div class="line"><span class="lineno">  121</span>            boost::make_shared&lt;FlatHazardRate&gt;(0, NullCalendar(), 0.0, Actual365Fixed()));</div>
-<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">if</span> (equity != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  107</span>        equityName = equity-&gt;name();</div>
+<div class="line"><span class="lineno">  108</span>        volatility = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;equityVol(equityName, config);</div>
+<div class="line"><span class="lineno">  109</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// create dummy equity and zero volatility if either of these are left empty (this is used for fixed amount</span></div>
+<div class="line"><span class="lineno">  111</span>        <span class="comment">// conversion)</span></div>
+<div class="line"><span class="lineno">  112</span>        equity = boost::make_shared&lt;QuantExt::EquityIndex2&gt;(</div>
+<div class="line"><span class="lineno">  113</span>            <span class="stringliteral">&quot;dummyFamily&quot;</span>, NullCalendar(), fx == <span class="keyword">nullptr</span> ? <a class="code hl_function" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b">parseCurrency</a>(ccy) : fx-&gt;sourceCurrency(),</div>
+<div class="line"><span class="lineno">  114</span>            Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(1.0)),</div>
+<div class="line"><span class="lineno">  115</span>            Handle&lt;YieldTermStructure&gt;(boost::make_shared&lt;FlatForward&gt;(0, NullCalendar(), 0.0, Actual365Fixed())),</div>
+<div class="line"><span class="lineno">  116</span>            Handle&lt;YieldTermStructure&gt;(boost::make_shared&lt;FlatForward&gt;(0, NullCalendar(), 0.0, Actual365Fixed())));</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>        volatility = Handle&lt;BlackVolTermStructure&gt;(boost::make_shared&lt;BlackConstantVol&gt;(</div>
+<div class="line"><span class="lineno">  119</span>            0, NullCalendar(), Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(0.0)), Actual365Fixed()));</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>    <span class="comment">// get bond related curves</span></div>
 <div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    <span class="comment">// get (bond) recovery rate, fallback is the recovery rate of the credit curve</span></div>
-<div class="line"><span class="lineno">  125</span> </div>
-<div class="line"><span class="lineno">  126</span>    Handle&lt;Quote&gt; recovery;</div>
-<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (!zeroRecoveryOverwrite) {</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  129</span>            recovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(securityId, config);</div>
-<div class="line"><span class="lineno">  130</span>        } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">if</span> (!creditCurveId.empty() &amp;&amp; hasCreditRisk) {</div>
-<div class="line"><span class="lineno">  132</span>                recovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config);</div>
-<div class="line"><span class="lineno">  133</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!creditCurveId.empty()) {</div>
-<div class="line"><span class="lineno">  134</span>                <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config);</div>
-<div class="line"><span class="lineno">  135</span>            }</div>
-<div class="line"><span class="lineno">  136</span>        }</div>
-<div class="line"><span class="lineno">  137</span>    }</div>
-<div class="line"><span class="lineno">  138</span> </div>
-<div class="line"><span class="lineno">  139</span>    <span class="comment">// get security spread</span></div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>    Handle&lt;Quote&gt; spread;</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">if</span> (adjustDiscounting || treatSecuritySpreadAsCreditSpread) {</div>
-<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  144</span>            spread = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;securitySpread(securityId, config);</div>
-<div class="line"><span class="lineno">  145</span>        } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><span class="lineno">  146</span>            spread = Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(0.0));</div>
-<div class="line"><span class="lineno">  147</span>        }</div>
-<div class="line"><span class="lineno">  148</span>    }</div>
-<div class="line"><span class="lineno">  149</span> </div>
-<div class="line"><span class="lineno">  150</span>    <span class="comment">// for exchangeables get equity credit curve</span></div>
-<div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>    Handle&lt;DefaultProbabilityTermStructure&gt; equityCreditCurve;</div>
-<div class="line"><span class="lineno">  153</span>    Real equityCreditCurveRecovery = 0.0;</div>
-<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">if</span> (isExchangeable) {</div>
-<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">if</span> (!equityCreditCurveId.empty() &amp;&amp; hasCreditRisk) {</div>
-<div class="line"><span class="lineno">  156</span>            equityCreditCurve = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;defaultCurve(equityCreditCurveId, config)-&gt;curve();</div>
-<div class="line"><span class="lineno">  157</span>            equityCreditCurveRecovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(equityCreditCurveId, config)-&gt;value();</div>
-<div class="line"><span class="lineno">  158</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  159</span>            <span class="keywordflow">if</span> (!equityCreditCurveId.empty()) {</div>
-<div class="line"><span class="lineno">  160</span>                <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;defaultCurve(equityCreditCurveId, config);</div>
-<div class="line"><span class="lineno">  161</span>                <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(equityCreditCurveId, config)-&gt;value();</div>
-<div class="line"><span class="lineno">  162</span>            }</div>
-<div class="line"><span class="lineno">  163</span>            equityCreditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
-<div class="line"><span class="lineno">  164</span>                boost::make_shared&lt;FlatHazardRate&gt;(0, NullCalendar(), 0.0, Actual365Fixed()));</div>
+<div class="line"><span class="lineno">  124</span>    Handle&lt;YieldTermStructure&gt; referenceCurve;</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">if</span> (adjustDiscounting)</div>
+<div class="line"><span class="lineno">  126</span>        referenceCurve = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;yieldCurve(referenceCurveId, config);</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    Handle&lt;DefaultProbabilityTermStructure&gt; creditCurve;</div>
+<div class="line"><span class="lineno">  129</span>    Real creditCurveRecovery = 0.0;</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (!creditCurveId.empty() &amp;&amp; hasCreditRisk) {</div>
+<div class="line"><span class="lineno">  131</span>        creditCurve = <a class="code hl_function" href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4">securitySpecificCreditCurve</a>(<a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>, securityId, creditCurveId, config)-&gt;curve();</div>
+<div class="line"><span class="lineno">  132</span>        creditCurveRecovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config)-&gt;value();</div>
+<div class="line"><span class="lineno">  133</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">if</span> (!creditCurveId.empty()) {</div>
+<div class="line"><span class="lineno">  135</span>            <a class="code hl_function" href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4">securitySpecificCreditCurve</a>(<a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>, securityId, creditCurveId, config);</div>
+<div class="line"><span class="lineno">  136</span>            <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config)-&gt;value();</div>
+<div class="line"><span class="lineno">  137</span>        }</div>
+<div class="line"><span class="lineno">  138</span>        creditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
+<div class="line"><span class="lineno">  139</span>            boost::make_shared&lt;FlatHazardRate&gt;(0, NullCalendar(), 0.0, Actual365Fixed()));</div>
+<div class="line"><span class="lineno">  140</span>    }</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// get (bond) recovery rate, fallback is the recovery rate of the credit curve</span></div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    Handle&lt;Quote&gt; recovery;</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">if</span> (!zeroRecoveryOverwrite) {</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  147</span>            recovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(securityId, config);</div>
+<div class="line"><span class="lineno">  148</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><span class="lineno">  149</span>            <span class="keywordflow">if</span> (!creditCurveId.empty() &amp;&amp; hasCreditRisk) {</div>
+<div class="line"><span class="lineno">  150</span>                recovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config);</div>
+<div class="line"><span class="lineno">  151</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!creditCurveId.empty()) {</div>
+<div class="line"><span class="lineno">  152</span>                <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(creditCurveId, config);</div>
+<div class="line"><span class="lineno">  153</span>            }</div>
+<div class="line"><span class="lineno">  154</span>        }</div>
+<div class="line"><span class="lineno">  155</span>    }</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    <span class="comment">// get security spread</span></div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    Handle&lt;Quote&gt; spread;</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">if</span> (adjustDiscounting || treatSecuritySpreadAsCreditSpread) {</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  162</span>            spread = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;securitySpread(securityId, config);</div>
+<div class="line"><span class="lineno">  163</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><span class="lineno">  164</span>            spread = Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(0.0));</div>
 <div class="line"><span class="lineno">  165</span>        }</div>
 <div class="line"><span class="lineno">  166</span>    }</div>
 <div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span>    <span class="comment">// if adjust credit spread to recovery rate is enabled, build the adjusted curves</span></div>
+<div class="line"><span class="lineno">  168</span>    <span class="comment">// for exchangeables get equity credit curve</span></div>
 <div class="line"><span class="lineno">  169</span> </div>
-<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">if</span> (adjustCreditSpreadToRR) {</div>
-<div class="line"><span class="lineno">  171</span>        Real rr = recovery.empty() ? 0.0 : recovery-&gt;value();</div>
-<div class="line"><span class="lineno">  172</span>        creditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(boost::make_shared&lt;AdjustedDefaultCurve&gt;(</div>
-<div class="line"><span class="lineno">  173</span>            creditCurve, Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;((1.0 - creditCurveRecovery) / (1.0 - rr)))));</div>
-<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">if</span> (!equityCreditCurve.empty()) {</div>
-<div class="line"><span class="lineno">  175</span>            equityCreditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(boost::make_shared&lt;AdjustedDefaultCurve&gt;(</div>
-<div class="line"><span class="lineno">  176</span>                equityCreditCurve,</div>
-<div class="line"><span class="lineno">  177</span>                Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;((1.0 - equityCreditCurveRecovery) / (1.0 - rr)))));</div>
-<div class="line"><span class="lineno">  178</span>        }</div>
-<div class="line"><span class="lineno">  179</span>    }</div>
-<div class="line"><span class="lineno">  180</span> </div>
-<div class="line"><span class="lineno">  181</span>    <span class="comment">// if treat security spread as credit spread is active, add the (scaled) security spread to the curves</span></div>
-<div class="line"><span class="lineno">  182</span> </div>
-<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">if</span> (treatSecuritySpreadAsCreditSpread) {</div>
-<div class="line"><span class="lineno">  184</span>        Real rr = recovery.empty() ? 0.0 : recovery-&gt;value();</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keyword">auto</span> m = [rr](Real x) { <span class="keywordflow">return</span> x / ( 1.0 -rr); };</div>
-<div class="line"><span class="lineno">  186</span>        Handle&lt;Quote&gt; scaledSecuritySpread(boost::make_shared&lt;DerivedQuote&lt;<span class="keyword">decltype</span>(m)&gt;&gt;(spread, m));</div>
-<div class="line"><span class="lineno">  187</span>        creditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
-<div class="line"><span class="lineno">  188</span>            boost::make_shared&lt;HazardSpreadedDefaultTermStructure&gt;(creditCurve, scaledSecuritySpread));</div>
-<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">if</span> (!equityCreditCurve.empty()) {</div>
-<div class="line"><span class="lineno">  190</span>            equityCreditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
-<div class="line"><span class="lineno">  191</span>                boost::make_shared&lt;HazardSpreadedDefaultTermStructure&gt;(equityCreditCurve, scaledSecuritySpread));</div>
-<div class="line"><span class="lineno">  192</span>        }</div>
-<div class="line"><span class="lineno">  193</span>    }</div>
-<div class="line"><span class="lineno">  194</span> </div>
-<div class="line"><span class="lineno">  195</span>    <span class="comment">// for cross currency, set up converted equity index and eq vol</span></div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">if</span> (fx != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  198</span>        <span class="keyword">auto</span> fxVol = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;fxVol(equity-&gt;currency().code() + ccy, config);</div>
-<div class="line"><span class="lineno">  199</span>        QuantLib::Handle&lt;QuantExt::CorrelationTermStructure&gt; corrCurve(</div>
-<div class="line"><span class="lineno">  200</span>            boost::make_shared&lt;FlatCorrelation&gt;(0, NullCalendar(), 0.0, Actual365Fixed()));</div>
-<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  202</span>            corrCurve = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;correlationCurve(<span class="stringliteral">&quot;FX-GENERIC-&quot;</span> + equity-&gt;currency().code() + <span class="stringliteral">&quot;-&quot;</span> + ccy,</div>
-<div class="line"><span class="lineno">  203</span>                                                  <span class="stringliteral">&quot;EQ-&quot;</span> + equity-&gt;name());</div>
-<div class="line"><span class="lineno">  204</span>        } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><span class="lineno">  205</span>            <a class="code hl_define" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;correlation curve for FX-GENERIC-&quot;</span> + equity-&gt;currency().code()</div>
-<div class="line"><span class="lineno">  206</span>                 &lt;&lt; <span class="stringliteral">&quot;, EQ-&quot;</span> &lt;&lt; equity-&gt;name() &lt;&lt; <span class="stringliteral">&quot; not found, fall back to zero correlation.&quot;</span>);</div>
-<div class="line"><span class="lineno">  207</span>        }</div>
-<div class="line"><span class="lineno">  208</span>        equity = boost::make_shared&lt;CompoEquityIndex&gt;(equity, fx, startDate);</div>
-<div class="line"><span class="lineno">  209</span>        volatility = Handle&lt;BlackVolTermStructure&gt;(</div>
-<div class="line"><span class="lineno">  210</span>            boost::make_shared&lt;BlackTriangulationATMVolTermStructure&gt;(volatility, fxVol, corrCurve));</div>
+<div class="line"><span class="lineno">  170</span>    Handle&lt;DefaultProbabilityTermStructure&gt; equityCreditCurve;</div>
+<div class="line"><span class="lineno">  171</span>    Real equityCreditCurveRecovery = 0.0;</div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">if</span> (isExchangeable) {</div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">if</span> (!equityCreditCurveId.empty() &amp;&amp; hasCreditRisk) {</div>
+<div class="line"><span class="lineno">  174</span>            equityCreditCurve = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;defaultCurve(equityCreditCurveId, config)-&gt;curve();</div>
+<div class="line"><span class="lineno">  175</span>            equityCreditCurveRecovery = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(equityCreditCurveId, config)-&gt;value();</div>
+<div class="line"><span class="lineno">  176</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">if</span> (!equityCreditCurveId.empty()) {</div>
+<div class="line"><span class="lineno">  178</span>                <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;defaultCurve(equityCreditCurveId, config);</div>
+<div class="line"><span class="lineno">  179</span>                <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;recoveryRate(equityCreditCurveId, config)-&gt;value();</div>
+<div class="line"><span class="lineno">  180</span>            }</div>
+<div class="line"><span class="lineno">  181</span>            equityCreditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
+<div class="line"><span class="lineno">  182</span>                boost::make_shared&lt;FlatHazardRate&gt;(0, NullCalendar(), 0.0, Actual365Fixed()));</div>
+<div class="line"><span class="lineno">  183</span>        }</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>    <span class="comment">// if adjust credit spread to recovery rate is enabled, build the adjusted curves</span></div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">if</span> (adjustCreditSpreadToRR) {</div>
+<div class="line"><span class="lineno">  189</span>        Real rr = recovery.empty() ? 0.0 : recovery-&gt;value();</div>
+<div class="line"><span class="lineno">  190</span>        creditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(boost::make_shared&lt;AdjustedDefaultCurve&gt;(</div>
+<div class="line"><span class="lineno">  191</span>            creditCurve, Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;((1.0 - creditCurveRecovery) / (1.0 - rr)))));</div>
+<div class="line"><span class="lineno">  192</span>        <span class="keywordflow">if</span> (!equityCreditCurve.empty()) {</div>
+<div class="line"><span class="lineno">  193</span>            equityCreditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(boost::make_shared&lt;AdjustedDefaultCurve&gt;(</div>
+<div class="line"><span class="lineno">  194</span>                equityCreditCurve,</div>
+<div class="line"><span class="lineno">  195</span>                Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;((1.0 - equityCreditCurveRecovery) / (1.0 - rr)))));</div>
+<div class="line"><span class="lineno">  196</span>        }</div>
+<div class="line"><span class="lineno">  197</span>    }</div>
+<div class="line"><span class="lineno">  198</span> </div>
+<div class="line"><span class="lineno">  199</span>    <span class="comment">// if treat security spread as credit spread is active, add the (scaled) security spread to the curves</span></div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>    <span class="keywordflow">if</span> (treatSecuritySpreadAsCreditSpread) {</div>
+<div class="line"><span class="lineno">  202</span>        Real rr = recovery.empty() ? 0.0 : recovery-&gt;value();</div>
+<div class="line"><span class="lineno">  203</span>    <span class="keyword">auto</span> m = [rr](Real x) { <span class="keywordflow">return</span> x / ( 1.0 -rr); };</div>
+<div class="line"><span class="lineno">  204</span>        Handle&lt;Quote&gt; scaledSecuritySpread(boost::make_shared&lt;DerivedQuote&lt;<span class="keyword">decltype</span>(m)&gt;&gt;(spread, m));</div>
+<div class="line"><span class="lineno">  205</span>        creditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
+<div class="line"><span class="lineno">  206</span>            boost::make_shared&lt;HazardSpreadedDefaultTermStructure&gt;(creditCurve, scaledSecuritySpread));</div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">if</span> (!equityCreditCurve.empty()) {</div>
+<div class="line"><span class="lineno">  208</span>            equityCreditCurve = Handle&lt;DefaultProbabilityTermStructure&gt;(</div>
+<div class="line"><span class="lineno">  209</span>                boost::make_shared&lt;HazardSpreadedDefaultTermStructure&gt;(equityCreditCurve, scaledSecuritySpread));</div>
+<div class="line"><span class="lineno">  210</span>        }</div>
 <div class="line"><span class="lineno">  211</span>    }</div>
 <div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>    <span class="comment">// set up calibration grid</span></div>
+<div class="line"><span class="lineno">  213</span>    <span class="comment">// for cross currency, set up converted equity index and eq vol</span></div>
 <div class="line"><span class="lineno">  214</span> </div>
-<div class="line"><span class="lineno">  215</span>    std::vector&lt;Date&gt; calibrationDates = DateGrid(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.CalibrationGrid&quot;</span>, {}, <span class="keyword">true</span>)).dates();</div>
-<div class="line"><span class="lineno">  216</span>    std::vector&lt;Real&gt; calibrationTimes;</div>
-<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; calibrationDates.size(); ++i) {</div>
-<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">if</span> (calibrationDates[i] &lt; maturityDate) {</div>
-<div class="line"><span class="lineno">  219</span>            calibrationTimes.push_back(volatility-&gt;timeFromReference(calibrationDates[i]));</div>
-<div class="line"><span class="lineno">  220</span>        }</div>
-<div class="line"><span class="lineno">  221</span>    }</div>
-<div class="line"><span class="lineno">  222</span>    calibrationTimes.push_back(volatility-&gt;timeFromReference(maturityDate));</div>
-<div class="line"><span class="lineno">  223</span> </div>
-<div class="line"><span class="lineno">  224</span>    <span class="comment">// read global parameters</span></div>
-<div class="line"><span class="lineno">  225</span> </div>
-<div class="line"><span class="lineno">  226</span>    <span class="keywordtype">bool</span> calibrate = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  227</span>    <span class="keyword">auto</span> calParam = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.find(<span class="stringliteral">&quot;Calibrate&quot;</span>);</div>
-<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">if</span> (calParam != <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.end()) {</div>
-<div class="line"><span class="lineno">  229</span>        calibrate = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(calParam-&gt;second);</div>
-<div class="line"><span class="lineno">  230</span>    }</div>
-<div class="line"><span class="lineno">  231</span> </div>
-<div class="line"><span class="lineno">  232</span>    <span class="keywordtype">bool</span> generateAdditionalResults = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  233</span>    <span class="keyword">auto</span> genAddParam = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.find(<span class="stringliteral">&quot;GenerateAdditionalResults&quot;</span>);</div>
-<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">if</span> (genAddParam != <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.end()) {</div>
-<div class="line"><span class="lineno">  235</span>        generateAdditionalResults = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(genAddParam-&gt;second);</div>
-<div class="line"><span class="lineno">  236</span>    }</div>
-<div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>    <span class="comment">// set up model and pricing engine</span></div>
-<div class="line"><span class="lineno">  239</span> </div>
-<div class="line"><span class="lineno">  240</span>    <span class="keyword">auto</span> modelBuilder = boost::make_shared&lt;DefaultableEquityJumpDiffusionModelBuilder&gt;(</div>
-<div class="line"><span class="lineno">  241</span>        calibrationTimes, equity, volatility, isExchangeable ? equityCreditCurve : creditCurve, p, eta, staticMesher,</div>
-<div class="line"><span class="lineno">  242</span>        modelTimeStepsPerYear, modelStateGridPoints, modelMesherEpsilon, modelMesherScaling, modelMesherConcentration,</div>
-<div class="line"><span class="lineno">  243</span>        bootstrapMode, <span class="keyword">false</span>, calibrate, adjustEquityVolatility, adjustEquityForward);</div>
+<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">if</span> (fx != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  216</span>        <span class="keyword">auto</span> fxVol = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;fxVol(equity-&gt;currency().code() + ccy, config);</div>
+<div class="line"><span class="lineno">  217</span>        QuantLib::Handle&lt;QuantExt::CorrelationTermStructure&gt; corrCurve(</div>
+<div class="line"><span class="lineno">  218</span>            boost::make_shared&lt;FlatCorrelation&gt;(0, NullCalendar(), 0.0, Actual365Fixed()));</div>
+<div class="line"><span class="lineno">  219</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  220</span>            corrCurve = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">market_</a>-&gt;correlationCurve(<span class="stringliteral">&quot;FX-GENERIC-&quot;</span> + equity-&gt;currency().code() + <span class="stringliteral">&quot;-&quot;</span> + ccy,</div>
+<div class="line"><span class="lineno">  221</span>                                                  <span class="stringliteral">&quot;EQ-&quot;</span> + equity-&gt;name());</div>
+<div class="line"><span class="lineno">  222</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><span class="lineno">  223</span>            <a class="code hl_define" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;correlation curve for FX-GENERIC-&quot;</span> + equity-&gt;currency().code()</div>
+<div class="line"><span class="lineno">  224</span>                 &lt;&lt; <span class="stringliteral">&quot;, EQ-&quot;</span> &lt;&lt; equity-&gt;name() &lt;&lt; <span class="stringliteral">&quot; not found, fall back to zero correlation.&quot;</span>);</div>
+<div class="line"><span class="lineno">  225</span>        }</div>
+<div class="line"><span class="lineno">  226</span>        equity = boost::make_shared&lt;CompoEquityIndex&gt;(equity, fx, startDate);</div>
+<div class="line"><span class="lineno">  227</span>        volatility = Handle&lt;BlackVolTermStructure&gt;(boost::make_shared&lt;BlackTriangulationATMVolTermStructure&gt;(</div>
+<div class="line"><span class="lineno">  228</span>            volatility, fxVol, corrCurve, <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;FxVolIsStatic&quot;</span>, {}, <span class="keyword">false</span>, <span class="stringliteral">&quot;false&quot;</span>))));</div>
+<div class="line"><span class="lineno">  229</span>    }</div>
+<div class="line"><span class="lineno">  230</span> </div>
+<div class="line"><span class="lineno">  231</span>    <span class="comment">// set up calibration grid</span></div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>    std::vector&lt;Date&gt; calibrationDates = DateGrid(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">engineParameter</a>(<span class="stringliteral">&quot;Bootstrap.CalibrationGrid&quot;</span>, {}, <span class="keyword">true</span>)).dates();</div>
+<div class="line"><span class="lineno">  234</span>    std::vector&lt;Real&gt; calibrationTimes;</div>
+<div class="line"><span class="lineno">  235</span>    Date today = Settings::instance().evaluationDate();</div>
+<div class="line"><span class="lineno">  236</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; calibrationDates.size(); ++i) {</div>
+<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">if</span> (calibrationDates[i] &lt; maturityDate) {</div>
+<div class="line"><span class="lineno">  238</span>            calibrationTimes.push_back(!volatility.empty() ? volatility-&gt;timeFromReference(calibrationDates[i])</div>
+<div class="line"><span class="lineno">  239</span>                                                           : Actual365Fixed().yearFraction(today, calibrationDates[i]));</div>
+<div class="line"><span class="lineno">  240</span>        }</div>
+<div class="line"><span class="lineno">  241</span>    }</div>
+<div class="line"><span class="lineno">  242</span>    calibrationTimes.push_back(!volatility.empty() ? volatility-&gt;timeFromReference(maturityDate)</div>
+<div class="line"><span class="lineno">  243</span>                                                   : Actual365Fixed().yearFraction(today, maturityDate));</div>
 <div class="line"><span class="lineno">  244</span> </div>
-<div class="line"><span class="lineno">  245</span>    <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a8efd2c56faec4549b2800c30fa8a545d">modelBuilders_</a>.insert(std::make_pair(<span class="keywordtype">id</span>, modelBuilder));</div>
+<div class="line"><span class="lineno">  245</span>    <span class="comment">// read global parameters</span></div>
 <div class="line"><span class="lineno">  246</span> </div>
-<div class="line"><span class="lineno">  247</span>    <span class="keywordflow">return</span> boost::make_shared&lt;FdDefaultableEquityJumpDiffusionConvertibleBondEngine&gt;(</div>
-<div class="line"><span class="lineno">  248</span>        modelBuilder-&gt;model(), referenceCurve, treatSecuritySpreadAsCreditSpread ? Handle&lt;Quote&gt;() : spread,</div>
-<div class="line"><span class="lineno">  249</span>        isExchangeable ? creditCurve : Handle&lt;DefaultProbabilityTermStructure&gt;(), recovery, Handle&lt;FxIndex&gt;(fx),</div>
-<div class="line"><span class="lineno">  250</span>        staticMesher, engineTimeStepsPerYear, engineStateGridPoints, engineMesherEpsilon, engineMesherScaling,</div>
-<div class="line"><span class="lineno">  251</span>        conversionRatioDiscretisationGrid, generateAdditionalResults);</div>
-<div class="line"><span class="lineno">  252</span>}</div>
+<div class="line"><span class="lineno">  247</span>    <span class="keywordtype">bool</span> calibrate = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  248</span>    <span class="keyword">auto</span> calParam = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.find(<span class="stringliteral">&quot;Calibrate&quot;</span>);</div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">if</span> (calParam != <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.end()) {</div>
+<div class="line"><span class="lineno">  250</span>        calibrate = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(calParam-&gt;second);</div>
+<div class="line"><span class="lineno">  251</span>    }</div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>    <span class="keywordtype">bool</span> generateAdditionalResults = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  254</span>    <span class="keyword">auto</span> genAddParam = <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.find(<span class="stringliteral">&quot;GenerateAdditionalResults&quot;</span>);</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">if</span> (genAddParam != <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">globalParameters_</a>.end()) {</div>
+<div class="line"><span class="lineno">  256</span>        generateAdditionalResults = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(genAddParam-&gt;second);</div>
+<div class="line"><span class="lineno">  257</span>    }</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>    <span class="comment">// set up model and pricing engine</span></div>
+<div class="line"><span class="lineno">  260</span> </div>
+<div class="line"><span class="lineno">  261</span>    <span class="keyword">auto</span> modelBuilder = boost::make_shared&lt;DefaultableEquityJumpDiffusionModelBuilder&gt;(</div>
+<div class="line"><span class="lineno">  262</span>        calibrationTimes, equity, volatility, isExchangeable ? equityCreditCurve : creditCurve, p, eta, staticMesher,</div>
+<div class="line"><span class="lineno">  263</span>        modelTimeStepsPerYear, modelStateGridPoints, modelMesherEpsilon, modelMesherScaling, modelMesherConcentration,</div>
+<div class="line"><span class="lineno">  264</span>        bootstrapMode, <span class="keyword">false</span>, calibrate, adjustEquityVolatility, adjustEquityForward);</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>    <a class="code hl_variable" href="classore_1_1data_1_1_engine_builder.html#a8efd2c56faec4549b2800c30fa8a545d">modelBuilders_</a>.insert(std::make_pair(<span class="keywordtype">id</span>, modelBuilder));</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">return</span> boost::make_shared&lt;FdDefaultableEquityJumpDiffusionConvertibleBondEngine&gt;(</div>
+<div class="line"><span class="lineno">  269</span>        modelBuilder-&gt;model(), referenceCurve, treatSecuritySpreadAsCreditSpread ? Handle&lt;Quote&gt;() : spread,</div>
+<div class="line"><span class="lineno">  270</span>        isExchangeable ? creditCurve : Handle&lt;DefaultProbabilityTermStructure&gt;(), recovery, Handle&lt;FxIndex&gt;(fx),</div>
+<div class="line"><span class="lineno">  271</span>        staticMesher, engineTimeStepsPerYear, engineStateGridPoints, engineMesherEpsilon, engineMesherScaling,</div>
+<div class="line"><span class="lineno">  272</span>        conversionRatioDiscretisationGrid, generateAdditionalResults);</div>
+<div class="line"><span class="lineno">  273</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder_html_aa125f70dd028de45151f4a487a28bb8d"><div class="ttname"><a href="../qle/class_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder.html#aa125f70dd028de45151f4a487a28bb8d">QuantExt::DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode</a></div><div class="ttdeci">BootstrapMode</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a71eb734e0723ecb94e47fdb853e56359"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359">ore::data::EngineBuilder::modelParameter</a></div><div class="ttdeci">std::string modelParameter(const std::string &amp;p, const std::vector&lt; std::string &gt; &amp;qualifiers={}, const bool mandatory=true, const std::string &amp;defaultValue=&quot;&quot;) const</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8cpp_source.html#l00060">enginefactory.cpp:60</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a82226e669d4e6cd7376d1423c5b60077"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a82226e669d4e6cd7376d1423c5b60077">ore::data::EngineBuilder::market_</a></div><div class="ttdeci">boost::shared_ptr&lt; Market &gt; market_</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00154">enginefactory.hpp:154</a></div></div>
@@ -538,10 +557,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a9d7654707f3b935dcf6a7b19df70c085"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085">ore::data::EngineBuilder::engineParameter</a></div><div class="ttdeci">std::string engineParameter(const std::string &amp;p, const std::vector&lt; std::string &gt; &amp;qualifiers={}, const bool mandatory=true, const std::string &amp;defaultValue=&quot;&quot;) const</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8cpp_source.html#l00055">enginefactory.cpp:55</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_aaacbfbb4007edcf8c34df2f37f8ebae5"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#aaacbfbb4007edcf8c34df2f37f8ebae5">ore::data::EngineBuilder::configuration</a></div><div class="ttdeci">const string &amp; configuration(const MarketContext &amp;key)</div><div class="ttdoc">Return a configuration (or the default one if key not found)</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00115">enginefactory.hpp:115</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_ad3f91462a7f1e9a5d8e0b42ed26e7012"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#ad3f91462a7f1e9a5d8e0b42ed26e7012">ore::data::EngineBuilder::globalParameters_</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; globalParameters_</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00158">enginefactory.hpp:158</a></div></div>
+<div class="ttc" id="agroup__utilities_html_ga6e9e781a58e78200301c76161589fc7b"><div class="ttname"><a href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b">ore::data::parseCurrency</a></div><div class="ttdeci">Currency parseCurrency(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Currency.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00287">parsers.cpp:287</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga94621f11193864fa1338296232dc5be9"><div class="ttname"><a href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">ore::data::parseBool</a></div><div class="ttdeci">bool parseBool(const string &amp;s)</div><div class="ttdoc">Convert text to bool.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00139">parsers.cpp:139</a></div></div>
 <div class="ttc" id="agroup__utilities_html_gad1db2a68f9a73667c3b4084d63955bdd"><div class="ttname"><a href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">ore::data::parseReal</a></div><div class="ttdeci">Real parseReal(const string &amp;s)</div><div class="ttdoc">Convert text to Real.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00113">parsers.cpp:113</a></div></div>
 <div class="ttc" id="agroup__utilities_html_gaecd67eda4fb5f4859bb8f6d383547721"><div class="ttname"><a href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">ore::data::parseInteger</a></div><div class="ttdeci">Integer parseInteger(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Integer.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00131">parsers.cpp:131</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00364">log.hpp:364</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a75cab51a925aa2b6c77b2b3b22cbc6d4"><div class="ttname"><a href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4">ore::data::securitySpecificCreditCurve</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantExt::CreditCurve &gt; securitySpecificCreditCurve(const boost::shared_ptr&lt; Market &gt; &amp;market, const std::string &amp;securityId, const std::string &amp;creditCurveId, const std::string &amp;configuration)</div><div class="ttdef"><b>Definition:</b> <a href="marketdata_8cpp_source.html#l00084">marketdata.cpp:84</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a81db05f0ea371a4a14cac6e955ecd5cca59aab28b54594c59dab8d19afd9478e4"><div class="ttname"><a href="namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cca59aab28b54594c59dab8d19afd9478e4">ore::data::MarketContext::pricing</a></div><div class="ttdeci">@ pricing</div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -551,16 +571,17 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_convertible_bond_f_d_defaultable_equity_jump_diffusion_engine_builder_ab844d9f27c6c167af65c481a5a856f99_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_convertible_bond_f_d_defaultable_equity_jump_diffusion_engine_builder_ab844d9f27c6c167af65c481a5a856f99_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_convertible_bond_f_d_defaultable_equity_jump_diffusion_engine_builder_ab844d9f27c6c167af65c481a5a856f99_cgraph" id="aclassore_1_1data_1_1_convertible_bond_f_d_defaultable_equity_jump_diffusion_engine_builder_ab844d9f27c6c167af65c481a5a856f99_cgraph">
-<area shape="rect" title=" " alt="" coords="5,246,89,271"/>
+<area shape="rect" title=" " alt="" coords="5,286,89,311"/>
 <area shape="rect" href="classore_1_1data_1_1_engine_builder.html#aaacbfbb4007edcf8c34df2f37f8ebae5" title="Return a configuration (or the default one if key not found)" alt="" coords="143,5,305,45"/>
 <area shape="rect" href="classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466" title=" " alt="" coords="158,69,290,109"/>
 <area shape="rect" href="classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085" title=" " alt="" coords="143,133,305,173"/>
 <area shape="rect" href="classore_1_1data_1_1_engine_builder.html#a71eb734e0723ecb94e47fdb853e56359" title=" " alt="" coords="143,197,305,237"/>
 <area shape="rect" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="155,286,293,311"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="148,359,300,385"/>
-<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="155,433,293,458"/>
-<area shape="rect" href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4" title=" " alt="" coords="137,483,311,523"/>
-<area shape="rect" href="namespaceore_1_1data.html#aede061bac0af9d192655e18cbfa547ee" title=" " alt="" coords="359,483,532,523"/>
+<area shape="rect" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="141,335,307,361"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="148,409,300,434"/>
+<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="155,482,293,507"/>
+<area shape="rect" href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4" title=" " alt="" coords="137,532,311,572"/>
+<area shape="rect" href="namespaceore_1_1data.html#aede061bac0af9d192655e18cbfa547ee" title=" " alt="" coords="359,532,532,572"/>
 </map>
 </div>
 

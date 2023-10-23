@@ -11,7 +11,7 @@ var searchData=
   ['detail_8',['detail',['../../qle/namespace_quant_ext_1_1detail.html',1,'QuantExt']]],
   ['pricingengine_9',['PricingEngine',['../../qle/class_quant_lib_1_1_pricing_engine_1_1arguments.html',1,'QuantLib']]],
   ['qle_10',['qle',['../../qle/namespaceqle.html',1,'']]],
-  ['quantext_11',['QuantExt',['../../qle/namespace_quant_ext.html',1,'']]],
+  ['quantext_11',['QuantExt',['../namespace_quant_ext.html',1,'']]],
   ['quantlib_12',['QuantLib',['../../qle/namespace_quant_lib.html',1,'']]],
   ['swap_13',['Swap',['../../qle/class_quant_lib_1_1_swap_1_1arguments.html',1,'QuantLib']]],
   ['tag_14',['tag',['../../qle/namespace_quant_ext_1_1tag.html',1,'QuantExt']]],

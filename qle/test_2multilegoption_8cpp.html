@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  116</span>    <span class="keyword">auto</span> swapEngine = boost::make_shared&lt;DiscountingSwapEngine&gt;(yts);</div>
 <div class="line"><span class="lineno">  117</span> </div>
 <div class="line"><span class="lineno">  118</span>    <span class="keyword">auto</span> mcMultiLegOptionEngine = boost::make_shared&lt;McMultiLegOptionEngine&gt;(</div>
-<div class="line"><span class="lineno">  119</span>        xasset, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0a98c670886f091791a051cd2f21afcb77">MersenneTwisterAntithetic</a>, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>, 10000, 25000, 42, 42, 4, LsmBasisSystem::Monomial);</div>
+<div class="line"><span class="lineno">  119</span>        xasset, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>, 25000, 0, 42, 42, 4, LsmBasisSystem::Monomial);</div>
 <div class="line"><span class="lineno">  120</span> </div>
 <div class="line"><span class="lineno">  121</span>    underlying-&gt;setPricingEngine(swapEngine);</div>
 <div class="line"><span class="lineno">  122</span>    swaption-&gt;setPricingEngine(swaptionEngineLgm);</div>
@@ -177,8 +177,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  136</span>    BOOST_CHECK_SMALL(std::abs(npv0 - npv1), 1.0E-4);</div>
 <div class="line"><span class="lineno">  137</span> </div>
 <div class="line"><span class="lineno">  138</span>} <span class="comment">// testBermudanSwaption</span></div>
-<div class="ttc" id="anamespace_quant_ext_html_a214062620719990c86bcb3c13c7f51b0a98c670886f091791a051cd2f21afcb77"><div class="ttname"><a href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0a98c670886f091791a051cd2f21afcb77">QuantExt::MersenneTwisterAntithetic</a></div><div class="ttdeci">@ MersenneTwisterAntithetic</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00038">multipathgeneratorbase.hpp:38</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba"><div class="ttname"><a href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">QuantExt::SobolBrownianBridge</a></div><div class="ttdeci">@ SobolBrownianBridge</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00038">multipathgeneratorbase.hpp:38</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba"><div class="ttname"><a href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">QuantExt::SobolBrownianBridge</a></div><div class="ttdeci">@ SobolBrownianBridge</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00037">multipathgeneratorbase.hpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -233,8 +232,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  171</span>        boost::make_shared&lt;VanillaOption&gt;(boost::make_shared&lt;PlainVanillaPayoff&gt;(Option::Call, 0.8), exercise);</div>
 <div class="line"><span class="lineno">  172</span> </div>
 <div class="line"><span class="lineno">  173</span>    Leg usdFlow, eurFlow;</div>
-<div class="line"><span class="lineno">  174</span>    usdFlow.push_back(boost::make_shared&lt;SimpleCashFlow&gt;(1.0, exDate));</div>
-<div class="line"><span class="lineno">  175</span>    eurFlow.push_back(boost::make_shared&lt;SimpleCashFlow&gt;(-0.8, exDate));</div>
+<div class="line"><span class="lineno">  174</span>    usdFlow.push_back(boost::make_shared&lt;SimpleCashFlow&gt;(1.0, exDate + 1));</div>
+<div class="line"><span class="lineno">  175</span>    eurFlow.push_back(boost::make_shared&lt;SimpleCashFlow&gt;(-0.8, exDate + 1));</div>
 <div class="line"><span class="lineno">  176</span> </div>
 <div class="line"><span class="lineno">  177</span>    <span class="keyword">auto</span> multiLegOption =</div>
 <div class="line"><span class="lineno">  178</span>        boost::make_shared&lt;MultiLegOption&gt;(std::vector&lt;Leg&gt;{eurFlow, usdFlow}, std::vector&lt;bool&gt;{<span class="keyword">false</span>, <span class="keyword">false</span>},</div>
@@ -247,7 +246,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  185</span> </div>
 <div class="line"><span class="lineno">  186</span>    <span class="comment">// for european options there is no traning phase actually</span></div>
 <div class="line"><span class="lineno">  187</span>    <span class="keyword">auto</span> mcMultiLegOptionEngine = boost::make_shared&lt;McMultiLegOptionEngine&gt;(</div>
-<div class="line"><span class="lineno">  188</span>        xasset, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>, 10000, 25000, 42, 42, 4, LsmBasisSystem::Monomial);</div>
+<div class="line"><span class="lineno">  188</span>        xasset, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>, <a class="code hl_enumvalue" href="namespace_quant_ext.html#a214062620719990c86bcb3c13c7f51b0afeb1dfa9a36aebc0ccc70768d0a468ba">SobolBrownianBridge</a>, 25000, 0, 42, 42, 4, LsmBasisSystem::Monomial);</div>
 <div class="line"><span class="lineno">  189</span> </div>
 <div class="line"><span class="lineno">  190</span>    multiLegOption-&gt;setPricingEngine(mcMultiLegOptionEngine);</div>
 <div class="line"><span class="lineno">  191</span>    boost::timer::cpu_timer timer;</div>

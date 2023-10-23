@@ -211,21 +211,22 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1data_1_1_leg_builder.html#a942f692d552e86b8017399f4e54cb435">LegBuilder</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="legbuilders_8cpp_source.html#l00169">169</a> of file <a class="el" href="legbuilders_8cpp_source.html">legbuilders.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  171</span>                                                                                                       {</div>
-<div class="line"><span class="lineno">  172</span>    <span class="keyword">auto</span> cmbData = boost::dynamic_pointer_cast&lt;CMBLegData&gt;(data.concreteLegData());</div>
-<div class="line"><span class="lineno">  173</span>    QL_REQUIRE(cmbData, <span class="stringliteral">&quot;Wrong LegType, expected CMB&quot;</span>);</div>
-<div class="line"><span class="lineno">  174</span>    <span class="keywordtype">string</span> indexName = cmbData-&gt;genericBond();</div>
-<div class="line"><span class="lineno">  175</span>    <span class="keyword">auto</span> index = <a class="code hl_function" href="group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882">parseConstantMaturityBondIndex</a>(indexName);</div>
-<div class="line"><span class="lineno">  176</span>    Leg result = <a class="code hl_function" href="namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b">makeCMBLeg</a>(data, engineFactory, <span class="keyword">true</span>, openEndDateReplacement);</div>
-<div class="line"><span class="lineno">  177</span>    <a class="code hl_function" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee">applyIndexing</a>(result, data, engineFactory, requiredFixings, openEndDateReplacement, useXbsCurves);</div>
-<div class="line"><span class="lineno">  178</span>    <a class="code hl_function" href="namespaceore_1_1data.html#a6b589da29c2eae882d77c481a9e9fecf">addToRequiredFixings</a>(result, boost::make_shared&lt;FixingDateGetter&gt;(requiredFixings));</div>
-<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  180</span>}</div>
-<div class="ttc" id="agroup__utilities_html_ga6782c70cbf79b5a72073b60b0f2cd882"><div class="ttname"><a href="group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882">ore::data::parseConstantMaturityBondIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; ConstantMaturityBondIndex &gt; parseConstantMaturityBondIndex(const string &amp;name)</div><div class="ttdoc">Convert std::string to QuantExt::ConstantMaturityBondIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00775">indexparser.cpp:775</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a445fe37fcb6ed264376329b7d70d58ee"><div class="ttname"><a href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee">ore::data::applyIndexing</a></div><div class="ttdeci">void applyIndexing(Leg &amp;leg, const LegData &amp;data, const boost::shared_ptr&lt; EngineFactory &gt; &amp;engineFactory, RequiredFixings &amp;requiredFixings, const QuantLib::Date &amp;openEndDateReplacement, const bool useXbsCurves)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2legdata_8cpp_source.html#l02565">legdata.cpp:2565</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a4fd03abe994005fe9e8c7e2c6119cc5b"><div class="ttname"><a href="namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b">ore::data::makeCMBLeg</a></div><div class="ttdeci">Leg makeCMBLeg(const LegData &amp;data, const boost::shared_ptr&lt; EngineFactory &gt; &amp;engineFactory, const bool attachPricer, const QuantLib::Date &amp;openEndDateReplacement)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2legdata_8cpp_source.html#l01919">legdata.cpp:1919</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a6b589da29c2eae882d77c481a9e9fecf"><div class="ttname"><a href="namespaceore_1_1data.html#a6b589da29c2eae882d77c481a9e9fecf">ore::data::addToRequiredFixings</a></div><div class="ttdeci">void addToRequiredFixings(const QuantLib::Leg &amp;leg, const boost::shared_ptr&lt; FixingDateGetter &gt; &amp;fixingDateGetter)</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8cpp_source.html#l00538">fixingdates.cpp:538</a></div></div>
+<p class="definition">Definition at line <a class="el" href="legbuilders_8cpp_source.html#l00178">178</a> of file <a class="el" href="legbuilders_8cpp_source.html">legbuilders.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  180</span>                                                                                                       {</div>
+<div class="line"><span class="lineno">  181</span>    <span class="keyword">auto</span> cmbData = boost::dynamic_pointer_cast&lt;CMBLegData&gt;(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.concreteLegData());</div>
+<div class="line"><span class="lineno">  182</span>    QL_REQUIRE(cmbData, <span class="stringliteral">&quot;Wrong LegType, expected CMB&quot;</span>);</div>
+<div class="line"><span class="lineno">  183</span>    <span class="keywordtype">string</span> indexName = cmbData-&gt;genericBond();</div>
+<div class="line"><span class="lineno">  184</span>    <span class="keyword">auto</span> index = <a class="code hl_function" href="group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882">parseConstantMaturityBondIndex</a>(indexName);</div>
+<div class="line"><span class="lineno">  185</span>    Leg result = <a class="code hl_function" href="namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b">makeCMBLeg</a>(data, engineFactory, <span class="keyword">true</span>, openEndDateReplacement);</div>
+<div class="line"><span class="lineno">  186</span>    <a class="code hl_function" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee">applyIndexing</a>(result, data, engineFactory, requiredFixings, openEndDateReplacement, useXbsCurves);</div>
+<div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="namespaceore_1_1data.html#a6b589da29c2eae882d77c481a9e9fecf">addToRequiredFixings</a>(result, boost::make_shared&lt;FixingDateGetter&gt;(requiredFixings));</div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  189</span>}</div>
+<div class="ttc" id="agroup__utilities_html_ga6782c70cbf79b5a72073b60b0f2cd882"><div class="ttname"><a href="group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882">ore::data::parseConstantMaturityBondIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; ConstantMaturityBondIndex &gt; parseConstantMaturityBondIndex(const string &amp;name)</div><div class="ttdoc">Convert std::string to QuantExt::ConstantMaturityBondIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00771">indexparser.cpp:771</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a445fe37fcb6ed264376329b7d70d58ee"><div class="ttname"><a href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee">ore::data::applyIndexing</a></div><div class="ttdeci">void applyIndexing(Leg &amp;leg, const LegData &amp;data, const boost::shared_ptr&lt; EngineFactory &gt; &amp;engineFactory, RequiredFixings &amp;requiredFixings, const QuantLib::Date &amp;openEndDateReplacement, const bool useXbsCurves)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2legdata_8cpp_source.html#l02622">legdata.cpp:2622</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a4fd03abe994005fe9e8c7e2c6119cc5b"><div class="ttname"><a href="namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b">ore::data::makeCMBLeg</a></div><div class="ttdeci">Leg makeCMBLeg(const LegData &amp;data, const boost::shared_ptr&lt; EngineFactory &gt; &amp;engineFactory, const bool attachPricer, const QuantLib::Date &amp;openEndDateReplacement)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2legdata_8cpp_source.html#l01976">legdata.cpp:1976</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a6b589da29c2eae882d77c481a9e9fecf"><div class="ttname"><a href="namespaceore_1_1data.html#a6b589da29c2eae882d77c481a9e9fecf">ore::data::addToRequiredFixings</a></div><div class="ttdeci">void addToRequiredFixings(const QuantLib::Leg &amp;leg, const boost::shared_ptr&lt; FixingDateGetter &gt; &amp;fixingDateGetter)</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8cpp_source.html#l00696">fixingdates.cpp:696</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -233,90 +234,70 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_c_m_b_leg_builder_a2db8847a3f7eba0c3ab0378e263d10e7_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_c_m_b_leg_builder_a2db8847a3f7eba0c3ab0378e263d10e7_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_c_m_b_leg_builder_a2db8847a3f7eba0c3ab0378e263d10e7_cgraph" id="aclassore_1_1data_1_1_c_m_b_leg_builder_a2db8847a3f7eba0c3ab0378e263d10e7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,1077,76,1103"/>
-<area shape="rect" href="namespaceore_1_1data.html#a6b589da29c2eae882d77c481a9e9fecf" title=" " alt="" coords="124,949,291,989"/>
-<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="127,1400,287,1425"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#ab49abe83fe5704b61699ba315197f285" title=" " alt="" coords="611,1973,740,2013"/>
-<area shape="rect" href="namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="355,829,517,855"/>
-<area shape="rect" href="group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882" title="Convert std::string to QuantExt::ConstantMaturityBondIndex." alt="" coords="125,1013,290,1053"/>
-<area shape="rect" href="namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="351,2416,521,2441"/>
-<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="1103,1151,1267,1176"/>
-<area shape="rect" href="namespaceore_1_1data.html#ade4be232275cfbb581d21fddbc01b7be" title=" " alt="" coords="359,1476,513,1501"/>
-<area shape="rect" href="group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad" title="Convert std::string to QuantExt::FxIndex." alt="" coords="596,1425,755,1451"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#a14dac022d83c5fa9597e6344199a41b6" title=" " alt="" coords="371,1526,501,1566"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a5ef0dba250a413818e5476474e2d95f5" title=" " alt="" coords="339,1590,533,1630"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#a53937eea70871e9342cdc8d91865375b" title=" " alt="" coords="371,1654,501,1694"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#a81b9d9c795e1f72812f0da9b14382f4a" title=" " alt="" coords="611,1081,740,1121"/>
-<area shape="rect" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="592,701,759,727"/>
-<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="846,985,1013,1025"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#ad228ef4ac3bf2a7aee3ba36f5435fcb5" title=" " alt="" coords="355,1718,517,1758"/>
-<area shape="rect" href="group__utilities.html#ga58a69667a8ce68faabb184cafbb658ae" title="Convert std::string to QuantExt::BondIndex." alt="" coords="349,185,523,211"/>
-<area shape="rect" href="namespaceore_1_1data.html#a1d5a62f54d619803ecebbe09dc93d7d9" title=" " alt="" coords="347,1145,525,1185"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a5c41340265a3749014cc9a92104ef5b9" title=" " alt="" coords="339,1782,533,1822"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#ae08d19faf902165220b4353785c82071" title=" " alt="" coords="339,1846,533,1886"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a8ee13a8fbb19f67a47c77fddbd1bca2f" title=" " alt="" coords="339,1910,533,1950"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a65f2f85e9c92871feff4bae1df150ad7" title=" " alt="" coords="339,942,533,982"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a120c4a8fbdc82e46c9b520b5d1c0b494" title=" " alt="" coords="339,1006,533,1046"/>
-<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#aaaf3214e2f02158e269ed7a7ecee1770" title=" " alt="" coords="339,1310,533,1350"/>
-<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#a6239d4397d1d7eb1de886f13bdc8d9d4" title=" " alt="" coords="588,2275,763,2315"/>
-<area shape="rect" href="classore_1_1data_1_1_bond.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="602,1821,749,1847"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#afc481af8e7faf75777815684979ae2e6" title=" " alt="" coords="860,2333,999,2373"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a10f0872aebc37b23c78fe2e833550f71" title=" " alt="" coords="860,2397,999,2437"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a7a2dc8eb72e468938aca98abc932ef36" title="populate data from reference datum and check data for completeness" alt="" coords="817,2218,1041,2258"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a547956f4f49b839c799d82ee8aa1aba3" title=" " alt="" coords="860,2461,999,2501"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a031194740ae3f49e75f29eb540015db4" title=" " alt="" coords="860,2533,999,2573"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#af191ea1d6e130d70d925a84b55d690c4" title=" " alt="" coords="606,2798,745,2838"/>
-<area shape="rect" href="classore_1_1data_1_1_trade.html#a1b2753d72ad69a6c11bf54cf1fb8d2a0" title=" " alt="" coords="584,2037,767,2063"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aeb3c432416a23824f2b3d54623c2ceb6" title=" " alt="" coords="606,2862,745,2902"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a2ecbff7df4150ee347f5cad104c330a6" title=" " alt="" coords="597,2670,753,2710"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#af4f43af68d0127e2a76cb916b631ec64" title=" " alt="" coords="606,2734,745,2774"/>
-<area shape="rect" href="classore_1_1data_1_1_trade.html#a744ff35f753c0dbbcf34d0ede282a8eb" title=" " alt="" coords="592,2491,759,2531"/>
-<area shape="rect" href="namespaceore_1_1data.html#a75cab51a925aa2b6c77b2b3b22cbc6d4" title=" " alt="" coords="589,2606,762,2646"/>
-<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#a497f63080ba1d28c0cd0d23a9f2f81d5" title=" " alt="" coords="588,2211,763,2251"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aff5578e4cb6bb52d2c44b97e57050194" title=" " alt="" coords="860,1989,999,2029"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="860,1265,999,1305"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a3d8db715d9a2d0185987be6586b6da90" title=" " alt="" coords="1335,1587,1473,1627"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a14dac022d83c5fa9597e6344199a41b6" title=" " alt="" coords="1335,2046,1473,2086"/>
-<area shape="rect" href="namespaceore_1_1data.html#a43e91fce1c1cb13a28fa91d7d893109d" title=" " alt="" coords="845,1645,1013,1671"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a15f0b55e2a86b1810668af87011ca3f0" title=" " alt="" coords="860,1695,999,1735"/>
-<area shape="rect" href="namespaceore_1_1data.html#a8f90fafff20e9eea6ba56e1eaa1c0ba3" title=" " alt="" coords="839,1329,1019,1369"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a49d5ef4ecab600807fc919eb14ba3513" title=" " alt="" coords="1335,1931,1473,1971"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a69a47bca78ab2ce047e2df5481823c49" title=" " alt="" coords="860,1759,999,1799"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a462172108710bc3147ed31790d6ed0fe" title="Inspectors." alt="" coords="860,1823,999,1863"/>
-<area shape="rect" href="namespaceore_1_1data.html#ae5f7dc22d6672fa60603f499ae9150e4" title=" " alt="" coords="865,1939,994,1964"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aefbb4821d79a4ca7a505b7fbf1772180" title=" " alt="" coords="860,2103,999,2143"/>
-<area shape="rect" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="847,1443,1012,1468"/>
-<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="1115,287,1255,312"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1328,287,1480,312"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a1133ea9e816167481beee5fec9bbc418" title=" " alt="" coords="1335,2193,1473,2233"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a90162092e6d7c83d300a4c67b0f8a304" title=" " alt="" coords="860,1201,999,1241"/>
-<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="1109,388,1260,413"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aedc5f6df51431b1e9646155e79afffc5" title="check data for completeness" alt="" coords="1115,2154,1254,2194"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a18abf8b19283101238a77c9e6865b673" title=" " alt="" coords="1115,1989,1254,2029"/>
-<area shape="rect" href="namespaceore_1_1data.html#a80617195c3ce790095b00f79dea52374" title="Populate bond data from name and ReferenceDataManager." alt="" coords="1089,2218,1280,2258"/>
-<area shape="rect" href="group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581" title="Attempt to convert text to Real." alt="" coords="851,2677,1007,2703"/>
-<area shape="rect" href="group__utilities.html#gaa1e95cb67315b5ff80b8ebd82ad443c3" title=" " alt="" coords="840,2734,1019,2774"/>
-<area shape="rect" href="namespaceore_1_1data.html#aede061bac0af9d192655e18cbfa547ee" title=" " alt="" coords="843,2606,1016,2646"/>
-<area shape="rect" href="namespaceore_1_1data.html#a6048fd87840c79258ed4e959f0555a2f" title=" " alt="" coords="590,2111,761,2136"/>
-<area shape="rect" href="namespaceore_1_1data.html#a924eb5d1881d31c82ac8abbdc15a5027" title=" " alt="" coords="822,1393,1037,1419"/>
-<area shape="rect" href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e" title=" " alt="" coords="1116,1419,1253,1444"/>
-<area shape="rect" href="group__utilities.html#gac0cf10eef45b9d706e29e7eb2ddddc90" title="check for pseudo currency = precious metal or crypto currency *‍/" alt="" coords="1091,1369,1278,1395"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="845,489,1014,529"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#a5adb3d124cd448362bff644ea836c696" title=" " alt="" coords="845,553,1014,593"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#ab6171ce44932642e32322a792c05761f" title=" " alt="" coords="845,617,1014,657"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#ad7f3ad731dcee615d5d336dfa5b18af5" title=" " alt="" coords="845,681,1014,721"/>
-<area shape="rect" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="860,769,999,795"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#a8117da17f90e9f46cf4ccf5d97b3eaed" title=" " alt="" coords="845,819,1014,859"/>
-<area shape="rect" href="classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="581,1145,769,1185"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="610,1031,741,1056"/>
-<area shape="rect" href="namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560" title=" " alt="" coords="591,121,760,161"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#ab59528a5949beca4ed9c060d58605afb" title=" " alt="" coords="611,350,740,390"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#abd26119812c01bdf2f2bb7a4e44e3fc8" title=" " alt="" coords="611,414,740,454"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#ae2ab29deb3c2023559ce9413f534ba1f" title=" " alt="" coords="611,478,740,518"/>
-<area shape="rect" href="group__utilities.html#gaefb008d0de256c79140545d9c7549093" title="Convert text to QuantLib::DayCounter." alt="" coords="585,543,766,568"/>
-<area shape="rect" href="classore_1_1data_1_1_leg_data.html#a24c383ad799dfb748a065154bbd2f352" title=" " alt="" coords="611,286,740,326"/>
-<area shape="rect" href="namespaceore_1_1data.html#a9206da3667d412d6992de0f3909beef2" title=" " alt="" coords="845,70,1014,110"/>
-<area shape="rect" href="namespaceore_1_1data.html#a05260d9174de60219e7cd128e76819f0" title=" " alt="" coords="827,135,1032,160"/>
+<area shape="rect" title=" " alt="" coords="5,962,76,987"/>
+<area shape="rect" href="namespaceore_1_1data.html#a6b589da29c2eae882d77c481a9e9fecf" title=" " alt="" coords="609,80,775,120"/>
+<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="127,548,287,574"/>
+<area shape="rect" href="namespaceore_1_1data.html#a4fd03abe994005fe9e8c7e2c6119cc5b" title=" " alt="" coords="125,1375,288,1400"/>
+<area shape="rect" href="group__utilities.html#ga6782c70cbf79b5a72073b60b0f2cd882" title="Convert std::string to QuantExt::ConstantMaturityBondIndex." alt="" coords="124,2189,289,2229"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_index_builder.html#ae479124f9f93e301b0a9b63f603a7e07" title=" " alt="" coords="343,237,526,277"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_index_builder.html#aec9aadfbfa2a0be09df1b88a19e20fa0" title=" " alt="" coords="343,301,526,341"/>
+<area shape="rect" href="namespaceore_1_1data.html#ade4be232275cfbb581d21fddbc01b7be" title=" " alt="" coords="357,416,512,442"/>
+<area shape="rect" href="group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad" title="Convert std::string to QuantExt::FxIndex." alt="" coords="613,490,771,515"/>
+<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="1126,888,1290,914"/>
+<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a5ef0dba250a413818e5476474e2d95f5" title=" " alt="" coords="337,605,532,645"/>
+<area shape="rect" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="351,963,518,988"/>
+<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="609,824,775,864"/>
+<area shape="rect" href="group__utilities.html#ga58a69667a8ce68faabb184cafbb658ae" title="Convert std::string to QuantExt::BondIndex." alt="" coords="347,1064,522,1090"/>
+<area shape="rect" href="namespaceore_1_1data.html#a1d5a62f54d619803ecebbe09dc93d7d9" title=" " alt="" coords="345,541,524,581"/>
+<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a5c41340265a3749014cc9a92104ef5b9" title=" " alt="" coords="337,669,532,709"/>
+<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#ae08d19faf902165220b4353785c82071" title=" " alt="" coords="337,733,532,773"/>
+<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a8ee13a8fbb19f67a47c77fddbd1bca2f" title=" " alt="" coords="337,797,532,837"/>
+<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a65f2f85e9c92871feff4bae1df150ad7" title=" " alt="" coords="337,45,532,85"/>
+<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#a120c4a8fbdc82e46c9b520b5d1c0b494" title=" " alt="" coords="337,109,532,149"/>
+<area shape="rect" target="_parent" href="../qle/class_quant_ext_1_1_indexed_coupon_leg.html#aaaf3214e2f02158e269ed7a7ecee1770" title=" " alt="" coords="337,173,532,213"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#a6239d4397d1d7eb1de886f13bdc8d9d4" title=" " alt="" coords="605,205,779,245"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#a76939e80c80ff949b4568be7af749d37" title=" " alt="" coords="605,269,779,309"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="920,276,999,302"/>
+<area shape="rect" href="namespaceore_1_1data.html#a6048fd87840c79258ed4e959f0555a2f" title=" " alt="" coords="607,440,777,466"/>
+<area shape="rect" href="namespaceore_1_1data.html#a924eb5d1881d31c82ac8abbdc15a5027" title=" " alt="" coords="852,424,1067,450"/>
+<area shape="rect" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="877,1166,1042,1191"/>
+<area shape="rect" href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e" title=" " alt="" coords="1139,450,1277,475"/>
+<area shape="rect" href="group__utilities.html#gac0cf10eef45b9d706e29e7eb2ddddc90" title="check for pseudo currency = precious metal or crypto currency *‍/" alt="" coords="1115,400,1301,426"/>
+<area shape="rect" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="623,963,761,988"/>
+<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="889,1267,1029,1292"/>
+<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="884,2763,1035,2788"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1132,1432,1284,1458"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="1155,1191,1261,1216"/>
+<area shape="rect" href="classore_1_1data_1_1_conventions_based_future_expiry.html#a2bd20c07171472e89c54943f2da6dffd" title=" " alt="" coords="598,541,786,581"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="627,750,757,775"/>
+<area shape="rect" href="classore_1_1data_1_1_bond.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="361,2082,508,2107"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="623,1546,761,1586"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a3d8db715d9a2d0185987be6586b6da90" title=" " alt="" coords="1139,2368,1277,2408"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a14dac022d83c5fa9597e6344199a41b6" title=" " alt="" coords="1139,2686,1277,2726"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a7a2dc8eb72e468938aca98abc932ef36" title="populate data from reference datum and check data for completeness" alt="" coords="580,2858,804,2898"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a90162092e6d7c83d300a4c67b0f8a304" title=" " alt="" coords="623,1482,761,1522"/>
+<area shape="rect" href="namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560" title=" " alt="" coords="350,1368,519,1408"/>
+<area shape="rect" href="classore_1_1data_1_1_trade.html#a1b2753d72ad69a6c11bf54cf1fb8d2a0" title=" " alt="" coords="343,1268,526,1294"/>
+<area shape="rect" href="group__utilities.html#gaefb008d0de256c79140545d9c7549093" title="Convert text to QuantLib::DayCounter." alt="" coords="344,1318,525,1343"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aff5578e4cb6bb52d2c44b97e57050194" title=" " alt="" coords="623,1928,761,1968"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#afc481af8e7faf75777815684979ae2e6" title=" " alt="" coords="623,2336,761,2376"/>
+<area shape="rect" href="namespaceore_1_1data.html#a43e91fce1c1cb13a28fa91d7d893109d" title=" " alt="" coords="608,2400,776,2426"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a15f0b55e2a86b1810668af87011ca3f0" title=" " alt="" coords="623,2450,761,2490"/>
+<area shape="rect" href="namespaceore_1_1data.html#a8f90fafff20e9eea6ba56e1eaa1c0ba3" title=" " alt="" coords="602,2744,782,2784"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a10f0872aebc37b23c78fe2e833550f71" title=" " alt="" coords="623,2514,761,2554"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a49d5ef4ecab600807fc919eb14ba3513" title=" " alt="" coords="1139,2088,1277,2128"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a69a47bca78ab2ce047e2df5481823c49" title=" " alt="" coords="623,2578,761,2618"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a462172108710bc3147ed31790d6ed0fe" title="Inspectors." alt="" coords="623,1813,761,1853"/>
+<area shape="rect" href="namespaceore_1_1data.html#ae5f7dc22d6672fa60603f499ae9150e4" title=" " alt="" coords="627,1992,757,2018"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aefbb4821d79a4ca7a505b7fbf1772180" title=" " alt="" coords="623,2042,761,2082"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a1133ea9e816167481beee5fec9bbc418" title=" " alt="" coords="1139,2457,1277,2497"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a547956f4f49b839c799d82ee8aa1aba3" title=" " alt="" coords="623,2106,761,2146"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a031194740ae3f49e75f29eb540015db4" title=" " alt="" coords="623,2272,761,2312"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#aedc5f6df51431b1e9646155e79afffc5" title="check data for completeness" alt="" coords="890,2824,1029,2864"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_data.html#a18abf8b19283101238a77c9e6865b673" title=" " alt="" coords="890,2425,1029,2465"/>
+<area shape="rect" href="namespaceore_1_1data.html#a80617195c3ce790095b00f79dea52374" title="Populate bond data from name and ReferenceDataManager." alt="" coords="864,2888,1055,2928"/>
+<area shape="rect" href="namespaceore_1_1data.html#a9206da3667d412d6992de0f3909beef2" title=" " alt="" coords="607,1368,777,1408"/>
+<area shape="rect" href="namespaceore_1_1data.html#a05260d9174de60219e7cd128e76819f0" title=" " alt="" coords="589,1318,795,1343"/>
 </map>
 </div>
 

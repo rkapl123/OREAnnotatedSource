@@ -129,25 +129,25 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   45</span>    <a class="code hl_class" href="classore_1_1data_1_1_schedule_rules.html">ScheduleRules</a> rules2(<span class="stringliteral">&quot;2015-04-09&quot;</span>, <span class="stringliteral">&quot;2018-04-09&quot;</span>, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;TARGET&quot;</span>, <span class="stringliteral">&quot;MF&quot;</span>, <span class="stringliteral">&quot;MF&quot;</span>, <span class="stringliteral">&quot;Forward&quot;</span>);</div>
 <div class="line"><span class="lineno">   46</span> </div>
 <div class="line"><span class="lineno">   47</span>    <span class="comment">// Test &lt;Dates&gt; and &lt;Dates&gt;</span></div>
-<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="classore_1_1data_1_1_schedule_data.html">ScheduleData</a> data(dates1);</div>
-<div class="line"><span class="lineno">   49</span>    data.addDates(dates2);</div>
-<div class="line"><span class="lineno">   50</span>    QuantLib::Schedule s = <a class="code hl_function" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">makeSchedule</a>(data);</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="classore_1_1data_1_1_schedule_data.html">ScheduleData</a> <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>(dates1);</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.addDates(dates2);</div>
+<div class="line"><span class="lineno">   50</span>    QuantLib::Schedule s = <a class="code hl_function" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">makeSchedule</a>(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>);</div>
 <div class="line"><span class="lineno">   51</span>    BOOST_CHECK_EQUAL(s.size(), 7UL); <span class="comment">// 7 dates, 6 coupons</span></div>
 <div class="line"><span class="lineno">   52</span>    BOOST_CHECK_EQUAL(s.startDate(), Date(9, Jan, 2015));</div>
 <div class="line"><span class="lineno">   53</span>    BOOST_CHECK_EQUAL(s.endDate(), Date(9, Apr, 2018));</div>
 <div class="line"><span class="lineno">   54</span> </div>
 <div class="line"><span class="lineno">   55</span>    <span class="comment">// Test &lt;Rules&gt; and &lt;Rules&gt;</span></div>
-<div class="line"><span class="lineno">   56</span>    data = <a class="code hl_class" href="classore_1_1data_1_1_schedule_data.html">ScheduleData</a>(rules1);</div>
-<div class="line"><span class="lineno">   57</span>    data.addRules(rules2);</div>
-<div class="line"><span class="lineno">   58</span>    QuantLib::Schedule s2 = <a class="code hl_function" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">makeSchedule</a>(data);</div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> = <a class="code hl_class" href="classore_1_1data_1_1_schedule_data.html">ScheduleData</a>(rules1);</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.addRules(rules2);</div>
+<div class="line"><span class="lineno">   58</span>    QuantLib::Schedule s2 = <a class="code hl_function" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">makeSchedule</a>(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>);</div>
 <div class="line"><span class="lineno">   59</span>    BOOST_CHECK_EQUAL(s2.size(), s.size());</div>
 <div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; s.size(); i++)</div>
 <div class="line"><span class="lineno">   61</span>        BOOST_CHECK_EQUAL(s[i], s2[i]);</div>
 <div class="line"><span class="lineno">   62</span> </div>
 <div class="line"><span class="lineno">   63</span>    <span class="comment">// Test &lt;Dates&gt; and &lt;Rules&gt;</span></div>
-<div class="line"><span class="lineno">   64</span>    data = <a class="code hl_class" href="classore_1_1data_1_1_schedule_data.html">ScheduleData</a>(dates1);</div>
-<div class="line"><span class="lineno">   65</span>    data.addRules(rules2);</div>
-<div class="line"><span class="lineno">   66</span>    QuantLib::Schedule s3 = <a class="code hl_function" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">makeSchedule</a>(data);</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> = <a class="code hl_class" href="classore_1_1data_1_1_schedule_data.html">ScheduleData</a>(dates1);</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>.addRules(rules2);</div>
+<div class="line"><span class="lineno">   66</span>    QuantLib::Schedule s3 = <a class="code hl_function" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">makeSchedule</a>(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>);</div>
 <div class="line"><span class="lineno">   67</span>    BOOST_CHECK_EQUAL(s3.size(), s.size());</div>
 <div class="line"><span class="lineno">   68</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; s.size(); i++)</div>
 <div class="line"><span class="lineno">   69</span>        BOOST_CHECK_EQUAL(s[i], s3[i]);</div>
@@ -155,6 +155,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_data_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_data.html">ore::data::ScheduleData</a></div><div class="ttdoc">Serializable schedule data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00192">schedule.hpp:192</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_dates_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_dates.html">ore::data::ScheduleDates</a></div><div class="ttdoc">Serializable object holding schedule Dates data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00104">schedule.hpp:104</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_rules_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_rules.html">ore::data::ScheduleRules</a></div><div class="ttdoc">Serializable object holding schedule Rules data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00037">schedule.hpp:37</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_af158e922cf963a59228878344ca5858d"><div class="ttname"><a href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d">ore::data::makeSchedule</a></div><div class="ttdeci">Schedule makeSchedule(const ScheduleDates &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2portfolio_2schedule_8cpp_source.html#l00232">schedule.cpp:232</a></div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -163,23 +164,15 @@ Functions</h2></td></tr>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2schedule_8cpp_a004bf99fdea19bbd71a65b324df8ba3a_cgraph.png" border="0" usemap="#atest_2schedule_8cpp_a004bf99fdea19bbd71a65b324df8ba3a_cgraph" alt=""/></div>
 <map name="atest_2schedule_8cpp_a004bf99fdea19bbd71a65b324df8ba3a_cgraph" id="atest_2schedule_8cpp_a004bf99fdea19bbd71a65b324df8ba3a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,77,196,102"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_data.html#a4805dea6a83e4c3c7fa72f5af87aab3e" title="Add dates." alt="" coords="246,5,409,45"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_data.html#a6842a7ee0ec8508c32db7ae28a08d4e0" title="Add rules." alt="" coords="246,69,409,109"/>
-<area shape="rect" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="244,414,411,439"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_data.html#a08bc38773054b312fe2628314717ab35" title=" " alt="" coords="462,5,625,45"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_data.html#a8a8650e4db96ef2d5c54542d5f33141a" title=" " alt="" coords="462,69,625,109"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="459,133,628,173"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#a5adb3d124cd448362bff644ea836c696" title=" " alt="" coords="459,197,628,237"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#ab6171ce44932642e32322a792c05761f" title=" " alt="" coords="459,261,628,301"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#ad7f3ad731dcee615d5d336dfa5b18af5" title=" " alt="" coords="459,325,628,365"/>
-<area shape="rect" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="474,414,613,439"/>
-<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="460,464,627,504"/>
-<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="461,529,625,554"/>
-<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="473,602,613,627"/>
-<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="468,651,619,677"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#a8117da17f90e9f46cf4ccf5d97b3eaed" title=" " alt="" coords="459,701,628,741"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="676,602,828,627"/>
+<area shape="rect" title=" " alt="" coords="5,144,196,169"/>
+<area shape="rect" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="244,144,411,169"/>
+<area shape="rect" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="473,29,611,55"/>
+<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="459,79,625,119"/>
+<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="460,144,624,169"/>
+<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="472,217,612,243"/>
+<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="467,267,617,292"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="673,192,825,217"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="697,241,802,267"/>
 </map>
 </div>
 
@@ -227,19 +220,15 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="test_2schedule_8cpp_a5c5b59ed56510ec42663d9b073178866_cgraph.png" border="0" usemap="#atest_2schedule_8cpp_a5c5b59ed56510ec42663d9b073178866_cgraph" alt=""/></div>
 <map name="atest_2schedule_8cpp_a5c5b59ed56510ec42663d9b073178866_cgraph" id="atest_2schedule_8cpp_a5c5b59ed56510ec42663d9b073178866_cgraph">
-<area shape="rect" title=" " alt="" coords="5,315,196,341"/>
-<area shape="rect" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="244,315,411,341"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#aba3cde563c1010662ce94c1c14bcbd11" title=" " alt="" coords="459,5,628,45"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#a5adb3d124cd448362bff644ea836c696" title=" " alt="" coords="459,69,628,109"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#ab6171ce44932642e32322a792c05761f" title=" " alt="" coords="459,133,628,173"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#ad7f3ad731dcee615d5d336dfa5b18af5" title=" " alt="" coords="459,197,628,237"/>
-<area shape="rect" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="474,286,613,311"/>
-<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="460,336,627,376"/>
-<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="461,401,625,426"/>
-<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="473,474,613,499"/>
-<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="468,523,619,549"/>
-<area shape="rect" href="classore_1_1data_1_1_schedule_dates.html#a8117da17f90e9f46cf4ccf5d97b3eaed" title=" " alt="" coords="459,573,628,613"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="676,474,828,499"/>
+<area shape="rect" title=" " alt="" coords="5,144,196,169"/>
+<area shape="rect" href="namespaceore_1_1data.html#af158e922cf963a59228878344ca5858d" title=" " alt="" coords="244,144,411,169"/>
+<area shape="rect" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9" title="Convert text to bool." alt="" coords="473,29,611,55"/>
+<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="459,79,625,119"/>
+<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="460,144,624,169"/>
+<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="472,217,612,243"/>
+<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="467,267,617,292"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="673,192,825,217"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="697,241,802,267"/>
 </map>
 </div>
 

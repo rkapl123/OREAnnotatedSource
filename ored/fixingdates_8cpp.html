@@ -83,10 +83,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="iborfallbackconfig_8hpp_source.html">ored/configuration/iborfallbackconfig.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="curvespecparser_8hpp_source.html">ored/marketdata/curvespecparser.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fixingdates_8hpp_source.html">ored/portfolio/fixingdates.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="indexnametranslator_8hpp_source.html">ored/utilities/indexnametranslator.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="indexparser_8hpp_source.html">ored/utilities/indexparser.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/averageonindexedcoupon_8hpp.html">qle/cashflows/averageonindexedcoupon.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/bondtrscashflow_8hpp.html">qle/cashflows/bondtrscashflow.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/cashflows/cappedflooredaveragebmacoupon.hpp&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/cmbcoupon_8hpp.html">qle/cashflows/cmbcoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/commodityindexedaveragecashflow_8hpp.html">qle/cashflows/commodityindexedaveragecashflow.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/commodityindexedcashflow_8hpp.html">qle/cashflows/commodityindexedcashflow.hpp</a>&gt;</code><br />
@@ -100,7 +103,10 @@ $(function() {
 <code>#include &lt;<a class="elRef" href="../qle/subperiodscoupon_8hpp.html">qle/cashflows/subperiodscoupon.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/commoditybasisfutureindex_8hpp.html">qle/indexes/commoditybasisfutureindex.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/commodityindex_8hpp.html">qle/indexes/commodityindex.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/compositeindex_8hpp.html">qle/indexes/compositeindex.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/fallbackiborindex_8hpp.html">qle/indexes/fallbackiborindex.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/fallbackovernightindex_8hpp.html">qle/indexes/fallbackovernightindex.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/genericindex_8hpp.html">qle/indexes/genericindex.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/offpeakpowerindex_8hpp.html">qle/indexes/offpeakpowerindex.hpp</a>&gt;</code><br />
 <code>#include &lt;ql/cashflow.hpp&gt;</code><br />
 <code>#include &lt;ql/cashflows/averagebmacoupon.hpp&gt;</code><br />
@@ -134,8 +140,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6b589da29c2eae882d77c481a9e9fecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a511d2c17ea98f37aa1a00c33b5f7b153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a511d2c17ea98f37aa1a00c33b5f7b153">amendInflationFixingDates</a> (map&lt; string, set&lt; Date &gt; &gt; &amp;fixings)</td></tr>
 <tr class="separator:a511d2c17ea98f37aa1a00c33b5f7b153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4762d52341d1436be19e245d0e686e47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a4762d52341d1436be19e245d0e686e47">addMarketFixingDates</a> (const Date &amp;asof, map&lt; string, set&lt; Date &gt; &gt; &amp;fixings, const TodaysMarketParameters &amp;mktParams, const Period &amp;iborLookback, const Period &amp;oisLookback, const Period &amp;bmaLookback, const Period &amp;inflationLookback, const string &amp;configuration)</td></tr>
-<tr class="separator:a4762d52341d1436be19e245d0e686e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8521cd76249793896bb8f5bd2ba506"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a1c8521cd76249793896bb8f5bd2ba506">addMarketFixingDates</a> (const Date &amp;asof, map&lt; string, set&lt; Date &gt; &gt; &amp;fixings, const TodaysMarketParameters &amp;mktParams, const Period &amp;iborLookback, const Period &amp;oisLookback, const Period &amp;bmaLookback, const Period &amp;inflationLookback)</td></tr>
+<tr class="separator:a1c8521cd76249793896bb8f5bd2ba506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

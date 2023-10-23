@@ -138,13 +138,16 @@ $(function() {
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="initbuilders_8hpp.html#a57a8ec7d5e4b4b159ab70c7f5e48e987">   57</a></span><span class="preprocessor">#define ORE_REGISTER_TRS_UNDERLYING_BUILDER(NAME, CLASS, OVERWRITE)                                                    \</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">    ore::data::TrsUnderlyingBuilderFactory::instance().addBuilder(NAME, boost::make_shared&lt;CLASS&gt;(), OVERWRITE);</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore_1_1data.html">ore::data</a> {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceore_1_1data.html#a7b15460614ce7ac1d30554cccb1c765f">initBuilders</a>();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <span class="comment">// namespace ore::data</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="initbuilders_8hpp.html#aa08deb9543cfee29c11c06aacebb84f1">   60</a></span><span class="preprocessor">#define ORE_REGISTER_COMPUTE_FRAMEWORK_CREATOR(NAME, CLASS, OVERWRITE)                                                 \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">    QuantExt::ComputeFrameworkRegistry::instance().add(NAME, &amp;QuantExt::createComputeFrameworkCreator&lt;CLASS&gt;, OVERWRITE);</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore_1_1data.html">ore::data</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceore_1_1data.html#a7b15460614ce7ac1d30554cccb1c765f">initBuilders</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>} <span class="comment">// namespace ore::data</span></div>
 <div class="ttc" id="anamespaceore_1_1data_html"><div class="ttname"><a href="namespaceore_1_1data.html">ore::data</a></div><div class="ttdef"><b>Definition:</b> <a href="namespaces_8docs.html_source#l00028">namespaces.docs:28</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a7b15460614ce7ac1d30554cccb1c765f"><div class="ttname"><a href="namespaceore_1_1data.html#a7b15460614ce7ac1d30554cccb1c765f">ore::data::initBuilders</a></div><div class="ttdeci">void initBuilders()</div><div class="ttdef"><b>Definition:</b> <a href="initbuilders_8cpp_source.html#l00182">initbuilders.cpp:182</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a7b15460614ce7ac1d30554cccb1c765f"><div class="ttname"><a href="namespaceore_1_1data.html#a7b15460614ce7ac1d30554cccb1c765f">ore::data::initBuilders</a></div><div class="ttdeci">void initBuilders()</div><div class="ttdef"><b>Definition:</b> <a href="initbuilders_8cpp_source.html#l00206">initbuilders.cpp:206</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

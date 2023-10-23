@@ -174,8 +174,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="progressbar_8cpp_source.html#l00113">113</a> of file <a class="el" href="progressbar_8cpp_source.html">progressbar.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  115</span>    : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ae16c79e3928608e40e91eb7f9b34bcf9">indicators_</a>(indicators) {}</div>
+<p class="definition">Definition at line <a class="el" href="progressbar_8cpp_source.html#l00114">114</a> of file <a class="el" href="progressbar_8cpp_source.html">progressbar.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>    : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ae16c79e3928608e40e91eb7f9b34bcf9">indicators_</a>(indicators) {}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_multi_threaded_progress_indicator_html_ae16c79e3928608e40e91eb7f9b34bcf9"><div class="ttname"><a href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ae16c79e3928608e40e91eb7f9b34bcf9">ore::data::MultiThreadedProgressIndicator::indicators_</a></div><div class="ttdeci">std::set&lt; boost::shared_ptr&lt; ProgressIndicator &gt; &gt; indicators_</div><div class="ttdef"><b>Definition:</b> <a href="progressbar_8hpp_source.html#l00137">progressbar.hpp:137</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -217,19 +217,19 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1data_1_1_progress_indicator.html#ac08cd9d4a12ac0a0c2ea656438fe0797">ProgressIndicator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="progressbar_8cpp_source.html#l00117">117</a> of file <a class="el" href="progressbar_8cpp_source.html">progressbar.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>                                                                                                           {</div>
-<div class="line"><span class="lineno">  118</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#a723d17ff7e59a044f0fc4394fd720c05">threadData_</a>[std::this_thread::get_id()] = std::make_pair(progress, total);</div>
-<div class="line"><span class="lineno">  120</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> progressTmp = 0;</div>
-<div class="line"><span class="lineno">  121</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> totalTmp = 0;</div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; d : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#a723d17ff7e59a044f0fc4394fd720c05">threadData_</a>) {</div>
-<div class="line"><span class="lineno">  123</span>        progressTmp += d.second.first;</div>
-<div class="line"><span class="lineno">  124</span>        totalTmp += d.second.second;</div>
-<div class="line"><span class="lineno">  125</span>    }</div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ae16c79e3928608e40e91eb7f9b34bcf9">indicators_</a>)</div>
-<div class="line"><span class="lineno">  127</span>        i-&gt;updateProgress(progressTmp, totalTmp);</div>
-<div class="line"><span class="lineno">  128</span>}</div>
+<p class="definition">Definition at line <a class="el" href="progressbar_8cpp_source.html#l00118">118</a> of file <a class="el" href="progressbar_8cpp_source.html">progressbar.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>                                                                                                           {</div>
+<div class="line"><span class="lineno">  119</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#a723d17ff7e59a044f0fc4394fd720c05">threadData_</a>[std::this_thread::get_id()] = std::make_pair(progress, total);</div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> progressTmp = 0;</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> totalTmp = 0;</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; d : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#a723d17ff7e59a044f0fc4394fd720c05">threadData_</a>) {</div>
+<div class="line"><span class="lineno">  124</span>        progressTmp += d.second.first;</div>
+<div class="line"><span class="lineno">  125</span>        totalTmp += d.second.second;</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ae16c79e3928608e40e91eb7f9b34bcf9">indicators_</a>)</div>
+<div class="line"><span class="lineno">  128</span>        i-&gt;updateProgress(progressTmp, totalTmp);</div>
+<div class="line"><span class="lineno">  129</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_multi_threaded_progress_indicator_html_a723d17ff7e59a044f0fc4394fd720c05"><div class="ttname"><a href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#a723d17ff7e59a044f0fc4394fd720c05">ore::data::MultiThreadedProgressIndicator::threadData_</a></div><div class="ttdeci">std::map&lt; std::thread::id, std::pair&lt; unsigned long, unsigned long &gt; &gt; threadData_</div><div class="ttdef"><b>Definition:</b> <a href="progressbar_8hpp_source.html#l00138">progressbar.hpp:138</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_multi_threaded_progress_indicator_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::MultiThreadedProgressIndicator::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="progressbar_8hpp_source.html#l00136">progressbar.hpp:136</a></div></div>
 </div><!-- fragment -->
@@ -260,13 +260,13 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1data_1_1_progress_indicator.html#a20dcbdfbd0ec77afc802522bb7e379c1">ProgressIndicator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="progressbar_8cpp_source.html#l00130">130</a> of file <a class="el" href="progressbar_8cpp_source.html">progressbar.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  130</span>                                           {</div>
-<div class="line"><span class="lineno">  131</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ae16c79e3928608e40e91eb7f9b34bcf9">indicators_</a>)</div>
-<div class="line"><span class="lineno">  133</span>        i-&gt;reset();</div>
-<div class="line"><span class="lineno">  134</span>    <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#a723d17ff7e59a044f0fc4394fd720c05">threadData_</a>.clear();</div>
-<div class="line"><span class="lineno">  135</span>}</div>
+<p class="definition">Definition at line <a class="el" href="progressbar_8cpp_source.html#l00131">131</a> of file <a class="el" href="progressbar_8cpp_source.html">progressbar.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>                                           {</div>
+<div class="line"><span class="lineno">  132</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#ae16c79e3928608e40e91eb7f9b34bcf9">indicators_</a>)</div>
+<div class="line"><span class="lineno">  134</span>        i-&gt;reset();</div>
+<div class="line"><span class="lineno">  135</span>    <a class="code hl_variable" href="classore_1_1data_1_1_multi_threaded_progress_indicator.html#a723d17ff7e59a044f0fc4394fd720c05">threadData_</a>.clear();</div>
+<div class="line"><span class="lineno">  136</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

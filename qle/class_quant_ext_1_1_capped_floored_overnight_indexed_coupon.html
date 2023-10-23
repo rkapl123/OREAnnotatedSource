@@ -231,36 +231,36 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >capped / floored compounded, backward-looking on coupon, local means that the daily rates are capped / floored while a global cap / floor is applied to the effective period rate </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00305">305</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  308</span>    : <a class="code hl_class" href="class_floating_rate_coupon.html">FloatingRateCoupon</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;date(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;nominal(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;accrualStartDate(),</div>
-<div class="line"><span class="lineno">  309</span>                         <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;accrualEndDate(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;fixingDays(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;index(),</div>
-<div class="line"><span class="lineno">  310</span>                         <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;gearing(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;spread(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;referencePeriodStart(),</div>
-<div class="line"><span class="lineno">  311</span>                         <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;referencePeriodEnd(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;dayCounter(), <span class="keyword">false</span>),</div>
-<div class="line"><span class="lineno">  312</span>      <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>), <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a20eb6dfc58fdfdc20077a19ca942b2d9">nakedOption</a>), <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ab6455d6254676027e83e97745d131911">localCapFloor_</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a90e5f378d5fdd1cbc03f4ca42ce1889d">localCapFloor</a>) {</div>
-<div class="line"><span class="lineno">  313</span> </div>
-<div class="line"><span class="lineno">  314</span>    QL_REQUIRE(!<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread() || <a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;gearing(), 1.0),</div>
-<div class="line"><span class="lineno">  315</span>               <span class="stringliteral">&quot;CappedFlooredOvernightIndexedCoupon: if include spread = true, only a gearing 1.0 is allowed - scale &quot;</span></div>
-<div class="line"><span class="lineno">  316</span>               <span class="stringliteral">&quot;the notional in this case instead.&quot;</span>);</div>
-<div class="line"><span class="lineno">  317</span> </div>
-<div class="line"><span class="lineno">  318</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a90e5f378d5fdd1cbc03f4ca42ce1889d">localCapFloor</a>) {</div>
-<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">if</span> (gearing_ &gt; 0.0) {</div>
-<div class="line"><span class="lineno">  320</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">cap</a>;</div>
-<div class="line"><span class="lineno">  321</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>;</div>
-<div class="line"><span class="lineno">  322</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  323</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>;</div>
-<div class="line"><span class="lineno">  324</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">cap</a>;</div>
-<div class="line"><span class="lineno">  325</span>        }</div>
-<div class="line"><span class="lineno">  326</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  327</span>        <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">cap</a>;</div>
-<div class="line"><span class="lineno">  328</span>        <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>;</div>
-<div class="line"><span class="lineno">  329</span>    }</div>
-<div class="line"><span class="lineno">  330</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> != Null&lt;Real&gt;() &amp;&amp; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> != Null&lt;Real&gt;()) {</div>
-<div class="line"><span class="lineno">  331</span>        QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> &gt;= <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>, <span class="stringliteral">&quot;cap level (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> &lt;&lt; <span class="stringliteral">&quot;) less than floor level (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">  332</span>    }</div>
-<div class="line"><span class="lineno">  333</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>);</div>
-<div class="line"><span class="lineno">  334</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a>)</div>
-<div class="line"><span class="lineno">  335</span>        <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;alwaysForwardNotifications();</div>
-<div class="line"><span class="lineno">  336</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00306">306</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  309</span>    : <a class="code hl_class" href="class_floating_rate_coupon.html">FloatingRateCoupon</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;date(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;nominal(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;accrualStartDate(),</div>
+<div class="line"><span class="lineno">  310</span>                         <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;accrualEndDate(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;fixingDays(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;index(),</div>
+<div class="line"><span class="lineno">  311</span>                         <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;gearing(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;spread(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;referencePeriodStart(),</div>
+<div class="line"><span class="lineno">  312</span>                         <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;referencePeriodEnd(), <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>-&gt;dayCounter(), <span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  313</span>      <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">underlying</a>), <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a20eb6dfc58fdfdc20077a19ca942b2d9">nakedOption</a>), <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ab6455d6254676027e83e97745d131911">localCapFloor_</a>(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a90e5f378d5fdd1cbc03f4ca42ce1889d">localCapFloor</a>) {</div>
+<div class="line"><span class="lineno">  314</span> </div>
+<div class="line"><span class="lineno">  315</span>    QL_REQUIRE(!<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread() || <a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;gearing(), 1.0),</div>
+<div class="line"><span class="lineno">  316</span>               <span class="stringliteral">&quot;CappedFlooredOvernightIndexedCoupon: if include spread = true, only a gearing 1.0 is allowed - scale &quot;</span></div>
+<div class="line"><span class="lineno">  317</span>               <span class="stringliteral">&quot;the notional in this case instead.&quot;</span>);</div>
+<div class="line"><span class="lineno">  318</span> </div>
+<div class="line"><span class="lineno">  319</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a90e5f378d5fdd1cbc03f4ca42ce1889d">localCapFloor</a>) {</div>
+<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">if</span> (gearing_ &gt; 0.0) {</div>
+<div class="line"><span class="lineno">  321</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">cap</a>;</div>
+<div class="line"><span class="lineno">  322</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>;</div>
+<div class="line"><span class="lineno">  323</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  324</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>;</div>
+<div class="line"><span class="lineno">  325</span>            <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">cap</a>;</div>
+<div class="line"><span class="lineno">  326</span>        }</div>
+<div class="line"><span class="lineno">  327</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  328</span>        <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">cap</a>;</div>
+<div class="line"><span class="lineno">  329</span>        <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> = <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>;</div>
+<div class="line"><span class="lineno">  330</span>    }</div>
+<div class="line"><span class="lineno">  331</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> != Null&lt;Real&gt;() &amp;&amp; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> != Null&lt;Real&gt;()) {</div>
+<div class="line"><span class="lineno">  332</span>        QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> &gt;= <a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">floor</a>, <span class="stringliteral">&quot;cap level (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> &lt;&lt; <span class="stringliteral">&quot;) less than floor level (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><span class="lineno">  333</span>    }</div>
+<div class="line"><span class="lineno">  334</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>);</div>
+<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a>)</div>
+<div class="line"><span class="lineno">  336</span>        <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;alwaysForwardNotifications();</div>
+<div class="line"><span class="lineno">  337</span>}</div>
 <div class="ttc" id="aclass_floating_rate_coupon_html"><div class="ttname"><a href="class_floating_rate_coupon.html">FloatingRateCoupon</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_a20eb6dfc58fdfdc20077a19ca942b2d9"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a20eb6dfc58fdfdc20077a19ca942b2d9">QuantExt::CappedFlooredOvernightIndexedCoupon::nakedOption</a></div><div class="ttdeci">bool nakedOption() const</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00199">overnightindexedcoupon.hpp:199</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_a5e4601edc57cebe647fc7b2c257ec9e9"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a5e4601edc57cebe647fc7b2c257ec9e9">QuantExt::CappedFlooredOvernightIndexedCoupon::underlying</a></div><div class="ttdeci">ext::shared_ptr&lt; OvernightIndexedCoupon &gt; underlying() const</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00198">overnightindexedcoupon.hpp:198</a></div></div>
@@ -270,9 +270,9 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_aa3ead97adee1378c18ac3500e27be960"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">QuantExt::CappedFlooredOvernightIndexedCoupon::underlying_</a></div><div class="ttdeci">ext::shared_ptr&lt; OvernightIndexedCoupon &gt; underlying_</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00203">overnightindexedcoupon.hpp:203</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_ab6455d6254676027e83e97745d131911"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ab6455d6254676027e83e97745d131911">QuantExt::CappedFlooredOvernightIndexedCoupon::localCapFloor_</a></div><div class="ttdeci">bool localCapFloor_</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00206">overnightindexedcoupon.hpp:206</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_ac94856cfd3073eb172529de9c37cae86"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">QuantExt::CappedFlooredOvernightIndexedCoupon::floor_</a></div><div class="ttdeci">Rate floor_</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00204">overnightindexedcoupon.hpp:204</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_ae24af1fc1a29e0d34bf41b6f792faced"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">QuantExt::CappedFlooredOvernightIndexedCoupon::cap</a></div><div class="ttdeci">Rate cap() const</div><div class="ttdoc">cap</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00367">overnightindexedcoupon.cpp:367</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_af6d3a23744668b6151ef0c47feb955d3"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">QuantExt::CappedFlooredOvernightIndexedCoupon::floor</a></div><div class="ttdeci">Rate floor() const</div><div class="ttdoc">floor</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00369">overnightindexedcoupon.cpp:369</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00496">randomvariable.cpp:496</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_ae24af1fc1a29e0d34bf41b6f792faced"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ae24af1fc1a29e0d34bf41b6f792faced">QuantExt::CappedFlooredOvernightIndexedCoupon::cap</a></div><div class="ttdeci">Rate cap() const</div><div class="ttdoc">cap</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00368">overnightindexedcoupon.cpp:368</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_af6d3a23744668b6151ef0c47feb955d3"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#af6d3a23744668b6151ef0c47feb955d3">QuantExt::CappedFlooredOvernightIndexedCoupon::floor</a></div><div class="ttdeci">Rate floor() const</div><div class="ttdoc">floor</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00370">overnightindexedcoupon.cpp:370</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00817">randomvariable.cpp:817</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -314,11 +314,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00343">343</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  343</span>                                                     {</div>
-<div class="line"><span class="lineno">  344</span>    update();</div>
-<div class="line"><span class="lineno">  345</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;deepUpdate();</div>
-<div class="line"><span class="lineno">  346</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00344">344</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  344</span>                                                     {</div>
+<div class="line"><span class="lineno">  345</span>    update();</div>
+<div class="line"><span class="lineno">  346</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;deepUpdate();</div>
+<div class="line"><span class="lineno">  347</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -345,29 +345,29 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00348">348</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  348</span>                                                                    {</div>
-<div class="line"><span class="lineno">  349</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;pricer(), <span class="stringliteral">&quot;pricer not set&quot;</span>);</div>
-<div class="line"><span class="lineno">  350</span>    Rate swapletRate = <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a> ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;rate();</div>
-<div class="line"><span class="lineno">  351</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> != Null&lt;Real&gt;() || <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> != Null&lt;Real&gt;())</div>
-<div class="line"><span class="lineno">  352</span>        pricer()-&gt;initialize(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  353</span>    Rate floorletRate = 0.;</div>
-<div class="line"><span class="lineno">  354</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> != Null&lt;Real&gt;())</div>
-<div class="line"><span class="lineno">  355</span>        floorletRate = pricer()-&gt;floorletRate(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa85495458f323c79634046bd9991dda6">effectiveFloor</a>());</div>
-<div class="line"><span class="lineno">  356</span>    Rate capletRate = 0.;</div>
-<div class="line"><span class="lineno">  357</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> != Null&lt;Real&gt;())</div>
-<div class="line"><span class="lineno">  358</span>        capletRate = (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a> &amp;&amp; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> == Null&lt;Real&gt;() ? -1.0 : 1.0) * pricer()-&gt;capletRate(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a931a844f97f22d191d01be8441ff3833">effectiveCap</a>());</div>
-<div class="line"><span class="lineno">  359</span>    rate_ = swapletRate + floorletRate - capletRate;</div>
-<div class="line"><span class="lineno">  360</span>    <span class="keyword">auto</span> p = boost::dynamic_pointer_cast&lt;CappedFlooredOvernightIndexedCouponPricer&gt;(pricer());</div>
-<div class="line"><span class="lineno">  361</span>    QL_REQUIRE(p, <span class="stringliteral">&quot;CappedFlooredOvernightIndexedCoupon::performCalculations(): internal error, could not cast to &quot;</span></div>
-<div class="line"><span class="lineno">  362</span>                  <span class="stringliteral">&quot;CappedFlooredOvernightIndexedCouponPricer&quot;</span>);</div>
-<div class="line"><span class="lineno">  363</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a379f8e1e419d38088d23b7ddab78494c">effectiveCapletVolatility_</a> = p-&gt;effectiveCapletVolatility();</div>
-<div class="line"><span class="lineno">  364</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a94bdb7f03cb22960d6d6fdbc2bffdf24">effectiveFloorletVolatility_</a> = p-&gt;effectiveFloorletVolatility();</div>
-<div class="line"><span class="lineno">  365</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00349">349</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  349</span>                                                                    {</div>
+<div class="line"><span class="lineno">  350</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;pricer(), <span class="stringliteral">&quot;pricer not set&quot;</span>);</div>
+<div class="line"><span class="lineno">  351</span>    Rate swapletRate = <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a> ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;rate();</div>
+<div class="line"><span class="lineno">  352</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> != Null&lt;Real&gt;() || <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> != Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  353</span>        pricer()-&gt;initialize(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  354</span>    Rate floorletRate = 0.;</div>
+<div class="line"><span class="lineno">  355</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> != Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  356</span>        floorletRate = pricer()-&gt;floorletRate(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa85495458f323c79634046bd9991dda6">effectiveFloor</a>());</div>
+<div class="line"><span class="lineno">  357</span>    Rate capletRate = 0.;</div>
+<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> != Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  359</span>        capletRate = (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a7d3f84e3b62fe2159597494c7d70138c">nakedOption_</a> &amp;&amp; <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> == Null&lt;Real&gt;() ? -1.0 : 1.0) * pricer()-&gt;capletRate(<a class="code hl_function" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a931a844f97f22d191d01be8441ff3833">effectiveCap</a>());</div>
+<div class="line"><span class="lineno">  360</span>    rate_ = swapletRate + floorletRate - capletRate;</div>
+<div class="line"><span class="lineno">  361</span>    <span class="keyword">auto</span> p = boost::dynamic_pointer_cast&lt;CappedFlooredOvernightIndexedCouponPricer&gt;(pricer());</div>
+<div class="line"><span class="lineno">  362</span>    QL_REQUIRE(p, <span class="stringliteral">&quot;CappedFlooredOvernightIndexedCoupon::performCalculations(): internal error, could not cast to &quot;</span></div>
+<div class="line"><span class="lineno">  363</span>                  <span class="stringliteral">&quot;CappedFlooredOvernightIndexedCouponPricer&quot;</span>);</div>
+<div class="line"><span class="lineno">  364</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a379f8e1e419d38088d23b7ddab78494c">effectiveCapletVolatility_</a> = p-&gt;effectiveCapletVolatility();</div>
+<div class="line"><span class="lineno">  365</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a94bdb7f03cb22960d6d6fdbc2bffdf24">effectiveFloorletVolatility_</a> = p-&gt;effectiveFloorletVolatility();</div>
+<div class="line"><span class="lineno">  366</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_a379f8e1e419d38088d23b7ddab78494c"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a379f8e1e419d38088d23b7ddab78494c">QuantExt::CappedFlooredOvernightIndexedCoupon::effectiveCapletVolatility_</a></div><div class="ttdeci">Real effectiveCapletVolatility_</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00207">overnightindexedcoupon.hpp:207</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_a931a844f97f22d191d01be8441ff3833"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a931a844f97f22d191d01be8441ff3833">QuantExt::CappedFlooredOvernightIndexedCoupon::effectiveCap</a></div><div class="ttdeci">Rate effectiveCap() const</div><div class="ttdoc">effective cap of fixing</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00378">overnightindexedcoupon.cpp:378</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_a931a844f97f22d191d01be8441ff3833"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a931a844f97f22d191d01be8441ff3833">QuantExt::CappedFlooredOvernightIndexedCoupon::effectiveCap</a></div><div class="ttdeci">Rate effectiveCap() const</div><div class="ttdoc">effective cap of fixing</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00379">overnightindexedcoupon.cpp:379</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_a94bdb7f03cb22960d6d6fdbc2bffdf24"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a94bdb7f03cb22960d6d6fdbc2bffdf24">QuantExt::CappedFlooredOvernightIndexedCoupon::effectiveFloorletVolatility_</a></div><div class="ttdeci">Real effectiveFloorletVolatility_</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8hpp_source.html#l00208">overnightindexedcoupon.hpp:208</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_aa85495458f323c79634046bd9991dda6"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa85495458f323c79634046bd9991dda6">QuantExt::CappedFlooredOvernightIndexedCoupon::effectiveFloor</a></div><div class="ttdeci">Rate effectiveFloor() const</div><div class="ttdoc">effective floor of fixing</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00410">overnightindexedcoupon.cpp:410</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_capped_floored_overnight_indexed_coupon_html_aa85495458f323c79634046bd9991dda6"><div class="ttname"><a href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa85495458f323c79634046bd9991dda6">QuantExt::CappedFlooredOvernightIndexedCoupon::effectiveFloor</a></div><div class="ttdeci">Rate effectiveFloor() const</div><div class="ttdoc">effective floor of fixing</div><div class="ttdef"><b>Definition:</b> <a href="overnightindexedcoupon_8cpp_source.html#l00411">overnightindexedcoupon.cpp:411</a></div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -406,11 +406,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00338">338</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  338</span>                                                                     {</div>
-<div class="line"><span class="lineno">  339</span>    LazyObject::alwaysForwardNotifications();</div>
-<div class="line"><span class="lineno">  340</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;alwaysForwardNotifications();</div>
-<div class="line"><span class="lineno">  341</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00339">339</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  339</span>                                                                     {</div>
+<div class="line"><span class="lineno">  340</span>    LazyObject::alwaysForwardNotifications();</div>
+<div class="line"><span class="lineno">  341</span>    <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;alwaysForwardNotifications();</div>
+<div class="line"><span class="lineno">  342</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -437,11 +437,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00371">371</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  371</span>                                                     {</div>
-<div class="line"><span class="lineno">  372</span>    calculate();</div>
-<div class="line"><span class="lineno">  373</span>    <span class="keywordflow">return</span> rate_;</div>
-<div class="line"><span class="lineno">  374</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00372">372</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  372</span>                                                     {</div>
+<div class="line"><span class="lineno">  373</span>    calculate();</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">return</span> rate_;</div>
+<div class="line"><span class="lineno">  375</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -468,8 +468,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00376">376</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  376</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;convexityAdjustment(); }</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00377">377</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  377</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;convexityAdjustment(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -518,8 +518,8 @@ Public Member Functions</h2></td></tr>
 
 <p>cap </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00367">367</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  367</span>{ <span class="keywordflow">return</span> gearing_ &gt; 0.0 ? <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> : <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00368">368</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  368</span>{ <span class="keywordflow">return</span> gearing_ &gt; 0.0 ? <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> : <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -551,8 +551,8 @@ Public Member Functions</h2></td></tr>
 
 <p>floor </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00369">369</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  369</span>{ <span class="keywordflow">return</span> gearing_ &gt; 0.0 ? <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> : <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00370">370</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  370</span>{ <span class="keywordflow">return</span> gearing_ &gt; 0.0 ? <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> : <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -584,38 +584,38 @@ Public Member Functions</h2></td></tr>
 
 <p>effective cap of fixing </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00378">378</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  378</span>                                                             {</div>
-<div class="line"><span class="lineno">  379</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> == Null&lt;Real&gt;())</div>
-<div class="line"><span class="lineno">  380</span>        <span class="keywordflow">return</span> Null&lt;Real&gt;();</div>
-<div class="line"><span class="lineno">  381</span>    <span class="comment">/* We have four cases dependent on localCapFloor_ and includeSpread. Notation in the formulas:</span></div>
-<div class="line"><span class="lineno">  382</span><span class="comment">       g         gearing,</span></div>
-<div class="line"><span class="lineno">  383</span><span class="comment">       s         spread,</span></div>
-<div class="line"><span class="lineno">  384</span><span class="comment">       A         coupon amount,</span></div>
-<div class="line"><span class="lineno">  385</span><span class="comment">       f_i       daily fixings,</span></div>
-<div class="line"><span class="lineno">  386</span><span class="comment">       \tau_i    daily accrual fractions,</span></div>
-<div class="line"><span class="lineno">  387</span><span class="comment">       \tau      coupon accrual fraction,</span></div>
-<div class="line"><span class="lineno">  388</span><span class="comment">       C         cap rate</span></div>
-<div class="line"><span class="lineno">  389</span><span class="comment">       F         floor rate</span></div>
-<div class="line"><span class="lineno">  390</span><span class="comment">    */</span></div>
-<div class="line"><span class="lineno">  391</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ab6455d6254676027e83e97745d131911">localCapFloor_</a>) {</div>
-<div class="line"><span class="lineno">  392</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
-<div class="line"><span class="lineno">  393</span>            <span class="comment">// A = g \cdot \frac{\prod (1 + \tau_i \min ( \max ( f_i + s , F), C)) - 1}{\tau}</span></div>
-<div class="line"><span class="lineno">  394</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;spread();</div>
-<div class="line"><span class="lineno">  395</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  396</span>            <span class="comment">// A = g \cdot \frac{\prod (1 + \tau_i \min ( \max ( f_i , F), C)) - 1}{\tau} + s</span></div>
-<div class="line"><span class="lineno">  397</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a>;</div>
-<div class="line"><span class="lineno">  398</span>        }</div>
-<div class="line"><span class="lineno">  399</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  400</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
-<div class="line"><span class="lineno">  401</span>            <span class="comment">// A = \min \left( \max \left( g \cdot \frac{\prod (1 + \tau_i(f_i + s)) - 1}{\tau}, F \right), C \right)</span></div>
-<div class="line"><span class="lineno">  402</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> / gearing() - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread());</div>
-<div class="line"><span class="lineno">  403</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  404</span>            <span class="comment">// A = \min \left( \max \left( g \cdot \frac{\prod (1 + \tau_i f_i) - 1}{\tau} + s, F \right), C \right)</span></div>
-<div class="line"><span class="lineno">  405</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread()) / gearing();</div>
-<div class="line"><span class="lineno">  406</span>        }</div>
-<div class="line"><span class="lineno">  407</span>    }</div>
-<div class="line"><span class="lineno">  408</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00379">379</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  379</span>                                                             {</div>
+<div class="line"><span class="lineno">  380</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> == Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  381</span>        <span class="keywordflow">return</span> Null&lt;Real&gt;();</div>
+<div class="line"><span class="lineno">  382</span>    <span class="comment">/* We have four cases dependent on localCapFloor_ and includeSpread. Notation in the formulas:</span></div>
+<div class="line"><span class="lineno">  383</span><span class="comment">       g         gearing,</span></div>
+<div class="line"><span class="lineno">  384</span><span class="comment">       s         spread,</span></div>
+<div class="line"><span class="lineno">  385</span><span class="comment">       A         coupon amount,</span></div>
+<div class="line"><span class="lineno">  386</span><span class="comment">       f_i       daily fixings,</span></div>
+<div class="line"><span class="lineno">  387</span><span class="comment">       \tau_i    daily accrual fractions,</span></div>
+<div class="line"><span class="lineno">  388</span><span class="comment">       \tau      coupon accrual fraction,</span></div>
+<div class="line"><span class="lineno">  389</span><span class="comment">       C         cap rate</span></div>
+<div class="line"><span class="lineno">  390</span><span class="comment">       F         floor rate</span></div>
+<div class="line"><span class="lineno">  391</span><span class="comment">    */</span></div>
+<div class="line"><span class="lineno">  392</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ab6455d6254676027e83e97745d131911">localCapFloor_</a>) {</div>
+<div class="line"><span class="lineno">  393</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
+<div class="line"><span class="lineno">  394</span>            <span class="comment">// A = g \cdot \frac{\prod (1 + \tau_i \min ( \max ( f_i + s , F), C)) - 1}{\tau}</span></div>
+<div class="line"><span class="lineno">  395</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;spread();</div>
+<div class="line"><span class="lineno">  396</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  397</span>            <span class="comment">// A = g \cdot \frac{\prod (1 + \tau_i \min ( \max ( f_i , F), C)) - 1}{\tau} + s</span></div>
+<div class="line"><span class="lineno">  398</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a>;</div>
+<div class="line"><span class="lineno">  399</span>        }</div>
+<div class="line"><span class="lineno">  400</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  401</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
+<div class="line"><span class="lineno">  402</span>            <span class="comment">// A = \min \left( \max \left( g \cdot \frac{\prod (1 + \tau_i(f_i + s)) - 1}{\tau}, F \right), C \right)</span></div>
+<div class="line"><span class="lineno">  403</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> / gearing() - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread());</div>
+<div class="line"><span class="lineno">  404</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  405</span>            <span class="comment">// A = \min \left( \max \left( g \cdot \frac{\prod (1 + \tau_i f_i) - 1}{\tau} + s, F \right), C \right)</span></div>
+<div class="line"><span class="lineno">  406</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a88a22c2f44ff79c880a136bd11c8e862">cap_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread()) / gearing();</div>
+<div class="line"><span class="lineno">  407</span>        }</div>
+<div class="line"><span class="lineno">  408</span>    }</div>
+<div class="line"><span class="lineno">  409</span>}</div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -647,24 +647,24 @@ Public Member Functions</h2></td></tr>
 
 <p>effective floor of fixing </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00410">410</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  410</span>                                                               {</div>
-<div class="line"><span class="lineno">  411</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> == Null&lt;Real&gt;())</div>
-<div class="line"><span class="lineno">  412</span>        <span class="keywordflow">return</span> Null&lt;Real&gt;();</div>
-<div class="line"><span class="lineno">  413</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ab6455d6254676027e83e97745d131911">localCapFloor_</a>) {</div>
-<div class="line"><span class="lineno">  414</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
-<div class="line"><span class="lineno">  415</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;spread();</div>
-<div class="line"><span class="lineno">  416</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  417</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a>;</div>
-<div class="line"><span class="lineno">  418</span>        }</div>
-<div class="line"><span class="lineno">  419</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  420</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
-<div class="line"><span class="lineno">  421</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread());</div>
-<div class="line"><span class="lineno">  422</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  423</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread()) / gearing();</div>
-<div class="line"><span class="lineno">  424</span>        }</div>
-<div class="line"><span class="lineno">  425</span>    }</div>
-<div class="line"><span class="lineno">  426</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00411">411</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  411</span>                                                               {</div>
+<div class="line"><span class="lineno">  412</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> == Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  413</span>        <span class="keywordflow">return</span> Null&lt;Real&gt;();</div>
+<div class="line"><span class="lineno">  414</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ab6455d6254676027e83e97745d131911">localCapFloor_</a>) {</div>
+<div class="line"><span class="lineno">  415</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
+<div class="line"><span class="lineno">  416</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;spread();</div>
+<div class="line"><span class="lineno">  417</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  418</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a>;</div>
+<div class="line"><span class="lineno">  419</span>        }</div>
+<div class="line"><span class="lineno">  420</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  421</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;includeSpread()) {</div>
+<div class="line"><span class="lineno">  422</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread());</div>
+<div class="line"><span class="lineno">  423</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  424</span>            <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#ac94856cfd3073eb172529de9c37cae86">floor_</a> - <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#aa3ead97adee1378c18ac3500e27be960">underlying_</a>-&gt;effectiveSpread()) / gearing();</div>
+<div class="line"><span class="lineno">  425</span>        }</div>
+<div class="line"><span class="lineno">  426</span>    }</div>
+<div class="line"><span class="lineno">  427</span>}</div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -696,11 +696,11 @@ Public Member Functions</h2></td></tr>
 
 <p>effective caplet volatility </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00428">428</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  428</span>                                                                          {</div>
-<div class="line"><span class="lineno">  429</span>    calculate();</div>
-<div class="line"><span class="lineno">  430</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a379f8e1e419d38088d23b7ddab78494c">effectiveCapletVolatility_</a>;</div>
-<div class="line"><span class="lineno">  431</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00429">429</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  429</span>                                                                          {</div>
+<div class="line"><span class="lineno">  430</span>    calculate();</div>
+<div class="line"><span class="lineno">  431</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a379f8e1e419d38088d23b7ddab78494c">effectiveCapletVolatility_</a>;</div>
+<div class="line"><span class="lineno">  432</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -721,11 +721,11 @@ Public Member Functions</h2></td></tr>
 
 <p>effective floorlet volatility </p>
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00433">433</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  433</span>                                                                            {</div>
-<div class="line"><span class="lineno">  434</span>    calculate();</div>
-<div class="line"><span class="lineno">  435</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a94bdb7f03cb22960d6d6fdbc2bffdf24">effectiveFloorletVolatility_</a>;</div>
-<div class="line"><span class="lineno">  436</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00434">434</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  434</span>                                                                            {</div>
+<div class="line"><span class="lineno">  435</span>    calculate();</div>
+<div class="line"><span class="lineno">  436</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_capped_floored_overnight_indexed_coupon.html#a94bdb7f03cb22960d6d6fdbc2bffdf24">effectiveFloorletVolatility_</a>;</div>
+<div class="line"><span class="lineno">  437</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -753,14 +753,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00438">438</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  438</span>                                                                  {</div>
-<div class="line"><span class="lineno">  439</span>    Visitor&lt;CappedFlooredOvernightIndexedCoupon&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;CappedFlooredOvernightIndexedCoupon&gt;*<span class="keyword">&gt;</span>(&amp;v);</div>
-<div class="line"><span class="lineno">  440</span>    <span class="keywordflow">if</span> (v1 != 0)</div>
-<div class="line"><span class="lineno">  441</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  442</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  443</span>        FloatingRateCoupon::accept(v);</div>
-<div class="line"><span class="lineno">  444</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overnightindexedcoupon_8cpp_source.html#l00439">439</a> of file <a class="el" href="overnightindexedcoupon_8cpp_source.html">overnightindexedcoupon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  439</span>                                                                  {</div>
+<div class="line"><span class="lineno">  440</span>    Visitor&lt;CappedFlooredOvernightIndexedCoupon&gt;* v1 = <span class="keyword">dynamic_cast&lt;</span>Visitor&lt;CappedFlooredOvernightIndexedCoupon&gt;*<span class="keyword">&gt;</span>(&amp;v);</div>
+<div class="line"><span class="lineno">  441</span>    <span class="keywordflow">if</span> (v1 != 0)</div>
+<div class="line"><span class="lineno">  442</span>        v1-&gt;visit(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  443</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  444</span>        FloatingRateCoupon::accept(v);</div>
+<div class="line"><span class="lineno">  445</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

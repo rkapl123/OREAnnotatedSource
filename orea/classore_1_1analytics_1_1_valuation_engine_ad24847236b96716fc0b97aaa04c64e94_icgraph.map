@@ -1,42 +1,41 @@
 <map id="buildCube" name="buildCube">
-<area shape="rect" id="node1" title="Build NPV cube." alt="" coords="815,255,893,281"/>
-<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_stress_test.html#a04d3effc11ef478f51a8ab18487b6886" title="Constructor." alt="" coords="582,5,753,45"/>
-<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_xva_analytic_impl.html#aa17a62bfeb01430e5abd317529572b0c" title=" " alt="" coords="580,69,755,109"/>
-<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_xva_runner.html#aa60be499b33d1b8663ec4a66321e55f2" title=" " alt="" coords="583,133,751,173"/>
-<area shape="rect" id="node8" href="$nettedexpsoure_8cpp.html#a44745c9b080fbfd731fa9b6b431779bd" title=" " alt="" coords="614,198,721,223"/>
-<area shape="rect" id="node9" href="$classore_1_1analytics_1_1_sensitivity_analysis.html#a9ad70ccfe33c92586f8b8536102fdbc8" title="Generate the Sensitivities." alt="" coords="568,248,767,288"/>
-<area shape="rect" id="node11" href="$observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44" title=" " alt="" coords="627,313,708,338"/>
-<area shape="rect" id="node13" href="$swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471" title=" " alt="" coords="606,690,729,715"/>
-<area shape="rect" id="node37" href="$test_2sensitivityanalysis_8cpp.html#adc7a5ac10f6151560d3d7cefb068f0b0" title=" " alt="" coords="592,845,743,870"/>
-<area shape="rect" id="node39" href="$classtestsuite_1_1_par_sensitivity_analysis_test.html#a259f0997efdb5dc6fd301f5a47b370a1" title="Test that the portfolio shows the expected sensitivity (regression test)" alt="" coords="568,1105,767,1159"/>
-<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_xva_analytic_impl.html#a5752a6ba9ab71d2e3552e6ba1797047d" title=" " alt="" coords="287,69,461,109"/>
-<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_xva_analytic_impl.html#afe30cd07f7a3f42e16a3d987440434ad" title=" " alt="" coords="5,69,180,109"/>
-<area shape="rect" id="node7" href="$classore_1_1analytics_1_1_xva_runner.html#a45d152f89bffd36303fd8e82aa562ef6" title=" " alt="" coords="290,133,458,173"/>
-<area shape="rect" id="node10" href="$classore_1_1analytics_1_1_sensitivity_analysis_plus.html#a7454fa08bae704eae05695d4a2b685e1" title=" " alt="" coords="261,197,487,237"/>
-<area shape="rect" id="node12" href="$observationmode_8cpp.html#a1aac3edb3bec4e4b11d2697ea15d19ab" title=" " alt="" coords="279,262,469,287"/>
-<area shape="rect" id="node14" href="$sensitivityperformance_8cpp.html#a164a54a1491caa740eb1e472c979ac04" title=" " alt="" coords="279,311,469,337"/>
-<area shape="rect" id="node15" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a837ca9c86335415b48df2cced56144ab" title="Test performance of sensitivities run (including cross&#45;gammas) for a large portfolio,..." alt="" coords="237,361,511,415"/>
-<area shape="rect" id="node17" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#accb77169e5c581865951fb21c6358086" title="Test performance of sensitivities run for a large portfolio, with lots of buckets (&quot;None&quot; observation..." alt="" coords="237,439,511,494"/>
-<area shape="rect" id="node19" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#abc2beb96bcfe27b835d7353d059e9c24" title="Test performance of sensitivities run (including cross&#45;gammas) for a large portfolio (&quot;None&quot; observat..." alt="" coords="237,518,511,573"/>
-<area shape="rect" id="node21" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a42e7bad3bfc8c77a9f73300c0986a0e6" title="Test performance of sensitivities run for a large portfolio (&quot;None&quot; observation mode)" alt="" coords="237,597,511,651"/>
-<area shape="rect" id="node23" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#af04720a2672dadc0ca3ca0a90643f682" title="Test performance of sensitivities run (including cross&#45;gammas) for a single&#45;trade portfolio,..." alt="" coords="235,675,513,730"/>
-<area shape="rect" id="node25" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a4f1b46c72dd02fa7a464f6f83742a553" title="Test performance of sensitivities run with lots of buckets (&quot;None&quot; observation mode)" alt="" coords="235,754,513,809"/>
-<area shape="rect" id="node27" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a069c7dfa4512031ee2b8d05c39ee2526" title="Test performance of sensitivities run (including cross&#45;gammas) (&quot;None&quot; observation mode)" alt="" coords="253,833,495,887"/>
-<area shape="rect" id="node29" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a22f5a1034fd87b8c645fae121ddbe5ab" title="Test performance of sensitivities run (&quot;Defer&quot; observation mode)" alt="" coords="243,912,505,952"/>
-<area shape="rect" id="node31" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a05ca2d2b4338945909ac0d6da82e35a5" title="Test performance of sensitivities run (&quot;Disable&quot; observation mode)" alt="" coords="236,976,512,1016"/>
-<area shape="rect" id="node33" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a41c1578b15063adaecd7a11231dc6cc0" title="Test performance of sensitivities run (&quot;None&quot; observation mode)" alt="" coords="243,1040,505,1080"/>
-<area shape="rect" id="node35" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a179a8568c0472b822a00ac2166b18e62" title="Test performance of sensitivities run (&quot;Unregister&quot; observation mode)" alt="" coords="228,1104,520,1144"/>
-<area shape="rect" id="node16" href="$namespacetestsuite.html#aefe99965644b408c64d10994d8b5b342" title=" " alt="" coords="9,368,176,408"/>
-<area shape="rect" id="node18" href="$namespacetestsuite.html#a44cf24174c1ec4a117b7550b18451737" title=" " alt="" coords="9,447,176,487"/>
-<area shape="rect" id="node20" href="$namespacetestsuite.html#ade993f4c3ac641248e5c0ae5c6b71c49" title=" " alt="" coords="9,525,176,565"/>
-<area shape="rect" id="node22" href="$namespacetestsuite.html#acd3672bf32286cc33309913a1ca8da09" title=" " alt="" coords="9,604,176,644"/>
-<area shape="rect" id="node24" href="$namespacetestsuite.html#a28a796cbf9b884f142d96923e1a6f79a" title=" " alt="" coords="9,683,176,723"/>
-<area shape="rect" id="node26" href="$namespacetestsuite.html#a065c0a023b1fc01c1f5a9085b508bb09" title=" " alt="" coords="9,761,176,801"/>
-<area shape="rect" id="node28" href="$namespacetestsuite.html#a065230fb7a8fced2da098ca668974bbb" title=" " alt="" coords="9,840,176,880"/>
-<area shape="rect" id="node30" href="$namespacetestsuite.html#a1678c937674649bcf0bed3556500bc56" title=" " alt="" coords="9,912,176,952"/>
-<area shape="rect" id="node32" href="$namespacetestsuite.html#a05bd78557f6b0abdf12f9cb7fe1f43eb" title=" " alt="" coords="9,976,176,1016"/>
-<area shape="rect" id="node34" href="$namespacetestsuite.html#a376ef3f5c315ca4ea789e45aea77c4d3" title=" " alt="" coords="9,1040,176,1080"/>
-<area shape="rect" id="node36" href="$namespacetestsuite.html#a10e1c88bb65faac7e416fc2f10db6f09" title=" " alt="" coords="9,1104,176,1144"/>
-<area shape="rect" id="node38" href="$test_2sensitivityanalysis_8cpp.html#a884986f587f4e96e9d36c8231440c4bd" title=" " alt="" coords="279,1169,469,1194"/>
-<area shape="rect" id="node40" href="$namespacetestsuite.html#ad68101121a4771a590c502e90ae7bb0a" title=" " alt="" coords="291,1219,457,1259"/>
+<area shape="rect" id="node1" title="Build NPV cube." alt="" coords="815,323,893,349"/>
+<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_stress_test.html#a04d3effc11ef478f51a8ab18487b6886" title="Constructor." alt="" coords="582,73,753,113"/>
+<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_xva_analytic_impl.html#aa17a62bfeb01430e5abd317529572b0c" title=" " alt="" coords="580,137,755,177"/>
+<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_xva_runner.html#aa60be499b33d1b8663ec4a66321e55f2" title=" " alt="" coords="583,201,751,241"/>
+<area shape="rect" id="node8" href="$nettedexpsoure_8cpp.html#a44745c9b080fbfd731fa9b6b431779bd" title=" " alt="" coords="614,266,721,291"/>
+<area shape="rect" id="node9" href="$classore_1_1analytics_1_1_sensitivity_analysis.html#a9ad70ccfe33c92586f8b8536102fdbc8" title="Generate the Sensitivities." alt="" coords="568,316,767,356"/>
+<area shape="rect" id="node10" href="$observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44" title=" " alt="" coords="627,381,708,406"/>
+<area shape="rect" id="node12" href="$swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471" title=" " alt="" coords="606,562,729,587"/>
+<area shape="rect" id="node36" href="$test_2sensitivityanalysis_8cpp.html#adc7a5ac10f6151560d3d7cefb068f0b0" title=" " alt="" coords="592,717,743,742"/>
+<area shape="rect" id="node38" href="$classtestsuite_1_1_par_sensitivity_analysis_test.html#a259f0997efdb5dc6fd301f5a47b370a1" title="Test that the portfolio shows the expected sensitivity (regression test)" alt="" coords="568,977,767,1031"/>
+<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_xva_analytic_impl.html#a5752a6ba9ab71d2e3552e6ba1797047d" title=" " alt="" coords="287,5,461,45"/>
+<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_xva_analytic_impl.html#afe30cd07f7a3f42e16a3d987440434ad" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" id="node7" href="$classore_1_1analytics_1_1_xva_runner.html#a45d152f89bffd36303fd8e82aa562ef6" title=" " alt="" coords="290,69,458,109"/>
+<area shape="rect" id="node11" href="$observationmode_8cpp.html#a1aac3edb3bec4e4b11d2697ea15d19ab" title=" " alt="" coords="279,134,469,159"/>
+<area shape="rect" id="node13" href="$sensitivityperformance_8cpp.html#a164a54a1491caa740eb1e472c979ac04" title=" " alt="" coords="279,183,469,209"/>
+<area shape="rect" id="node14" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a837ca9c86335415b48df2cced56144ab" title="Test performance of sensitivities run (including cross&#45;gammas) for a large portfolio,..." alt="" coords="237,233,511,287"/>
+<area shape="rect" id="node16" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#accb77169e5c581865951fb21c6358086" title="Test performance of sensitivities run for a large portfolio, with lots of buckets (&quot;None&quot; observation..." alt="" coords="237,311,511,366"/>
+<area shape="rect" id="node18" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#abc2beb96bcfe27b835d7353d059e9c24" title="Test performance of sensitivities run (including cross&#45;gammas) for a large portfolio (&quot;None&quot; observat..." alt="" coords="237,390,511,445"/>
+<area shape="rect" id="node20" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a42e7bad3bfc8c77a9f73300c0986a0e6" title="Test performance of sensitivities run for a large portfolio (&quot;None&quot; observation mode)" alt="" coords="237,469,511,523"/>
+<area shape="rect" id="node22" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#af04720a2672dadc0ca3ca0a90643f682" title="Test performance of sensitivities run (including cross&#45;gammas) for a single&#45;trade portfolio,..." alt="" coords="235,547,513,602"/>
+<area shape="rect" id="node24" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a4f1b46c72dd02fa7a464f6f83742a553" title="Test performance of sensitivities run with lots of buckets (&quot;None&quot; observation mode)" alt="" coords="235,626,513,681"/>
+<area shape="rect" id="node26" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a069c7dfa4512031ee2b8d05c39ee2526" title="Test performance of sensitivities run (including cross&#45;gammas) (&quot;None&quot; observation mode)" alt="" coords="253,705,495,759"/>
+<area shape="rect" id="node28" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a22f5a1034fd87b8c645fae121ddbe5ab" title="Test performance of sensitivities run (&quot;Defer&quot; observation mode)" alt="" coords="243,784,505,824"/>
+<area shape="rect" id="node30" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a05ca2d2b4338945909ac0d6da82e35a5" title="Test performance of sensitivities run (&quot;Disable&quot; observation mode)" alt="" coords="236,848,512,888"/>
+<area shape="rect" id="node32" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a41c1578b15063adaecd7a11231dc6cc0" title="Test performance of sensitivities run (&quot;None&quot; observation mode)" alt="" coords="243,912,505,952"/>
+<area shape="rect" id="node34" href="$classtestsuite_1_1_sensitivity_performance_plus_test.html#a179a8568c0472b822a00ac2166b18e62" title="Test performance of sensitivities run (&quot;Unregister&quot; observation mode)" alt="" coords="228,976,520,1016"/>
+<area shape="rect" id="node15" href="$namespacetestsuite.html#aefe99965644b408c64d10994d8b5b342" title=" " alt="" coords="9,240,176,280"/>
+<area shape="rect" id="node17" href="$namespacetestsuite.html#a44cf24174c1ec4a117b7550b18451737" title=" " alt="" coords="9,319,176,359"/>
+<area shape="rect" id="node19" href="$namespacetestsuite.html#ade993f4c3ac641248e5c0ae5c6b71c49" title=" " alt="" coords="9,397,176,437"/>
+<area shape="rect" id="node21" href="$namespacetestsuite.html#acd3672bf32286cc33309913a1ca8da09" title=" " alt="" coords="9,476,176,516"/>
+<area shape="rect" id="node23" href="$namespacetestsuite.html#a28a796cbf9b884f142d96923e1a6f79a" title=" " alt="" coords="9,555,176,595"/>
+<area shape="rect" id="node25" href="$namespacetestsuite.html#a065c0a023b1fc01c1f5a9085b508bb09" title=" " alt="" coords="9,633,176,673"/>
+<area shape="rect" id="node27" href="$namespacetestsuite.html#a065230fb7a8fced2da098ca668974bbb" title=" " alt="" coords="9,712,176,752"/>
+<area shape="rect" id="node29" href="$namespacetestsuite.html#a1678c937674649bcf0bed3556500bc56" title=" " alt="" coords="9,784,176,824"/>
+<area shape="rect" id="node31" href="$namespacetestsuite.html#a05bd78557f6b0abdf12f9cb7fe1f43eb" title=" " alt="" coords="9,848,176,888"/>
+<area shape="rect" id="node33" href="$namespacetestsuite.html#a376ef3f5c315ca4ea789e45aea77c4d3" title=" " alt="" coords="9,912,176,952"/>
+<area shape="rect" id="node35" href="$namespacetestsuite.html#a10e1c88bb65faac7e416fc2f10db6f09" title=" " alt="" coords="9,976,176,1016"/>
+<area shape="rect" id="node37" href="$test_2sensitivityanalysis_8cpp.html#a884986f587f4e96e9d36c8231440c4bd" title=" " alt="" coords="279,1041,469,1066"/>
+<area shape="rect" id="node39" href="$namespacetestsuite.html#ad68101121a4771a590c502e90ae7bb0a" title=" " alt="" coords="291,1091,457,1131"/>
 </map>

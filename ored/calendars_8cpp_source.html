@@ -134,7 +134,7 @@ $(function() {
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">struct </span>TestDatum {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* calendarName;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Calendar <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Calendar <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// Needed for BOOST_DATA_TEST_CASE below as it writes out the TestDatum</span></div>
@@ -229,12 +229,12 @@ $(function() {
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><a class="code hl_functionRef" href="../qle/test_2commodityschwartzmodel_8cpp.html#a115898cdb086b2755699e8c9943511b0">BOOST_DATA_TEST_CASE</a>(testCalendarNameParsing, bdata::make(calendarData), calendarDatum) {</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    Calendar <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    BOOST_REQUIRE_NO_THROW(<a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a> = <a class="code hl_function" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">ore::data::parseCalendar</a>(calendarDatum.calendarName));</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    BOOST_REQUIRE(!<a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.empty());</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    BOOST_CHECK_EQUAL(<a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>, calendarDatum.calendar);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    Calendar <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    BOOST_REQUIRE_NO_THROW(<a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a> = <a class="code hl_function" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">ore::data::parseCalendar</a>(calendarDatum.calendarName));</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    BOOST_REQUIRE(!<a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.empty());</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    BOOST_CHECK_EQUAL(<a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>, calendarDatum.calendar);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Parsed &quot;</span> &lt;&lt; calendarDatum.calendarName &lt;&lt; <span class="stringliteral">&quot; and got &quot;</span> &lt;&lt; <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.name());</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Parsed &quot;</span> &lt;&lt; calendarDatum.calendarName &lt;&lt; <span class="stringliteral">&quot; and got &quot;</span> &lt;&lt; <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.name());</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>BOOST_AUTO_TEST_SUITE_END()</div>
@@ -265,6 +265,7 @@ $(function() {
 <div class="ttc" id="aice_8hpp_html"><div class="ttname"><a href="../qle/ice_8hpp.html">ice.hpp</a></div></div>
 <div class="ttc" id="aluxembourg_8hpp_html"><div class="ttname"><a href="../qle/luxembourg_8hpp.html">luxembourg.hpp</a></div></div>
 <div class="ttc" id="amalaysia_8hpp_html"><div class="ttname"><a href="../qle/malaysia_8hpp.html">malaysia.hpp</a></div></div>
+<div class="ttc" id="amodel_2utilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="model_2utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_html"><div class="ttname"><a href="namespace_quant_ext.html">QuantExt</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_html_a7490bdacbb14ada31cca8fd1df8ab543"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a7490bdacbb14ada31cca8fd1df8ab543">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, EquityReturnType t)</div></div>
 <div class="ttc" id="anamespace_quant_lib_html"><div class="ttname"><a href="namespace_quant_lib.html">QuantLib</a></div></div>
@@ -276,7 +277,6 @@ $(function() {
 <div class="ttc" id="aspain_8hpp_html"><div class="ttname"><a href="../qle/spain_8hpp.html">spain.hpp</a></div></div>
 <div class="ttc" id="aswitzerland_8hpp_html"><div class="ttname"><a href="../qle/switzerland_8hpp.html">switzerland.hpp</a></div></div>
 <div class="ttc" id="atest_2commodityschwartzmodel_8cpp_html_a115898cdb086b2755699e8c9943511b0"><div class="ttname"><a href="../qle/test_2commodityschwartzmodel_8cpp.html#a115898cdb086b2755699e8c9943511b0">BOOST_DATA_TEST_CASE</a></div><div class="ttdeci">BOOST_DATA_TEST_CASE(testMartingaleProperty, bdata::make(driftFreeState) *bdata::make(steps), driftFreeState, steps)</div></div>
-<div class="ttc" id="autilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
 <div class="ttc" id="awmr_8hpp_html"><div class="ttname"><a href="../qle/wmr_8hpp.html">wmr.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

@@ -448,10 +448,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  369</span>                                               <span class="stringliteral">&quot;CHF&quot;</span>, <span class="stringliteral">&quot;Compounded&quot;</span>, <span class="stringliteral">&quot;Annual&quot;</span>);</div>
 <div class="line"><span class="lineno">  370</span>    conventions-&gt;add(convention);</div>
 <div class="line"><span class="lineno">  371</span>    </div>
-<div class="line"><span class="lineno">  372</span>    vector&lt;string&gt; data(zero_data.size());</div>
+<div class="line"><span class="lineno">  372</span>    vector&lt;string&gt; <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>(zero_data.size());</div>
 <div class="line"><span class="lineno">  373</span>    <span class="keywordflow">for</span> (Size i=0; i &lt; zero_data.size(); ++i) {</div>
-<div class="line"><span class="lineno">  374</span>        data[i] = <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(asof) + <span class="stringliteral">&quot; &quot;</span> + quotes[i] + <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">  375</span>        data[i] += boost::lexical_cast&lt;std::string&gt;(zero_data[i].zero);</div>
+<div class="line"><span class="lineno">  374</span>        <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>[i] = <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">to_string</a>(asof) + <span class="stringliteral">&quot; &quot;</span> + quotes[i] + <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  375</span>        <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>[i] += boost::lexical_cast&lt;std::string&gt;(zero_data[i].zero);</div>
 <div class="line"><span class="lineno">  376</span>    }</div>
 <div class="line"><span class="lineno">  377</span>    </div>
 <div class="line"><span class="lineno">  378</span>    MarketDataLoader loader(data);</div>
@@ -568,8 +568,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  489</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Test rates from YieldCurve cached result&quot;</span>);</div>
 <div class="line"><span class="lineno">  490</span>    BOOST_CHECK_EQUAL(chfYieldCurve.handle()-&gt;discount(asof), 1);</div>
 <div class="line"><span class="lineno">  491</span>}</div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga59b5fdda574d90facae95dec2d13040d"><div class="ttname"><a href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d">ore::data::parseDate</a></div><div class="ttdeci">Date parseDate(const string &amp;s)</div><div class="ttdoc">Convert std::string to QuantLib::Date.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00052">parsers.cpp:52</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -580,8 +581,9 @@ Functions</h2></td></tr>
 <area shape="rect" title=" " alt="" coords="5,94,196,119"/>
 <area shape="rect" href="classore_1_1data_1_1_yield_curve.html#a9068afdb462a10e6e1c0aaea98800242" title=" " alt="" coords="244,5,387,45"/>
 <area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="245,94,385,119"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="250,167,381,193"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="435,94,587,119"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="250,167,381,193"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="435,70,587,95"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="458,119,563,145"/>
 </map>
 </div>
 

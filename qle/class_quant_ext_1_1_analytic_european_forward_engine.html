@@ -246,7 +246,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   87</span>            boost::dynamic_pointer_cast&lt;StrikedTypePayoff&gt;(<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.payoff);</div>
 <div class="line"><span class="lineno">   88</span>        QL_REQUIRE(payoff, <span class="stringliteral">&quot;non-striked payoff given&quot;</span>);</div>
 <div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>        Real variance =</div>
+<div class="line"><span class="lineno">   90</span>        Real <a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a> =</div>
 <div class="line"><span class="lineno">   91</span>            <a class="code hl_variable" href="class_quant_ext_1_1_analytic_european_forward_engine.html#ad81c4d292973c388571f7348132d4024">process_</a>-&gt;blackVolatility()-&gt;blackVariance(</div>
 <div class="line"><span class="lineno">   92</span>                                              <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.exercise-&gt;lastDate(),</div>
 <div class="line"><span class="lineno">   93</span>                                              payoff-&gt;strike());</div>
@@ -260,7 +260,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  101</span>        QL_REQUIRE(spot &gt; 0.0, <span class="stringliteral">&quot;negative or null underlying given&quot;</span>);</div>
 <div class="line"><span class="lineno">  102</span>        Real forwardPrice = spot * dividendDiscount / riskFreeDiscountForFwdEstimation;</div>
 <div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>        QuantLib::BlackCalculator <a class="code hl_function" href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b">black</a>(payoff, forwardPrice, std::sqrt(variance),df);</div>
+<div class="line"><span class="lineno">  104</span>        QuantLib::BlackCalculator <a class="code hl_function" href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b">black</a>(payoff, forwardPrice, std::sqrt(<a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a>),df);</div>
 <div class="line"><span class="lineno">  105</span> </div>
 <div class="line"><span class="lineno">  106</span> </div>
 <div class="line"><span class="lineno">  107</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = <a class="code hl_function" href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b">black</a>.value();</div>
@@ -301,12 +301,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  142</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.additionalResults[<span class="stringliteral">&quot;riskFreeDiscount&quot;</span>] = riskFreeDiscountForFwdEstimation;</div>
 <div class="line"><span class="lineno">  143</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.additionalResults[<span class="stringliteral">&quot;forward&quot;</span>] = forwardPrice;</div>
 <div class="line"><span class="lineno">  144</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.additionalResults[<span class="stringliteral">&quot;strike&quot;</span>] = payoff-&gt;strike();</div>
-<div class="line"><span class="lineno">  145</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.additionalResults[<span class="stringliteral">&quot;volatility&quot;</span>] = std::sqrt(variance / tte);</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.additionalResults[<span class="stringliteral">&quot;volatility&quot;</span>] = std::sqrt(<a class="code hl_function" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">variance</a> / tte);</div>
 <div class="line"><span class="lineno">  146</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.additionalResults[<span class="stringliteral">&quot;timeToExpiry&quot;</span>] = tte;</div>
 <div class="line"><span class="lineno">  147</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.additionalResults[<span class="stringliteral">&quot;discountFactor&quot;</span>] = df;</div>
 <div class="line"><span class="lineno">  148</span>    }</div>
 <div class="ttc" id="acdsoption_8cpp_html_afeb3e8b4e6ab6604c185b2ea55bbc728"><div class="ttname"><a href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a></div><div class="ttdeci">const Instrument::results * results_</div><div class="ttdef"><b>Definition:</b> <a href="cdsoption_8cpp_source.html#l00081">cdsoption.cpp:81</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a7062a4088d99551d70464bc5b50abc2b"><div class="ttname"><a href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b">QuantExt::black</a></div><div class="ttdeci">RandomVariable black(const RandomVariable &amp;omega, const RandomVariable &amp;t, const RandomVariable &amp;strike, const RandomVariable &amp;forward, const RandomVariable &amp;impliedVol)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00772">randomvariable.cpp:772</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a249dd19ff90e20ad4b64b0be1665b5c0"><div class="ttname"><a href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0">QuantExt::variance</a></div><div class="ttdeci">RandomVariable variance(const RandomVariable &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l01177">randomvariable.cpp:1177</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a7062a4088d99551d70464bc5b50abc2b"><div class="ttname"><a href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b">QuantExt::black</a></div><div class="ttdeci">RandomVariable black(const RandomVariable &amp;omega, const RandomVariable &amp;t, const RandomVariable &amp;strike, const RandomVariable &amp;forward, const RandomVariable &amp;impliedVol)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l01189">randomvariable.cpp:1189</a></div></div>
 <div class="ttc" id="atenorbasisswap_8cpp_html_a71b2ce0e52885aca4ce15e1d128b9f56"><div class="ttname"><a href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a></div><div class="ttdeci">Swap::arguments * arguments_</div><div class="ttdef"><b>Definition:</b> <a href="tenorbasisswap_8cpp_source.html#l00059">tenorbasisswap.cpp:59</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -315,15 +316,17 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_ext_1_1_analytic_european_forward_engine_a61eb1a24e5329ccc296715a40dc3a19a_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1_analytic_european_forward_engine_a61eb1a24e5329ccc296715a40dc3a19a_cgraph" alt=""/></div>
 <map name="aclass_quant_ext_1_1_analytic_european_forward_engine_a61eb1a24e5329ccc296715a40dc3a19a_cgraph" id="aclass_quant_ext_1_1_analytic_european_forward_engine_a61eb1a24e5329ccc296715a40dc3a19a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,153,80,179"/>
-<area shape="rect" href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b" title=" " alt="" coords="128,153,244,179"/>
-<area shape="rect" href="namespace_quant_ext.html#ac2c9fc833a3c248658a83c6236b30f2d" title=" " alt="" coords="312,5,457,31"/>
-<area shape="rect" href="namespace_quant_ext.html#abcc01c7af2e797f818e655cc43c003a9" title=" " alt="" coords="292,55,477,80"/>
-<area shape="rect" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="302,104,467,129"/>
-<area shape="rect" href="namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284" title=" " alt="" coords="333,153,436,179"/>
-<area shape="rect" href="namespace_quant_ext.html#a996549ffc162c8e74914ca768833bba4" title=" " alt="" coords="313,203,456,228"/>
-<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a" title=" " alt="" coords="295,253,475,293"/>
-<area shape="rect" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2" title=" " alt="" coords="331,317,438,343"/>
+<area shape="rect" title=" " alt="" coords="5,244,80,269"/>
+<area shape="rect" href="namespace_quant_ext.html#a7062a4088d99551d70464bc5b50abc2b" title=" " alt="" coords="136,179,252,204"/>
+<area shape="rect" href="namespace_quant_ext.html#a249dd19ff90e20ad4b64b0be1665b5c0" title=" " alt="" coords="128,309,260,335"/>
+<area shape="rect" href="namespace_quant_ext.html#ac2c9fc833a3c248658a83c6236b30f2d" title=" " alt="" coords="328,5,473,31"/>
+<area shape="rect" href="namespace_quant_ext.html#abcc01c7af2e797f818e655cc43c003a9" title=" " alt="" coords="308,55,493,80"/>
+<area shape="rect" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="318,104,483,129"/>
+<area shape="rect" href="namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284" title=" " alt="" coords="349,153,452,179"/>
+<area shape="rect" href="namespace_quant_ext.html#a996549ffc162c8e74914ca768833bba4" title=" " alt="" coords="329,203,472,228"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#acce0ab2cacc475b2434f24c65c91685a" title=" " alt="" coords="311,302,491,342"/>
+<area shape="rect" href="namespace_quant_ext.html#a1b4a64a3620f987e65fec4ccf7cadcf2" title=" " alt="" coords="347,252,454,277"/>
+<area shape="rect" href="struct_quant_ext_1_1_random_variable.html#a6e0fdc031c26ed1d1a956019d2cee4a1" title=" " alt="" coords="311,366,491,406"/>
 </map>
 </div>
 

@@ -352,10 +352,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  183</span>            boost::shared_ptr&lt;ZeroInflationIndex&gt; index = conv-&gt;index();</div>
 <div class="line"><span class="lineno">  184</span>            <span class="keywordflow">for</span> (Size i = 0; i &lt; strQuotes.size(); ++i) {</div>
 <div class="line"><span class="lineno">  185</span>                <span class="comment">// QL conventions do not incorporate settlement delay =&gt; patch here once QL is patched</span></div>
-<div class="line"><span class="lineno">  186</span>                Date <a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = swapStart + terms[i];</div>
+<div class="line"><span class="lineno">  186</span>                Date <a class="code hl_variable" href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = swapStart + terms[i];</div>
 <div class="line"><span class="lineno">  187</span>                boost::shared_ptr&lt;QuantExt::ZeroInflationTraits::helper&gt; instrument =</div>
 <div class="line"><span class="lineno">  188</span>                    boost::make_shared&lt;ZeroCouponInflationSwapHelper&gt;(</div>
-<div class="line"><span class="lineno">  189</span>                        quotes[i], conv-&gt;observationLag(), <a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>, conv-&gt;fixCalendar(), conv-&gt;fixConvention(),</div>
+<div class="line"><span class="lineno">  189</span>                        quotes[i], conv-&gt;observationLag(), <a class="code hl_variable" href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>, conv-&gt;fixCalendar(), conv-&gt;fixConvention(),</div>
 <div class="line"><span class="lineno">  190</span>                        conv-&gt;dayCounter(), index, observationInterpolation, nominalTs, swapStart);</div>
 <div class="line"><span class="lineno">  191</span>                <span class="comment">// The instrument gets registered to update on change of evaluation date. This triggers a</span></div>
 <div class="line"><span class="lineno">  192</span>                <span class="comment">// rebootstrapping of the curve. In order to avoid this during simulation we unregister from the</span></div>
@@ -403,13 +403,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  234</span>            boost::shared_ptr&lt;InflationCouponPricer&gt; yoyCpnPricer =</div>
 <div class="line"><span class="lineno">  235</span>                boost::make_shared&lt;YoYInflationCouponPricer&gt;(nominalTs);</div>
 <div class="line"><span class="lineno">  236</span>            <span class="keywordflow">for</span> (Size i = 0; i &lt; strQuotes.size(); ++i) {</div>
-<div class="line"><span class="lineno">  237</span>                Date <a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = swapStart + terms[i];</div>
+<div class="line"><span class="lineno">  237</span>                Date <a class="code hl_variable" href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = swapStart + terms[i];</div>
 <div class="line"><span class="lineno">  238</span>                Real effectiveQuote = quotes[i]-&gt;value();</div>
 <div class="line"><span class="lineno">  239</span>                <span class="keywordflow">if</span> (derive_yoy_from_zc) {</div>
 <div class="line"><span class="lineno">  240</span>                    <span class="comment">// construct a yoy swap just as it is done in the yoy inflation helper</span></div>
 <div class="line"><span class="lineno">  241</span>                    Schedule schedule = MakeSchedule()</div>
 <div class="line"><span class="lineno">  242</span>                                            .from(swapStart)</div>
-<div class="line"><span class="lineno">  243</span>                                            .to(<a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>)</div>
+<div class="line"><span class="lineno">  243</span>                                            .to(<a class="code hl_variable" href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>)</div>
 <div class="line"><span class="lineno">  244</span>                                            .withTenor(1 * Years)</div>
 <div class="line"><span class="lineno">  245</span>                                            .withConvention(Unadjusted)</div>
 <div class="line"><span class="lineno">  246</span>                                            .withCalendar(conv-&gt;fixCalendar())</div>
@@ -428,13 +428,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  259</span>                    tmp.setPricingEngine(engine);</div>
 <div class="line"><span class="lineno">  260</span>                    effectiveQuote = tmp.fairRate();</div>
 <div class="line"><span class="lineno">  261</span>                    <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Derive &quot;</span> &lt;&lt; terms[i] &lt;&lt; <span class="stringliteral">&quot; yoy quote &quot;</span> &lt;&lt; effectiveQuote &lt;&lt; <span class="stringliteral">&quot; from zc quote &quot;</span></div>
-<div class="line"><span class="lineno">  262</span>                                   &lt;&lt; quotes[i]-&gt;value());</div>
+<div class="line"><span class="lineno">  262</span>                                   &lt;&lt; quotes[i]-&gt;<a class="code hl_variable" href="computationgraphbuilder_8cpp.html#a68c611e65dfff92886c4627c9fdde094">value</a>());</div>
 <div class="line"><span class="lineno">  263</span>                }</div>
 <div class="line"><span class="lineno">  264</span>                <span class="comment">// QL conventions do not incorporate settlement delay =&gt; patch here once QL is patched</span></div>
 <div class="line"><span class="lineno">  265</span>                boost::shared_ptr&lt;YoYInflationTraits::helper&gt; instrument =</div>
 <div class="line"><span class="lineno">  266</span>                    boost::make_shared&lt;YearOnYearInflationSwapHelper&gt;(</div>
 <div class="line"><span class="lineno">  267</span>                        Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(effectiveQuote)), conv-&gt;observationLag(),</div>
-<div class="line"><span class="lineno">  268</span>                        <a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>, conv-&gt;fixCalendar(), conv-&gt;fixConvention(), conv-&gt;dayCounter(), index, nominalTs,</div>
+<div class="line"><span class="lineno">  268</span>                        <a class="code hl_variable" href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>, conv-&gt;fixCalendar(), conv-&gt;fixConvention(), conv-&gt;dayCounter(), index, nominalTs,</div>
 <div class="line"><span class="lineno">  269</span>                        swapStart);</div>
 <div class="line"><span class="lineno">  270</span>                instrument-&gt;unregisterWith(Settings::instance().evaluationDate());</div>
 <div class="line"><span class="lineno">  271</span>                instruments.push_back(instrument);</div>
@@ -462,10 +462,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  293</span>            <span class="keywordflow">if</span> (pillarDates.empty()) {</div>
 <div class="line"><span class="lineno">  294</span>                <span class="comment">// default: fill pillar dates with monthly schedule up to last term given in the curve config (but max</span></div>
 <div class="line"><span class="lineno">  295</span>                <span class="comment">// 60y)</span></div>
-<div class="line"><span class="lineno">  296</span>                Date <a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = swapStart + terms.back();</div>
+<div class="line"><span class="lineno">  296</span>                Date <a class="code hl_variable" href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = swapStart + terms.back();</div>
 <div class="line"><span class="lineno">  297</span>                <span class="keywordflow">for</span> (Size i = 1; i &lt; 60 * 12; ++i) {</div>
 <div class="line"><span class="lineno">  298</span>                    Date current = inflationPeriod(<a class="code hl_variable" href="classore_1_1data_1_1_inflation_curve.html#a3a05cf88c0243878a128eb361db86958">curve_</a>-&gt;baseDate() + i * Months, <a class="code hl_variable" href="classore_1_1data_1_1_inflation_curve.html#a3a05cf88c0243878a128eb361db86958">curve_</a>-&gt;frequency()).first;</div>
-<div class="line"><span class="lineno">  299</span>                    <span class="keywordflow">if</span> (current + <a class="code hl_variable" href="classore_1_1data_1_1_inflation_curve.html#a3a05cf88c0243878a128eb361db86958">curve_</a>-&gt;observationLag() &lt;= <a class="code hl_variable" href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>)</div>
+<div class="line"><span class="lineno">  299</span>                    <span class="keywordflow">if</span> (current + <a class="code hl_variable" href="classore_1_1data_1_1_inflation_curve.html#a3a05cf88c0243878a128eb361db86958">curve_</a>-&gt;observationLag() &lt;= <a class="code hl_variable" href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a>)</div>
 <div class="line"><span class="lineno">  300</span>                        pillarDates.push_back(current);</div>
 <div class="line"><span class="lineno">  301</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  302</span>                        <span class="keywordflow">break</span>;</div>
@@ -534,12 +534,13 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_market_datum_html_a78a53e954df1d387bae9b3680287ec69a9f34afeedaa110787602da7c72ca1c6f"><div class="ttname"><a href="classore_1_1data_1_1_market_datum.html#a78a53e954df1d387bae9b3680287ec69a9f34afeedaa110787602da7c72ca1c6f">ore::data::MarketDatum::InstrumentType::YY_INFLATIONSWAP</a></div><div class="ttdeci">@ YY_INFLATIONSWAP</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_datum_html_a78a53e954df1d387bae9b3680287ec69ab5ca999ccae6005f87f5a76ec92772d4"><div class="ttname"><a href="classore_1_1data_1_1_market_datum.html#a78a53e954df1d387bae9b3680287ec69ab5ca999ccae6005f87f5a76ec92772d4">ore::data::MarketDatum::InstrumentType::ZC_INFLATIONSWAP</a></div><div class="ttdeci">@ ZC_INFLATIONSWAP</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_wildcard_html"><div class="ttname"><a href="classore_1_1data_1_1_wildcard.html">ore::data::Wildcard</a></div><div class="ttdef"><b>Definition:</b> <a href="wildcard_8hpp_source.html#l00036">wildcard.hpp:36</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00368">log.hpp:368</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00364">log.hpp:364</a></div></div>
+<div class="ttc" id="acomputationgraphbuilder_8cpp_html_a68c611e65dfff92886c4627c9fdde094"><div class="ttname"><a href="computationgraphbuilder_8cpp.html#a68c611e65dfff92886c4627c9fdde094">value</a></div><div class="ttdeci">SafeStack&lt; ValueType &gt; value</div><div class="ttdef"><b>Definition:</b> <a href="computationgraphbuilder_8cpp_source.html#l01475">computationgraphbuilder.cpp:1475</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00508">log.hpp:508</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
+<div class="ttc" id="amodel_2utilities_8cpp_html_a13d7d92e74b3e8c94c52ca7a1262c55e"><div class="ttname"><a href="model_2utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a></div><div class="ttdeci">Time maturity</div><div class="ttdef"><b>Definition:</b> <a href="model_2utilities_8cpp_source.html#l00066">utilities.cpp:66</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_1_1_zero_inflation_html_a515b96d009111cd3c546f0c9a2ec14ff"><div class="ttname"><a href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a515b96d009111cd3c546f0c9a2ec14ff">QuantExt::ZeroInflation::guessCurveBaseRate</a></div><div class="ttdeci">QuantLib::Rate guessCurveBaseRate(const bool baseDateLastKnownFixing, const QuantLib::Date &amp;swapStart, const QuantLib::Date &amp;asof, const QuantLib::Period &amp;swapTenor, const QuantLib::DayCounter &amp;swapZCLegDayCounter, const QuantLib::Period &amp;swapObsLag, const QuantLib::Rate zeroCouponRate, const QuantLib::Period &amp;curveObsLag, const QuantLib::DayCounter &amp;curveDayCounter, const boost::shared_ptr&lt; QuantLib::ZeroInflationIndex &gt; &amp;index, const bool interpolated, const boost::shared_ptr&lt; QuantLib::Seasonality &gt; &amp;seasonality)</div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_ae91b9dc1b2c7a502a7fd8b3351d2b759"><div class="ttname"><a href="namespaceore_1_1data.html#ae91b9dc1b2c7a502a7fd8b3351d2b759">ore::data::getStartAndLag</a></div><div class="ttdeci">std::pair&lt; QuantLib::Date, QuantLib::Period &gt; getStartAndLag(const QuantLib::Date &amp;asof, const InflationSwapConvention &amp;conv)</div><div class="ttdef"><b>Definition:</b> <a href="inflationstartdate_8cpp_source.html#l00027">inflationstartdate.cpp:27</a></div></div>
 <div class="ttc" id="atest_2commodityvolcurve_8cpp_html_a96a582300d10244c7df851066de48438"><div class="ttname"><a href="test_2commodityvolcurve_8cpp.html#a96a582300d10244c7df851066de48438">curveConfigs</a></div><div class="ttdeci">vector&lt; string &gt; curveConfigs</div><div class="ttdef"><b>Definition:</b> <a href="test_2commodityvolcurve_8cpp_source.html#l00525">commodityvolcurve.cpp:525</a></div></div>
-<div class="ttc" id="autilities_8cpp_html_a13d7d92e74b3e8c94c52ca7a1262c55e"><div class="ttname"><a href="utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a></div><div class="ttdeci">Time maturity</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00066">utilities.cpp:66</a></div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -562,7 +563,7 @@ Private Attributes</h2></td></tr>
 <area shape="rect" href="classore_1_1data_1_1_curve_spec.html#a3d24768215bf6280c80eca3930ea3f55" title=" " alt="" coords="388,261,531,301"/>
 <area shape="rect" href="classore_1_1data_1_1_curve_spec.html#a471fbcf9df5ab7ac2153495b4c8ac723" title=" " alt="" coords="388,325,531,365"/>
 <area shape="rect" href="classore_1_1data_1_1_curve_spec.html#a0106d2fb6472e64456c6ebd018aa6300" title=" " alt="" coords="616,229,759,269"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="622,318,753,343"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="622,318,753,343"/>
 </map>
 </div>
 

@@ -13,7 +13,7 @@ var searchData=
   ['calendarparser_10',['CalendarParser',['../../ored/classore_1_1data_1_1_calendar_parser.html',1,'ore::data']]],
   ['calibrationbasket_11',['CalibrationBasket',['../../ored/classore_1_1data_1_1_calibration_basket.html',1,'ore::data']]],
   ['calibrationconfiguration_12',['CalibrationConfiguration',['../../ored/classore_1_1data_1_1_calibration_configuration.html',1,'ore::data']]],
-  ['calibrationfilters_13',['CalibrationFilters',['../structore_1_1analytics_1_1_market_calibration_report_1_1_calibration_filters.html',1,'ore::analytics::MarketCalibrationReport']]],
+  ['calibrationfilters_13',['CalibrationFilters',['../structore_1_1analytics_1_1_market_calibration_report_base_1_1_calibration_filters.html',1,'ore::analytics::MarketCalibrationReportBase']]],
   ['calibrationinstrument_14',['CalibrationInstrument',['../../ored/classore_1_1data_1_1_calibration_instrument.html',1,'ore::data']]],
   ['calibrationinstrumentfactory_15',['CalibrationInstrumentFactory',['../../ored/classore_1_1data_1_1_calibration_instrument_factory.html',1,'ore::data']]],
   ['calibrationpointcache_16',['CalibrationPointCache',['../../ored/classore_1_1data_1_1_calibration_point_cache.html',1,'ore::data']]],

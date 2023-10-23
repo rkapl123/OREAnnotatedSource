@@ -270,9 +270,9 @@ class QuantExt::HwConstantParametrization&lt; TS &gt;</div><p >HW nF <a class="e
 <p class="definition">Definition at line <a class="el" href="hwconstantparametrization_8hpp_source.html#l00052">52</a> of file <a class="el" href="hwconstantparametrization_8hpp_source.html">hwconstantparametrization.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   56</span>    : HwParametrization&lt;TS&gt;(<a class="code hl_function" href="class_quant_ext_1_1_hw_constant_parametrization.html#a53b1a790f452d0e7826de1a3a5827026">kappa</a>.size(), sigma.rows(), <a class="code hl_function" href="class_quant_ext_1_1_parametrization.html#a55bc3b2dbe28e58a7a86172ee37404b0">currency</a>, <a class="code hl_function" href="class_quant_ext_1_1_hw_parametrization.html#a721f4727694417aad9b0cc7bcfbf5bdf">termStructure</a>, <a class="code hl_function" href="class_quant_ext_1_1_parametrization.html#a24dcbf29c0d6cd766009a182a6484e3b">name</a>.empty() ? <a class="code hl_function" href="class_quant_ext_1_1_parametrization.html#a55bc3b2dbe28e58a7a86172ee37404b0">currency</a>.code() : <a class="code hl_function" href="class_quant_ext_1_1_parametrization.html#a24dcbf29c0d6cd766009a182a6484e3b">name</a>),</div>
 <div class="line"><span class="lineno">   57</span>      <a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a1754dfe3b57ca130e745b657df5f36f5">sigma_</a>(std::move(sigma)), <a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a3c97eab204a7c5cdb4f3f77b3db17767">kappa_</a>(std::move(<a class="code hl_function" href="class_quant_ext_1_1_hw_constant_parametrization.html#a53b1a790f452d0e7826de1a3a5827026">kappa</a>)) {</div>
-<div class="line"><span class="lineno">   58</span>    QL_REQUIRE(sigma.columns() == <a class="code hl_function" href="class_quant_ext_1_1_hw_constant_parametrization.html#a53b1a790f452d0e7826de1a3a5827026">kappa</a>.size(), <span class="stringliteral">&quot;HwConstantParametrization: sigma (&quot;</span></div>
-<div class="line"><span class="lineno">   59</span>                                                    &lt;&lt; sigma.rows() &lt;&lt; <span class="stringliteral">&quot;x&quot;</span> &lt;&lt; sigma.columns()</div>
-<div class="line"><span class="lineno">   60</span>                                                    &lt;&lt; <span class="stringliteral">&quot;) not consistent with kappa (&quot;</span> &lt;&lt; <a class="code hl_function" href="class_quant_ext_1_1_hw_constant_parametrization.html#a53b1a790f452d0e7826de1a3a5827026">kappa</a>.size() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><span class="lineno">   58</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a1754dfe3b57ca130e745b657df5f36f5">sigma_</a>.columns() == <a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a3c97eab204a7c5cdb4f3f77b3db17767">kappa_</a>.size(), <span class="stringliteral">&quot;HwConstantParametrization: sigma (&quot;</span></div>
+<div class="line"><span class="lineno">   59</span>                                                      &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a1754dfe3b57ca130e745b657df5f36f5">sigma_</a>.rows() &lt;&lt; <span class="stringliteral">&quot;x&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a1754dfe3b57ca130e745b657df5f36f5">sigma_</a>.columns()</div>
+<div class="line"><span class="lineno">   60</span>                                                      &lt;&lt; <span class="stringliteral">&quot;) not consistent with kappa (&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a3c97eab204a7c5cdb4f3f77b3db17767">kappa_</a>.size() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
 <div class="line"><span class="lineno">   61</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_hw_constant_parametrization_html_a1754dfe3b57ca130e745b657df5f36f5"><div class="ttname"><a href="class_quant_ext_1_1_hw_constant_parametrization.html#a1754dfe3b57ca130e745b657df5f36f5">QuantExt::HwConstantParametrization::sigma_</a></div><div class="ttdeci">QuantLib::Matrix sigma_</div><div class="ttdef"><b>Definition:</b> <a href="hwconstantparametrization_8hpp_source.html#l00045">hwconstantparametrization.hpp:45</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_hw_constant_parametrization_html_a3c97eab204a7c5cdb4f3f77b3db17767"><div class="ttname"><a href="class_quant_ext_1_1_hw_constant_parametrization.html#a3c97eab204a7c5cdb4f3f77b3db17767">QuantExt::HwConstantParametrization::kappa_</a></div><div class="ttdeci">QuantLib::Array kappa_</div><div class="ttdef"><b>Definition:</b> <a href="hwconstantparametrization_8hpp_source.html#l00046">hwconstantparametrization.hpp:46</a></div></div>
@@ -280,18 +280,7 @@ class QuantExt::HwConstantParametrization&lt; TS &gt;</div><p >HW nF <a class="e
 <div class="ttc" id="aclass_quant_ext_1_1_hw_parametrization_html_a721f4727694417aad9b0cc7bcfbf5bdf"><div class="ttname"><a href="class_quant_ext_1_1_hw_parametrization.html#a721f4727694417aad9b0cc7bcfbf5bdf">QuantExt::HwParametrization::termStructure</a></div><div class="ttdeci">const QuantLib::Handle&lt; TS &gt; termStructure() const</div><div class="ttdef"><b>Definition:</b> <a href="hwparametrization_8hpp_source.html#l00054">hwparametrization.hpp:54</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_parametrization_html_a24dcbf29c0d6cd766009a182a6484e3b"><div class="ttname"><a href="class_quant_ext_1_1_parametrization.html#a24dcbf29c0d6cd766009a182a6484e3b">QuantExt::Parametrization::name</a></div><div class="ttdeci">const std::string &amp; name() const</div><div class="ttdef"><b>Definition:</b> <a href="parametrization_8hpp_source.html#l00083">parametrization.hpp:83</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_parametrization_html_a55bc3b2dbe28e58a7a86172ee37404b0"><div class="ttname"><a href="class_quant_ext_1_1_parametrization.html#a55bc3b2dbe28e58a7a86172ee37404b0">QuantExt::Parametrization::currency</a></div><div class="ttdeci">virtual const Currency &amp; currency() const</div><div class="ttdef"><b>Definition:</b> <a href="parametrization_8hpp_source.html#l00124">parametrization.hpp:124</a></div></div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_ext_1_1_hw_constant_parametrization_a1a27c9d83373e4d64b16a7d67e1eca1a_cgraph.png" border="0" usemap="#aclass_quant_ext_1_1_hw_constant_parametrization_a1a27c9d83373e4d64b16a7d67e1eca1a_cgraph" alt=""/></div>
-<map name="aclass_quant_ext_1_1_hw_constant_parametrization_a1a27c9d83373e4d64b16a7d67e1eca1a_cgraph" id="aclass_quant_ext_1_1_hw_constant_parametrization_a1a27c9d83373e4d64b16a7d67e1eca1a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,188,31"/>
-<area shape="rect" href="class_quant_ext_1_1_hw_constant_parametrization.html#a53b1a790f452d0e7826de1a3a5827026" title=" " alt="" coords="236,5,293,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -355,18 +344,7 @@ class QuantExt::HwConstantParametrization&lt; TS &gt;</div><p >HW nF <a class="e
 
 <p class="definition">Definition at line <a class="el" href="hwconstantparametrization_8hpp_source.html#l00039">39</a> of file <a class="el" href="hwconstantparametrization_8hpp_source.html">hwconstantparametrization.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_hw_constant_parametrization.html#a3c97eab204a7c5cdb4f3f77b3db17767">kappa_</a>; };</div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_ext_1_1_hw_constant_parametrization_a53b1a790f452d0e7826de1a3a5827026_icgraph.png" border="0" usemap="#aclass_quant_ext_1_1_hw_constant_parametrization_a53b1a790f452d0e7826de1a3a5827026_icgraph" alt=""/></div>
-<map name="aclass_quant_ext_1_1_hw_constant_parametrization_a53b1a790f452d0e7826de1a3a5827026_icgraph" id="aclass_quant_ext_1_1_hw_constant_parametrization_a53b1a790f452d0e7826de1a3a5827026_icgraph">
-<area shape="rect" title=" " alt="" coords="236,5,293,31"/>
-<area shape="rect" href="class_quant_ext_1_1_hw_constant_parametrization.html#a1a27c9d83373e4d64b16a7d67e1eca1a" title=" " alt="" coords="5,5,188,31"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac6b8e10b2b50a38d033f49db68da1db7" name="ac6b8e10b2b50a38d033f49db68da1db7"></a>

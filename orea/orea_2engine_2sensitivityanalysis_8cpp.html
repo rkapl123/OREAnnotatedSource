@@ -82,34 +82,21 @@ $(function() {
   <div class="headertitle"><div class="title">sensitivityanalysis.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="cubewriter_8hpp_source.html">orea/cube/cubewriter.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="jointnpvsensicube_8hpp_source.html">orea/cube/jointnpvsensicube.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sensicube_8hpp_source.html">orea/cube/sensicube.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="multithreadedvaluationengine_8hpp_source.html">orea/engine/multithreadedvaluationengine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="sensitivityanalysis_8hpp_source.html">orea/engine/sensitivityanalysis.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="valuationcalculator_8hpp_source.html">orea/engine/valuationcalculator.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="valuationengine_8hpp_source.html">orea/engine/valuationengine.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="clonescenariofactory_8hpp_source.html">orea/scenario/clonescenariofactory.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="deltascenariofactory_8hpp_source.html">orea/scenario/deltascenariofactory.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../ored/todaysmarket_8hpp.html">ored/marketdata/todaysmarket.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../ored/fxoption_8hpp.html">ored/portfolio/fxoption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../ored/log_8hpp.html">ored/utilities/log.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../ored/osutils_8hpp.html">ored/utilities/osutils.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../ored/to__string_8hpp.html">ored/utilities/to_string.hpp</a>&gt;</code><br />
 <code>#include &lt;ql/errors.hpp&gt;</code><br />
-<code>#include &lt;ql/instruments/makeois.hpp&gt;</code><br />
-<code>#include &lt;ql/instruments/makevanillaswap.hpp&gt;</code><br />
-<code>#include &lt;ql/instruments/vanillaoption.hpp&gt;</code><br />
 <code>#include &lt;ql/math/comparison.hpp&gt;</code><br />
-<code>#include &lt;ql/math/solvers1d/newtonsafe.hpp&gt;</code><br />
-<code>#include &lt;ql/pricingengines/capfloor/bacheliercapfloorengine.hpp&gt;</code><br />
-<code>#include &lt;ql/pricingengines/capfloor/blackcapfloorengine.hpp&gt;</code><br />
-<code>#include &lt;ql/pricingengines/swap/discountingswapengine.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/yield/oisratehelper.hpp&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/metals_8hpp.html">qle/currencies/metals.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/crossccybasisswap_8hpp.html">qle/instruments/crossccybasisswap.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/deposit_8hpp.html">qle/instruments/deposit.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/forwardrateagreement_8hpp.html">qle/instruments/forwardrateagreement.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/fxforward_8hpp.html">qle/instruments/fxforward.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/payment_8hpp.html">qle/instruments/payment.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/crossccyswapengine_8hpp.html">qle/pricingengines/crossccyswapengine.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/depositengine_8hpp.html">qle/pricingengines/depositengine.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/discountingfxforwardengine_8hpp.html">qle/pricingengines/discountingfxforwardengine.hpp</a>&gt;</code><br />
 </div>
 <p><a href="orea_2engine_2sensitivityanalysis_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -124,6 +111,8 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6f28870e4c47d867aa859db7fb3c2fed"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1analytics.html#a6f28870e4c47d867aa859db7fb3c2fed">getShiftSize</a> (const RiskFactorKey &amp;key, const SensitivityScenarioData &amp;sensiParams, const boost::shared_ptr&lt; ScenarioSimMarket &gt; &amp;simMarket, const string &amp;marketConfiguration)</td></tr>
 <tr class="separator:a6f28870e4c47d867aa859db7fb3c2fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c2bf61c89714dc9643df8b91a3affc"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ScenarioSimMarket &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1analytics.html#a39c2bf61c89714dc9643df8b91a3affc">buildScenarioSimMarketForSensitivityAnalysis</a> (const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_market.html">ore::data::Market</a> &gt; &amp;market, const boost::shared_ptr&lt; ScenarioSimMarketParameters &gt; &amp;simMarketData, const boost::shared_ptr&lt; SensitivityScenarioData &gt; &amp;sensitivityData, const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_curve_configurations.html">ore::data::CurveConfigurations</a> &gt; &amp;<a class="elRef" href="../ored/test_2commodityvolcurve_8cpp.html#a96a582300d10244c7df851066de48438">curveConfigs</a>, const boost::shared_ptr&lt; <a class="elRef" href="../ored/classore_1_1data_1_1_todays_market_parameters.html">ore::data::TodaysMarketParameters</a> &gt; &amp;todaysMarketParams, const boost::shared_ptr&lt; ScenarioFactory &gt; &amp;scenFactory, const std::string &amp;marketConfiguration, <a class="el" href="classbool.html">bool</a> continueOnError, <a class="el" href="classbool.html">bool</a> overrideTenors, <a class="elRef" href="../ored/classore_1_1data_1_1_ibor_fallback_config.html">IborFallbackConfig</a> &amp;iborFallback)</td></tr>
+<tr class="separator:a39c2bf61c89714dc9643df8b91a3affc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

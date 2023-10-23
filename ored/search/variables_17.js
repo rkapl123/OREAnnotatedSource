@@ -12,6 +12,7 @@ var searchData=
   ['width_5f_9',['width_',['../classore_1_1data_1_1_console_log.html#a9b225585c90c700fdb0e1ceda85f8a0a',1,'ore::data::ConsoleLog']]],
   ['widx_5f_10',['wIdx_',['../../qle/class_quant_ext_1_1_cross_asset_model.html#ad902edbf3a1c8dd18cb1e7c1ac5658e8',1,'QuantExt::CrossAssetModel']]],
   ['wildcardpos_5f_11',['wildCardPos_',['../classore_1_1data_1_1_wildcard.html#a99f9438785a04467f3394fc590b8ba32',1,'ore::data::Wildcard']]],
-  ['wrappers_5f_12',['wrappers_',['../classore_1_1data_1_1_composite_instrument_wrapper.html#a72bdd594393509401ebf9e74ddc77839',1,'ore::data::CompositeInstrumentWrapper']]],
-  ['writesuppressedmessageshint_5f_13',['writeSuppressedMessagesHint_',['../classore_1_1data_1_1_log.html#aee86da6437477a3de6e2837a56ac8e71',1,'ore::data::Log']]]
+  ['workingcontext_5f_12',['workingContext_',['../classore_1_1data_1_1_scripted_instrument_pricing_engine_c_g.html#ab274e9caad8a280da99e641b3643cbbe',1,'ore::data::ScriptedInstrumentPricingEngineCG']]],
+  ['wrappers_5f_13',['wrappers_',['../classore_1_1data_1_1_composite_instrument_wrapper.html#a72bdd594393509401ebf9e74ddc77839',1,'ore::data::CompositeInstrumentWrapper']]],
+  ['writesuppressedmessageshint_5f_14',['writeSuppressedMessagesHint_',['../classore_1_1data_1_1_log.html#aee86da6437477a3de6e2837a56ac8e71',1,'ore::data::Log']]]
 ];

@@ -87,6 +87,7 @@ $(function() {
 <p>Logic for calculating required fixing dates on legs.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="todaysmarketparameters_8hpp_source.html">ored/marketdata/todaysmarketparameters.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/fxindex_8hpp.html">qle/indexes/fxindex.hpp</a>&gt;</code><br />
 <code>#include &lt;ql/patterns/visitor.hpp&gt;</code><br />
 <code>#include &lt;ql/time/date.hpp&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -123,8 +124,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6b589da29c2eae882d77c481a9e9fecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c2a6c40b3ef5dd852ffd12b5051be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a32c2a6c40b3ef5dd852ffd12b5051be4">amendInflationFixingDates</a> (std::map&lt; std::string, std::set&lt; QuantLib::Date &gt; &gt; &amp;fixings)</td></tr>
 <tr class="separator:a32c2a6c40b3ef5dd852ffd12b5051be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79a7d30d310f9e2c2e66cbf0af861e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a79a7d30d310f9e2c2e66cbf0af861e04">addMarketFixingDates</a> (const QuantLib::Date &amp;asof, std::map&lt; std::string, std::set&lt; QuantLib::Date &gt; &gt; &amp;fixings, const TodaysMarketParameters &amp;mktParams, const QuantLib::Period &amp;iborLookback=5 *QuantLib::Days, const QuantLib::Period &amp;oisLookback=4 *QuantLib::Months, const QuantLib::Period &amp;bmaLookback=2 *QuantLib::Weeks, const QuantLib::Period &amp;inflationLookback=1 *QuantLib::Years, const std::string &amp;configuration=Market::defaultConfiguration)</td></tr>
-<tr class="separator:a79a7d30d310f9e2c2e66cbf0af861e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50e825c6b3b0e1d6cf974e9cec2a8f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#ac50e825c6b3b0e1d6cf974e9cec2a8f8">addMarketFixingDates</a> (const QuantLib::Date &amp;asof, std::map&lt; std::string, std::set&lt; QuantLib::Date &gt; &gt; &amp;fixings, const TodaysMarketParameters &amp;mktParams, const QuantLib::Period &amp;iborLookback=5 *QuantLib::Days, const QuantLib::Period &amp;oisLookback=4 *QuantLib::Months, const QuantLib::Period &amp;bmaLookback=2 *QuantLib::Weeks, const QuantLib::Period &amp;inflationLookback=1 *QuantLib::Years)</td></tr>
+<tr class="separator:ac50e825c6b3b0e1d6cf974e9cec2a8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Logic for calculating required fixing dates on legs. </p>

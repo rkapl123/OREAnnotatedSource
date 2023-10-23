@@ -178,9 +178,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1260ef40aaf168f3697ed7546753d4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72eae7bdd5389455d9391660883a254b"><td class="memItemLeft" align="right" valign="top">Handle&lt; QuantExt::YoYOptionletVolatilitySurface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_dummy_market.html#a72eae7bdd5389455d9391660883a254b">yoyCapFloorVol</a> (const string &amp;, const string &amp;) const override</td></tr>
 <tr class="separator:a72eae7bdd5389455d9391660883a254b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae50bcd2345a641592461d2cee57621e0"><td class="memItemLeft" align="right" valign="top">Handle&lt; <a class="elRef" href="../qle/class_quant_ext_1_1_c_p_i_volatility_surface.html">CPIVolatilitySurface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_dummy_market.html#ae50bcd2345a641592461d2cee57621e0">cpiInflationCapFloorVolatilitySurface</a> (const string &amp;, const string &amp;) const override</td></tr>
-<tr class="memdesc:ae50bcd2345a641592461d2cee57621e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPI Inflation Cap Floor Volatility Surfaces.  <a href="classore_1_1analytics_1_1_dummy_market.html#ae50bcd2345a641592461d2cee57621e0">More...</a><br /></td></tr>
-<tr class="separator:ae50bcd2345a641592461d2cee57621e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cbdab385c3a9f1e6b9cee73694fd4eb"><td class="memItemLeft" align="right" valign="top">Handle&lt; QuantLib::CPIVolatilitySurface &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_dummy_market.html#a2cbdab385c3a9f1e6b9cee73694fd4eb">cpiInflationCapFloorVolatilitySurface</a> (const string &amp;, const string &amp;) const override</td></tr>
+<tr class="memdesc:a2cbdab385c3a9f1e6b9cee73694fd4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPI Inflation Cap Floor Volatility Surfaces.  <a href="classore_1_1analytics_1_1_dummy_market.html#a2cbdab385c3a9f1e6b9cee73694fd4eb">More...</a><br /></td></tr>
+<tr class="separator:a2cbdab385c3a9f1e6b9cee73694fd4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3661dbc2e679dfedfccd3439e69ef706"><td class="memItemLeft" align="right" valign="top">Handle&lt; Quote &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_dummy_market.html#a3661dbc2e679dfedfccd3439e69ef706">equitySpot</a> (const string &amp;, const string &amp;) const override</td></tr>
 <tr class="separator:a3661dbc2e679dfedfccd3439e69ef706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd6fdbb7d6d6ba21c609f23266708a97"><td class="memItemLeft" align="right" valign="top">Handle&lt; YieldTermStructure &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1analytics_1_1_dummy_market.html#afd6fdbb7d6d6ba21c609f23266708a97">equityDividendCurve</a> (const string &amp;, const string &amp;) const override</td></tr>
@@ -478,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                             {</div>
 <div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> Handle&lt;IborIndex&gt;(<a class="code hl_function" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782">ore::data::parseIborIndex</a>(<span class="stringliteral">&quot;EUR-EONIA&quot;</span>)); <span class="comment">// ugly, but some people check index.empty()</span></div>
 <div class="line"><span class="lineno">   56</span>    }</div>
-<div class="ttc" id="agroup__utilities_html_gac1ecdc5f20e7d73327bccd5f930f8782"><div class="ttname"><a href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782">ore::data::parseIborIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; IborIndex &gt; parseIborIndex(const string &amp;s, const Handle&lt; YieldTermStructure &gt; &amp;h)</div><div class="ttdoc">Convert std::string to QuantLib::IborIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00258">indexparser.cpp:258</a></div></div>
+<div class="ttc" id="agroup__utilities_html_gac1ecdc5f20e7d73327bccd5f930f8782"><div class="ttname"><a href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782">ore::data::parseIborIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; IborIndex &gt; parseIborIndex(const string &amp;s, const Handle&lt; YieldTermStructure &gt; &amp;h)</div><div class="ttdoc">Convert std::string to QuantLib::IborIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00254">indexparser.cpp:254</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -744,8 +744,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   70</span>            <span class="keywordflow">return</span> Handle&lt;QuantExt::FxIndex&gt;(<a class="code hl_function" href="group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad">parseFxIndex</a>(index));</div>
 <div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> Handle&lt;QuantExt::FxIndex&gt;();</div>
 <div class="line"><span class="lineno">   72</span>    };</div>
-<div class="ttc" id="agroup__utilities_html_gaf0c22b2380b7865d6513ec50a6990bad"><div class="ttname"><a href="group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad">ore::data::parseFxIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; FxIndex &gt; parseFxIndex(const string &amp;s, const Handle&lt; Quote &gt; &amp;fxSpot, const Handle&lt; YieldTermStructure &gt; &amp;sourceYts, const Handle&lt; YieldTermStructure &gt; &amp;targetYts, const bool useConventions)</div><div class="ttdoc">Convert std::string to QuantExt::FxIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00212">indexparser.cpp:212</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a123e19b0fac4f5124a8c26bad300de0e"><div class="ttname"><a href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e">ore::data::isFxIndex</a></div><div class="ttdeci">bool isFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01031">indexparser.cpp:1031</a></div></div>
+<div class="ttc" id="agroup__utilities_html_gaf0c22b2380b7865d6513ec50a6990bad"><div class="ttname"><a href="group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad">ore::data::parseFxIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; FxIndex &gt; parseFxIndex(const string &amp;s, const Handle&lt; Quote &gt; &amp;fxSpot, const Handle&lt; YieldTermStructure &gt; &amp;sourceYts, const Handle&lt; YieldTermStructure &gt; &amp;targetYts, const bool useConventions)</div><div class="ttdoc">Convert std::string to QuantExt::FxIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00208">indexparser.cpp:208</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a123e19b0fac4f5124a8c26bad300de0e"><div class="ttname"><a href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e">ore::data::isFxIndex</a></div><div class="ttdeci">bool isFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01027">indexparser.cpp:1027</a></div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -1278,8 +1278,8 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae50bcd2345a641592461d2cee57621e0" name="ae50bcd2345a641592461d2cee57621e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae50bcd2345a641592461d2cee57621e0">&#9670;&#160;</a></span>cpiInflationCapFloorVolatilitySurface()</h2>
+<a id="a2cbdab385c3a9f1e6b9cee73694fd4eb" name="a2cbdab385c3a9f1e6b9cee73694fd4eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cbdab385c3a9f1e6b9cee73694fd4eb">&#9670;&#160;</a></span>cpiInflationCapFloorVolatilitySurface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1288,7 +1288,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Handle&lt; <a class="elRef" href="../qle/class_quant_ext_1_1_c_p_i_volatility_surface.html">CPIVolatilitySurface</a> &gt; cpiInflationCapFloorVolatilitySurface </td>
+          <td class="memname">Handle&lt; QuantLib::CPIVolatilitySurface &gt; cpiInflationCapFloorVolatilitySurface </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>indexName</em>, </td>
@@ -1317,8 +1317,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classore_1_1data_1_1_market.html#a04dff1e32f3d57d98dfb445e6c355568">Market</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="dummymarket_8hpp_source.html#l00112">112</a> of file <a class="el" href="dummymarket_8hpp_source.html">dummymarket.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  112</span>                                                                                                                    {</div>
-<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> Handle&lt;CPIVolatilitySurface&gt;();</div>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>                                                                                                                            {</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> Handle&lt;QuantLib::CPIVolatilitySurface&gt;();</div>
 <div class="line"><span class="lineno">  114</span>    }</div>
 </div><!-- fragment -->
 </div>

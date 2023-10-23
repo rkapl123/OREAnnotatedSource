@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Sofr term index, see <a href="https://www.cmegroup.com/market-data/cme-group-benchmark-administration/term-sofr.html#">https://www.cmegroup.com/market-data/cme-group-benchmark-administration/term-sofr.html#</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="sofr_8hpp_source.html#l00038">38</a> of file <a class="el" href="sofr_8hpp_source.html">sofr.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sofr_8hpp_source.html#l00032">32</a> of file <a class="el" href="sofr_8hpp_source.html">sofr.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6736355cad463bbb05932b14da523bae" name="a6736355cad463bbb05932b14da523bae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6736355cad463bbb05932b14da523bae">&#9670;&#160;</a></span>SofrTerm()</h2>
@@ -154,9 +154,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sofr_8cpp_source.html#l00030">30</a> of file <a class="el" href="sofr_8cpp_source.html">sofr.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>    : <a class="code hl_function" href="class_quant_ext_1_1_term_rate_index.html#ac3450ba037ed7ce2e20f887d128b5e07">TermRateIndex</a>(<span class="stringliteral">&quot;SOFR-TERM&quot;</span>, tenor, 2, USDCurrency(), UnitedStates(UnitedStates::GovernmentBond), ModifiedFollowing,</div>
-<div class="line"><span class="lineno">   32</span>                <span class="keyword">false</span>, Actual360(), h, boost::make_shared&lt;Sofr&gt;(h)) {}</div>
+<p class="definition">Definition at line <a class="el" href="sofr_8cpp_source.html#l00028">28</a> of file <a class="el" href="sofr_8cpp_source.html">sofr.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>    : <a class="code hl_function" href="class_quant_ext_1_1_term_rate_index.html#ac3450ba037ed7ce2e20f887d128b5e07">TermRateIndex</a>(<span class="stringliteral">&quot;USD-SOFRTerm&quot;</span>, tenor, 2, USDCurrency(), UnitedStates(UnitedStates::SOFR), ModifiedFollowing, <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">   30</span>                    Actual360(), h, boost::make_shared&lt;Sofr&gt;(h)) {}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_term_rate_index_html_ac3450ba037ed7ce2e20f887d128b5e07"><div class="ttname"><a href="class_quant_ext_1_1_term_rate_index.html#ac3450ba037ed7ce2e20f887d128b5e07">QuantExt::TermRateIndex::TermRateIndex</a></div><div class="ttdeci">TermRateIndex(const std::string &amp;familyName, const Period &amp;tenor, Natural settlementDays, const Currency &amp;currency, const Calendar &amp;fixingCalendar, BusinessDayConvention convention, bool endOfMonth, const DayCounter &amp;dayCounter, Handle&lt; YieldTermStructure &gt; h=Handle&lt; YieldTermStructure &gt;(), const boost::shared_ptr&lt; OvernightIndex &gt; &amp;rfrIndex=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="termrateindex_8hpp_source.html#l00033">termrateindex.hpp:33</a></div></div>
 </div><!-- fragment -->
 </div>

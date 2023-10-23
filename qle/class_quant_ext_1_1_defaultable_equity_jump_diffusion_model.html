@@ -192,7 +192,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a06e2d64229bb485ee1dbf0abef8a0d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34e48da5a6cb0ae362b54c77e01ad48d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">adjustEquityForward_</a></td></tr>
 <tr class="separator:a34e48da5a6cb0ae362b54c77e01ad48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbd9ebefec6ab4dfbcd54c2cb2bbd59e"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; Fdm1dMesher &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a></td></tr>
+<tr class="memitem:adbd9ebefec6ab4dfbcd54c2cb2bbd59e"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_fdm1d_mesher.html">Fdm1dMesher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a></td></tr>
 <tr class="separator:adbd9ebefec6ab4dfbcd54c2cb2bbd59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe71084e6d7e239565c57a5dc6fe173"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#abfe71084e6d7e239565c57a5dc6fe173">totalBlackVariance_</a> = 1.0</td></tr>
 <tr class="separator:abfe71084e6d7e239565c57a5dc6fe173"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,30 +274,30 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00147">147</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  152</span>    : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a67b951125f659232846f3567d063094f">stepTimes</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a2e696362c9d950a3058e76ad3d200328">h0</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a5834e233af34d4420467c08ced9cb85d">sigma</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">creditCurve</a>),</div>
-<div class="line"><span class="lineno">  153</span>      <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a69fcec47cdc4db31e71517c24d8fb815">volDayCounter_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aca5d46f87cb23bfb6d138a03b62e1dc5">volDayCounter</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a06e2d64229bb485ee1dbf0abef8a0d4d">eta_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ace9cc3ca85a0208ec49c3d6792b477b5">eta</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">adjustEquityForward_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a240a532c29dbb0ff6c2ce7a6eafc00cb">adjustEquityForward</a>) {</div>
-<div class="line"><span class="lineno">  154</span>    registerWith(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>);</div>
-<div class="line"><span class="lineno">  155</span>    registerWith(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">creditCurve</a>);</div>
-<div class="line"><span class="lineno">  156</span>}</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00150">150</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  155</span>    : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a67b951125f659232846f3567d063094f">stepTimes</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a2e696362c9d950a3058e76ad3d200328">h0</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a5834e233af34d4420467c08ced9cb85d">sigma</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">creditCurve</a>),</div>
+<div class="line"><span class="lineno">  156</span>      <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a69fcec47cdc4db31e71517c24d8fb815">volDayCounter_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aca5d46f87cb23bfb6d138a03b62e1dc5">volDayCounter</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a06e2d64229bb485ee1dbf0abef8a0d4d">eta_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ace9cc3ca85a0208ec49c3d6792b477b5">eta</a>), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">adjustEquityForward_</a>(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a240a532c29dbb0ff6c2ce7a6eafc00cb">adjustEquityForward</a>) {</div>
+<div class="line"><span class="lineno">  157</span>    registerWith(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>);</div>
+<div class="line"><span class="lineno">  158</span>    registerWith(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">creditCurve</a>);</div>
+<div class="line"><span class="lineno">  159</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a03103d3ae7320ca3adb6f1bdcaf3ca78"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">QuantExt::DefaultableEquityJumpDiffusionModel::stepTimes_</a></div><div class="ttdeci">std::vector&lt; Real &gt; stepTimes_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00168">defaultableequityjumpdiffusionmodel.hpp:168</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a06e2d64229bb485ee1dbf0abef8a0d4d"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a06e2d64229bb485ee1dbf0abef8a0d4d">QuantExt::DefaultableEquityJumpDiffusionModel::eta_</a></div><div class="ttdeci">Real eta_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00173">defaultableequityjumpdiffusionmodel.hpp:173</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a1a851b13055cfe0330cd3a8f9ad4ac69"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">QuantExt::DefaultableEquityJumpDiffusionModel::equity_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantExt::EquityIndex2 &gt; equity_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00170">defaultableequityjumpdiffusionmodel.hpp:170</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a240a532c29dbb0ff6c2ce7a6eafc00cb"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a240a532c29dbb0ff6c2ce7a6eafc00cb">QuantExt::DefaultableEquityJumpDiffusionModel::adjustEquityForward</a></div><div class="ttdeci">bool adjustEquityForward() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00176">defaultableequityjumpdiffusionmodel.cpp:176</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a2e696362c9d950a3058e76ad3d200328"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a2e696362c9d950a3058e76ad3d200328">QuantExt::DefaultableEquityJumpDiffusionModel::h0</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; h0() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00182">defaultableequityjumpdiffusionmodel.cpp:182</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a240a532c29dbb0ff6c2ce7a6eafc00cb"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a240a532c29dbb0ff6c2ce7a6eafc00cb">QuantExt::DefaultableEquityJumpDiffusionModel::adjustEquityForward</a></div><div class="ttdeci">bool adjustEquityForward() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00179">defaultableequityjumpdiffusionmodel.cpp:179</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a2e696362c9d950a3058e76ad3d200328"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a2e696362c9d950a3058e76ad3d200328">QuantExt::DefaultableEquityJumpDiffusionModel::h0</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; h0() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00185">defaultableequityjumpdiffusionmodel.cpp:185</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a34e48da5a6cb0ae362b54c77e01ad48d"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">QuantExt::DefaultableEquityJumpDiffusionModel::adjustEquityForward_</a></div><div class="ttdeci">bool adjustEquityForward_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00174">defaultableequityjumpdiffusionmodel.hpp:174</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a4c76deaad8929630972693618db18b05"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">QuantExt::DefaultableEquityJumpDiffusionModel::creditCurve_</a></div><div class="ttdeci">Handle&lt; DefaultProbabilityTermStructure &gt; creditCurve_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00171">defaultableequityjumpdiffusionmodel.hpp:171</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a5834e233af34d4420467c08ced9cb85d"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a5834e233af34d4420467c08ced9cb85d">QuantExt::DefaultableEquityJumpDiffusionModel::sigma</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; sigma() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00184">defaultableequityjumpdiffusionmodel.cpp:184</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a646c92414b517a2295918d90ac977810"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">QuantExt::DefaultableEquityJumpDiffusionModel::creditCurve</a></div><div class="ttdeci">Handle&lt; QuantLib::DefaultProbabilityTermStructure &gt; creditCurve() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00168">defaultableequityjumpdiffusionmodel.cpp:168</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a67b951125f659232846f3567d063094f"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a67b951125f659232846f3567d063094f">QuantExt::DefaultableEquityJumpDiffusionModel::stepTimes</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; stepTimes() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00160">defaultableequityjumpdiffusionmodel.cpp:160</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a5834e233af34d4420467c08ced9cb85d"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a5834e233af34d4420467c08ced9cb85d">QuantExt::DefaultableEquityJumpDiffusionModel::sigma</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; sigma() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00187">defaultableequityjumpdiffusionmodel.cpp:187</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a646c92414b517a2295918d90ac977810"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">QuantExt::DefaultableEquityJumpDiffusionModel::creditCurve</a></div><div class="ttdeci">Handle&lt; QuantLib::DefaultProbabilityTermStructure &gt; creditCurve() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00171">defaultableequityjumpdiffusionmodel.cpp:171</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a67b951125f659232846f3567d063094f"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a67b951125f659232846f3567d063094f">QuantExt::DefaultableEquityJumpDiffusionModel::stepTimes</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; stepTimes() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00163">defaultableequityjumpdiffusionmodel.cpp:163</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a69fcec47cdc4db31e71517c24d8fb815"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a69fcec47cdc4db31e71517c24d8fb815">QuantExt::DefaultableEquityJumpDiffusionModel::volDayCounter_</a></div><div class="ttdeci">DayCounter volDayCounter_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00172">defaultableequityjumpdiffusionmodel.hpp:172</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a8b5b901de65b54e22b8bc6fc4c73a1c7"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">QuantExt::DefaultableEquityJumpDiffusionModel::h0_</a></div><div class="ttdeci">std::vector&lt; Real &gt; h0_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00169">defaultableequityjumpdiffusionmodel.hpp:169</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a9240c051245987806f3bc3aefdfde5fe"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">QuantExt::DefaultableEquityJumpDiffusionModel::p_</a></div><div class="ttdeci">Real p_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00173">defaultableequityjumpdiffusionmodel.hpp:173</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a95dab803dfa25b383da3506ed8092eac"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">QuantExt::DefaultableEquityJumpDiffusionModel::equity</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantExt::EquityIndex2 &gt; equity() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00162">defaultableequityjumpdiffusionmodel.cpp:162</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a95dab803dfa25b383da3506ed8092eac"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">QuantExt::DefaultableEquityJumpDiffusionModel::equity</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantExt::EquityIndex2 &gt; equity() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00165">defaultableequityjumpdiffusionmodel.cpp:165</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_a9be46c4f0ad77a4fdf24d00d477a6fd0"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">QuantExt::DefaultableEquityJumpDiffusionModel::sigma_</a></div><div class="ttdeci">std::vector&lt; Real &gt; sigma_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00169">defaultableequityjumpdiffusionmodel.hpp:169</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_aa1d97c2a437730d7a49ec31452a302f8"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">QuantExt::DefaultableEquityJumpDiffusionModel::p</a></div><div class="ttdeci">Real p() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00174">defaultableequityjumpdiffusionmodel.cpp:174</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_aca5d46f87cb23bfb6d138a03b62e1dc5"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aca5d46f87cb23bfb6d138a03b62e1dc5">QuantExt::DefaultableEquityJumpDiffusionModel::volDayCounter</a></div><div class="ttdeci">const DayCounter &amp; volDayCounter() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00166">defaultableequityjumpdiffusionmodel.cpp:166</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_ace9cc3ca85a0208ec49c3d6792b477b5"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ace9cc3ca85a0208ec49c3d6792b477b5">QuantExt::DefaultableEquityJumpDiffusionModel::eta</a></div><div class="ttdeci">Real eta() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00172">defaultableequityjumpdiffusionmodel.cpp:172</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_aa1d97c2a437730d7a49ec31452a302f8"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">QuantExt::DefaultableEquityJumpDiffusionModel::p</a></div><div class="ttdeci">Real p() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00177">defaultableequityjumpdiffusionmodel.cpp:177</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_aca5d46f87cb23bfb6d138a03b62e1dc5"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aca5d46f87cb23bfb6d138a03b62e1dc5">QuantExt::DefaultableEquityJumpDiffusionModel::volDayCounter</a></div><div class="ttdeci">const DayCounter &amp; volDayCounter() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00169">defaultableequityjumpdiffusionmodel.cpp:169</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_ace9cc3ca85a0208ec49c3d6792b477b5"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ace9cc3ca85a0208ec49c3d6792b477b5">QuantExt::DefaultableEquityJumpDiffusionModel::eta</a></div><div class="ttdeci">Real eta() const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00175">defaultableequityjumpdiffusionmodel.cpp:175</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -329,8 +329,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00160">160</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00163">163</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,8 +349,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00162">162</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  162</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00165">165</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -381,8 +381,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00164">164</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  164</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#abfe71084e6d7e239565c57a5dc6fe173">totalBlackVariance_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00167">167</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  167</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#abfe71084e6d7e239565c57a5dc6fe173">totalBlackVariance_</a>; }</div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_abfe71084e6d7e239565c57a5dc6fe173"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#abfe71084e6d7e239565c57a5dc6fe173">QuantExt::DefaultableEquityJumpDiffusionModel::totalBlackVariance_</a></div><div class="ttdeci">Real totalBlackVariance_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00180">defaultableequityjumpdiffusionmodel.hpp:180</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -402,8 +402,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00166">166</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  166</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a69fcec47cdc4db31e71517c24d8fb815">volDayCounter_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00169">169</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  169</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a69fcec47cdc4db31e71517c24d8fb815">volDayCounter_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -422,10 +422,10 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00168">168</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  168</span>                                                                                               {</div>
-<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>;</div>
-<div class="line"><span class="lineno">  170</span>}</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00171">171</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  171</span>                                                                                               {</div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>;</div>
+<div class="line"><span class="lineno">  173</span>}</div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -456,8 +456,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00172">172</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  172</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a06e2d64229bb485ee1dbf0abef8a0d4d">eta_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00175">175</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  175</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a06e2d64229bb485ee1dbf0abef8a0d4d">eta_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -487,8 +487,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00174">174</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  174</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00177">177</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  177</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -518,8 +518,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00176">176</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  176</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">adjustEquityForward_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00179">179</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  179</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">adjustEquityForward_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -539,10 +539,10 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00178">178</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  178</span>                                                                               {</div>
-<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a69fcec47cdc4db31e71517c24d8fb815">volDayCounter_</a>.yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;referenceDate(), d);</div>
-<div class="line"><span class="lineno">  180</span>}</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00181">181</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  181</span>                                                                               {</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a69fcec47cdc4db31e71517c24d8fb815">volDayCounter_</a>.yearFraction(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;referenceDate(), d);</div>
+<div class="line"><span class="lineno">  183</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -561,8 +561,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00182">182</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  182</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00185">185</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  185</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -581,8 +581,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00184">184</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  184</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00187">187</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -612,11 +612,11 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00193">193</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  193</span>                                                                            {</div>
-<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa44d9ec6f892a6ab5f6d82142e8e716b">getTimeIndex</a>(t)] * std::pow(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() / S, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>);</div>
-<div class="line"><span class="lineno">  195</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_aa44d9ec6f892a6ab5f6d82142e8e716b"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa44d9ec6f892a6ab5f6d82142e8e716b">QuantExt::DefaultableEquityJumpDiffusionModel::getTimeIndex</a></div><div class="ttdeci">QuantLib::Size getTimeIndex(const Real t) const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00186">defaultableequityjumpdiffusionmodel.cpp:186</a></div></div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00196">196</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  196</span>                                                                            {</div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa44d9ec6f892a6ab5f6d82142e8e716b">getTimeIndex</a>(t)] * std::pow(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() / S, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>);</div>
+<div class="line"><span class="lineno">  198</span>}</div>
+<div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_aa44d9ec6f892a6ab5f6d82142e8e716b"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa44d9ec6f892a6ab5f6d82142e8e716b">QuantExt::DefaultableEquityJumpDiffusionModel::getTimeIndex</a></div><div class="ttdeci">QuantLib::Size getTimeIndex(const Real t) const</div><div class="ttdef"><b>Definition:</b> <a href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00189">defaultableequityjumpdiffusionmodel.cpp:189</a></div></div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -665,18 +665,18 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00199">199</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  199</span>                                                              {</div>
-<div class="line"><span class="lineno">  200</span>    <span class="keywordflow">if</span> (t &gt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) {</div>
-<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
-<div class="line"><span class="lineno">  202</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>)) /</div>
-<div class="line"><span class="lineno">  203</span>               (2.0 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
-<div class="line"><span class="lineno">  204</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  205</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
-<div class="line"><span class="lineno">  206</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t)) /</div>
-<div class="line"><span class="lineno">  207</span>               (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
-<div class="line"><span class="lineno">  208</span>    }</div>
-<div class="line"><span class="lineno">  209</span>}</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00202">202</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  202</span>                                                              {</div>
+<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">if</span> (t &gt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) {</div>
+<div class="line"><span class="lineno">  204</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
+<div class="line"><span class="lineno">  205</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>)) /</div>
+<div class="line"><span class="lineno">  206</span>               (2.0 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
+<div class="line"><span class="lineno">  207</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
+<div class="line"><span class="lineno">  209</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(t)) /</div>
+<div class="line"><span class="lineno">  210</span>               (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
+<div class="line"><span class="lineno">  211</span>    }</div>
+<div class="line"><span class="lineno">  212</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_ade39e4e378765104eb36f874956894ce"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">QuantExt::DefaultableEquityJumpDiffusionModel::fh_</a></div><div class="ttdeci">static constexpr Real fh_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00183">defaultableequityjumpdiffusionmodel.hpp:183</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -697,18 +697,18 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00211">211</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  211</span>                                                              {</div>
-<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">if</span> (t &gt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) {</div>
-<div class="line"><span class="lineno">  213</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
-<div class="line"><span class="lineno">  214</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>)) /</div>
-<div class="line"><span class="lineno">  215</span>               (2.0 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
-<div class="line"><span class="lineno">  216</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
-<div class="line"><span class="lineno">  218</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t)) /</div>
-<div class="line"><span class="lineno">  219</span>               (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
-<div class="line"><span class="lineno">  220</span>    }</div>
-<div class="line"><span class="lineno">  221</span>}</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00214">214</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>                                                              {</div>
+<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">if</span> (t &gt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) {</div>
+<div class="line"><span class="lineno">  216</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
+<div class="line"><span class="lineno">  217</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>)) /</div>
+<div class="line"><span class="lineno">  218</span>               (2.0 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
+<div class="line"><span class="lineno">  219</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>) /</div>
+<div class="line"><span class="lineno">  221</span>                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(t)) /</div>
+<div class="line"><span class="lineno">  222</span>               (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>);</div>
+<div class="line"><span class="lineno">  223</span>    }</div>
+<div class="line"><span class="lineno">  224</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -728,8 +728,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00197">197</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  197</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa44d9ec6f892a6ab5f6d82142e8e716b">getTimeIndex</a>(t)]; }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00200">200</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  200</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa44d9ec6f892a6ab5f6d82142e8e716b">getTimeIndex</a>(t)]; }</div>
 </div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -770,18 +770,18 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00223">223</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  223</span>                                                                                        {</div>
-<div class="line"><span class="lineno">  224</span>    QL_REQUIRE(t &gt; s || <a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(s, t), <span class="stringliteral">&quot;DefaultableEquityJumppDiffusionModel::dividendYield(): start time (&quot;</span></div>
-<div class="line"><span class="lineno">  225</span>                                                &lt;&lt; s &lt;&lt; <span class="stringliteral">&quot;) must be less or equal than end time (&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">  226</span>    Real tmp = t;</div>
-<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(s, t)) {</div>
-<div class="line"><span class="lineno">  228</span>        tmp = s + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>;</div>
-<div class="line"><span class="lineno">  229</span>    }</div>
-<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(tmp) / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(s)) /</div>
-<div class="line"><span class="lineno">  231</span>           (tmp - s);</div>
-<div class="line"><span class="lineno">  232</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00496">randomvariable.cpp:496</a></div></div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00226">226</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  226</span>                                                                                        {</div>
+<div class="line"><span class="lineno">  227</span>    QL_REQUIRE(t &gt; s || <a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(s, t), <span class="stringliteral">&quot;DefaultableEquityJumppDiffusionModel::dividendYield(): start time (&quot;</span></div>
+<div class="line"><span class="lineno">  228</span>                                                &lt;&lt; s &lt;&lt; <span class="stringliteral">&quot;) must be less or equal than end time (&quot;</span> &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><span class="lineno">  229</span>    Real tmp = t;</div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(s, t)) {</div>
+<div class="line"><span class="lineno">  231</span>        tmp = s + <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ade39e4e378765104eb36f874956894ce">fh_</a>;</div>
+<div class="line"><span class="lineno">  232</span>    }</div>
+<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">return</span> -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(tmp) / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(s)) /</div>
+<div class="line"><span class="lineno">  234</span>           (tmp - s);</div>
+<div class="line"><span class="lineno">  235</span>}</div>
+<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00817">randomvariable.cpp:817</a></div></div>
 </div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -870,373 +870,375 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00234">234</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  238</span>                                                                                      {</div>
-<div class="line"><span class="lineno">  239</span> </div>
-<div class="line"><span class="lineno">  240</span>    <span class="comment">// set total black variance</span></div>
-<div class="line"><span class="lineno">  241</span> </div>
-<div class="line"><span class="lineno">  242</span>    Real forward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back()) /</div>
-<div class="line"><span class="lineno">  243</span>                   <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back());</div>
-<div class="line"><span class="lineno">  244</span>    <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#abfe71084e6d7e239565c57a5dc6fe173">totalBlackVariance_</a> = volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back(), forward);</div>
-<div class="line"><span class="lineno">  245</span> </div>
-<div class="line"><span class="lineno">  246</span>    <span class="comment">// check validity of credit curve, otherwise we might divide by zero below</span></div>
-<div class="line"><span class="lineno">  247</span> </div>
-<div class="line"><span class="lineno">  248</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size(); ++i) {</div>
-<div class="line"><span class="lineno">  249</span>        QL_REQUIRE(!<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]), 0.0),</div>
-<div class="line"><span class="lineno">  250</span>                   <span class="stringliteral">&quot;DefaultableEquityJumpDiffusionModel: creditCurve implies zero survival probability at t = &quot;</span></div>
-<div class="line"><span class="lineno">  251</span>                       &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]</div>
-<div class="line"><span class="lineno">  252</span>                       &lt;&lt; <span class="stringliteral">&quot;, this can not be handled. Check the credit curve / security spread provided in the market &quot;</span></div>
-<div class="line"><span class="lineno">  253</span>                          <span class="stringliteral">&quot;data. If this happens during a spread imply, the target price might not be attainable even &quot;</span></div>
-<div class="line"><span class="lineno">  254</span>                          <span class="stringliteral">&quot;for high spreads.&quot;</span>);</div>
-<div class="line"><span class="lineno">  255</span>    }</div>
-<div class="line"><span class="lineno">  256</span> </div>
-<div class="line"><span class="lineno">  257</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>, 0.0) &amp;&amp; !enforceFokkerPlanckBootstrap) {</div>
-<div class="line"><span class="lineno">  258</span> </div>
-<div class="line"><span class="lineno">  259</span>        <span class="comment">// 1. case p = 0:</span></div>
-<div class="line"><span class="lineno">  260</span> </div>
-<div class="line"><span class="lineno">  261</span>        Real accumulatedVariance = 0.0;</div>
-<div class="line"><span class="lineno">  262</span> </div>
-<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size(); ++i) {</div>
-<div class="line"><span class="lineno">  264</span> </div>
-<div class="line"><span class="lineno">  265</span>            <span class="comment">// 1.1 the stepwise model h is just the average hazard rate over each interval</span></div>
-<div class="line"><span class="lineno">  266</span> </div>
-<div class="line"><span class="lineno">  267</span>            <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] = -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) /</div>
-<div class="line"><span class="lineno">  268</span>                               (i == 0 ? 1.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]))) /</div>
-<div class="line"><span class="lineno">  269</span>                     (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
-<div class="line"><span class="lineno">  270</span> </div>
-<div class="line"><span class="lineno">  271</span>            <span class="comment">// 1.2 determine the implied equity vol in our model</span></div>
-<div class="line"><span class="lineno">  272</span> </div>
-<div class="line"><span class="lineno">  273</span>            Real impliedModelVol = 0.0;</div>
-<div class="line"><span class="lineno">  274</span>            Real forward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
-<div class="line"><span class="lineno">  275</span>                           <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
-<div class="line"><span class="lineno">  276</span> </div>
-<div class="line"><span class="lineno">  277</span>            <span class="keywordflow">if</span> (!adjustEquityVolatility) {</div>
-<div class="line"><span class="lineno">  278</span> </div>
-<div class="line"><span class="lineno">  279</span>                <span class="comment">// 1.2.1 if we do not adjust the equity vol, we just read it from the market surface</span></div>
-<div class="line"><span class="lineno">  280</span> </div>
-<div class="line"><span class="lineno">  281</span>                impliedModelVol = volatility-&gt;blackVol(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward);</div>
-<div class="line"><span class="lineno">  282</span> </div>
-<div class="line"><span class="lineno">  283</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  284</span> </div>
-<div class="line"><span class="lineno">  285</span>                <span class="comment">// 1.2.2 if we adjust the equity vol, we first compute the market atm option price</span></div>
-<div class="line"><span class="lineno">  286</span> </div>
-<div class="line"><span class="lineno">  287</span>                Real marketPrice = blackFormula(Option::Call, forward, forward,</div>
-<div class="line"><span class="lineno">  288</span>                                                std::sqrt(volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward)),</div>
-<div class="line"><span class="lineno">  289</span>                                                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]));</div>
-<div class="line"><span class="lineno">  290</span> </div>
-<div class="line"><span class="lineno">  291</span>                <span class="comment">// 1.2.2 adjust the forward and the discount factor by the credit drift / jump intensity and back out</span></div>
-<div class="line"><span class="lineno">  292</span>                <span class="comment">// the model implied vol using these and the market price computed above</span></div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00237">237</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  241</span>                                                                                      {</div>
+<div class="line"><span class="lineno">  242</span> </div>
+<div class="line"><span class="lineno">  243</span>    <span class="comment">// set total black variance</span></div>
+<div class="line"><span class="lineno">  244</span> </div>
+<div class="line"><span class="lineno">  245</span>    Real forward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back()) /</div>
+<div class="line"><span class="lineno">  246</span>                   <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back());</div>
+<div class="line"><span class="lineno">  247</span>    <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#abfe71084e6d7e239565c57a5dc6fe173">totalBlackVariance_</a> = volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back(), forward);</div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>    <span class="comment">// check validity of credit curve, otherwise we might divide by zero below</span></div>
+<div class="line"><span class="lineno">  250</span> </div>
+<div class="line"><span class="lineno">  251</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  252</span>        QL_REQUIRE(!<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]), 0.0),</div>
+<div class="line"><span class="lineno">  253</span>                   <span class="stringliteral">&quot;DefaultableEquityJumpDiffusionModel: creditCurve implies zero survival probability at t = &quot;</span></div>
+<div class="line"><span class="lineno">  254</span>                       &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]</div>
+<div class="line"><span class="lineno">  255</span>                       &lt;&lt; <span class="stringliteral">&quot;, this can not be handled. Check the credit curve / security spread provided in the market &quot;</span></div>
+<div class="line"><span class="lineno">  256</span>                          <span class="stringliteral">&quot;data. If this happens during a spread imply, the target price might not be attainable even &quot;</span></div>
+<div class="line"><span class="lineno">  257</span>                          <span class="stringliteral">&quot;for high spreads.&quot;</span>);</div>
+<div class="line"><span class="lineno">  258</span>    }</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9240c051245987806f3bc3aefdfde5fe">p_</a>, 0.0) &amp;&amp; !enforceFokkerPlanckBootstrap) {</div>
+<div class="line"><span class="lineno">  261</span> </div>
+<div class="line"><span class="lineno">  262</span>        <span class="comment">// 1. case p = 0:</span></div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>        Real accumulatedVariance = 0.0;</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>            <span class="comment">// 1.1 the stepwise model h is just the average hazard rate over each interval</span></div>
+<div class="line"><span class="lineno">  269</span> </div>
+<div class="line"><span class="lineno">  270</span>            <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] = -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) /</div>
+<div class="line"><span class="lineno">  271</span>                               (i == 0 ? 1.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]))) /</div>
+<div class="line"><span class="lineno">  272</span>                     (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>            <span class="comment">// 1.2 determine the implied equity vol in our model</span></div>
+<div class="line"><span class="lineno">  275</span> </div>
+<div class="line"><span class="lineno">  276</span>            Real impliedModelVol = 0.0;</div>
+<div class="line"><span class="lineno">  277</span>            Real forward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
+<div class="line"><span class="lineno">  278</span>                           <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>            <span class="keywordflow">if</span> (!adjustEquityVolatility) {</div>
+<div class="line"><span class="lineno">  281</span> </div>
+<div class="line"><span class="lineno">  282</span>                <span class="comment">// 1.2.1 if we do not adjust the equity vol, we just read it from the market surface</span></div>
+<div class="line"><span class="lineno">  283</span> </div>
+<div class="line"><span class="lineno">  284</span>                impliedModelVol = volatility-&gt;blackVol(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward);</div>
+<div class="line"><span class="lineno">  285</span> </div>
+<div class="line"><span class="lineno">  286</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  287</span> </div>
+<div class="line"><span class="lineno">  288</span>                <span class="comment">// 1.2.2 if we adjust the equity vol, we first compute the market atm option price</span></div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>                Real marketPrice = blackFormula(Option::Call, forward, forward,</div>
+<div class="line"><span class="lineno">  291</span>                                                std::sqrt(volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward)),</div>
+<div class="line"><span class="lineno">  292</span>                                                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]));</div>
 <div class="line"><span class="lineno">  293</span> </div>
-<div class="line"><span class="lineno">  294</span>                <span class="comment">// TODO a tacit assumption here is that a defaulted equity does not contribute signficantly to the ATM</span></div>
-<div class="line"><span class="lineno">  295</span>                <span class="comment">// call option payoff, i.e. that eta is sufficiently close to 1, review this and compare to the &quot;full&quot;</span></div>
-<div class="line"><span class="lineno">  296</span>                <span class="comment">// implementation via Fokker-Planck below</span></div>
-<div class="line"><span class="lineno">  297</span> </div>
-<div class="line"><span class="lineno">  298</span>                Real adjustedForward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">adjustEquityForward_</a></div>
-<div class="line"><span class="lineno">  299</span>                                           ? forward / std::pow(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a06e2d64229bb485ee1dbf0abef8a0d4d">eta_</a>)</div>
-<div class="line"><span class="lineno">  300</span>                                           : forward;</div>
-<div class="line"><span class="lineno">  301</span>                <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  302</span>                    impliedModelVol =</div>
-<div class="line"><span class="lineno">  303</span>                        blackFormulaImpliedStdDev(Option::Call, forward, adjustedForward, marketPrice,</div>
-<div class="line"><span class="lineno">  304</span>                                                  <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
-<div class="line"><span class="lineno">  305</span>                                                      <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i])) /</div>
-<div class="line"><span class="lineno">  306</span>                        std::sqrt(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
-<div class="line"><span class="lineno">  307</span>                } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><span class="lineno">  308</span>                }</div>
-<div class="line"><span class="lineno">  309</span>            }</div>
-<div class="line"><span class="lineno">  310</span> </div>
-<div class="line"><span class="lineno">  311</span>            <span class="comment">// 1.3 bootstrap the stepwise model sigma</span></div>
-<div class="line"><span class="lineno">  312</span> </div>
-<div class="line"><span class="lineno">  313</span>            <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] =</div>
-<div class="line"><span class="lineno">  314</span>                i == 0</div>
-<div class="line"><span class="lineno">  315</span>                    ? impliedModelVol</div>
-<div class="line"><span class="lineno">  316</span>                    : std::sqrt(std::max(impliedModelVol * impliedModelVol * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - accumulatedVariance, 0.0) /</div>
-<div class="line"><span class="lineno">  317</span>                                (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
-<div class="line"><span class="lineno">  318</span> </div>
-<div class="line"><span class="lineno">  319</span>            accumulatedVariance += <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] * (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
-<div class="line"><span class="lineno">  320</span>        }</div>
-<div class="line"><span class="lineno">  321</span> </div>
-<div class="line"><span class="lineno">  322</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  294</span>                <span class="comment">// 1.2.2 adjust the forward and the discount factor by the credit drift / jump intensity and back out</span></div>
+<div class="line"><span class="lineno">  295</span>                <span class="comment">// the model implied vol using these and the market price computed above</span></div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>                <span class="comment">// TODO a tacit assumption here is that a defaulted equity does not contribute signficantly to the ATM</span></div>
+<div class="line"><span class="lineno">  298</span>                <span class="comment">// call option payoff, i.e. that eta is sufficiently close to 1, review this and compare to the &quot;full&quot;</span></div>
+<div class="line"><span class="lineno">  299</span>                <span class="comment">// implementation via Fokker-Planck below</span></div>
+<div class="line"><span class="lineno">  300</span> </div>
+<div class="line"><span class="lineno">  301</span>                Real adjustedForward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a34e48da5a6cb0ae362b54c77e01ad48d">adjustEquityForward_</a></div>
+<div class="line"><span class="lineno">  302</span>                                           ? forward / std::pow(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a06e2d64229bb485ee1dbf0abef8a0d4d">eta_</a>)</div>
+<div class="line"><span class="lineno">  303</span>                                           : forward;</div>
+<div class="line"><span class="lineno">  304</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  305</span>                    impliedModelVol =</div>
+<div class="line"><span class="lineno">  306</span>                        blackFormulaImpliedStdDev(Option::Call, forward, adjustedForward, marketPrice,</div>
+<div class="line"><span class="lineno">  307</span>                                                  <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
+<div class="line"><span class="lineno">  308</span>                                                      <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i])) /</div>
+<div class="line"><span class="lineno">  309</span>                        std::sqrt(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
+<div class="line"><span class="lineno">  310</span>                } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><span class="lineno">  311</span>                }</div>
+<div class="line"><span class="lineno">  312</span>            }</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>            impliedModelVol = std::max(1E-4, impliedModelVol);</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>            <span class="comment">// 1.3 bootstrap the stepwise model sigma</span></div>
+<div class="line"><span class="lineno">  317</span> </div>
+<div class="line"><span class="lineno">  318</span>            <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] =</div>
+<div class="line"><span class="lineno">  319</span>                i == 0</div>
+<div class="line"><span class="lineno">  320</span>                    ? impliedModelVol</div>
+<div class="line"><span class="lineno">  321</span>                    : std::sqrt(std::max(impliedModelVol * impliedModelVol * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - accumulatedVariance, 0.0) /</div>
+<div class="line"><span class="lineno">  322</span>                                (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
 <div class="line"><span class="lineno">  323</span> </div>
-<div class="line"><span class="lineno">  324</span>        <span class="comment">// 2. case p != 0 (or enforced Fokker-Planck method for bootstrap)</span></div>
-<div class="line"><span class="lineno">  325</span> </div>
-<div class="line"><span class="lineno">  326</span>        <span class="comment">// 2.1 set up solver for the Fokker-Planck PDE</span></div>
-<div class="line"><span class="lineno">  327</span> </div>
-<div class="line"><span class="lineno">  328</span>        <span class="comment">// 2.1.1 build mesher</span></div>
-<div class="line"><span class="lineno">  329</span> </div>
-<div class="line"><span class="lineno">  330</span>        Real spot = <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equitySpot()-&gt;value();</div>
-<div class="line"><span class="lineno">  331</span>        Real logSpot = std::log(spot);</div>
+<div class="line"><span class="lineno">  324</span>            accumulatedVariance += <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] * (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
+<div class="line"><span class="lineno">  325</span>        }</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  328</span> </div>
+<div class="line"><span class="lineno">  329</span>        <span class="comment">// 2. case p != 0 (or enforced Fokker-Planck method for bootstrap)</span></div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>        <span class="comment">// 2.1 set up solver for the Fokker-Planck PDE</span></div>
 <div class="line"><span class="lineno">  332</span> </div>
-<div class="line"><span class="lineno">  333</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a> == <span class="keyword">nullptr</span> || !staticMesher) {</div>
+<div class="line"><span class="lineno">  333</span>        <span class="comment">// 2.1.1 build mesher</span></div>
 <div class="line"><span class="lineno">  334</span> </div>
-<div class="line"><span class="lineno">  335</span>            TimeGrid tmpGrid(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.begin(), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.end(),</div>
-<div class="line"><span class="lineno">  336</span>                             std::max&lt;Size&gt;(std::lround(timeStepsPerYear * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back() + 0.5), 1));</div>
+<div class="line"><span class="lineno">  335</span>        Real spot = <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equitySpot()-&gt;value();</div>
+<div class="line"><span class="lineno">  336</span>        Real logSpot = std::log(spot);</div>
 <div class="line"><span class="lineno">  337</span> </div>
-<div class="line"><span class="lineno">  338</span>            Real mi = spot;</div>
-<div class="line"><span class="lineno">  339</span>            Real ma = spot;</div>
-<div class="line"><span class="lineno">  340</span> </div>
-<div class="line"><span class="lineno">  341</span>            Real forward = spot;</div>
-<div class="line"><span class="lineno">  342</span>            <span class="keywordflow">for</span> (Size i = 1; i &lt; tmpGrid.size(); ++i) {</div>
-<div class="line"><span class="lineno">  343</span>                forward = <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equitySpot()-&gt;value() * <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equityDividendCurve()-&gt;discount(tmpGrid[i]) /</div>
-<div class="line"><span class="lineno">  344</span>                          <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equityForecastCurve()-&gt;discount(tmpGrid[i]) /</div>
-<div class="line"><span class="lineno">  345</span>                          std::pow(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">creditCurve</a>()-&gt;survivalProbability(tmpGrid[i]), <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ace9cc3ca85a0208ec49c3d6792b477b5">eta</a>());</div>
-<div class="line"><span class="lineno">  346</span>                mi = std::min(mi, forward);</div>
-<div class="line"><span class="lineno">  347</span>                ma = std::max(ma, forward);</div>
-<div class="line"><span class="lineno">  348</span>            }</div>
-<div class="line"><span class="lineno">  349</span> </div>
-<div class="line"><span class="lineno">  350</span>            Real sigmaSqrtT = std::max(1E-4, std::sqrt(volatility-&gt;blackVariance(tmpGrid.back(), forward)));</div>
-<div class="line"><span class="lineno">  351</span>            Real normInvEps = InverseCumulativeNormal()(1.0 - mesherEpsilon);</div>
-<div class="line"><span class="lineno">  352</span>            Real xMin = std::log(mi) - sigmaSqrtT * normInvEps * mesherScaling;</div>
-<div class="line"><span class="lineno">  353</span>            Real xMax = std::log(ma) + sigmaSqrtT * normInvEps * mesherScaling;</div>
+<div class="line"><span class="lineno">  338</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a> == <span class="keyword">nullptr</span> || !staticMesher) {</div>
+<div class="line"><span class="lineno">  339</span> </div>
+<div class="line"><span class="lineno">  340</span>            TimeGrid tmpGrid(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.begin(), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.end(),</div>
+<div class="line"><span class="lineno">  341</span>                             std::max&lt;Size&gt;(std::lround(timeStepsPerYear * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back() + 0.5), 1));</div>
+<div class="line"><span class="lineno">  342</span> </div>
+<div class="line"><span class="lineno">  343</span>            Real mi = spot;</div>
+<div class="line"><span class="lineno">  344</span>            Real ma = spot;</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>            Real forward = spot;</div>
+<div class="line"><span class="lineno">  347</span>            <span class="keywordflow">for</span> (Size i = 1; i &lt; tmpGrid.size(); ++i) {</div>
+<div class="line"><span class="lineno">  348</span>                forward = <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equitySpot()-&gt;value() * <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equityDividendCurve()-&gt;discount(tmpGrid[i]) /</div>
+<div class="line"><span class="lineno">  349</span>                          <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a95dab803dfa25b383da3506ed8092eac">equity</a>()-&gt;equityForecastCurve()-&gt;discount(tmpGrid[i]) /</div>
+<div class="line"><span class="lineno">  350</span>                          std::pow(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a646c92414b517a2295918d90ac977810">creditCurve</a>()-&gt;survivalProbability(tmpGrid[i]), <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#ace9cc3ca85a0208ec49c3d6792b477b5">eta</a>());</div>
+<div class="line"><span class="lineno">  351</span>                mi = std::min(mi, forward);</div>
+<div class="line"><span class="lineno">  352</span>                ma = std::max(ma, forward);</div>
+<div class="line"><span class="lineno">  353</span>            }</div>
 <div class="line"><span class="lineno">  354</span> </div>
-<div class="line"><span class="lineno">  355</span>            <span class="keywordflow">if</span> (mesherConcentration != Null&lt;Real&gt;()) {</div>
-<div class="line"><span class="lineno">  356</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a> = boost::make_shared&lt;Concentrating1dMesher&gt;(xMin, xMax, stateGridPoints,</div>
-<div class="line"><span class="lineno">  357</span>                                                                    std::make_pair(logSpot, mesherConcentration), <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  358</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  359</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a> = boost::make_shared&lt;Uniform1dMesher&gt;(xMin, xMax, stateGridPoints);</div>
-<div class="line"><span class="lineno">  360</span>            }</div>
-<div class="line"><span class="lineno">  361</span>        }</div>
-<div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>        <span class="comment">// 2.1.2 build operator</span></div>
-<div class="line"><span class="lineno">  364</span> </div>
-<div class="line"><span class="lineno">  365</span>        <span class="keyword">auto</span> fdmOp = boost::make_shared&lt;FdmDefaultableEquityJumpDiffusionFokkerPlanckOp&gt;(</div>
-<div class="line"><span class="lineno">  366</span>            <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back(), boost::make_shared&lt;FdmMesherComposite&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>), shared_from_this());</div>
+<div class="line"><span class="lineno">  355</span>            Real sigmaSqrtT = std::max(1E-4, std::sqrt(volatility-&gt;blackVariance(tmpGrid.back(), forward)));</div>
+<div class="line"><span class="lineno">  356</span>            Real normInvEps = InverseCumulativeNormal()(1.0 - mesherEpsilon);</div>
+<div class="line"><span class="lineno">  357</span>            Real xMin = std::log(mi) - sigmaSqrtT * normInvEps * mesherScaling;</div>
+<div class="line"><span class="lineno">  358</span>            Real xMax = std::log(ma) + sigmaSqrtT * normInvEps * mesherScaling;</div>
+<div class="line"><span class="lineno">  359</span> </div>
+<div class="line"><span class="lineno">  360</span>            <span class="keywordflow">if</span> (mesherConcentration != Null&lt;Real&gt;()) {</div>
+<div class="line"><span class="lineno">  361</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a> = boost::make_shared&lt;Concentrating1dMesher&gt;(xMin, xMax, stateGridPoints,</div>
+<div class="line"><span class="lineno">  362</span>                                                                    std::make_pair(logSpot, mesherConcentration), <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  363</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  364</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a> = boost::make_shared&lt;Uniform1dMesher&gt;(xMin, xMax, stateGridPoints);</div>
+<div class="line"><span class="lineno">  365</span>            }</div>
+<div class="line"><span class="lineno">  366</span>        }</div>
 <div class="line"><span class="lineno">  367</span> </div>
-<div class="line"><span class="lineno">  368</span>        <span class="comment">// 2.1.3 build solver</span></div>
+<div class="line"><span class="lineno">  368</span>        <span class="comment">// 2.1.2 build operator</span></div>
 <div class="line"><span class="lineno">  369</span> </div>
-<div class="line"><span class="lineno">  370</span>        <span class="comment">// TODO which schema / how many damping steps should we take? For the moment we follow the recommendation from</span></div>
-<div class="line"><span class="lineno">  371</span>        <span class="comment">// the Andersen paper and use Crank-Nicholson after a &quot;few&quot; Rannacher steps (i.e. implicit Euler)</span></div>
-<div class="line"><span class="lineno">  372</span>        <span class="comment">// TrBDF2 seems to be a specialised scheme for initial Dirac conditons though. Some research required...</span></div>
-<div class="line"><span class="lineno">  373</span> </div>
-<div class="line"><span class="lineno">  374</span>        <span class="keyword">auto</span> solver = boost::make_shared&lt;FdmBackwardSolver&gt;(</div>
-<div class="line"><span class="lineno">  375</span>            fdmOp, std::vector&lt;boost::shared_ptr&lt;BoundaryCondition&lt;FdmLinearOp&gt;&gt;&gt;(), <span class="keyword">nullptr</span>, FdmSchemeDesc::Douglas());</div>
-<div class="line"><span class="lineno">  376</span> </div>
-<div class="line"><span class="lineno">  377</span>        <span class="keyword">constexpr</span> Size dampingSteps = 5;</div>
+<div class="line"><span class="lineno">  370</span>        <span class="keyword">auto</span> fdmOp = boost::make_shared&lt;FdmDefaultableEquityJumpDiffusionFokkerPlanckOp&gt;(</div>
+<div class="line"><span class="lineno">  371</span>            <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back(), boost::make_shared&lt;FdmMesherComposite&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>), shared_from_this());</div>
+<div class="line"><span class="lineno">  372</span> </div>
+<div class="line"><span class="lineno">  373</span>        <span class="comment">// 2.1.3 build solver</span></div>
+<div class="line"><span class="lineno">  374</span> </div>
+<div class="line"><span class="lineno">  375</span>        <span class="comment">// TODO which schema / how many damping steps should we take? For the moment we follow the recommendation from</span></div>
+<div class="line"><span class="lineno">  376</span>        <span class="comment">// the Andersen paper and use Crank-Nicholson after a &quot;few&quot; Rannacher steps (i.e. implicit Euler)</span></div>
+<div class="line"><span class="lineno">  377</span>        <span class="comment">// TrBDF2 seems to be a specialised scheme for initial Dirac conditons though. Some research required...</span></div>
 <div class="line"><span class="lineno">  378</span> </div>
-<div class="line"><span class="lineno">  379</span>        <span class="comment">// 2.2 boostrap h0 and sigma functions</span></div>
-<div class="line"><span class="lineno">  380</span> </div>
-<div class="line"><span class="lineno">  381</span>        <span class="comment">// 2.2.1 set integration length dy for each grid point (= center of integration interval) and initial condition</span></div>
-<div class="line"><span class="lineno">  382</span> </div>
-<div class="line"><span class="lineno">  383</span>        Array <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(), 0.0), dy(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(), 0.0);</div>
-<div class="line"><span class="lineno">  384</span> </div>
-<div class="line"><span class="lineno">  385</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(); ++i) {</div>
-<div class="line"><span class="lineno">  386</span>            <span class="keywordflow">if</span> (i &gt; 0) {</div>
-<div class="line"><span class="lineno">  387</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dminus(i);</div>
-<div class="line"><span class="lineno">  388</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  389</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dminus(i + 1);</div>
-<div class="line"><span class="lineno">  390</span>            }</div>
-<div class="line"><span class="lineno">  391</span>            <span class="keywordflow">if</span> (i &lt; mesher_-&gt;size() - 1) {</div>
-<div class="line"><span class="lineno">  392</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dplus(i);</div>
+<div class="line"><span class="lineno">  379</span>        <span class="keyword">auto</span> solver = boost::make_shared&lt;FdmBackwardSolver&gt;(</div>
+<div class="line"><span class="lineno">  380</span>            fdmOp, std::vector&lt;boost::shared_ptr&lt;BoundaryCondition&lt;FdmLinearOp&gt;&gt;&gt;(), <span class="keyword">nullptr</span>, FdmSchemeDesc::Douglas());</div>
+<div class="line"><span class="lineno">  381</span> </div>
+<div class="line"><span class="lineno">  382</span>        <span class="keyword">constexpr</span> Size dampingSteps = 5;</div>
+<div class="line"><span class="lineno">  383</span> </div>
+<div class="line"><span class="lineno">  384</span>        <span class="comment">// 2.2 boostrap h0 and sigma functions</span></div>
+<div class="line"><span class="lineno">  385</span> </div>
+<div class="line"><span class="lineno">  386</span>        <span class="comment">// 2.2.1 set integration length dy for each grid point (= center of integration interval) and initial condition</span></div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>        Array <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(), 0.0), dy(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(), 0.0);</div>
+<div class="line"><span class="lineno">  389</span> </div>
+<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(); ++i) {</div>
+<div class="line"><span class="lineno">  391</span>            <span class="keywordflow">if</span> (i &gt; 0) {</div>
+<div class="line"><span class="lineno">  392</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dminus(i);</div>
 <div class="line"><span class="lineno">  393</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  394</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dplus(i - 1);</div>
+<div class="line"><span class="lineno">  394</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dminus(i + 1);</div>
 <div class="line"><span class="lineno">  395</span>            }</div>
-<div class="line"><span class="lineno">  396</span>        }</div>
-<div class="line"><span class="lineno">  397</span> </div>
-<div class="line"><span class="lineno">  398</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(); ++i) {</div>
-<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">if</span> (i &gt; 0) {</div>
-<div class="line"><span class="lineno">  400</span>                <span class="keywordflow">if</span> ((logSpot &gt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i - 1) || <a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(logSpot, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i - 1))) &amp;&amp;</div>
-<div class="line"><span class="lineno">  401</span>                    (logSpot &lt; mesher_-&gt;location(i) &amp;&amp; !<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(logSpot, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i)))) {</div>
-<div class="line"><span class="lineno">  402</span>                    Real alpha = (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i) - logSpot) / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dplus(i - 1);</div>
-<div class="line"><span class="lineno">  403</span>                    <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>[i - 1] = alpha / dy[i - 1];</div>
-<div class="line"><span class="lineno">  404</span>                    <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>[i] = (1 - alpha) / dy[i];</div>
-<div class="line"><span class="lineno">  405</span>                }</div>
-<div class="line"><span class="lineno">  406</span>            }</div>
-<div class="line"><span class="lineno">  407</span>        }</div>
-<div class="line"><span class="lineno">  408</span> </div>
-<div class="line"><span class="lineno">  409</span>        Array guess(2);</div>
-<div class="line"><span class="lineno">  410</span> </div>
-<div class="line"><span class="lineno">  411</span>        <span class="comment">// bookkeeping to maange optimization guesses (see below)</span></div>
-<div class="line"><span class="lineno">  412</span>        <span class="keyword">constexpr</span> Real thresholdSuccessfulOptimization = 1E-5;</div>
-<div class="line"><span class="lineno">  413</span>        Real lastOptimizationError = 0.0;</div>
-<div class="line"><span class="lineno">  414</span>        Array lastValidGuess;</div>
+<div class="line"><span class="lineno">  396</span>            <span class="keywordflow">if</span> (i &lt; mesher_-&gt;size() - 1) {</div>
+<div class="line"><span class="lineno">  397</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dplus(i);</div>
+<div class="line"><span class="lineno">  398</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  399</span>                dy[i] += 0.5 * <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dplus(i - 1);</div>
+<div class="line"><span class="lineno">  400</span>            }</div>
+<div class="line"><span class="lineno">  401</span>        }</div>
+<div class="line"><span class="lineno">  402</span> </div>
+<div class="line"><span class="lineno">  403</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;size(); ++i) {</div>
+<div class="line"><span class="lineno">  404</span>            <span class="keywordflow">if</span> (i &gt; 0) {</div>
+<div class="line"><span class="lineno">  405</span>                <span class="keywordflow">if</span> ((logSpot &gt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i - 1) || <a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(logSpot, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i - 1))) &amp;&amp;</div>
+<div class="line"><span class="lineno">  406</span>                    (logSpot &lt; mesher_-&gt;location(i) &amp;&amp; !<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(logSpot, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i)))) {</div>
+<div class="line"><span class="lineno">  407</span>                    Real alpha = (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;location(i) - logSpot) / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;dplus(i - 1);</div>
+<div class="line"><span class="lineno">  408</span>                    <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>[i - 1] = alpha / dy[i - 1];</div>
+<div class="line"><span class="lineno">  409</span>                    <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>[i] = (1 - alpha) / dy[i];</div>
+<div class="line"><span class="lineno">  410</span>                }</div>
+<div class="line"><span class="lineno">  411</span>            }</div>
+<div class="line"><span class="lineno">  412</span>        }</div>
+<div class="line"><span class="lineno">  413</span> </div>
+<div class="line"><span class="lineno">  414</span>        Array guess(2);</div>
 <div class="line"><span class="lineno">  415</span> </div>
-<div class="line"><span class="lineno">  416</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size(); ++i) {</div>
-<div class="line"><span class="lineno">  417</span> </div>
-<div class="line"><span class="lineno">  418</span>            <span class="comment">// 2.2.2 we roll from timestep i-1 (t=0 for i=0) to i and calibrate (h0, sigma) to the market</span></div>
-<div class="line"><span class="lineno">  419</span> </div>
-<div class="line"><span class="lineno">  420</span>            Real marketDefaultableBond = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
-<div class="line"><span class="lineno">  421</span>                                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
-<div class="line"><span class="lineno">  422</span>            Real forward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
-<div class="line"><span class="lineno">  423</span>                           <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
-<div class="line"><span class="lineno">  424</span>            Real marketEquityOption = blackFormula(Option::Call, forward, forward,</div>
-<div class="line"><span class="lineno">  425</span>                                                   std::sqrt(volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward)),</div>
-<div class="line"><span class="lineno">  426</span>                                                   <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]));</div>
-<div class="line"><span class="lineno">  427</span> </div>
-<div class="line"><span class="lineno">  428</span>            <span class="keyword">struct </span>TargetFunction : <span class="keyword">public</span> QuantLib::CostFunction {</div>
-<div class="line"><span class="lineno">  429</span>                <span class="keyword">static</span> Real hToOpt(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::log(std::max(x, 1E-6)); }</div>
-<div class="line"><span class="lineno">  430</span>                <span class="keyword">static</span> Real sigmaToOpt(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::log(std::max(x, 1E-6)); }</div>
-<div class="line"><span class="lineno">  431</span>                <span class="keyword">static</span> Real hToReal(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::exp(x); }</div>
-<div class="line"><span class="lineno">  432</span>                <span class="keyword">static</span> Real sigmaToReal(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::exp(x); }</div>
-<div class="line"><span class="lineno">  433</span> </div>
-<div class="line"><span class="lineno">  434</span>                <span class="keyword">enum class</span> Mode { h0, sigma, both };</div>
-<div class="line"><span class="lineno">  435</span>                TargetFunction(<span class="keyword">const</span> Mode mode, <span class="keyword">const</span> Real strike, <span class="keyword">const</span> Real marketEquityOption,</div>
-<div class="line"><span class="lineno">  436</span>                               <span class="keyword">const</span> Real marketDefaultableBond, Real&amp; h0, Real&amp; sigma, <span class="keyword">const</span> Array&amp; p,</div>
-<div class="line"><span class="lineno">  437</span>                               <span class="keyword">const</span> std::vector&lt;Real&gt;&amp; locations, <span class="keyword">const</span> Array&amp; dy,</div>
-<div class="line"><span class="lineno">  438</span>                               <span class="keyword">const</span> boost::shared_ptr&lt;FdmBackwardSolver&gt;&amp; solver, <span class="keyword">const</span> Real t_from, <span class="keyword">const</span> Real t_to,</div>
-<div class="line"><span class="lineno">  439</span>                               <span class="keyword">const</span> Size <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, <span class="keyword">const</span> Size dampingSteps)</div>
-<div class="line"><span class="lineno">  440</span>                    : mode_(mode), strike_(strike), marketEquityOption_(marketEquityOption),</div>
-<div class="line"><span class="lineno">  441</span>                      marketDefaultableBond_(marketDefaultableBond), h0_(h0), sigma_(sigma), locations_(locations),</div>
-<div class="line"><span class="lineno">  442</span>                      dy_(dy), p_(p), solver_(solver), t_from_(t_from), t_to_(t_to), steps_(<a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>),</div>
-<div class="line"><span class="lineno">  443</span>                      dampingSteps_(dampingSteps) {}</div>
-<div class="line"><span class="lineno">  444</span> </div>
-<div class="line"><span class="lineno">  445</span>                Array values(<span class="keyword">const</span> Array&amp; x)<span class="keyword"> const override </span>{</div>
-<div class="line"><span class="lineno">  446</span> </div>
-<div class="line"><span class="lineno">  447</span>                    <span class="comment">// 2.2.2.0 set trial values from optimiser for h0 and sigma, we square the values to ensure</span></div>
-<div class="line"><span class="lineno">  448</span>                    <span class="comment">// positivity, this transformation is reverted when setting the guess and reading the solution</span></div>
+<div class="line"><span class="lineno">  416</span>        <span class="comment">// bookkeeping to maange optimization guesses (see below)</span></div>
+<div class="line"><span class="lineno">  417</span>        <span class="keyword">constexpr</span> Real thresholdSuccessfulOptimization = 1E-5;</div>
+<div class="line"><span class="lineno">  418</span>        Real lastOptimizationError = 0.0;</div>
+<div class="line"><span class="lineno">  419</span>        Array lastValidGuess;</div>
+<div class="line"><span class="lineno">  420</span> </div>
+<div class="line"><span class="lineno">  421</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  422</span> </div>
+<div class="line"><span class="lineno">  423</span>            <span class="comment">// 2.2.2 we roll from timestep i-1 (t=0 for i=0) to i and calibrate (h0, sigma) to the market</span></div>
+<div class="line"><span class="lineno">  424</span> </div>
+<div class="line"><span class="lineno">  425</span>            Real marketDefaultableBond = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
+<div class="line"><span class="lineno">  426</span>                                         <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
+<div class="line"><span class="lineno">  427</span>            Real forward = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equitySpot()-&gt;value() / <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) *</div>
+<div class="line"><span class="lineno">  428</span>                           <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityDividendCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]);</div>
+<div class="line"><span class="lineno">  429</span>            Real marketEquityOption = blackFormula(Option::Call, forward, forward,</div>
+<div class="line"><span class="lineno">  430</span>                                                   std::sqrt(volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward)),</div>
+<div class="line"><span class="lineno">  431</span>                                                   <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a1a851b13055cfe0330cd3a8f9ad4ac69">equity_</a>-&gt;equityForecastCurve()-&gt;discount(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]));</div>
+<div class="line"><span class="lineno">  432</span> </div>
+<div class="line"><span class="lineno">  433</span>            <span class="keyword">struct </span>TargetFunction : <span class="keyword">public</span> QuantLib::CostFunction {</div>
+<div class="line"><span class="lineno">  434</span>                <span class="keyword">static</span> Real hToOpt(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::log(std::max(x, 1E-6)); }</div>
+<div class="line"><span class="lineno">  435</span>                <span class="keyword">static</span> Real sigmaToOpt(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::log(std::max(x, 1E-6)); }</div>
+<div class="line"><span class="lineno">  436</span>                <span class="keyword">static</span> Real hToReal(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::exp(x); }</div>
+<div class="line"><span class="lineno">  437</span>                <span class="keyword">static</span> Real sigmaToReal(<span class="keyword">const</span> Real x) { <span class="keywordflow">return</span> std::exp(x); }</div>
+<div class="line"><span class="lineno">  438</span> </div>
+<div class="line"><span class="lineno">  439</span>                <span class="keyword">enum class</span> Mode { h0, sigma, both };</div>
+<div class="line"><span class="lineno">  440</span>                TargetFunction(<span class="keyword">const</span> Mode mode, <span class="keyword">const</span> Real strike, <span class="keyword">const</span> Real marketEquityOption,</div>
+<div class="line"><span class="lineno">  441</span>                               <span class="keyword">const</span> Real marketDefaultableBond, Real&amp; h0, Real&amp; sigma, <span class="keyword">const</span> Array&amp; p,</div>
+<div class="line"><span class="lineno">  442</span>                               <span class="keyword">const</span> std::vector&lt;Real&gt;&amp; locations, <span class="keyword">const</span> Array&amp; dy,</div>
+<div class="line"><span class="lineno">  443</span>                               <span class="keyword">const</span> boost::shared_ptr&lt;FdmBackwardSolver&gt;&amp; solver, <span class="keyword">const</span> Real t_from, <span class="keyword">const</span> Real t_to,</div>
+<div class="line"><span class="lineno">  444</span>                               <span class="keyword">const</span> Size <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, <span class="keyword">const</span> Size dampingSteps)</div>
+<div class="line"><span class="lineno">  445</span>                    : mode_(mode), strike_(strike), marketEquityOption_(marketEquityOption),</div>
+<div class="line"><span class="lineno">  446</span>                      marketDefaultableBond_(marketDefaultableBond), h0_(h0), sigma_(sigma), locations_(locations),</div>
+<div class="line"><span class="lineno">  447</span>                      dy_(dy), p_(p), solver_(solver), t_from_(t_from), t_to_(t_to), steps_(<a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>),</div>
+<div class="line"><span class="lineno">  448</span>                      dampingSteps_(dampingSteps) {}</div>
 <div class="line"><span class="lineno">  449</span> </div>
-<div class="line"><span class="lineno">  450</span>                    <span class="keywordflow">if</span> (mode_ == Mode::h0) {</div>
-<div class="line"><span class="lineno">  451</span>                        h0_ = hToReal(x[0]);</div>
-<div class="line"><span class="lineno">  452</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode_ == Mode::sigma) {</div>
-<div class="line"><span class="lineno">  453</span>                        sigma_ = sigmaToReal(x[0]);</div>
-<div class="line"><span class="lineno">  454</span>                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  455</span>                        h0_ = hToReal(x[0]);</div>
-<div class="line"><span class="lineno">  456</span>                        sigma_ = sigmaToReal(x[1]);</div>
-<div class="line"><span class="lineno">  457</span>                    }</div>
-<div class="line"><span class="lineno">  458</span> </div>
-<div class="line"><span class="lineno">  459</span>                    <span class="comment">// 2.2.2.1 roll density back (in &quot;time to maturity&quot;, not in calendar time, which rolls forward)</span></div>
-<div class="line"><span class="lineno">  460</span> </div>
-<div class="line"><span class="lineno">  461</span>                    Array pTmp = p_;</div>
-<div class="line"><span class="lineno">  462</span>                    solver_-&gt;rollback(pTmp, t_from_, t_to_, steps_, dampingSteps_);</div>
+<div class="line"><span class="lineno">  450</span>                Array values(<span class="keyword">const</span> Array&amp; x)<span class="keyword"> const override </span>{</div>
+<div class="line"><span class="lineno">  451</span> </div>
+<div class="line"><span class="lineno">  452</span>                    <span class="comment">// 2.2.2.0 set trial values from optimiser for h0 and sigma, we square the values to ensure</span></div>
+<div class="line"><span class="lineno">  453</span>                    <span class="comment">// positivity, this transformation is reverted when setting the guess and reading the solution</span></div>
+<div class="line"><span class="lineno">  454</span> </div>
+<div class="line"><span class="lineno">  455</span>                    <span class="keywordflow">if</span> (mode_ == Mode::h0) {</div>
+<div class="line"><span class="lineno">  456</span>                        h0_ = hToReal(x[0]);</div>
+<div class="line"><span class="lineno">  457</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode_ == Mode::sigma) {</div>
+<div class="line"><span class="lineno">  458</span>                        sigma_ = sigmaToReal(x[0]);</div>
+<div class="line"><span class="lineno">  459</span>                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  460</span>                        h0_ = hToReal(x[0]);</div>
+<div class="line"><span class="lineno">  461</span>                        sigma_ = sigmaToReal(x[1]);</div>
+<div class="line"><span class="lineno">  462</span>                    }</div>
 <div class="line"><span class="lineno">  463</span> </div>
-<div class="line"><span class="lineno">  464</span>                    <span class="comment">// 2.2.2.2 compute model defaultable zero bond and equity call option</span></div>
+<div class="line"><span class="lineno">  464</span>                    <span class="comment">// 2.2.2.1 roll density back (in &quot;time to maturity&quot;, not in calendar time, which rolls forward)</span></div>
 <div class="line"><span class="lineno">  465</span> </div>
-<div class="line"><span class="lineno">  466</span>                    Real defaultableBond = 0.0;</div>
-<div class="line"><span class="lineno">  467</span>                    <span class="keywordflow">if</span> (mode_ == Mode::h0 || mode_ == Mode::both) {</div>
-<div class="line"><span class="lineno">  468</span>                        <span class="keywordflow">for</span> (Size i = 0; i &lt; pTmp.size(); ++i) {</div>
-<div class="line"><span class="lineno">  469</span>                            defaultableBond += pTmp[i] * dy_[i];</div>
-<div class="line"><span class="lineno">  470</span>                        }</div>
-<div class="line"><span class="lineno">  471</span>                    }</div>
-<div class="line"><span class="lineno">  472</span> </div>
-<div class="line"><span class="lineno">  473</span>                    Real equityOption = 0.0;</div>
-<div class="line"><span class="lineno">  474</span>                    <span class="keywordflow">if</span> (mode_ == Mode::sigma || mode_ == Mode::both) {</div>
-<div class="line"><span class="lineno">  475</span>                        <span class="keywordtype">bool</span> knockInLocation = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  476</span>                        <span class="keywordflow">for</span> (Size i = 0; i &lt; pTmp.size(); ++i) {</div>
-<div class="line"><span class="lineno">  477</span>                            <span class="keywordflow">if</span> (locations_[i] &gt; std::log(strike_) &amp;&amp; !<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(locations_[i], std::log(strike_))) {</div>
-<div class="line"><span class="lineno">  478</span>                                Real dy = dy_[i];</div>
-<div class="line"><span class="lineno">  479</span>                                <span class="keywordflow">if</span> (knockInLocation) {</div>
-<div class="line"><span class="lineno">  480</span>                                    <span class="comment">// TODO there are more sophisticated corrections (reference in the Andersen paper?)</span></div>
-<div class="line"><span class="lineno">  481</span>                                    dy = (locations_[i] - std::log(strike_));</div>
-<div class="line"><span class="lineno">  482</span>                                    <span class="keywordflow">if</span> (i &lt; pTmp.size())</div>
-<div class="line"><span class="lineno">  483</span>                                        dy += 0.5 * (locations_[i + 1] - locations_[i]);</div>
-<div class="line"><span class="lineno">  484</span>                                    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  485</span>                                        dy += 0.5 * (locations_[i] - locations_[i - 1]);</div>
-<div class="line"><span class="lineno">  486</span>                                    knockInLocation = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  487</span>                                }</div>
-<div class="line"><span class="lineno">  488</span>                                equityOption += pTmp[i] * dy * (std::exp(locations_[i]) - strike_);</div>
-<div class="line"><span class="lineno">  489</span>                            }</div>
-<div class="line"><span class="lineno">  490</span>                        }</div>
-<div class="line"><span class="lineno">  491</span>                    }</div>
-<div class="line"><span class="lineno">  492</span> </div>
-<div class="line"><span class="lineno">  493</span>                    <span class="keywordflow">if</span> (mode_ == Mode::h0) {</div>
-<div class="line"><span class="lineno">  494</span>                        Array result(1);</div>
-<div class="line"><span class="lineno">  495</span>                        result[0] = (defaultableBond - marketDefaultableBond_) / marketDefaultableBond_;</div>
-<div class="line"><span class="lineno">  496</span>                        <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  497</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode_ == Mode::sigma) {</div>
-<div class="line"><span class="lineno">  498</span>                        Array result(1);</div>
-<div class="line"><span class="lineno">  499</span>                        result[0] = (equityOption - marketEquityOption_) / marketEquityOption_;</div>
-<div class="line"><span class="lineno">  500</span>                        <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  501</span>                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  502</span>                        Array result(2);</div>
-<div class="line"><span class="lineno">  503</span>                        result[0] = (defaultableBond - marketDefaultableBond_) / marketDefaultableBond_;</div>
-<div class="line"><span class="lineno">  504</span>                        result[1] = (equityOption - marketEquityOption_) / marketEquityOption_;</div>
+<div class="line"><span class="lineno">  466</span>                    Array pTmp = p_;</div>
+<div class="line"><span class="lineno">  467</span>                    solver_-&gt;rollback(pTmp, t_from_, t_to_, steps_, dampingSteps_);</div>
+<div class="line"><span class="lineno">  468</span> </div>
+<div class="line"><span class="lineno">  469</span>                    <span class="comment">// 2.2.2.2 compute model defaultable zero bond and equity call option</span></div>
+<div class="line"><span class="lineno">  470</span> </div>
+<div class="line"><span class="lineno">  471</span>                    Real defaultableBond = 0.0;</div>
+<div class="line"><span class="lineno">  472</span>                    <span class="keywordflow">if</span> (mode_ == Mode::h0 || mode_ == Mode::both) {</div>
+<div class="line"><span class="lineno">  473</span>                        <span class="keywordflow">for</span> (Size i = 0; i &lt; pTmp.size(); ++i) {</div>
+<div class="line"><span class="lineno">  474</span>                            defaultableBond += pTmp[i] * dy_[i];</div>
+<div class="line"><span class="lineno">  475</span>                        }</div>
+<div class="line"><span class="lineno">  476</span>                    }</div>
+<div class="line"><span class="lineno">  477</span> </div>
+<div class="line"><span class="lineno">  478</span>                    Real equityOption = 0.0;</div>
+<div class="line"><span class="lineno">  479</span>                    <span class="keywordflow">if</span> (mode_ == Mode::sigma || mode_ == Mode::both) {</div>
+<div class="line"><span class="lineno">  480</span>                        <span class="keywordtype">bool</span> knockInLocation = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  481</span>                        <span class="keywordflow">for</span> (Size i = 0; i &lt; pTmp.size(); ++i) {</div>
+<div class="line"><span class="lineno">  482</span>                            <span class="keywordflow">if</span> (locations_[i] &gt; std::log(strike_) &amp;&amp; !<a class="code hl_function" href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(locations_[i], std::log(strike_))) {</div>
+<div class="line"><span class="lineno">  483</span>                                Real dy = dy_[i];</div>
+<div class="line"><span class="lineno">  484</span>                                <span class="keywordflow">if</span> (knockInLocation) {</div>
+<div class="line"><span class="lineno">  485</span>                                    <span class="comment">// TODO there are more sophisticated corrections (reference in the Andersen paper?)</span></div>
+<div class="line"><span class="lineno">  486</span>                                    dy = (locations_[i] - std::log(strike_));</div>
+<div class="line"><span class="lineno">  487</span>                                    <span class="keywordflow">if</span> (i &lt; pTmp.size())</div>
+<div class="line"><span class="lineno">  488</span>                                        dy += 0.5 * (locations_[i + 1] - locations_[i]);</div>
+<div class="line"><span class="lineno">  489</span>                                    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  490</span>                                        dy += 0.5 * (locations_[i] - locations_[i - 1]);</div>
+<div class="line"><span class="lineno">  491</span>                                    knockInLocation = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  492</span>                                }</div>
+<div class="line"><span class="lineno">  493</span>                                equityOption += pTmp[i] * dy * (std::exp(locations_[i]) - strike_);</div>
+<div class="line"><span class="lineno">  494</span>                            }</div>
+<div class="line"><span class="lineno">  495</span>                        }</div>
+<div class="line"><span class="lineno">  496</span>                    }</div>
+<div class="line"><span class="lineno">  497</span> </div>
+<div class="line"><span class="lineno">  498</span>                    <span class="keywordflow">if</span> (mode_ == Mode::h0) {</div>
+<div class="line"><span class="lineno">  499</span>                        Array result(1);</div>
+<div class="line"><span class="lineno">  500</span>                        result[0] = (defaultableBond - marketDefaultableBond_) / marketDefaultableBond_;</div>
+<div class="line"><span class="lineno">  501</span>                        <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  502</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode_ == Mode::sigma) {</div>
+<div class="line"><span class="lineno">  503</span>                        Array result(1);</div>
+<div class="line"><span class="lineno">  504</span>                        result[0] = (equityOption - marketEquityOption_) / marketEquityOption_;</div>
 <div class="line"><span class="lineno">  505</span>                        <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  506</span>                    }</div>
-<div class="line"><span class="lineno">  507</span>                }</div>
-<div class="line"><span class="lineno">  508</span>                <span class="keyword">const</span> Mode mode_;</div>
-<div class="line"><span class="lineno">  509</span>                <span class="keyword">const</span> Real strike_, marketEquityOption_, marketDefaultableBond_;</div>
-<div class="line"><span class="lineno">  510</span>                Real &amp;h0_, &amp;sigma_;</div>
-<div class="line"><span class="lineno">  511</span>                <span class="keyword">const</span> std::vector&lt;Real&gt;&amp; locations_;</div>
-<div class="line"><span class="lineno">  512</span>                <span class="keyword">const</span> Array &amp;dy_, &amp;p_;</div>
-<div class="line"><span class="lineno">  513</span>                <span class="keyword">const</span> boost::shared_ptr&lt;FdmBackwardSolver&gt; solver_;</div>
-<div class="line"><span class="lineno">  514</span>                <span class="keyword">const</span> Real t_from_, t_to_;</div>
-<div class="line"><span class="lineno">  515</span>                <span class="keyword">const</span> Size steps_, dampingSteps_;</div>
-<div class="line"><span class="lineno">  516</span>            };</div>
-<div class="line"><span class="lineno">  517</span> </div>
-<div class="line"><span class="lineno">  518</span>            <span class="comment">/* 2.2.2.3 The first guess (i=0) are parameters computed with p = 0 as above.</span></div>
-<div class="line"><span class="lineno">  519</span><span class="comment">                       A subsequent guess (i&gt;0) is the last solution that resulted in an</span></div>
-<div class="line"><span class="lineno">  520</span><span class="comment">                       error below a given threshold (or the guess for i=0 if that is the</span></div>
-<div class="line"><span class="lineno">  521</span><span class="comment">                       only available guess). */</span></div>
+<div class="line"><span class="lineno">  506</span>                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  507</span>                        Array result(2);</div>
+<div class="line"><span class="lineno">  508</span>                        result[0] = (defaultableBond - marketDefaultableBond_) / marketDefaultableBond_;</div>
+<div class="line"><span class="lineno">  509</span>                        result[1] = (equityOption - marketEquityOption_) / marketEquityOption_;</div>
+<div class="line"><span class="lineno">  510</span>                        <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  511</span>                    }</div>
+<div class="line"><span class="lineno">  512</span>                }</div>
+<div class="line"><span class="lineno">  513</span>                <span class="keyword">const</span> Mode mode_;</div>
+<div class="line"><span class="lineno">  514</span>                <span class="keyword">const</span> Real strike_, marketEquityOption_, marketDefaultableBond_;</div>
+<div class="line"><span class="lineno">  515</span>                Real &amp;h0_, &amp;sigma_;</div>
+<div class="line"><span class="lineno">  516</span>                <span class="keyword">const</span> std::vector&lt;Real&gt;&amp; locations_;</div>
+<div class="line"><span class="lineno">  517</span>                <span class="keyword">const</span> Array &amp;dy_, &amp;p_;</div>
+<div class="line"><span class="lineno">  518</span>                <span class="keyword">const</span> boost::shared_ptr&lt;FdmBackwardSolver&gt; solver_;</div>
+<div class="line"><span class="lineno">  519</span>                <span class="keyword">const</span> Real t_from_, t_to_;</div>
+<div class="line"><span class="lineno">  520</span>                <span class="keyword">const</span> Size steps_, dampingSteps_;</div>
+<div class="line"><span class="lineno">  521</span>            };</div>
 <div class="line"><span class="lineno">  522</span> </div>
-<div class="line"><span class="lineno">  523</span>            <span class="keywordflow">if</span> (i == 0) {</div>
-<div class="line"><span class="lineno">  524</span>                guess[0] = -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) /</div>
-<div class="line"><span class="lineno">  525</span>                                     (i == 0 ? 1.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]))) /</div>
-<div class="line"><span class="lineno">  526</span>                           (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
-<div class="line"><span class="lineno">  527</span>                guess[1] = std::sqrt(volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward) /</div>
-<div class="line"><span class="lineno">  528</span>                                     (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1])));</div>
-<div class="line"><span class="lineno">  529</span>                lastValidGuess = guess;</div>
-<div class="line"><span class="lineno">  530</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  531</span>                <span class="keywordflow">if</span> (lastOptimizationError &lt; thresholdSuccessfulOptimization) {</div>
-<div class="line"><span class="lineno">  532</span>                    guess[0] = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i - 1];</div>
-<div class="line"><span class="lineno">  533</span>                    guess[1] = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i - 1];</div>
-<div class="line"><span class="lineno">  534</span>                    lastValidGuess = guess;</div>
-<div class="line"><span class="lineno">  535</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  536</span>                    guess = lastValidGuess;</div>
-<div class="line"><span class="lineno">  537</span>                }</div>
-<div class="line"><span class="lineno">  538</span>            }</div>
-<div class="line"><span class="lineno">  539</span> </div>
-<div class="line"><span class="lineno">  540</span>            <span class="comment">// 2.2.2.4 transform the guess</span></div>
-<div class="line"><span class="lineno">  541</span> </div>
-<div class="line"><span class="lineno">  542</span>            guess[0] = TargetFunction::hToOpt(guess[0]);</div>
-<div class="line"><span class="lineno">  543</span>            guess[1] = TargetFunction::sigmaToOpt(guess[1]);</div>
+<div class="line"><span class="lineno">  523</span>            <span class="comment">/* 2.2.2.3 The first guess (i=0) are parameters computed with p = 0 as above.</span></div>
+<div class="line"><span class="lineno">  524</span><span class="comment">                       A subsequent guess (i&gt;0) is the last solution that resulted in an</span></div>
+<div class="line"><span class="lineno">  525</span><span class="comment">                       error below a given threshold (or the guess for i=0 if that is the</span></div>
+<div class="line"><span class="lineno">  526</span><span class="comment">                       only available guess). */</span></div>
+<div class="line"><span class="lineno">  527</span> </div>
+<div class="line"><span class="lineno">  528</span>            <span class="keywordflow">if</span> (i == 0) {</div>
+<div class="line"><span class="lineno">  529</span>                guess[0] = -std::log(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i]) /</div>
+<div class="line"><span class="lineno">  530</span>                                     (i == 0 ? 1.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a4c76deaad8929630972693618db18b05">creditCurve_</a>-&gt;survivalProbability(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]))) /</div>
+<div class="line"><span class="lineno">  531</span>                           (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]));</div>
+<div class="line"><span class="lineno">  532</span>                guess[1] = std::sqrt(volatility-&gt;blackVariance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i], forward) /</div>
+<div class="line"><span class="lineno">  533</span>                                     (<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i] - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1])));</div>
+<div class="line"><span class="lineno">  534</span>                lastValidGuess = guess;</div>
+<div class="line"><span class="lineno">  535</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  536</span>                <span class="keywordflow">if</span> (lastOptimizationError &lt; thresholdSuccessfulOptimization) {</div>
+<div class="line"><span class="lineno">  537</span>                    guess[0] = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i - 1];</div>
+<div class="line"><span class="lineno">  538</span>                    guess[1] = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i - 1];</div>
+<div class="line"><span class="lineno">  539</span>                    lastValidGuess = guess;</div>
+<div class="line"><span class="lineno">  540</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  541</span>                    guess = lastValidGuess;</div>
+<div class="line"><span class="lineno">  542</span>                }</div>
+<div class="line"><span class="lineno">  543</span>            }</div>
 <div class="line"><span class="lineno">  544</span> </div>
-<div class="line"><span class="lineno">  545</span>            <span class="comment">// 2.2.2.5 run the optimzation for the current time step and set the model parameters to the found solution</span></div>
+<div class="line"><span class="lineno">  545</span>            <span class="comment">// 2.2.2.4 transform the guess</span></div>
 <div class="line"><span class="lineno">  546</span> </div>
-<div class="line"><span class="lineno">  547</span>            Real t_from = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back() - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]);</div>
-<div class="line"><span class="lineno">  548</span>            Real t_to = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back() - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i];</div>
-<div class="line"><span class="lineno">  549</span>            Size <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a> = <span class="keyword">static_cast&lt;</span>Size<span class="keyword">&gt;</span>(0.5 + (t_from - t_to) * <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(timeStepsPerYear));</div>
-<div class="line"><span class="lineno">  550</span> </div>
-<div class="line"><span class="lineno">  551</span>            NoConstraint noConstraint;</div>
-<div class="line"><span class="lineno">  552</span>            LevenbergMarquardt lm;</div>
-<div class="line"><span class="lineno">  553</span>            EndCriteria endCriteria(100, 10, 1E-8, 1E-8, 1E-8);</div>
-<div class="line"><span class="lineno">  554</span>            <span class="keywordflow">if</span> (bootstrapMode == <a class="code hl_enumvalue" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder.html#aa125f70dd028de45151f4a487a28bb8da61aedca765e46484ba301ef7fd6ca2eb">DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode::Simultaneously</a>) {</div>
-<div class="line"><span class="lineno">  555</span>                <span class="comment">// simultaneous optimization of (h0,sigma)</span></div>
-<div class="line"><span class="lineno">  556</span>                TargetFunction targetFunction(TargetFunction::Mode::both, forward, marketEquityOption,</div>
-<div class="line"><span class="lineno">  557</span>                                              marketDefaultableBond, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i], <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;locations(), dy,</div>
-<div class="line"><span class="lineno">  558</span>                                              solver, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
-<div class="line"><span class="lineno">  559</span>                Problem problem(targetFunction, noConstraint, guess);</div>
-<div class="line"><span class="lineno">  560</span>                lm.minimize(problem, endCriteria);</div>
-<div class="line"><span class="lineno">  561</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] = TargetFunction::hToReal(problem.currentValue()[0]);</div>
-<div class="line"><span class="lineno">  562</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] = TargetFunction::sigmaToReal(problem.currentValue()[1]);</div>
-<div class="line"><span class="lineno">  563</span>                lastOptimizationError = problem.functionValue();</div>
-<div class="line"><span class="lineno">  564</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  565</span>                <span class="comment">// alternating optimization of h0 and sigma</span></div>
-<div class="line"><span class="lineno">  566</span>                TargetFunction target_function_h0(TargetFunction::Mode::h0, forward, marketEquityOption,</div>
-<div class="line"><span class="lineno">  567</span>                                                  marketDefaultableBond, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i], <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;locations(), dy,</div>
-<div class="line"><span class="lineno">  568</span>                                                  solver, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
-<div class="line"><span class="lineno">  569</span>                TargetFunction target_function_sigma(TargetFunction::Mode::sigma, forward, marketEquityOption,</div>
-<div class="line"><span class="lineno">  570</span>                                                     marketDefaultableBond, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i], <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;locations(),</div>
-<div class="line"><span class="lineno">  571</span>                                                     dy, solver, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
-<div class="line"><span class="lineno">  572</span>                Real current0 = guess[0], current1 = guess[1];</div>
-<div class="line"><span class="lineno">  573</span>                Real delta0 = 0.0, delta1 = 0.0;</div>
-<div class="line"><span class="lineno">  574</span>                Real functionValue0 = 0.0, functionValue1 = 0.0;</div>
-<div class="line"><span class="lineno">  575</span>                Size iteration = 0;</div>
-<div class="line"><span class="lineno">  576</span>                <span class="keyword">constexpr</span> Real tol_x = 1E-8;</div>
-<div class="line"><span class="lineno">  577</span>                <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  578</span>                    <span class="comment">// optimize h0</span></div>
-<div class="line"><span class="lineno">  579</span>                    Problem p0(target_function_h0, noConstraint, Array(1, current0));</div>
-<div class="line"><span class="lineno">  580</span>                    lm.minimize(p0, endCriteria);</div>
-<div class="line"><span class="lineno">  581</span>                    <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] = TargetFunction::hToReal(p0.currentValue()[0]);</div>
-<div class="line"><span class="lineno">  582</span>                    delta0 = std::abs(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] - TargetFunction::hToReal(current0));</div>
-<div class="line"><span class="lineno">  583</span>                    current0 = p0.currentValue()[0];</div>
-<div class="line"><span class="lineno">  584</span>                    functionValue0 = p0.functionValue();</div>
-<div class="line"><span class="lineno">  585</span>                    <span class="comment">// optimize sigma</span></div>
-<div class="line"><span class="lineno">  586</span>                    Problem p1(target_function_sigma, noConstraint, Array(1, current1));</div>
-<div class="line"><span class="lineno">  587</span>                    lm.minimize(p1, endCriteria);</div>
-<div class="line"><span class="lineno">  588</span>                    <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] = TargetFunction::sigmaToReal(p1.currentValue()[0]);</div>
-<div class="line"><span class="lineno">  589</span>                    delta1 = std::abs(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] - TargetFunction::sigmaToReal(current1));</div>
-<div class="line"><span class="lineno">  590</span>                    current1 = p1.currentValue()[0];</div>
-<div class="line"><span class="lineno">  591</span>                    functionValue1 = p1.functionValue();</div>
-<div class="line"><span class="lineno">  592</span>                } <span class="keywordflow">while</span> (iteration++ &lt; 50 &amp;&amp; (delta0 &gt; tol_x || delta1 &gt; tol_x));</div>
-<div class="line"><span class="lineno">  593</span>                lastOptimizationError =</div>
-<div class="line"><span class="lineno">  594</span>                    std::sqrt(0.5 * (functionValue0 * functionValue0 + functionValue1 * functionValue1));</div>
-<div class="line"><span class="lineno">  595</span>            }</div>
-<div class="line"><span class="lineno">  596</span> </div>
-<div class="line"><span class="lineno">  597</span>            <span class="comment">// 2.2.2.6 we still have to do the actual roll back with the solution we have found</span></div>
-<div class="line"><span class="lineno">  598</span> </div>
-<div class="line"><span class="lineno">  599</span>            solver-&gt;rollback(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
-<div class="line"><span class="lineno">  600</span> </div>
-<div class="line"><span class="lineno">  601</span>        } <span class="comment">// bootstrap over step times</span></div>
-<div class="line"><span class="lineno">  602</span>    }     <span class="comment">// case p!= 0</span></div>
-<div class="line"><span class="lineno">  603</span>}</div>
+<div class="line"><span class="lineno">  547</span>            guess[0] = TargetFunction::hToOpt(guess[0]);</div>
+<div class="line"><span class="lineno">  548</span>            guess[1] = TargetFunction::sigmaToOpt(guess[1]);</div>
+<div class="line"><span class="lineno">  549</span> </div>
+<div class="line"><span class="lineno">  550</span>            <span class="comment">// 2.2.2.5 run the optimzation for the current time step and set the model parameters to the found solution</span></div>
+<div class="line"><span class="lineno">  551</span> </div>
+<div class="line"><span class="lineno">  552</span>            Real t_from = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back() - (i == 0 ? 0.0 : <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i - 1]);</div>
+<div class="line"><span class="lineno">  553</span>            Real t_to = <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.back() - <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>[i];</div>
+<div class="line"><span class="lineno">  554</span>            Size <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a> = <span class="keyword">static_cast&lt;</span>Size<span class="keyword">&gt;</span>(0.5 + (t_from - t_to) * <span class="keyword">static_cast&lt;</span>Real<span class="keyword">&gt;</span>(timeStepsPerYear));</div>
+<div class="line"><span class="lineno">  555</span> </div>
+<div class="line"><span class="lineno">  556</span>            NoConstraint noConstraint;</div>
+<div class="line"><span class="lineno">  557</span>            LevenbergMarquardt lm;</div>
+<div class="line"><span class="lineno">  558</span>            EndCriteria endCriteria(100, 10, 1E-8, 1E-8, 1E-8);</div>
+<div class="line"><span class="lineno">  559</span>            <span class="keywordflow">if</span> (bootstrapMode == <a class="code hl_enumvalue" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder.html#aa125f70dd028de45151f4a487a28bb8da61aedca765e46484ba301ef7fd6ca2eb">DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode::Simultaneously</a>) {</div>
+<div class="line"><span class="lineno">  560</span>                <span class="comment">// simultaneous optimization of (h0,sigma)</span></div>
+<div class="line"><span class="lineno">  561</span>                TargetFunction targetFunction(TargetFunction::Mode::both, forward, marketEquityOption,</div>
+<div class="line"><span class="lineno">  562</span>                                              marketDefaultableBond, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i], <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;locations(), dy,</div>
+<div class="line"><span class="lineno">  563</span>                                              solver, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
+<div class="line"><span class="lineno">  564</span>                Problem problem(targetFunction, noConstraint, guess);</div>
+<div class="line"><span class="lineno">  565</span>                lm.minimize(problem, endCriteria);</div>
+<div class="line"><span class="lineno">  566</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] = TargetFunction::hToReal(problem.currentValue()[0]);</div>
+<div class="line"><span class="lineno">  567</span>                <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] = TargetFunction::sigmaToReal(problem.currentValue()[1]);</div>
+<div class="line"><span class="lineno">  568</span>                lastOptimizationError = problem.functionValue();</div>
+<div class="line"><span class="lineno">  569</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  570</span>                <span class="comment">// alternating optimization of h0 and sigma</span></div>
+<div class="line"><span class="lineno">  571</span>                TargetFunction target_function_h0(TargetFunction::Mode::h0, forward, marketEquityOption,</div>
+<div class="line"><span class="lineno">  572</span>                                                  marketDefaultableBond, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i], <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;locations(), dy,</div>
+<div class="line"><span class="lineno">  573</span>                                                  solver, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
+<div class="line"><span class="lineno">  574</span>                TargetFunction target_function_sigma(TargetFunction::Mode::sigma, forward, marketEquityOption,</div>
+<div class="line"><span class="lineno">  575</span>                                                     marketDefaultableBond, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i], <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i], <a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">mesher_</a>-&gt;locations(),</div>
+<div class="line"><span class="lineno">  576</span>                                                     dy, solver, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
+<div class="line"><span class="lineno">  577</span>                Real current0 = guess[0], current1 = guess[1];</div>
+<div class="line"><span class="lineno">  578</span>                Real delta0 = 0.0, delta1 = 0.0;</div>
+<div class="line"><span class="lineno">  579</span>                Real functionValue0 = 0.0, functionValue1 = 0.0;</div>
+<div class="line"><span class="lineno">  580</span>                Size iteration = 0;</div>
+<div class="line"><span class="lineno">  581</span>                <span class="keyword">constexpr</span> Real tol_x = 1E-8;</div>
+<div class="line"><span class="lineno">  582</span>                <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  583</span>                    <span class="comment">// optimize h0</span></div>
+<div class="line"><span class="lineno">  584</span>                    Problem p0(target_function_h0, noConstraint, Array(1, current0));</div>
+<div class="line"><span class="lineno">  585</span>                    lm.minimize(p0, endCriteria);</div>
+<div class="line"><span class="lineno">  586</span>                    <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] = TargetFunction::hToReal(p0.currentValue()[0]);</div>
+<div class="line"><span class="lineno">  587</span>                    delta0 = std::abs(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a8b5b901de65b54e22b8bc6fc4c73a1c7">h0_</a>[i] - TargetFunction::hToReal(current0));</div>
+<div class="line"><span class="lineno">  588</span>                    current0 = p0.currentValue()[0];</div>
+<div class="line"><span class="lineno">  589</span>                    functionValue0 = p0.functionValue();</div>
+<div class="line"><span class="lineno">  590</span>                    <span class="comment">// optimize sigma</span></div>
+<div class="line"><span class="lineno">  591</span>                    Problem p1(target_function_sigma, noConstraint, Array(1, current1));</div>
+<div class="line"><span class="lineno">  592</span>                    lm.minimize(p1, endCriteria);</div>
+<div class="line"><span class="lineno">  593</span>                    <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] = TargetFunction::sigmaToReal(p1.currentValue()[0]);</div>
+<div class="line"><span class="lineno">  594</span>                    delta1 = std::abs(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a9be46c4f0ad77a4fdf24d00d477a6fd0">sigma_</a>[i] - TargetFunction::sigmaToReal(current1));</div>
+<div class="line"><span class="lineno">  595</span>                    current1 = p1.currentValue()[0];</div>
+<div class="line"><span class="lineno">  596</span>                    functionValue1 = p1.functionValue();</div>
+<div class="line"><span class="lineno">  597</span>                } <span class="keywordflow">while</span> (iteration++ &lt; 50 &amp;&amp; (delta0 &gt; tol_x || delta1 &gt; tol_x));</div>
+<div class="line"><span class="lineno">  598</span>                lastOptimizationError =</div>
+<div class="line"><span class="lineno">  599</span>                    std::sqrt(0.5 * (functionValue0 * functionValue0 + functionValue1 * functionValue1));</div>
+<div class="line"><span class="lineno">  600</span>            }</div>
+<div class="line"><span class="lineno">  601</span> </div>
+<div class="line"><span class="lineno">  602</span>            <span class="comment">// 2.2.2.6 we still have to do the actual roll back with the solution we have found</span></div>
+<div class="line"><span class="lineno">  603</span> </div>
+<div class="line"><span class="lineno">  604</span>            solver-&gt;rollback(<a class="code hl_function" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#aa1d97c2a437730d7a49ec31452a302f8">p</a>, t_from, t_to, <a class="code hl_variable" href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a>, i == 0 ? dampingSteps : 0);</div>
+<div class="line"><span class="lineno">  605</span> </div>
+<div class="line"><span class="lineno">  606</span>        } <span class="comment">// bootstrap over step times</span></div>
+<div class="line"><span class="lineno">  607</span>    }     <span class="comment">// case p!= 0</span></div>
+<div class="line"><span class="lineno">  608</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder_html_aa125f70dd028de45151f4a487a28bb8da61aedca765e46484ba301ef7fd6ca2eb"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model_builder.html#aa125f70dd028de45151f4a487a28bb8da61aedca765e46484ba301ef7fd6ca2eb">QuantExt::DefaultableEquityJumpDiffusionModelBuilder::BootstrapMode::Simultaneously</a></div><div class="ttdeci">@ Simultaneously</div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_defaultable_equity_jump_diffusion_model_html_adbd9ebefec6ab4dfbcd54c2cb2bbd59e"><div class="ttname"><a href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#adbd9ebefec6ab4dfbcd54c2cb2bbd59e">QuantExt::DefaultableEquityJumpDiffusionModel::mesher_</a></div><div class="ttdeci">boost::shared_ptr&lt; Fdm1dMesher &gt; mesher_</div><div class="ttdef"><b>Definition:</b> <a href="defaultableequityjumpdiffusionmodel_8hpp_source.html#l00177">defaultableequityjumpdiffusionmodel.hpp:177</a></div></div>
 <div class="ttc" id="atest_2commodityschwartzmodel_8cpp_html_a84e1cc7fe4440301cfe72e7c64be988b"><div class="ttname"><a href="test_2commodityschwartzmodel_8cpp.html#a84e1cc7fe4440301cfe72e7c64be988b">steps</a></div><div class="ttdeci">std::vector&lt; Size &gt; steps</div><div class="ttdef"><b>Definition:</b> <a href="test_2commodityschwartzmodel_8cpp_source.html#l00109">commodityschwartzmodel.cpp:109</a></div></div>
@@ -1281,8 +1283,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00158">158</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  158</span>{ notifyObservers(); }</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00161">161</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{ notifyObservers(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1310,13 +1312,13 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00186">186</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  186</span>                                                                         {</div>
-<div class="line"><span class="lineno">  187</span>    Size m = std::distance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.begin(),</div>
-<div class="line"><span class="lineno">  188</span>                           std::lower_bound(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.begin(), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.end(), t,</div>
-<div class="line"><span class="lineno">  189</span>                                            [](Real x, Real y) { return x &lt; y &amp;&amp; !close_enough(x, y); }));</div>
-<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">return</span> std::min(m, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size() - 1);</div>
-<div class="line"><span class="lineno">  191</span>}</div>
+<p class="definition">Definition at line <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html#l00189">189</a> of file <a class="el" href="qle_2models_2defaultableequityjumpdiffusionmodel_8cpp_source.html">defaultableequityjumpdiffusionmodel.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  189</span>                                                                         {</div>
+<div class="line"><span class="lineno">  190</span>    Size m = std::distance(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.begin(),</div>
+<div class="line"><span class="lineno">  191</span>                           std::lower_bound(<a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.begin(), <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.end(), t,</div>
+<div class="line"><span class="lineno">  192</span>                                            [](Real x, Real y) { return x &lt; y &amp;&amp; !close_enough(x, y); }));</div>
+<div class="line"><span class="lineno">  193</span>    <span class="keywordflow">return</span> std::min(m, <a class="code hl_variable" href="class_quant_ext_1_1_defaultable_equity_jump_diffusion_model.html#a03103d3ae7320ca3adb6f1bdcaf3ca78">stepTimes_</a>.size() - 1);</div>
+<div class="line"><span class="lineno">  194</span>}</div>
 </div><!-- fragment --><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -1559,7 +1561,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;Fdm1dMesher&gt; mesher_</td>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_fdm1d_mesher.html">Fdm1dMesher</a>&gt; mesher_</td>
         </tr>
       </table>
   </td>

@@ -143,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a006fd9182e12de96dac1ac45f3357099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f281df3ce97539eee77a324749fb3ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_black_scholes_model_builder.html#a6f281df3ce97539eee77a324749fb3ca">BlackScholesModelBuilder</a> (const Handle&lt; YieldTermStructure &gt; &amp;curve, const boost::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &amp;process, const std::set&lt; Date &gt; &amp;simulationDates, const std::set&lt; Date &gt; &amp;addDates, const Size timeStepsPerYear=0, const std::string &amp;calibration=&quot;ATM&quot;, const std::vector&lt; Real &gt; &amp;calibrationStrikes={})</td></tr>
 <tr class="separator:a6f281df3ce97539eee77a324749fb3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fb0e4e0f13f2dbab46268e3561dbf0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_black_scholes_model_builder.html#a07fb0e4e0f13f2dbab46268e3561dbf0">getCalibratedProcesses</a> () const override</td></tr>
+<tr class="separator:a07fb0e4e0f13f2dbab46268e3561dbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classore_1_1data_1_1_black_scholes_model_builder_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classore_1_1data_1_1_black_scholes_model_builder_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classore_1_1data_1_1_black_scholes_model_builder_base.html">BlackScholesModelBuilderBase</a></td></tr>
 <tr class="memitem:a99df7c9c6004307b427f37a4fd618c76 inherit pub_methods_classore_1_1data_1_1_black_scholes_model_builder_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_black_scholes_model_builder_base.html#a99df7c9c6004307b427f37a4fd618c76">BlackScholesModelBuilderBase</a> (const std::vector&lt; Handle&lt; YieldTermStructure &gt; &gt; &amp;curves, const std::vector&lt; boost::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &gt; &amp;processes, const std::set&lt; Date &gt; &amp;simulationDates, const std::set&lt; Date &gt; &amp;addDates, const Size timeStepsPerYear)</td></tr>
 <tr class="separator:a99df7c9c6004307b427f37a4fd618c76 inherit pub_methods_classore_1_1data_1_1_black_scholes_model_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,8 +166,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a07fb0e4e0f13f2dbab46268e3561dbf0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_black_scholes_model_builder.html#a07fb0e4e0f13f2dbab46268e3561dbf0">getCalibratedProcesses</a> () const override</td></tr>
-<tr class="separator:a07fb0e4e0f13f2dbab46268e3561dbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c32663df50b96290869e7d22b214ecf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Real &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_black_scholes_model_builder.html#a7c32663df50b96290869e7d22b214ecf">getCurveTimes</a> () const override</td></tr>
 <tr class="separator:a7c32663df50b96290869e7d22b214ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d608e59846ab8c0f2e6c970413976d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::pair&lt; Real, Real &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_black_scholes_model_builder.html#a51d608e59846ab8c0f2e6c970413976d">getVolTimesStrikes</a> () const override</td></tr>
@@ -287,8 +287,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   36</span>                                           &lt;&lt; processes.size() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
 <div class="line"><span class="lineno">   37</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_black_scholes_model_builder_base_html_a99df7c9c6004307b427f37a4fd618c76"><div class="ttname"><a href="classore_1_1data_1_1_black_scholes_model_builder_base.html#a99df7c9c6004307b427f37a4fd618c76">ore::data::BlackScholesModelBuilderBase::BlackScholesModelBuilderBase</a></div><div class="ttdeci">BlackScholesModelBuilderBase(const std::vector&lt; Handle&lt; YieldTermStructure &gt; &gt; &amp;curves, const std::vector&lt; boost::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &gt; &amp;processes, const std::set&lt; Date &gt; &amp;simulationDates, const std::set&lt; Date &gt; &amp;addDates, const Size timeStepsPerYear)</div><div class="ttdef"><b>Definition:</b> <a href="blackscholesmodelbuilderbase_8cpp_source.html#l00032">blackscholesmodelbuilderbase.cpp:32</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_black_scholes_model_builder_html_a10191c46a904ee12577ffe6551ddd157"><div class="ttname"><a href="classore_1_1data_1_1_black_scholes_model_builder.html#a10191c46a904ee12577ffe6551ddd157">ore::data::BlackScholesModelBuilder::calibrationStrikes_</a></div><div class="ttdeci">const std::vector&lt; std::vector&lt; Real &gt; &gt; calibrationStrikes_</div><div class="ttdef"><b>Definition:</b> <a href="blackscholesmodelbuilder_8hpp_source.html#l00054">blackscholesmodelbuilder.hpp:54</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_black_scholes_model_builder_html_af46e078a1433cbe2f4f1e6727eda5d6a"><div class="ttname"><a href="classore_1_1data_1_1_black_scholes_model_builder.html#af46e078a1433cbe2f4f1e6727eda5d6a">ore::data::BlackScholesModelBuilder::calibration_</a></div><div class="ttdeci">const std::string calibration_</div><div class="ttdef"><b>Definition:</b> <a href="blackscholesmodelbuilder_8hpp_source.html#l00053">blackscholesmodelbuilder.hpp:53</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_black_scholes_model_builder_html_a10191c46a904ee12577ffe6551ddd157"><div class="ttname"><a href="classore_1_1data_1_1_black_scholes_model_builder.html#a10191c46a904ee12577ffe6551ddd157">ore::data::BlackScholesModelBuilder::calibrationStrikes_</a></div><div class="ttdeci">const std::vector&lt; std::vector&lt; Real &gt; &gt; calibrationStrikes_</div><div class="ttdef"><b>Definition:</b> <a href="blackscholesmodelbuilder_8hpp_source.html#l00055">blackscholesmodelbuilder.hpp:55</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_black_scholes_model_builder_html_af46e078a1433cbe2f4f1e6727eda5d6a"><div class="ttname"><a href="classore_1_1data_1_1_black_scholes_model_builder.html#af46e078a1433cbe2f4f1e6727eda5d6a">ore::data::BlackScholesModelBuilder::calibration_</a></div><div class="ttdeci">const std::string calibration_</div><div class="ttdef"><b>Definition:</b> <a href="blackscholesmodelbuilder_8hpp_source.html#l00054">blackscholesmodelbuilder.hpp:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -373,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -503,7 +503,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="blackscholesmodelbuilder_8hpp_source.html#l00053">53</a> of file <a class="el" href="blackscholesmodelbuilder_8hpp_source.html">blackscholesmodelbuilder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="blackscholesmodelbuilder_8hpp_source.html#l00054">54</a> of file <a class="el" href="blackscholesmodelbuilder_8hpp_source.html">blackscholesmodelbuilder.hpp</a>.</p>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="blackscholesmodelbuilder_8hpp_source.html#l00054">54</a> of file <a class="el" href="blackscholesmodelbuilder_8hpp_source.html">blackscholesmodelbuilder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="blackscholesmodelbuilder_8hpp_source.html#l00055">55</a> of file <a class="el" href="blackscholesmodelbuilder_8hpp_source.html">blackscholesmodelbuilder.hpp</a>.</p>
 
 </div>
 </div>

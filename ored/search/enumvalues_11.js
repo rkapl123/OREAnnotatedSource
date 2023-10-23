@@ -24,13 +24,11 @@ var searchData=
   ['sub_5fsnrlac_21',['SUB_SNRLAC',['../namespaceore_1_1data.html#a394571b03ab00f6a369c6af734ef7a8fa39b4199dba9a1078a937a95dabbfb8d4',1,'ore::data']]],
   ['sublt2_22',['SUBLT2',['../namespaceore_1_1data.html#a46d1d73080a5b02d118f5775eabfa7d6a7ca3c2b0ecaf729cec593cbca9726840',1,'ore::data']]],
   ['sum_23',['Sum',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664caa0ec87054b5e5b7847d0d8780a01a3d5',1,'ore::data::CompositeTrade']]],
-  ['surface_24',['Surface',['../classore_1_1data_1_1_cap_floor_volatility_curve_config.html#a1d1cfd8ffb84e947f82999c682b666a7aaa0d528ba11ea1485d466dfe1ea40819',1,'ore::data::CapFloorVolatilityCurveConfig']]],
-  ['surfacewithatm_25',['SurfaceWithAtm',['../classore_1_1data_1_1_cap_floor_volatility_curve_config.html#a1d1cfd8ffb84e947f82999c682b666a7ad498d3626d3216369bde133a2edd367e',1,'ore::data::CapFloorVolatilityCurveConfig']]],
-  ['svensson_26',['Svensson',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284ae725428f4934ef5e28e9b4e46e908511',1,'ore::data::YieldCurve']]],
-  ['swap_27',['Swap',['../classore_1_1data_1_1_yield_curve_segment.html#a1d1cfd8ffb84e947f82999c682b666a7a8778f5cc5ee1685fb97ad92e33e63225',1,'ore::data::YieldCurveSegment::Swap()'],['../classore_1_1data_1_1_convention.html#a1d1cfd8ffb84e947f82999c682b666a7a8778f5cc5ee1685fb97ad92e33e63225',1,'ore::data::Convention::Swap()']]],
-  ['swapindex_28',['SwapIndex',['../classore_1_1data_1_1_convention.html#a1d1cfd8ffb84e947f82999c682b666a7aa9f27fb9df212aa8c6d259beddf44ff4',1,'ore::data::Convention']]],
-  ['swapindexcurve_29',['SwapIndexCurve',['../namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da4d2bb2bfdfd87ed9312b4165d3675034',1,'ore::data']]],
-  ['swaption_30',['SWAPTION',['../classore_1_1data_1_1_market_datum.html#a78a53e954df1d387bae9b3680287ec69abc1b5510cfcadf007f5dcc8a1e74911a',1,'ore::data::MarketDatum']]],
-  ['swaptionvol_31',['SwaptionVol',['../namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66daed925d1ecda19a1ba8a425eae0daa221',1,'ore::data']]],
-  ['swaptionvolatility_32',['SwaptionVolatility',['../classore_1_1data_1_1_curve_spec.html#a007dea27057008224e9da69eaeca8606a093e4fe6b3d4a9ec87bc625fc3cd57c4',1,'ore::data::CurveSpec']]]
+  ['svensson_24',['Svensson',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284ae725428f4934ef5e28e9b4e46e908511',1,'ore::data::YieldCurve']]],
+  ['swap_25',['Swap',['../classore_1_1data_1_1_yield_curve_segment.html#a1d1cfd8ffb84e947f82999c682b666a7a8778f5cc5ee1685fb97ad92e33e63225',1,'ore::data::YieldCurveSegment::Swap()'],['../classore_1_1data_1_1_convention.html#a1d1cfd8ffb84e947f82999c682b666a7a8778f5cc5ee1685fb97ad92e33e63225',1,'ore::data::Convention::Swap()']]],
+  ['swapindex_26',['SwapIndex',['../classore_1_1data_1_1_convention.html#a1d1cfd8ffb84e947f82999c682b666a7aa9f27fb9df212aa8c6d259beddf44ff4',1,'ore::data::Convention']]],
+  ['swapindexcurve_27',['SwapIndexCurve',['../namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66da4d2bb2bfdfd87ed9312b4165d3675034',1,'ore::data']]],
+  ['swaption_28',['SWAPTION',['../classore_1_1data_1_1_market_datum.html#a78a53e954df1d387bae9b3680287ec69abc1b5510cfcadf007f5dcc8a1e74911a',1,'ore::data::MarketDatum']]],
+  ['swaptionvol_29',['SwaptionVol',['../namespaceore_1_1data.html#a64fa7957018b15e7967bb30da5ddd66daed925d1ecda19a1ba8a425eae0daa221',1,'ore::data']]],
+  ['swaptionvolatility_30',['SwaptionVolatility',['../classore_1_1data_1_1_curve_spec.html#a007dea27057008224e9da69eaeca8606a093e4fe6b3d4a9ec87bc625fc3cd57c4',1,'ore::data::CurveSpec']]]
 ];

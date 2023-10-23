@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class to hold averaging information when <code>isAveraging_</code> is <code>true</code>. It is generally needed in the <a class="el" href="classore_1_1data_1_1_commodity_future_convention.html">CommodityFutureConvention</a> when referenced in piecewise price curve construction. </p>
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01371">1371</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01375">1375</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a7c0ff757192223a5b502ffda1cc5ecac" name="a7c0ff757192223a5b502ffda1cc5ecac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c0ff757192223a5b502ffda1cc5ecac">&#9670;&#160;</a></span>CalculationPeriod</h2>
@@ -228,8 +228,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4" name="a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4"></a>ExpiryToExpiry&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01374">1374</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1374</span>{ <a class="code hl_enumvalue" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca13bb522c1c626ac85bfd8e587777d9b5">PreviousMonth</a>, <a class="code hl_enumvalue" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4">ExpiryToExpiry</a> };</div>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01378">1378</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1378</span>{ <a class="code hl_enumvalue" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca13bb522c1c626ac85bfd8e587777d9b5">PreviousMonth</a>, <a class="code hl_enumvalue" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4">ExpiryToExpiry</a> };</div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a7c0ff757192223a5b502ffda1cc5ecaca13bb522c1c626ac85bfd8e587777d9b5"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca13bb522c1c626ac85bfd8e587777d9b5">ore::data::CommodityFutureConvention::AveragingData::CalculationPeriod::PreviousMonth</a></div><div class="ttdeci">@ PreviousMonth</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4">ore::data::CommodityFutureConvention::AveragingData::CalculationPeriod::ExpiryToExpiry</a></div><div class="ttdeci">@ ExpiryToExpiry</div></div>
 </div><!-- fragment -->
@@ -253,14 +253,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Default constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01420">1420</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1421</span>    : <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a>(<span class="keyword">true</span>), <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a>(0), <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a>(0),</div>
-<div class="line"><span class="lineno"> 1422</span>      <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a>(Null&lt;Natural&gt;()), <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">period_</a>(<a class="code hl_enumvalue" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4">CalculationPeriod::ExpiryToExpiry</a>) {}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a2e7d948d4b5e288b5ea298d6a8ac4be1"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">ore::data::CommodityFutureConvention::AveragingData::period_</a></div><div class="ttdeci">CalculationPeriod period_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01418">conventions.hpp:1418</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a714a2e51a8833c6bbbc0f9db99f56172"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">ore::data::CommodityFutureConvention::AveragingData::futureMonthOffset_</a></div><div class="ttdeci">QuantLib::Natural futureMonthOffset_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01415">conventions.hpp:1415</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a8cb8461f47c6826a4860e880affe1e91"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">ore::data::CommodityFutureConvention::AveragingData::dailyExpiryOffset_</a></div><div class="ttdeci">QuantLib::Natural dailyExpiryOffset_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01416">conventions.hpp:1416</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_aadc0745299b8d60dcaa1a9f5adb3256f"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">ore::data::CommodityFutureConvention::AveragingData::useBusinessDays_</a></div><div class="ttdeci">bool useBusinessDays_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01412">conventions.hpp:1412</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_ae0d5ae6e6668bb1d4f903822c8dd8df5"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">ore::data::CommodityFutureConvention::AveragingData::deliveryRollDays_</a></div><div class="ttdeci">QuantLib::Natural deliveryRollDays_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01414">conventions.hpp:1414</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01451">1451</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1452</span>    : <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a>(<span class="keyword">true</span>), <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a>(0), <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a>(0),</div>
+<div class="line"><span class="lineno"> 1453</span>      <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a>(Null&lt;Natural&gt;()), <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">period_</a>(<a class="code hl_enumvalue" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7c0ff757192223a5b502ffda1cc5ecaca479d7ac02dd980a512243b5a0a97e3e4">CalculationPeriod::ExpiryToExpiry</a>) {}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a2e7d948d4b5e288b5ea298d6a8ac4be1"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">ore::data::CommodityFutureConvention::AveragingData::period_</a></div><div class="ttdeci">CalculationPeriod period_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01422">conventions.hpp:1422</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a714a2e51a8833c6bbbc0f9db99f56172"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">ore::data::CommodityFutureConvention::AveragingData::futureMonthOffset_</a></div><div class="ttdeci">QuantLib::Natural futureMonthOffset_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01419">conventions.hpp:1419</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a8cb8461f47c6826a4860e880affe1e91"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">ore::data::CommodityFutureConvention::AveragingData::dailyExpiryOffset_</a></div><div class="ttdeci">QuantLib::Natural dailyExpiryOffset_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01420">conventions.hpp:1420</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_aadc0745299b8d60dcaa1a9f5adb3256f"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">ore::data::CommodityFutureConvention::AveragingData::useBusinessDays_</a></div><div class="ttdeci">bool useBusinessDays_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01416">conventions.hpp:1416</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_ae0d5ae6e6668bb1d4f903822c8dd8df5"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">ore::data::CommodityFutureConvention::AveragingData::deliveryRollDays_</a></div><div class="ttdeci">QuantLib::Natural deliveryRollDays_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01418">conventions.hpp:1418</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -346,11 +346,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01434">1434</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1434</span>                                                                          {</div>
-<div class="line"><span class="lineno"> 1435</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a>;</div>
-<div class="line"><span class="lineno"> 1436</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_afb32142dbc6a623391121bf581445505"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">ore::data::CommodityFutureConvention::AveragingData::commodityName_</a></div><div class="ttdeci">std::string commodityName_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01409">conventions.hpp:1409</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01465">1465</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1465</span>                                                                          {</div>
+<div class="line"><span class="lineno"> 1466</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a>;</div>
+<div class="line"><span class="lineno"> 1467</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_afb32142dbc6a623391121bf581445505"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">ore::data::CommodityFutureConvention::AveragingData::commodityName_</a></div><div class="ttdeci">std::string commodityName_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01413">conventions.hpp:1413</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -369,10 +369,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01438">1438</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1438</span>                                                                                                             {</div>
-<div class="line"><span class="lineno"> 1439</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">period_</a>;</div>
-<div class="line"><span class="lineno"> 1440</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01469">1469</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1469</span>                                                                                                             {</div>
+<div class="line"><span class="lineno"> 1470</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">period_</a>;</div>
+<div class="line"><span class="lineno"> 1471</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -391,11 +391,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01442">1442</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1442</span>                                                                              {</div>
-<div class="line"><span class="lineno"> 1443</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a10a859911db7ab12990afc3e5e331d97">pricingCalendar_</a>;</div>
-<div class="line"><span class="lineno"> 1444</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a10a859911db7ab12990afc3e5e331d97"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a10a859911db7ab12990afc3e5e331d97">ore::data::CommodityFutureConvention::AveragingData::pricingCalendar_</a></div><div class="ttdeci">QuantLib::Calendar pricingCalendar_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01419">conventions.hpp:1419</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01473">1473</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1473</span>                                                                              {</div>
+<div class="line"><span class="lineno"> 1474</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a10a859911db7ab12990afc3e5e331d97">pricingCalendar_</a>;</div>
+<div class="line"><span class="lineno"> 1475</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a10a859911db7ab12990afc3e5e331d97"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a10a859911db7ab12990afc3e5e331d97">ore::data::CommodityFutureConvention::AveragingData::pricingCalendar_</a></div><div class="ttdeci">QuantLib::Calendar pricingCalendar_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01423">conventions.hpp:1423</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -414,10 +414,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01446">1446</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1446</span>                                                                   {</div>
-<div class="line"><span class="lineno"> 1447</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a>;</div>
-<div class="line"><span class="lineno"> 1448</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01477">1477</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1477</span>                                                                   {</div>
+<div class="line"><span class="lineno"> 1478</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a>;</div>
+<div class="line"><span class="lineno"> 1479</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -436,11 +436,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01450">1450</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1450</span>                                                                          {</div>
-<div class="line"><span class="lineno"> 1451</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a>;</div>
-<div class="line"><span class="lineno"> 1452</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_aeef58bac9295c4bbc0abf9d362f87c61"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">ore::data::CommodityFutureConvention::AveragingData::conventionsId_</a></div><div class="ttdeci">std::string conventionsId_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01413">conventions.hpp:1413</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01481">1481</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1481</span>                                                                          {</div>
+<div class="line"><span class="lineno"> 1482</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a>;</div>
+<div class="line"><span class="lineno"> 1483</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_aeef58bac9295c4bbc0abf9d362f87c61"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">ore::data::CommodityFutureConvention::AveragingData::conventionsId_</a></div><div class="ttdeci">std::string conventionsId_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01417">conventions.hpp:1417</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -459,10 +459,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01454">1454</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1454</span>                                                                       {</div>
-<div class="line"><span class="lineno"> 1455</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a>;</div>
-<div class="line"><span class="lineno"> 1456</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01485">1485</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1485</span>                                                                       {</div>
+<div class="line"><span class="lineno"> 1486</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a>;</div>
+<div class="line"><span class="lineno"> 1487</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -481,10 +481,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01458">1458</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1458</span>                                                                        {</div>
-<div class="line"><span class="lineno"> 1459</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a>;</div>
-<div class="line"><span class="lineno"> 1460</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01489">1489</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1489</span>                                                                        {</div>
+<div class="line"><span class="lineno"> 1490</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a>;</div>
+<div class="line"><span class="lineno"> 1491</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -503,10 +503,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01462">1462</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1462</span>                                                                        {</div>
-<div class="line"><span class="lineno"> 1463</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a>;</div>
-<div class="line"><span class="lineno"> 1464</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01493">1493</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1493</span>                                                                        {</div>
+<div class="line"><span class="lineno"> 1494</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a>;</div>
+<div class="line"><span class="lineno"> 1495</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -527,10 +527,10 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns <code>true</code> if the data has not been populated. </p>
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01466">1466</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1466</span>                                                         {</div>
-<div class="line"><span class="lineno"> 1467</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a>.empty();</div>
-<div class="line"><span class="lineno"> 1468</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01497">1497</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1497</span>                                                         {</div>
+<div class="line"><span class="lineno"> 1498</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a>.empty();</div>
+<div class="line"><span class="lineno"> 1499</span>}</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -573,39 +573,39 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1data_1_1_x_m_l_serializable.html#a52f896048a4e04b36fcfc8fa3de6a9b4">XMLSerializable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01470">1470</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1470</span>                                                                  {</div>
-<div class="line"><span class="lineno"> 1471</span> </div>
-<div class="line"><span class="lineno"> 1472</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a37c092916f4bdf10d4fbf6bb9e474db7">XMLUtils::checkNode</a>(node, <span class="stringliteral">&quot;AveragingData&quot;</span>);</div>
-<div class="line"><span class="lineno"> 1473</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;CommodityName&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno"> 1474</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">strPeriod_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;Period&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno"> 1475</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">strPricingCalendar_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;PricingCalendar&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno"> 1476</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno"> 1477</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;UseBusinessDays&quot;</span>)) {</div>
-<div class="line"><span class="lineno"> 1478</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a> = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
-<div class="line"><span class="lineno"> 1479</span>    }</div>
-<div class="line"><span class="lineno"> 1480</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;Conventions&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno"> 1481</span> </div>
-<div class="line"><span class="lineno"> 1482</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a> = 0;</div>
-<div class="line"><span class="lineno"> 1483</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;DeliveryRollDays&quot;</span>)) {</div>
-<div class="line"><span class="lineno"> 1484</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a> = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
-<div class="line"><span class="lineno"> 1485</span>    }</div>
-<div class="line"><span class="lineno"> 1486</span> </div>
-<div class="line"><span class="lineno"> 1487</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a> = 0;</div>
-<div class="line"><span class="lineno"> 1488</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;FutureMonthOffset&quot;</span>)) {</div>
-<div class="line"><span class="lineno"> 1489</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a> = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
-<div class="line"><span class="lineno"> 1490</span>    }</div>
-<div class="line"><span class="lineno"> 1491</span> </div>
-<div class="line"><span class="lineno"> 1492</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a> = Null&lt;Natural&gt;();</div>
-<div class="line"><span class="lineno"> 1493</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;DailyExpiryOffset&quot;</span>)) {</div>
-<div class="line"><span class="lineno"> 1494</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a> = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
-<div class="line"><span class="lineno"> 1495</span>    }</div>
-<div class="line"><span class="lineno"> 1496</span> </div>
-<div class="line"><span class="lineno"> 1497</span>    <a class="code hl_function" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7740c7ab195c03ac140f1f75f633470f">build</a>();</div>
-<div class="line"><span class="lineno"> 1498</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a7740c7ab195c03ac140f1f75f633470f"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7740c7ab195c03ac140f1f75f633470f">ore::data::CommodityFutureConvention::AveragingData::build</a></div><div class="ttdeci">void build()</div><div class="ttdoc">Populate members.</div><div class="ttdef"><b>Definition:</b> <a href="ored_2configuration_2conventions_8cpp_source.html#l01519">conventions.cpp:1519</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_aebeffc8de820b17383a3c6e4e574ef5d"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">ore::data::CommodityFutureConvention::AveragingData::strPeriod_</a></div><div class="ttdeci">std::string strPeriod_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01410">conventions.hpp:1410</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_afe330a4f939e6c28ade918cc157e21a5"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">ore::data::CommodityFutureConvention::AveragingData::strPricingCalendar_</a></div><div class="ttdeci">std::string strPricingCalendar_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01411">conventions.hpp:1411</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01501">1501</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1501</span>                                                                  {</div>
+<div class="line"><span class="lineno"> 1502</span> </div>
+<div class="line"><span class="lineno"> 1503</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a37c092916f4bdf10d4fbf6bb9e474db7">XMLUtils::checkNode</a>(node, <span class="stringliteral">&quot;AveragingData&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1504</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;CommodityName&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno"> 1505</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">strPeriod_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;Period&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno"> 1506</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">strPricingCalendar_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;PricingCalendar&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno"> 1507</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno"> 1508</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;UseBusinessDays&quot;</span>)) {</div>
+<div class="line"><span class="lineno"> 1509</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a> = <a class="code hl_function" href="group__utilities.html#ga94621f11193864fa1338296232dc5be9">parseBool</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
+<div class="line"><span class="lineno"> 1510</span>    }</div>
+<div class="line"><span class="lineno"> 1511</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a> = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">XMLUtils::getChildValue</a>(node, <span class="stringliteral">&quot;Conventions&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno"> 1512</span> </div>
+<div class="line"><span class="lineno"> 1513</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a> = 0;</div>
+<div class="line"><span class="lineno"> 1514</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;DeliveryRollDays&quot;</span>)) {</div>
+<div class="line"><span class="lineno"> 1515</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a> = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
+<div class="line"><span class="lineno"> 1516</span>    }</div>
+<div class="line"><span class="lineno"> 1517</span> </div>
+<div class="line"><span class="lineno"> 1518</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a> = 0;</div>
+<div class="line"><span class="lineno"> 1519</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;FutureMonthOffset&quot;</span>)) {</div>
+<div class="line"><span class="lineno"> 1520</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a> = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
+<div class="line"><span class="lineno"> 1521</span>    }</div>
+<div class="line"><span class="lineno"> 1522</span> </div>
+<div class="line"><span class="lineno"> 1523</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a> = Null&lt;Natural&gt;();</div>
+<div class="line"><span class="lineno"> 1524</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* n = <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">XMLUtils::getChildNode</a>(node, <span class="stringliteral">&quot;DailyExpiryOffset&quot;</span>)) {</div>
+<div class="line"><span class="lineno"> 1525</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a> = <a class="code hl_function" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721">parseInteger</a>(<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2">XMLUtils::getNodeValue</a>(n));</div>
+<div class="line"><span class="lineno"> 1526</span>    }</div>
+<div class="line"><span class="lineno"> 1527</span> </div>
+<div class="line"><span class="lineno"> 1528</span>    <a class="code hl_function" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7740c7ab195c03ac140f1f75f633470f">build</a>();</div>
+<div class="line"><span class="lineno"> 1529</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_a7740c7ab195c03ac140f1f75f633470f"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a7740c7ab195c03ac140f1f75f633470f">ore::data::CommodityFutureConvention::AveragingData::build</a></div><div class="ttdeci">void build()</div><div class="ttdoc">Populate members.</div><div class="ttdef"><b>Definition:</b> <a href="ored_2configuration_2conventions_8cpp_source.html#l01550">conventions.cpp:1550</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_aebeffc8de820b17383a3c6e4e574ef5d"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">ore::data::CommodityFutureConvention::AveragingData::strPeriod_</a></div><div class="ttdeci">std::string strPeriod_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01414">conventions.hpp:1414</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_commodity_future_convention_1_1_averaging_data_html_afe330a4f939e6c28ade918cc157e21a5"><div class="ttname"><a href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">ore::data::CommodityFutureConvention::AveragingData::strPricingCalendar_</a></div><div class="ttdeci">std::string strPricingCalendar_</div><div class="ttdef"><b>Definition:</b> <a href="conventions_8hpp_source.html#l01415">conventions.hpp:1415</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_x_m_l_utils_html_a37c092916f4bdf10d4fbf6bb9e474db7"><div class="ttname"><a href="classore_1_1data_1_1_x_m_l_utils.html#a37c092916f4bdf10d4fbf6bb9e474db7">ore::data::XMLUtils::checkNode</a></div><div class="ttdeci">static void checkNode(XMLNode *n, const string &amp;expectedName)</div><div class="ttdef"><b>Definition:</b> <a href="xmlutils_8cpp_source.html#l00198">xmlutils.cpp:198</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_x_m_l_utils_html_a5a1307174ddefdb3aad6e3bd8cc63b27"><div class="ttname"><a href="classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27">ore::data::XMLUtils::getChildValue</a></div><div class="ttdeci">static string getChildValue(XMLNode *node, const string &amp;name, bool mandatory=false, const string &amp;defaultValue=string())</div><div class="ttdef"><b>Definition:</b> <a href="xmlutils_8cpp_source.html#l00300">xmlutils.cpp:300</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_x_m_l_utils_html_a5f2b91a4af900e85c356cfe807e64501"><div class="ttname"><a href="classore_1_1data_1_1_x_m_l_utils.html#a5f2b91a4af900e85c356cfe807e64501">ore::data::XMLUtils::getChildNode</a></div><div class="ttdeci">static XMLNode * getChildNode(XMLNode *n, const string &amp;name=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="xmlutils_8cpp_source.html#l00410">xmlutils.cpp:410</a></div></div>
@@ -677,25 +677,25 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1data_1_1_x_m_l_serializable.html#af6192d57cfa5228b24eb460b70f23a66">XMLSerializable</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01500">1500</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1500</span>                                                                       {</div>
-<div class="line"><span class="lineno"> 1501</span> </div>
-<div class="line"><span class="lineno"> 1502</span>    <a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* node = doc.allocNode(<span class="stringliteral">&quot;AveragingData&quot;</span>);</div>
-<div class="line"><span class="lineno"> 1503</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;CommodityName&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a>);</div>
-<div class="line"><span class="lineno"> 1504</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;Period&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">strPeriod_</a>);</div>
-<div class="line"><span class="lineno"> 1505</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;PricingCalendar&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">strPricingCalendar_</a>);</div>
-<div class="line"><span class="lineno"> 1506</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;UseBusinessDays&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a>);</div>
-<div class="line"><span class="lineno"> 1507</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a>.empty())</div>
-<div class="line"><span class="lineno"> 1508</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;Conventions&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a>);</div>
-<div class="line"><span class="lineno"> 1509</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a> != 0)</div>
-<div class="line"><span class="lineno"> 1510</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;DeliveryRollDays&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a>));</div>
-<div class="line"><span class="lineno"> 1511</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a> != 0)</div>
-<div class="line"><span class="lineno"> 1512</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;FutureMonthOffset&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a>));</div>
-<div class="line"><span class="lineno"> 1513</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a> != Null&lt;Natural&gt;())</div>
-<div class="line"><span class="lineno"> 1514</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;DailyExpiryOffset&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a>));</div>
-<div class="line"><span class="lineno"> 1515</span> </div>
-<div class="line"><span class="lineno"> 1516</span>    <span class="keywordflow">return</span> node;</div>
-<div class="line"><span class="lineno"> 1517</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01531">1531</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1531</span>                                                                       {</div>
+<div class="line"><span class="lineno"> 1532</span> </div>
+<div class="line"><span class="lineno"> 1533</span>    <a class="code hl_typedef" href="namespaceore_1_1data.html#a4b4036725991f63ad046dc34fc38546c">XMLNode</a>* node = doc.allocNode(<span class="stringliteral">&quot;AveragingData&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1534</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;CommodityName&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afb32142dbc6a623391121bf581445505">commodityName_</a>);</div>
+<div class="line"><span class="lineno"> 1535</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;Period&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">strPeriod_</a>);</div>
+<div class="line"><span class="lineno"> 1536</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;PricingCalendar&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">strPricingCalendar_</a>);</div>
+<div class="line"><span class="lineno"> 1537</span>    <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;UseBusinessDays&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aadc0745299b8d60dcaa1a9f5adb3256f">useBusinessDays_</a>);</div>
+<div class="line"><span class="lineno"> 1538</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a>.empty())</div>
+<div class="line"><span class="lineno"> 1539</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;Conventions&quot;</span>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aeef58bac9295c4bbc0abf9d362f87c61">conventionsId_</a>);</div>
+<div class="line"><span class="lineno"> 1540</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a> != 0)</div>
+<div class="line"><span class="lineno"> 1541</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;DeliveryRollDays&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#ae0d5ae6e6668bb1d4f903822c8dd8df5">deliveryRollDays_</a>));</div>
+<div class="line"><span class="lineno"> 1542</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a> != 0)</div>
+<div class="line"><span class="lineno"> 1543</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;FutureMonthOffset&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a714a2e51a8833c6bbbc0f9db99f56172">futureMonthOffset_</a>));</div>
+<div class="line"><span class="lineno"> 1544</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a> != Null&lt;Natural&gt;())</div>
+<div class="line"><span class="lineno"> 1545</span>        <a class="code hl_function" href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">XMLUtils::addChild</a>(doc, node, <span class="stringliteral">&quot;DailyExpiryOffset&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a8cb8461f47c6826a4860e880affe1e91">dailyExpiryOffset_</a>));</div>
+<div class="line"><span class="lineno"> 1546</span> </div>
+<div class="line"><span class="lineno"> 1547</span>    <span class="keywordflow">return</span> node;</div>
+<div class="line"><span class="lineno"> 1548</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_x_m_l_utils_html_aced1fd4bd35df3642d8022301744b138"><div class="ttname"><a href="classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138">ore::data::XMLUtils::addChild</a></div><div class="ttdeci">static XMLNode * addChild(XMLDocument &amp;doc, XMLNode *n, const string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="xmlutils_8cpp_source.html#l00204">xmlutils.cpp:204</a></div></div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -749,13 +749,13 @@ Public Member Functions</h2></td></tr>
 
 <p>Populate members. </p>
 
-<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01519">1519</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1519</span>                                                   {</div>
-<div class="line"><span class="lineno"> 1520</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">period_</a> = <a class="code hl_function" href="namespaceore_1_1data.html#a2da043e113346f30447578831fb3139e">parseAveragingDataPeriod</a>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">strPeriod_</a>);</div>
-<div class="line"><span class="lineno"> 1521</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a10a859911db7ab12990afc3e5e331d97">pricingCalendar_</a> = <a class="code hl_function" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">parseCalendar</a>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">strPricingCalendar_</a>);</div>
-<div class="line"><span class="lineno"> 1522</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ored_2configuration_2conventions_8cpp_source.html#l01550">1550</a> of file <a class="el" href="ored_2configuration_2conventions_8cpp_source.html">conventions.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1550</span>                                                   {</div>
+<div class="line"><span class="lineno"> 1551</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a2e7d948d4b5e288b5ea298d6a8ac4be1">period_</a> = <a class="code hl_function" href="namespaceore_1_1data.html#a2da043e113346f30447578831fb3139e">parseAveragingDataPeriod</a>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#aebeffc8de820b17383a3c6e4e574ef5d">strPeriod_</a>);</div>
+<div class="line"><span class="lineno"> 1552</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#a10a859911db7ab12990afc3e5e331d97">pricingCalendar_</a> = <a class="code hl_function" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">parseCalendar</a>(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_future_convention_1_1_averaging_data.html#afe330a4f939e6c28ade918cc157e21a5">strPricingCalendar_</a>);</div>
+<div class="line"><span class="lineno"> 1553</span>}</div>
 <div class="ttc" id="agroup__utilities_html_ga0f72d6fcccae10a674bdcd5095200f14"><div class="ttname"><a href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">ore::data::parseCalendar</a></div><div class="ttdeci">Calendar parseCalendar(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Calendar.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00152">parsers.cpp:152</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a2da043e113346f30447578831fb3139e"><div class="ttname"><a href="namespaceore_1_1data.html#a2da043e113346f30447578831fb3139e">ore::data::parseAveragingDataPeriod</a></div><div class="ttdeci">ADCP parseAveragingDataPeriod(const string &amp;s)</div><div class="ttdoc">Convert text to CommodityFutureConvention::AveragingData::CalculationPeriod.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l01078">parsers.cpp:1078</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a2da043e113346f30447578831fb3139e"><div class="ttname"><a href="namespaceore_1_1data.html#a2da043e113346f30447578831fb3139e">ore::data::parseAveragingDataPeriod</a></div><div class="ttdeci">ADCP parseAveragingDataPeriod(const string &amp;s)</div><div class="ttdoc">Convert text to CommodityFutureConvention::AveragingData::CalculationPeriod.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l01108">parsers.cpp:1108</a></div></div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -792,7 +792,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01409">1409</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01413">1413</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -816,7 +816,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01410">1410</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01414">1414</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -840,7 +840,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01411">1411</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01415">1415</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -864,7 +864,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01412">1412</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01416">1416</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -888,7 +888,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01413">1413</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01417">1417</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -912,7 +912,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01414">1414</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01418">1418</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -936,7 +936,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01415">1415</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01419">1419</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -960,7 +960,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01416">1416</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01420">1420</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -984,7 +984,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01418">1418</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01422">1422</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1008,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01419">1419</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="conventions_8hpp_source.html#l01423">1423</a> of file <a class="el" href="conventions_8hpp_source.html">conventions.hpp</a>.</p>
 
 </div>
 </div>

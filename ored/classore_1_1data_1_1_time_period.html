@@ -105,8 +105,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3423fc6515d18a70aa0a6dcc293bd6f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_time_period.html#a3423fc6515d18a70aa0a6dcc293bd6f2">TimePeriod</a> (const std::vector&lt; Date &gt; &amp;dates)</td></tr>
-<tr class="separator:a3423fc6515d18a70aa0a6dcc293bd6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cfc12b3351878d5cb3d11095ba4a2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_time_period.html#a43cfc12b3351878d5cb3d11095ba4a2b">TimePeriod</a> (const std::vector&lt; Date &gt; &amp;dates, Size mporDays=QuantLib::Null&lt; Size &gt;(), const QuantLib::Calendar &amp;<a class="el" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>=QuantLib::Calendar())</td></tr>
+<tr class="separator:a43cfc12b3351878d5cb3d11095ba4a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa8ce26694a96d5c3e2707963971891"><td class="memItemLeft" align="right" valign="top">Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_time_period.html#afaa8ce26694a96d5c3e2707963971891">numberOfContiguousParts</a> () const</td></tr>
 <tr class="separator:afaa8ce26694a96d5c3e2707963971891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac942b6a197f6becffb2a8e13c51ac310"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; Date &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_time_period.html#ac942b6a197f6becffb2a8e13c51ac310">startDates</a> () const</td></tr>
@@ -126,10 +126,10 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Handles non-contiguous time period. </p>
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00040">40</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00041">41</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3423fc6515d18a70aa0a6dcc293bd6f2" name="a3423fc6515d18a70aa0a6dcc293bd6f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3423fc6515d18a70aa0a6dcc293bd6f2">&#9670;&#160;</a></span>TimePeriod()</h2>
+<a id="a43cfc12b3351878d5cb3d11095ba4a2b" name="a43cfc12b3351878d5cb3d11095ba4a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43cfc12b3351878d5cb3d11095ba4a2b">&#9670;&#160;</a></span>TimePeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,24 +138,45 @@ Private Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="classore_1_1data_1_1_time_period.html">TimePeriod</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; Date &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dates</em></td><td>)</td>
+          <td class="paramname"><em>dates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Size&#160;</td>
+          <td class="paramname"><em>mporDays</em> = <code>QuantLib::Null&lt;Size&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QuantLib::Calendar &amp;&#160;</td>
+          <td class="paramname"><em>calendar</em> = <code>QuantLib::Calendar()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00060">60</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>                                                          {</div>
-<div class="line"><span class="lineno">   61</span>    QL_REQUIRE(dates.size() % 2 == 0, <span class="stringliteral">&quot;TimePeriod: dates size must be an even number, got &quot;</span> &lt;&lt; dates.size());</div>
-<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; dates.size(); ++i) {</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (i % 2 == 0)</div>
-<div class="line"><span class="lineno">   64</span>            <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>.push_back(dates[i]);</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   66</span>            <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">endDates_</a>.push_back(dates[i]);</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-<div class="line"><span class="lineno">   68</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_time_period_html_a7cf90fa80461dd43b4e5abc1a47b6dbf"><div class="ttname"><a href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">ore::data::TimePeriod::startDates_</a></div><div class="ttdeci">std::vector&lt; Date &gt; startDates_</div><div class="ttdef"><b>Definition:</b> <a href="timeperiod_8hpp_source.html#l00053">timeperiod.hpp:53</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_time_period_html_aa608dfc197a98920e72e37d04f551aad"><div class="ttname"><a href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">ore::data::TimePeriod::endDates_</a></div><div class="ttdeci">std::vector&lt; Date &gt; endDates_</div><div class="ttdef"><b>Definition:</b> <a href="timeperiod_8hpp_source.html#l00053">timeperiod.hpp:53</a></div></div>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8cpp_source.html#l00024">24</a> of file <a class="el" href="timeperiod_8cpp_source.html">timeperiod.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                                                                                    {</div>
+<div class="line"><span class="lineno">   25</span>    QL_REQUIRE(dates.size() % 2 == 0, <span class="stringliteral">&quot;TimePeriod: dates size must be an even number, got &quot;</span> &lt;&lt; dates.size());</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; dates.size(); ++i) {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">if</span> (i % 2 == 0) {</div>
+<div class="line"><span class="lineno">   28</span>            Date sDate = dates[i];</div>
+<div class="line"><span class="lineno">   29</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.empty() &amp;&amp; mporDays != QuantLib::Null&lt;Size&gt;())</div>
+<div class="line"><span class="lineno">   30</span>                sDate = <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>.advance(sDate, -mporDays * QuantLib::Days);</div>
+<div class="line"><span class="lineno">   31</span>            <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>.push_back(sDate);</div>
+<div class="line"><span class="lineno">   32</span>        }</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   34</span>            <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">endDates_</a>.push_back(dates[i]);</div>
+<div class="line"><span class="lineno">   35</span>    }</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_time_period_html_a7cf90fa80461dd43b4e5abc1a47b6dbf"><div class="ttname"><a href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">ore::data::TimePeriod::startDates_</a></div><div class="ttdeci">std::vector&lt; Date &gt; startDates_</div><div class="ttdef"><b>Definition:</b> <a href="timeperiod_8hpp_source.html#l00057">timeperiod.hpp:57</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_time_period_html_aa608dfc197a98920e72e37d04f551aad"><div class="ttname"><a href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">ore::data::TimePeriod::endDates_</a></div><div class="ttdeci">std::vector&lt; Date &gt; endDates_</div><div class="ttdef"><b>Definition:</b> <a href="timeperiod_8hpp_source.html#l00057">timeperiod.hpp:57</a></div></div>
+<div class="ttc" id="amodel_2utilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="model_2utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,8 +196,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00047">47</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>.size(); }</div>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00051">51</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>.size(); }</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -206,8 +227,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00048">48</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00052">52</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -237,8 +258,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00049">49</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">endDates_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00053">53</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">endDates_</a>; }</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -269,14 +290,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00070">70</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                                                    {</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>.size(); ++i) {</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span> (d &gt;= <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>[i] &amp;&amp; d &lt;= <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">endDates_</a>[i])</div>
-<div class="line"><span class="lineno">   73</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   74</span>    }</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   76</span>}</div>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8cpp_source.html#l00038">38</a> of file <a class="el" href="timeperiod_8cpp_source.html">timeperiod.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                             {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (d &gt;= <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#a7cf90fa80461dd43b4e5abc1a47b6dbf">startDates_</a>[i] &amp;&amp; d &lt;= <a class="code hl_variable" href="classore_1_1data_1_1_time_period.html#aa608dfc197a98920e72e37d04f551aad">endDates_</a>[i])</div>
+<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   44</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -301,7 +322,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00053">53</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00057">57</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
 
 </div>
 </div>
@@ -325,7 +346,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00053">53</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timeperiod_8hpp_source.html#l00057">57</a> of file <a class="el" href="timeperiod_8hpp_source.html">timeperiod.hpp</a>.</p>
 
 </div>
 </div>

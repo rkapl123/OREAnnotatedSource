@@ -195,10 +195,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   37</span>              Category::Error, Group::Analytics, exceptionWhat,</div>
 <div class="line"><span class="lineno">   38</span>              std::map&lt;std::string, std::string&gt;({{<span class="stringliteral">&quot;exceptionType&quot;</span>, exceptionType}, {<span class="stringliteral">&quot;analyticType&quot;</span>, analyticType}})) {</div>
 <div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (!subFields.empty())</div>
-<div class="line"><span class="lineno">   41</span>            <a class="code hl_variableRef" href="../ored/classore_1_1data_1_1_structured_message.html#a0814a8f24597ac25d752cc65e63e1784">subFields_</a>.insert(subFields.begin(), subFields.end());</div>
-<div class="line"><span class="lineno">   42</span>    }</div>
-<div class="ttc" id="aclassore_1_1data_1_1_structured_message_html_a0814a8f24597ac25d752cc65e63e1784"><div class="ttname"><a href="../ored/classore_1_1data_1_1_structured_message.html#a0814a8f24597ac25d752cc65e63e1784">ore::data::StructuredMessage::subFields_</a></div><div class="ttdeci">std::map&lt; string, string &gt; subFields_</div></div>
+<div class="line"><span class="lineno">   40</span>        addSubFields(subFields);</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
 <div class="ttc" id="aclassore_1_1data_1_1_structured_message_html_a5793dabe95124e90f1b9408a5837d38a"><div class="ttname"><a href="../ored/classore_1_1data_1_1_structured_message.html#a5793dabe95124e90f1b9408a5837d38a">ore::data::StructuredMessage::StructuredMessage</a></div><div class="ttdeci">StructuredMessage(const Category &amp;category, const Group &amp;group, const string &amp;message, const std::map&lt; string, string &gt; &amp;subFields=std::map&lt; string, string &gt;())</div></div>
 </div><!-- fragment -->
 </div>

@@ -1,18 +1,20 @@
 <map id="loadFromStream" name="loadFromStream">
-<area shape="rect" id="node1" title="Core CRIF loader from generic istream." alt="" coords="5,395,124,420"/>
-<area shape="rect" id="node2" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$namespaceore_1_1data.html#a30e976f566a2a562e6b5a9d0c6f34ff0" title=" " alt="" coords="172,345,300,371"/>
-<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_crif_loader.html#aef9ffe51ad3a6c20492ed58b072e07d6" title=" " alt="" coords="202,395,270,420"/>
-<area shape="rect" id="node16" href="$classore_1_1analytics_1_1_crif_loader.html#aeddc2738885c272e76988c0d2d201449" title="Process the elements of a header line of a CRIF file." alt="" coords="181,444,291,469"/>
-<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_crif_loader.html#a791239170310b8198fd9c9b949eada3b" title="Add a single CRIF record." alt="" coords="421,255,464,280"/>
+<area shape="rect" id="node1" title="Core CRIF loader from generic istream." alt="" coords="5,491,124,516"/>
+<area shape="rect" id="node2" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$namespaceore_1_1data.html#a30e976f566a2a562e6b5a9d0c6f34ff0" title=" " alt="" coords="172,441,300,467"/>
+<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_crif_loader.html#aef9ffe51ad3a6c20492ed58b072e07d6" title=" " alt="" coords="202,491,270,516"/>
+<area shape="rect" id="node18" href="$classore_1_1analytics_1_1_crif_loader.html#aeddc2738885c272e76988c0d2d201449" title="Process the elements of a header line of a CRIF file." alt="" coords="181,540,291,565"/>
+<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_crif_loader.html#a791239170310b8198fd9c9b949eada3b" title="Add a single CRIF record." alt="" coords="421,319,464,344"/>
 <area shape="rect" id="node6" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#gae6725a0931b419ec545f9abb0b6ede76" title=" " alt="" coords="618,5,727,31"/>
-<area shape="rect" id="node11" href="$namespaceore_1_1analytics.html#add08f2897926c73ba4b8dcf55feebdd9" title=" " alt="" coords="585,375,760,415"/>
-<area shape="rect" id="node12" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="637,440,709,465"/>
-<area shape="rect" id="node13" href="$namespaceore_1_1analytics.html#a4fda781eeba364d9dcbf980736d4a07f" title=" " alt="" coords="348,445,537,471"/>
-<area shape="rect" id="node14" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title=" " alt="" coords="403,495,483,520"/>
-<area shape="rect" id="node15" href="$namespaceore_1_1analytics.html#ae3e45cdcfded9ac05833b2101c3cf1f3" title=" " alt="" coords="355,545,530,585"/>
-<area shape="rect" id="node5" href="$structore_1_1analytics_1_1_crif_record.html#a775c89b449aad5b65cef27c4ae014492" title=" " alt="" coords="589,311,757,351"/>
-<area shape="rect" id="node7" href="$structore_1_1analytics_1_1_crif_record.html#a5bb520e16d3d5631dbf3ba33986b15e7" title=" " alt="" coords="589,55,757,95"/>
-<area shape="rect" id="node8" href="$structore_1_1analytics_1_1_crif_record.html#a2014d6737c363789a01e7a05d9acfe3e" title=" " alt="" coords="589,119,757,159"/>
-<area shape="rect" id="node9" href="$structore_1_1analytics_1_1_crif_record.html#ab2992493966a6434cfacf416e5a1bd3b" title=" " alt="" coords="589,183,757,223"/>
-<area shape="rect" id="node10" href="$structore_1_1analytics_1_1_crif_record.html#ab402e2cf695460498ad220674bf5ef8f" title=" " alt="" coords="589,247,757,287"/>
+<area shape="rect" id="node13" href="$namespaceore_1_1analytics.html#add08f2897926c73ba4b8dcf55feebdd9" title=" " alt="" coords="585,503,760,543"/>
+<area shape="rect" id="node14" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="637,568,709,593"/>
+<area shape="rect" id="node15" href="$namespaceore_1_1analytics.html#a4fda781eeba364d9dcbf980736d4a07f" title=" " alt="" coords="348,541,537,567"/>
+<area shape="rect" id="node16" href="C:/dev/ORE/documentation/OREData/doc/ored.tag$group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title=" " alt="" coords="403,591,483,616"/>
+<area shape="rect" id="node17" href="$namespaceore_1_1analytics.html#ae3e45cdcfded9ac05833b2101c3cf1f3" title=" " alt="" coords="355,641,530,681"/>
+<area shape="rect" id="node5" href="$structore_1_1analytics_1_1_crif_record.html#a775c89b449aad5b65cef27c4ae014492" title=" " alt="" coords="589,183,757,223"/>
+<area shape="rect" id="node7" href="$structore_1_1analytics_1_1_crif_record.html#a5bb520e16d3d5631dbf3ba33986b15e7" title=" " alt="" coords="589,247,757,287"/>
+<area shape="rect" id="node8" href="$structore_1_1analytics_1_1_crif_record.html#a2014d6737c363789a01e7a05d9acfe3e" title=" " alt="" coords="589,311,757,351"/>
+<area shape="rect" id="node9" href="$structore_1_1analytics_1_1_crif_record.html#aff39b5ff2ca60d42f45031609b1c70ad" title=" " alt="" coords="589,375,757,415"/>
+<area shape="rect" id="node10" href="$structore_1_1analytics_1_1_crif_record.html#ab2992493966a6434cfacf416e5a1bd3b" title=" " alt="" coords="589,439,757,479"/>
+<area shape="rect" id="node11" href="$structore_1_1analytics_1_1_crif_record.html#aff4f62c8f81e353a2d4fd71d150df251" title=" " alt="" coords="589,55,757,95"/>
+<area shape="rect" id="node12" href="$structore_1_1analytics_1_1_crif_record.html#ab402e2cf695460498ad220674bf5ef8f" title=" " alt="" coords="589,119,757,159"/>
 </map>

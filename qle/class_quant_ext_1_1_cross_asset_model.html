@@ -695,7 +695,7 @@ Protected Attributes</h2></td></tr>
 <div class="ttc" id="aclass_quant_ext_1_1_cross_asset_model_html_af758b724c5565d95ae9f9d27544dcb79"><div class="ttname"><a href="class_quant_ext_1_1_cross_asset_model.html#af758b724c5565d95ae9f9d27544dcb79">QuantExt::CrossAssetModel::rho_</a></div><div class="ttdeci">Matrix rho_</div><div class="ttdef"><b>Definition:</b> <a href="crossassetmodel_8hpp_source.html#l00488">crossassetmodel.hpp:488</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_cross_asset_model_html_afa2639b7c076d06e8eab23636a9a8808"><div class="ttname"><a href="class_quant_ext_1_1_cross_asset_model.html#afa2639b7c076d06e8eab23636a9a8808">QuantExt::CrossAssetModel::measure</a></div><div class="ttdeci">IrModel::Measure measure() const</div><div class="ttdef"><b>Definition:</b> <a href="crossassetmodel_8hpp_source.html#l00120">crossassetmodel.hpp:120</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_cross_asset_model_html_afbf0f46b8f40ef18f0c561ccdae0759a"><div class="ttname"><a href="class_quant_ext_1_1_cross_asset_model.html#afbf0f46b8f40ef18f0c561ccdae0759a">QuantExt::CrossAssetModel::parametrizations</a></div><div class="ttdeci">const std::vector&lt; boost::shared_ptr&lt; Parametrization &gt; &gt; &amp; parametrizations() const</div><div class="ttdef"><b>Definition:</b> <a href="crossassetmodel_8hpp_source.html#l00143">crossassetmodel.hpp:143</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_linkable_calibrated_model_html_aa73814f311721dd64bf3b697555dd7fb"><div class="ttname"><a href="class_quant_ext_1_1_linkable_calibrated_model.html#aa73814f311721dd64bf3b697555dd7fb">QuantExt::LinkableCalibratedModel::LinkableCalibratedModel</a></div><div class="ttdeci">LinkableCalibratedModel()</div><div class="ttdef"><b>Definition:</b> <a href="linkablecalibratedmodel_8cpp_source.html#l00033">linkablecalibratedmodel.cpp:33</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_linkable_calibrated_model_html_aa73814f311721dd64bf3b697555dd7fb"><div class="ttname"><a href="class_quant_ext_1_1_linkable_calibrated_model.html#aa73814f311721dd64bf3b697555dd7fb">QuantExt::LinkableCalibratedModel::LinkableCalibratedModel</a></div><div class="ttdeci">LinkableCalibratedModel()</div><div class="ttdef"><b>Definition:</b> <a href="linkablecalibratedmodel_8cpp_source.html#l00030">linkablecalibratedmodel.cpp:30</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -1733,7 +1733,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  160</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="class_quant_ext_1_1_cross_asset_model.html#abefd91b2b59521119dc7e014b83f1cdc">p_</a>.size(); ++i) {</div>
 <div class="line"><span class="lineno">  161</span>        <a class="code hl_variable" href="class_quant_ext_1_1_cross_asset_model.html#abefd91b2b59521119dc7e014b83f1cdc">p_</a>[i]-&gt;update();</div>
 <div class="line"><span class="lineno">  162</span>    }</div>
-<div class="line"><span class="lineno">  163</span>    <a class="code hl_variable" href="class_quant_ext_1_1_cross_asset_model.html#a2fb4732ff8f172daefa92530dd987cbf">stateProcess_</a>-&gt;flushCache();</div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_variable" href="class_quant_ext_1_1_cross_asset_model.html#a2fb4732ff8f172daefa92530dd987cbf">stateProcess_</a>-&gt;resetCache(0); <span class="comment">// disable cache</span></div>
 <div class="line"><span class="lineno">  164</span>    notifyObservers();</div>
 <div class="line"><span class="lineno">  165</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_cross_asset_model_html_a6ce0770451b33abeddd60e9339e1ac69"><div class="ttname"><a href="class_quant_ext_1_1_cross_asset_model.html#a6ce0770451b33abeddd60e9339e1ac69">QuantExt::CrossAssetModel::cache_crlgm1fS_</a></div><div class="ttdeci">boost::unordered_map&lt; cache_key, std::pair&lt; Real, Real &gt;, cache_hasher &gt; cache_crlgm1fS_</div><div class="ttdef"><b>Definition:</b> <a href="crossassetmodel_8hpp_source.html#l00469">crossassetmodel.hpp:469</a></div></div>
@@ -3607,7 +3607,7 @@ Protected Attributes</h2></td></tr>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_model.html#a97308b35e29f2ac0a0d3a4847f526f6d" title=" " alt="" coords="120,1848,172,1873"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_model.html#a87762733ae79cecec3406d2c9e72a34e" title=" " alt="" coords="5,1848,72,1873"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#a87310f19dd4b50e51361e3c3c40408f7" title=" " alt="" coords="220,1898,445,1938"/>
-<area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#a7f945fb19b815be3131090962af0e5bb" title=" " alt="" coords="241,1962,425,2002"/>
+<area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#ad7bf0e85d16b1262877d3d79cbea1c71" title=" " alt="" coords="241,1962,425,2002"/>
 </map>
 </div>
 
@@ -3657,7 +3657,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  682</span>        }</div>
 <div class="line"><span class="lineno">  683</span>    }</div>
 <div class="line"><span class="lineno">  684</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00496">randomvariable.cpp:496</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00817">randomvariable.cpp:817</a></div></div>
 </div><!-- fragment --><div id="dynsection-66" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-66-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-66-summary" class="dynsummary" style="display:block;">
@@ -4260,7 +4260,7 @@ Protected Attributes</h2></td></tr>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#a87310f19dd4b50e51361e3c3c40408f7" title=" " alt="" coords="5,5,231,45"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#a2a303b4f2c4fdee6946d27c74c2ee2f7" title=" " alt="" coords="288,33,472,73"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#ab4770bb366fdb843add3187583a79904" title=" " alt="" coords="279,97,481,137"/>
-<area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#a7f945fb19b815be3131090962af0e5bb" title=" " alt="" coords="26,97,210,137"/>
+<area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#ad7bf0e85d16b1262877d3d79cbea1c71" title=" " alt="" coords="26,97,210,137"/>
 </map>
 </div>
 
@@ -4294,7 +4294,7 @@ Protected Attributes</h2></td></tr>
 <area shape="rect" title=" " alt="" coords="529,42,660,67"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#a87310f19dd4b50e51361e3c3c40408f7" title=" " alt="" coords="5,5,231,45"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#ab4770bb366fdb843add3187583a79904" title=" " alt="" coords="279,63,481,103"/>
-<area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#a7f945fb19b815be3131090962af0e5bb" title=" " alt="" coords="26,69,210,109"/>
+<area shape="rect" href="class_quant_ext_1_1_cross_asset_state_process.html#ad7bf0e85d16b1262877d3d79cbea1c71" title=" " alt="" coords="26,69,210,109"/>
 </map>
 </div>
 

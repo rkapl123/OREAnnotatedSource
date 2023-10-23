@@ -81,7 +81,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classore_1_1data_1_1_barrier_option_wrapper-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">BarrierOptionWrapper Class Reference</div></div>
+  <div class="headertitle"><div class="title">BarrierOptionWrapper Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -96,9 +96,9 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_barrier_option_wrapper__inherit__graph.png" border="0" usemap="#a_barrier_option_wrapper_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_barrier_option_wrapper_inherit__map" id="a_barrier_option_wrapper_inherit__map">
-<area shape="rect" title="Barrier Option Wrapper." alt="" coords="141,959,312,1145"/>
-<area shape="rect" href="classore_1_1data_1_1_double_barrier_option_wrapper.html" title=" " alt="" coords="5,1193,216,1307"/>
-<area shape="rect" href="classore_1_1data_1_1_single_barrier_option_wrapper.html" title=" " alt="" coords="241,1201,447,1299"/>
+<area shape="rect" title="Barrier Option Wrapper." alt="" coords="141,959,312,1160"/>
+<area shape="rect" href="classore_1_1data_1_1_double_barrier_option_wrapper.html" title=" " alt="" coords="5,1208,216,1321"/>
+<area shape="rect" href="classore_1_1data_1_1_single_barrier_option_wrapper.html" title=" " alt="" coords="241,1215,447,1314"/>
 <area shape="rect" href="classore_1_1data_1_1_option_wrapper.html" title="Option Wrapper." alt="" coords="129,460,324,911"/>
 <area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html" title="Instrument Wrapper." alt="" coords="131,5,323,412"/>
 </map>
@@ -110,7 +110,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_barrier_option_wrapper__coll__graph.png" border="0" usemap="#a_barrier_option_wrapper_coll__map" alt="Collaboration graph"/></div>
 <map name="a_barrier_option_wrapper_coll__map" id="a_barrier_option_wrapper_coll__map">
-<area shape="rect" title="Barrier Option Wrapper." alt="" coords="660,1149,833,1233"/>
+<area shape="rect" title="Barrier Option Wrapper." alt="" coords="660,1149,833,1248"/>
 <area shape="rect" href="classore_1_1data_1_1_option_wrapper.html" title="Option Wrapper." alt="" coords="308,783,503,1087"/>
 <area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html" title="Instrument Wrapper." alt="" coords="740,357,932,676"/>
 <area shape="rect" title=" " alt="" coords="1241,108,1391,163"/>
@@ -136,13 +136,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2e209418f0066c63184d244a139cc3a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_barrier_option_wrapper.html#a2e209418f0066c63184d244a139cc3a7">BarrierOptionWrapper</a> (const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;inst, const <a class="el" href="classbool.html">bool</a> isLongOption, const QuantLib::Date &amp;<a class="el" href="classore_1_1data_1_1_option_wrapper.html#a06074e969d1719c291712897422bb1a1">exerciseDate</a>, const <a class="el" href="classbool.html">bool</a> <a class="el" href="classore_1_1data_1_1_option_wrapper.html#ae22c84e2b368832b3a9de99620bb5f77">isPhysicalDelivery</a>, const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;undInst, Barrier::Type barrierType, Handle&lt; Quote &gt; spot, Real rebate, const QuantLib::Currency ccy, const QuantLib::Date &amp;startDate, const boost::shared_ptr&lt; QuantLib::Index &gt; &amp;index, const QuantLib::Calendar &amp;<a class="el" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>, const Real <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#aa3f9db40df58be6a2eaea5a9c01c7e76">multiplier</a>=1.0, const Real undMultiplier=1.0, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a>=std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt;(), const std::vector&lt; Real &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a>=std::vector&lt; Real &gt;())</td></tr>
+<tr class="memitem:a2e209418f0066c63184d244a139cc3a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_barrier_option_wrapper.html#a2e209418f0066c63184d244a139cc3a7">BarrierOptionWrapper</a> (const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;inst, const <a class="el" href="classbool.html">bool</a> isLongOption, const QuantLib::Date &amp;<a class="el" href="classore_1_1data_1_1_option_wrapper.html#a06074e969d1719c291712897422bb1a1">exerciseDate</a>, const <a class="el" href="classbool.html">bool</a> <a class="el" href="classore_1_1data_1_1_option_wrapper.html#ae22c84e2b368832b3a9de99620bb5f77">isPhysicalDelivery</a>, const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;undInst, Barrier::Type barrierType, Handle&lt; Quote &gt; spot, Real rebate, const QuantLib::Currency ccy, const QuantLib::Date &amp;startDate, const boost::shared_ptr&lt; QuantLib::Index &gt; &amp;index, const QuantLib::Calendar &amp;<a class="el" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>, const Real <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a0ed26ee94207e0a16ad9a4f237b5b592">multiplier</a>=1.0, const Real undMultiplier=1.0, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a>=std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt;(), const std::vector&lt; Real &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a>=std::vector&lt; Real &gt;())</td></tr>
 <tr class="separator:a2e209418f0066c63184d244a139cc3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a85982f3000c391b5e8d3813f2f5f52"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, boost::any &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_barrier_option_wrapper.html#a4a85982f3000c391b5e8d3813f2f5f52">additionalResults</a> () const override</td></tr>
 <tr class="memdesc:a4a85982f3000c391b5e8d3813f2f5f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the additional results of this instrument.  <a href="classore_1_1data_1_1_barrier_option_wrapper.html#a4a85982f3000c391b5e8d3813f2f5f52">More...</a><br /></td></tr>
 <tr class="separator:a4a85982f3000c391b5e8d3813f2f5f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f2d87b2cc9c21ade816ec5860b00ab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_barrier_option_wrapper.html#ab2f2d87b2cc9c21ade816ec5860b00ab">checkBarrier</a> (Real, <a class="el" href="classbool.html">bool</a>) const =0</td></tr>
+<tr class="separator:ab2f2d87b2cc9c21ade816ec5860b00ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classore_1_1data_1_1_option_wrapper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classore_1_1data_1_1_option_wrapper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classore_1_1data_1_1_option_wrapper.html">OptionWrapper</a></td></tr>
-<tr class="memitem:a018782fdf459beefc0b2c69a534a9e58 inherit pub_methods_classore_1_1data_1_1_option_wrapper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_option_wrapper.html#a018782fdf459beefc0b2c69a534a9e58">OptionWrapper</a> (const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;inst, const <a class="el" href="classbool.html">bool</a> isLongOption, const std::vector&lt; QuantLib::Date &gt; &amp;<a class="el" href="classore_1_1data_1_1_option_wrapper.html#a06074e969d1719c291712897422bb1a1">exerciseDate</a>, const <a class="el" href="classbool.html">bool</a> <a class="el" href="classore_1_1data_1_1_option_wrapper.html#ae22c84e2b368832b3a9de99620bb5f77">isPhysicalDelivery</a>, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;undInst, const Real <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#aa3f9db40df58be6a2eaea5a9c01c7e76">multiplier</a>=1.0, const Real undMultiplier=1.0, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a>=std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt;(), const std::vector&lt; Real &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a>=std::vector&lt; Real &gt;())</td></tr>
+<tr class="memitem:a018782fdf459beefc0b2c69a534a9e58 inherit pub_methods_classore_1_1data_1_1_option_wrapper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_option_wrapper.html#a018782fdf459beefc0b2c69a534a9e58">OptionWrapper</a> (const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;inst, const <a class="el" href="classbool.html">bool</a> isLongOption, const std::vector&lt; QuantLib::Date &gt; &amp;<a class="el" href="classore_1_1data_1_1_option_wrapper.html#a06074e969d1719c291712897422bb1a1">exerciseDate</a>, const <a class="el" href="classbool.html">bool</a> <a class="el" href="classore_1_1data_1_1_option_wrapper.html#ae22c84e2b368832b3a9de99620bb5f77">isPhysicalDelivery</a>, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;undInst, const Real <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a0ed26ee94207e0a16ad9a4f237b5b592">multiplier</a>=1.0, const Real undMultiplier=1.0, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a>=std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt;(), const std::vector&lt; Real &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a>=std::vector&lt; Real &gt;())</td></tr>
 <tr class="memdesc:a018782fdf459beefc0b2c69a534a9e58 inherit pub_methods_classore_1_1data_1_1_option_wrapper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classore_1_1data_1_1_option_wrapper.html#a018782fdf459beefc0b2c69a534a9e58">More...</a><br /></td></tr>
 <tr class="separator:a018782fdf459beefc0b2c69a534a9e58 inherit pub_methods_classore_1_1data_1_1_option_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab16355e95cc2d5e816399449b1ce11d3 inherit pub_methods_classore_1_1data_1_1_option_wrapper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_option_wrapper.html#ab16355e95cc2d5e816399449b1ce11d3">initialise</a> (const std::vector&lt; QuantLib::Date &gt; &amp;dates) override</td></tr>
@@ -196,7 +198,7 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classore_1_1data_1_1_instrument_wrapper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classore_1_1data_1_1_instrument_wrapper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html">InstrumentWrapper</a></td></tr>
 <tr class="memitem:a282c159ece6fe60a9b3978715df66efd inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a282c159ece6fe60a9b3978715df66efd">InstrumentWrapper</a> ()</td></tr>
 <tr class="separator:a282c159ece6fe60a9b3978715df66efd inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5143f008dd7018617e9a3e78d7c17da inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#ae5143f008dd7018617e9a3e78d7c17da">InstrumentWrapper</a> (const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;inst, const Real <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#aa3f9db40df58be6a2eaea5a9c01c7e76">multiplier</a>=1.0, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a>=std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt;(), const std::vector&lt; Real &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a>=std::vector&lt; Real &gt;())</td></tr>
+<tr class="memitem:ae5143f008dd7018617e9a3e78d7c17da inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#ae5143f008dd7018617e9a3e78d7c17da">InstrumentWrapper</a> (const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;inst, const Real <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a0ed26ee94207e0a16ad9a4f237b5b592">multiplier</a>=1.0, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a>=std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt;(), const std::vector&lt; Real &gt; &amp;<a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a>=std::vector&lt; Real &gt;())</td></tr>
 <tr class="separator:ae5143f008dd7018617e9a3e78d7c17da inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b3d74849dd16be7c224208caa2f227a inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a5b3d74849dd16be7c224208caa2f227a">~InstrumentWrapper</a> ()</td></tr>
 <tr class="separator:a5b3d74849dd16be7c224208caa2f227a inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,19 +216,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab0f41f75052f3ef8f5d33f6d1190f5e4 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdcc048739fce301d5907bf5a4e7ac46 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">QuantLib::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46">additionalInstrumentsNPV</a> () const</td></tr>
 <tr class="separator:abdcc048739fce301d5907bf5a4e7ac46 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded64e9f9e1024be3e823caf5bc3b450 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#aded64e9f9e1024be3e823caf5bc3b450">updateQlInstruments</a> ()</td></tr>
-<tr class="memdesc:aded64e9f9e1024be3e823caf5bc3b450 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="mdescLeft">&#160;</td><td class="mdescRight">call update on enclosed instrument(s)  <a href="classore_1_1data_1_1_instrument_wrapper.html#aded64e9f9e1024be3e823caf5bc3b450">More...</a><br /></td></tr>
-<tr class="separator:aded64e9f9e1024be3e823caf5bc3b450 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad39151b0d84d87a796af1e8c2e507 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a50ad39151b0d84d87a796af1e8c2e507">isOption</a> ()</td></tr>
-<tr class="memdesc:a50ad39151b0d84d87a796af1e8c2e507 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="mdescLeft">&#160;</td><td class="mdescRight">is it an Option?  <a href="classore_1_1data_1_1_instrument_wrapper.html#a50ad39151b0d84d87a796af1e8c2e507">More...</a><br /></td></tr>
-<tr class="separator:a50ad39151b0d84d87a796af1e8c2e507 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60eeda564d720b975195b821a5f7e767 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a60eeda564d720b975195b821a5f7e767">updateQlInstruments</a> ()</td></tr>
+<tr class="memdesc:a60eeda564d720b975195b821a5f7e767 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="mdescLeft">&#160;</td><td class="mdescRight">call update on enclosed instrument(s)  <a href="classore_1_1data_1_1_instrument_wrapper.html#a60eeda564d720b975195b821a5f7e767">More...</a><br /></td></tr>
+<tr class="separator:a60eeda564d720b975195b821a5f7e767 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4f24543661b450b8b2379eb321792a inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a4f4f24543661b450b8b2379eb321792a">isOption</a> ()</td></tr>
+<tr class="memdesc:a4f4f24543661b450b8b2379eb321792a inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="mdescLeft">&#160;</td><td class="mdescRight">is it an Option?  <a href="classore_1_1data_1_1_instrument_wrapper.html#a4f4f24543661b450b8b2379eb321792a">More...</a><br /></td></tr>
+<tr class="separator:a4f4f24543661b450b8b2379eb321792a inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3fd2d8a1e62757d1536e5b8790bac37 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; QuantLib::Instrument &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#ad3fd2d8a1e62757d1536e5b8790bac37">qlInstrument</a> (const <a class="el" href="classbool.html">bool</a> calculate=false) const</td></tr>
 <tr class="memdesc:ad3fd2d8a1e62757d1536e5b8790bac37 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inspectors.  <a href="classore_1_1data_1_1_instrument_wrapper.html#ad3fd2d8a1e62757d1536e5b8790bac37">More...</a><br /></td></tr>
 <tr class="separator:ad3fd2d8a1e62757d1536e5b8790bac37 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3f9db40df58be6a2eaea5a9c01c7e76 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">const Real &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#aa3f9db40df58be6a2eaea5a9c01c7e76">multiplier</a> () const</td></tr>
-<tr class="separator:aa3f9db40df58be6a2eaea5a9c01c7e76 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42eb03b904649ab0a4da6d2207499de6 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">virtual Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a42eb03b904649ab0a4da6d2207499de6">multiplier2</a> () const</td></tr>
-<tr class="separator:a42eb03b904649ab0a4da6d2207499de6 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed26ee94207e0a16ad9a4f237b5b592 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a0ed26ee94207e0a16ad9a4f237b5b592">multiplier</a> () const</td></tr>
+<tr class="separator:a0ed26ee94207e0a16ad9a4f237b5b592 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1746d6f9c1dd671854e85f73192f474d inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">virtual Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1746d6f9c1dd671854e85f73192f474d">multiplier2</a> () const</td></tr>
+<tr class="separator:a1746d6f9c1dd671854e85f73192f474d inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a170ff33dc87b9b6b3fb21cadc4bf2c4d inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a> () const</td></tr>
 <tr class="separator:a170ff33dc87b9b6b3fb21cadc4bf2c4d inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1165f03576f760753b89256664a3f4a4 inherit pub_methods_classore_1_1data_1_1_instrument_wrapper"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; Real &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a> () const</td></tr>
@@ -419,28 +421,28 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00041">41</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   54</span>        : <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#a018782fdf459beefc0b2c69a534a9e58">OptionWrapper</a>(inst, isLongOption, std::vector&lt;QuantLib::Date&gt;(1, <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#a06074e969d1719c291712897422bb1a1">exerciseDate</a>), <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#ae22c84e2b368832b3a9de99620bb5f77">isPhysicalDelivery</a>,</div>
-<div class="line"><span class="lineno">   55</span>                        std::vector&lt;boost::shared_ptr&lt;QuantLib::Instrument&gt;&gt;(1, undInst), <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#aa3f9db40df58be6a2eaea5a9c01c7e76">multiplier</a>, undMultiplier,</div>
+<div class="line"><span class="lineno">   55</span>                        std::vector&lt;boost::shared_ptr&lt;QuantLib::Instrument&gt;&gt;(1, undInst), <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#a0ed26ee94207e0a16ad9a4f237b5b592">multiplier</a>, undMultiplier,</div>
 <div class="line"><span class="lineno">   56</span>                        <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">additionalInstruments</a>, <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">additionalMultipliers</a>),</div>
 <div class="line"><span class="lineno">   57</span>          <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a12d559962d944bdbc6914b0994fcbbbe">spot_</a>(spot), <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a>(barrierType), <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#ad6e88a4eb440388c167742fc333e8fd5">rebate_</a>(rebate), <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a8e59692fb8a948d9a06092df147a4510">ccy_</a>(ccy), <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a29d333191f60c355726891f6b75fb91b">startDate_</a>(startDate), </div>
 <div class="line"><span class="lineno">   58</span>          <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a10975370eaa0a1c400f25adf362b0d36">index_</a>(index) {</div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a936be92f5f766489c24b9ce54d702b36">calendar_</a> = index ? index-&gt;fixingCalendar() : <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>;</div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a936be92f5f766489c24b9ce54d702b36">calendar_</a> = index ? index-&gt;fixingCalendar() : <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>;</div>
 <div class="line"><span class="lineno">   60</span>        <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a>();</div>
 <div class="line"><span class="lineno">   61</span>    }</div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a10975370eaa0a1c400f25adf362b0d36"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a10975370eaa0a1c400f25adf362b0d36">ore::data::BarrierOptionWrapper::index_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::Index &gt; index_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00072">barrieroptionwrapper.hpp:72</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a12d559962d944bdbc6914b0994fcbbbe"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a12d559962d944bdbc6914b0994fcbbbe">ore::data::BarrierOptionWrapper::spot_</a></div><div class="ttdeci">Handle&lt; Quote &gt; spot_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00067">barrieroptionwrapper.hpp:67</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a1439bfbbaacb914efebb469a50d6528a"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">ore::data::BarrierOptionWrapper::barrierType_</a></div><div class="ttdeci">Barrier::Type barrierType_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00068">barrieroptionwrapper.hpp:68</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a29d333191f60c355726891f6b75fb91b"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a29d333191f60c355726891f6b75fb91b">ore::data::BarrierOptionWrapper::startDate_</a></div><div class="ttdeci">const QuantLib::Date startDate_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00071">barrieroptionwrapper.hpp:71</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a8e59692fb8a948d9a06092df147a4510"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a8e59692fb8a948d9a06092df147a4510">ore::data::BarrierOptionWrapper::ccy_</a></div><div class="ttdeci">const QuantLib::Currency ccy_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00070">barrieroptionwrapper.hpp:70</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a936be92f5f766489c24b9ce54d702b36"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a936be92f5f766489c24b9ce54d702b36">ore::data::BarrierOptionWrapper::calendar_</a></div><div class="ttdeci">QuantLib::Calendar calendar_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00073">barrieroptionwrapper.hpp:73</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_ad6e88a4eb440388c167742fc333e8fd5"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#ad6e88a4eb440388c167742fc333e8fd5">ore::data::BarrierOptionWrapper::rebate_</a></div><div class="ttdeci">Real rebate_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00069">barrieroptionwrapper.hpp:69</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a1165f03576f760753b89256664a3f4a4"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">ore::data::InstrumentWrapper::additionalMultipliers</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; additionalMultipliers() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00114">instrumentwrapper.hpp:114</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a170ff33dc87b9b6b3fb21cadc4bf2c4d"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">ore::data::InstrumentWrapper::additionalInstruments</a></div><div class="ttdeci">const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp; additionalInstruments() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00110">instrumentwrapper.hpp:110</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_aa3f9db40df58be6a2eaea5a9c01c7e76"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#aa3f9db40df58be6a2eaea5a9c01c7e76">ore::data::InstrumentWrapper::multiplier</a></div><div class="ttdeci">const Real &amp; multiplier() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00106">instrumentwrapper.hpp:106</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a10975370eaa0a1c400f25adf362b0d36"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a10975370eaa0a1c400f25adf362b0d36">ore::data::BarrierOptionWrapper::index_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::Index &gt; index_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00073">barrieroptionwrapper.hpp:73</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a12d559962d944bdbc6914b0994fcbbbe"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a12d559962d944bdbc6914b0994fcbbbe">ore::data::BarrierOptionWrapper::spot_</a></div><div class="ttdeci">Handle&lt; Quote &gt; spot_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00068">barrieroptionwrapper.hpp:68</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a1439bfbbaacb914efebb469a50d6528a"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">ore::data::BarrierOptionWrapper::barrierType_</a></div><div class="ttdeci">Barrier::Type barrierType_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00069">barrieroptionwrapper.hpp:69</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a29d333191f60c355726891f6b75fb91b"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a29d333191f60c355726891f6b75fb91b">ore::data::BarrierOptionWrapper::startDate_</a></div><div class="ttdeci">const QuantLib::Date startDate_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00072">barrieroptionwrapper.hpp:72</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a8e59692fb8a948d9a06092df147a4510"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a8e59692fb8a948d9a06092df147a4510">ore::data::BarrierOptionWrapper::ccy_</a></div><div class="ttdeci">const QuantLib::Currency ccy_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00071">barrieroptionwrapper.hpp:71</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a936be92f5f766489c24b9ce54d702b36"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a936be92f5f766489c24b9ce54d702b36">ore::data::BarrierOptionWrapper::calendar_</a></div><div class="ttdeci">QuantLib::Calendar calendar_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00074">barrieroptionwrapper.hpp:74</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_ad6e88a4eb440388c167742fc333e8fd5"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#ad6e88a4eb440388c167742fc333e8fd5">ore::data::BarrierOptionWrapper::rebate_</a></div><div class="ttdeci">Real rebate_</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8hpp_source.html#l00070">barrieroptionwrapper.hpp:70</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a0ed26ee94207e0a16ad9a4f237b5b592"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a0ed26ee94207e0a16ad9a4f237b5b592">ore::data::InstrumentWrapper::multiplier</a></div><div class="ttdeci">Real multiplier() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8cpp_source.html#l00059">instrumentwrapper.cpp:59</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a1165f03576f760753b89256664a3f4a4"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a1165f03576f760753b89256664a3f4a4">ore::data::InstrumentWrapper::additionalMultipliers</a></div><div class="ttdeci">const std::vector&lt; Real &gt; &amp; additionalMultipliers() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8cpp_source.html#l00067">instrumentwrapper.cpp:67</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a170ff33dc87b9b6b3fb21cadc4bf2c4d"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a170ff33dc87b9b6b3fb21cadc4bf2c4d">ore::data::InstrumentWrapper::additionalInstruments</a></div><div class="ttdeci">const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp; additionalInstruments() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8cpp_source.html#l00063">instrumentwrapper.cpp:63</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_a018782fdf459beefc0b2c69a534a9e58"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#a018782fdf459beefc0b2c69a534a9e58">ore::data::OptionWrapper::OptionWrapper</a></div><div class="ttdeci">OptionWrapper(const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;inst, const bool isLongOption, const std::vector&lt; QuantLib::Date &gt; &amp;exerciseDate, const bool isPhysicalDelivery, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;undInst, const Real multiplier=1.0, const Real undMultiplier=1.0, const std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt; &amp;additionalInstruments=std::vector&lt; boost::shared_ptr&lt; QuantLib::Instrument &gt; &gt;(), const std::vector&lt; Real &gt; &amp;additionalMultipliers=std::vector&lt; Real &gt;())</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8cpp_source.html#l00029">optionwrapper.cpp:29</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_a06074e969d1719c291712897422bb1a1"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#a06074e969d1719c291712897422bb1a1">ore::data::OptionWrapper::exerciseDate</a></div><div class="ttdeci">const QuantLib::Date &amp; exerciseDate() const</div><div class="ttdoc">the (actual) date the option was exercised</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8hpp_source.html#l00095">optionwrapper.hpp:95</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_ae22c84e2b368832b3a9de99620bb5f77"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#ae22c84e2b368832b3a9de99620bb5f77">ore::data::OptionWrapper::isPhysicalDelivery</a></div><div class="ttdeci">bool isPhysicalDelivery() const</div><div class="ttdoc">return true for physical delivery, false for cash settlement</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8hpp_source.html#l00089">optionwrapper.hpp:89</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_aebfcdbbd0fe4efbff10b180be50ca6bc"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#aebfcdbbd0fe4efbff10b180be50ca6bc">ore::data::OptionWrapper::reset</a></div><div class="ttdeci">void reset() override</div><div class="ttdoc">reset is called every time a new path is about to be priced.</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8cpp_source.html#l00065">optionwrapper.cpp:65</a></div></div>
-<div class="ttc" id="autilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
+<div class="ttc" id="amodel_2utilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="model_2utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -483,21 +485,33 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#ab0f41f75052f3ef8f5d33f6d1190f5e4">InstrumentWrapper</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8cpp_source.html#l00065">65</a> of file <a class="el" href="barrieroptionwrapper_8cpp_source.html">barrieroptionwrapper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>                                                                                 {</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keyword">static</span> std::map&lt;std::string, boost::any&gt; emptyMap;</div>
-<div class="line"><span class="lineno">   67</span>    <a class="code hl_function" href="classore_1_1data_1_1_barrier_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53">NPV</a>();</div>
-<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#af002fe2ab2b862ad97cbd4f3b489be04">exercised_</a>) {</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span> (!(<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::DownOut || <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::UpOut))</div>
-<div class="line"><span class="lineno">   70</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#ad917b519a4e198f869861444b32fb6db">activeUnderlyingInstrument_</a>-&gt;additionalResults();</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">return</span> emptyMap;</div>
-<div class="line"><span class="lineno">   73</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">instrument_</a>-&gt;additionalResults();</div>
-<div class="line"><span class="lineno">   75</span>    }</div>
-<div class="line"><span class="lineno">   76</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a11b99e22b9e192c940be8cda78c87f53"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53">ore::data::BarrierOptionWrapper::NPV</a></div><div class="ttdeci">QuantLib::Real NPV() const override</div><div class="ttdoc">Return the NPV of this instrument.</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8cpp_source.html#l00038">barrieroptionwrapper.cpp:38</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a28edae28befc40c22c3cc994c559c414"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">ore::data::InstrumentWrapper::instrument_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::Instrument &gt; instrument_</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00130">instrumentwrapper.hpp:130</a></div></div>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8cpp_source.html#l00080">80</a> of file <a class="el" href="barrieroptionwrapper_8cpp_source.html">barrieroptionwrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>                                                                                 {</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keyword">static</span> std::map&lt;std::string, boost::any&gt; emptyMap;</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_function" href="classore_1_1data_1_1_barrier_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53">NPV</a>();</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#af002fe2ab2b862ad97cbd4f3b489be04">exercised_</a>) {</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">if</span> (!(<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::DownOut || <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::UpOut))</div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#ad917b519a4e198f869861444b32fb6db">activeUnderlyingInstrument_</a>-&gt;additionalResults();</div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   87</span>            <span class="keywordflow">return</span> emptyMap;</div>
+<div class="line"><span class="lineno">   88</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keyword">auto</span> vanillaOption = boost::dynamic_pointer_cast&lt;VanillaOption&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#ad917b519a4e198f869861444b32fb6db">activeUnderlyingInstrument_</a>);</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (vanillaOption) {</div>
+<div class="line"><span class="lineno">   91</span>            <span class="keyword">auto</span> payoff = boost::dynamic_pointer_cast&lt;StrikedTypePayoff&gt;(vanillaOption-&gt;payoff());</div>
+<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">if</span> (payoff &amp;&amp; ((<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::DownOut &amp;&amp; payoff-&gt;optionType() == Option::Put) ||</div>
+<div class="line"><span class="lineno">   93</span>                           (<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::UpOut &amp;&amp; payoff-&gt;optionType() == Option::Call))) {</div>
+<div class="line"><span class="lineno">   94</span>                <span class="keyword">const</span> <span class="keywordtype">bool</span> isTouchingOnly = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   95</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="classore_1_1data_1_1_barrier_option_wrapper.html#ab2f2d87b2cc9c21ade816ec5860b00ab">checkBarrier</a>(payoff-&gt;strike(), isTouchingOnly))</div>
+<div class="line"><span class="lineno">   96</span>                    <span class="keywordflow">return</span> emptyMap;</div>
+<div class="line"><span class="lineno">   97</span>            }</div>
+<div class="line"><span class="lineno">   98</span>        }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">instrument_</a>-&gt;additionalResults();</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_a11b99e22b9e192c940be8cda78c87f53"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53">ore::data::BarrierOptionWrapper::NPV</a></div><div class="ttdeci">QuantLib::Real NPV() const override</div><div class="ttdoc">Return the NPV of this instrument.</div><div class="ttdef"><b>Definition:</b> <a href="barrieroptionwrapper_8cpp_source.html#l00040">barrieroptionwrapper.cpp:40</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_barrier_option_wrapper_html_ab2f2d87b2cc9c21ade816ec5860b00ab"><div class="ttname"><a href="classore_1_1data_1_1_barrier_option_wrapper.html#ab2f2d87b2cc9c21ade816ec5860b00ab">ore::data::BarrierOptionWrapper::checkBarrier</a></div><div class="ttdeci">virtual bool checkBarrier(Real, bool) const =0</div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a28edae28befc40c22c3cc994c559c414"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">ore::data::InstrumentWrapper::instrument_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::Instrument &gt; instrument_</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00109">instrumentwrapper.hpp:109</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_ad917b519a4e198f869861444b32fb6db"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#ad917b519a4e198f869861444b32fb6db">ore::data::OptionWrapper::activeUnderlyingInstrument_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::Instrument &gt; activeUnderlyingInstrument_</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8hpp_source.html#l00111">optionwrapper.hpp:111</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_af002fe2ab2b862ad97cbd4f3b489be04"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#af002fe2ab2b862ad97cbd4f3b489be04">ore::data::OptionWrapper::exercised_</a></div><div class="ttdeci">bool exercised_</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8hpp_source.html#l00113">optionwrapper.hpp:113</a></div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -507,13 +521,64 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_barrier_option_wrapper_a4a85982f3000c391b5e8d3813f2f5f52_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_barrier_option_wrapper_a4a85982f3000c391b5e8d3813f2f5f52_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_barrier_option_wrapper_a4a85982f3000c391b5e8d3813f2f5f52_cgraph" id="aclassore_1_1data_1_1_barrier_option_wrapper_a4a85982f3000c391b5e8d3813f2f5f52_cgraph">
-<area shape="rect" title="Return the additional results of this instrument." alt="" coords="5,109,127,134"/>
-<area shape="rect" href="classore_1_1data_1_1_barrier_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53" title="Return the NPV of this instrument." alt="" coords="175,109,224,134"/>
-<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46" title=" " alt="" coords="272,5,463,45"/>
-<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250" title=" " alt="" coords="283,69,451,109"/>
-<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa" title=" " alt="" coords="272,133,463,173"/>
-<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c" title=" " alt="" coords="283,197,451,237"/>
-<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#a48bc2555c7d4b0f36887f6a30fd41361" title="Return the NPV of this instrument." alt="" coords="511,13,737,38"/>
+<area shape="rect" title="Return the additional results of this instrument." alt="" coords="5,67,127,92"/>
+<area shape="rect" href="classore_1_1data_1_1_barrier_option_wrapper.html#ab2f2d87b2cc9c21ade816ec5860b00ab" title=" " alt="" coords="320,5,415,31"/>
+<area shape="rect" href="classore_1_1data_1_1_barrier_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53" title="Return the NPV of this instrument." alt="" coords="175,109,224,135"/>
+<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46" title=" " alt="" coords="272,55,463,95"/>
+<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250" title=" " alt="" coords="283,119,451,159"/>
+<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa" title=" " alt="" coords="272,183,463,223"/>
+<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c" title=" " alt="" coords="283,247,451,287"/>
+<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#a48bc2555c7d4b0f36887f6a30fd41361" title="Return the NPV of this instrument." alt="" coords="511,63,737,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab2f2d87b2cc9c21ade816ec5860b00ab" name="ab2f2d87b2cc9c21ade816ec5860b00ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f2d87b2cc9c21ade816ec5860b00ab">&#9670;&#160;</a></span>checkBarrier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classbool.html">bool</a> checkBarrier </td>
+          <td>(</td>
+          <td class="paramtype">Real&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbool.html">bool</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classore_1_1data_1_1_single_barrier_option_wrapper.html#a107dce62160b091ef300193468d023c0">SingleBarrierOptionWrapper</a>, and <a class="el" href="classore_1_1data_1_1_double_barrier_option_wrapper.html#a107dce62160b091ef300193468d023c0">DoubleBarrierOptionWrapper</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_barrier_option_wrapper_ab2f2d87b2cc9c21ade816ec5860b00ab_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_barrier_option_wrapper_ab2f2d87b2cc9c21ade816ec5860b00ab_icgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_barrier_option_wrapper_ab2f2d87b2cc9c21ade816ec5860b00ab_icgraph" id="aclassore_1_1data_1_1_barrier_option_wrapper_ab2f2d87b2cc9c21ade816ec5860b00ab_icgraph">
+<area shape="rect" title=" " alt="" coords="272,5,367,31"/>
+<area shape="rect" href="classore_1_1data_1_1_barrier_option_wrapper.html#a4a85982f3000c391b5e8d3813f2f5f52" title="Return the additional results of this instrument." alt="" coords="5,5,127,31"/>
+<area shape="rect" href="classore_1_1data_1_1_barrier_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53" title="Return the NPV of this instrument." alt="" coords="175,31,224,56"/>
 </map>
 </div>
 
@@ -546,60 +611,74 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1data_1_1_instrument_wrapper.html#a48bc2555c7d4b0f36887f6a30fd41361">InstrumentWrapper</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8cpp_source.html#l00038">38</a> of file <a class="el" href="barrieroptionwrapper_8cpp_source.html">barrieroptionwrapper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                     {</div>
-<div class="line"><span class="lineno">   39</span>    Real addNPV = <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46">additionalInstrumentsNPV</a>();</div>
-<div class="line"><span class="lineno">   40</span>    </div>
-<div class="line"><span class="lineno">   41</span>    Date today = Settings::instance().evaluationDate();</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>    <span class="comment">// check the trigger on the first run, we only need to re check it if the </span></div>
-<div class="line"><span class="lineno">   44</span>    <span class="comment">// instrument becomes un calculated. The trigger should only need to be rechecked</span></div>
-<div class="line"><span class="lineno">   45</span>    <span class="comment">// for a change in valuation date or spot, and this ensures</span></div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#af002fe2ab2b862ad97cbd4f3b489be04">exercised_</a> || !<a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">instrument_</a>-&gt;isCalculated()) {</div>
-<div class="line"><span class="lineno">   47</span>        <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250">exercise</a>();</div>
-<div class="line"><span class="lineno">   48</span>    }</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#af002fe2ab2b862ad97cbd4f3b489be04">exercised_</a>) {</div>
-<div class="line"><span class="lineno">   51</span>        Real npv;</div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::DownOut || <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::UpOut)</div>
-<div class="line"><span class="lineno">   53</span>            npv = (today == <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#a1b3acbc2122a68c969e5a7f97426f5f9">exerciseDate_</a>) ? <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c">multiplier2</a>() * <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#ad6e88a4eb440388c167742fc333e8fd5">rebate_</a> * <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#aa49b1204ce92c4d59187417be96f4304">undMultiplier_</a> : 0.0;</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   55</span>            npv = <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c">multiplier2</a>() * <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa">getTimedNPV</a>(<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#ad917b519a4e198f869861444b32fb6db">activeUnderlyingInstrument_</a>) * <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#aa49b1204ce92c4d59187417be96f4304">undMultiplier_</a>;</div>
-<div class="line"><span class="lineno">   56</span>        </div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span> npv + addNPV;</div>
-<div class="line"><span class="lineno">   58</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   59</span>        <span class="comment">// if not exercised we just return the original option&#39;s NPV</span></div>
-<div class="line"><span class="lineno">   60</span>        Real npv = <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c">multiplier2</a>() * <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa">getTimedNPV</a>(<a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">instrument_</a>) * <a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a64a39b19c9c0e793eab7cc04265b2308">multiplier_</a>;</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">return</span> npv + addNPV;</div>
-<div class="line"><span class="lineno">   62</span>    }</div>
-<div class="line"><span class="lineno">   63</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a64a39b19c9c0e793eab7cc04265b2308"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a64a39b19c9c0e793eab7cc04265b2308">ore::data::InstrumentWrapper::multiplier_</a></div><div class="ttdeci">Real multiplier_</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00131">instrumentwrapper.hpp:131</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_ab65c6f6d0a4810c4d18263cf971c5cfa"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa">ore::data::InstrumentWrapper::getTimedNPV</a></div><div class="ttdeci">Real getTimedNPV(const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;instr) const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00136">instrumentwrapper.hpp:136</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_abdcc048739fce301d5907bf5a4e7ac46"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46">ore::data::InstrumentWrapper::additionalInstrumentsNPV</a></div><div class="ttdeci">QuantLib::Real additionalInstrumentsNPV() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00076">instrumentwrapper.hpp:76</a></div></div>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8cpp_source.html#l00040">40</a> of file <a class="el" href="barrieroptionwrapper_8cpp_source.html">barrieroptionwrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                     {</div>
+<div class="line"><span class="lineno">   41</span>    Real addNPV = <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46">additionalInstrumentsNPV</a>();</div>
+<div class="line"><span class="lineno">   42</span>    </div>
+<div class="line"><span class="lineno">   43</span>    Date today = Settings::instance().evaluationDate();</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// check the trigger on the first run, we only need to re check it if the </span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// instrument becomes un calculated. The trigger should only need to be rechecked</span></div>
+<div class="line"><span class="lineno">   47</span>    <span class="comment">// for a change in valuation date or spot, and this ensures</span></div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#af002fe2ab2b862ad97cbd4f3b489be04">exercised_</a> || !<a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">instrument_</a>-&gt;isCalculated()) {</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250">exercise</a>();</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#af002fe2ab2b862ad97cbd4f3b489be04">exercised_</a>) {</div>
+<div class="line"><span class="lineno">   53</span>        Real npv;</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::DownOut || <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::UpOut)</div>
+<div class="line"><span class="lineno">   55</span>            npv = (today == <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#a1b3acbc2122a68c969e5a7f97426f5f9">exerciseDate_</a>) ? <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c">multiplier2</a>() * <a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#ad6e88a4eb440388c167742fc333e8fd5">rebate_</a> * <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#aa49b1204ce92c4d59187417be96f4304">undMultiplier_</a> : 0.0;</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   57</span>            npv = <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c">multiplier2</a>() * <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa">getTimedNPV</a>(<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#ad917b519a4e198f869861444b32fb6db">activeUnderlyingInstrument_</a>) * <a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#aa49b1204ce92c4d59187417be96f4304">undMultiplier_</a>;</div>
+<div class="line"><span class="lineno">   58</span>        </div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> npv + addNPV;</div>
+<div class="line"><span class="lineno">   60</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="comment">// if not exercised we just return the original option&#39;s NPV</span></div>
+<div class="line"><span class="lineno">   62</span>        Real npv = <a class="code hl_function" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c">multiplier2</a>() * <a class="code hl_function" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa">getTimedNPV</a>(<a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a28edae28befc40c22c3cc994c559c414">instrument_</a>) * <a class="code hl_variable" href="classore_1_1data_1_1_instrument_wrapper.html#a64a39b19c9c0e793eab7cc04265b2308">multiplier_</a>;</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>        <span class="comment">// Handling the edge case where barrier = strike, is KO, and underlying is only ITM when inside KO barrier.</span></div>
+<div class="line"><span class="lineno">   65</span>        <span class="comment">// NPV should then be zero, but the pricing engine might not necessarily be pricing it as zero at the boundary.</span></div>
+<div class="line"><span class="lineno">   66</span>        <span class="keyword">auto</span> vanillaOption = boost::dynamic_pointer_cast&lt;VanillaOption&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_option_wrapper.html#ad917b519a4e198f869861444b32fb6db">activeUnderlyingInstrument_</a>);</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">if</span> (vanillaOption) {</div>
+<div class="line"><span class="lineno">   68</span>            <span class="keyword">auto</span> payoff = boost::dynamic_pointer_cast&lt;StrikedTypePayoff&gt;(vanillaOption-&gt;payoff());</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">if</span> (payoff &amp;&amp; ((<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::DownOut &amp;&amp; payoff-&gt;optionType() == Option::Put) ||</div>
+<div class="line"><span class="lineno">   70</span>                           (<a class="code hl_variable" href="classore_1_1data_1_1_barrier_option_wrapper.html#a1439bfbbaacb914efebb469a50d6528a">barrierType_</a> == Barrier::UpOut &amp;&amp; payoff-&gt;optionType() == Option::Call))) {</div>
+<div class="line"><span class="lineno">   71</span>                <span class="keyword">const</span> <span class="keywordtype">bool</span> isTouchingOnly = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   72</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="classore_1_1data_1_1_barrier_option_wrapper.html#ab2f2d87b2cc9c21ade816ec5860b00ab">checkBarrier</a>(payoff-&gt;strike(), isTouchingOnly))</div>
+<div class="line"><span class="lineno">   73</span>                    npv = 0;</div>
+<div class="line"><span class="lineno">   74</span>            }</div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> npv + addNPV;</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_a64a39b19c9c0e793eab7cc04265b2308"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#a64a39b19c9c0e793eab7cc04265b2308">ore::data::InstrumentWrapper::multiplier_</a></div><div class="ttdeci">Real multiplier_</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8hpp_source.html#l00110">instrumentwrapper.hpp:110</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_ab65c6f6d0a4810c4d18263cf971c5cfa"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa">ore::data::InstrumentWrapper::getTimedNPV</a></div><div class="ttdeci">Real getTimedNPV(const boost::shared_ptr&lt; QuantLib::Instrument &gt; &amp;instr) const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8cpp_source.html#l00078">instrumentwrapper.cpp:78</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_instrument_wrapper_html_abdcc048739fce301d5907bf5a4e7ac46"><div class="ttname"><a href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46">ore::data::InstrumentWrapper::additionalInstrumentsNPV</a></div><div class="ttdeci">QuantLib::Real additionalInstrumentsNPV() const</div><div class="ttdef"><b>Definition:</b> <a href="instrumentwrapper_8cpp_source.html#l00036">instrumentwrapper.cpp:36</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_a1b3acbc2122a68c969e5a7f97426f5f9"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#a1b3acbc2122a68c969e5a7f97426f5f9">ore::data::OptionWrapper::exerciseDate_</a></div><div class="ttdeci">QuantLib::Date exerciseDate_</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8hpp_source.html#l00115">optionwrapper.hpp:115</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_a3e5ebf4d1671703e5ebfd2285af53250"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250">ore::data::OptionWrapper::exercise</a></div><div class="ttdeci">virtual bool exercise() const =0</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_aa49b1204ce92c4d59187417be96f4304"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#aa49b1204ce92c4d59187417be96f4304">ore::data::OptionWrapper::undMultiplier_</a></div><div class="ttdeci">Real undMultiplier_</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8hpp_source.html#l00112">optionwrapper.hpp:112</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_option_wrapper_html_adf89c7de1d5c2f7474ae075235c5ca9c"><div class="ttname"><a href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c">ore::data::OptionWrapper::multiplier2</a></div><div class="ttdeci">Real multiplier2() const override</div><div class="ttdef"><b>Definition:</b> <a href="optionwrapper_8hpp_source.html#l00057">optionwrapper.hpp:57</a></div></div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph" alt=""/></div>
-<map name="aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph" id="aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph">
-<area shape="rect" title="Return the NPV of this instrument." alt="" coords="5,109,55,134"/>
-<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46" title=" " alt="" coords="103,5,293,45"/>
-<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250" title=" " alt="" coords="114,69,282,109"/>
-<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa" title=" " alt="" coords="103,133,293,173"/>
-<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c" title=" " alt="" coords="114,197,282,237"/>
-<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#a48bc2555c7d4b0f36887f6a30fd41361" title="Return the NPV of this instrument." alt="" coords="341,13,568,38"/>
-</map>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph" id="aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_cgraph">
+<area shape="rect" title="Return the NPV of this instrument." alt="" coords="5,127,55,153"/>
+<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46" title=" " alt="" coords="103,5,293,45"/>
+<area shape="rect" href="classore_1_1data_1_1_barrier_option_wrapper.html#ab2f2d87b2cc9c21ade816ec5860b00ab" title=" " alt="" coords="151,70,245,95"/>
+<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250" title=" " alt="" coords="114,120,282,160"/>
+<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#ab65c6f6d0a4810c4d18263cf971c5cfa" title=" " alt="" coords="103,184,293,224"/>
+<area shape="rect" href="classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c" title=" " alt="" coords="114,248,282,288"/>
+<area shape="rect" href="classore_1_1data_1_1_instrument_wrapper.html#a48bc2555c7d4b0f36887f6a30fd41361" title="Return the NPV of this instrument." alt="" coords="341,13,568,38"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_icgraph" id="aclassore_1_1data_1_1_barrier_option_wrapper_a11b99e22b9e192c940be8cda78c87f53_icgraph">
 <area shape="rect" title="Return the NPV of this instrument." alt="" coords="175,5,224,31"/>
@@ -630,7 +709,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00067">67</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00068">68</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -654,7 +733,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00068">68</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00069">69</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -678,7 +757,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00069">69</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00070">70</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -702,7 +781,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00070">70</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00071">71</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +805,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00071">71</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00072">72</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -750,7 +829,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00072">72</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00073">73</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 
 </div>
 </div>
@@ -774,7 +853,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00073">73</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="barrieroptionwrapper_8hpp_source.html#l00074">74</a> of file <a class="el" href="barrieroptionwrapper_8hpp_source.html">barrieroptionwrapper.hpp</a>.</p>
 
 </div>
 </div>

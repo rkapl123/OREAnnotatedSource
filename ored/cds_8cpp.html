@@ -368,9 +368,9 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  293</span>    boost::shared_ptr&lt;TodaysMarket&gt; tm;</div>
 <div class="line"><span class="lineno">  294</span>    BOOST_REQUIRE_NO_THROW(tm = createTodaysMarket(asof, dir, tmf));</div>
 <div class="line"><span class="lineno">  295</span> </div>
-<div class="line"><span class="lineno">  296</span>    boost::shared_ptr&lt;EngineData&gt; data = boost::make_shared&lt;EngineData&gt;();</div>
-<div class="line"><span class="lineno">  297</span>    data-&gt;fromFile(TEST_INPUT_FILE(<span class="keywordtype">string</span>(dir + <span class="stringliteral">&quot;/pricingengine.xml&quot;</span>)));</div>
-<div class="line"><span class="lineno">  298</span>    boost::shared_ptr&lt;EngineFactory&gt; ef = boost::make_shared&lt;EngineFactory&gt;(data, tm);</div>
+<div class="line"><span class="lineno">  296</span>    boost::shared_ptr&lt;EngineData&gt; <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a> = boost::make_shared&lt;EngineData&gt;();</div>
+<div class="line"><span class="lineno">  297</span>    <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;fromFile(TEST_INPUT_FILE(<span class="keywordtype">string</span>(dir + <span class="stringliteral">&quot;/pricingengine.xml&quot;</span>)));</div>
+<div class="line"><span class="lineno">  298</span>    boost::shared_ptr&lt;EngineFactory&gt; ef = boost::make_shared&lt;EngineFactory&gt;(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>, tm);</div>
 <div class="line"><span class="lineno">  299</span> </div>
 <div class="line"><span class="lineno">  300</span>    <a class="code hl_class" href="classore_1_1data_1_1_portfolio.html">Portfolio</a> portfolio;</div>
 <div class="line"><span class="lineno">  301</span>    portfolio.<a class="code hl_function" href="classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d">fromFile</a>(TEST_INPUT_FILE(<span class="keywordtype">string</span>(dir + <span class="stringliteral">&quot;/portfolio.xml&quot;</span>)));</div>
@@ -383,6 +383,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  308</span>        }</div>
 <div class="line"><span class="lineno">  309</span>    }</div>
 <div class="line"><span class="lineno">  310</span>}</div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">

@@ -136,468 +136,468 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Benchmark par conversion against brute-force bump on the par instruments ("None" observation mode) </p>
 
-<p class="definition">Definition at line <a class="el" href="parsensitivityanalysismanual_8cpp_source.html#l00167">167</a> of file <a class="el" href="parsensitivityanalysismanual_8cpp_source.html">parsensitivityanalysismanual.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  167</span>                                                            {</div>
-<div class="line"><span class="lineno">  168</span> </div>
-<div class="line"><span class="lineno">  169</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing swap par sensitivities against manual bump of par curve instruments&quot;</span>);</div>
-<div class="line"><span class="lineno">  170</span>    SavedSettings backup;</div>
-<div class="line"><span class="lineno">  171</span> </div>
-<div class="line"><span class="lineno">  172</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ObservationMode::Mode</a> backupMode = ObservationMode::instance().mode();</div>
-<div class="line"><span class="lineno">  173</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ObservationMode::Mode</a> om = ObservationMode::Mode::None;</div>
-<div class="line"><span class="lineno">  174</span>    ObservationMode::instance().setMode(om);</div>
+<p class="definition">Definition at line <a class="el" href="parsensitivityanalysismanual_8cpp_source.html#l00171">171</a> of file <a class="el" href="parsensitivityanalysismanual_8cpp_source.html">parsensitivityanalysismanual.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  171</span>                                                            {</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing swap par sensitivities against manual bump of par curve instruments&quot;</span>);</div>
+<div class="line"><span class="lineno">  174</span>    SavedSettings backup;</div>
 <div class="line"><span class="lineno">  175</span> </div>
-<div class="line"><span class="lineno">  176</span>    Date today = Date(14, April, 2016); <span class="comment">// Settings::instance().evaluationDate();</span></div>
-<div class="line"><span class="lineno">  177</span>    Settings::instance().evaluationDate() = today;</div>
-<div class="line"><span class="lineno">  178</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Today is &quot;</span> &lt;&lt; today);</div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ObservationMode::Mode</a> backupMode = ObservationMode::instance().mode();</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ObservationMode::Mode</a> om = ObservationMode::Mode::None;</div>
+<div class="line"><span class="lineno">  178</span>    ObservationMode::instance().setMode(om);</div>
 <div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>    <span class="comment">// build model</span></div>
-<div class="line"><span class="lineno">  181</span>    <span class="keywordtype">string</span> baseCcy = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
-<div class="line"><span class="lineno">  182</span>    vector&lt;string&gt; ccys;</div>
-<div class="line"><span class="lineno">  183</span>    ccys.push_back(baseCcy);</div>
-<div class="line"><span class="lineno">  184</span>    ccys.push_back(<span class="stringliteral">&quot;GBP&quot;</span>);</div>
-<div class="line"><span class="lineno">  185</span>    ccys.push_back(<span class="stringliteral">&quot;CHF&quot;</span>);</div>
-<div class="line"><span class="lineno">  186</span>    ccys.push_back(<span class="stringliteral">&quot;USD&quot;</span>);</div>
-<div class="line"><span class="lineno">  187</span>    ccys.push_back(<span class="stringliteral">&quot;JPY&quot;</span>);</div>
-<div class="line"><span class="lineno">  188</span> </div>
-<div class="line"><span class="lineno">  189</span>    <span class="comment">// Init market</span></div>
-<div class="line"><span class="lineno">  190</span>    boost::shared_ptr&lt;Market&gt; initMarket = boost::make_shared&lt;TestMarketParCurves&gt;(today);</div>
-<div class="line"><span class="lineno">  191</span> </div>
-<div class="line"><span class="lineno">  192</span>    <span class="comment">// build scenario sim market parameters</span></div>
-<div class="line"><span class="lineno">  193</span>    boost::shared_ptr&lt;ore::analytics::ScenarioSimMarketParameters&gt; simMarketData =</div>
-<div class="line"><span class="lineno">  194</span>        <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#a5d3a5e48cec33ea02c24791b2593cae1">TestConfigurationObjects::setupSimMarketData</a>(<span class="keyword">true</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  180</span>    Date today = Date(14, April, 2016); <span class="comment">// Settings::instance().evaluationDate();</span></div>
+<div class="line"><span class="lineno">  181</span>    Settings::instance().evaluationDate() = today;</div>
+<div class="line"><span class="lineno">  182</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Today is &quot;</span> &lt;&lt; today);</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>    <span class="comment">// build model</span></div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordtype">string</span> baseCcy = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
+<div class="line"><span class="lineno">  186</span>    vector&lt;string&gt; ccys;</div>
+<div class="line"><span class="lineno">  187</span>    ccys.push_back(baseCcy);</div>
+<div class="line"><span class="lineno">  188</span>    ccys.push_back(<span class="stringliteral">&quot;GBP&quot;</span>);</div>
+<div class="line"><span class="lineno">  189</span>    ccys.push_back(<span class="stringliteral">&quot;CHF&quot;</span>);</div>
+<div class="line"><span class="lineno">  190</span>    ccys.push_back(<span class="stringliteral">&quot;USD&quot;</span>);</div>
+<div class="line"><span class="lineno">  191</span>    ccys.push_back(<span class="stringliteral">&quot;JPY&quot;</span>);</div>
+<div class="line"><span class="lineno">  192</span> </div>
+<div class="line"><span class="lineno">  193</span>    <span class="comment">// Init market</span></div>
+<div class="line"><span class="lineno">  194</span>    boost::shared_ptr&lt;Market&gt; initMarket = boost::make_shared&lt;TestMarketParCurves&gt;(today);</div>
 <div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>    <span class="comment">// sensitivity config</span></div>
-<div class="line"><span class="lineno">  197</span>    boost::shared_ptr&lt;SensitivityScenarioData&gt; sensiData =</div>
-<div class="line"><span class="lineno">  198</span>        <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#ad3905794b6d3b29161c6cd00aa7865df">TestConfigurationObjects::setupSensitivityScenarioData</a>(<span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  199</span>    <span class="comment">// build porfolio</span></div>
-<div class="line"><span class="lineno">  200</span>    boost::shared_ptr&lt;EngineData&gt; engineData = boost::make_shared&lt;EngineData&gt;();</div>
-<div class="line"><span class="lineno">  201</span>    engineData-&gt;model(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
-<div class="line"><span class="lineno">  202</span>    engineData-&gt;engine(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountingSwapEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  203</span>    engineData-&gt;model(<span class="stringliteral">&quot;CrossCurrencySwap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
-<div class="line"><span class="lineno">  204</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CrossCurrencySwap&quot;</span>) = <span class="stringliteral">&quot;DiscountingCrossCurrencySwapEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  205</span>    engineData-&gt;model(<span class="stringliteral">&quot;EuropeanSwaption&quot;</span>) = <span class="stringliteral">&quot;BlackBachelier&quot;</span>;</div>
-<div class="line"><span class="lineno">  206</span>    engineData-&gt;engine(<span class="stringliteral">&quot;EuropeanSwaption&quot;</span>) = <span class="stringliteral">&quot;BlackBachelierSwaptionEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  207</span>    engineData-&gt;model(<span class="stringliteral">&quot;FxForward&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
-<div class="line"><span class="lineno">  208</span>    engineData-&gt;engine(<span class="stringliteral">&quot;FxForward&quot;</span>) = <span class="stringliteral">&quot;DiscountingFxForwardEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  209</span>    engineData-&gt;model(<span class="stringliteral">&quot;FxOption&quot;</span>) = <span class="stringliteral">&quot;GarmanKohlhagen&quot;</span>;</div>
-<div class="line"><span class="lineno">  210</span>    engineData-&gt;engine(<span class="stringliteral">&quot;FxOption&quot;</span>) = <span class="stringliteral">&quot;AnalyticEuropeanEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  211</span>    engineData-&gt;model(<span class="stringliteral">&quot;CapFloor&quot;</span>) = <span class="stringliteral">&quot;IborCapModel&quot;</span>;</div>
-<div class="line"><span class="lineno">  212</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CapFloor&quot;</span>) = <span class="stringliteral">&quot;IborCapEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  213</span>    engineData-&gt;model(<span class="stringliteral">&quot;CapFlooredIborLeg&quot;</span>) = <span class="stringliteral">&quot;BlackOrBachelier&quot;</span>;</div>
-<div class="line"><span class="lineno">  214</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CapFlooredIborLeg&quot;</span>) = <span class="stringliteral">&quot;BlackIborCouponPricer&quot;</span>;</div>
-<div class="line"><span class="lineno">  215</span>    engineData-&gt;model(<span class="stringliteral">&quot;CreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
-<div class="line"><span class="lineno">  216</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;MidPointCdsEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  217</span> </div>
-<div class="line"><span class="lineno">  218</span>    engineData-&gt;model(<span class="stringliteral">&quot;IndexCreditDefaultSwapOption&quot;</span>) = <span class="stringliteral">&quot;Black&quot;</span>;</div>
-<div class="line"><span class="lineno">  219</span>    engineData-&gt;engine(<span class="stringliteral">&quot;IndexCreditDefaultSwapOption&quot;</span>) = <span class="stringliteral">&quot;BlackIndexCdsOptionEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  220</span>    map&lt;string, string&gt; engineParamMap1;</div>
-<div class="line"><span class="lineno">  221</span>    engineParamMap1[<span class="stringliteral">&quot;Curve&quot;</span>] = <span class="stringliteral">&quot;Underlying&quot;</span>;</div>
-<div class="line"><span class="lineno">  222</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;IndexCreditDefaultSwapOption&quot;</span>) = engineParamMap1;</div>
-<div class="line"><span class="lineno">  223</span> </div>
-<div class="line"><span class="lineno">  224</span>    engineData-&gt;model(<span class="stringliteral">&quot;IndexCreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
-<div class="line"><span class="lineno">  225</span>    engineData-&gt;engine(<span class="stringliteral">&quot;IndexCreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;MidPointIndexCdsEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  226</span>    map&lt;string, string&gt; engineParamMap2;</div>
-<div class="line"><span class="lineno">  227</span>    engineParamMap2[<span class="stringliteral">&quot;Curve&quot;</span>] = <span class="stringliteral">&quot;Underlying&quot;</span>;</div>
-<div class="line"><span class="lineno">  228</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;IndexCreditDefaultSwap&quot;</span>) = engineParamMap2;</div>
-<div class="line"><span class="lineno">  229</span> </div>
-<div class="line"><span class="lineno">  230</span>    engineData-&gt;model(<span class="stringliteral">&quot;CMS&quot;</span>) = <span class="stringliteral">&quot;LinearTSR&quot;</span>;</div>
-<div class="line"><span class="lineno">  231</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CMS&quot;</span>) = <span class="stringliteral">&quot;LinearTSRPricer&quot;</span>;</div>
-<div class="line"><span class="lineno">  232</span>    map&lt;string, string&gt; engineparams;</div>
-<div class="line"><span class="lineno">  233</span>    engineparams[<span class="stringliteral">&quot;MeanReversion&quot;</span>] = <span class="stringliteral">&quot;0.0&quot;</span>;</div>
-<div class="line"><span class="lineno">  234</span>    engineparams[<span class="stringliteral">&quot;Policy&quot;</span>] = <span class="stringliteral">&quot;RateBound&quot;</span>;</div>
-<div class="line"><span class="lineno">  235</span>    engineparams[<span class="stringliteral">&quot;LowerRateBoundNormal&quot;</span>] = <span class="stringliteral">&quot;-2.0000&quot;</span>;</div>
-<div class="line"><span class="lineno">  236</span>    engineparams[<span class="stringliteral">&quot;UpperRateBoundNormal&quot;</span>] = <span class="stringliteral">&quot;2.0000&quot;</span>;</div>
-<div class="line"><span class="lineno">  237</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;CMS&quot;</span>) = engineparams;</div>
-<div class="line"><span class="lineno">  238</span>    engineData-&gt;model(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = <span class="stringliteral">&quot;GaussCopula&quot;</span>;</div>
-<div class="line"><span class="lineno">  239</span>    engineData-&gt;engine(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = <span class="stringliteral">&quot;Bucketing&quot;</span>;</div>
-<div class="line"><span class="lineno">  240</span>    map&lt;string, string&gt; modelParamMap3;</div>
-<div class="line"><span class="lineno">  241</span>    map&lt;string, string&gt; engineParamMap3;</div>
-<div class="line"><span class="lineno">  242</span>    modelParamMap3[<span class="stringliteral">&quot;correlation&quot;</span>] = <span class="stringliteral">&quot;0.0&quot;</span>;</div>
-<div class="line"><span class="lineno">  243</span>    modelParamMap3[<span class="stringliteral">&quot;min&quot;</span>] = <span class="stringliteral">&quot;-5.0&quot;</span>;</div>
-<div class="line"><span class="lineno">  244</span>    modelParamMap3[<span class="stringliteral">&quot;max&quot;</span>] = <span class="stringliteral">&quot;5.0&quot;</span>;</div>
-<div class="line"><span class="lineno">  245</span>    modelParamMap3[<span class="stringliteral">&quot;steps&quot;</span>] = <span class="stringliteral">&quot;64&quot;</span>;</div>
-<div class="line"><span class="lineno">  246</span>    engineParamMap3[<span class="stringliteral">&quot;buckets&quot;</span>] = <span class="stringliteral">&quot;200&quot;</span>;</div>
-<div class="line"><span class="lineno">  247</span>    engineParamMap3[<span class="stringliteral">&quot;homogeneousPoolWhenJustified&quot;</span>] = <span class="stringliteral">&quot;N&quot;</span>;</div>
-<div class="line"><span class="lineno">  248</span>    engineData-&gt;modelParameters(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = modelParamMap3;</div>
-<div class="line"><span class="lineno">  249</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = engineParamMap3;</div>
-<div class="line"><span class="lineno">  250</span> </div>
-<div class="line"><span class="lineno">  251</span>    engineData-&gt;model(<span class="stringliteral">&quot;EquityOption&quot;</span>) = <span class="stringliteral">&quot;BlackScholesMerton&quot;</span>;</div>
-<div class="line"><span class="lineno">  252</span>    engineData-&gt;engine(<span class="stringliteral">&quot;EquityOption&quot;</span>) = <span class="stringliteral">&quot;AnalyticEuropeanEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  253</span> </div>
-<div class="line"><span class="lineno">  254</span>    std::vector&lt;boost::shared_ptr&lt;EngineBuilder&gt;&gt; builders;</div>
-<div class="line"><span class="lineno">  255</span>    <span class="comment">// builders.push_back(boost::make_shared&lt;oreplus::data::MidPointIndexCdsEngineBuilder&gt;());</span></div>
-<div class="line"><span class="lineno">  256</span>    <span class="comment">// builders.push_back(boost::make_shared&lt;oreplus::data::BlackIndexCdsOptionEngineBuilder&gt;());</span></div>
-<div class="line"><span class="lineno">  257</span>    builders.push_back(boost::make_shared&lt;ore::data::GaussCopulaBucketingCdoEngineBuilder&gt;());</div>
-<div class="line"><span class="lineno">  258</span> </div>
-<div class="line"><span class="lineno">  259</span>    boost::shared_ptr&lt;EngineFactory&gt; factory = registerBuilders(engineData, initMarket);</div>
-<div class="line"><span class="lineno">  260</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_portfolio.html">Portfolio</a>());</div>
-<div class="line"><span class="lineno">  261</span>    boost::shared_ptr&lt;Conventions&gt; conventions = InstrumentConventions::instance().conventions();</div>
-<div class="line"><span class="lineno">  262</span>    boost::shared_ptr&lt;IRSwapConvention&gt; eurConv =</div>
-<div class="line"><span class="lineno">  263</span>        boost::dynamic_pointer_cast&lt;IRSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;EUR-6M-SWAP-CONVENTIONS&quot;</span>));</div>
-<div class="line"><span class="lineno">  264</span>    <span class="keywordtype">string</span> eurIdx = <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>;</div>
-<div class="line"><span class="lineno">  265</span>    Period eurFloatTenor = initMarket-&gt;iborIndex(eurIdx)-&gt;tenor();</div>
-<div class="line"><span class="lineno">  266</span>    boost::shared_ptr&lt;IRSwapConvention&gt; usdConv =</div>
-<div class="line"><span class="lineno">  267</span>        boost::dynamic_pointer_cast&lt;IRSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;USD-6M-SWAP-CONVENTIONS&quot;</span>));</div>
-<div class="line"><span class="lineno">  268</span>    <span class="keywordtype">string</span> usdIdx = <span class="stringliteral">&quot;USD-LIBOR-6M&quot;</span>;</div>
-<div class="line"><span class="lineno">  269</span>    Period usdFloatTenor = initMarket-&gt;iborIndex(usdIdx)-&gt;tenor();</div>
-<div class="line"><span class="lineno">  270</span>    boost::shared_ptr&lt;IRSwapConvention&gt; jpyConv =</div>
-<div class="line"><span class="lineno">  271</span>        boost::dynamic_pointer_cast&lt;IRSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;JPY-6M-SWAP-CONVENTIONS&quot;</span>));</div>
-<div class="line"><span class="lineno">  272</span>    <span class="keywordtype">string</span> jpyIdx = <span class="stringliteral">&quot;JPY-LIBOR-6M&quot;</span>;</div>
-<div class="line"><span class="lineno">  273</span>    Period jpyFloatTenor = initMarket-&gt;iborIndex(jpyIdx)-&gt;tenor();</div>
-<div class="line"><span class="lineno">  274</span>    boost::shared_ptr&lt;CrossCcyBasisSwapConvention&gt; chfBasisConv =</div>
-<div class="line"><span class="lineno">  275</span>        boost::dynamic_pointer_cast&lt;CrossCcyBasisSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;CHF-XCCY-BASIS-CONVENTIONS&quot;</span>));</div>
-<div class="line"><span class="lineno">  276</span>    boost::shared_ptr&lt;CdsConvention&gt; cdsConv =</div>
-<div class="line"><span class="lineno">  277</span>        boost::dynamic_pointer_cast&lt;CdsConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;CDS-STANDARD-CONVENTIONS&quot;</span>));</div>
-<div class="line"><span class="lineno">  278</span> </div>
-<div class="line"><span class="lineno">  279</span>    <span class="keywordtype">string</span> chfIdx = chfBasisConv-&gt;spreadIndexName();</div>
-<div class="line"><span class="lineno">  280</span>    <span class="keywordtype">string</span> otherIdx = chfBasisConv-&gt;flatIndexName();</div>
-<div class="line"><span class="lineno">  281</span>    Period chfFloatTenor = initMarket-&gt;iborIndex(chfIdx)-&gt;tenor();</div>
-<div class="line"><span class="lineno">  282</span>    Period otherFloatTenor = initMarket-&gt;iborIndex(otherIdx)-&gt;tenor();</div>
-<div class="line"><span class="lineno">  283</span> </div>
-<div class="line"><span class="lineno">  284</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
-<div class="line"><span class="lineno">  285</span>        <span class="stringliteral">&quot;1_Swap_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="keyword">true</span>, 10000000.0, 0, 10, 0.02, 0.00,</div>
-<div class="line"><span class="lineno">  286</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(eurConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurConv-&gt;fixedDayCounter()),</div>
-<div class="line"><span class="lineno">  287</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, eurIdx, eurConv-&gt;fixedCalendar(),</div>
-<div class="line"><span class="lineno">  288</span>        initMarket-&gt;iborIndex(eurIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  289</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
-<div class="line"><span class="lineno">  290</span>        <span class="stringliteral">&quot;2_Swap_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="keyword">true</span>, 10000000.0, 0, 15, 0.03, 0.00,</div>
-<div class="line"><span class="lineno">  291</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(usdConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(usdConv-&gt;fixedDayCounter()),</div>
-<div class="line"><span class="lineno">  292</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(usdFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, usdIdx, usdConv-&gt;fixedCalendar(),</div>
-<div class="line"><span class="lineno">  293</span>        initMarket-&gt;iborIndex(usdIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  294</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a42359c43fde5ca54a8172a9c9a0dc7a5">buildCap</a>(</div>
-<div class="line"><span class="lineno">  295</span>        <span class="stringliteral">&quot;9_Cap_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;Long&quot;</span>, 0.02, 1000000.0, 0, 10, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, eurIdx,</div>
-<div class="line"><span class="lineno">  296</span>        eurConv-&gt;fixedCalendar(), initMarket-&gt;iborIndex(eurIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  297</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a51b621a66b133e2a519258f56aaa222e">buildFloor</a>(</div>
-<div class="line"><span class="lineno">  298</span>        <span class="stringliteral">&quot;10_Floor_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;Long&quot;</span>, 0.03, 1000000.0, 0, 10, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(usdFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, usdIdx,</div>
-<div class="line"><span class="lineno">  299</span>        usdConv-&gt;fixedCalendar(), initMarket-&gt;iborIndex(usdIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  300</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
-<div class="line"><span class="lineno">  301</span>        <span class="stringliteral">&quot;3_Swap_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="keyword">false</span>, 10000000.0, 1, 12, 0.025, 0.00,</div>
-<div class="line"><span class="lineno">  302</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(eurConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurConv-&gt;fixedDayCounter()),</div>
-<div class="line"><span class="lineno">  303</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, eurIdx, eurConv-&gt;fixedCalendar(),</div>
-<div class="line"><span class="lineno">  304</span>        initMarket-&gt;iborIndex(eurIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  305</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100">buildCrossCcyBasisSwap</a>(</div>
-<div class="line"><span class="lineno">  306</span>        <span class="stringliteral">&quot;4_XCCY_SWAP&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, 10000000, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, 0, 15, 0.0000, 0.0000, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor),</div>
-<div class="line"><span class="lineno">  307</span>        <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx,</div>
-<div class="line"><span class="lineno">  308</span>        chfBasisConv-&gt;settlementCalendar(), chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  196</span>    <span class="comment">// build scenario sim market parameters</span></div>
+<div class="line"><span class="lineno">  197</span>    boost::shared_ptr&lt;ore::analytics::ScenarioSimMarketParameters&gt; simMarketData =</div>
+<div class="line"><span class="lineno">  198</span>        <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#a5d3a5e48cec33ea02c24791b2593cae1">TestConfigurationObjects::setupSimMarketData</a>(<span class="keyword">true</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  199</span> </div>
+<div class="line"><span class="lineno">  200</span>    <span class="comment">// sensitivity config</span></div>
+<div class="line"><span class="lineno">  201</span>    boost::shared_ptr&lt;SensitivityScenarioData&gt; sensiData =</div>
+<div class="line"><span class="lineno">  202</span>        <a class="code hl_function" href="classtestsuite_1_1_test_configuration_objects.html#ad3905794b6d3b29161c6cd00aa7865df">TestConfigurationObjects::setupSensitivityScenarioData</a>(<span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  203</span>    <span class="comment">// build porfolio</span></div>
+<div class="line"><span class="lineno">  204</span>    boost::shared_ptr&lt;EngineData&gt; engineData = boost::make_shared&lt;EngineData&gt;();</div>
+<div class="line"><span class="lineno">  205</span>    engineData-&gt;model(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
+<div class="line"><span class="lineno">  206</span>    engineData-&gt;engine(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountingSwapEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  207</span>    engineData-&gt;model(<span class="stringliteral">&quot;CrossCurrencySwap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
+<div class="line"><span class="lineno">  208</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CrossCurrencySwap&quot;</span>) = <span class="stringliteral">&quot;DiscountingCrossCurrencySwapEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  209</span>    engineData-&gt;model(<span class="stringliteral">&quot;EuropeanSwaption&quot;</span>) = <span class="stringliteral">&quot;BlackBachelier&quot;</span>;</div>
+<div class="line"><span class="lineno">  210</span>    engineData-&gt;engine(<span class="stringliteral">&quot;EuropeanSwaption&quot;</span>) = <span class="stringliteral">&quot;BlackBachelierSwaptionEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  211</span>    engineData-&gt;model(<span class="stringliteral">&quot;FxForward&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
+<div class="line"><span class="lineno">  212</span>    engineData-&gt;engine(<span class="stringliteral">&quot;FxForward&quot;</span>) = <span class="stringliteral">&quot;DiscountingFxForwardEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  213</span>    engineData-&gt;model(<span class="stringliteral">&quot;FxOption&quot;</span>) = <span class="stringliteral">&quot;GarmanKohlhagen&quot;</span>;</div>
+<div class="line"><span class="lineno">  214</span>    engineData-&gt;engine(<span class="stringliteral">&quot;FxOption&quot;</span>) = <span class="stringliteral">&quot;AnalyticEuropeanEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  215</span>    engineData-&gt;model(<span class="stringliteral">&quot;CapFloor&quot;</span>) = <span class="stringliteral">&quot;IborCapModel&quot;</span>;</div>
+<div class="line"><span class="lineno">  216</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CapFloor&quot;</span>) = <span class="stringliteral">&quot;IborCapEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  217</span>    engineData-&gt;model(<span class="stringliteral">&quot;CapFlooredIborLeg&quot;</span>) = <span class="stringliteral">&quot;BlackOrBachelier&quot;</span>;</div>
+<div class="line"><span class="lineno">  218</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CapFlooredIborLeg&quot;</span>) = <span class="stringliteral">&quot;BlackIborCouponPricer&quot;</span>;</div>
+<div class="line"><span class="lineno">  219</span>    engineData-&gt;model(<span class="stringliteral">&quot;CreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
+<div class="line"><span class="lineno">  220</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;MidPointCdsEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>    engineData-&gt;model(<span class="stringliteral">&quot;IndexCreditDefaultSwapOption&quot;</span>) = <span class="stringliteral">&quot;Black&quot;</span>;</div>
+<div class="line"><span class="lineno">  223</span>    engineData-&gt;engine(<span class="stringliteral">&quot;IndexCreditDefaultSwapOption&quot;</span>) = <span class="stringliteral">&quot;BlackIndexCdsOptionEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  224</span>    map&lt;string, string&gt; engineParamMap1;</div>
+<div class="line"><span class="lineno">  225</span>    engineParamMap1[<span class="stringliteral">&quot;Curve&quot;</span>] = <span class="stringliteral">&quot;Underlying&quot;</span>;</div>
+<div class="line"><span class="lineno">  226</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;IndexCreditDefaultSwapOption&quot;</span>) = engineParamMap1;</div>
+<div class="line"><span class="lineno">  227</span> </div>
+<div class="line"><span class="lineno">  228</span>    engineData-&gt;model(<span class="stringliteral">&quot;IndexCreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
+<div class="line"><span class="lineno">  229</span>    engineData-&gt;engine(<span class="stringliteral">&quot;IndexCreditDefaultSwap&quot;</span>) = <span class="stringliteral">&quot;MidPointIndexCdsEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  230</span>    map&lt;string, string&gt; engineParamMap2;</div>
+<div class="line"><span class="lineno">  231</span>    engineParamMap2[<span class="stringliteral">&quot;Curve&quot;</span>] = <span class="stringliteral">&quot;Underlying&quot;</span>;</div>
+<div class="line"><span class="lineno">  232</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;IndexCreditDefaultSwap&quot;</span>) = engineParamMap2;</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>    engineData-&gt;model(<span class="stringliteral">&quot;CMS&quot;</span>) = <span class="stringliteral">&quot;LinearTSR&quot;</span>;</div>
+<div class="line"><span class="lineno">  235</span>    engineData-&gt;engine(<span class="stringliteral">&quot;CMS&quot;</span>) = <span class="stringliteral">&quot;LinearTSRPricer&quot;</span>;</div>
+<div class="line"><span class="lineno">  236</span>    map&lt;string, string&gt; engineparams;</div>
+<div class="line"><span class="lineno">  237</span>    engineparams[<span class="stringliteral">&quot;MeanReversion&quot;</span>] = <span class="stringliteral">&quot;0.0&quot;</span>;</div>
+<div class="line"><span class="lineno">  238</span>    engineparams[<span class="stringliteral">&quot;Policy&quot;</span>] = <span class="stringliteral">&quot;RateBound&quot;</span>;</div>
+<div class="line"><span class="lineno">  239</span>    engineparams[<span class="stringliteral">&quot;LowerRateBoundNormal&quot;</span>] = <span class="stringliteral">&quot;-2.0000&quot;</span>;</div>
+<div class="line"><span class="lineno">  240</span>    engineparams[<span class="stringliteral">&quot;UpperRateBoundNormal&quot;</span>] = <span class="stringliteral">&quot;2.0000&quot;</span>;</div>
+<div class="line"><span class="lineno">  241</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;CMS&quot;</span>) = engineparams;</div>
+<div class="line"><span class="lineno">  242</span>    engineData-&gt;model(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = <span class="stringliteral">&quot;GaussCopula&quot;</span>;</div>
+<div class="line"><span class="lineno">  243</span>    engineData-&gt;engine(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = <span class="stringliteral">&quot;Bucketing&quot;</span>;</div>
+<div class="line"><span class="lineno">  244</span>    map&lt;string, string&gt; modelParamMap3;</div>
+<div class="line"><span class="lineno">  245</span>    map&lt;string, string&gt; engineParamMap3;</div>
+<div class="line"><span class="lineno">  246</span>    modelParamMap3[<span class="stringliteral">&quot;correlation&quot;</span>] = <span class="stringliteral">&quot;0.0&quot;</span>;</div>
+<div class="line"><span class="lineno">  247</span>    modelParamMap3[<span class="stringliteral">&quot;min&quot;</span>] = <span class="stringliteral">&quot;-5.0&quot;</span>;</div>
+<div class="line"><span class="lineno">  248</span>    modelParamMap3[<span class="stringliteral">&quot;max&quot;</span>] = <span class="stringliteral">&quot;5.0&quot;</span>;</div>
+<div class="line"><span class="lineno">  249</span>    modelParamMap3[<span class="stringliteral">&quot;steps&quot;</span>] = <span class="stringliteral">&quot;64&quot;</span>;</div>
+<div class="line"><span class="lineno">  250</span>    engineParamMap3[<span class="stringliteral">&quot;buckets&quot;</span>] = <span class="stringliteral">&quot;200&quot;</span>;</div>
+<div class="line"><span class="lineno">  251</span>    engineParamMap3[<span class="stringliteral">&quot;homogeneousPoolWhenJustified&quot;</span>] = <span class="stringliteral">&quot;N&quot;</span>;</div>
+<div class="line"><span class="lineno">  252</span>    engineData-&gt;modelParameters(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = modelParamMap3;</div>
+<div class="line"><span class="lineno">  253</span>    engineData-&gt;engineParameters(<span class="stringliteral">&quot;SyntheticCDO&quot;</span>) = engineParamMap3;</div>
+<div class="line"><span class="lineno">  254</span> </div>
+<div class="line"><span class="lineno">  255</span>    engineData-&gt;model(<span class="stringliteral">&quot;EquityOption&quot;</span>) = <span class="stringliteral">&quot;BlackScholesMerton&quot;</span>;</div>
+<div class="line"><span class="lineno">  256</span>    engineData-&gt;engine(<span class="stringliteral">&quot;EquityOption&quot;</span>) = <span class="stringliteral">&quot;AnalyticEuropeanEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  257</span> </div>
+<div class="line"><span class="lineno">  258</span>    std::vector&lt;boost::shared_ptr&lt;EngineBuilder&gt;&gt; builders;</div>
+<div class="line"><span class="lineno">  259</span>    <span class="comment">// builders.push_back(boost::make_shared&lt;oreplus::data::MidPointIndexCdsEngineBuilder&gt;());</span></div>
+<div class="line"><span class="lineno">  260</span>    <span class="comment">// builders.push_back(boost::make_shared&lt;oreplus::data::BlackIndexCdsOptionEngineBuilder&gt;());</span></div>
+<div class="line"><span class="lineno">  261</span>    builders.push_back(boost::make_shared&lt;ore::data::GaussCopulaBucketingCdoEngineBuilder&gt;());</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>    boost::shared_ptr&lt;EngineFactory&gt; factory = registerBuilders(engineData, initMarket);</div>
+<div class="line"><span class="lineno">  264</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_portfolio.html">Portfolio</a>());</div>
+<div class="line"><span class="lineno">  265</span>    boost::shared_ptr&lt;Conventions&gt; conventions = InstrumentConventions::instance().conventions();</div>
+<div class="line"><span class="lineno">  266</span>    boost::shared_ptr&lt;IRSwapConvention&gt; eurConv =</div>
+<div class="line"><span class="lineno">  267</span>        boost::dynamic_pointer_cast&lt;IRSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;EUR-6M-SWAP-CONVENTIONS&quot;</span>));</div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordtype">string</span> eurIdx = <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>;</div>
+<div class="line"><span class="lineno">  269</span>    Period eurFloatTenor = initMarket-&gt;iborIndex(eurIdx)-&gt;tenor();</div>
+<div class="line"><span class="lineno">  270</span>    boost::shared_ptr&lt;IRSwapConvention&gt; usdConv =</div>
+<div class="line"><span class="lineno">  271</span>        boost::dynamic_pointer_cast&lt;IRSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;USD-6M-SWAP-CONVENTIONS&quot;</span>));</div>
+<div class="line"><span class="lineno">  272</span>    <span class="keywordtype">string</span> usdIdx = <span class="stringliteral">&quot;USD-LIBOR-6M&quot;</span>;</div>
+<div class="line"><span class="lineno">  273</span>    Period usdFloatTenor = initMarket-&gt;iborIndex(usdIdx)-&gt;tenor();</div>
+<div class="line"><span class="lineno">  274</span>    boost::shared_ptr&lt;IRSwapConvention&gt; jpyConv =</div>
+<div class="line"><span class="lineno">  275</span>        boost::dynamic_pointer_cast&lt;IRSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;JPY-6M-SWAP-CONVENTIONS&quot;</span>));</div>
+<div class="line"><span class="lineno">  276</span>    <span class="keywordtype">string</span> jpyIdx = <span class="stringliteral">&quot;JPY-LIBOR-6M&quot;</span>;</div>
+<div class="line"><span class="lineno">  277</span>    Period jpyFloatTenor = initMarket-&gt;iborIndex(jpyIdx)-&gt;tenor();</div>
+<div class="line"><span class="lineno">  278</span>    boost::shared_ptr&lt;CrossCcyBasisSwapConvention&gt; chfBasisConv =</div>
+<div class="line"><span class="lineno">  279</span>        boost::dynamic_pointer_cast&lt;CrossCcyBasisSwapConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;CHF-XCCY-BASIS-CONVENTIONS&quot;</span>));</div>
+<div class="line"><span class="lineno">  280</span>    boost::shared_ptr&lt;CdsConvention&gt; cdsConv =</div>
+<div class="line"><span class="lineno">  281</span>        boost::dynamic_pointer_cast&lt;CdsConvention&gt;(conventions-&gt;get(<span class="stringliteral">&quot;CDS-STANDARD-CONVENTIONS&quot;</span>));</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>    <span class="keywordtype">string</span> chfIdx = chfBasisConv-&gt;spreadIndexName();</div>
+<div class="line"><span class="lineno">  284</span>    <span class="keywordtype">string</span> otherIdx = chfBasisConv-&gt;flatIndexName();</div>
+<div class="line"><span class="lineno">  285</span>    Period chfFloatTenor = initMarket-&gt;iborIndex(chfIdx)-&gt;tenor();</div>
+<div class="line"><span class="lineno">  286</span>    Period otherFloatTenor = initMarket-&gt;iborIndex(otherIdx)-&gt;tenor();</div>
+<div class="line"><span class="lineno">  287</span> </div>
+<div class="line"><span class="lineno">  288</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
+<div class="line"><span class="lineno">  289</span>        <span class="stringliteral">&quot;1_Swap_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="keyword">true</span>, 10000000.0, 0, 10, 0.02, 0.00,</div>
+<div class="line"><span class="lineno">  290</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(eurConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurConv-&gt;fixedDayCounter()),</div>
+<div class="line"><span class="lineno">  291</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, eurIdx, eurConv-&gt;fixedCalendar(),</div>
+<div class="line"><span class="lineno">  292</span>        initMarket-&gt;iborIndex(eurIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  293</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
+<div class="line"><span class="lineno">  294</span>        <span class="stringliteral">&quot;2_Swap_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="keyword">true</span>, 10000000.0, 0, 15, 0.03, 0.00,</div>
+<div class="line"><span class="lineno">  295</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(usdConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(usdConv-&gt;fixedDayCounter()),</div>
+<div class="line"><span class="lineno">  296</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(usdFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, usdIdx, usdConv-&gt;fixedCalendar(),</div>
+<div class="line"><span class="lineno">  297</span>        initMarket-&gt;iborIndex(usdIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  298</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a42359c43fde5ca54a8172a9c9a0dc7a5">buildCap</a>(</div>
+<div class="line"><span class="lineno">  299</span>        <span class="stringliteral">&quot;9_Cap_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;Long&quot;</span>, 0.02, 1000000.0, 0, 10, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, eurIdx,</div>
+<div class="line"><span class="lineno">  300</span>        eurConv-&gt;fixedCalendar(), initMarket-&gt;iborIndex(eurIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  301</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a51b621a66b133e2a519258f56aaa222e">buildFloor</a>(</div>
+<div class="line"><span class="lineno">  302</span>        <span class="stringliteral">&quot;10_Floor_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;Long&quot;</span>, 0.03, 1000000.0, 0, 10, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(usdFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, usdIdx,</div>
+<div class="line"><span class="lineno">  303</span>        usdConv-&gt;fixedCalendar(), initMarket-&gt;iborIndex(usdIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  304</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
+<div class="line"><span class="lineno">  305</span>        <span class="stringliteral">&quot;3_Swap_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="keyword">false</span>, 10000000.0, 1, 12, 0.025, 0.00,</div>
+<div class="line"><span class="lineno">  306</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(eurConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurConv-&gt;fixedDayCounter()),</div>
+<div class="line"><span class="lineno">  307</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, eurIdx, eurConv-&gt;fixedCalendar(),</div>
+<div class="line"><span class="lineno">  308</span>        initMarket-&gt;iborIndex(eurIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
 <div class="line"><span class="lineno">  309</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100">buildCrossCcyBasisSwap</a>(</div>
-<div class="line"><span class="lineno">  310</span>        <span class="stringliteral">&quot;5_XCCY_SWAP_WithPrincipal&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, 10000000, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, 0, 15, 0.0000, 0.0000,</div>
-<div class="line"><span class="lineno">  311</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(),</div>
-<div class="line"><span class="lineno">  312</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx, chfBasisConv-&gt;settlementCalendar(),</div>
-<div class="line"><span class="lineno">  313</span>        chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>));</div>
-<div class="line"><span class="lineno">  314</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
-<div class="line"><span class="lineno">  315</span>        <span class="stringliteral">&quot;6_Swap_JPY&quot;</span>, <span class="stringliteral">&quot;JPY&quot;</span>, <span class="keyword">true</span>, 1000000000.0, 0, 10, 0.005, 0.00,</div>
-<div class="line"><span class="lineno">  316</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(jpyConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(jpyConv-&gt;fixedDayCounter()),</div>
-<div class="line"><span class="lineno">  317</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(jpyFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, jpyIdx, jpyConv-&gt;fixedCalendar(),</div>
-<div class="line"><span class="lineno">  318</span>        initMarket-&gt;iborIndex(jpyIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  319</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100">buildCrossCcyBasisSwap</a>(</div>
-<div class="line"><span class="lineno">  320</span>        <span class="stringliteral">&quot;7_XCCY_SWAP_OffMarket&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, <span class="stringliteral">&quot;CHF&quot;</span>, 10500000, 0, 15, 0.0000, 0.0010,</div>
-<div class="line"><span class="lineno">  321</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(),</div>
-<div class="line"><span class="lineno">  322</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx, chfBasisConv-&gt;settlementCalendar(),</div>
-<div class="line"><span class="lineno">  323</span>        chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  324</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100">buildCrossCcyBasisSwap</a>(</div>
-<div class="line"><span class="lineno">  325</span>        <span class="stringliteral">&quot;8_XCCY_SWAP_RESET&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, 10000000, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, 0, 15, 0.0000, 0.0000,</div>
-<div class="line"><span class="lineno">  326</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(),</div>
-<div class="line"><span class="lineno">  327</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx, chfBasisConv-&gt;settlementCalendar(),</div>
-<div class="line"><span class="lineno">  328</span>        chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>));</div>
-<div class="line"><span class="lineno">  329</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(<span class="stringliteral">&quot;9_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4,</div>
-<div class="line"><span class="lineno">  330</span>                                          0.009, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())),</div>
-<div class="line"><span class="lineno">  331</span>                                          <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  332</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
-<div class="line"><span class="lineno">  333</span>        <span class="stringliteral">&quot;9_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4, 0.009,</div>
-<div class="line"><span class="lineno">  334</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  335</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
-<div class="line"><span class="lineno">  336</span>        <span class="stringliteral">&quot;10_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 10, 0.4, 0.001,</div>
-<div class="line"><span class="lineno">  337</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  338</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
-<div class="line"><span class="lineno">  339</span>        <span class="stringliteral">&quot;10_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 10, 0.4, 0.001,</div>
-<div class="line"><span class="lineno">  340</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  341</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
-<div class="line"><span class="lineno">  342</span>        <span class="stringliteral">&quot;11_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 5, 0.4, 0.001,</div>
-<div class="line"><span class="lineno">  343</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  344</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(<span class="stringliteral">&quot;11_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 5, 0.4,</div>
-<div class="line"><span class="lineno">  345</span>                                          0.001, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())),</div>
-<div class="line"><span class="lineno">  346</span>                                          <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  347</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(<span class="stringliteral">&quot;12_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 2, 0.4,</div>
-<div class="line"><span class="lineno">  348</span>                                          0.004, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())),</div>
-<div class="line"><span class="lineno">  349</span>                                          <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  350</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
-<div class="line"><span class="lineno">  351</span>        <span class="stringliteral">&quot;12_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 2, 0.4, 0.001,</div>
-<div class="line"><span class="lineno">  352</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  353</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
-<div class="line"><span class="lineno">  354</span>        <span class="stringliteral">&quot;13_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4, 0.001,</div>
-<div class="line"><span class="lineno">  355</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  356</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
-<div class="line"><span class="lineno">  357</span>        <span class="stringliteral">&quot;13_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4, 0.001,</div>
-<div class="line"><span class="lineno">  358</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
-<div class="line"><span class="lineno">  359</span> </div>
-<div class="line"><span class="lineno">  360</span>    vector&lt;string&gt; names = {<span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc3&quot;</span>};</div>
-<div class="line"><span class="lineno">  361</span>    vector&lt;string&gt; indexCcys = {<span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>};</div>
-<div class="line"><span class="lineno">  362</span>    vector&lt;Real&gt; notionals = {3000000, 3000000, 3000000};</div>
-<div class="line"><span class="lineno">  363</span>    <span class="comment">// portfolio-&gt;add(buildIndexCdsOption(&quot;14_IndexCDSOption_USD&quot;, &quot;dc&quot;, names, &quot;Long&quot;, &quot;USD&quot;,</span></div>
-<div class="line"><span class="lineno">  364</span>    <span class="comment">// indexCcys, true, notionals, notional, 1, 4,</span></div>
-<div class="line"><span class="lineno">  365</span>    <span class="comment">//                                                         0.4, 0.001,</span></div>
-<div class="line"><span class="lineno">  366</span>    <span class="comment">//                                                         ore::data::to_string(Period(cdsConv-&gt;frequency())),</span></div>
-<div class="line"><span class="lineno">  367</span>    <span class="comment">//                                                        ore::data::to_string(cdsConv-&gt;dayCounter()), &quot;Physical&quot;));</span></div>
-<div class="line"><span class="lineno">  368</span> </div>
-<div class="line"><span class="lineno">  369</span>    vector&lt;string&gt; names2(1, <span class="stringliteral">&quot;dc2&quot;</span>);</div>
-<div class="line"><span class="lineno">  370</span>    vector&lt;string&gt; indexCcys2(1, <span class="stringliteral">&quot;EUR&quot;</span>);</div>
-<div class="line"><span class="lineno">  371</span>    vector&lt;Real&gt; notionals2(1, 10000000.0);</div>
-<div class="line"><span class="lineno">  372</span>    <span class="comment">// portfolio-&gt;add(buildIndexCdsOption(&quot;15_IndexCDSOption_EUR&quot;, &quot;dc2&quot;, names2, &quot;Long&quot;, &quot;EUR&quot;,</span></div>
-<div class="line"><span class="lineno">  373</span>    <span class="comment">// indexCcys2, true, notionals2, 10000000.0, 1, 4,</span></div>
-<div class="line"><span class="lineno">  374</span>    <span class="comment">//                                                       0.4, 0.001,</span></div>
-<div class="line"><span class="lineno">  375</span>    <span class="comment">//                                                       ore::data::to_string(Period(cdsConv-&gt;frequency())),</span></div>
-<div class="line"><span class="lineno">  376</span>    <span class="comment">//                                                       ore::data::to_string(cdsConv-&gt;dayCounter()), &quot;Physical&quot;));</span></div>
-<div class="line"><span class="lineno">  377</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#aa9df3e61776f919738fb12e21ed049ca">buildSyntheticCDO</a>(<span class="stringliteral">&quot;16_SyntheticCDO_EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, names2, <span class="stringliteral">&quot;Long&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, indexCcys2,</div>
-<div class="line"><span class="lineno">  378</span>                                     <span class="keyword">true</span>, notionals2, 1000000.0, 0, 5, 0.03, 0.01, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;30/360&quot;</span>));</div>
-<div class="line"><span class="lineno">  379</span> </div>
-<div class="line"><span class="lineno">  380</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adcf93a4b3b4221ead9beaa07a61516e1">buildCmsCapFloor</a>(<span class="stringliteral">&quot;17_CMS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;EUR-CMS-30Y&quot;</span>, <span class="keyword">true</span>, 2000000, 0, 5, 0.0, 1,</div>
-<div class="line"><span class="lineno">  381</span>                                    0.0, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(eurConv-&gt;fixedFrequency())),</div>
-<div class="line"><span class="lineno">  382</span>                                    <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurConv-&gt;fixedDayCounter())));</div>
-<div class="line"><span class="lineno">  383</span>    portfolio-&gt;add(</div>
-<div class="line"><span class="lineno">  384</span>        <a class="code hl_function" href="namespacetestsuite.html#a3c54e055257b56f61fc96e8f4993aacb">buildEquityOption</a>(<span class="stringliteral">&quot;18_EquityOption_SP5&quot;</span>, <span class="stringliteral">&quot;Long&quot;</span>, <span class="stringliteral">&quot;Call&quot;</span>, 2, <span class="stringliteral">&quot;SP5&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, 2147.56, 775));</div>
-<div class="line"><span class="lineno">  385</span> </div>
-<div class="line"><span class="lineno">  386</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab30f7b9c44095d806d2192ff584a9172">buildCPIInflationSwap</a>(<span class="stringliteral">&quot;19_CPIInflationSwap_UKRPI&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="keyword">true</span>, 100000.0, 0, 10,</div>
-<div class="line"><span class="lineno">  387</span>                                         0.0, <span class="stringliteral">&quot;6M&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>, <span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>,</div>
-<div class="line"><span class="lineno">  388</span>                                         <span class="stringliteral">&quot;UKRPI&quot;</span>, 201.0, <span class="stringliteral">&quot;2M&quot;</span>, <span class="keyword">false</span>, 0.005));</div>
-<div class="line"><span class="lineno">  389</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a306f6ee775460a838c33bcd361cf4cd9">buildYYInflationSwap</a>(<span class="stringliteral">&quot;20_YoYInflationSwap_UKRPI&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="keyword">true</span>, 100000.0, 0, 10,</div>
-<div class="line"><span class="lineno">  390</span>                                        0.0, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>, <span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>,</div>
-<div class="line"><span class="lineno">  391</span>                                        <span class="stringliteral">&quot;UKRPI&quot;</span>, <span class="stringliteral">&quot;2M&quot;</span>, 2));</div>
-<div class="line"><span class="lineno">  392</span> </div>
-<div class="line"><span class="lineno">  393</span>    Size tradeCount = portfolio-&gt;size();</div>
-<div class="line"><span class="lineno">  394</span>    portfolio-&gt;build(factory);</div>
-<div class="line"><span class="lineno">  395</span>    BOOST_CHECK_MESSAGE(portfolio-&gt;size() == tradeCount,</div>
-<div class="line"><span class="lineno">  396</span>                        <span class="stringliteral">&quot;Some trades not built correctly,&quot;</span> &lt;&lt; portfolio-&gt;size() &lt;&lt; <span class="stringliteral">&quot; vs. &quot;</span> &lt;&lt; tradeCount);</div>
-<div class="line"><span class="lineno">  397</span>    <span class="comment">// build the sensitivity analysis object</span></div>
-<div class="line"><span class="lineno">  398</span>    boost::shared_ptr&lt;SensitivityAnalysis&gt; zeroAnalysis =</div>
-<div class="line"><span class="lineno">  399</span>        boost::make_shared&lt;SensitivityAnalysisPlus&gt;(portfolio, initMarket, <span class="stringliteral">&quot;default&quot;</span>, engineData, simMarketData,</div>
-<div class="line"><span class="lineno">  400</span>                                                    sensiData, <span class="keyword">false</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">false</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">  401</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_par_sensitivity_analysis.html">ParSensitivityAnalysis</a> parAnalysis(today, simMarketData, *sensiData, <span class="stringliteral">&quot;default&quot;</span>);</div>
-<div class="line"><span class="lineno">  402</span>    parAnalysis.alignPillars();</div>
-<div class="line"><span class="lineno">  403</span>    zeroAnalysis-&gt;overrideTenors(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  404</span>    zeroAnalysis-&gt;generateSensitivities();</div>
-<div class="line"><span class="lineno">  405</span>    parAnalysis.computeParInstrumentSensitivities(zeroAnalysis-&gt;simMarket());</div>
-<div class="line"><span class="lineno">  406</span>    boost::shared_ptr&lt;ParSensitivityConverter&gt; parConverter =</div>
-<div class="line"><span class="lineno">  407</span>        boost::make_shared&lt;ParSensitivityConverter&gt;(parAnalysis.parSensitivities(), parAnalysis.shiftSizes());</div>
-<div class="line"><span class="lineno">  408</span>    boost::shared_ptr&lt;SensitivityCube&gt; sensiCube = zeroAnalysis-&gt;sensiCube();</div>
-<div class="line"><span class="lineno">  409</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_zero_to_par_cube.html">ZeroToParCube</a> parCube(sensiCube, parConverter);</div>
-<div class="line"><span class="lineno">  410</span> </div>
-<div class="line"><span class="lineno">  411</span>    std::map&lt;std::pair&lt;std::string, std::string&gt;, Real&gt; parDelta;</div>
-<div class="line"><span class="lineno">  412</span>    std::map&lt;std::pair&lt;std::string, std::string&gt;, Real&gt; zeroDelta;</div>
-<div class="line"><span class="lineno">  413</span>    map&lt;string, Real&gt; baseManualPv;</div>
-<div class="line"><span class="lineno">  414</span>    map&lt;string, Real&gt; basePv;</div>
-<div class="line"><span class="lineno">  415</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; tradeId : portfolio-&gt;ids()) {</div>
-<div class="line"><span class="lineno">  416</span>        basePv[tradeId] = sensiCube-&gt;npv(tradeId);</div>
-<div class="line"><span class="lineno">  417</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; f : sensiCube-&gt;factors()) {</div>
-<div class="line"><span class="lineno">  418</span>            <span class="keywordtype">string</span> des = sensiCube-&gt;factorDescription(f);</div>
-<div class="line"><span class="lineno">  419</span>            zeroDelta[make_pair(tradeId, des)] = sensiCube-&gt;delta(tradeId, f);</div>
-<div class="line"><span class="lineno">  420</span>        }</div>
-<div class="line"><span class="lineno">  421</span>        <span class="comment">// Fill the par deltas map</span></div>
-<div class="line"><span class="lineno">  422</span>        <span class="keyword">auto</span> temp = parCube.parDeltas(tradeId);</div>
-<div class="line"><span class="lineno">  423</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : temp) {</div>
-<div class="line"><span class="lineno">  424</span>            <span class="keywordtype">string</span> des = sensiCube-&gt;factorDescription(kv.first);</div>
-<div class="line"><span class="lineno">  425</span>            parDelta[make_pair(tradeId, des)] = kv.second;</div>
-<div class="line"><span class="lineno">  426</span>        }</div>
-<div class="line"><span class="lineno">  427</span>    }</div>
-<div class="line"><span class="lineno">  428</span>    boost::shared_ptr&lt;EngineFactory&gt; manualFactory = registerBuilders(engineData, initMarket);</div>
-<div class="line"><span class="lineno">  429</span> </div>
-<div class="line"><span class="lineno">  430</span>    portfolio-&gt;reset();</div>
-<div class="line"><span class="lineno">  431</span>    portfolio-&gt;build(manualFactory);</div>
-<div class="line"><span class="lineno">  432</span> </div>
-<div class="line"><span class="lineno">  433</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [tradeId, trade] : portfolio-&gt;trades()) {</div>
-<div class="line"><span class="lineno">  434</span>        Real fx = 1.0;</div>
-<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">if</span> (trade-&gt;npvCurrency() != <span class="stringliteral">&quot;EUR&quot;</span>) {</div>
-<div class="line"><span class="lineno">  436</span>            <span class="keywordtype">string</span> ccyPair = trade-&gt;npvCurrency() + baseCcy;</div>
-<div class="line"><span class="lineno">  437</span>            fx = initMarket-&gt;fxRate(ccyPair)-&gt;value();</div>
-<div class="line"><span class="lineno">  438</span>        }</div>
-<div class="line"><span class="lineno">  439</span>        baseManualPv[tradeId] = fx * trade-&gt;instrument()-&gt;NPV();</div>
-<div class="line"><span class="lineno">  440</span>        Real tradeNotional = fx * trade-&gt;notional();</div>
-<div class="line"><span class="lineno">  441</span>        Real simMarketTol =</div>
-<div class="line"><span class="lineno">  442</span>            1.e-5 * tradeNotional; <span class="comment">// tolerance for difference to sim market is 0.1bp upfront (should this be tightened?)</span></div>
-<div class="line"><span class="lineno">  443</span> </div>
-<div class="line"><span class="lineno">  444</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Base PV check for trade &quot;</span> &lt;&lt; tradeId &lt;&lt; <span class="stringliteral">&quot;; got &quot;</span> &lt;&lt; baseManualPv[tradeId]</div>
-<div class="line"><span class="lineno">  445</span>                                                      &lt;&lt; <span class="stringliteral">&quot;, expected &quot;</span> &lt;&lt; basePv[tradeId]);</div>
-<div class="line"><span class="lineno">  446</span>        BOOST_CHECK_MESSAGE(std::fabs(baseManualPv[tradeId] - basePv[tradeId]) &lt; simMarketTol,</div>
-<div class="line"><span class="lineno">  447</span>                            <span class="stringliteral">&quot;Base PV check error for trade &quot;</span> &lt;&lt; tradeId &lt;&lt; <span class="stringliteral">&quot;; got &quot;</span> &lt;&lt; baseManualPv[tradeId]</div>
-<div class="line"><span class="lineno">  448</span>                                                             &lt;&lt; <span class="stringliteral">&quot;, but expected &quot;</span> &lt;&lt; basePv[tradeId]);</div>
-<div class="line"><span class="lineno">  449</span>    }</div>
-<div class="line"><span class="lineno">  450</span> </div>
-<div class="line"><span class="lineno">  451</span>    boost::shared_ptr&lt;TestMarketParCurves&gt; initParMarket = boost::dynamic_pointer_cast&lt;TestMarketParCurves&gt;(initMarket);</div>
-<div class="line"><span class="lineno">  452</span>    BOOST_ASSERT(initParMarket);</div>
-<div class="line"><span class="lineno">  453</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing discount curve par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  454</span>    <span class="comment">// the discount curve par sensis</span></div>
-<div class="line"><span class="lineno">  455</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;discountRateHelpersInstMap()) {</div>
-<div class="line"><span class="lineno">  456</span>        <span class="keywordtype">string</span> ccy = d_it.first;</div>
-<div class="line"><span class="lineno">  457</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;discountCurveShiftData()[ccy]-&gt;shiftSize;</div>
-<div class="line"><span class="lineno">  458</span>        <span class="keywordtype">string</span> shiftType =</div>
-<div class="line"><span class="lineno">  459</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;discountCurveShiftData()[ccy]-&gt;shiftType);</div>
-<div class="line"><span class="lineno">  460</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;discountRateHelperTenorsMap().find(ccy)-&gt;second;</div>
-<div class="line"><span class="lineno">  461</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;discountRateHelperValuesMap().find(ccy)-&gt;second;</div>
-<div class="line"><span class="lineno">  462</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  463</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  464</span>            sensiLabels[i] = <span class="stringliteral">&quot;DiscountCurve/&quot;</span> + ccy + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
-<div class="line"><span class="lineno">  465</span>        }</div>
-<div class="line"><span class="lineno">  466</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  467</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  468</span>    }</div>
-<div class="line"><span class="lineno">  469</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing index curve par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  470</span>    <span class="comment">// the index curve par sensis</span></div>
-<div class="line"><span class="lineno">  471</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;indexCurveRateHelperInstMap()) {</div>
-<div class="line"><span class="lineno">  472</span>        <span class="keywordtype">string</span> idxName = d_it.first;</div>
-<div class="line"><span class="lineno">  473</span>        BOOST_TEST_MESSAGE(idxName);</div>
-<div class="line"><span class="lineno">  474</span>        <span class="keyword">auto</span> itr = zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData().find(idxName);</div>
-<div class="line"><span class="lineno">  475</span>        <span class="keywordflow">if</span> (itr == zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData().end())</div>
-<div class="line"><span class="lineno">  476</span>            zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData()[idxName] =</div>
-<div class="line"><span class="lineno">  477</span>                boost::make_shared&lt;SensitivityScenarioData::CurveShiftData&gt;();</div>
-<div class="line"><span class="lineno">  478</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData()[idxName]-&gt;shiftSize;</div>
-<div class="line"><span class="lineno">  479</span>        <span class="keywordtype">string</span> shiftType =</div>
-<div class="line"><span class="lineno">  480</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData()[idxName]-&gt;shiftType);</div>
-<div class="line"><span class="lineno">  481</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;indexCurveRateHelperTenorsMap().find(idxName)-&gt;second;</div>
-<div class="line"><span class="lineno">  482</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;indexCurveRateHelperValuesMap().find(idxName)-&gt;second;</div>
-<div class="line"><span class="lineno">  483</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  484</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  485</span>            sensiLabels[i] = <span class="stringliteral">&quot;IndexCurve/&quot;</span> + idxName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
-<div class="line"><span class="lineno">  486</span>        }</div>
-<div class="line"><span class="lineno">  487</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  488</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  489</span>    }</div>
-<div class="line"><span class="lineno">  490</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing default curve par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  491</span>    <span class="comment">// the default curve par sensis</span></div>
-<div class="line"><span class="lineno">  492</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;defaultRateHelpersInstMap()) {</div>
-<div class="line"><span class="lineno">  493</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
-<div class="line"><span class="lineno">  494</span>        <span class="keyword">auto</span> itr = zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData().find(name);</div>
-<div class="line"><span class="lineno">  495</span>        <span class="keywordflow">if</span> (itr == zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData().end())</div>
-<div class="line"><span class="lineno">  496</span>            zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>] =</div>
-<div class="line"><span class="lineno">  497</span>                boost::make_shared&lt;SensitivityScenarioData::CurveShiftData&gt;();</div>
-<div class="line"><span class="lineno">  498</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>]-&gt;shiftSize;</div>
-<div class="line"><span class="lineno">  499</span>        <span class="keywordtype">string</span> shiftType =</div>
-<div class="line"><span class="lineno">  500</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData()[name]-&gt;shiftType);</div>
-<div class="line"><span class="lineno">  501</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;defaultRateHelperTenorsMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  502</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;defaultRateHelperValuesMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  503</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  504</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  505</span>            sensiLabels[i] = <span class="stringliteral">&quot;SurvivalProbability/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
-<div class="line"><span class="lineno">  506</span>        }</div>
-<div class="line"><span class="lineno">  507</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  508</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  509</span>    }</div>
-<div class="line"><span class="lineno">  510</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing cds par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  511</span>    <span class="comment">// CDS Vol sensis (compare with zero sensi)</span></div>
-<div class="line"><span class="lineno">  512</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;cdsVolRateHelperValuesMap()) {</div>
-<div class="line"><span class="lineno">  513</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
-<div class="line"><span class="lineno">  514</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;cdsVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
-<div class="line"><span class="lineno">  515</span>        <span class="keywordtype">string</span> shiftType = boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;cdsVolShiftData()[name].shiftType);</div>
-<div class="line"><span class="lineno">  516</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;cdsVolRateHelperTenorsMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  517</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;cdsVolRateHelperValuesMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  518</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  519</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  520</span>            sensiLabels[i] = <span class="stringliteral">&quot;CDSVolatility/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]) + <span class="stringliteral">&quot;/ATM&quot;</span>;</div>
-<div class="line"><span class="lineno">  521</span>        }</div>
-<div class="line"><span class="lineno">  522</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  523</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  524</span>    }</div>
-<div class="line"><span class="lineno">  525</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing eqVol curve par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  526</span>    <span class="comment">// Equity Vol sensis (compare with zero sensi)</span></div>
-<div class="line"><span class="lineno">  527</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;equityVolRateHelperValuesMap()) {</div>
-<div class="line"><span class="lineno">  528</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
-<div class="line"><span class="lineno">  529</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;equityVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
-<div class="line"><span class="lineno">  530</span>        <span class="keywordtype">string</span> shiftType = boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;equityVolShiftData()[name].shiftType);</div>
-<div class="line"><span class="lineno">  531</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;equityVolRateHelperTenorsMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  532</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;equityVolRateHelperValuesMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  533</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  534</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  535</span>            sensiLabels[i] = <span class="stringliteral">&quot;EquityVolatility/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]) + <span class="stringliteral">&quot;/ATM&quot;</span>;</div>
-<div class="line"><span class="lineno">  536</span>        }</div>
-<div class="line"><span class="lineno">  537</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  538</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  539</span>    }</div>
-<div class="line"><span class="lineno">  540</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing swaption vol par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  541</span>    <span class="comment">// Swaption Vol sensis (compare with zero sensi)</span></div>
-<div class="line"><span class="lineno">  542</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;swaptionVolRateHelperValuesMap()) {</div>
-<div class="line"><span class="lineno">  543</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
-<div class="line"><span class="lineno">  544</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
-<div class="line"><span class="lineno">  545</span>        <span class="keywordtype">string</span> shiftType =</div>
-<div class="line"><span class="lineno">  546</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[name].shiftType);</div>
-<div class="line"><span class="lineno">  547</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;swaptionVolRateHelperTenorsMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  548</span>        vector&lt;Period&gt; swapTenorVec = initParMarket-&gt;swaptionVolRateHelperSwapTenorsMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  549</span>        vector&lt;Real&gt; strikeSpreadVec = zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftStrikes;</div>
-<div class="line"><span class="lineno">  550</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;swaptionVolRateHelperValuesMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  551</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  552</span>        Size j = swapTenorVec.size();</div>
-<div class="line"><span class="lineno">  553</span>        Size k = zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftStrikes.size();</div>
-<div class="line"><span class="lineno">  554</span> </div>
-<div class="line"><span class="lineno">  555</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  556</span>            Size strike = i % k;</div>
-<div class="line"><span class="lineno">  557</span>            Size parTenor = i / (j * k);</div>
-<div class="line"><span class="lineno">  558</span>            Size swapTenor = (i - parTenor * j * k - strike) / k;</div>
-<div class="line"><span class="lineno">  559</span>            std::ostringstream o;</div>
-<div class="line"><span class="lineno">  560</span>            <span class="keywordflow">if</span> (<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(strikeSpreadVec[strike], 0))</div>
-<div class="line"><span class="lineno">  561</span>                o &lt;&lt; <span class="stringliteral">&quot;SwaptionVolatility/&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; parTenorVec[parTenor] &lt;&lt; <span class="stringliteral">&quot;/&quot;</span></div>
-<div class="line"><span class="lineno">  562</span>                  &lt;&lt; swapTenorVec[swapTenor] &lt;&lt; <span class="stringliteral">&quot;/ATM&quot;</span>;</div>
-<div class="line"><span class="lineno">  563</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  564</span>                o &lt;&lt; <span class="stringliteral">&quot;SwaptionVolatility/&quot;</span> &lt;&lt; <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; parTenorVec[parTenor] &lt;&lt; <span class="stringliteral">&quot;/&quot;</span></div>
-<div class="line"><span class="lineno">  565</span>                  &lt;&lt; swapTenorVec[swapTenor] &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; std::setprecision(4) &lt;&lt; strikeSpreadVec[strike];</div>
-<div class="line"><span class="lineno">  566</span>            sensiLabels[i] = o.str();</div>
-<div class="line"><span class="lineno">  567</span>        }</div>
-<div class="line"><span class="lineno">  568</span> </div>
-<div class="line"><span class="lineno">  569</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  570</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  571</span>    }</div>
-<div class="line"><span class="lineno">  572</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing base correlation par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  573</span>    <span class="comment">// Base correlations sensis (compare with zero sensi)</span></div>
-<div class="line"><span class="lineno">  574</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;baseCorrRateHelperValuesMap()) {</div>
-<div class="line"><span class="lineno">  575</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
-<div class="line"><span class="lineno">  576</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;baseCorrelationShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
-<div class="line"><span class="lineno">  577</span>        <span class="keywordtype">string</span> shiftType =</div>
-<div class="line"><span class="lineno">  578</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;baseCorrelationShiftData()[name].shiftType);</div>
-<div class="line"><span class="lineno">  579</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;baseCorrRateHelperTenorsMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  580</span>        vector&lt;string&gt; lossLevelVec = initParMarket-&gt;baseCorrLossLevelsMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  581</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;baseCorrRateHelperValuesMap().find(name)-&gt;second;</div>
-<div class="line"><span class="lineno">  582</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  583</span>        Size j = lossLevelVec.size();</div>
-<div class="line"><span class="lineno">  584</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  585</span>            sensiLabels[i] = <span class="stringliteral">&quot;BaseCorrelation/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + lossLevelVec[i % j] + <span class="stringliteral">&quot;/&quot;</span> +</div>
-<div class="line"><span class="lineno">  586</span>                             <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i / j]);</div>
-<div class="line"><span class="lineno">  587</span>        }</div>
-<div class="line"><span class="lineno">  588</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  589</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  590</span>    }</div>
-<div class="line"><span class="lineno">  591</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing zero inflation par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  592</span>    <span class="comment">// Zero Inflation sensis</span></div>
-<div class="line"><span class="lineno">  593</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;zeroInflationRateHelperInstMap()) {</div>
-<div class="line"><span class="lineno">  594</span>        <span class="keywordtype">string</span> idxName = d_it.first;</div>
-<div class="line"><span class="lineno">  595</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;zeroInflationCurveShiftData()[idxName]-&gt;shiftSize;</div>
-<div class="line"><span class="lineno">  596</span>        <span class="keywordtype">string</span> shiftType =</div>
-<div class="line"><span class="lineno">  597</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;zeroInflationCurveShiftData()[idxName]-&gt;shiftType);</div>
-<div class="line"><span class="lineno">  598</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;zeroInflationRateHelperTenorsMap().find(idxName)-&gt;second;</div>
-<div class="line"><span class="lineno">  599</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;zeroInflationRateHelperValuesMap().find(idxName)-&gt;second;</div>
-<div class="line"><span class="lineno">  600</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  601</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  602</span>            sensiLabels[i] = <span class="stringliteral">&quot;ZeroInflationCurve/&quot;</span> + idxName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
-<div class="line"><span class="lineno">  603</span>        }</div>
-<div class="line"><span class="lineno">  604</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  605</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  606</span>    }</div>
-<div class="line"><span class="lineno">  607</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing yoy inflation par sensis&quot;</span>);</div>
-<div class="line"><span class="lineno">  608</span>    <span class="comment">// YoY Inflation sensis</span></div>
-<div class="line"><span class="lineno">  609</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;yoyInflationRateHelperInstMap()) {</div>
-<div class="line"><span class="lineno">  610</span>        <span class="keywordtype">string</span> idxName = d_it.first;</div>
-<div class="line"><span class="lineno">  611</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;yoyInflationCurveShiftData()[idxName]-&gt;shiftSize;</div>
-<div class="line"><span class="lineno">  612</span>        <span class="keywordtype">string</span> shiftType =</div>
-<div class="line"><span class="lineno">  613</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;yoyInflationCurveShiftData()[idxName]-&gt;shiftType);</div>
-<div class="line"><span class="lineno">  614</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;yoyInflationRateHelperTenorsMap().find(idxName)-&gt;second;</div>
-<div class="line"><span class="lineno">  615</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;yoyInflationRateHelperValuesMap().find(idxName)-&gt;second;</div>
-<div class="line"><span class="lineno">  616</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
-<div class="line"><span class="lineno">  617</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
-<div class="line"><span class="lineno">  618</span>            sensiLabels[i] = <span class="stringliteral">&quot;YoYInflationCurve/&quot;</span> + idxName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
-<div class="line"><span class="lineno">  619</span>        }</div>
-<div class="line"><span class="lineno">  620</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
-<div class="line"><span class="lineno">  621</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
-<div class="line"><span class="lineno">  622</span>    }</div>
-<div class="line"><span class="lineno">  623</span> </div>
-<div class="line"><span class="lineno">  624</span>    <span class="comment">// end</span></div>
-<div class="line"><span class="lineno">  625</span>    ObservationMode::instance().setMode(backupMode);</div>
-<div class="line"><span class="lineno">  626</span>    IndexManager::instance().clearHistories();</div>
-<div class="line"><span class="lineno">  627</span>}</div>
+<div class="line"><span class="lineno">  310</span>        <span class="stringliteral">&quot;4_XCCY_SWAP&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, 10000000, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, 0, 15, 0.0000, 0.0000, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor),</div>
+<div class="line"><span class="lineno">  311</span>        <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx,</div>
+<div class="line"><span class="lineno">  312</span>        chfBasisConv-&gt;settlementCalendar(), chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  313</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100">buildCrossCcyBasisSwap</a>(</div>
+<div class="line"><span class="lineno">  314</span>        <span class="stringliteral">&quot;5_XCCY_SWAP_WithPrincipal&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, 10000000, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, 0, 15, 0.0000, 0.0000,</div>
+<div class="line"><span class="lineno">  315</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(),</div>
+<div class="line"><span class="lineno">  316</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx, chfBasisConv-&gt;settlementCalendar(),</div>
+<div class="line"><span class="lineno">  317</span>        chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>));</div>
+<div class="line"><span class="lineno">  318</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a74aa42fbcb9b7b5719157f3e5d5c5758">buildSwap</a>(</div>
+<div class="line"><span class="lineno">  319</span>        <span class="stringliteral">&quot;6_Swap_JPY&quot;</span>, <span class="stringliteral">&quot;JPY&quot;</span>, <span class="keyword">true</span>, 1000000000.0, 0, 10, 0.005, 0.00,</div>
+<div class="line"><span class="lineno">  320</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(jpyConv-&gt;fixedFrequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(jpyConv-&gt;fixedDayCounter()),</div>
+<div class="line"><span class="lineno">  321</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(jpyFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, jpyIdx, jpyConv-&gt;fixedCalendar(),</div>
+<div class="line"><span class="lineno">  322</span>        initMarket-&gt;iborIndex(jpyIdx)-&gt;fixingDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  323</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100">buildCrossCcyBasisSwap</a>(</div>
+<div class="line"><span class="lineno">  324</span>        <span class="stringliteral">&quot;7_XCCY_SWAP_OffMarket&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, <span class="stringliteral">&quot;CHF&quot;</span>, 10500000, 0, 15, 0.0000, 0.0010,</div>
+<div class="line"><span class="lineno">  325</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(),</div>
+<div class="line"><span class="lineno">  326</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx, chfBasisConv-&gt;settlementCalendar(),</div>
+<div class="line"><span class="lineno">  327</span>        chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  328</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab86fae4ea0ab03ec87480eea24e94100">buildCrossCcyBasisSwap</a>(</div>
+<div class="line"><span class="lineno">  329</span>        <span class="stringliteral">&quot;8_XCCY_SWAP_RESET&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, 10000000, <span class="stringliteral">&quot;EUR&quot;</span>, 10000000, 0, 15, 0.0000, 0.0000,</div>
+<div class="line"><span class="lineno">  330</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(chfFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, chfIdx, chfBasisConv-&gt;settlementCalendar(),</div>
+<div class="line"><span class="lineno">  331</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(otherFloatTenor), <span class="stringliteral">&quot;A360&quot;</span>, otherIdx, chfBasisConv-&gt;settlementCalendar(),</div>
+<div class="line"><span class="lineno">  332</span>        chfBasisConv-&gt;settlementDays(), <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">true</span>));</div>
+<div class="line"><span class="lineno">  333</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(<span class="stringliteral">&quot;9_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4,</div>
+<div class="line"><span class="lineno">  334</span>                                          0.009, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())),</div>
+<div class="line"><span class="lineno">  335</span>                                          <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  336</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
+<div class="line"><span class="lineno">  337</span>        <span class="stringliteral">&quot;9_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4, 0.009,</div>
+<div class="line"><span class="lineno">  338</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  339</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
+<div class="line"><span class="lineno">  340</span>        <span class="stringliteral">&quot;10_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 10, 0.4, 0.001,</div>
+<div class="line"><span class="lineno">  341</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  342</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
+<div class="line"><span class="lineno">  343</span>        <span class="stringliteral">&quot;10_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 10, 0.4, 0.001,</div>
+<div class="line"><span class="lineno">  344</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  345</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
+<div class="line"><span class="lineno">  346</span>        <span class="stringliteral">&quot;11_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 5, 0.4, 0.001,</div>
+<div class="line"><span class="lineno">  347</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  348</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(<span class="stringliteral">&quot;11_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 5, 0.4,</div>
+<div class="line"><span class="lineno">  349</span>                                          0.001, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())),</div>
+<div class="line"><span class="lineno">  350</span>                                          <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  351</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(<span class="stringliteral">&quot;12_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 2, 0.4,</div>
+<div class="line"><span class="lineno">  352</span>                                          0.004, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())),</div>
+<div class="line"><span class="lineno">  353</span>                                          <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  354</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
+<div class="line"><span class="lineno">  355</span>        <span class="stringliteral">&quot;12_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 2, 0.4, 0.001,</div>
+<div class="line"><span class="lineno">  356</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  357</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
+<div class="line"><span class="lineno">  358</span>        <span class="stringliteral">&quot;13_CDS_USD&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4, 0.001,</div>
+<div class="line"><span class="lineno">  359</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  360</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adc05efdca192b590de52fd2e65b79a95">buildCreditDefaultSwap</a>(</div>
+<div class="line"><span class="lineno">  361</span>        <span class="stringliteral">&quot;13_CDS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="keyword">true</span>, 10000000, 0, 15, 0.4, 0.001,</div>
+<div class="line"><span class="lineno">  362</span>        <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(cdsConv-&gt;frequency())), <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(cdsConv-&gt;dayCounter())));</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>    vector&lt;string&gt; names = {<span class="stringliteral">&quot;dc&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, <span class="stringliteral">&quot;dc3&quot;</span>};</div>
+<div class="line"><span class="lineno">  365</span>    vector&lt;string&gt; indexCcys = {<span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>};</div>
+<div class="line"><span class="lineno">  366</span>    vector&lt;Real&gt; notionals = {3000000, 3000000, 3000000};</div>
+<div class="line"><span class="lineno">  367</span>    <span class="comment">// portfolio-&gt;add(buildIndexCdsOption(&quot;14_IndexCDSOption_USD&quot;, &quot;dc&quot;, names, &quot;Long&quot;, &quot;USD&quot;,</span></div>
+<div class="line"><span class="lineno">  368</span>    <span class="comment">// indexCcys, true, notionals, notional, 1, 4,</span></div>
+<div class="line"><span class="lineno">  369</span>    <span class="comment">//                                                         0.4, 0.001,</span></div>
+<div class="line"><span class="lineno">  370</span>    <span class="comment">//                                                         ore::data::to_string(Period(cdsConv-&gt;frequency())),</span></div>
+<div class="line"><span class="lineno">  371</span>    <span class="comment">//                                                        ore::data::to_string(cdsConv-&gt;dayCounter()), &quot;Physical&quot;));</span></div>
+<div class="line"><span class="lineno">  372</span> </div>
+<div class="line"><span class="lineno">  373</span>    vector&lt;string&gt; names2(1, <span class="stringliteral">&quot;dc2&quot;</span>);</div>
+<div class="line"><span class="lineno">  374</span>    vector&lt;string&gt; indexCcys2(1, <span class="stringliteral">&quot;EUR&quot;</span>);</div>
+<div class="line"><span class="lineno">  375</span>    vector&lt;Real&gt; notionals2(1, 10000000.0);</div>
+<div class="line"><span class="lineno">  376</span>    <span class="comment">// portfolio-&gt;add(buildIndexCdsOption(&quot;15_IndexCDSOption_EUR&quot;, &quot;dc2&quot;, names2, &quot;Long&quot;, &quot;EUR&quot;,</span></div>
+<div class="line"><span class="lineno">  377</span>    <span class="comment">// indexCcys2, true, notionals2, 10000000.0, 1, 4,</span></div>
+<div class="line"><span class="lineno">  378</span>    <span class="comment">//                                                       0.4, 0.001,</span></div>
+<div class="line"><span class="lineno">  379</span>    <span class="comment">//                                                       ore::data::to_string(Period(cdsConv-&gt;frequency())),</span></div>
+<div class="line"><span class="lineno">  380</span>    <span class="comment">//                                                       ore::data::to_string(cdsConv-&gt;dayCounter()), &quot;Physical&quot;));</span></div>
+<div class="line"><span class="lineno">  381</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#aa9df3e61776f919738fb12e21ed049ca">buildSyntheticCDO</a>(<span class="stringliteral">&quot;16_SyntheticCDO_EUR&quot;</span>, <span class="stringliteral">&quot;dc2&quot;</span>, names2, <span class="stringliteral">&quot;Long&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, indexCcys2,</div>
+<div class="line"><span class="lineno">  382</span>                                     <span class="keyword">true</span>, notionals2, 1000000.0, 0, 5, 0.03, 0.01, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;30/360&quot;</span>));</div>
+<div class="line"><span class="lineno">  383</span> </div>
+<div class="line"><span class="lineno">  384</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#adcf93a4b3b4221ead9beaa07a61516e1">buildCmsCapFloor</a>(<span class="stringliteral">&quot;17_CMS_EUR&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;EUR-CMS-30Y&quot;</span>, <span class="keyword">true</span>, 2000000, 0, 5, 0.0, 1,</div>
+<div class="line"><span class="lineno">  385</span>                                    0.0, <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(Period(eurConv-&gt;fixedFrequency())),</div>
+<div class="line"><span class="lineno">  386</span>                                    <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(eurConv-&gt;fixedDayCounter())));</div>
+<div class="line"><span class="lineno">  387</span>    portfolio-&gt;add(</div>
+<div class="line"><span class="lineno">  388</span>        <a class="code hl_function" href="namespacetestsuite.html#a3c54e055257b56f61fc96e8f4993aacb">buildEquityOption</a>(<span class="stringliteral">&quot;18_EquityOption_SP5&quot;</span>, <span class="stringliteral">&quot;Long&quot;</span>, <span class="stringliteral">&quot;Call&quot;</span>, 2, <span class="stringliteral">&quot;SP5&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, 2147.56, 775));</div>
+<div class="line"><span class="lineno">  389</span> </div>
+<div class="line"><span class="lineno">  390</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#ab30f7b9c44095d806d2192ff584a9172">buildCPIInflationSwap</a>(<span class="stringliteral">&quot;19_CPIInflationSwap_UKRPI&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="keyword">true</span>, 100000.0, 0, 10,</div>
+<div class="line"><span class="lineno">  391</span>                                         0.0, <span class="stringliteral">&quot;6M&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>, <span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>,</div>
+<div class="line"><span class="lineno">  392</span>                                         <span class="stringliteral">&quot;UKRPI&quot;</span>, 201.0, <span class="stringliteral">&quot;2M&quot;</span>, <span class="keyword">false</span>, 0.005));</div>
+<div class="line"><span class="lineno">  393</span>    portfolio-&gt;add(<a class="code hl_function" href="namespacetestsuite.html#a306f6ee775460a838c33bcd361cf4cd9">buildYYInflationSwap</a>(<span class="stringliteral">&quot;20_YoYInflationSwap_UKRPI&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="keyword">true</span>, 100000.0, 0, 10,</div>
+<div class="line"><span class="lineno">  394</span>                                        0.0, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>, <span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;ACT/ACT&quot;</span>,</div>
+<div class="line"><span class="lineno">  395</span>                                        <span class="stringliteral">&quot;UKRPI&quot;</span>, <span class="stringliteral">&quot;2M&quot;</span>, 2));</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>    Size tradeCount = portfolio-&gt;size();</div>
+<div class="line"><span class="lineno">  398</span>    portfolio-&gt;build(factory);</div>
+<div class="line"><span class="lineno">  399</span>    BOOST_CHECK_MESSAGE(portfolio-&gt;size() == tradeCount,</div>
+<div class="line"><span class="lineno">  400</span>                        <span class="stringliteral">&quot;Some trades not built correctly,&quot;</span> &lt;&lt; portfolio-&gt;size() &lt;&lt; <span class="stringliteral">&quot; vs. &quot;</span> &lt;&lt; tradeCount);</div>
+<div class="line"><span class="lineno">  401</span>    <span class="comment">// build the sensitivity analysis object</span></div>
+<div class="line"><span class="lineno">  402</span>    boost::shared_ptr&lt;SensitivityAnalysis&gt; zeroAnalysis =</div>
+<div class="line"><span class="lineno">  403</span>        boost::make_shared&lt;SensitivityAnalysis&gt;(portfolio, initMarket, <span class="stringliteral">&quot;default&quot;</span>, engineData, simMarketData, sensiData,</div>
+<div class="line"><span class="lineno">  404</span>                                                <span class="keyword">false</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">false</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  405</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_par_sensitivity_analysis.html">ParSensitivityAnalysis</a> parAnalysis(today, simMarketData, *sensiData, <span class="stringliteral">&quot;default&quot;</span>);</div>
+<div class="line"><span class="lineno">  406</span>    parAnalysis.alignPillars();</div>
+<div class="line"><span class="lineno">  407</span>    zeroAnalysis-&gt;overrideTenors(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  408</span>    zeroAnalysis-&gt;generateSensitivities();</div>
+<div class="line"><span class="lineno">  409</span>    parAnalysis.computeParInstrumentSensitivities(zeroAnalysis-&gt;simMarket());</div>
+<div class="line"><span class="lineno">  410</span>    boost::shared_ptr&lt;ParSensitivityConverter&gt; parConverter =</div>
+<div class="line"><span class="lineno">  411</span>        boost::make_shared&lt;ParSensitivityConverter&gt;(parAnalysis.parSensitivities(), parAnalysis.shiftSizes());</div>
+<div class="line"><span class="lineno">  412</span>    boost::shared_ptr&lt;SensitivityCube&gt; sensiCube = zeroAnalysis-&gt;sensiCube();</div>
+<div class="line"><span class="lineno">  413</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_zero_to_par_cube.html">ZeroToParCube</a> parCube(sensiCube, parConverter);</div>
+<div class="line"><span class="lineno">  414</span> </div>
+<div class="line"><span class="lineno">  415</span>    std::map&lt;std::pair&lt;std::string, std::string&gt;, Real&gt; parDelta;</div>
+<div class="line"><span class="lineno">  416</span>    std::map&lt;std::pair&lt;std::string, std::string&gt;, Real&gt; zeroDelta;</div>
+<div class="line"><span class="lineno">  417</span>    map&lt;string, Real&gt; baseManualPv;</div>
+<div class="line"><span class="lineno">  418</span>    map&lt;string, Real&gt; basePv;</div>
+<div class="line"><span class="lineno">  419</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; tradeId : portfolio-&gt;ids()) {</div>
+<div class="line"><span class="lineno">  420</span>        basePv[tradeId] = sensiCube-&gt;npv(tradeId);</div>
+<div class="line"><span class="lineno">  421</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; f : sensiCube-&gt;factors()) {</div>
+<div class="line"><span class="lineno">  422</span>            <span class="keywordtype">string</span> des = sensiCube-&gt;factorDescription(f);</div>
+<div class="line"><span class="lineno">  423</span>            zeroDelta[make_pair(tradeId, des)] = sensiCube-&gt;delta(tradeId, f);</div>
+<div class="line"><span class="lineno">  424</span>        }</div>
+<div class="line"><span class="lineno">  425</span>        <span class="comment">// Fill the par deltas map</span></div>
+<div class="line"><span class="lineno">  426</span>        <span class="keyword">auto</span> temp = parCube.parDeltas(tradeId);</div>
+<div class="line"><span class="lineno">  427</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : temp) {</div>
+<div class="line"><span class="lineno">  428</span>            <span class="keywordtype">string</span> des = sensiCube-&gt;factorDescription(kv.first);</div>
+<div class="line"><span class="lineno">  429</span>            parDelta[make_pair(tradeId, des)] = kv.second;</div>
+<div class="line"><span class="lineno">  430</span>        }</div>
+<div class="line"><span class="lineno">  431</span>    }</div>
+<div class="line"><span class="lineno">  432</span>    boost::shared_ptr&lt;EngineFactory&gt; manualFactory = registerBuilders(engineData, initMarket);</div>
+<div class="line"><span class="lineno">  433</span> </div>
+<div class="line"><span class="lineno">  434</span>    portfolio-&gt;reset();</div>
+<div class="line"><span class="lineno">  435</span>    portfolio-&gt;build(manualFactory);</div>
+<div class="line"><span class="lineno">  436</span> </div>
+<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> [tradeId, trade] : portfolio-&gt;trades()) {</div>
+<div class="line"><span class="lineno">  438</span>        Real fx = 1.0;</div>
+<div class="line"><span class="lineno">  439</span>        <span class="keywordflow">if</span> (trade-&gt;npvCurrency() != <span class="stringliteral">&quot;EUR&quot;</span>) {</div>
+<div class="line"><span class="lineno">  440</span>            <span class="keywordtype">string</span> ccyPair = trade-&gt;npvCurrency() + baseCcy;</div>
+<div class="line"><span class="lineno">  441</span>            fx = initMarket-&gt;fxRate(ccyPair)-&gt;value();</div>
+<div class="line"><span class="lineno">  442</span>        }</div>
+<div class="line"><span class="lineno">  443</span>        baseManualPv[tradeId] = fx * trade-&gt;instrument()-&gt;NPV();</div>
+<div class="line"><span class="lineno">  444</span>        Real tradeNotional = fx * trade-&gt;notional();</div>
+<div class="line"><span class="lineno">  445</span>        Real simMarketTol =</div>
+<div class="line"><span class="lineno">  446</span>            1.e-5 * tradeNotional; <span class="comment">// tolerance for difference to sim market is 0.1bp upfront (should this be tightened?)</span></div>
+<div class="line"><span class="lineno">  447</span> </div>
+<div class="line"><span class="lineno">  448</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Base PV check for trade &quot;</span> &lt;&lt; tradeId &lt;&lt; <span class="stringliteral">&quot;; got &quot;</span> &lt;&lt; baseManualPv[tradeId]</div>
+<div class="line"><span class="lineno">  449</span>                                                      &lt;&lt; <span class="stringliteral">&quot;, expected &quot;</span> &lt;&lt; basePv[tradeId]);</div>
+<div class="line"><span class="lineno">  450</span>        BOOST_CHECK_MESSAGE(std::fabs(baseManualPv[tradeId] - basePv[tradeId]) &lt; simMarketTol,</div>
+<div class="line"><span class="lineno">  451</span>                            <span class="stringliteral">&quot;Base PV check error for trade &quot;</span> &lt;&lt; tradeId &lt;&lt; <span class="stringliteral">&quot;; got &quot;</span> &lt;&lt; baseManualPv[tradeId]</div>
+<div class="line"><span class="lineno">  452</span>                                                             &lt;&lt; <span class="stringliteral">&quot;, but expected &quot;</span> &lt;&lt; basePv[tradeId]);</div>
+<div class="line"><span class="lineno">  453</span>    }</div>
+<div class="line"><span class="lineno">  454</span> </div>
+<div class="line"><span class="lineno">  455</span>    boost::shared_ptr&lt;TestMarketParCurves&gt; initParMarket = boost::dynamic_pointer_cast&lt;TestMarketParCurves&gt;(initMarket);</div>
+<div class="line"><span class="lineno">  456</span>    BOOST_ASSERT(initParMarket);</div>
+<div class="line"><span class="lineno">  457</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing discount curve par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  458</span>    <span class="comment">// the discount curve par sensis</span></div>
+<div class="line"><span class="lineno">  459</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;discountRateHelpersInstMap()) {</div>
+<div class="line"><span class="lineno">  460</span>        <span class="keywordtype">string</span> ccy = d_it.first;</div>
+<div class="line"><span class="lineno">  461</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;discountCurveShiftData()[ccy]-&gt;shiftSize;</div>
+<div class="line"><span class="lineno">  462</span>        <span class="keywordtype">string</span> shiftType =</div>
+<div class="line"><span class="lineno">  463</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;discountCurveShiftData()[ccy]-&gt;shiftType);</div>
+<div class="line"><span class="lineno">  464</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;discountRateHelperTenorsMap().find(ccy)-&gt;second;</div>
+<div class="line"><span class="lineno">  465</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;discountRateHelperValuesMap().find(ccy)-&gt;second;</div>
+<div class="line"><span class="lineno">  466</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  467</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  468</span>            sensiLabels[i] = <span class="stringliteral">&quot;DiscountCurve/&quot;</span> + ccy + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
+<div class="line"><span class="lineno">  469</span>        }</div>
+<div class="line"><span class="lineno">  470</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  471</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  472</span>    }</div>
+<div class="line"><span class="lineno">  473</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing index curve par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  474</span>    <span class="comment">// the index curve par sensis</span></div>
+<div class="line"><span class="lineno">  475</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;indexCurveRateHelperInstMap()) {</div>
+<div class="line"><span class="lineno">  476</span>        <span class="keywordtype">string</span> idxName = d_it.first;</div>
+<div class="line"><span class="lineno">  477</span>        BOOST_TEST_MESSAGE(idxName);</div>
+<div class="line"><span class="lineno">  478</span>        <span class="keyword">auto</span> itr = zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData().find(idxName);</div>
+<div class="line"><span class="lineno">  479</span>        <span class="keywordflow">if</span> (itr == zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData().end())</div>
+<div class="line"><span class="lineno">  480</span>            zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData()[idxName] =</div>
+<div class="line"><span class="lineno">  481</span>                boost::make_shared&lt;SensitivityScenarioData::CurveShiftData&gt;();</div>
+<div class="line"><span class="lineno">  482</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData()[idxName]-&gt;shiftSize;</div>
+<div class="line"><span class="lineno">  483</span>        <span class="keywordtype">string</span> shiftType =</div>
+<div class="line"><span class="lineno">  484</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;indexCurveShiftData()[idxName]-&gt;shiftType);</div>
+<div class="line"><span class="lineno">  485</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;indexCurveRateHelperTenorsMap().find(idxName)-&gt;second;</div>
+<div class="line"><span class="lineno">  486</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;indexCurveRateHelperValuesMap().find(idxName)-&gt;second;</div>
+<div class="line"><span class="lineno">  487</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  488</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  489</span>            sensiLabels[i] = <span class="stringliteral">&quot;IndexCurve/&quot;</span> + idxName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
+<div class="line"><span class="lineno">  490</span>        }</div>
+<div class="line"><span class="lineno">  491</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  492</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  493</span>    }</div>
+<div class="line"><span class="lineno">  494</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing default curve par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  495</span>    <span class="comment">// the default curve par sensis</span></div>
+<div class="line"><span class="lineno">  496</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;defaultRateHelpersInstMap()) {</div>
+<div class="line"><span class="lineno">  497</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
+<div class="line"><span class="lineno">  498</span>        <span class="keyword">auto</span> itr = zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData().find(name);</div>
+<div class="line"><span class="lineno">  499</span>        <span class="keywordflow">if</span> (itr == zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData().end())</div>
+<div class="line"><span class="lineno">  500</span>            zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>] =</div>
+<div class="line"><span class="lineno">  501</span>                boost::make_shared&lt;SensitivityScenarioData::CurveShiftData&gt;();</div>
+<div class="line"><span class="lineno">  502</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>]-&gt;shiftSize;</div>
+<div class="line"><span class="lineno">  503</span>        <span class="keywordtype">string</span> shiftType =</div>
+<div class="line"><span class="lineno">  504</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;creditCurveShiftData()[name]-&gt;shiftType);</div>
+<div class="line"><span class="lineno">  505</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;defaultRateHelperTenorsMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  506</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;defaultRateHelperValuesMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  507</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  508</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  509</span>            sensiLabels[i] = <span class="stringliteral">&quot;SurvivalProbability/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
+<div class="line"><span class="lineno">  510</span>        }</div>
+<div class="line"><span class="lineno">  511</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  512</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  513</span>    }</div>
+<div class="line"><span class="lineno">  514</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing cds par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  515</span>    <span class="comment">// CDS Vol sensis (compare with zero sensi)</span></div>
+<div class="line"><span class="lineno">  516</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;cdsVolRateHelperValuesMap()) {</div>
+<div class="line"><span class="lineno">  517</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
+<div class="line"><span class="lineno">  518</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;cdsVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
+<div class="line"><span class="lineno">  519</span>        <span class="keywordtype">string</span> shiftType = boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;cdsVolShiftData()[name].shiftType);</div>
+<div class="line"><span class="lineno">  520</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;cdsVolRateHelperTenorsMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  521</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;cdsVolRateHelperValuesMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  522</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  523</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  524</span>            sensiLabels[i] = <span class="stringliteral">&quot;CDSVolatility/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]) + <span class="stringliteral">&quot;/ATM&quot;</span>;</div>
+<div class="line"><span class="lineno">  525</span>        }</div>
+<div class="line"><span class="lineno">  526</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  527</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  528</span>    }</div>
+<div class="line"><span class="lineno">  529</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing eqVol curve par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  530</span>    <span class="comment">// Equity Vol sensis (compare with zero sensi)</span></div>
+<div class="line"><span class="lineno">  531</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;equityVolRateHelperValuesMap()) {</div>
+<div class="line"><span class="lineno">  532</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
+<div class="line"><span class="lineno">  533</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;equityVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
+<div class="line"><span class="lineno">  534</span>        <span class="keywordtype">string</span> shiftType = boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;equityVolShiftData()[name].shiftType);</div>
+<div class="line"><span class="lineno">  535</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;equityVolRateHelperTenorsMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  536</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;equityVolRateHelperValuesMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  537</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  538</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  539</span>            sensiLabels[i] = <span class="stringliteral">&quot;EquityVolatility/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]) + <span class="stringliteral">&quot;/ATM&quot;</span>;</div>
+<div class="line"><span class="lineno">  540</span>        }</div>
+<div class="line"><span class="lineno">  541</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  542</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  543</span>    }</div>
+<div class="line"><span class="lineno">  544</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing swaption vol par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  545</span>    <span class="comment">// Swaption Vol sensis (compare with zero sensi)</span></div>
+<div class="line"><span class="lineno">  546</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;swaptionVolRateHelperValuesMap()) {</div>
+<div class="line"><span class="lineno">  547</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
+<div class="line"><span class="lineno">  548</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
+<div class="line"><span class="lineno">  549</span>        <span class="keywordtype">string</span> shiftType =</div>
+<div class="line"><span class="lineno">  550</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[name].shiftType);</div>
+<div class="line"><span class="lineno">  551</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;swaptionVolRateHelperTenorsMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  552</span>        vector&lt;Period&gt; swapTenorVec = initParMarket-&gt;swaptionVolRateHelperSwapTenorsMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  553</span>        vector&lt;Real&gt; strikeSpreadVec = zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftStrikes;</div>
+<div class="line"><span class="lineno">  554</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;swaptionVolRateHelperValuesMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  555</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  556</span>        Size j = swapTenorVec.size();</div>
+<div class="line"><span class="lineno">  557</span>        Size k = zeroAnalysis-&gt;sensitivityData()-&gt;swaptionVolShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftStrikes.size();</div>
+<div class="line"><span class="lineno">  558</span> </div>
+<div class="line"><span class="lineno">  559</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  560</span>            Size strike = i % k;</div>
+<div class="line"><span class="lineno">  561</span>            Size parTenor = i / (j * k);</div>
+<div class="line"><span class="lineno">  562</span>            Size swapTenor = (i - parTenor * j * k - strike) / k;</div>
+<div class="line"><span class="lineno">  563</span>            std::ostringstream o;</div>
+<div class="line"><span class="lineno">  564</span>            <span class="keywordflow">if</span> (<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">close_enough</a>(strikeSpreadVec[strike], 0))</div>
+<div class="line"><span class="lineno">  565</span>                o &lt;&lt; <span class="stringliteral">&quot;SwaptionVolatility/&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; parTenorVec[parTenor] &lt;&lt; <span class="stringliteral">&quot;/&quot;</span></div>
+<div class="line"><span class="lineno">  566</span>                  &lt;&lt; swapTenorVec[swapTenor] &lt;&lt; <span class="stringliteral">&quot;/ATM&quot;</span>;</div>
+<div class="line"><span class="lineno">  567</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  568</span>                o &lt;&lt; <span class="stringliteral">&quot;SwaptionVolatility/&quot;</span> &lt;&lt; <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; parTenorVec[parTenor] &lt;&lt; <span class="stringliteral">&quot;/&quot;</span></div>
+<div class="line"><span class="lineno">  569</span>                  &lt;&lt; swapTenorVec[swapTenor] &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; std::setprecision(4) &lt;&lt; strikeSpreadVec[strike];</div>
+<div class="line"><span class="lineno">  570</span>            sensiLabels[i] = o.str();</div>
+<div class="line"><span class="lineno">  571</span>        }</div>
+<div class="line"><span class="lineno">  572</span> </div>
+<div class="line"><span class="lineno">  573</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  574</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  575</span>    }</div>
+<div class="line"><span class="lineno">  576</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing base correlation par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  577</span>    <span class="comment">// Base correlations sensis (compare with zero sensi)</span></div>
+<div class="line"><span class="lineno">  578</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;baseCorrRateHelperValuesMap()) {</div>
+<div class="line"><span class="lineno">  579</span>        <span class="keywordtype">string</span> <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = d_it.first;</div>
+<div class="line"><span class="lineno">  580</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;baseCorrelationShiftData()[<a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a>].shiftSize;</div>
+<div class="line"><span class="lineno">  581</span>        <span class="keywordtype">string</span> shiftType =</div>
+<div class="line"><span class="lineno">  582</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;baseCorrelationShiftData()[name].shiftType);</div>
+<div class="line"><span class="lineno">  583</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;baseCorrRateHelperTenorsMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  584</span>        vector&lt;string&gt; lossLevelVec = initParMarket-&gt;baseCorrLossLevelsMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  585</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;baseCorrRateHelperValuesMap().find(name)-&gt;second;</div>
+<div class="line"><span class="lineno">  586</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  587</span>        Size j = lossLevelVec.size();</div>
+<div class="line"><span class="lineno">  588</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  589</span>            sensiLabels[i] = <span class="stringliteral">&quot;BaseCorrelation/&quot;</span> + <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + lossLevelVec[i % j] + <span class="stringliteral">&quot;/&quot;</span> +</div>
+<div class="line"><span class="lineno">  590</span>                             <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i / j]);</div>
+<div class="line"><span class="lineno">  591</span>        }</div>
+<div class="line"><span class="lineno">  592</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  593</span>                             shiftSize, shiftType, zeroDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  594</span>    }</div>
+<div class="line"><span class="lineno">  595</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing zero inflation par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  596</span>    <span class="comment">// Zero Inflation sensis</span></div>
+<div class="line"><span class="lineno">  597</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;zeroInflationRateHelperInstMap()) {</div>
+<div class="line"><span class="lineno">  598</span>        <span class="keywordtype">string</span> idxName = d_it.first;</div>
+<div class="line"><span class="lineno">  599</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;zeroInflationCurveShiftData()[idxName]-&gt;shiftSize;</div>
+<div class="line"><span class="lineno">  600</span>        <span class="keywordtype">string</span> shiftType =</div>
+<div class="line"><span class="lineno">  601</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;zeroInflationCurveShiftData()[idxName]-&gt;shiftType);</div>
+<div class="line"><span class="lineno">  602</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;zeroInflationRateHelperTenorsMap().find(idxName)-&gt;second;</div>
+<div class="line"><span class="lineno">  603</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;zeroInflationRateHelperValuesMap().find(idxName)-&gt;second;</div>
+<div class="line"><span class="lineno">  604</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  605</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  606</span>            sensiLabels[i] = <span class="stringliteral">&quot;ZeroInflationCurve/&quot;</span> + idxName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
+<div class="line"><span class="lineno">  607</span>        }</div>
+<div class="line"><span class="lineno">  608</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  609</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  610</span>    }</div>
+<div class="line"><span class="lineno">  611</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;testing yoy inflation par sensis&quot;</span>);</div>
+<div class="line"><span class="lineno">  612</span>    <span class="comment">// YoY Inflation sensis</span></div>
+<div class="line"><span class="lineno">  613</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> d_it : initParMarket-&gt;yoyInflationRateHelperInstMap()) {</div>
+<div class="line"><span class="lineno">  614</span>        <span class="keywordtype">string</span> idxName = d_it.first;</div>
+<div class="line"><span class="lineno">  615</span>        Real shiftSize = zeroAnalysis-&gt;sensitivityData()-&gt;yoyInflationCurveShiftData()[idxName]-&gt;shiftSize;</div>
+<div class="line"><span class="lineno">  616</span>        <span class="keywordtype">string</span> shiftType =</div>
+<div class="line"><span class="lineno">  617</span>            boost::to_upper_copy(zeroAnalysis-&gt;sensitivityData()-&gt;yoyInflationCurveShiftData()[idxName]-&gt;shiftType);</div>
+<div class="line"><span class="lineno">  618</span>        vector&lt;Period&gt; parTenorVec = initParMarket-&gt;yoyInflationRateHelperTenorsMap().find(idxName)-&gt;second;</div>
+<div class="line"><span class="lineno">  619</span>        vector&lt;Handle&lt;Quote&gt;&gt; parValVecBase = initParMarket-&gt;yoyInflationRateHelperValuesMap().find(idxName)-&gt;second;</div>
+<div class="line"><span class="lineno">  620</span>        vector&lt;string&gt; sensiLabels(parValVecBase.size());</div>
+<div class="line"><span class="lineno">  621</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; parValVecBase.size(); i++) {</div>
+<div class="line"><span class="lineno">  622</span>            sensiLabels[i] = <span class="stringliteral">&quot;YoYInflationCurve/&quot;</span> + idxName + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(i) + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_functionRef" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(parTenorVec[i]);</div>
+<div class="line"><span class="lineno">  623</span>        }</div>
+<div class="line"><span class="lineno">  624</span>        parSensiBumpAnalysis(portfolio, engineData, initMarket, baseManualPv, baseCcy, parValVecBase, sensiLabels,</div>
+<div class="line"><span class="lineno">  625</span>                             shiftSize, shiftType, parDelta, zeroDelta, basePv);</div>
+<div class="line"><span class="lineno">  626</span>    }</div>
+<div class="line"><span class="lineno">  627</span> </div>
+<div class="line"><span class="lineno">  628</span>    <span class="comment">// end</span></div>
+<div class="line"><span class="lineno">  629</span>    ObservationMode::instance().setMode(backupMode);</div>
+<div class="line"><span class="lineno">  630</span>    IndexManager::instance().clearHistories();</div>
+<div class="line"><span class="lineno">  631</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_observation_mode_html_a46c8a310cf4c094f8c80e1cb8dc1f911"><div class="ttname"><a href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ore::analytics::ObservationMode::Mode</a></div><div class="ttdeci">Mode</div><div class="ttdoc">Allowable mode mode.</div><div class="ttdef"><b>Definition:</b> <a href="observationmode_8hpp_source.html#l00044">observationmode.hpp:44</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_par_sensitivity_analysis_html"><div class="ttname"><a href="classore_1_1analytics_1_1_par_sensitivity_analysis.html">ore::analytics::ParSensitivityAnalysis</a></div><div class="ttdoc">Par Sensitivity Analysis.</div><div class="ttdef"><b>Definition:</b> <a href="orea_2engine_2parsensitivityanalysis_8hpp_source.html#l00057">parsensitivityanalysis.hpp:57</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_zero_to_par_cube_html"><div class="ttname"><a href="classore_1_1analytics_1_1_zero_to_par_cube.html">ore::analytics::ZeroToParCube</a></div><div class="ttdoc">ZeroToParCube class.</div><div class="ttdef"><b>Definition:</b> <a href="zerotoparcube_8hpp_source.html#l00038">zerotoparcube.hpp:38</a></div></div>

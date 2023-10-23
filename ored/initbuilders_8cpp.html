@@ -104,6 +104,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="builders_2bondtotalreturnswap_8hpp_source.html">ored/portfolio/builders/bondtotalreturnswap.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="cachingenginebuilder_8hpp_source.html">ored/portfolio/builders/cachingenginebuilder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="builders_2capfloor_8hpp_source.html">ored/portfolio/builders/capfloor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="capflooredaveragebmacouponleg_8hpp_source.html">ored/portfolio/builders/capflooredaveragebmacouponleg.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="capflooredaverageonindexedcouponleg_8hpp_source.html">ored/portfolio/builders/capflooredaverageonindexedcouponleg.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="capflooredcpileg_8hpp_source.html">ored/portfolio/builders/capflooredcpileg.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="capfloorediborleg_8hpp_source.html">ored/portfolio/builders/capfloorediborleg.hpp</a>&gt;</code><br />
@@ -141,7 +142,6 @@ $(function() {
 <code>#include &lt;<a class="el" href="builders_2equityoption_8hpp_source.html">ored/portfolio/builders/equityoption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="builders_2equitytouchoption_8hpp_source.html">ored/portfolio/builders/equitytouchoption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="builders_2forwardbond_8hpp_source.html">ored/portfolio/builders/forwardbond.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="builders_2forwardrateagreement_8hpp_source.html">ored/portfolio/builders/forwardrateagreement.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxasianoption_8hpp_source.html">ored/portfolio/builders/fxasianoption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="builders_2fxbarrieroption_8hpp_source.html">ored/portfolio/builders/fxbarrieroption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="builders_2fxdigitalbarrieroption_8hpp_source.html">ored/portfolio/builders/fxdigitalbarrieroption.hpp</a>&gt;</code><br />
@@ -237,6 +237,26 @@ $(function() {
 <code>#include &lt;<a class="el" href="trswrapper_8hpp_source.html">ored/portfolio/trswrapper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="vanillaoption_8hpp_source.html">ored/portfolio/vanillaoption.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="varianceswap_8hpp_source.html">ored/portfolio/varianceswap.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="accumulator_8hpp_source.html">ored/portfolio/accumulator.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="autocallable__01_8hpp_source.html">ored/portfolio/autocallable_01.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="basketoption_8hpp_source.html">ored/portfolio/basketoption.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="basketvarianceswap_8hpp_source.html">ored/portfolio/basketvarianceswap.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="bestentryoption_8hpp_source.html">ored/portfolio/bestentryoption.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="builders_2riskparticipationagreement_8hpp_source.html">ored/portfolio/builders/riskparticipationagreement.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="builders_2scriptedtrade_8hpp_source.html">ored/portfolio/builders/scriptedtrade.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="doubledigitaloption_8hpp_source.html">ored/portfolio/doubledigitaloption.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="europeanoptionbarrier_8hpp_source.html">ored/portfolio/europeanoptionbarrier.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="genericbarrieroption_8hpp_source.html">ored/portfolio/genericbarrieroption.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="knockoutswap_8hpp_source.html">ored/portfolio/knockoutswap.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="performanceoption__01_8hpp_source.html">ored/portfolio/performanceoption_01.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rainbowoption_8hpp_source.html">ored/portfolio/rainbowoption.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="riskparticipationagreement_8hpp_source.html">ored/portfolio/riskparticipationagreement.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scriptedtrade_8hpp_source.html">ored/portfolio/scriptedtrade.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tarf_8hpp_source.html">ored/portfolio/tarf.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="windowbarrieroption_8hpp_source.html">ored/portfolio/windowbarrieroption.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="worstofbasketswap_8hpp_source.html">ored/portfolio/worstofbasketswap.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/openclenvironment_8hpp.html">qle/math/openclenvironment.hpp</a>&gt;</code><br />
+<code>#include &lt;qle/math/basiccpuenvironment.hpp&gt;</code><br />
 <code>#include &lt;boost/thread/lock_types.hpp&gt;</code><br />
 <code>#include &lt;boost/thread/shared_mutex.hpp&gt;</code><br />
 </div>

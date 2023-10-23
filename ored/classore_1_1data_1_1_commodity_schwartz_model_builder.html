@@ -277,8 +277,8 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   46</span> </div>
 <div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#acf43a5d446ef10789e0c53f3de370a38">optionActive_</a> = std::vector&lt;bool&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a0b204d3fbff4d78813fda5ba2396d6a5">data_</a>-&gt;optionExpiries().size(), <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#ac7bf161c6252e4a1e7d3ba8013985ddd">marketObserver_</a> = boost::make_shared&lt;MarketObserver&gt;();</div>
-<div class="line"><span class="lineno">   49</span>    QuantLib::Currency ccy = <a class="code hl_function" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b">ore::data::parseCurrency</a>(data-&gt;currency());</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#af1801e31af6399bccce114ab12575168">name</a> = data-&gt;name();</div>
+<div class="line"><span class="lineno">   49</span>    QuantLib::Currency ccy = <a class="code hl_function" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b">ore::data::parseCurrency</a>(<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;currency());</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#af1801e31af6399bccce114ab12575168">name</a> = <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;name();</div>
 <div class="line"><span class="lineno">   51</span> </div>
 <div class="line"><span class="lineno">   52</span>    <a class="code hl_define" href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Start building CommoditySchwartz model for &quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#af1801e31af6399bccce114ab12575168">name</a>);</div>
 <div class="line"><span class="lineno">   53</span> </div>
@@ -300,12 +300,12 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   69</span>    alwaysForwardNotifications();</div>
 <div class="line"><span class="lineno">   70</span> </div>
 <div class="line"><span class="lineno">   71</span>    <span class="comment">// build option basket and derive parametrization from it</span></div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (data-&gt;calibrateSigma() || data-&gt;calibrateKappa())</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;calibrateSigma() || <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;calibrateKappa())</div>
 <div class="line"><span class="lineno">   73</span>        <a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#ac5aabc5af5182ade6d296b17c67e8456">buildOptionBasket</a>();</div>
 <div class="line"><span class="lineno">   74</span> </div>
 <div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a2acb09b5d2265529f87e17bcdf7c1cdb">parametrization_</a> = boost::make_shared&lt;QuantExt::CommoditySchwartzParametrization&gt;(ccy, <a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#af1801e31af6399bccce114ab12575168">name</a>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#aaf17e3f439e763cf6c7f376628515f7d">curve_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#aa6e58e5f7734c3fd0cef0b5f5dd8ab9f">fxSpot_</a>,</div>
-<div class="line"><span class="lineno">   76</span>                                                                                      data-&gt;sigmaValue(), data-&gt;kappaValue(),</div>
-<div class="line"><span class="lineno">   77</span>                                                                                      data-&gt;driftFreeState());</div>
+<div class="line"><span class="lineno">   76</span>                                                                                      <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;sigmaValue(), <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;kappaValue(),</div>
+<div class="line"><span class="lineno">   77</span>                                                                                      <a class="code hl_enumvalue" href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a>-&gt;driftFreeState());</div>
 <div class="line"><span class="lineno">   78</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a8f4653e7ffe80a698f0a4efba6647c0d">model_</a> = boost::make_shared&lt;QuantExt::CommoditySchwartzModel&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a2acb09b5d2265529f87e17bcdf7c1cdb">parametrization_</a>);</div>
 <div class="line"><span class="lineno">   79</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_a0b204d3fbff4d78813fda5ba2396d6a5"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a0b204d3fbff4d78813fda5ba2396d6a5">ore::data::CommoditySchwartzModelBuilder::data_</a></div><div class="ttdeci">const boost::shared_ptr&lt; CommoditySchwartzData &gt; data_</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8hpp_source.html#l00091">commodityschwartzmodelbuilder.hpp:91</a></div></div>
@@ -322,8 +322,9 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_ac7bf161c6252e4a1e7d3ba8013985ddd"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#ac7bf161c6252e4a1e7d3ba8013985ddd">ore::data::CommoditySchwartzModelBuilder::marketObserver_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantExt::MarketObserver &gt; marketObserver_</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8hpp_source.html#l00117">commodityschwartzmodelbuilder.hpp:117</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_acf43a5d446ef10789e0c53f3de370a38"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#acf43a5d446ef10789e0c53f3de370a38">ore::data::CommoditySchwartzModelBuilder::optionActive_</a></div><div class="ttdeci">std::vector&lt; bool &gt; optionActive_</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8hpp_source.html#l00101">commodityschwartzmodelbuilder.hpp:101</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_af1801e31af6399bccce114ab12575168"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#af1801e31af6399bccce114ab12575168">ore::data::CommoditySchwartzModelBuilder::name</a></div><div class="ttdeci">std::string name()</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8hpp_source.html#l00068">commodityschwartzmodelbuilder.hpp:68</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga6e9e781a58e78200301c76161589fc7b"><div class="ttname"><a href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b">ore::data::parseCurrency</a></div><div class="ttdeci">Currency parseCurrency(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Currency.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00282">parsers.cpp:282</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div><div class="ttdoc">Logging Macro (Level = Notice)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00366">log.hpp:366</a></div></div>
+<div class="ttc" id="agroup__utilities_html_ga6e9e781a58e78200301c76161589fc7b"><div class="ttname"><a href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b">ore::data::parseCurrency</a></div><div class="ttdeci">Currency parseCurrency(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Currency.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00287">parsers.cpp:287</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b"><div class="ttname"><a href="log_8hpp.html#a08cf33440c824c6fda734c566a726536a604ac82e88d7a367d4c2830411520c2b">data</a></div><div class="ttdeci">@ data</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00077">log.hpp:77</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div><div class="ttdoc">Logging Macro (Level = Notice)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00506">log.hpp:506</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -331,19 +332,20 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_commodity_schwartz_model_builder_a6c46f8842892c644a94042c96570f991_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_commodity_schwartz_model_builder_a6c46f8842892c644a94042c96570f991_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a6c46f8842892c644a94042c96570f991_cgraph" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a6c46f8842892c644a94042c96570f991_cgraph">
-<area shape="rect" title="Constructor." alt="" coords="5,140,223,165"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#ac5aabc5af5182ade6d296b17c67e8456" title=" " alt="" coords="289,91,417,116"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#af1801e31af6399bccce114ab12575168" title=" " alt="" coords="326,140,381,165"/>
-<area shape="rect" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="271,189,436,215"/>
-<area shape="rect" href="classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466" title=" " alt="" coords="484,26,616,66"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="503,91,597,116"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="505,145,595,171"/>
+<area shape="rect" title="Constructor." alt="" coords="5,153,223,179"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#ac5aabc5af5182ade6d296b17c67e8456" title=" " alt="" coords="289,104,417,129"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#af1801e31af6399bccce114ab12575168" title=" " alt="" coords="326,153,381,179"/>
+<area shape="rect" href="group__utilities.html#ga6e9e781a58e78200301c76161589fc7b" title="Convert text to QuantLib::Currency." alt="" coords="271,203,436,228"/>
+<area shape="rect" href="classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466" title=" " alt="" coords="484,14,616,54"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="503,79,597,104"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="1125,104,1230,129"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="505,187,595,212"/>
 <area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="664,79,855,104"/>
 <area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="908,29,1048,55"/>
 <area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="903,79,1053,104"/>
 <area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1101,29,1253,55"/>
-<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="686,148,833,173"/>
-<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="909,152,1047,177"/>
+<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="686,192,833,217"/>
+<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="909,204,1047,229"/>
 </map>
 </div>
 
@@ -562,17 +564,18 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_commodity_schwartz_model_builder_a83cbd1c07f17f2f51faea02f40eeaac9_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_commodity_schwartz_model_builder_a83cbd1c07f17f2f51faea02f40eeaac9_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a83cbd1c07f17f2f51faea02f40eeaac9_cgraph" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a83cbd1c07f17f2f51faea02f40eeaac9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,91,148,116"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a11d6981c9430b09a2c7d82f2c0d7290d" title=" " alt="" coords="196,91,328,116"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="376,41,541,67"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="411,91,506,116"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="413,145,504,171"/>
+<area shape="rect" title=" " alt="" coords="5,104,148,129"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a11d6981c9430b09a2c7d82f2c0d7290d" title=" " alt="" coords="196,104,328,129"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="376,29,541,55"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="411,79,506,104"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="1050,104,1155,129"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="413,185,504,211"/>
 <area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="589,79,780,104"/>
 <area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="833,29,973,55"/>
 <area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="828,79,979,104"/>
 <area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1027,29,1179,55"/>
-<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="611,148,758,173"/>
-<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="834,152,973,177"/>
+<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="611,192,758,217"/>
+<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="834,204,973,229"/>
 </map>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -679,12 +682,12 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  168</span>    }</div>
 <div class="line"><span class="lineno">  169</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_a83cbd1c07f17f2f51faea02f40eeaac9"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a83cbd1c07f17f2f51faea02f40eeaac9">ore::data::CommoditySchwartzModelBuilder::requiresRecalibration</a></div><div class="ttdeci">bool requiresRecalibration() const override</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8cpp_source.html#l00100">commodityschwartzmodelbuilder.cpp:100</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00368">log.hpp:368</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00364">log.hpp:364</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00508">log.hpp:508</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a18340f2f2342933b54b1dc8e6c0ed797a6699fc2680f2601917ba69358414fa51"><div class="ttname"><a href="namespaceore_1_1data.html#a18340f2f2342933b54b1dc8e6c0ed797a6699fc2680f2601917ba69358414fa51">ore::data::CalibrationType::Bootstrap</a></div><div class="ttdeci">@ Bootstrap</div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a18340f2f2342933b54b1dc8e6c0ed797a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="namespaceore_1_1data.html#a18340f2f2342933b54b1dc8e6c0ed797a6adf97f83acf6453d4a6a4b1070f3754">ore::data::CalibrationType::None</a></div><div class="ttdeci">@ None</div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_ae13122ea9bf25ad5733cc2817ad7f2f6"><div class="ttname"><a href="namespaceore_1_1data.html#ae13122ea9bf25ad5733cc2817ad7f2f6">ore::data::getCalibrationError</a></div><div class="ttdeci">Real getCalibrationError(const std::vector&lt; boost::shared_ptr&lt; Helper &gt; &gt; &amp;basket)</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8hpp_source.html#l00047">utilities.hpp:47</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_af7eb6de2fce074f6c8cf5bdf2f5144bb"><div class="ttname"><a href="namespaceore_1_1data.html#af7eb6de2fce074f6c8cf5bdf2f5144bb">ore::data::getCalibrationDetails</a></div><div class="ttdeci">std::string getCalibrationDetails(LgmCalibrationInfo &amp;info, const std::vector&lt; boost::shared_ptr&lt; BlackCalibrationHelper &gt; &gt; &amp;basket, const boost::shared_ptr&lt; IrLgm1fParametrization &gt; &amp;parametrization)</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00125">utilities.cpp:125</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_ae13122ea9bf25ad5733cc2817ad7f2f6"><div class="ttname"><a href="namespaceore_1_1data.html#ae13122ea9bf25ad5733cc2817ad7f2f6">ore::data::getCalibrationError</a></div><div class="ttdeci">Real getCalibrationError(const std::vector&lt; boost::shared_ptr&lt; Helper &gt; &gt; &amp;basket)</div><div class="ttdef"><b>Definition:</b> <a href="model_2utilities_8hpp_source.html#l00047">utilities.hpp:47</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_af7eb6de2fce074f6c8cf5bdf2f5144bb"><div class="ttname"><a href="namespaceore_1_1data.html#af7eb6de2fce074f6c8cf5bdf2f5144bb">ore::data::getCalibrationDetails</a></div><div class="ttdeci">std::string getCalibrationDetails(LgmCalibrationInfo &amp;info, const std::vector&lt; boost::shared_ptr&lt; BlackCalibrationHelper &gt; &gt; &amp;basket, const boost::shared_ptr&lt; IrLgm1fParametrization &gt; &amp;parametrization)</div><div class="ttdef"><b>Definition:</b> <a href="model_2utilities_8cpp_source.html#l00125">utilities.cpp:125</a></div></div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -692,23 +695,24 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_commodity_schwartz_model_builder_a1127cccc9668a02247dc139d27121708_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_commodity_schwartz_model_builder_a1127cccc9668a02247dc139d27121708_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a1127cccc9668a02247dc139d27121708_cgraph" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a1127cccc9668a02247dc139d27121708_cgraph">
-<area shape="rect" title=" " alt="" coords="5,191,141,216"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#ac5aabc5af5182ade6d296b17c67e8456" title=" " alt="" coords="399,91,527,116"/>
-<area shape="rect" href="namespaceore_1_1data.html#af7eb6de2fce074f6c8cf5bdf2f5144bb" title=" " alt="" coords="189,241,349,281"/>
-<area shape="rect" href="namespaceore_1_1data.html#ae13122ea9bf25ad5733cc2817ad7f2f6" title=" " alt="" coords="189,305,349,345"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a83cbd1c07f17f2f51faea02f40eeaac9" title=" " alt="" coords="198,140,341,165"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a11d6981c9430b09a2c7d82f2c0d7290d" title=" " alt="" coords="397,140,529,165"/>
-<area shape="rect" href="classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466" title=" " alt="" coords="594,26,726,66"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="613,91,707,116"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="615,140,705,165"/>
-<area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="791,79,981,104"/>
-<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="1035,79,1175,104"/>
-<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="1029,5,1180,31"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1228,79,1380,104"/>
-<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="813,147,959,172"/>
-<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="1035,152,1174,177"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284" title=" " alt="" coords="412,248,515,273"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="577,189,743,215"/>
+<area shape="rect" title=" " alt="" coords="5,209,141,234"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#ac5aabc5af5182ade6d296b17c67e8456" title=" " alt="" coords="399,107,527,133"/>
+<area shape="rect" href="namespaceore_1_1data.html#af7eb6de2fce074f6c8cf5bdf2f5144bb" title=" " alt="" coords="189,259,349,299"/>
+<area shape="rect" href="namespaceore_1_1data.html#ae13122ea9bf25ad5733cc2817ad7f2f6" title=" " alt="" coords="189,323,349,363"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a83cbd1c07f17f2f51faea02f40eeaac9" title=" " alt="" coords="198,158,341,183"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a11d6981c9430b09a2c7d82f2c0d7290d" title=" " alt="" coords="397,197,529,222"/>
+<area shape="rect" href="classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466" title=" " alt="" coords="594,5,726,45"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="613,170,707,195"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="1251,221,1357,246"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="615,121,705,146"/>
+<area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="791,271,981,297"/>
+<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="1035,345,1175,370"/>
+<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="1029,271,1180,297"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="1228,345,1380,370"/>
+<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="813,133,959,158"/>
+<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="1035,145,1174,170"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a250ccc1dd6b0731854784fddafb97284" title=" " alt="" coords="412,266,515,291"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="577,271,743,297"/>
 </map>
 </div>
 
@@ -822,7 +826,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  191</span>    Date expiryDate = expiryDateBased ? expiryDb : today + expiryPb;</div>
 <div class="line"><span class="lineno">  192</span>    <span class="keywordflow">return</span> expiryDate;</div>
 <div class="line"><span class="lineno">  193</span>}</div>
-<div class="ttc" id="agroup__utilities_html_ga6477391407eac174ea49df689ecf1ab2"><div class="ttname"><a href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2">ore::data::parseDateOrPeriod</a></div><div class="ttdeci">boost::variant&lt; QuantLib::Date, QuantLib::Period &gt; parseDateOrPeriod(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Period or QuantLib::Date.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00467">parsers.cpp:467</a></div></div>
+<div class="ttc" id="agroup__utilities_html_ga6477391407eac174ea49df689ecf1ab2"><div class="ttname"><a href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2">ore::data::parseDateOrPeriod</a></div><div class="ttdeci">boost::variant&lt; QuantLib::Date, QuantLib::Period &gt; parseDateOrPeriod(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Period or QuantLib::Date.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00476">parsers.cpp:476</a></div></div>
 </div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -830,11 +834,12 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_commodity_schwartz_model_builder_a81f79f66c53af5b302e1b92331ba5676_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_commodity_schwartz_model_builder_a81f79f66c53af5b302e1b92331ba5676_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a81f79f66c53af5b302e1b92331ba5676_cgraph" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a81f79f66c53af5b302e1b92331ba5676_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,100,80"/>
-<area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="148,55,339,80"/>
-<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="392,29,532,55"/>
-<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="387,79,537,104"/>
+<area shape="rect" title=" " alt="" coords="5,79,100,104"/>
+<area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="148,79,339,104"/>
+<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="392,53,532,79"/>
+<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="387,103,537,128"/>
 <area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="585,29,737,55"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="609,79,714,104"/>
 </map>
 </div>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -893,7 +898,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  228</span> </div>
 <div class="line"><span class="lineno">  229</span>    std::vector&lt;Time&gt; expiryTimes;</div>
 <div class="line"><span class="lineno">  230</span>    <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a8ff85311902c08dbe064a4283ff8882c">optionBasket_</a>.clear();</div>
-<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">for</span> (Size j = 0; j &lt; <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a0b204d3fbff4d78813fda5ba2396d6a5">data_</a>-&gt;optionExpiries().size(); j++) {</div>
+<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">for</span> (Size j = 0; j &lt; <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a0b204d3fbff4d78813fda5ba2396d6a5">data_</a>-&gt;optionExpiries().<a class="code hl_function" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">size</a>(); j++) {</div>
 <div class="line"><span class="lineno">  232</span>        <span class="comment">// may wish to calibrate against specific futures expiry dates...</span></div>
 <div class="line"><span class="lineno">  233</span>        Date expiryDate = <a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676">optionExpiry</a>(j);</div>
 <div class="line"><span class="lineno">  234</span> </div>
@@ -929,6 +934,7 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_a0509b6a31a11679cd22658d05f6ce907"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a0509b6a31a11679cd22658d05f6ce907">ore::data::CommoditySchwartzModelBuilder::optionExpiries_</a></div><div class="ttdeci">Array optionExpiries_</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8hpp_source.html#l00103">commodityschwartzmodelbuilder.hpp:103</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_a56e924a366d529ef9aa8caed361799af"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af">ore::data::CommoditySchwartzModelBuilder::optionStrike</a></div><div class="ttdeci">Real optionStrike(const Size j) const</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8cpp_source.html#l00171">commodityschwartzmodelbuilder.cpp:171</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_html_a81f79f66c53af5b302e1b92331ba5676"><div class="ttname"><a href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676">ore::data::CommoditySchwartzModelBuilder::optionExpiry</a></div><div class="ttdeci">Date optionExpiry(const Size j) const</div><div class="ttdef"><b>Definition:</b> <a href="commodityschwartzmodelbuilder_8cpp_source.html#l00184">commodityschwartzmodelbuilder.cpp:184</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a777e216dee6069b548bb87da7152699e"><div class="ttname"><a href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">ore::data::size</a></div><div class="ttdeci">Size size(const ValueType &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2scripting_2value_8cpp_source.html#l00145">value.cpp:145</a></div></div>
 <div class="ttc" id="apiecewiseatmoptionletcurve_8cpp_html_ac28af33f0db47fd24320c0ae0844971f"><div class="ttname"><a href="../qle/piecewiseatmoptionletcurve_8cpp.html#ac28af33f0db47fd24320c0ae0844971f">helper</a></div><div class="ttdeci">QuantLib::BootstrapHelper&lt; QuantLib::OptionletVolatilityStructure &gt; helper</div></div>
 </div><!-- fragment --><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -937,16 +943,17 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_commodity_schwartz_model_builder_ac5aabc5af5182ade6d296b17c67e8456_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_commodity_schwartz_model_builder_ac5aabc5af5182ade6d296b17c67e8456_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_commodity_schwartz_model_builder_ac5aabc5af5182ade6d296b17c67e8456_cgraph" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_ac5aabc5af5182ade6d296b17c67e8456_cgraph">
-<area shape="rect" title=" " alt="" coords="5,91,133,116"/>
-<area shape="rect" href="classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466" title=" " alt="" coords="181,26,313,66"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="200,91,295,116"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="202,145,293,171"/>
+<area shape="rect" title=" " alt="" coords="5,104,133,129"/>
+<area shape="rect" href="classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466" title=" " alt="" coords="181,14,313,54"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="200,79,295,104"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="822,104,927,129"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="202,185,293,211"/>
 <area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="361,79,552,104"/>
 <area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="605,29,745,55"/>
 <area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="600,79,751,104"/>
 <area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="799,29,951,55"/>
-<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="383,148,530,173"/>
-<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="606,152,745,177"/>
+<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="383,192,530,217"/>
+<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="606,204,745,229"/>
 </map>
 </div>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -997,7 +1004,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  200</span>        <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a7ae7897fead938e91781a2830263a5f1">volCache_</a> = vector&lt;Real&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a8ff85311902c08dbe064a4283ff8882c">optionBasket_</a>.size(), Null&lt;Real&gt;());</div>
 <div class="line"><span class="lineno">  201</span> </div>
 <div class="line"><span class="lineno">  202</span>    Size optionCounter = 0;</div>
-<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">for</span> (Size j = 0; j &lt; <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a0b204d3fbff4d78813fda5ba2396d6a5">data_</a>-&gt;optionExpiries().size(); j++) {</div>
+<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">for</span> (Size j = 0; j &lt; <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a0b204d3fbff4d78813fda5ba2396d6a5">data_</a>-&gt;optionExpiries().<a class="code hl_function" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">size</a>(); j++) {</div>
 <div class="line"><span class="lineno">  204</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#acf43a5d446ef10789e0c53f3de370a38">optionActive_</a>[j])</div>
 <div class="line"><span class="lineno">  205</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><span class="lineno">  206</span>        Real vol = <a class="code hl_variable" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a5b54d21d378a3bfc96ed916770e18f81">vol_</a>-&gt;blackVol(<a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676">optionExpiry</a>(j), <a class="code hl_function" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af">optionStrike</a>(j));</div>
@@ -1019,16 +1026,17 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_commodity_schwartz_model_builder_a11d6981c9430b09a2c7d82f2c0d7290d_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_commodity_schwartz_model_builder_a11d6981c9430b09a2c7d82f2c0d7290d_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a11d6981c9430b09a2c7d82f2c0d7290d_cgraph" id="aclassore_1_1data_1_1_commodity_schwartz_model_builder_a11d6981c9430b09a2c7d82f2c0d7290d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,91,137,116"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="185,41,351,67"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="221,91,315,116"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="223,145,313,171"/>
+<area shape="rect" title=" " alt="" coords="5,104,137,129"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5" title=" " alt="" coords="185,29,351,55"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a81f79f66c53af5b302e1b92331ba5676" title=" " alt="" coords="221,79,315,104"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="859,104,965,129"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_schwartz_model_builder.html#a56e924a366d529ef9aa8caed361799af" title=" " alt="" coords="223,185,313,211"/>
 <area shape="rect" href="group__utilities.html#ga6477391407eac174ea49df689ecf1ab2" title="Convert text to QuantLib::Period or QuantLib::Date." alt="" coords="399,79,589,104"/>
 <area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="643,29,783,55"/>
 <area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="637,79,788,104"/>
 <area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="836,29,988,55"/>
-<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="421,148,567,173"/>
-<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="643,152,782,177"/>
+<area shape="rect" href="group__utilities.html#ga2037f312d2920037572bdc0c30a6395d" title="Convert text to Strike." alt="" coords="421,192,567,217"/>
+<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="643,204,782,229"/>
 </map>
 </div>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">

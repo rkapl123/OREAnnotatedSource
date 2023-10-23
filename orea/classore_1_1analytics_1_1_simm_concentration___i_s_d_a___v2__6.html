@@ -174,9 +174,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a82c995bbcb3a6783e7bc79ca818ec557 inherit pro_attribs_classore_1_1analytics_1_1_simm_concentration_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Class giving the SIMM concentration thresholds as outlined in the document <em>ISDA SIMM Methodology, version 2.6. Effective Date: December 3, 2022.</em> </p>
+<div class="textblock"><p >Class giving the SIMM concentration thresholds as outlined in the document <em>ISDA SIMM Methodology, version 2.6 . Effective Date: December 2, 2023.</em> </p>
 
-<p class="definition">Definition at line <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html#l00025">25</a> of file <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html">simmconcentrationisdav2_6.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html#l00039">39</a> of file <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html">simmconcentrationisdav2_6.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aadaab501c9eaef5383ab3c7922d539aa" name="aadaab501c9eaef5383ab3c7922d539aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aadaab501c9eaef5383ab3c7922d539aa">&#9670;&#160;</a></span>SimmConcentration_ISDA_V2_6()</h2>
@@ -209,31 +209,31 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   31</span>    <span class="comment">// clang-format off</span></div>
 <div class="line"><span class="lineno">   32</span> </div>
 <div class="line"><span class="lineno">   33</span>    <span class="comment">// Populate flat thresholds</span></div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#a27cb49b24addb4b1ae5d213d169d0d13">flatThresholds_</a>[RiskType::CreditVol] = 260;</div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#a27cb49b24addb4b1ae5d213d169d0d13">flatThresholds_</a>[RiskType::CreditVolNonQ] = 145;</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#a27cb49b24addb4b1ae5d213d169d0d13">flatThresholds_</a>[RiskType::CreditVol] = 360;</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#a27cb49b24addb4b1ae5d213d169d0d13">flatThresholds_</a>[RiskType::CreditVolNonQ] = 70;</div>
 <div class="line"><span class="lineno">   36</span> </div>
 <div class="line"><span class="lineno">   37</span>    <span class="comment">// Populate bucketed thresholds</span></div>
 <div class="line"><span class="lineno">   38</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::IRCurve] = {</div>
-<div class="line"><span class="lineno">   39</span>        { <span class="stringliteral">&quot;1&quot;</span>, 33 },</div>
-<div class="line"><span class="lineno">   40</span>        { <span class="stringliteral">&quot;2&quot;</span>, 230 },</div>
-<div class="line"><span class="lineno">   41</span>        { <span class="stringliteral">&quot;3&quot;</span>, 44 },</div>
-<div class="line"><span class="lineno">   42</span>        { <span class="stringliteral">&quot;4&quot;</span>, 70 }</div>
+<div class="line"><span class="lineno">   39</span>        { <span class="stringliteral">&quot;1&quot;</span>, 30 },</div>
+<div class="line"><span class="lineno">   40</span>        { <span class="stringliteral">&quot;2&quot;</span>, 330 },</div>
+<div class="line"><span class="lineno">   41</span>        { <span class="stringliteral">&quot;3&quot;</span>, 130 },</div>
+<div class="line"><span class="lineno">   42</span>        { <span class="stringliteral">&quot;4&quot;</span>, 61 }</div>
 <div class="line"><span class="lineno">   43</span>    };</div>
 <div class="line"><span class="lineno">   44</span> </div>
 <div class="line"><span class="lineno">   45</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::CreditQ] = {</div>
-<div class="line"><span class="lineno">   46</span>        { <span class="stringliteral">&quot;1&quot;</span>, 0.91 },</div>
-<div class="line"><span class="lineno">   47</span>        { <span class="stringliteral">&quot;2&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   48</span>        { <span class="stringliteral">&quot;3&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   49</span>        { <span class="stringliteral">&quot;4&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   50</span>        { <span class="stringliteral">&quot;5&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   51</span>        { <span class="stringliteral">&quot;6&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   52</span>        { <span class="stringliteral">&quot;7&quot;</span>, 0.91 },</div>
-<div class="line"><span class="lineno">   53</span>        { <span class="stringliteral">&quot;8&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   54</span>        { <span class="stringliteral">&quot;9&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   55</span>        { <span class="stringliteral">&quot;10&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   56</span>        { <span class="stringliteral">&quot;11&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   57</span>        { <span class="stringliteral">&quot;12&quot;</span>, 0.19 },</div>
-<div class="line"><span class="lineno">   58</span>        { <span class="stringliteral">&quot;Residual&quot;</span>, 0.19 }</div>
+<div class="line"><span class="lineno">   46</span>        { <span class="stringliteral">&quot;1&quot;</span>, 1 },</div>
+<div class="line"><span class="lineno">   47</span>        { <span class="stringliteral">&quot;2&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   48</span>        { <span class="stringliteral">&quot;3&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   49</span>        { <span class="stringliteral">&quot;4&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   50</span>        { <span class="stringliteral">&quot;5&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   51</span>        { <span class="stringliteral">&quot;6&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   52</span>        { <span class="stringliteral">&quot;7&quot;</span>, 1 },</div>
+<div class="line"><span class="lineno">   53</span>        { <span class="stringliteral">&quot;8&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   54</span>        { <span class="stringliteral">&quot;9&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   55</span>        { <span class="stringliteral">&quot;10&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   56</span>        { <span class="stringliteral">&quot;11&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   57</span>        { <span class="stringliteral">&quot;12&quot;</span>, 0.17 },</div>
+<div class="line"><span class="lineno">   58</span>        { <span class="stringliteral">&quot;Residual&quot;</span>, 0.17 }</div>
 <div class="line"><span class="lineno">   59</span>    };</div>
 <div class="line"><span class="lineno">   60</span> </div>
 <div class="line"><span class="lineno">   61</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::CreditNonQ] = {</div>
@@ -243,19 +243,19 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   65</span>    };</div>
 <div class="line"><span class="lineno">   66</span> </div>
 <div class="line"><span class="lineno">   67</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::Equity] = {</div>
-<div class="line"><span class="lineno">   68</span>        { <span class="stringliteral">&quot;1&quot;</span>, 10 },</div>
-<div class="line"><span class="lineno">   69</span>        { <span class="stringliteral">&quot;2&quot;</span>, 10 },</div>
-<div class="line"><span class="lineno">   70</span>        { <span class="stringliteral">&quot;3&quot;</span>, 10 },</div>
-<div class="line"><span class="lineno">   71</span>        { <span class="stringliteral">&quot;4&quot;</span>, 10 },</div>
-<div class="line"><span class="lineno">   72</span>        { <span class="stringliteral">&quot;5&quot;</span>, 21 },</div>
-<div class="line"><span class="lineno">   73</span>        { <span class="stringliteral">&quot;6&quot;</span>, 21 },</div>
-<div class="line"><span class="lineno">   74</span>        { <span class="stringliteral">&quot;7&quot;</span>, 21 },</div>
-<div class="line"><span class="lineno">   75</span>        { <span class="stringliteral">&quot;8&quot;</span>, 21 },</div>
-<div class="line"><span class="lineno">   76</span>        { <span class="stringliteral">&quot;9&quot;</span>, 1.4 },</div>
-<div class="line"><span class="lineno">   77</span>        { <span class="stringliteral">&quot;10&quot;</span>, 0.6 },</div>
-<div class="line"><span class="lineno">   78</span>        { <span class="stringliteral">&quot;11&quot;</span>, 2100 },</div>
-<div class="line"><span class="lineno">   79</span>        { <span class="stringliteral">&quot;12&quot;</span>, 2100 },</div>
-<div class="line"><span class="lineno">   80</span>        { <span class="stringliteral">&quot;Residual&quot;</span>, 0.6 }</div>
+<div class="line"><span class="lineno">   68</span>        { <span class="stringliteral">&quot;1&quot;</span>, 3 },</div>
+<div class="line"><span class="lineno">   69</span>        { <span class="stringliteral">&quot;2&quot;</span>, 3 },</div>
+<div class="line"><span class="lineno">   70</span>        { <span class="stringliteral">&quot;3&quot;</span>, 3 },</div>
+<div class="line"><span class="lineno">   71</span>        { <span class="stringliteral">&quot;4&quot;</span>, 3 },</div>
+<div class="line"><span class="lineno">   72</span>        { <span class="stringliteral">&quot;5&quot;</span>, 12 },</div>
+<div class="line"><span class="lineno">   73</span>        { <span class="stringliteral">&quot;6&quot;</span>, 12 },</div>
+<div class="line"><span class="lineno">   74</span>        { <span class="stringliteral">&quot;7&quot;</span>, 12 },</div>
+<div class="line"><span class="lineno">   75</span>        { <span class="stringliteral">&quot;8&quot;</span>, 12 },</div>
+<div class="line"><span class="lineno">   76</span>        { <span class="stringliteral">&quot;9&quot;</span>, 0.64 },</div>
+<div class="line"><span class="lineno">   77</span>        { <span class="stringliteral">&quot;10&quot;</span>, 0.37 },</div>
+<div class="line"><span class="lineno">   78</span>        { <span class="stringliteral">&quot;11&quot;</span>, 810 },</div>
+<div class="line"><span class="lineno">   79</span>        { <span class="stringliteral">&quot;12&quot;</span>, 810 },</div>
+<div class="line"><span class="lineno">   80</span>        { <span class="stringliteral">&quot;Residual&quot;</span>, 0.37 }</div>
 <div class="line"><span class="lineno">   81</span>    };</div>
 <div class="line"><span class="lineno">   82</span> </div>
 <div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::Commodity] = {</div>
@@ -264,13 +264,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   86</span>        { <span class="stringliteral">&quot;3&quot;</span>, 1700 },</div>
 <div class="line"><span class="lineno">   87</span>        { <span class="stringliteral">&quot;4&quot;</span>, 1700 },</div>
 <div class="line"><span class="lineno">   88</span>        { <span class="stringliteral">&quot;5&quot;</span>, 1700 },</div>
-<div class="line"><span class="lineno">   89</span>        { <span class="stringliteral">&quot;6&quot;</span>, 3200 },</div>
-<div class="line"><span class="lineno">   90</span>        { <span class="stringliteral">&quot;7&quot;</span>, 3200 },</div>
+<div class="line"><span class="lineno">   89</span>        { <span class="stringliteral">&quot;6&quot;</span>, 2800 },</div>
+<div class="line"><span class="lineno">   90</span>        { <span class="stringliteral">&quot;7&quot;</span>, 2800 },</div>
 <div class="line"><span class="lineno">   91</span>        { <span class="stringliteral">&quot;8&quot;</span>, 2700 },</div>
 <div class="line"><span class="lineno">   92</span>        { <span class="stringliteral">&quot;9&quot;</span>, 2700 },</div>
 <div class="line"><span class="lineno">   93</span>        { <span class="stringliteral">&quot;10&quot;</span>, 52 },</div>
 <div class="line"><span class="lineno">   94</span>        { <span class="stringliteral">&quot;11&quot;</span>, 530 },</div>
-<div class="line"><span class="lineno">   95</span>        { <span class="stringliteral">&quot;12&quot;</span>, 1600 },</div>
+<div class="line"><span class="lineno">   95</span>        { <span class="stringliteral">&quot;12&quot;</span>, 1300 },</div>
 <div class="line"><span class="lineno">   96</span>        { <span class="stringliteral">&quot;13&quot;</span>, 100 },</div>
 <div class="line"><span class="lineno">   97</span>        { <span class="stringliteral">&quot;14&quot;</span>, 100 },</div>
 <div class="line"><span class="lineno">   98</span>        { <span class="stringliteral">&quot;15&quot;</span>, 100 },</div>
@@ -279,16 +279,16 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  101</span>    };</div>
 <div class="line"><span class="lineno">  102</span> </div>
 <div class="line"><span class="lineno">  103</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::FX] = {</div>
-<div class="line"><span class="lineno">  104</span>        { <span class="stringliteral">&quot;1&quot;</span>, 5100 },</div>
-<div class="line"><span class="lineno">  105</span>        { <span class="stringliteral">&quot;2&quot;</span>, 1200 },</div>
-<div class="line"><span class="lineno">  106</span>        { <span class="stringliteral">&quot;3&quot;</span>, 190 }</div>
+<div class="line"><span class="lineno">  104</span>        { <span class="stringliteral">&quot;1&quot;</span>, 3300 },</div>
+<div class="line"><span class="lineno">  105</span>        { <span class="stringliteral">&quot;2&quot;</span>, 880 },</div>
+<div class="line"><span class="lineno">  106</span>        { <span class="stringliteral">&quot;3&quot;</span>, 170 }</div>
 <div class="line"><span class="lineno">  107</span>    };</div>
 <div class="line"><span class="lineno">  108</span> </div>
 <div class="line"><span class="lineno">  109</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::IRVol] = {</div>
-<div class="line"><span class="lineno">  110</span>        { <span class="stringliteral">&quot;1&quot;</span>, 120 },</div>
-<div class="line"><span class="lineno">  111</span>        { <span class="stringliteral">&quot;2&quot;</span>, 3300 },</div>
-<div class="line"><span class="lineno">  112</span>        { <span class="stringliteral">&quot;3&quot;</span>, 470 },</div>
-<div class="line"><span class="lineno">  113</span>        { <span class="stringliteral">&quot;4&quot;</span>, 570 }</div>
+<div class="line"><span class="lineno">  110</span>        { <span class="stringliteral">&quot;1&quot;</span>, 74 },</div>
+<div class="line"><span class="lineno">  111</span>        { <span class="stringliteral">&quot;2&quot;</span>, 4900 },</div>
+<div class="line"><span class="lineno">  112</span>        { <span class="stringliteral">&quot;3&quot;</span>, 520 },</div>
+<div class="line"><span class="lineno">  113</span>        { <span class="stringliteral">&quot;4&quot;</span>, 970 }</div>
 <div class="line"><span class="lineno">  114</span>    };</div>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::EquityVol] = {</div>
@@ -300,45 +300,45 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  122</span>        { <span class="stringliteral">&quot;6&quot;</span>, 1300 },</div>
 <div class="line"><span class="lineno">  123</span>        { <span class="stringliteral">&quot;7&quot;</span>, 1300 },</div>
 <div class="line"><span class="lineno">  124</span>        { <span class="stringliteral">&quot;8&quot;</span>, 1300 },</div>
-<div class="line"><span class="lineno">  125</span>        { <span class="stringliteral">&quot;9&quot;</span>, 40 },</div>
-<div class="line"><span class="lineno">  126</span>        { <span class="stringliteral">&quot;10&quot;</span>, 200 },</div>
-<div class="line"><span class="lineno">  127</span>        { <span class="stringliteral">&quot;11&quot;</span>, 5900 },</div>
-<div class="line"><span class="lineno">  128</span>        { <span class="stringliteral">&quot;12&quot;</span>, 5900 },</div>
-<div class="line"><span class="lineno">  129</span>        { <span class="stringliteral">&quot;Residual&quot;</span>, 40 }</div>
+<div class="line"><span class="lineno">  125</span>        { <span class="stringliteral">&quot;9&quot;</span>, 39 },</div>
+<div class="line"><span class="lineno">  126</span>        { <span class="stringliteral">&quot;10&quot;</span>, 190 },</div>
+<div class="line"><span class="lineno">  127</span>        { <span class="stringliteral">&quot;11&quot;</span>, 6400 },</div>
+<div class="line"><span class="lineno">  128</span>        { <span class="stringliteral">&quot;12&quot;</span>, 6400 },</div>
+<div class="line"><span class="lineno">  129</span>        { <span class="stringliteral">&quot;Residual&quot;</span>, 39 }</div>
 <div class="line"><span class="lineno">  130</span>    };</div>
 <div class="line"><span class="lineno">  131</span> </div>
 <div class="line"><span class="lineno">  132</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::CommodityVol] = {</div>
-<div class="line"><span class="lineno">  133</span>        { <span class="stringliteral">&quot;1&quot;</span>, 210 },</div>
-<div class="line"><span class="lineno">  134</span>        { <span class="stringliteral">&quot;2&quot;</span>, 2700 },</div>
-<div class="line"><span class="lineno">  135</span>        { <span class="stringliteral">&quot;3&quot;</span>, 290 },</div>
-<div class="line"><span class="lineno">  136</span>        { <span class="stringliteral">&quot;4&quot;</span>, 290 },</div>
-<div class="line"><span class="lineno">  137</span>        { <span class="stringliteral">&quot;5&quot;</span>, 290 },</div>
-<div class="line"><span class="lineno">  138</span>        { <span class="stringliteral">&quot;6&quot;</span>, 5000 },</div>
-<div class="line"><span class="lineno">  139</span>        { <span class="stringliteral">&quot;7&quot;</span>, 5000 },</div>
-<div class="line"><span class="lineno">  140</span>        { <span class="stringliteral">&quot;8&quot;</span>, 920 },</div>
-<div class="line"><span class="lineno">  141</span>        { <span class="stringliteral">&quot;9&quot;</span>, 920 },</div>
-<div class="line"><span class="lineno">  142</span>        { <span class="stringliteral">&quot;10&quot;</span>, 100 },</div>
-<div class="line"><span class="lineno">  143</span>        { <span class="stringliteral">&quot;11&quot;</span>, 350 },</div>
-<div class="line"><span class="lineno">  144</span>        { <span class="stringliteral">&quot;12&quot;</span>, 720 },</div>
-<div class="line"><span class="lineno">  145</span>        { <span class="stringliteral">&quot;13&quot;</span>, 500 },</div>
-<div class="line"><span class="lineno">  146</span>        { <span class="stringliteral">&quot;14&quot;</span>, 500 },</div>
-<div class="line"><span class="lineno">  147</span>        { <span class="stringliteral">&quot;15&quot;</span>, 500 },</div>
-<div class="line"><span class="lineno">  148</span>        { <span class="stringliteral">&quot;16&quot;</span>, 65 },</div>
-<div class="line"><span class="lineno">  149</span>        { <span class="stringliteral">&quot;17&quot;</span>, 65 }</div>
+<div class="line"><span class="lineno">  133</span>        { <span class="stringliteral">&quot;1&quot;</span>, 390 },</div>
+<div class="line"><span class="lineno">  134</span>        { <span class="stringliteral">&quot;2&quot;</span>, 2900 },</div>
+<div class="line"><span class="lineno">  135</span>        { <span class="stringliteral">&quot;3&quot;</span>, 310 },</div>
+<div class="line"><span class="lineno">  136</span>        { <span class="stringliteral">&quot;4&quot;</span>, 310 },</div>
+<div class="line"><span class="lineno">  137</span>        { <span class="stringliteral">&quot;5&quot;</span>, 310 },</div>
+<div class="line"><span class="lineno">  138</span>        { <span class="stringliteral">&quot;6&quot;</span>, 6300 },</div>
+<div class="line"><span class="lineno">  139</span>        { <span class="stringliteral">&quot;7&quot;</span>, 6300 },</div>
+<div class="line"><span class="lineno">  140</span>        { <span class="stringliteral">&quot;8&quot;</span>, 1200 },</div>
+<div class="line"><span class="lineno">  141</span>        { <span class="stringliteral">&quot;9&quot;</span>, 1200 },</div>
+<div class="line"><span class="lineno">  142</span>        { <span class="stringliteral">&quot;10&quot;</span>, 120 },</div>
+<div class="line"><span class="lineno">  143</span>        { <span class="stringliteral">&quot;11&quot;</span>, 390 },</div>
+<div class="line"><span class="lineno">  144</span>        { <span class="stringliteral">&quot;12&quot;</span>, 1300 },</div>
+<div class="line"><span class="lineno">  145</span>        { <span class="stringliteral">&quot;13&quot;</span>, 590 },</div>
+<div class="line"><span class="lineno">  146</span>        { <span class="stringliteral">&quot;14&quot;</span>, 590 },</div>
+<div class="line"><span class="lineno">  147</span>        { <span class="stringliteral">&quot;15&quot;</span>, 590 },</div>
+<div class="line"><span class="lineno">  148</span>        { <span class="stringliteral">&quot;16&quot;</span>, 69 },</div>
+<div class="line"><span class="lineno">  149</span>        { <span class="stringliteral">&quot;17&quot;</span>, 69 }</div>
 <div class="line"><span class="lineno">  150</span>    };</div>
 <div class="line"><span class="lineno">  151</span> </div>
 <div class="line"><span class="lineno">  152</span>    <a class="code hl_variable" href="classore_1_1analytics_1_1_simm_concentration_base.html#aef27576928f0b365450ecbcb2fdd7630">bucketedThresholds_</a>[RiskType::FXVol] = {</div>
 <div class="line"><span class="lineno">  153</span>        { <span class="stringliteral">&quot;1&quot;</span>, 2800 },</div>
-<div class="line"><span class="lineno">  154</span>        { <span class="stringliteral">&quot;2&quot;</span>, 1300 },</div>
-<div class="line"><span class="lineno">  155</span>        { <span class="stringliteral">&quot;3&quot;</span>, 550 },</div>
-<div class="line"><span class="lineno">  156</span>        { <span class="stringliteral">&quot;4&quot;</span>, 490 },</div>
-<div class="line"><span class="lineno">  157</span>        { <span class="stringliteral">&quot;5&quot;</span>, 310 },</div>
-<div class="line"><span class="lineno">  158</span>        { <span class="stringliteral">&quot;6&quot;</span>, 200 }</div>
+<div class="line"><span class="lineno">  154</span>        { <span class="stringliteral">&quot;2&quot;</span>, 1400 },</div>
+<div class="line"><span class="lineno">  155</span>        { <span class="stringliteral">&quot;3&quot;</span>, 590 },</div>
+<div class="line"><span class="lineno">  156</span>        { <span class="stringliteral">&quot;4&quot;</span>, 520 },</div>
+<div class="line"><span class="lineno">  157</span>        { <span class="stringliteral">&quot;5&quot;</span>, 340 },</div>
+<div class="line"><span class="lineno">  158</span>        { <span class="stringliteral">&quot;6&quot;</span>, 210 }</div>
 <div class="line"><span class="lineno">  159</span>    };</div>
 <div class="line"><span class="lineno">  160</span> </div>
 <div class="line"><span class="lineno">  161</span>    <span class="comment">// clang-format on</span></div>
 <div class="line"><span class="lineno">  162</span>}</div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_simm_concentration___i_s_d_a___v2__6_html_afd7e70232b190214c11888dd61e7e9aa"><div class="ttname"><a href="classore_1_1analytics_1_1_simm_concentration___i_s_d_a___v2__6.html#afd7e70232b190214c11888dd61e7e9aa">ore::analytics::SimmConcentration_ISDA_V2_6::simmBucketMapper_</a></div><div class="ttdeci">boost::shared_ptr&lt; SimmBucketMapper &gt; simmBucketMapper_</div><div class="ttdoc">Help getting SIMM buckets from SIMM qualifiers.</div><div class="ttdef"><b>Definition:</b> <a href="simmconcentrationisdav2__6_8hpp_source.html#l00040">simmconcentrationisdav2_6.hpp:40</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_simm_concentration___i_s_d_a___v2__6_html_afd7e70232b190214c11888dd61e7e9aa"><div class="ttname"><a href="classore_1_1analytics_1_1_simm_concentration___i_s_d_a___v2__6.html#afd7e70232b190214c11888dd61e7e9aa">ore::analytics::SimmConcentration_ISDA_V2_6::simmBucketMapper_</a></div><div class="ttdeci">boost::shared_ptr&lt; SimmBucketMapper &gt; simmBucketMapper_</div><div class="ttdoc">Help getting SIMM buckets from SIMM qualifiers.</div><div class="ttdef"><b>Definition:</b> <a href="simmconcentrationisdav2__6_8hpp_source.html#l00054">simmconcentrationisdav2_6.hpp:54</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_simm_concentration_base_html_a27cb49b24addb4b1ae5d213d169d0d13"><div class="ttname"><a href="classore_1_1analytics_1_1_simm_concentration_base.html#a27cb49b24addb4b1ae5d213d169d0d13">ore::analytics::SimmConcentrationBase::flatThresholds_</a></div><div class="ttdeci">std::map&lt; SimmConfiguration::RiskType, QuantLib::Real &gt; flatThresholds_</div><div class="ttdef"><b>Definition:</b> <a href="simmconcentration_8hpp_source.html#l00068">simmconcentration.hpp:68</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_simm_concentration_base_html_a82c995bbcb3a6783e7bc79ca818ec557"><div class="ttname"><a href="classore_1_1analytics_1_1_simm_concentration_base.html#a82c995bbcb3a6783e7bc79ca818ec557">ore::analytics::SimmConcentrationBase::fxCategories_</a></div><div class="ttdeci">std::map&lt; std::string, std::set&lt; std::string &gt; &gt; fxCategories_</div><div class="ttdef"><b>Definition:</b> <a href="simmconcentration_8hpp_source.html#l00083">simmconcentration.hpp:83</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_simm_concentration_base_html_abd61faaf24920853ce514f12dd74c338"><div class="ttname"><a href="classore_1_1analytics_1_1_simm_concentration_base.html#abd61faaf24920853ce514f12dd74c338">ore::analytics::SimmConcentrationBase::irCategories_</a></div><div class="ttdeci">std::map&lt; std::string, std::set&lt; std::string &gt; &gt; irCategories_</div><div class="ttdef"><b>Definition:</b> <a href="simmconcentration_8hpp_source.html#l00078">simmconcentration.hpp:78</a></div></div>
@@ -430,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Help getting SIMM buckets from SIMM qualifiers. </p>
 
-<p class="definition">Definition at line <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html#l00040">40</a> of file <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html">simmconcentrationisdav2_6.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html#l00054">54</a> of file <a class="el" href="simmconcentrationisdav2__6_8hpp_source.html">simmconcentrationisdav2_6.hpp</a>.</p>
 
 </div>
 </div>

@@ -99,8 +99,9 @@ $(function() {
 <area shape="rect" href="classore_1_1data_1_1_market_impl.html" title="Market Implementation." alt="" coords="194,1501,389,2524"/>
 <area shape="rect" href="classore_1_1data_1_1_wrapped_market.html" title="Wrapped Market." alt="" coords="413,1831,577,2194"/>
 <area shape="rect" title=" " alt="" coords="236,2792,347,2891"/>
-<area shape="rect" href="classore_1_1data_1_1_fitted_bond_curve_helper_market.html" title=" " alt="" coords="371,2785,591,2898"/>
-<area shape="rect" href="classore_1_1data_1_1_todays_market.html" title="Today&#39;s Market." alt="" coords="615,2572,829,3111"/>
+<area shape="rect" href="class_ored_test_market.html" title="Simple flat market setup to be used in the test suite, plain copy from OREAP test suite." alt="" coords="371,2770,513,2913"/>
+<area shape="rect" href="classore_1_1data_1_1_fitted_bond_curve_helper_market.html" title=" " alt="" coords="537,2785,757,2898"/>
+<area shape="rect" href="classore_1_1data_1_1_todays_market.html" title="Today&#39;s Market." alt="" coords="781,2572,996,3111"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -483,7 +484,7 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_a47ddd567f84d73e5f1c8201823356b1c"><div class="ttname"><a href="classore_1_1data_1_1_market.html#a47ddd567f84d73e5f1c8201823356b1c">ore::data::Market::commodityPriceCurve</a></div><div class="ttdeci">virtual QuantLib::Handle&lt; QuantExt::PriceTermStructure &gt; commodityPriceCurve(const std::string &amp;commodityName, const std::string &amp;configuration=Market::defaultConfiguration) const =0</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_a6ea1e978ddb0a43b487424e43d409021"><div class="ttname"><a href="classore_1_1data_1_1_market.html#a6ea1e978ddb0a43b487424e43d409021">ore::data::Market::discountCurveImpl</a></div><div class="ttdeci">virtual Handle&lt; YieldTermStructure &gt; discountCurveImpl(const string &amp;ccy, const string &amp;configuration=Market::defaultConfiguration) const =0</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_a88d67016dee39ce8f4588deb0745460f"><div class="ttname"><a href="classore_1_1data_1_1_market.html#a88d67016dee39ce8f4588deb0745460f">ore::data::Market::commodityCurveLookup</a></div><div class="ttdeci">string commodityCurveLookup(const string &amp;pm) const</div><div class="ttdef"><b>Definition:</b> <a href="market_8cpp_source.html#l00111">market.cpp:111</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00368">log.hpp:368</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00508">log.hpp:508</a></div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -927,7 +928,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  187</span> </div>
 <div class="line"><span class="lineno">  188</span>            <span class="comment">// spot is always zero here as we use the fxRates, which give rate today</span></div>
 <div class="line"><span class="lineno">  189</span>            Natural spotDays = 0;</div>
-<div class="line"><span class="lineno">  190</span>            Calendar <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a> = NullCalendar();</div>
+<div class="line"><span class="lineno">  190</span>            Calendar <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a> = NullCalendar();</div>
 <div class="line"><span class="lineno">  191</span> </div>
 <div class="line"><span class="lineno">  192</span>            <span class="keywordflow">if</span> (source != target) {</div>
 <div class="line"><span class="lineno">  193</span>                <span class="keyword">const</span> boost::shared_ptr&lt;Conventions&gt;&amp; conventions = InstrumentConventions::instance().conventions();</div>
@@ -935,7 +936,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  195</span>                <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  196</span>                    <span class="keyword">auto</span> comCon =</div>
 <div class="line"><span class="lineno">  197</span>                        boost::dynamic_pointer_cast&lt;data::CommodityForwardConvention&gt;(conventions-&gt;get(<a class="code hl_function" href="classore_1_1data_1_1_market.html#a8d884a61027d5434d524779453a5b918">fxIndex</a>));</div>
-<div class="line"><span class="lineno">  198</span>                    <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a> = comCon-&gt;advanceCalendar();</div>
+<div class="line"><span class="lineno">  198</span>                    <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a> = comCon-&gt;advanceCalendar();</div>
 <div class="line"><span class="lineno">  199</span>                } <span class="keywordflow">catch</span> (...) {</div>
 <div class="line"><span class="lineno">  200</span>                    <a class="code hl_define" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;Market::fxIndex Cannot find commodity conventions for &quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_market.html#a8d884a61027d5434d524779453a5b918">fxIndex</a>);</div>
 <div class="line"><span class="lineno">  201</span>                }</div>
@@ -943,7 +944,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  203</span> </div>
 <div class="line"><span class="lineno">  204</span>            fxInd = Handle&lt;QuantExt::FxIndex&gt;(boost::make_shared&lt;QuantExt::FxIndex&gt;(</div>
 <div class="line"><span class="lineno">  205</span>                fxIndexBase-&gt;familyName(), spotDays, fxIndexBase-&gt;sourceCurrency(), fxIndexBase-&gt;targetCurrency(),</div>
-<div class="line"><span class="lineno">  206</span>                <a class="code hl_variable" href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>, spot, sorTS, tarTS));</div>
+<div class="line"><span class="lineno">  206</span>                <a class="code hl_variable" href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a>, spot, sorTS, tarTS));</div>
 <div class="line"><span class="lineno">  207</span>            <span class="comment">// add it to the cache</span></div>
 <div class="line"><span class="lineno">  208</span>            <a class="code hl_variable" href="classore_1_1data_1_1_market.html#a1c2187884af9aceba2dc0a0cc85ee6a2">fxIndicesCache_</a>[make_pair(configuration, index)] = fxInd;</div>
 <div class="line"><span class="lineno">  209</span>        } <span class="keywordflow">else</span> {</div>
@@ -957,10 +958,10 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_a8d884a61027d5434d524779453a5b918"><div class="ttname"><a href="classore_1_1data_1_1_market.html#a8d884a61027d5434d524779453a5b918">ore::data::Market::fxIndex</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantExt::FxIndex &gt; fxIndex(const string &amp;fxIndex, const string &amp;configuration=Market::defaultConfiguration) const</div><div class="ttdef"><b>Definition:</b> <a href="market_8cpp_source.html#l00150">market.cpp:150</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_ad39b58fb3758f6506ed0c8d59beeeb15"><div class="ttname"><a href="classore_1_1data_1_1_market.html#ad39b58fb3758f6506ed0c8d59beeeb15">ore::data::Market::fxIndexImpl</a></div><div class="ttdeci">virtual QuantLib::Handle&lt; QuantExt::FxIndex &gt; fxIndexImpl(const string &amp;fxIndex, const string &amp;configuration=Market::defaultConfiguration) const =0</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_market_html_aff00023d0e25ad7c0bf29e8cc97f9e00"><div class="ttname"><a href="classore_1_1data_1_1_market.html#aff00023d0e25ad7c0bf29e8cc97f9e00">ore::data::Market::discountCurve</a></div><div class="ttdeci">Handle&lt; YieldTermStructure &gt; discountCurve(const string &amp;ccy, const string &amp;configuration=Market::defaultConfiguration) const</div><div class="ttdef"><b>Definition:</b> <a href="market_8cpp_source.html#l00354">market.cpp:354</a></div></div>
-<div class="ttc" id="agroup__utilities_html_gaf0c22b2380b7865d6513ec50a6990bad"><div class="ttname"><a href="group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad">ore::data::parseFxIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; FxIndex &gt; parseFxIndex(const string &amp;s, const Handle&lt; Quote &gt; &amp;fxSpot, const Handle&lt; YieldTermStructure &gt; &amp;sourceYts, const Handle&lt; YieldTermStructure &gt; &amp;targetYts, const bool useConventions)</div><div class="ttdoc">Convert std::string to QuantExt::FxIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00212">indexparser.cpp:212</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00364">log.hpp:364</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a123e19b0fac4f5124a8c26bad300de0e"><div class="ttname"><a href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e">ore::data::isFxIndex</a></div><div class="ttdeci">bool isFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01031">indexparser.cpp:1031</a></div></div>
-<div class="ttc" id="autilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
+<div class="ttc" id="agroup__utilities_html_gaf0c22b2380b7865d6513ec50a6990bad"><div class="ttname"><a href="group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad">ore::data::parseFxIndex</a></div><div class="ttdeci">boost::shared_ptr&lt; FxIndex &gt; parseFxIndex(const string &amp;s, const Handle&lt; Quote &gt; &amp;fxSpot, const Handle&lt; YieldTermStructure &gt; &amp;sourceYts, const Handle&lt; YieldTermStructure &gt; &amp;targetYts, const bool useConventions)</div><div class="ttdoc">Convert std::string to QuantExt::FxIndex.</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l00208">indexparser.cpp:208</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
+<div class="ttc" id="amodel_2utilities_8cpp_html_a78752433f4fe4a459158fefc086335e5"><div class="ttname"><a href="model_2utilities_8cpp.html#a78752433f4fe4a459158fefc086335e5">calendar</a></div><div class="ttdeci">Calendar calendar</div><div class="ttdef"><b>Definition:</b> <a href="model_2utilities_8cpp_source.html#l00441">utilities.cpp:441</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a123e19b0fac4f5124a8c26bad300de0e"><div class="ttname"><a href="namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e">ore::data::isFxIndex</a></div><div class="ttdeci">bool isFxIndex(const std::string &amp;indexName)</div><div class="ttdef"><b>Definition:</b> <a href="indexparser_8cpp_source.html#l01027">indexparser.cpp:1027</a></div></div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -1904,7 +1905,7 @@ Public Member Functions</h2></td></tr>
 
 <p>CPI Inflation Cap Floor Volatility Surfaces. </p>
 
-<p>Implemented in <a class="el" href="classore_1_1analytics_1_1_dummy_market.html#ae50bcd2345a641592461d2cee57621e0">DummyMarket</a>, <a class="el" href="classore_1_1data_1_1_market_impl.html#a5a8d28d57ee5fb98efc218a82f075575">MarketImpl</a>, and <a class="el" href="classore_1_1data_1_1_wrapped_market.html#a5a8d28d57ee5fb98efc218a82f075575">WrappedMarket</a>.</p>
+<p>Implemented in <a class="el" href="classore_1_1analytics_1_1_dummy_market.html#a2cbdab385c3a9f1e6b9cee73694fd4eb">DummyMarket</a>, <a class="el" href="classore_1_1data_1_1_market_impl.html#a5a8d28d57ee5fb98efc218a82f075575">MarketImpl</a>, and <a class="el" href="classore_1_1data_1_1_wrapped_market.html#a5a8d28d57ee5fb98efc218a82f075575">WrappedMarket</a>.</p>
 
 </div>
 </div>
@@ -2552,7 +2553,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1data_1_1_market.html#ad806378863fc47de6f5febb66f41715b">fxRateImpl</a>(ccy + GlobalPseudoCurrencyMarketParameters::instance().get().baseCurrency, config);</div>
 <div class="line"><span class="lineno">  131</span>    }</div>
 <div class="line"><span class="lineno">  132</span>}</div>
-<div class="ttc" id="alog_8hpp_html_a99aeca53f904c71a68070e1f9d310232"><div class="ttname"><a href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a></div><div class="ttdeci">#define TLOG(text)</div><div class="ttdoc">Logging Macro (Level = Data)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00370">log.hpp:370</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a99aeca53f904c71a68070e1f9d310232"><div class="ttname"><a href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a></div><div class="ttdeci">#define TLOG(text)</div><div class="ttdoc">Logging Macro (Level = Data)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00510">log.hpp:510</a></div></div>
 </div><!-- fragment --><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">

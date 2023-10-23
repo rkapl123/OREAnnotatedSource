@@ -77,8 +77,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classore_1_1data_1_1_required_fixings-members.html">List of all members</a>  </div>
@@ -94,7 +94,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings__coll__graph.png" border="0" usemap="#a_required_fixings_coll__map" alt="Collaboration graph"/></div>
 <map name="a_required_fixings_coll__map" id="a_required_fixings_coll__map">
-<area shape="rect" title=" " alt="" coords="278,328,473,485"/>
+<area shape="rect" title=" " alt="" coords="278,328,473,544"/>
 <area shape="rect" title=" " alt="" coords="127,218,261,258"/>
 <area shape="rect" title=" " alt="" coords="5,108,97,148"/>
 <area shape="rect" title=" " alt="" coords="349,108,426,148"/>
@@ -106,33 +106,41 @@ $(function() {
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a76939e80c80ff949b4568be7af749d37"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::set&lt; QuantLib::Date &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a76939e80c80ff949b4568be7af749d37">fixingDatesIndices</a> (const QuantLib::Date &amp;settlementDate=QuantLib::Date()) const</td></tr>
-<tr class="separator:a76939e80c80ff949b4568be7af749d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae12e0cc681b4cc2d31b7ee2acc16e99c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c">addFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
-<tr class="separator:ae12e0cc681b4cc2d31b7ee2acc16e99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75ba515fe0f8043b427bd54677dfa51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a75ba515fe0f8043b427bd54677dfa51c">addFixingDates</a> (const std::vector&lt; QuantLib::Date &gt; &amp;fixingDates, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
-<tr class="separator:a75ba515fe0f8043b427bd54677dfa51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e38e0bce977019cf9b28d7ffe38763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a73e38e0bce977019cf9b28d7ffe38763">addZeroInflationFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const <a class="el" href="classbool.html">bool</a> indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const CPI::InterpolationType coupopnInterpolation, const Frequency couponFrequency, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
-<tr class="separator:a73e38e0bce977019cf9b28d7ffe38763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba561fec2cf07ba236886b9bb7f513b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a2ba561fec2cf07ba236886b9bb7f513b">addYoYInflationFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const <a class="el" href="classbool.html">bool</a> indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
-<tr class="separator:a2ba561fec2cf07ba236886b9bb7f513b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
-<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6239d4397d1d7eb1de886f13bdc8d9d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a6239d4397d1d7eb1de886f13bdc8d9d4">addData</a> (const <a class="el" href="classore_1_1data_1_1_required_fixings.html">RequiredFixings</a> &amp;requiredFixings)</td></tr>
-<tr class="separator:a6239d4397d1d7eb1de886f13bdc8d9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a497f63080ba1d28c0cd0d23a9f2f81d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a497f63080ba1d28c0cd0d23a9f2f81d5">unsetPayDates</a> ()</td></tr>
-<tr class="separator:a497f63080ba1d28c0cd0d23a9f2f81d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
-Private Types</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
 <tr class="memitem:aab54e199d0dad042f3d2ac66e7fec268"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> = std::tuple&lt; std::string, QuantLib::Date, QuantLib::Date, <a class="el" href="classbool.html">bool</a> &gt;</td></tr>
 <tr class="separator:aab54e199d0dad042f3d2ac66e7fec268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79fa57d0c3504bff50c45d7cf2834023"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> = std::tuple&lt; <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a>, <a class="el" href="classbool.html">bool</a>, Frequency, Period &gt;</td></tr>
 <tr class="separator:a79fa57d0c3504bff50c45d7cf2834023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03765784e5d0eaa76bffdd5f5afab6ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a03765784e5d0eaa76bffdd5f5afab6ed">ZeroInflationFixingEntry</a> = std::tuple&lt; <a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a>, CPI::InterpolationType, Frequency &gt;</td></tr>
 <tr class="separator:a03765784e5d0eaa76bffdd5f5afab6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a76939e80c80ff949b4568be7af749d37"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::set&lt; QuantLib::Date &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a76939e80c80ff949b4568be7af749d37">fixingDatesIndices</a> (const QuantLib::Date &amp;settlementDate=QuantLib::Date()) const</td></tr>
+<tr class="separator:a76939e80c80ff949b4568be7af749d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12e0cc681b4cc2d31b7ee2acc16e99c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c">addFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="separator:ae12e0cc681b4cc2d31b7ee2acc16e99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a49428e44851708a200b2b6f9dd49d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a6a49428e44851708a200b2b6f9dd49d1">addFixingDate</a> (const <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> &amp;fixingEntry)</td></tr>
+<tr class="separator:a6a49428e44851708a200b2b6f9dd49d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ba515fe0f8043b427bd54677dfa51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a75ba515fe0f8043b427bd54677dfa51c">addFixingDates</a> (const std::vector&lt; QuantLib::Date &gt; &amp;fixingDates, const std::string &amp;indexName, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="separator:a75ba515fe0f8043b427bd54677dfa51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e38e0bce977019cf9b28d7ffe38763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a73e38e0bce977019cf9b28d7ffe38763">addZeroInflationFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const <a class="el" href="classbool.html">bool</a> indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const CPI::InterpolationType coupopnInterpolation, const Frequency couponFrequency, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="separator:a73e38e0bce977019cf9b28d7ffe38763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478873361254bb64adc522cd908aa20e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a478873361254bb64adc522cd908aa20e">addZeroInflationFixingDate</a> (const <a class="el" href="classore_1_1data_1_1_required_fixings.html#a03765784e5d0eaa76bffdd5f5afab6ed">ZeroInflationFixingEntry</a> &amp;fixingEntry)</td></tr>
+<tr class="separator:a478873361254bb64adc522cd908aa20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba561fec2cf07ba236886b9bb7f513b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a2ba561fec2cf07ba236886b9bb7f513b">addYoYInflationFixingDate</a> (const QuantLib::Date &amp;<a class="elRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a>, const std::string &amp;indexName, const <a class="el" href="classbool.html">bool</a> indexInterpolated, const Frequency indexFrequency, const Period &amp;indexAvailabilityLag, const QuantLib::Date &amp;payDate=Date::maxDate(), const <a class="el" href="classbool.html">bool</a> alwaysAddIfPaysOnSettlement=false)</td></tr>
+<tr class="separator:a2ba561fec2cf07ba236886b9bb7f513b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b62637d7491c1e219e5d07b3d2f051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a41b62637d7491c1e219e5d07b3d2f051">addYoYInflationFixingDate</a> (const <a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> &amp;fixingEntry)</td></tr>
+<tr class="separator:a41b62637d7491c1e219e5d07b3d2f051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6239d4397d1d7eb1de886f13bdc8d9d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a6239d4397d1d7eb1de886f13bdc8d9d4">addData</a> (const <a class="el" href="classore_1_1data_1_1_required_fixings.html">RequiredFixings</a> &amp;requiredFixings)</td></tr>
+<tr class="separator:a6239d4397d1d7eb1de886f13bdc8d9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497f63080ba1d28c0cd0d23a9f2f81d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#a497f63080ba1d28c0cd0d23a9f2f81d5">unsetPayDates</a> ()</td></tr>
+<tr class="separator:a497f63080ba1d28c0cd0d23a9f2f81d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13510db49bbff712343c72e63c788c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classore_1_1data_1_1_required_fixings.html">RequiredFixings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_required_fixings.html#ab13510db49bbff712343c72e63c788c5">filteredFixingDates</a> (const QuantLib::Date &amp;settlementDate=QuantLib::Date())</td></tr>
+<tr class="separator:ab13510db49bbff712343c72e63c788c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -151,29 +159,21 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class holding the information on the fixings required to price a trade (or a portfolio of trades). </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00077">77</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00081">81</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aab54e199d0dad042f3d2ac66e7fec268" name="aab54e199d0dad042f3d2ac66e7fec268"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab54e199d0dad042f3d2ac66e7fec268">&#9670;&#160;</a></span>FixingEntry</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> =  std::tuple&lt;std::string, QuantLib::Date, QuantLib::Date, <a class="el" href="classbool.html">bool</a>&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00137">137</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00084">84</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
 
 </div>
 </div>
@@ -182,22 +182,14 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> =  std::tuple&lt;<a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a>, <a class="el" href="classbool.html">bool</a>, Frequency, Period&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00139">139</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00086">86</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
 
 </div>
 </div>
@@ -206,22 +198,14 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classore_1_1data_1_1_required_fixings.html#a03765784e5d0eaa76bffdd5f5afab6ed">ZeroInflationFixingEntry</a> =  std::tuple&lt;<a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a>, CPI::InterpolationType, Frequency&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00141">141</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00088">88</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
 
 </div>
 </div>
@@ -245,86 +229,86 @@ Friends</h2></td></tr>
 <p >If a cashflow payment is deemed to have already occurred relative to the settlement date, then no fixing is needed. The determination of whether a cashflow has or has not occurred will in general rely on a call to <code>CashFlow::hasOccurred</code> which is important in cases where the cash flow payment date falls on the settlement date.</p>
 <p >Another important case is where a cash flow fixing date occurs on the settlement date. In this case, we should always add the fixing date to the set of fixing dates regardless of <code>Settings::instance()</code>.enforcesTodaysHistoricFixings(). </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00180">180</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  180</span>                                                                                                    {</div>
-<div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>    <span class="comment">// If settlement date is an empty date, update to evaluation date.</span></div>
-<div class="line"><span class="lineno">  183</span>    Date d = settlementDate == Date() ? Settings::instance().evaluationDate() : settlementDate;</div>
-<div class="line"><span class="lineno">  184</span> </div>
-<div class="line"><span class="lineno">  185</span>    std::map&lt;std::string, std::set&lt;Date&gt;&gt; result;</div>
-<div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>    <span class="comment">// handle the general case</span></div>
-<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>) {</div>
-<div class="line"><span class="lineno">  189</span>        <span class="comment">// get the data</span></div>
-<div class="line"><span class="lineno">  190</span>        std::string indexName = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  191</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(f);</div>
-<div class="line"><span class="lineno">  192</span>        Date payDate = std::get&lt;2&gt;(f);</div>
-<div class="line"><span class="lineno">  193</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(f);</div>
-<div class="line"><span class="lineno">  194</span>        <span class="comment">// add to result</span></div>
-<div class="line"><span class="lineno">  195</span>        <span class="keywordflow">if</span> (fixingDate &gt; d)</div>
-<div class="line"><span class="lineno">  196</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  197</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
-<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
-<div class="line"><span class="lineno">  199</span>            result[indexName].insert(fixingDate);</div>
-<div class="line"><span class="lineno">  200</span>        }</div>
-<div class="line"><span class="lineno">  201</span>    }</div>
-<div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>    <span class="comment">// handle zero inflation index based coupons</span></div>
-<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>) {</div>
-<div class="line"><span class="lineno">  205</span>        <span class="comment">// get the data</span></div>
-<div class="line"><span class="lineno">  206</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> inflationFixingEntry = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  207</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(inflationFixingEntry);</div>
-<div class="line"><span class="lineno">  208</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  209</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  210</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  211</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  212</span>        <span class="keywordtype">bool</span> indexInterpolated = std::get&lt;1&gt;(inflationFixingEntry);</div>
-<div class="line"><span class="lineno">  213</span>        Frequency indexFrequency = std::get&lt;2&gt;(inflationFixingEntry);</div>
-<div class="line"><span class="lineno">  214</span>        Period indexAvailabilityLag = std::get&lt;3&gt;(inflationFixingEntry);</div>
-<div class="line"><span class="lineno">  215</span>        CPI::InterpolationType couponInterpolation = std::get&lt;1&gt;(f);</div>
-<div class="line"><span class="lineno">  216</span>        Frequency couponFrequency = std::get&lt;2&gt;(f);</div>
-<div class="line"><span class="lineno">  217</span>        <span class="comment">// add to result</span></div>
-<div class="line"><span class="lineno">  218</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
-<div class="line"><span class="lineno">  219</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
-<div class="line"><span class="lineno">  220</span>            std::set&lt;Date&gt; tmp;</div>
-<div class="line"><span class="lineno">  221</span>            addZeroInflationDates(tmp, fixingDate, d, indexInterpolated, indexFrequency, indexAvailabilityLag,</div>
-<div class="line"><span class="lineno">  222</span>                                  couponInterpolation, couponFrequency);</div>
-<div class="line"><span class="lineno">  223</span>            <span class="keywordflow">if</span> (!tmp.empty())</div>
-<div class="line"><span class="lineno">  224</span>                result[indexName].insert(tmp.begin(), tmp.end());</div>
-<div class="line"><span class="lineno">  225</span>        }</div>
-<div class="line"><span class="lineno">  226</span>    }</div>
-<div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>    <span class="comment">// handle yoy inflation index based coupons</span></div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>) {</div>
-<div class="line"><span class="lineno">  230</span>        <span class="comment">// get the data</span></div>
-<div class="line"><span class="lineno">  231</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  232</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  233</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  234</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  235</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  236</span>        <span class="keywordtype">bool</span> indexInterpolated = std::get&lt;1&gt;(f);</div>
-<div class="line"><span class="lineno">  237</span>        Frequency indexFrequency = std::get&lt;2&gt;(f);</div>
-<div class="line"><span class="lineno">  238</span>        Period indexAvailabilityLag = std::get&lt;3&gt;(f);</div>
-<div class="line"><span class="lineno">  239</span>        <span class="comment">// add to result</span></div>
-<div class="line"><span class="lineno">  240</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
-<div class="line"><span class="lineno">  241</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
-<div class="line"><span class="lineno">  242</span>            <span class="keyword">auto</span> fixingDates = needsForecast(fixingDate, d, indexInterpolated, indexFrequency, indexAvailabilityLag);</div>
-<div class="line"><span class="lineno">  243</span>            <span class="keywordflow">if</span> (!fixingDates.empty())</div>
-<div class="line"><span class="lineno">  244</span>                result[indexName].insert(fixingDates.begin(), fixingDates.end());</div>
-<div class="line"><span class="lineno">  245</span>            <span class="comment">// Add the previous year&#39;s date(s) also if any.</span></div>
-<div class="line"><span class="lineno">  246</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; d : fixingDates) {</div>
-<div class="line"><span class="lineno">  247</span>                result[indexName].insert(d - 1 * Years);</div>
-<div class="line"><span class="lineno">  248</span>            }</div>
-<div class="line"><span class="lineno">  249</span>        }</div>
-<div class="line"><span class="lineno">  250</span>    }</div>
-<div class="line"><span class="lineno">  251</span> </div>
-<div class="line"><span class="lineno">  252</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  253</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_a3a0122c2ccd1aa0725f945f08196248c"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">ore::data::RequiredFixings::zeroInflationFixingDates_</a></div><div class="ttdeci">std::set&lt; ZeroInflationFixingEntry &gt; zeroInflationFixingDates_</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00146">fixingdates.hpp:146</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_a3d3e45002d78b62f0faa3d62599dafb0"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">ore::data::RequiredFixings::yoyInflationFixingDates_</a></div><div class="ttdeci">std::set&lt; InflationFixingEntry &gt; yoyInflationFixingDates_</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00148">fixingdates.hpp:148</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_a79fa57d0c3504bff50c45d7cf2834023"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">ore::data::RequiredFixings::InflationFixingEntry</a></div><div class="ttdeci">std::tuple&lt; FixingEntry, bool, Frequency, Period &gt; InflationFixingEntry</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00139">fixingdates.hpp:139</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_aab54e199d0dad042f3d2ac66e7fec268"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">ore::data::RequiredFixings::FixingEntry</a></div><div class="ttdeci">std::tuple&lt; std::string, QuantLib::Date, QuantLib::Date, bool &gt; FixingEntry</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00137">fixingdates.hpp:137</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_abfb42812d0036a22dab668e251c8d5bd"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">ore::data::RequiredFixings::fixingDates_</a></div><div class="ttdeci">std::set&lt; FixingEntry &gt; fixingDates_</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00144">fixingdates.hpp:144</a></div></div>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00243">243</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  243</span>                                                                                                    {</div>
+<div class="line"><span class="lineno">  244</span> </div>
+<div class="line"><span class="lineno">  245</span>    <span class="comment">// If settlement date is an empty date, update to evaluation date.</span></div>
+<div class="line"><span class="lineno">  246</span>    Date d = settlementDate == Date() ? Settings::instance().evaluationDate() : settlementDate;</div>
+<div class="line"><span class="lineno">  247</span> </div>
+<div class="line"><span class="lineno">  248</span>    std::map&lt;std::string, std::set&lt;Date&gt;&gt; result;</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    <span class="comment">// handle the general case</span></div>
+<div class="line"><span class="lineno">  251</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  252</span>        <span class="comment">// get the data</span></div>
+<div class="line"><span class="lineno">  253</span>        std::string indexName = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  254</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(f);</div>
+<div class="line"><span class="lineno">  255</span>        Date payDate = std::get&lt;2&gt;(f);</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(f);</div>
+<div class="line"><span class="lineno">  257</span>        <span class="comment">// add to result</span></div>
+<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">if</span> (fixingDate &gt; d)</div>
+<div class="line"><span class="lineno">  259</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  260</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
+<div class="line"><span class="lineno">  261</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
+<div class="line"><span class="lineno">  262</span>            result[indexName].insert(fixingDate);</div>
+<div class="line"><span class="lineno">  263</span>        }</div>
+<div class="line"><span class="lineno">  264</span>    }</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>    <span class="comment">// handle zero inflation index based coupons</span></div>
+<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  268</span>        <span class="comment">// get the data</span></div>
+<div class="line"><span class="lineno">  269</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> inflationFixingEntry = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  270</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(inflationFixingEntry);</div>
+<div class="line"><span class="lineno">  271</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  272</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  273</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  274</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  275</span>        <span class="keywordtype">bool</span> indexInterpolated = std::get&lt;1&gt;(inflationFixingEntry);</div>
+<div class="line"><span class="lineno">  276</span>        Frequency indexFrequency = std::get&lt;2&gt;(inflationFixingEntry);</div>
+<div class="line"><span class="lineno">  277</span>        Period indexAvailabilityLag = std::get&lt;3&gt;(inflationFixingEntry);</div>
+<div class="line"><span class="lineno">  278</span>        CPI::InterpolationType couponInterpolation = std::get&lt;1&gt;(f);</div>
+<div class="line"><span class="lineno">  279</span>        Frequency couponFrequency = std::get&lt;2&gt;(f);</div>
+<div class="line"><span class="lineno">  280</span>        <span class="comment">// add to result</span></div>
+<div class="line"><span class="lineno">  281</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
+<div class="line"><span class="lineno">  282</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
+<div class="line"><span class="lineno">  283</span>            std::set&lt;Date&gt; tmp;</div>
+<div class="line"><span class="lineno">  284</span>            addZeroInflationDates(tmp, fixingDate, d, indexInterpolated, indexFrequency, indexAvailabilityLag,</div>
+<div class="line"><span class="lineno">  285</span>                                  couponInterpolation, couponFrequency);</div>
+<div class="line"><span class="lineno">  286</span>            <span class="keywordflow">if</span> (!tmp.empty())</div>
+<div class="line"><span class="lineno">  287</span>                result[indexName].insert(tmp.begin(), tmp.end());</div>
+<div class="line"><span class="lineno">  288</span>        }</div>
+<div class="line"><span class="lineno">  289</span>    }</div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>    <span class="comment">// handle yoy inflation index based coupons</span></div>
+<div class="line"><span class="lineno">  292</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  293</span>        <span class="comment">// get the data</span></div>
+<div class="line"><span class="lineno">  294</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  295</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  296</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  297</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  298</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keywordtype">bool</span> indexInterpolated = std::get&lt;1&gt;(f);</div>
+<div class="line"><span class="lineno">  300</span>        Frequency indexFrequency = std::get&lt;2&gt;(f);</div>
+<div class="line"><span class="lineno">  301</span>        Period indexAvailabilityLag = std::get&lt;3&gt;(f);</div>
+<div class="line"><span class="lineno">  302</span>        <span class="comment">// add to result</span></div>
+<div class="line"><span class="lineno">  303</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
+<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
+<div class="line"><span class="lineno">  305</span>            <span class="keyword">auto</span> fixingDates = needsForecast(fixingDate, d, indexInterpolated, indexFrequency, indexAvailabilityLag);</div>
+<div class="line"><span class="lineno">  306</span>            <span class="keywordflow">if</span> (!fixingDates.empty())</div>
+<div class="line"><span class="lineno">  307</span>                result[indexName].insert(fixingDates.begin(), fixingDates.end());</div>
+<div class="line"><span class="lineno">  308</span>            <span class="comment">// Add the previous year&#39;s date(s) also if any.</span></div>
+<div class="line"><span class="lineno">  309</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; d : fixingDates) {</div>
+<div class="line"><span class="lineno">  310</span>                result[indexName].insert(d - 1 * Years);</div>
+<div class="line"><span class="lineno">  311</span>            }</div>
+<div class="line"><span class="lineno">  312</span>        }</div>
+<div class="line"><span class="lineno">  313</span>    }</div>
+<div class="line"><span class="lineno">  314</span> </div>
+<div class="line"><span class="lineno">  315</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  316</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_a3a0122c2ccd1aa0725f945f08196248c"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">ore::data::RequiredFixings::zeroInflationFixingDates_</a></div><div class="ttdeci">std::set&lt; ZeroInflationFixingEntry &gt; zeroInflationFixingDates_</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00155">fixingdates.hpp:155</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_a3d3e45002d78b62f0faa3d62599dafb0"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">ore::data::RequiredFixings::yoyInflationFixingDates_</a></div><div class="ttdeci">std::set&lt; InflationFixingEntry &gt; yoyInflationFixingDates_</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00157">fixingdates.hpp:157</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_a79fa57d0c3504bff50c45d7cf2834023"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">ore::data::RequiredFixings::InflationFixingEntry</a></div><div class="ttdeci">std::tuple&lt; FixingEntry, bool, Frequency, Period &gt; InflationFixingEntry</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00086">fixingdates.hpp:86</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_aab54e199d0dad042f3d2ac66e7fec268"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">ore::data::RequiredFixings::FixingEntry</a></div><div class="ttdeci">std::tuple&lt; std::string, QuantLib::Date, QuantLib::Date, bool &gt; FixingEntry</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00084">fixingdates.hpp:84</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_required_fixings_html_abfb42812d0036a22dab668e251c8d5bd"><div class="ttname"><a href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">ore::data::RequiredFixings::fixingDates_</a></div><div class="ttdeci">std::set&lt; FixingEntry &gt; fixingDates_</div><div class="ttdef"><b>Definition:</b> <a href="fixingdates_8hpp_source.html#l00153">fixingdates.hpp:153</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_1_1_zero_inflation_html_a57de786c1c8988b6da9d354282b4b370"><div class="ttname"><a href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a></div><div class="ttdeci">QuantLib::Date fixingDate(const QuantLib::Date &amp;d, const QuantLib::Period obsLag, const QuantLib::Frequency freq, bool interpolated)</div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -344,16 +328,39 @@ Friends</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph" id="aclassore_1_1data_1_1_required_fixings_a76939e80c80ff949b4568be7af749d37_icgraph">
-<area shape="rect" title=" " alt="" coords="401,5,528,31"/>
-<area shape="rect" href="classore_1_1data_1_1_trade.html#ad0b368b40bd2ee781cefd31586dcbba0" title=" " alt="" coords="195,5,353,31"/>
-<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="5,5,147,31"/>
+<area shape="rect" title=" " alt="" coords="973,675,1100,700"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_index_builder.html#ae479124f9f93e301b0a9b63f603a7e07" title=" " alt="" coords="743,638,925,678"/>
+<area shape="rect" href="classore_1_1data_1_1_trade.html#ad0b368b40bd2ee781cefd31586dcbba0" title=" " alt="" coords="755,703,913,728"/>
+<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="519,524,679,549"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="531,574,667,614"/>
+<area shape="rect" href="structore_1_1data_1_1_convertible_bond_trs_underlying_builder.html#a378c0a37c90140f69c15be3d7669b014" title=" " alt="" coords="511,638,687,678"/>
+<area shape="rect" href="structore_1_1data_1_1_bond_trs_underlying_builder.html#a378c0a37c90140f69c15be3d7669b014" title=" " alt="" coords="504,702,695,742"/>
+<area shape="rect" href="structore_1_1data_1_1_bond_position_trs_underlying_builder.html#a378c0a37c90140f69c15be3d7669b014" title=" " alt="" coords="511,766,687,806"/>
+<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,80,424,105"/>
+<area shape="rect" href="classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,165,437,205"/>
+<area shape="rect" href="classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,229,441,269"/>
+<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,293,444,333"/>
+<area shape="rect" href="classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,357,431,397"/>
+<area shape="rect" href="classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,421,430,461"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,485,435,525"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,549,435,589"/>
+<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,613,433,653"/>
+<area shape="rect" href="classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,677,456,717"/>
+<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,741,443,781"/>
+<area shape="rect" href="classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,805,440,845"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,869,439,909"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,933,447,973"/>
+<area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,5,196,31"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,55,176,95"/>
+<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,119,179,159"/>
+<area shape="rect" href="classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,183,194,223"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="ae12e0cc681b4cc2d31b7ee2acc16e99c" name="ae12e0cc681b4cc2d31b7ee2acc16e99c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae12e0cc681b4cc2d31b7ee2acc16e99c">&#9670;&#160;</a></span>addFixingDate()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12e0cc681b4cc2d31b7ee2acc16e99c">&#9670;&#160;</a></span>addFixingDate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,11 +398,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >Adds a single fixing date <code>fixingDate</code> for an index given by its ORE index name <code>indexName</code> arising from a coupon with payment date <code>payDate</code>. If <code>alwaysAddIfPaysOnSettlement</code> is true the fixing date will be added if the coupon pays on the settlement date even if the cashflow returns hasOccured(settlementDate) as true. This is conservative and necessary in some cases since some pricing engines in QL (e.g. <a class="el" href="classore_1_1data_1_1_cap_floor.html" title="Serializable cap, floor, collar.">CapFloor</a>) do not respect hasOccured() and ask for the fixing regardless. If the payDate is not given, it defaults to Date::maxDate() meaning that the added fixing is relevant unconditional on a pay date </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00255">255</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  256</span>                                                                                                         {</div>
-<div class="line"><span class="lineno">  257</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(</div>
-<div class="line"><span class="lineno">  258</span>        std::make_tuple(indexName, fixingDate, payDate, payDate == Date::maxDate() || alwaysAddIfPaysOnSettlement));</div>
-<div class="line"><span class="lineno">  259</span>}</div>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00318">318</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  319</span>                                                                                                         {</div>
+<div class="line"><span class="lineno">  320</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(</div>
+<div class="line"><span class="lineno">  321</span>        std::make_tuple(indexName, fixingDate, payDate, payDate == Date::maxDate() || alwaysAddIfPaysOnSettlement));</div>
+<div class="line"><span class="lineno">  322</span>}</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -414,48 +421,74 @@ Friends</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph" id="aclassore_1_1data_1_1_required_fixings_ae12e0cc681b4cc2d31b7ee2acc16e99c_icgraph">
-<area shape="rect" title=" " alt="" coords="756,525,861,550"/>
-<area shape="rect" href="classore_1_1data_1_1_asian_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="535,5,687,45"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="515,69,708,109"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="516,133,707,173"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_average_forward.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="517,197,705,237"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_digital_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="526,261,697,301"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="526,325,697,365"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_european_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="517,389,706,429"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="529,453,694,493"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="527,517,696,557"/>
-<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="541,582,682,607"/>
-<area shape="rect" href="classore_1_1data_1_1_vanilla_option_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="532,632,691,672"/>
-<area shape="rect" href="classore_1_1data_1_1_barrier_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="533,696,690,736"/>
-<area shape="rect" href="classore_1_1data_1_1_var_swap.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="545,760,678,800"/>
-<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="517,824,705,864"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="515,888,708,928"/>
-<area shape="rect" href="namespaceore_1_1data.html#a4a1f489aaefd95989a88a7b10ab23cfc" title=" " alt="" coords="523,953,699,978"/>
-<area shape="rect" href="classore_1_1data_1_1_fixing_date_getter.html#af22504fe8ea64d6d556af7757c8aad0f" title=" " alt="" coords="522,1003,701,1043"/>
-<area shape="rect" href="fxexotics_8cpp.html#a1bb3d76e35ea3c22bb6f167cc5a2a9fa" title=" " alt="" coords="272,269,463,294"/>
-<area shape="rect" href="fxexotics_8cpp.html#a356626221d09fa0287e4f5d1646ca231" title=" " alt="" coords="272,333,463,358"/>
-<area shape="rect" href="fxexotics_8cpp.html#acfd93f4169abaf3c0d3541c4a297d9de" title=" " alt="" coords="272,397,463,422"/>
-<area shape="rect" href="fxexotics_8cpp.html#ae4a8f5fc2a666b87316a20b9716625b7" title=" " alt="" coords="272,447,463,473"/>
-<area shape="rect" href="fxexotics_8cpp.html#a81ded61bff8d1f143845d1a8063ab363" title=" " alt="" coords="272,497,463,522"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_future_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="271,547,464,587"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="289,611,445,651"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="300,675,435,715"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="275,739,460,779"/>
-<area shape="rect" href="equitytrades_8cpp.html#aa42062877db60fac479ac06add9deb01" title=" " alt="" coords="17,554,208,579"/>
-<area shape="rect" href="equitytrades_8cpp.html#a9157b4f937ae04fa01bdd86ef531a15d" title=" " alt="" coords="17,618,208,643"/>
-<area shape="rect" href="test_2fxoption_8cpp.html#a321417ba3c97d0524c8fa2d8acb97d72" title=" " alt="" coords="17,667,208,693"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_digital_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="21,717,204,757"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_average_price_option.html#a56820373aef8756143bb07c7c7c7cf6e" title="Build a standard option." alt="" coords="5,781,220,821"/>
-<area shape="rect" href="classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="268,803,467,843"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="276,867,459,907"/>
-<area shape="rect" href="fxexotics_8cpp.html#a97f1cf85be4712888f153506afc004be" title=" " alt="" coords="17,846,208,871"/>
-<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="293,953,441,978"/>
-<area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="17,895,208,921"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="37,945,188,985"/>
-<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="34,1009,191,1049"/>
+<area shape="rect" title=" " alt="" coords="797,582,903,607"/>
+<area shape="rect" href="classore_1_1data_1_1_asian_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="577,5,729,45"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="556,69,749,109"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="557,133,748,173"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_average_forward.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="559,197,747,237"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_digital_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="567,261,738,301"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_double_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="567,325,738,365"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_european_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="558,389,747,429"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_k_i_k_o_barrier_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="570,453,735,493"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_touch_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="568,517,737,557"/>
+<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="582,582,723,607"/>
+<area shape="rect" href="classore_1_1data_1_1_vanilla_option_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="573,632,732,672"/>
+<area shape="rect" href="classore_1_1data_1_1_scripted_trade.html#a1577b286d4b5031486562798f48ff8b9" title=" " alt="" coords="572,696,733,736"/>
+<area shape="rect" href="classore_1_1data_1_1_barrier_option.html#ac998e259f78b98d10df4f18f6d3c9a9a" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="574,760,731,800"/>
+<area shape="rect" href="classore_1_1data_1_1_var_swap.html#ac998e259f78b98d10df4f18f6d3c9a9a" title=" " alt="" coords="586,824,719,864"/>
+<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="559,888,747,928"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="556,952,749,992"/>
+<area shape="rect" href="namespaceore_1_1data.html#a4a1f489aaefd95989a88a7b10ab23cfc" title=" " alt="" coords="565,1017,741,1042"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#ab13510db49bbff712343c72e63c788c5" title=" " alt="" coords="588,1066,717,1091"/>
+<area shape="rect" href="classore_1_1data_1_1_fixing_date_getter.html#af22504fe8ea64d6d556af7757c8aad0f" title=" " alt="" coords="563,1116,742,1156"/>
+<area shape="rect" href="fxexotics_8cpp.html#a1bb3d76e35ea3c22bb6f167cc5a2a9fa" title=" " alt="" coords="293,269,483,294"/>
+<area shape="rect" href="fxexotics_8cpp.html#a356626221d09fa0287e4f5d1646ca231" title=" " alt="" coords="293,333,483,358"/>
+<area shape="rect" href="fxexotics_8cpp.html#acfd93f4169abaf3c0d3541c4a297d9de" title=" " alt="" coords="293,397,483,422"/>
+<area shape="rect" href="fxexotics_8cpp.html#ae4a8f5fc2a666b87316a20b9716625b7" title=" " alt="" coords="293,449,483,474"/>
+<area shape="rect" href="fxexotics_8cpp.html#a81ded61bff8d1f143845d1a8063ab363" title=" " alt="" coords="293,498,483,523"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_future_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="291,548,485,588"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="310,612,466,652"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_option.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="321,676,455,716"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="295,740,481,780"/>
+<area shape="rect" href="equitytrades_8cpp.html#aa42062877db60fac479ac06add9deb01" title=" " alt="" coords="17,555,208,581"/>
+<area shape="rect" href="equitytrades_8cpp.html#a9157b4f937ae04fa01bdd86ef531a15d" title=" " alt="" coords="17,619,208,645"/>
+<area shape="rect" href="test_2fxoption_8cpp.html#a321417ba3c97d0524c8fa2d8acb97d72" title=" " alt="" coords="17,671,208,697"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_digital_option.html#a32b57451f66777dd8794b747d0f77224" title="Build underlying instrument and link pricing engine." alt="" coords="21,721,204,761"/>
+<area shape="rect" href="classore_1_1data_1_1_commodity_average_price_option.html#a56820373aef8756143bb07c7c7c7cf6e" title="Build a standard option." alt="" coords="5,785,220,825"/>
+<area shape="rect" href="classore_1_1data_1_1_fx_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="289,804,487,844"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_option_with_barrier.html#ad74930c874006b4f9a05c1e210444af8" title=" " alt="" coords="297,868,479,908"/>
+<area shape="rect" href="fxexotics_8cpp.html#a97f1cf85be4712888f153506afc004be" title=" " alt="" coords="17,850,208,875"/>
+<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="314,962,462,987"/>
+<area shape="rect" href="classore_1_1data_1_1_risk_participation_agreement.html#a2582a803e4b4ea664059c4c3f0308e69" title=" " alt="" coords="268,1012,508,1052"/>
+<area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="17,905,208,930"/>
+<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="37,955,188,995"/>
+<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="34,1019,191,1059"/>
 </map>
 </div>
 
+</div>
+</div>
+<a id="a6a49428e44851708a200b2b6f9dd49d1" name="a6a49428e44851708a200b2b6f9dd49d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a49428e44851708a200b2b6f9dd49d1">&#9670;&#160;</a></span>addFixingDate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addFixingDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixingEntry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00324">324</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  324</span>                                                                  { </div>
+<div class="line"><span class="lineno">  325</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(fixingEntry); </div>
+<div class="line"><span class="lineno">  326</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a75ba515fe0f8043b427bd54677dfa51c" name="a75ba515fe0f8043b427bd54677dfa51c"></a>
@@ -497,12 +530,12 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >adds a vector of fixings dates <code>fixingDates</code> for an index given by is ORE index name <code>indexName</code> arising from a coupon with payment date <code>payDate</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00261">261</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  262</span>                                                                                                          {</div>
-<div class="line"><span class="lineno">  263</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; d : fixingDates) {</div>
-<div class="line"><span class="lineno">  264</span>        <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(std::make_tuple(indexName, d, payDate, alwaysAddIfPaysOnSettlement));</div>
-<div class="line"><span class="lineno">  265</span>    }</div>
-<div class="line"><span class="lineno">  266</span>}</div>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00328">328</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  329</span>                                                                                                          {</div>
+<div class="line"><span class="lineno">  330</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; d : fixingDates) {</div>
+<div class="line"><span class="lineno">  331</span>        <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(std::make_tuple(indexName, d, payDate, alwaysAddIfPaysOnSettlement));</div>
+<div class="line"><span class="lineno">  332</span>    }</div>
+<div class="line"><span class="lineno">  333</span>}</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -518,7 +551,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a73e38e0bce977019cf9b28d7ffe38763" name="a73e38e0bce977019cf9b28d7ffe38763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73e38e0bce977019cf9b28d7ffe38763">&#9670;&#160;</a></span>addZeroInflationFixingDate()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e38e0bce977019cf9b28d7ffe38763">&#9670;&#160;</a></span>addZeroInflationFixingDate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,13 +619,13 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >add a single fixing date <code>fixingDate</code> for a coupon based on a zero inflation index given by its ORE index name <code>indexName</code> with payment date <code>payDate</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00268">268</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  273</span>                                                                                         {</div>
-<div class="line"><span class="lineno">  274</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.insert(</div>
-<div class="line"><span class="lineno">  275</span>        std::make_tuple(std::make_tuple(std::make_tuple(indexName, fixingDate, payDate, alwaysAddIfPaysOnSettlement),</div>
-<div class="line"><span class="lineno">  276</span>                                        indexInterpolated, indexFrequency, indexAvailabilityLag),</div>
-<div class="line"><span class="lineno">  277</span>                        couponInterpolation, couponFrequency));</div>
-<div class="line"><span class="lineno">  278</span>}</div>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00335">335</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  340</span>                                                                                         {</div>
+<div class="line"><span class="lineno">  341</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.insert(</div>
+<div class="line"><span class="lineno">  342</span>        std::make_tuple(std::make_tuple(std::make_tuple(indexName, fixingDate, payDate, alwaysAddIfPaysOnSettlement),</div>
+<div class="line"><span class="lineno">  343</span>                                        indexInterpolated, indexFrequency, indexAvailabilityLag),</div>
+<div class="line"><span class="lineno">  344</span>                        couponInterpolation, couponFrequency));</div>
+<div class="line"><span class="lineno">  345</span>}</div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -611,15 +644,40 @@ Friends</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph" id="aclassore_1_1data_1_1_required_fixings_a73e38e0bce977019cf9b28d7ffe38763_icgraph">
-<area shape="rect" title=" " alt="" coords="232,13,407,38"/>
-<area shape="rect" href="classore_1_1data_1_1_fixing_date_getter.html#abc83aec666010a355ae9ffcbdd0d92e1" title=" " alt="" coords="5,5,184,45"/>
+<area shape="rect" title=" " alt="" coords="232,70,407,95"/>
+<area shape="rect" href="classore_1_1data_1_1_scripted_trade.html#a1577b286d4b5031486562798f48ff8b9" title=" " alt="" coords="14,5,175,45"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#ab13510db49bbff712343c72e63c788c5" title=" " alt="" coords="30,70,159,95"/>
+<area shape="rect" href="classore_1_1data_1_1_fixing_date_getter.html#abc83aec666010a355ae9ffcbdd0d92e1" title=" " alt="" coords="5,120,184,160"/>
 </map>
 </div>
 
 </div>
 </div>
+<a id="a478873361254bb64adc522cd908aa20e" name="a478873361254bb64adc522cd908aa20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478873361254bb64adc522cd908aa20e">&#9670;&#160;</a></span>addZeroInflationFixingDate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addZeroInflationFixingDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classore_1_1data_1_1_required_fixings.html#a03765784e5d0eaa76bffdd5f5afab6ed">ZeroInflationFixingEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixingEntry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00347">347</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  347</span>                                                                                            {</div>
+<div class="line"><span class="lineno">  348</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.insert(fixingEntry);</div>
+<div class="line"><span class="lineno">  349</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a2ba561fec2cf07ba236886b9bb7f513b" name="a2ba561fec2cf07ba236886b9bb7f513b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba561fec2cf07ba236886b9bb7f513b">&#9670;&#160;</a></span>addYoYInflationFixingDate()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba561fec2cf07ba236886b9bb7f513b">&#9670;&#160;</a></span>addYoYInflationFixingDate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -675,12 +733,12 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >add a single fixing date <code>fixingDate</code> for a coupon based on a yoy inflation index given by its ORE index name <code>indexName</code> with payment date <code>payDate</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00280">280</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  283</span>                                                                                        {</div>
-<div class="line"><span class="lineno">  284</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.insert(</div>
-<div class="line"><span class="lineno">  285</span>        std::make_tuple(std::make_tuple(indexName, fixingDate, payDate, alwaysAddIfPaysOnSettlement), indexInterpolated,</div>
-<div class="line"><span class="lineno">  286</span>                        indexFrequency, indexAvailabilityLag));</div>
-<div class="line"><span class="lineno">  287</span>}</div>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00351">351</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  354</span>                                                                                        {</div>
+<div class="line"><span class="lineno">  355</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.insert(</div>
+<div class="line"><span class="lineno">  356</span>        std::make_tuple(std::make_tuple(indexName, fixingDate, payDate, alwaysAddIfPaysOnSettlement), indexInterpolated,</div>
+<div class="line"><span class="lineno">  357</span>                        indexFrequency, indexAvailabilityLag));</div>
+<div class="line"><span class="lineno">  358</span>}</div>
 </div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -692,7 +750,41 @@ Friends</h2></td></tr>
 <area shape="rect" target="_parent" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="228,5,307,31"/>
 </map>
 </div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_icgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_icgraph" id="aclassore_1_1data_1_1_required_fixings_a2ba561fec2cf07ba236886b9bb7f513b_icgraph">
+<area shape="rect" title=" " alt="" coords="183,5,357,31"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#ab13510db49bbff712343c72e63c788c5" title=" " alt="" coords="5,5,135,31"/>
+</map>
+</div>
 
+</div>
+</div>
+<a id="a41b62637d7491c1e219e5d07b3d2f051" name="a41b62637d7491c1e219e5d07b3d2f051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b62637d7491c1e219e5d07b3d2f051">&#9670;&#160;</a></span>addYoYInflationFixingDate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addYoYInflationFixingDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixingEntry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00360">360</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  360</span>                                                                                       {</div>
+<div class="line"><span class="lineno">  361</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.insert(fixingEntry);</div>
+<div class="line"><span class="lineno">  362</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac8bb3912a3ce86b15842e79d0b421204" name="ac8bb3912a3ce86b15842e79d0b421204"></a>
@@ -711,17 +803,17 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >clear all data </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00141">141</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  141</span>                            {</div>
-<div class="line"><span class="lineno">  142</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.clear();</div>
-<div class="line"><span class="lineno">  143</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.clear();</div>
-<div class="line"><span class="lineno">  144</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.clear();</div>
-<div class="line"><span class="lineno">  145</span>}</div>
-</div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00147">147</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>                            {</div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.clear();</div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.clear();</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.clear();</div>
+<div class="line"><span class="lineno">  151</span>}</div>
+</div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph" id="aclassore_1_1data_1_1_required_fixings_ac8bb3912a3ce86b15842e79d0b421204_icgraph">
 <area shape="rect" title=" " alt="" coords="452,169,503,194"/>
@@ -755,30 +847,32 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >add data from another <a class="el" href="classore_1_1data_1_1_required_fixings.html">RequiredFixings</a> instance </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00147">147</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  147</span>                                                                    {</div>
-<div class="line"><span class="lineno">  148</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(requiredFixings.fixingDates_.begin(), requiredFixings.fixingDates_.end());</div>
-<div class="line"><span class="lineno">  149</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.insert(requiredFixings.zeroInflationFixingDates_.begin(),</div>
-<div class="line"><span class="lineno">  150</span>                                     requiredFixings.zeroInflationFixingDates_.end());</div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.insert(requiredFixings.yoyInflationFixingDates_.begin(),</div>
-<div class="line"><span class="lineno">  152</span>                                    requiredFixings.yoyInflationFixingDates_.end());</div>
-<div class="line"><span class="lineno">  153</span>}</div>
-</div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00153">153</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>                                                                    {</div>
+<div class="line"><span class="lineno">  154</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>.insert(requiredFixings.fixingDates_.begin(), requiredFixings.fixingDates_.end());</div>
+<div class="line"><span class="lineno">  155</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>.insert(requiredFixings.zeroInflationFixingDates_.begin(),</div>
+<div class="line"><span class="lineno">  156</span>                                     requiredFixings.zeroInflationFixingDates_.end());</div>
+<div class="line"><span class="lineno">  157</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>.insert(requiredFixings.yoyInflationFixingDates_.begin(),</div>
+<div class="line"><span class="lineno">  158</span>                                    requiredFixings.yoyInflationFixingDates_.end());</div>
+<div class="line"><span class="lineno">  159</span>}</div>
+</div><!-- fragment --><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph" id="aclassore_1_1data_1_1_required_fixings_a6239d4397d1d7eb1de886f13bdc8d9d4_icgraph">
-<area shape="rect" title=" " alt="" coords="965,476,1036,501"/>
-<area shape="rect" href="classore_1_1data_1_1_composite_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="743,375,917,415"/>
-<area shape="rect" href="classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="763,439,897,479"/>
-<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="759,504,901,529"/>
-<area shape="rect" href="namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="745,553,915,579"/>
-<area shape="rect" href="test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="504,447,695,472"/>
+<area shape="rect" title=" " alt="" coords="973,771,1044,796"/>
+<area shape="rect" href="classore_1_1data_1_1_bond_index_builder.html#ae479124f9f93e301b0a9b63f603a7e07" title=" " alt="" coords="743,653,925,693"/>
+<area shape="rect" href="classore_1_1data_1_1_composite_trade.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="747,731,921,771"/>
+<area shape="rect" href="classore_1_1data_1_1_swaption.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="767,795,901,835"/>
+<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="763,860,905,885"/>
 <area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="519,524,679,549"/>
 <area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="531,574,667,614"/>
-<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,80,424,105"/>
+<area shape="rect" href="structore_1_1data_1_1_convertible_bond_trs_underlying_builder.html#a378c0a37c90140f69c15be3d7669b014" title=" " alt="" coords="511,638,687,678"/>
+<area shape="rect" href="structore_1_1data_1_1_bond_trs_underlying_builder.html#a378c0a37c90140f69c15be3d7669b014" title=" " alt="" coords="504,702,695,742"/>
+<area shape="rect" href="structore_1_1data_1_1_bond_position_trs_underlying_builder.html#a378c0a37c90140f69c15be3d7669b014" title=" " alt="" coords="511,766,687,806"/>
+<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,95,424,120"/>
 <area shape="rect" href="classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,165,437,205"/>
 <area shape="rect" href="classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,229,441,269"/>
 <area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,293,444,333"/>
@@ -796,6 +890,7 @@ Friends</h2></td></tr>
 <area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,55,176,95"/>
 <area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,119,179,159"/>
 <area shape="rect" href="classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,183,194,223"/>
+<area shape="rect" href="test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9" title=" " alt="" coords="504,831,695,856"/>
 </map>
 </div>
 
@@ -817,62 +912,131 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >Set all pay dates to Date::maxDate(), <a class="el" href="classore_1_1data_1_1_required_fixings.html#a76939e80c80ff949b4568be7af749d37">fixingDatesIndices()</a> will then not filter the required fixings by the given settlement date any more. Needed by total return swaps on bonds for example, where a cashflow in a bond with past payment date can still be relevant for the payment of the current return period. </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00155">155</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>                                    {</div>
-<div class="line"><span class="lineno">  156</span>    <span class="comment">// we can&#39;t modify the elements of a set directly, need to make a copy and reassign</span></div>
-<div class="line"><span class="lineno">  157</span>    std::set&lt;FixingEntry&gt; newFixingDates;</div>
-<div class="line"><span class="lineno">  158</span>    std::set&lt;ZeroInflationFixingEntry&gt; newZeroInflationFixingDates;</div>
-<div class="line"><span class="lineno">  159</span>    std::set&lt;InflationFixingEntry&gt; newYoYInflationFixingDates;</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>) {</div>
-<div class="line"><span class="lineno">  161</span>        std::get&lt;2&gt;(f) = Date::maxDate();</div>
-<div class="line"><span class="lineno">  162</span>        std::get&lt;3&gt;(f) = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  163</span>        newFixingDates.insert(f);</div>
-<div class="line"><span class="lineno">  164</span>    }</div>
-<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>) {</div>
-<div class="line"><span class="lineno">  166</span>        std::get&lt;2&gt;(std::get&lt;0&gt;(std::get&lt;0&gt;(f))) = Date::maxDate();</div>
-<div class="line"><span class="lineno">  167</span>        std::get&lt;3&gt;(std::get&lt;0&gt;(std::get&lt;0&gt;(f))) = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  168</span>        newZeroInflationFixingDates.insert(f);</div>
-<div class="line"><span class="lineno">  169</span>    }</div>
-<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>) {</div>
-<div class="line"><span class="lineno">  171</span>        std::get&lt;2&gt;(std::get&lt;0&gt;(f)) = Date::maxDate();</div>
-<div class="line"><span class="lineno">  172</span>        std::get&lt;3&gt;(std::get&lt;0&gt;(f)) = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  173</span>        newYoYInflationFixingDates.insert(f);</div>
-<div class="line"><span class="lineno">  174</span>    }</div>
-<div class="line"><span class="lineno">  175</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a> = newFixingDates;</div>
-<div class="line"><span class="lineno">  176</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a> = newZeroInflationFixingDates;</div>
-<div class="line"><span class="lineno">  177</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a> = newYoYInflationFixingDates;</div>
-<div class="line"><span class="lineno">  178</span>}</div>
-</div><!-- fragment --><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00161">161</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>                                    {</div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// we can&#39;t modify the elements of a set directly, need to make a copy and reassign</span></div>
+<div class="line"><span class="lineno">  163</span>    std::set&lt;FixingEntry&gt; newFixingDates;</div>
+<div class="line"><span class="lineno">  164</span>    std::set&lt;ZeroInflationFixingEntry&gt; newZeroInflationFixingDates;</div>
+<div class="line"><span class="lineno">  165</span>    std::set&lt;InflationFixingEntry&gt; newYoYInflationFixingDates;</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  167</span>        std::get&lt;2&gt;(f) = Date::maxDate();</div>
+<div class="line"><span class="lineno">  168</span>        std::get&lt;3&gt;(f) = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  169</span>        newFixingDates.insert(f);</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="line"><span class="lineno">  171</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  172</span>        std::get&lt;2&gt;(std::get&lt;0&gt;(std::get&lt;0&gt;(f))) = Date::maxDate();</div>
+<div class="line"><span class="lineno">  173</span>        std::get&lt;3&gt;(std::get&lt;0&gt;(std::get&lt;0&gt;(f))) = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  174</span>        newZeroInflationFixingDates.insert(f);</div>
+<div class="line"><span class="lineno">  175</span>    }</div>
+<div class="line"><span class="lineno">  176</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  177</span>        std::get&lt;2&gt;(std::get&lt;0&gt;(f)) = Date::maxDate();</div>
+<div class="line"><span class="lineno">  178</span>        std::get&lt;3&gt;(std::get&lt;0&gt;(f)) = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  179</span>        newYoYInflationFixingDates.insert(f);</div>
+<div class="line"><span class="lineno">  180</span>    }</div>
+<div class="line"><span class="lineno">  181</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a> = newFixingDates;</div>
+<div class="line"><span class="lineno">  182</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a> = newZeroInflationFixingDates;</div>
+<div class="line"><span class="lineno">  183</span>    <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a> = newYoYInflationFixingDates;</div>
+<div class="line"><span class="lineno">  184</span>}</div>
+</div><!-- fragment --><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph" id="aclassore_1_1data_1_1_required_fixings_a497f63080ba1d28c0cd0d23a9f2f81d5_icgraph">
-<area shape="rect" title=" " alt="" coords="929,504,1040,529"/>
-<area shape="rect" href="classore_1_1data_1_1_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="719,439,874,479"/>
-<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="726,504,867,529"/>
-<area shape="rect" href="namespaceore_1_1data.html#a989a3f0f1f7b7ba4a043755eb3de4d64" title=" " alt="" coords="712,553,881,579"/>
-<area shape="rect" href="namespaceore_1_1data.html#a445fe37fcb6ed264376329b7d70d58ee" title=" " alt="" coords="504,524,664,549"/>
-<area shape="rect" href="classore_1_1data_1_1_bond_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="516,574,652,614"/>
-<area shape="rect" href="classore_1_1data_1_1_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Build QuantLib/QuantExt instrument, link pricing engine." alt="" coords="276,80,424,105"/>
-<area shape="rect" href="classore_1_1data_1_1_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="263,165,437,205"/>
-<area shape="rect" href="classore_1_1data_1_1_zero_coupon_fixed_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="259,229,441,269"/>
-<area shape="rect" href="classore_1_1data_1_1_floating_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="256,293,444,333"/>
-<area shape="rect" href="classore_1_1data_1_1_c_p_i_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="269,357,431,397"/>
-<area shape="rect" href="classore_1_1data_1_1_y_y_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="270,421,430,461"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,485,435,525"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_b_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="265,549,435,589"/>
-<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="267,613,433,653"/>
-<area shape="rect" href="classore_1_1data_1_1_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="244,677,456,717"/>
-<area shape="rect" href="classore_1_1data_1_1_digital_c_m_s_spread_leg_builder.html#a2db8847a3f7eba0c3ab0378e263d10e7" title=" " alt="" coords="257,741,443,781"/>
-<area shape="rect" href="classore_1_1data_1_1_duration_adjusted_cms_leg_builder.html#aec2b4d309c409580ac1da5b0d5e34f87" title=" " alt="" coords="260,805,440,845"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_fixed_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="261,869,439,909"/>
-<area shape="rect" href="classore_1_1data_1_1_commodity_floating_leg_builder.html#a139b78cb06c706ab4a2a4f456f7ddad2" title=" " alt="" coords="253,933,447,973"/>
-<area shape="rect" href="test_2todaysmarket_8cpp.html#aeb43366ac05a65218ef11c74fa7a5650" title=" " alt="" coords="5,5,196,31"/>
-<area shape="rect" href="classore_1_1data_1_1_equity_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="25,55,176,95"/>
-<area shape="rect" href="classore_1_1data_1_1_inflation_swap.html#a9c636e31b77522b708a0b20e376209aa" title="Trade interface." alt="" coords="22,119,179,159"/>
-<area shape="rect" href="classore_1_1data_1_1_index_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="7,183,194,223"/>
+<area shape="rect" title=" " alt="" coords="208,42,319,67"/>
+<area shape="rect" href="classore_1_1data_1_1_credit_default_swap.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="5,5,160,45"/>
+<area shape="rect" href="classore_1_1data_1_1_t_r_s.html#a9c636e31b77522b708a0b20e376209aa" title=" " alt="" coords="12,70,153,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab13510db49bbff712343c72e63c788c5" name="ab13510db49bbff712343c72e63c788c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13510db49bbff712343c72e63c788c5">&#9670;&#160;</a></span>filteredFixingDates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classore_1_1data_1_1_required_fixings.html">RequiredFixings</a> filteredFixingDates </td>
+          <td>(</td>
+          <td class="paramtype">const QuantLib::Date &amp;&#160;</td>
+          <td class="paramname"><em>settlementDate</em> = <code>QuantLib::Date()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00186">186</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>                                                                               { </div>
+<div class="line"><span class="lineno">  187</span>    RequiredFixings rf; </div>
+<div class="line"><span class="lineno">  188</span>    <span class="comment">// If settlement date is an empty date, update to evaluation date.</span></div>
+<div class="line"><span class="lineno">  189</span>    Date d = settlementDate == Date() ? Settings::instance().evaluationDate() : settlementDate;</div>
+<div class="line"><span class="lineno">  190</span>    <span class="comment">// handle the general case</span></div>
+<div class="line"><span class="lineno">  191</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#abfb42812d0036a22dab668e251c8d5bd">fixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  192</span>        <span class="comment">// get the data</span></div>
+<div class="line"><span class="lineno">  193</span>        std::string indexName = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  194</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(f);</div>
+<div class="line"><span class="lineno">  195</span>        Date payDate = std::get&lt;2&gt;(f);</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(f);</div>
+<div class="line"><span class="lineno">  197</span>        <span class="comment">// add to result</span></div>
+<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">if</span> (fixingDate &gt; d)</div>
+<div class="line"><span class="lineno">  199</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  200</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
+<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
+<div class="line"><span class="lineno">  202</span>            std::get&lt;2&gt;(f) = Date::maxDate();</div>
+<div class="line"><span class="lineno">  203</span>            std::get&lt;3&gt;(f) = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  204</span>            rf.addFixingDate(f);</div>
+<div class="line"><span class="lineno">  205</span>        }</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>    <span class="comment">// handle zero inflation index based coupons</span></div>
+<div class="line"><span class="lineno">  209</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3a0122c2ccd1aa0725f945f08196248c">zeroInflationFixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  210</span>        <span class="comment">// get the data</span></div>
+<div class="line"><span class="lineno">  211</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">InflationFixingEntry</a> inflationFixingEntry = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  212</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(inflationFixingEntry);</div>
+<div class="line"><span class="lineno">  213</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  214</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  216</span>        <span class="comment">// add to result</span></div>
+<div class="line"><span class="lineno">  217</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
+<div class="line"><span class="lineno">  219</span>            std::get&lt;2&gt;(std::get&lt;0&gt;(std::get&lt;0&gt;(f))) = Date::maxDate();</div>
+<div class="line"><span class="lineno">  220</span>            std::get&lt;3&gt;(std::get&lt;0&gt;(std::get&lt;0&gt;(f))) = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  221</span>            rf.addZeroInflationFixingDate(f);</div>
+<div class="line"><span class="lineno">  222</span>        }</div>
+<div class="line"><span class="lineno">  223</span>    }</div>
+<div class="line"><span class="lineno">  224</span> </div>
+<div class="line"><span class="lineno">  225</span>    <span class="comment">// handle yoy inflation index based coupons</span></div>
+<div class="line"><span class="lineno">  226</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> f : <a class="code hl_variable" href="classore_1_1data_1_1_required_fixings.html#a3d3e45002d78b62f0faa3d62599dafb0">yoyInflationFixingDates_</a>) {</div>
+<div class="line"><span class="lineno">  227</span>        <span class="comment">// get the data</span></div>
+<div class="line"><span class="lineno">  228</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">FixingEntry</a> fixingEntry = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  229</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  230</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  231</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  232</span>        <span class="comment">// add to result</span></div>
+<div class="line"><span class="lineno">  233</span>        SimpleCashFlow dummyCf(0.0, payDate);</div>
+<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">if</span> (!dummyCf.hasOccurred(d) || (alwaysAddIfPaysOnSettlement &amp;&amp; dummyCf.date() == d)) {</div>
+<div class="line"><span class="lineno">  235</span>            std::get&lt;2&gt;(std::get&lt;0&gt;(f)) = Date::maxDate();</div>
+<div class="line"><span class="lineno">  236</span>            std::get&lt;3&gt;(std::get&lt;0&gt;(f)) = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  237</span>            rf.addYoYInflationFixingDate(f);</div>
+<div class="line"><span class="lineno">  238</span>        }</div>
+<div class="line"><span class="lineno">  239</span>    }</div>
+<div class="line"><span class="lineno">  240</span>    <span class="keywordflow">return</span> rf;</div>
+<div class="line"><span class="lineno">  241</span>}</div>
+</div><!-- fragment --><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_required_fixings_ab13510db49bbff712343c72e63c788c5_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_required_fixings_ab13510db49bbff712343c72e63c788c5_cgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_required_fixings_ab13510db49bbff712343c72e63c788c5_cgraph" id="aclassore_1_1data_1_1_required_fixings_ab13510db49bbff712343c72e63c788c5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,135,107"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c" title=" " alt="" coords="217,5,323,31"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370" title=" " alt="" coords="405,81,484,107"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#a2ba561fec2cf07ba236886b9bb7f513b" title=" " alt="" coords="183,107,357,132"/>
+<area shape="rect" href="classore_1_1data_1_1_required_fixings.html#a73e38e0bce977019cf9b28d7ffe38763" title=" " alt="" coords="183,156,357,181"/>
 </map>
 </div>
 
@@ -914,38 +1078,38 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p >allow output of required fixings data via streams </p>
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00289">289</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  289</span>                                                                                {</div>
-<div class="line"><span class="lineno">  290</span>    out &lt;&lt; <span class="stringliteral">&quot;IndexName FixingDate PayDate AlwaysAddIfPaysOnSettlement\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  291</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.fixingDates_) {</div>
-<div class="line"><span class="lineno">  292</span>        std::string indexName = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  293</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(f);</div>
-<div class="line"><span class="lineno">  294</span>        Date payDate = std::get&lt;2&gt;(f);</div>
-<div class="line"><span class="lineno">  295</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(f);</div>
-<div class="line"><span class="lineno">  296</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><span class="lineno">  297</span>            &lt;&lt; std::boolalpha &lt;&lt; alwaysAddIfPaysOnSettlement &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  298</span>    }</div>
-<div class="line"><span class="lineno">  299</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.zeroInflationFixingDates_) {</div>
-<div class="line"><span class="lineno">  300</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">RequiredFixings::InflationFixingEntry</a> inflationFixingEntry = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  301</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">RequiredFixings::FixingEntry</a> fixingEntry = std::get&lt;0&gt;(inflationFixingEntry);</div>
-<div class="line"><span class="lineno">  302</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  303</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  304</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  305</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  306</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><span class="lineno">  307</span>            &lt;&lt; std::boolalpha &lt;&lt; alwaysAddIfPaysOnSettlement &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  308</span>    }</div>
-<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.yoyInflationFixingDates_) {</div>
-<div class="line"><span class="lineno">  310</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">RequiredFixings::FixingEntry</a> fixingEntry = std::get&lt;0&gt;(f);</div>
-<div class="line"><span class="lineno">  311</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  312</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  313</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  314</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
-<div class="line"><span class="lineno">  315</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><span class="lineno">  316</span>            &lt;&lt; std::boolalpha &lt;&lt; alwaysAddIfPaysOnSettlement &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  317</span>    }</div>
-<div class="line"><span class="lineno">  318</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">  319</span>}</div>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8cpp_source.html#l00364">364</a> of file <a class="el" href="fixingdates_8cpp_source.html">fixingdates.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  364</span>                                                                                {</div>
+<div class="line"><span class="lineno">  365</span>    out &lt;&lt; <span class="stringliteral">&quot;IndexName FixingDate PayDate AlwaysAddIfPaysOnSettlement\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  366</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.fixingDates_) {</div>
+<div class="line"><span class="lineno">  367</span>        std::string indexName = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  368</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(f);</div>
+<div class="line"><span class="lineno">  369</span>        Date payDate = std::get&lt;2&gt;(f);</div>
+<div class="line"><span class="lineno">  370</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(f);</div>
+<div class="line"><span class="lineno">  371</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  372</span>            &lt;&lt; std::boolalpha &lt;&lt; alwaysAddIfPaysOnSettlement &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  373</span>    }</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.zeroInflationFixingDates_) {</div>
+<div class="line"><span class="lineno">  375</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#a79fa57d0c3504bff50c45d7cf2834023">RequiredFixings::InflationFixingEntry</a> inflationFixingEntry = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  376</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">RequiredFixings::FixingEntry</a> fixingEntry = std::get&lt;0&gt;(inflationFixingEntry);</div>
+<div class="line"><span class="lineno">  377</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  378</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  379</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  380</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  381</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  382</span>            &lt;&lt; std::boolalpha &lt;&lt; alwaysAddIfPaysOnSettlement &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  383</span>    }</div>
+<div class="line"><span class="lineno">  384</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; f : requiredFixings.yoyInflationFixingDates_) {</div>
+<div class="line"><span class="lineno">  385</span>        <a class="code hl_typedef" href="classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268">RequiredFixings::FixingEntry</a> fixingEntry = std::get&lt;0&gt;(f);</div>
+<div class="line"><span class="lineno">  386</span>        std::string indexName = std::get&lt;0&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  387</span>        Date <a class="code hl_functionRef" href="../qle/namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370">fixingDate</a> = std::get&lt;1&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  388</span>        Date payDate = std::get&lt;2&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  389</span>        <span class="keywordtype">bool</span> alwaysAddIfPaysOnSettlement = std::get&lt;3&gt;(fixingEntry);</div>
+<div class="line"><span class="lineno">  390</span>        out &lt;&lt; indexName &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(fixingDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; QuantLib::io::iso_date(payDate) &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  391</span>            &lt;&lt; std::boolalpha &lt;&lt; alwaysAddIfPaysOnSettlement &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  392</span>    }</div>
+<div class="line"><span class="lineno">  393</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  394</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -970,7 +1134,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00144">144</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00153">153</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1158,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00146">146</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00155">155</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +1182,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00148">148</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fixingdates_8hpp_source.html#l00157">157</a> of file <a class="el" href="fixingdates_8hpp_source.html">fixingdates.hpp</a>.</p>
 
 </div>
 </div>

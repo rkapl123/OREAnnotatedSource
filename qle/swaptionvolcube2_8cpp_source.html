@@ -184,7 +184,7 @@ $(function() {
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    calculate();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    Rate atmForward = atmStrike(optionDate, swapTenor);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    Volatility referenceVol = <a class="code hl_variable" href="class_quant_ext_1_1_swaption_vol_cube2.html#a6db014ca0e4f2fcc78b880e28d96125b">volsAreSpreads_</a> ? atmVol_-&gt;volatility(optionDate, swapTenor, atmForward) : 0.0;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    Time optionTime = timeFromReference(optionDate);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    Time optionTime = std::max(1E-6, timeFromReference(optionDate));</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    Real exerciseTimeSqrt = std::sqrt(optionTime);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    std::vector&lt;Real&gt; <a class="code hl_variable" href="test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>, stdDevs;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_variable" href="test_2analyticcashsettledeuropeanengine_8cpp.html#aa7b6f0cca80627aec257d302511d608c">strikes</a>.reserve(nStrikes_);</div>

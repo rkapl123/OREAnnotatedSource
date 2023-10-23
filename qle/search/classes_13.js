@@ -12,6 +12,8 @@ var searchData=
   ['tonarterm_9',['TonarTerm',['../class_quant_ext_1_1_tonar_term.html',1,'QuantExt']]],
   ['toplevelfixture_10',['TopLevelFixture',['../classqle_1_1test_1_1_top_level_fixture.html',1,'qle::test']]],
   ['tranche_11',['Tranche',['../struct_quant_ext_1_1_tranche.html',1,'QuantExt']]],
-  ['tsiveriotisfernandeslattice_12',['TsiveriotisFernandesLattice',['../class_quant_ext_1_1_tsiveriotis_fernandes_lattice.html',1,'QuantExt']]],
-  ['twdtaibor_13',['TWDTaibor',['../class_quant_ext_1_1_t_w_d_taibor.html',1,'QuantExt']]]
+  ['trscashflow_12',['TRSCashFlow',['../class_quant_ext_1_1_t_r_s_cash_flow.html',1,'QuantExt']]],
+  ['trsleg_13',['TRSLeg',['../class_quant_ext_1_1_t_r_s_leg.html',1,'QuantExt']]],
+  ['tsiveriotisfernandeslattice_14',['TsiveriotisFernandesLattice',['../class_quant_ext_1_1_tsiveriotis_fernandes_lattice.html',1,'QuantExt']]],
+  ['twdtaibor_15',['TWDTaibor',['../class_quant_ext_1_1_t_w_d_taibor.html',1,'QuantExt']]]
 ];

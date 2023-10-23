@@ -452,78 +452,81 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  281</span>    <span class="comment">// Path generator</span></div>
 <div class="line"><span class="lineno">  282</span>    BigNatural seed = 5;</div>
 <div class="line"><span class="lineno">  283</span>    <span class="keywordtype">bool</span> antithetic = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  284</span>    boost::shared_ptr&lt;QuantExt::MultiPathGeneratorBase&gt; pathGen =</div>
-<div class="line"><span class="lineno">  285</span>        boost::make_shared&lt;MultiPathGeneratorMersenneTwister&gt;(model-&gt;stateProcess(), dg-&gt;timeGrid(), seed, antithetic);</div>
-<div class="line"><span class="lineno">  286</span> </div>
-<div class="line"><span class="lineno">  287</span>    <span class="comment">// build scenario sim market</span></div>
-<div class="line"><span class="lineno">  288</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarket&gt; simMarket =</div>
-<div class="line"><span class="lineno">  289</span>        boost::make_shared&lt;analytics::ScenarioSimMarket&gt;(initMarket, parameters);</div>
-<div class="line"><span class="lineno">  290</span> </div>
-<div class="line"><span class="lineno">  291</span>    <span class="comment">// build scenario generator</span></div>
-<div class="line"><span class="lineno">  292</span>    boost::shared_ptr&lt;ScenarioFactory&gt; scenarioFactory(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_simple_scenario_factory.html">SimpleScenarioFactory</a>);</div>
-<div class="line"><span class="lineno">  293</span>    boost::shared_ptr&lt;ScenarioGenerator&gt; scenarioGenerator = boost::make_shared&lt;CrossAssetModelScenarioGenerator&gt;(</div>
-<div class="line"><span class="lineno">  294</span>        model, pathGen, scenarioFactory, parameters, today, dg, initMarket);</div>
-<div class="line"><span class="lineno">  295</span>    simMarket-&gt;scenarioGenerator() = scenarioGenerator;</div>
-<div class="line"><span class="lineno">  296</span> </div>
-<div class="line"><span class="lineno">  297</span>    <span class="comment">// Build Portfolio</span></div>
-<div class="line"><span class="lineno">  298</span>    boost::shared_ptr&lt;EngineData&gt; data = boost::make_shared&lt;EngineData&gt;();</div>
-<div class="line"><span class="lineno">  299</span>    data-&gt;model(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
-<div class="line"><span class="lineno">  300</span>    data-&gt;engine(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountingSwapEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  301</span>    boost::shared_ptr&lt;EngineFactory&gt; factory = boost::make_shared&lt;EngineFactory&gt;(data, simMarket);</div>
-<div class="line"><span class="lineno">  302</span> </div>
-<div class="line"><span class="lineno">  303</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio = <a class="code hl_function" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8">buildPortfolio</a>(factory);</div>
-<div class="line"><span class="lineno">  304</span> </div>
-<div class="line"><span class="lineno">  305</span>    <span class="comment">// Storage for selected scenario data (index fixings, FX rates, ..)</span></div>
-<div class="line"><span class="lineno">  306</span>    <span class="keywordflow">if</span> (checkFixings) {</div>
-<div class="line"><span class="lineno">  307</span>        boost::shared_ptr&lt;InMemoryAggregationScenarioData&gt; inMemoryScenarioData =</div>
-<div class="line"><span class="lineno">  308</span>            boost::make_shared&lt;InMemoryAggregationScenarioData&gt;(dg-&gt;size(), samples);</div>
-<div class="line"><span class="lineno">  309</span>        <span class="comment">// Set AggregationScenarioData</span></div>
-<div class="line"><span class="lineno">  310</span>        simMarket-&gt;aggregationScenarioData() = inMemoryScenarioData;</div>
-<div class="line"><span class="lineno">  311</span>    }</div>
-<div class="line"><span class="lineno">  312</span> </div>
-<div class="line"><span class="lineno">  313</span>    <span class="comment">// Now calculate exposure</span></div>
-<div class="line"><span class="lineno">  314</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_valuation_engine.html">ValuationEngine</a> valEngine(today, dg, simMarket);</div>
+<div class="line"><span class="lineno">  284</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span> tmp = boost::dynamic_pointer_cast&lt;CrossAssetStateProcess&gt;(model-&gt;stateProcess())) {</div>
+<div class="line"><span class="lineno">  285</span>        tmp-&gt;resetCache(dg-&gt;timeGrid().size() - 1);</div>
+<div class="line"><span class="lineno">  286</span>    }</div>
+<div class="line"><span class="lineno">  287</span>    boost::shared_ptr&lt;QuantExt::MultiPathGeneratorBase&gt; pathGen =</div>
+<div class="line"><span class="lineno">  288</span>        boost::make_shared&lt;MultiPathGeneratorMersenneTwister&gt;(model-&gt;stateProcess(), dg-&gt;timeGrid(), seed, antithetic);</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>    <span class="comment">// build scenario sim market</span></div>
+<div class="line"><span class="lineno">  291</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarket&gt; simMarket =</div>
+<div class="line"><span class="lineno">  292</span>        boost::make_shared&lt;analytics::ScenarioSimMarket&gt;(initMarket, parameters);</div>
+<div class="line"><span class="lineno">  293</span> </div>
+<div class="line"><span class="lineno">  294</span>    <span class="comment">// build scenario generator</span></div>
+<div class="line"><span class="lineno">  295</span>    boost::shared_ptr&lt;ScenarioFactory&gt; scenarioFactory(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_simple_scenario_factory.html">SimpleScenarioFactory</a>);</div>
+<div class="line"><span class="lineno">  296</span>    boost::shared_ptr&lt;ScenarioGenerator&gt; scenarioGenerator = boost::make_shared&lt;CrossAssetModelScenarioGenerator&gt;(</div>
+<div class="line"><span class="lineno">  297</span>        model, pathGen, scenarioFactory, parameters, today, dg, initMarket);</div>
+<div class="line"><span class="lineno">  298</span>    simMarket-&gt;scenarioGenerator() = scenarioGenerator;</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>    <span class="comment">// Build Portfolio</span></div>
+<div class="line"><span class="lineno">  301</span>    boost::shared_ptr&lt;EngineData&gt; data = boost::make_shared&lt;EngineData&gt;();</div>
+<div class="line"><span class="lineno">  302</span>    data-&gt;model(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
+<div class="line"><span class="lineno">  303</span>    data-&gt;engine(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountingSwapEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  304</span>    boost::shared_ptr&lt;EngineFactory&gt; factory = boost::make_shared&lt;EngineFactory&gt;(data, simMarket);</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio = <a class="code hl_function" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8">buildPortfolio</a>(factory);</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>    <span class="comment">// Storage for selected scenario data (index fixings, FX rates, ..)</span></div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">if</span> (checkFixings) {</div>
+<div class="line"><span class="lineno">  310</span>        boost::shared_ptr&lt;InMemoryAggregationScenarioData&gt; inMemoryScenarioData =</div>
+<div class="line"><span class="lineno">  311</span>            boost::make_shared&lt;InMemoryAggregationScenarioData&gt;(dg-&gt;size(), samples);</div>
+<div class="line"><span class="lineno">  312</span>        <span class="comment">// Set AggregationScenarioData</span></div>
+<div class="line"><span class="lineno">  313</span>        simMarket-&gt;aggregationScenarioData() = inMemoryScenarioData;</div>
+<div class="line"><span class="lineno">  314</span>    }</div>
 <div class="line"><span class="lineno">  315</span> </div>
-<div class="line"><span class="lineno">  316</span>    <span class="comment">// Calculate Cube</span></div>
-<div class="line"><span class="lineno">  317</span>    cpu_timer t;</div>
-<div class="line"><span class="lineno">  318</span>    boost::shared_ptr&lt;NPVCube&gt; cube =</div>
-<div class="line"><span class="lineno">  319</span>        boost::make_shared&lt;DoublePrecisionInMemoryCube&gt;(today, portfolio-&gt;ids(), dg-&gt;dates(), samples);</div>
-<div class="line"><span class="lineno">  320</span>    vector&lt;boost::shared_ptr&lt;ValuationCalculator&gt;&gt; calculators;</div>
-<div class="line"><span class="lineno">  321</span>    calculators.push_back(boost::make_shared&lt;NPVCalculator&gt;(baseCcy));</div>
-<div class="line"><span class="lineno">  322</span>    valEngine.buildCube(portfolio, cube, calculators);</div>
-<div class="line"><span class="lineno">  323</span>    t.stop();</div>
-<div class="line"><span class="lineno">  324</span> </div>
-<div class="line"><span class="lineno">  325</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube generated in &quot;</span> &lt;&lt; t.format(default_places, <span class="stringliteral">&quot;%w&quot;</span>) &lt;&lt; <span class="stringliteral">&quot; seconds&quot;</span>);</div>
-<div class="line"><span class="lineno">  326</span> </div>
-<div class="line"><span class="lineno">  327</span>    map&lt;string, vector&lt;Real&gt;&gt; referenceFixings;</div>
-<div class="line"><span class="lineno">  328</span>    <span class="comment">// First 10 EUR-EURIBOR-6M fixings at dateIndex 5, date grid 11,1Y</span></div>
-<div class="line"><span class="lineno">  329</span>    referenceFixings[<span class="stringliteral">&quot;11,1Y&quot;</span>] = {0.00745427, 0.028119, 0.0343574, 0.0335416, 0.0324554, 0.0305116,</div>
-<div class="line"><span class="lineno">  330</span>                                 0.00901458, 0.016573, 0.0194405, 0.0113262, 0.0238971};</div>
-<div class="line"><span class="lineno">  331</span> </div>
-<div class="line"><span class="lineno">  332</span>    <span class="comment">// First 10 EUR-EURIBOR-6M fixings at dateIndex 5, date grid 10,1Y</span></div>
-<div class="line"><span class="lineno">  333</span>    referenceFixings[<span class="stringliteral">&quot;10,1Y&quot;</span>] = {0.00745427, 0.0296431, 0.0338739, 0.012485,  0.0135247, 0.0148336,</div>
-<div class="line"><span class="lineno">  334</span>                                 0.018856,   0.0276796, 0.0349766, 0.0105696, 0.0103713};</div>
-<div class="line"><span class="lineno">  335</span> </div>
-<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">if</span> (simMarket-&gt;aggregationScenarioData()) {</div>
-<div class="line"><span class="lineno">  337</span>        QL_REQUIRE(dateGridString == <span class="stringliteral">&quot;10,1Y&quot;</span> || dateGridString == <span class="stringliteral">&quot;11,1Y&quot;</span>,</div>
-<div class="line"><span class="lineno">  338</span>                   <span class="stringliteral">&quot;date grid string &quot;</span> &lt;&lt; dateGridString &lt;&lt; <span class="stringliteral">&quot; unexpected&quot;</span>);</div>
-<div class="line"><span class="lineno">  339</span>        <span class="comment">// Reference scenario data:</span></div>
-<div class="line"><span class="lineno">  340</span>        Size dateIndex = 5;</div>
-<div class="line"><span class="lineno">  341</span>        Size maxSample = 10;</div>
-<div class="line"><span class="lineno">  342</span>        <span class="keywordtype">string</span> qualifier = <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>;</div>
-<div class="line"><span class="lineno">  343</span>        Real tolerance = 1.0e-6;</div>
-<div class="line"><span class="lineno">  344</span>        <span class="keywordflow">for</span> (Size sampleIndex = 0; sampleIndex &lt;= maxSample; ++sampleIndex) {</div>
-<div class="line"><span class="lineno">  345</span>            Real fix = simMarket-&gt;aggregationScenarioData()-&gt;get(dateIndex, sampleIndex,</div>
-<div class="line"><span class="lineno">  346</span>                                                                 AggregationScenarioDataType::IndexFixing, qualifier);</div>
-<div class="line"><span class="lineno">  347</span>            Real ref = referenceFixings[dateGridString][sampleIndex];</div>
-<div class="line"><span class="lineno">  348</span>            <span class="keywordflow">if</span> (fabs(fix - ref) &gt; tolerance)</div>
-<div class="line"><span class="lineno">  349</span>                BOOST_FAIL(<span class="stringliteral">&quot;Stored fixing differs from reference value, found &quot;</span> &lt;&lt; fix &lt;&lt; <span class="stringliteral">&quot;, expected &quot;</span> &lt;&lt; ref);</div>
-<div class="line"><span class="lineno">  350</span>        }</div>
-<div class="line"><span class="lineno">  351</span>    }</div>
-<div class="line"><span class="lineno">  352</span>}</div>
+<div class="line"><span class="lineno">  316</span>    <span class="comment">// Now calculate exposure</span></div>
+<div class="line"><span class="lineno">  317</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_valuation_engine.html">ValuationEngine</a> valEngine(today, dg, simMarket);</div>
+<div class="line"><span class="lineno">  318</span> </div>
+<div class="line"><span class="lineno">  319</span>    <span class="comment">// Calculate Cube</span></div>
+<div class="line"><span class="lineno">  320</span>    cpu_timer t;</div>
+<div class="line"><span class="lineno">  321</span>    boost::shared_ptr&lt;NPVCube&gt; cube =</div>
+<div class="line"><span class="lineno">  322</span>        boost::make_shared&lt;DoublePrecisionInMemoryCube&gt;(today, portfolio-&gt;ids(), dg-&gt;dates(), samples);</div>
+<div class="line"><span class="lineno">  323</span>    vector&lt;boost::shared_ptr&lt;ValuationCalculator&gt;&gt; calculators;</div>
+<div class="line"><span class="lineno">  324</span>    calculators.push_back(boost::make_shared&lt;NPVCalculator&gt;(baseCcy));</div>
+<div class="line"><span class="lineno">  325</span>    valEngine.buildCube(portfolio, cube, calculators);</div>
+<div class="line"><span class="lineno">  326</span>    t.stop();</div>
+<div class="line"><span class="lineno">  327</span> </div>
+<div class="line"><span class="lineno">  328</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube generated in &quot;</span> &lt;&lt; t.format(default_places, <span class="stringliteral">&quot;%w&quot;</span>) &lt;&lt; <span class="stringliteral">&quot; seconds&quot;</span>);</div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>    map&lt;string, vector&lt;Real&gt;&gt; referenceFixings;</div>
+<div class="line"><span class="lineno">  331</span>    <span class="comment">// First 10 EUR-EURIBOR-6M fixings at dateIndex 5, date grid 11,1Y</span></div>
+<div class="line"><span class="lineno">  332</span>    referenceFixings[<span class="stringliteral">&quot;11,1Y&quot;</span>] = {0.00745427, 0.028119, 0.0343574, 0.0335416, 0.0324554, 0.0305116,</div>
+<div class="line"><span class="lineno">  333</span>                                 0.00901458, 0.016573, 0.0194405, 0.0113262, 0.0238971};</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>    <span class="comment">// First 10 EUR-EURIBOR-6M fixings at dateIndex 5, date grid 10,1Y</span></div>
+<div class="line"><span class="lineno">  336</span>    referenceFixings[<span class="stringliteral">&quot;10,1Y&quot;</span>] = {0.00745427, 0.0296431, 0.0338739, 0.012485,  0.0135247, 0.0148336,</div>
+<div class="line"><span class="lineno">  337</span>                                 0.018856,   0.0276796, 0.0349766, 0.0105696, 0.0103713};</div>
+<div class="line"><span class="lineno">  338</span> </div>
+<div class="line"><span class="lineno">  339</span>    <span class="keywordflow">if</span> (simMarket-&gt;aggregationScenarioData()) {</div>
+<div class="line"><span class="lineno">  340</span>        QL_REQUIRE(dateGridString == <span class="stringliteral">&quot;10,1Y&quot;</span> || dateGridString == <span class="stringliteral">&quot;11,1Y&quot;</span>,</div>
+<div class="line"><span class="lineno">  341</span>                   <span class="stringliteral">&quot;date grid string &quot;</span> &lt;&lt; dateGridString &lt;&lt; <span class="stringliteral">&quot; unexpected&quot;</span>);</div>
+<div class="line"><span class="lineno">  342</span>        <span class="comment">// Reference scenario data:</span></div>
+<div class="line"><span class="lineno">  343</span>        Size dateIndex = 5;</div>
+<div class="line"><span class="lineno">  344</span>        Size maxSample = 10;</div>
+<div class="line"><span class="lineno">  345</span>        <span class="keywordtype">string</span> qualifier = <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>;</div>
+<div class="line"><span class="lineno">  346</span>        Real tolerance = 1.0e-6;</div>
+<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">for</span> (Size sampleIndex = 0; sampleIndex &lt;= maxSample; ++sampleIndex) {</div>
+<div class="line"><span class="lineno">  348</span>            Real fix = simMarket-&gt;aggregationScenarioData()-&gt;get(dateIndex, sampleIndex,</div>
+<div class="line"><span class="lineno">  349</span>                                                                 AggregationScenarioDataType::IndexFixing, qualifier);</div>
+<div class="line"><span class="lineno">  350</span>            Real ref = referenceFixings[dateGridString][sampleIndex];</div>
+<div class="line"><span class="lineno">  351</span>            <span class="keywordflow">if</span> (fabs(fix - ref) &gt; tolerance)</div>
+<div class="line"><span class="lineno">  352</span>                BOOST_FAIL(<span class="stringliteral">&quot;Stored fixing differs from reference value, found &quot;</span> &lt;&lt; fix &lt;&lt; <span class="stringliteral">&quot;, expected &quot;</span> &lt;&lt; ref);</div>
+<div class="line"><span class="lineno">  353</span>        }</div>
+<div class="line"><span class="lineno">  354</span>    }</div>
+<div class="line"><span class="lineno">  355</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_sim_market_parameters_html"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_sim_market_parameters.html">ore::analytics::ScenarioSimMarketParameters</a></div><div class="ttdoc">ScenarioSimMarket description.</div><div class="ttdef"><b>Definition:</b> <a href="scenariosimmarketparameters_8hpp_source.html#l00047">scenariosimmarketparameters.hpp:47</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_simple_scenario_factory_html"><div class="ttname"><a href="classore_1_1analytics_1_1_simple_scenario_factory.html">ore::analytics::SimpleScenarioFactory</a></div><div class="ttdoc">Factory class for building simple scenario objects.</div><div class="ttdef"><b>Definition:</b> <a href="simplescenariofactory_8hpp_source.html#l00036">simplescenariofactory.hpp:36</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_valuation_engine_html"><div class="ttname"><a href="classore_1_1analytics_1_1_valuation_engine.html">ore::analytics::ValuationEngine</a></div><div class="ttdoc">Valuation Engine.</div><div class="ttdef"><b>Definition:</b> <a href="valuationengine_8hpp_source.html#l00058">valuationengine.hpp:58</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_valuation_engine_html"><div class="ttname"><a href="classore_1_1analytics_1_1_valuation_engine.html">ore::analytics::ValuationEngine</a></div><div class="ttdoc">Valuation Engine.</div><div class="ttdef"><b>Definition:</b> <a href="valuationengine_8hpp_source.html#l00069">valuationengine.hpp:69</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_cross_asset_model_builder_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_cross_asset_model_builder.html">ore::data::CrossAssetModelBuilder</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_lgm_data_html_a85128cf8fffb22eea15b6db0929ffb43"><div class="ttname"><a href="../ored/classore_1_1data_1_1_lgm_data.html#a85128cf8fffb22eea15b6db0929ffb43">ore::data::LgmData::ReversionType</a></div><div class="ttdeci">ReversionType</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_lgm_data_html_a8b2aa10016abb1ffb6f55484a04a5143"><div class="ttname"><a href="../ored/classore_1_1data_1_1_lgm_data.html#a8b2aa10016abb1ffb6f55484a04a5143">ore::data::LgmData::VolatilityType</a></div><div class="ttdeci">VolatilityType</div></div>
@@ -541,10 +544,9 @@ Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#ad24847236b96716fc0b97aaa04c64e94" title="Build NPV cube." alt="" coords="135,101,297,141"/>
 <area shape="rect" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8" title=" " alt="" coords="168,166,264,191"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="351,5,523,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="355,69,518,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="353,133,520,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="355,69,518,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="353,133,520,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="345,197,528,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="576,77,707,102"/>
 </map>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -577,17 +579,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00358">358</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  358</span>                                       {</div>
-<div class="line"><span class="lineno">  359</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Disable);</div>
-<div class="line"><span class="lineno">  360</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
-<div class="line"><span class="lineno">  361</span> </div>
-<div class="line"><span class="lineno">  362</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Short Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  363</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00361">361</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  361</span>                                       {</div>
+<div class="line"><span class="lineno">  362</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Disable);</div>
+<div class="line"><span class="lineno">  363</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
 <div class="line"><span class="lineno">  364</span> </div>
-<div class="line"><span class="lineno">  365</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Short Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  366</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  367</span>}</div>
+<div class="line"><span class="lineno">  365</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Short Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  366</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Short Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  369</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  370</span>}</div>
 <div class="ttc" id="aobservationmode_8cpp_html_a22c7ce04290eadc22d9547613b4ffe44"><div class="ttname"><a href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a></div><div class="ttdeci">void simulation(string dateGridString, bool checkFixings)</div><div class="ttdef"><b>Definition:</b> <a href="observationmode_8cpp_source.html#l00147">observationmode.cpp:147</a></div></div>
 <div class="ttc" id="aobservationmode_8cpp_html_aa4097b5644f3a3d744f694d1281f5b73"><div class="ttname"><a href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a></div><div class="ttdeci">void setConventions()</div><div class="ttdef"><b>Definition:</b> <a href="observationmode_8cpp_source.html#l00070">observationmode.cpp:70</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -603,10 +605,9 @@ Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#ad24847236b96716fc0b97aaa04c64e94" title="Build NPV cube." alt="" coords="403,101,565,141"/>
 <area shape="rect" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8" title=" " alt="" coords="436,166,532,191"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="619,5,791,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="623,69,786,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="621,133,788,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="623,69,786,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="621,133,788,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="613,197,796,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="844,77,975,102"/>
 </map>
 </div>
 
@@ -628,17 +629,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00369">369</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  369</span>                                      {</div>
-<div class="line"><span class="lineno">  370</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Disable);</div>
-<div class="line"><span class="lineno">  371</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
-<div class="line"><span class="lineno">  372</span> </div>
-<div class="line"><span class="lineno">  373</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Long Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  374</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00372">372</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  372</span>                                      {</div>
+<div class="line"><span class="lineno">  373</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Disable);</div>
+<div class="line"><span class="lineno">  374</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
 <div class="line"><span class="lineno">  375</span> </div>
-<div class="line"><span class="lineno">  376</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Long Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  377</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  378</span>}</div>
+<div class="line"><span class="lineno">  376</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Long Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  377</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  378</span> </div>
+<div class="line"><span class="lineno">  379</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Disable, Long Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  380</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  381</span>}</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -652,10 +653,9 @@ Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#ad24847236b96716fc0b97aaa04c64e94" title="Build NPV cube." alt="" coords="403,101,565,141"/>
 <area shape="rect" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8" title=" " alt="" coords="436,166,532,191"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="619,5,791,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="623,69,786,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="621,133,788,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="623,69,786,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="621,133,788,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="613,197,796,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="844,77,975,102"/>
 </map>
 </div>
 
@@ -677,23 +677,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00380">380</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  380</span>                               {</div>
-<div class="line"><span class="lineno">  381</span>    ObservationMode::instance().setMode(ObservationMode::Mode::None);</div>
-<div class="line"><span class="lineno">  382</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
-<div class="line"><span class="lineno">  383</span> </div>
-<div class="line"><span class="lineno">  384</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Short Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  385</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00383">383</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  383</span>                               {</div>
+<div class="line"><span class="lineno">  384</span>    ObservationMode::instance().setMode(ObservationMode::Mode::None);</div>
+<div class="line"><span class="lineno">  385</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
 <div class="line"><span class="lineno">  386</span> </div>
-<div class="line"><span class="lineno">  387</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Short Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  388</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  387</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Short Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  388</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  389</span> </div>
-<div class="line"><span class="lineno">  390</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Long Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  391</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  390</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Short Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  391</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  392</span> </div>
-<div class="line"><span class="lineno">  393</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Long Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  394</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  395</span>}</div>
+<div class="line"><span class="lineno">  393</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Long Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  394</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  395</span> </div>
+<div class="line"><span class="lineno">  396</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode None, Long Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  397</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  398</span>}</div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -707,10 +707,9 @@ Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#ad24847236b96716fc0b97aaa04c64e94" title="Build NPV cube." alt="" coords="403,101,565,141"/>
 <area shape="rect" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8" title=" " alt="" coords="436,166,532,191"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="619,5,791,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="623,69,786,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="621,133,788,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="623,69,786,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="621,133,788,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="613,197,796,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="844,77,975,102"/>
 </map>
 </div>
 
@@ -732,23 +731,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00397">397</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  397</span>                                     {</div>
-<div class="line"><span class="lineno">  398</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Unregister);</div>
-<div class="line"><span class="lineno">  399</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
-<div class="line"><span class="lineno">  400</span> </div>
-<div class="line"><span class="lineno">  401</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Long Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  402</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00400">400</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  400</span>                                     {</div>
+<div class="line"><span class="lineno">  401</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Unregister);</div>
+<div class="line"><span class="lineno">  402</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
 <div class="line"><span class="lineno">  403</span> </div>
-<div class="line"><span class="lineno">  404</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Long Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  405</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  404</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Long Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  405</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  406</span> </div>
-<div class="line"><span class="lineno">  407</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Short Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  408</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  407</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Long Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  408</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  409</span> </div>
-<div class="line"><span class="lineno">  410</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Short Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  411</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  412</span>}</div>
+<div class="line"><span class="lineno">  410</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Short Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  411</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  412</span> </div>
+<div class="line"><span class="lineno">  413</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Unregister, Short Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  414</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  415</span>}</div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -762,10 +761,9 @@ Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#ad24847236b96716fc0b97aaa04c64e94" title="Build NPV cube." alt="" coords="403,101,565,141"/>
 <area shape="rect" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8" title=" " alt="" coords="436,166,532,191"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="619,5,791,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="623,69,786,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="621,133,788,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="623,69,786,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="621,133,788,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="613,197,796,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="844,77,975,102"/>
 </map>
 </div>
 
@@ -787,23 +785,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00414">414</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  414</span>                                {</div>
-<div class="line"><span class="lineno">  415</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Defer);</div>
-<div class="line"><span class="lineno">  416</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
-<div class="line"><span class="lineno">  417</span> </div>
-<div class="line"><span class="lineno">  418</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Long Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  419</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<p class="definition">Definition at line <a class="el" href="observationmode_8cpp_source.html#l00417">417</a> of file <a class="el" href="observationmode_8cpp_source.html">observationmode.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  417</span>                                {</div>
+<div class="line"><span class="lineno">  418</span>    ObservationMode::instance().setMode(ObservationMode::Mode::Defer);</div>
+<div class="line"><span class="lineno">  419</span>    <a class="code hl_function" href="observationmode_8cpp.html#aa4097b5644f3a3d744f694d1281f5b73">setConventions</a>();</div>
 <div class="line"><span class="lineno">  420</span> </div>
-<div class="line"><span class="lineno">  421</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Long Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  422</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  421</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Long Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  422</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">  423</span> </div>
-<div class="line"><span class="lineno">  424</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Short Grid, No Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  425</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  424</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Long Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  425</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;11,1Y&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  426</span> </div>
-<div class="line"><span class="lineno">  427</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Short Grid, With Fixing Checks&quot;</span>);</div>
-<div class="line"><span class="lineno">  428</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  429</span>}</div>
+<div class="line"><span class="lineno">  427</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Short Grid, No Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  428</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  429</span> </div>
+<div class="line"><span class="lineno">  430</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Observation Mode Defer, Short Grid, With Fixing Checks&quot;</span>);</div>
+<div class="line"><span class="lineno">  431</span>    <a class="code hl_function" href="observationmode_8cpp.html#a22c7ce04290eadc22d9547613b4ffe44">simulation</a>(<span class="stringliteral">&quot;10,1Y&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  432</span>}</div>
 </div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -817,10 +815,9 @@ Functions</h2></td></tr>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#ad24847236b96716fc0b97aaa04c64e94" title="Build NPV cube." alt="" coords="403,101,565,141"/>
 <area shape="rect" href="observationmode_8cpp.html#af3f8b9c3a9b05fb1b71a831183d108b8" title=" " alt="" coords="436,166,532,191"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="619,5,791,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="623,69,786,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="621,133,788,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="623,69,786,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="621,133,788,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="613,197,796,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="844,77,975,102"/>
 </map>
 </div>
 

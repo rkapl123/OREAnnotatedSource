@@ -310,7 +310,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  216</span> </div>
 <div class="line"><span class="lineno">  217</span>    <span class="comment">// Read in the expected pillar results for the given date.</span></div>
 <div class="line"><span class="lineno">  218</span>    vector&lt;Date&gt; expPillarDates;</div>
-<div class="line"><span class="lineno">  219</span>    <span class="keywordtype">string</span> filename = testCase.name + <span class="stringliteral">&quot;/expected_&quot;</span> + <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(io::iso_date(testCase.asof)) + <span class="stringliteral">&quot;.csv&quot;</span>;</div>
+<div class="line"><span class="lineno">  219</span>    <span class="keywordtype">string</span> filename = testCase.name + <span class="stringliteral">&quot;/expected_&quot;</span> + <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">to_string</a>(io::iso_date(testCase.asof)) + <span class="stringliteral">&quot;.csv&quot;</span>;</div>
 <div class="line"><span class="lineno">  220</span>    <a class="code hl_class" href="classore_1_1data_1_1_c_s_v_file_reader.html">CSVFileReader</a> reader(TEST_INPUT_FILE(filename), <span class="keyword">true</span>, <span class="stringliteral">&quot;,&quot;</span>);</div>
 <div class="line"><span class="lineno">  221</span>    BOOST_REQUIRE_EQUAL(reader.numberOfColumns(), 2);</div>
 <div class="line"><span class="lineno">  222</span> </div>
@@ -336,10 +336,10 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  242</span>    Real extrapPrice = pts-&gt;price(extrapDate);</div>
 <div class="line"><span class="lineno">  243</span>    BOOST_CHECK_SMALL(lastPrice - extrapPrice, tol);</div>
 <div class="line"><span class="lineno">  244</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_c_s_v_file_reader_html"><div class="ttname"><a href="classore_1_1data_1_1_c_s_v_file_reader.html">ore::data::CSVFileReader</a></div><div class="ttdef"><b>Definition:</b> <a href="csvfilereader_8hpp_source.html#l00037">csvfilereader.hpp:37</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_c_s_v_file_reader_html"><div class="ttname"><a href="classore_1_1data_1_1_c_s_v_file_reader.html">ore::data::CSVFileReader</a></div><div class="ttdef"><b>Definition:</b> <a href="csvfilereader_8hpp_source.html#l00076">csvfilereader.hpp:76</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga59b5fdda574d90facae95dec2d13040d"><div class="ttname"><a href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d">ore::data::parseDate</a></div><div class="ttdeci">Date parseDate(const string &amp;s)</div><div class="ttdoc">Convert std::string to QuantLib::Date.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00052">parsers.cpp:52</a></div></div>
 <div class="ttc" id="agroup__utilities_html_gad1db2a68f9a73667c3b4084d63955bdd"><div class="ttname"><a href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd">ore::data::parseReal</a></div><div class="ttdeci">Real parseReal(const string &amp;s)</div><div class="ttdoc">Convert text to Real.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00113">parsers.cpp:113</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -348,14 +348,15 @@ Variables</h2></td></tr>
 <div class="center"><img src="test_2commoditycurve_8cpp_a64a3926b601ac871e7307d93a5e8cadc_cgraph.png" border="0" usemap="#atest_2commoditycurve_8cpp_a64a3926b601ac871e7307d93a5e8cadc_cgraph" alt=""/></div>
 <map name="atest_2commoditycurve_8cpp_a64a3926b601ac871e7307d93a5e8cadc_cgraph" id="atest_2commoditycurve_8cpp_a64a3926b601ac871e7307d93a5e8cadc_cgraph">
 <area shape="rect" title=" " alt="" coords="5,168,196,193"/>
-<area shape="rect" href="classore_1_1data_1_1_c_s_v_file_reader.html#aed23150420de5ce8cf542c4e27a3b4c9" title=" " alt="" coords="244,5,440,31"/>
-<area shape="rect" href="classore_1_1data_1_1_c_s_v_file_reader.html#a80870c233d0237e3588a2d6f8d176916" title=" " alt="" coords="257,55,427,95"/>
-<area shape="rect" href="classore_1_1data_1_1_c_s_v_file_reader.html#a5ac635d6dba38476557d2dabec94406a" title=" " alt="" coords="257,119,427,159"/>
-<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="272,208,412,233"/>
-<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="273,281,411,307"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="277,355,407,380"/>
-<area shape="rect" href="classore_1_1data_1_1_c_s_v_file_reader.html#a5ae591df94fc66ccb85cbb6565368bca" title=" " alt="" coords="488,55,659,95"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="497,208,649,233"/>
+<area shape="rect" href="classore_1_1data_1_1_c_s_v_reader.html#aed23150420de5ce8cf542c4e27a3b4c9" title=" " alt="" coords="244,5,419,31"/>
+<area shape="rect" href="classore_1_1data_1_1_c_s_v_reader.html#a80870c233d0237e3588a2d6f8d176916" title=" " alt="" coords="257,55,406,95"/>
+<area shape="rect" href="classore_1_1data_1_1_c_s_v_reader.html#a5ac635d6dba38476557d2dabec94406a" title=" " alt="" coords="257,119,406,159"/>
+<area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="261,208,401,233"/>
+<area shape="rect" href="group__utilities.html#gad1db2a68f9a73667c3b4084d63955bdd" title="Convert text to Real." alt="" coords="262,281,401,307"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="266,355,397,380"/>
+<area shape="rect" href="classore_1_1data_1_1_c_s_v_reader.html#a47feccb1873356363e4d0e302bc3822c" title=" " alt="" coords="468,55,617,95"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="467,184,619,209"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="490,233,595,259"/>
 </map>
 </div>
 

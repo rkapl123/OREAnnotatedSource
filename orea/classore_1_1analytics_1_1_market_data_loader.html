@@ -278,7 +278,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  237</span>    QL_REQUIRE(!<a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_loader.html#a30e5fac48a57336fd1b2a5de559b5120">inputs_</a>-&gt;curveConfigs().empty(), <span class="stringliteral">&quot;Need at least one curve configuration to populate loader.&quot;</span>);</div>
 <div class="line"><span class="lineno">  238</span>    QL_REQUIRE(todaysMarketParameters.size() &gt; 0, <span class="stringliteral">&quot;No todaysMarketParams provided to populate market data loader.&quot;</span>);</div>
 <div class="line"><span class="lineno">  239</span> </div>
-<div class="line"><span class="lineno">  240</span>    <span class="comment">// for equitites check if we have corporate action data</span></div>
+<div class="line"><span class="lineno">  240</span>    <span class="comment">// for equities check if we have corporate action data</span></div>
 <div class="line"><span class="lineno">  241</span>    std::map&lt;std::string, std::string&gt; equities;</div>
 <div class="line"><span class="lineno">  242</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; tmp : todaysMarketParameters) {</div>
 <div class="line"><span class="lineno">  243</span>        <span class="keywordflow">if</span> (tmp-&gt;hasMarketObject(MarketObject::EquityCurve)) {</div>
@@ -417,7 +417,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  171</span>        <a class="code hl_typedef" href="namespaceore_1_1analytics.html#ad87cc618af14ca6052f32a20771c79cf">FixingMap</a> portfolioFixings;</div>
 <div class="line"><span class="lineno">  172</span>        std::map&lt;std::pair&lt;std::string, QuantLib::Date&gt;, std::set&lt;QuantLib::Date&gt;&gt; lastAvailableFixingLookupMap;</div>
 <div class="line"><span class="lineno">  173</span>        </div>
-<div class="line"><span class="lineno">  174</span>        <span class="comment">// portfolio fixings will warn if missinbg</span></div>
+<div class="line"><span class="lineno">  174</span>        <span class="comment">// portfolio fixings will warn if missing</span></div>
 <div class="line"><span class="lineno">  175</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_loader.html#a30e5fac48a57336fd1b2a5de559b5120">inputs_</a>-&gt;portfolio()) {</div>
 <div class="line"><span class="lineno">  176</span>            portfolioFixings = <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_loader.html#a30e5fac48a57336fd1b2a5de559b5120">inputs_</a>-&gt;portfolio()-&gt;fixings();</div>
 <div class="line"><span class="lineno">  177</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;The portfolio depends on fixings from &quot;</span> &lt;&lt; portfolioFixings.size() &lt;&lt; <span class="stringliteral">&quot; indices&quot;</span>);</div>

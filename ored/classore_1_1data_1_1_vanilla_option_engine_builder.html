@@ -353,7 +353,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  120</span>                                           <span class="keyword">const</span> Date&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(assetName, ccy, <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>, expiryDate);</div>
 <div class="line"><span class="lineno">  121</span>    }</div>
 <div class="ttc" id="aclassore_1_1data_1_1_caching_option_engine_builder_html_a54b9dabc759b8ee8e1482e5e0891ee6a"><div class="ttname"><a href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">ore::data::CachingOptionEngineBuilder&lt; string, const string &amp;, const Currency &amp;, const AssetClass &amp;, const Date &amp; &gt;::assetClass_</a></div><div class="ttdeci">AssetClass assetClass_</div><div class="ttdef"><b>Definition:</b> <a href="builders_2vanillaoption_8hpp_source.html#l00103">vanillaoption.hpp:103</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a257a26b87a296246c696d5931f88840e"><div class="ttname"><a href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a></div><div class="ttdeci">AssetClass</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8hpp_source.html#l00347">parsers.hpp:347</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a257a26b87a296246c696d5931f88840e"><div class="ttname"><a href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a></div><div class="ttdeci">AssetClass</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8hpp_source.html#l00359">parsers.hpp:359</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_aaf4d07dacc7ac10050de976387a15c1a"><div class="ttname"><a href="namespaceore_1_1data.html#aaf4d07dacc7ac10050de976387a15c1a">ore::data::CachingPricingEngineBuilder</a></div><div class="ttdeci">CachingEngineBuilder&lt; T, PricingEngine, Args... &gt; CachingPricingEngineBuilder</div><div class="ttdef"><b>Definition:</b> <a href="cachingenginebuilder_8hpp_source.html#l00083">cachingenginebuilder.hpp:83</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -468,9 +468,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="builders_2vanillaoption_8hpp_source.html#l00129">129</a> of file <a class="el" href="builders_2vanillaoption_8hpp_source.html">vanillaoption.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  130</span>                                                            {</div>
-<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span> assetName + <span class="stringliteral">&quot;/&quot;</span> + ccy.code() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(expiryDate);</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span> assetName + <span class="stringliteral">&quot;/&quot;</span> + ccy.code() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">to_string</a>(expiryDate);</div>
 <div class="line"><span class="lineno">  132</span>    }</div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -479,7 +479,7 @@ Protected Attributes</h2></td></tr>
 <div class="center"><img src="classore_1_1data_1_1_vanilla_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_vanilla_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_vanilla_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph" id="aclassore_1_1data_1_1_vanilla_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,72,55"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="120,29,251,55"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="120,29,251,55"/>
 </map>
 </div>
 

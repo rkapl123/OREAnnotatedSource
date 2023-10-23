@@ -86,7 +86,7 @@ $(function() {
 <p>cashflow-analysis functions in addition to those in <a class="el" href="namespace_quant_lib.html">QuantLib</a>  
  <a href="class_quant_ext_1_1_cash_flows.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="cashflows_8hpp_source.html">qle/cashflows/cashflows.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="cashflows_2cashflows_8hpp_source.html">qle/cashflows/cashflows.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CashFlows:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,7 +122,7 @@ Private Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >cashflow-analysis functions in addition to those in <a class="el" href="namespace_quant_lib.html">QuantLib</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="cashflows_8hpp_source.html#l00033">33</a> of file <a class="el" href="cashflows_8hpp_source.html">cashflows.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cashflows_2cashflows_8hpp_source.html#l00033">33</a> of file <a class="el" href="cashflows_2cashflows_8hpp_source.html">cashflows.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a48f48014b35fc99fd49086a6ce8d0421" name="a48f48014b35fc99fd49086a6ce8d0421"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48f48014b35fc99fd49086a6ce8d0421">&#9670;&#160;</a></span>CashFlows() <span class="overload">[1/2]</span></h2>
@@ -235,7 +235,7 @@ Private Member Functions</h2></td></tr>
 <li>Only applicable to <a class="el" href="class_floating_rate_coupon.html">FloatingRateCoupon</a>. Should be expanded if needed for other coupon types e.g. YoYInflationCoupon. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="cashflows_8cpp_source.html#l00027">27</a> of file <a class="el" href="cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cashflows_2cashflows_8cpp_source.html#l00027">27</a> of file <a class="el" href="cashflows_2cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>                                                             {</div>
 <div class="line"><span class="lineno">   29</span> </div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (leg.empty())</div>
@@ -261,7 +261,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   50</span> </div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_cash_flows.html#a5b27317dc8181c953f3f211306a7f53d">spreadNpv</a> / discountCurve.discount(npvDate);</div>
 <div class="line"><span class="lineno">   52</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_a5b27317dc8181c953f3f211306a7f53d"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#a5b27317dc8181c953f3f211306a7f53d">QuantExt::CashFlows::spreadNpv</a></div><div class="ttdeci">static Real spreadNpv(const Leg &amp;leg, const YieldTermStructure &amp;discountCurve, bool includeSettlementDateFlows, Date settlementDate=Date(), Date npvDate=Date())</div><div class="ttdoc">NPV due to any spreads on a leg.</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_8cpp_source.html#l00027">cashflows.cpp:27</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_a5b27317dc8181c953f3f211306a7f53d"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#a5b27317dc8181c953f3f211306a7f53d">QuantExt::CashFlows::spreadNpv</a></div><div class="ttdeci">static Real spreadNpv(const Leg &amp;leg, const YieldTermStructure &amp;discountCurve, bool includeSettlementDateFlows, Date settlementDate=Date(), Date npvDate=Date())</div><div class="ttdoc">NPV due to any spreads on a leg.</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_2cashflows_8cpp_source.html#l00027">cashflows.cpp:27</a></div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -327,7 +327,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Return the sum of the cashflows on <code>leg</code> after <code>startDate</code> and before or on <code>endDate</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="cashflows_8cpp_source.html#l00054">54</a> of file <a class="el" href="cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cashflows_2cashflows_8cpp_source.html#l00054">54</a> of file <a class="el" href="cashflows_2cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                                       {</div>
 <div class="line"><span class="lineno">   55</span> </div>
 <div class="line"><span class="lineno">   56</span>    <span class="comment">// Empty leg return 0</span></div>
@@ -343,7 +343,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   66</span>    }</div>
 <div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_cash_flows.html#a6e312c82ade6aa9cda780dba63eede7c">sumCashflows</a>;</div>
 <div class="line"><span class="lineno">   68</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_a6e312c82ade6aa9cda780dba63eede7c"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#a6e312c82ade6aa9cda780dba63eede7c">QuantExt::CashFlows::sumCashflows</a></div><div class="ttdeci">static Real sumCashflows(const Leg &amp;leg, const Date &amp;startDate, const Date &amp;endDate)</div><div class="ttdoc">Return the sum of the cashflows on leg after startDate and before or on endDate.</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_8cpp_source.html#l00054">cashflows.cpp:54</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_a6e312c82ade6aa9cda780dba63eede7c"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#a6e312c82ade6aa9cda780dba63eede7c">QuantExt::CashFlows::sumCashflows</a></div><div class="ttdeci">static Real sumCashflows(const Leg &amp;leg, const Date &amp;startDate, const Date &amp;endDate)</div><div class="ttdoc">Return the sum of the cashflows on leg after startDate and before or on endDate.</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_2cashflows_8cpp_source.html#l00054">cashflows.cpp:54</a></div></div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -392,7 +392,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Return only the coupon rates from a <code>leg</code> i.e. only Cashflow that casts to <a class="el" href="class_coupon.html">Coupon</a> Maintains the order of the coupon rates </p>
 
-<p class="definition">Definition at line <a class="el" href="cashflows_8cpp_source.html#l00070">70</a> of file <a class="el" href="cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cashflows_2cashflows_8cpp_source.html#l00070">70</a> of file <a class="el" href="cashflows_2cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   70</span>                                                  {</div>
 <div class="line"><span class="lineno">   71</span> </div>
 <div class="line"><span class="lineno">   72</span>    vector&lt;Rate&gt; <a class="code hl_function" href="class_quant_ext_1_1_cash_flows.html#acf1566a59466f81724b08a2a4a27caf7">couponRates</a>;</div>
@@ -404,7 +404,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   78</span>    }</div>
 <div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_cash_flows.html#acf1566a59466f81724b08a2a4a27caf7">couponRates</a>;</div>
 <div class="line"><span class="lineno">   80</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_acf1566a59466f81724b08a2a4a27caf7"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#acf1566a59466f81724b08a2a4a27caf7">QuantExt::CashFlows::couponRates</a></div><div class="ttdeci">static std::vector&lt; Rate &gt; couponRates(const Leg &amp;leg)</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_8cpp_source.html#l00070">cashflows.cpp:70</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_acf1566a59466f81724b08a2a4a27caf7"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#acf1566a59466f81724b08a2a4a27caf7">QuantExt::CashFlows::couponRates</a></div><div class="ttdeci">static std::vector&lt; Rate &gt; couponRates(const Leg &amp;leg)</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_2cashflows_8cpp_source.html#l00070">cashflows.cpp:70</a></div></div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -453,7 +453,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Return the coupon rates multiplied by day count fraction from a <code>leg</code> i.e. only Cashflow that casts to <a class="el" href="class_coupon.html">Coupon</a>. Maintains the order of the coupon rates </p>
 
-<p class="definition">Definition at line <a class="el" href="cashflows_8cpp_source.html#l00082">82</a> of file <a class="el" href="cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cashflows_2cashflows_8cpp_source.html#l00082">82</a> of file <a class="el" href="cashflows_2cashflows_8cpp_source.html">cashflows.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   82</span>                                                     {</div>
 <div class="line"><span class="lineno">   83</span> </div>
 <div class="line"><span class="lineno">   84</span>    vector&lt;Rate&gt; <a class="code hl_function" href="class_quant_ext_1_1_cash_flows.html#a707bb3838eec1e5b65823e04989b7e10">couponDcfRates</a>;</div>
@@ -465,7 +465,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_cash_flows.html#a707bb3838eec1e5b65823e04989b7e10">couponDcfRates</a>;</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_a707bb3838eec1e5b65823e04989b7e10"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#a707bb3838eec1e5b65823e04989b7e10">QuantExt::CashFlows::couponDcfRates</a></div><div class="ttdeci">static std::vector&lt; Rate &gt; couponDcfRates(const Leg &amp;leg)</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_8cpp_source.html#l00082">cashflows.cpp:82</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_cash_flows_html_a707bb3838eec1e5b65823e04989b7e10"><div class="ttname"><a href="class_quant_ext_1_1_cash_flows.html#a707bb3838eec1e5b65823e04989b7e10">QuantExt::CashFlows::couponDcfRates</a></div><div class="ttdeci">static std::vector&lt; Rate &gt; couponDcfRates(const Leg &amp;leg)</div><div class="ttdef"><b>Definition:</b> <a href="cashflows_2cashflows_8cpp_source.html#l00082">cashflows.cpp:82</a></div></div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">

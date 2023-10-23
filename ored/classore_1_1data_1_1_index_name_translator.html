@@ -137,9 +137,9 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classore_1_1data_1_1_index_name_translator.html" title="IndexNameTranslator.">IndexNameTranslator</a>. </p>
-<p >Allows translating from QuantLib::Index::name() to the ORE name that parses to that index and vice versa. Supported indices are those that were processed by <a class="el" href="group__utilities.html#gac1ecdc5f20e7d73327bccd5f930f8782" title="Convert std::string to QuantLib::IborIndex.">parseIborIndex()</a> before. We can easily extend the index type coverage. TODO we might use this class to get rid of the "qlToOREIndexNames" maps in the leg builders, for this we need to cover all index types in the translator first. </p>
+<p >Allows translating from QuantLib::Index::name() to the ORE name that parses to that index and vice versa. </p>
 
-<p class="definition">Definition at line <a class="el" href="indexnametranslator_8hpp_source.html#l00043">43</a> of file <a class="el" href="indexnametranslator_8hpp_source.html">indexnametranslator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="indexnametranslator_8hpp_source.html#l00039">39</a> of file <a class="el" href="indexnametranslator_8hpp_source.html">indexnametranslator.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2f029ee75801afdf3bc2cf1c9ee75499" name="a2f029ee75801afdf3bc2cf1c9ee75499"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f029ee75801afdf3bc2cf1c9ee75499">&#9670;&#160;</a></span>oreName()</h2>
@@ -163,12 +163,14 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>                                                                    {</div>
 <div class="line"><span class="lineno">   28</span>    boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
 <div class="line"><span class="lineno">   29</span>    <span class="keyword">auto</span> n = <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.left.find(<a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">qlName</a>);</div>
-<div class="line"><span class="lineno">   30</span>    QL_REQUIRE(n != <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.left.end(), <span class="stringliteral">&quot;IndexNameTranslator: qlName &#39;&quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">qlName</a> &lt;&lt; <span class="stringliteral">&quot;&#39; not found.&quot;</span>);</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span> n-&gt;second;</div>
-<div class="line"><span class="lineno">   32</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_index_name_translator_html_a129b28ed3733972e8c3eacb718912507"><div class="ttname"><a href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">ore::data::IndexNameTranslator::data_</a></div><div class="ttdeci">boost::bimap&lt; std::string, std::string &gt; data_</div><div class="ttdef"><b>Definition:</b> <a href="indexnametranslator_8hpp_source.html#l00058">indexnametranslator.hpp:58</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_index_name_translator_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::IndexNameTranslator::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="indexnametranslator_8hpp_source.html#l00059">indexnametranslator.hpp:59</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_index_name_translator_html_af63dca04d592a404524bffa894d36e53"><div class="ttname"><a href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">ore::data::IndexNameTranslator::qlName</a></div><div class="ttdeci">std::string qlName(const std::string &amp;oreName) const</div><div class="ttdoc">throws if oreName is not known</div><div class="ttdef"><b>Definition:</b> <a href="indexnametranslator_8cpp_source.html#l00034">indexnametranslator.cpp:34</a></div></div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (n == <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.left.end())</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">qlName</a>;</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> n-&gt;second;</div>
+<div class="line"><span class="lineno">   34</span>}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_index_name_translator_html_a129b28ed3733972e8c3eacb718912507"><div class="ttname"><a href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">ore::data::IndexNameTranslator::data_</a></div><div class="ttdeci">boost::bimap&lt; std::string, std::string &gt; data_</div><div class="ttdef"><b>Definition:</b> <a href="indexnametranslator_8hpp_source.html#l00054">indexnametranslator.hpp:54</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_index_name_translator_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::IndexNameTranslator::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="indexnametranslator_8hpp_source.html#l00055">indexnametranslator.hpp:55</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_index_name_translator_html_af63dca04d592a404524bffa894d36e53"><div class="ttname"><a href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">ore::data::IndexNameTranslator::qlName</a></div><div class="ttdeci">std::string qlName(const std::string &amp;oreName) const</div><div class="ttdoc">throws if oreName is not known</div><div class="ttdef"><b>Definition:</b> <a href="indexnametranslator_8cpp_source.html#l00036">indexnametranslator.cpp:36</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -213,13 +215,13 @@ Private Attributes</h2></td></tr>
 
 <p>throws if oreName is not known </p>
 
-<p class="definition">Definition at line <a class="el" href="indexnametranslator_8cpp_source.html#l00034">34</a> of file <a class="el" href="indexnametranslator_8cpp_source.html">indexnametranslator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                                    {</div>
-<div class="line"><span class="lineno">   35</span>    boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keyword">auto</span> n = <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.right.find(<a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a>);</div>
-<div class="line"><span class="lineno">   37</span>    QL_REQUIRE(n != <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.right.end(), <span class="stringliteral">&quot;IndexNameTranslator: oreName &#39;&quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a> &lt;&lt; <span class="stringliteral">&quot;&#39; not found.&quot;</span>);</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> n-&gt;second;</div>
-<div class="line"><span class="lineno">   39</span>}</div>
+<p class="definition">Definition at line <a class="el" href="indexnametranslator_8cpp_source.html#l00036">36</a> of file <a class="el" href="indexnametranslator_8cpp_source.html">indexnametranslator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                                                    {</div>
+<div class="line"><span class="lineno">   37</span>    boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keyword">auto</span> n = <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.right.find(<a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a>);</div>
+<div class="line"><span class="lineno">   39</span>    QL_REQUIRE(n != <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.right.end(), <span class="stringliteral">&quot;IndexNameTranslator: oreName &#39;&quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a> &lt;&lt; <span class="stringliteral">&quot;&#39; not found.&quot;</span>);</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> n-&gt;second;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_index_name_translator_html_a2f029ee75801afdf3bc2cf1c9ee75499"><div class="ttname"><a href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">ore::data::IndexNameTranslator::oreName</a></div><div class="ttdeci">std::string oreName(const std::string &amp;qlName) const</div><div class="ttdoc">throws if qlName is not known</div><div class="ttdef"><b>Definition:</b> <a href="indexnametranslator_8cpp_source.html#l00027">indexnametranslator.cpp:27</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -275,13 +277,13 @@ Private Attributes</h2></td></tr>
 
 <p>adds a pair to the mapping </p>
 
-<p class="definition">Definition at line <a class="el" href="indexnametranslator_8cpp_source.html#l00041">41</a> of file <a class="el" href="indexnametranslator_8cpp_source.html">indexnametranslator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>                                                                               {</div>
-<div class="line"><span class="lineno">   42</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.insert(boost::bimap&lt;std::string, std::string&gt;::value_type(<a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">qlName</a>, <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a>));</div>
-<div class="line"><span class="lineno">   44</span>    <a class="code hl_define" href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(<span class="stringliteral">&quot;IndexNameTranslator: adding &#39;&quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">qlName</a> &lt;&lt; <span class="stringliteral">&quot;&#39; &lt;-&gt; &#39;&quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a> &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><span class="lineno">   45</span>}</div>
-<div class="ttc" id="alog_8hpp_html_a99aeca53f904c71a68070e1f9d310232"><div class="ttname"><a href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a></div><div class="ttdeci">#define TLOG(text)</div><div class="ttdoc">Logging Macro (Level = Data)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00370">log.hpp:370</a></div></div>
+<p class="definition">Definition at line <a class="el" href="indexnametranslator_8cpp_source.html#l00043">43</a> of file <a class="el" href="indexnametranslator_8cpp_source.html">indexnametranslator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                                                               {</div>
+<div class="line"><span class="lineno">   44</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.insert(boost::bimap&lt;std::string, std::string&gt;::value_type(<a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">qlName</a>, <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a>));</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_define" href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a>(<span class="stringliteral">&quot;IndexNameTranslator: adding &#39;&quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53">qlName</a> &lt;&lt; <span class="stringliteral">&quot;&#39; &lt;-&gt; &#39;&quot;</span> &lt;&lt; <a class="code hl_function" href="classore_1_1data_1_1_index_name_translator.html#a2f029ee75801afdf3bc2cf1c9ee75499">oreName</a> &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><span class="lineno">   47</span>}</div>
+<div class="ttc" id="alog_8hpp_html_a99aeca53f904c71a68070e1f9d310232"><div class="ttname"><a href="log_8hpp.html#a99aeca53f904c71a68070e1f9d310232">TLOG</a></div><div class="ttdeci">#define TLOG(text)</div><div class="ttdoc">Logging Macro (Level = Data)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00510">log.hpp:510</a></div></div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -314,11 +316,11 @@ Private Attributes</h2></td></tr>
 
 <p>clears the mapping </p>
 
-<p class="definition">Definition at line <a class="el" href="indexnametranslator_8cpp_source.html#l00047">47</a> of file <a class="el" href="indexnametranslator_8cpp_source.html">indexnametranslator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>                                {</div>
-<div class="line"><span class="lineno">   48</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">   49</span>    <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.clear();</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<p class="definition">Definition at line <a class="el" href="indexnametranslator_8cpp_source.html#l00049">49</a> of file <a class="el" href="indexnametranslator_8cpp_source.html">indexnametranslator.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                {</div>
+<div class="line"><span class="lineno">   50</span>    boost::unique_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_variable" href="classore_1_1data_1_1_index_name_translator.html#a129b28ed3733972e8c3eacb718912507">data_</a>.clear();</div>
+<div class="line"><span class="lineno">   52</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -343,7 +345,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="indexnametranslator_8hpp_source.html#l00058">58</a> of file <a class="el" href="indexnametranslator_8hpp_source.html">indexnametranslator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="indexnametranslator_8hpp_source.html#l00054">54</a> of file <a class="el" href="indexnametranslator_8hpp_source.html">indexnametranslator.hpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +369,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="indexnametranslator_8hpp_source.html#l00059">59</a> of file <a class="el" href="indexnametranslator_8hpp_source.html">indexnametranslator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="indexnametranslator_8hpp_source.html#l00055">55</a> of file <a class="el" href="indexnametranslator_8hpp_source.html">indexnametranslator.hpp</a>.</p>
 
 </div>
 </div>

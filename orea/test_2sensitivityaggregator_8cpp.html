@@ -278,7 +278,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  155</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing general aggregation using sets of trades for categories&quot;</span>);</div>
 <div class="line"><span class="lineno">  156</span> </div>
 <div class="line"><span class="lineno">  157</span>    <span class="comment">// Streamer</span></div>
-<div class="line"><span class="lineno">  158</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_sensitivity_in_memory_stream.html">SensitivityInMemoryStream</a> ss(records);</div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_sensitivity_in_memory_stream.html">SensitivityInMemoryStream</a> ss(records.begin(), records.end());</div>
 <div class="line"><span class="lineno">  159</span> </div>
 <div class="line"><span class="lineno">  160</span>    <span class="comment">// Categories for aggregator</span></div>
 <div class="line"><span class="lineno">  161</span>    map&lt;string, set&lt;std::pair&lt;std::string, QuantLib::Size&gt;&gt;&gt; categories;</div>
@@ -360,7 +360,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  197</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing general aggregation using functions for categories&quot;</span>);</div>
 <div class="line"><span class="lineno">  198</span> </div>
 <div class="line"><span class="lineno">  199</span>    <span class="comment">// Streamer</span></div>
-<div class="line"><span class="lineno">  200</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_sensitivity_in_memory_stream.html">SensitivityInMemoryStream</a> ss(records);</div>
+<div class="line"><span class="lineno">  200</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_sensitivity_in_memory_stream.html">SensitivityInMemoryStream</a> ss(records.begin(), records.end());</div>
 <div class="line"><span class="lineno">  201</span> </div>
 <div class="line"><span class="lineno">  202</span>    <span class="comment">// Category functions for aggregator</span></div>
 <div class="line"><span class="lineno">  203</span>    map&lt;string, function&lt;<a class="code hl_class" href="classbool.html">bool</a>(<span class="keywordtype">string</span>)&gt;&gt; categories;</div>

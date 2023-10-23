@@ -175,11 +175,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="inflationindexwrapper_8cpp_source.html#l00064">64</a> of file <a class="el" href="inflationindexwrapper_8cpp_source.html">inflationindexwrapper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>    : YoYInflationIndex(<a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>-&gt;familyName(), <a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>-&gt;region(), <a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>-&gt;revised(), interpolated, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">   67</span>                        <a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>-&gt;frequency(), <a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>-&gt;availabilityLag(), <a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>-&gt;currency(), ts),</div>
-<div class="line"><span class="lineno">   68</span>      <a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>(<a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>) {</div>
-<div class="line"><span class="lineno">   69</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>);</div>
-<div class="line"><span class="lineno">   70</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>    : YoYInflationIndex(<a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>, interpolated, ts),</div>
+<div class="line"><span class="lineno">   67</span>      <a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>(<a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">zeroIndex</a>) {</div>
+<div class="line"><span class="lineno">   68</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>);</div>
+<div class="line"><span class="lineno">   69</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_yo_y_inflation_index_wrapper_html_ab6794d5734f14ef0b9af46eb13bcc936"><div class="ttname"><a href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">QuantExt::YoYInflationIndexWrapper::zeroIndex_</a></div><div class="ttdeci">const boost::shared_ptr&lt; ZeroInflationIndex &gt; zeroIndex_</div><div class="ttdef"><b>Definition:</b> <a href="inflationindexwrapper_8hpp_source.html#l00077">inflationindexwrapper.hpp:77</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_yo_y_inflation_index_wrapper_html_aedbda96e2e8da3357927230ecf9fb3ef"><div class="ttname"><a href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#aedbda96e2e8da3357927230ecf9fb3ef">QuantExt::YoYInflationIndexWrapper::zeroIndex</a></div><div class="ttdeci">const boost::shared_ptr&lt; ZeroInflationIndex &gt; zeroIndex() const</div><div class="ttdef"><b>Definition:</b> <a href="inflationindexwrapper_8hpp_source.html#l00073">inflationindexwrapper.hpp:73</a></div></div>
 </div><!-- fragment -->
@@ -219,20 +218,20 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000028">Warning:</a></b></dt><dd>the forecastTodaysFixing parameter (required by the Index interface) is currently ignored. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000026">Warning:</a></b></dt><dd>the forecastTodaysFixing parameter (required by the Index interface) is currently ignored. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="inflationindexwrapper_8cpp_source.html#l00072">72</a> of file <a class="el" href="inflationindexwrapper_8cpp_source.html">inflationindexwrapper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                          {</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>    <span class="comment">// duplicated logic from YoYInflationIndex, this would not be necessary, if forecastFixing</span></div>
-<div class="line"><span class="lineno">   75</span>    <span class="comment">// was defined virtual in InflationIndex</span></div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">if</span> (needsForecast(fixingDate)) {</div>
-<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#a53ea397c3ee438117a2e02cb7226eba1">forecastFixing</a>(fixingDate);</div>
-<div class="line"><span class="lineno">   78</span>    }</div>
-<div class="line"><span class="lineno">   79</span>    <span class="comment">// historical fixing</span></div>
-<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> YoYInflationIndex::fixing(fixingDate);</div>
-<div class="line"><span class="lineno">   81</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_yo_y_inflation_index_wrapper_html_a53ea397c3ee438117a2e02cb7226eba1"><div class="ttname"><a href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#a53ea397c3ee438117a2e02cb7226eba1">QuantExt::YoYInflationIndexWrapper::forecastFixing</a></div><div class="ttdeci">Rate forecastFixing(const Date &amp;fixingDate) const</div><div class="ttdef"><b>Definition:</b> <a href="inflationindexwrapper_8cpp_source.html#l00083">inflationindexwrapper.cpp:83</a></div></div>
+<p class="definition">Definition at line <a class="el" href="inflationindexwrapper_8cpp_source.html#l00071">71</a> of file <a class="el" href="inflationindexwrapper_8cpp_source.html">inflationindexwrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                                                                          {</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <span class="comment">// duplicated logic from YoYInflationIndex, this would not be necessary, if forecastFixing</span></div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// was defined virtual in InflationIndex</span></div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (needsForecast(fixingDate)) {</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#a53ea397c3ee438117a2e02cb7226eba1">forecastFixing</a>(fixingDate);</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// historical fixing</span></div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> YoYInflationIndex::fixing(fixingDate);</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+<div class="ttc" id="aclass_quant_ext_1_1_yo_y_inflation_index_wrapper_html_a53ea397c3ee438117a2e02cb7226eba1"><div class="ttname"><a href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#a53ea397c3ee438117a2e02cb7226eba1">QuantExt::YoYInflationIndexWrapper::forecastFixing</a></div><div class="ttdeci">Rate forecastFixing(const Date &amp;fixingDate) const</div><div class="ttdef"><b>Definition:</b> <a href="inflationindexwrapper_8cpp_source.html#l00082">inflationindexwrapper.cpp:82</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -291,15 +290,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inflationindexwrapper_8cpp_source.html#l00083">83</a> of file <a class="el" href="inflationindexwrapper_8cpp_source.html">inflationindexwrapper.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                                          {</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span> (!yoyInflationTermStructure().empty())</div>
-<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">return</span> YoYInflationIndex::fixing(fixingDate);</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keyword">auto</span> interpolation = YoYInflationIndex::interpolated() ? CPI::Linear : CPI::Flat;</div>
-<div class="line"><span class="lineno">   87</span>    Real f1 = CPI::laggedFixing(<a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>, fixingDate, 0 * Days, interpolation);</div>
-<div class="line"><span class="lineno">   88</span>    Real f0 = CPI::laggedFixing(<a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>, fixingDate - 1 * Years, 0 * Days, interpolation);</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> (f1 - f0) / f0;</div>
-<div class="line"><span class="lineno">   90</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inflationindexwrapper_8cpp_source.html#l00082">82</a> of file <a class="el" href="inflationindexwrapper_8cpp_source.html">inflationindexwrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                                                                          {</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (!yoyInflationTermStructure().empty())</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> YoYInflationIndex::fixing(fixingDate);</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keyword">auto</span> interpolation = YoYInflationIndex::interpolated() ? CPI::Linear : CPI::Flat;</div>
+<div class="line"><span class="lineno">   86</span>    Real f1 = CPI::laggedFixing(<a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>, fixingDate, 0 * Days, interpolation);</div>
+<div class="line"><span class="lineno">   87</span>    Real f0 = CPI::laggedFixing(<a class="code hl_variable" href="class_quant_ext_1_1_yo_y_inflation_index_wrapper.html#ab6794d5734f14ef0b9af46eb13bcc936">zeroIndex_</a>, fixingDate - 1 * Years, 0 * Days, interpolation);</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> (f1 - f0) / f0;</div>
+<div class="line"><span class="lineno">   89</span>}</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">

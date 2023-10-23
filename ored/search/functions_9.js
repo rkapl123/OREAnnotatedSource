@@ -2,8 +2,8 @@ var searchData=
 [
   ['joinlegs_0',['joinLegs',['../namespaceore_1_1data.html#ae5f7dc22d6672fa60603f499ae9150e4',1,'ore::data']]],
   ['jpyeytibor_1',['JPYEYTIBOR',['../../qle/class_quant_ext_1_1_j_p_y_e_y_t_i_b_o_r.html#af1b42a29e2f8d7bec9913fe70f36e8c0',1,'QuantExt::JPYEYTIBOR']]],
-  ['json_2',['json',['../classore_1_1data_1_1_structured_message.html#afc1d751eb76835ee82365ebfd1918a0d',1,'ore::data::StructuredMessage::json()'],['../classore_1_1data_1_1_event_message.html#afc1d751eb76835ee82365ebfd1918a0d',1,'ore::data::EventMessage::json()']]],
-  ['jsonify_3',['jsonify',['../classore_1_1data_1_1_structured_message.html#a726859e1b387b7c96aad436dc6ac0352',1,'ore::data::StructuredMessage::jsonify()'],['../classore_1_1data_1_1_event_message.html#a726859e1b387b7c96aad436dc6ac0352',1,'ore::data::EventMessage::jsonify()']]],
+  ['json_2',['json',['../classore_1_1data_1_1_j_s_o_n_message.html#a19cb55ffd43b5e8bf95a157227b3054a',1,'ore::data::JSONMessage']]],
+  ['jsonify_3',['jsonify',['../classore_1_1data_1_1_j_s_o_n_message.html#a211ebfb47581c2cadc6b8a331532623b',1,'ore::data::JSONMessage']]],
   ['jumpdates_4',['jumpDates',['../../qle/class_quant_ext_1_1_implied_default_term_structure.html#aadeb28a84d57202e59f6c98a5f69df0f',1,'QuantExt::ImpliedDefaultTermStructure']]],
   ['jumptimes_5',['jumpTimes',['../../qle/class_quant_ext_1_1_implied_default_term_structure.html#a84b5ea195161afa2eb59bb2b68c8dea8',1,'QuantExt::ImpliedDefaultTermStructure']]],
   ['jyexpectedindexratio_6',['jyExpectedIndexRatio',['../../qle/namespace_quant_ext.html#a7e12aefe352a1bf6698b418e6e58e35a',1,'QuantExt::jyExpectedIndexRatio(const boost::shared_ptr&lt; CrossAssetModel &gt; &amp;model, Size index, Time S, Time T, bool indexIsInterpolated)'],['../../qle/namespace_quant_ext.html#a0aab1e0d9b1745ec39ac965143b24f7a',1,'QuantExt::jyExpectedIndexRatio(const boost::shared_ptr&lt; CrossAssetModel &gt; &amp;model, QuantLib::Size index, QuantLib::Time S, QuantLib::Time T, bool indexIsInterpolated)']]],

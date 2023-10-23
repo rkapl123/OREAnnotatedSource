@@ -168,15 +168,27 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  129</span>        <span class="keyword">auto</span> portfolioFullIt = portfolio_full-&gt;trades().begin();</div>
 <div class="line"><span class="lineno">  130</span>        <span class="keyword">auto</span> portfolioWCIt = portfolio_wc-&gt;trades().begin();</div>
 <div class="line"><span class="lineno">  131</span> </div>
-<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; portfolio_full-&gt;trades().size(); i++) {</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; portfolio_full-&gt;trades().<a class="code hl_function" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">size</a>(); i++) {</div>
 <div class="line"><span class="lineno">  133</span>            BOOST_CHECK_CLOSE(portfolioFullIt-&gt;second-&gt;instrument()-&gt;NPV(), portfolioWCIt-&gt;second-&gt;instrument()-&gt;NPV(), 0.001);</div>
 <div class="line"><span class="lineno">  134</span>            portfolioFullIt++;</div>
 <div class="line"><span class="lineno">  135</span>            portfolioWCIt++;</div>
 <div class="line"><span class="lineno">  136</span>        }</div>
 <div class="line"><span class="lineno">  137</span>    }</div>
 <div class="line"><span class="lineno">  138</span>}</div>
+<div class="ttc" id="anamespaceore_1_1data_html_a777e216dee6069b548bb87da7152699e"><div class="ttname"><a href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">ore::data::size</a></div><div class="ttdeci">Size size(const ValueType &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2scripting_2value_8cpp_source.html#l00145">value.cpp:145</a></div></div>
 <div class="ttc" id="atest_2commodityvolcurve_8cpp_html_a96a582300d10244c7df851066de48438"><div class="ttname"><a href="test_2commodityvolcurve_8cpp.html#a96a582300d10244c7df851066de48438">curveConfigs</a></div><div class="ttdeci">vector&lt; string &gt; curveConfigs</div><div class="ttdef"><b>Definition:</b> <a href="test_2commodityvolcurve_8cpp_source.html#l00525">commodityvolcurve.cpp:525</a></div></div>
-</div><!-- fragment -->
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="test_2fxvolcurve_8cpp_ae9bae09009a28259fba7aa5aaf97a059_cgraph.png" border="0" usemap="#atest_2fxvolcurve_8cpp_ae9bae09009a28259fba7aa5aaf97a059_cgraph" alt=""/></div>
+<map name="atest_2fxvolcurve_8cpp_ae9bae09009a28259fba7aa5aaf97a059_cgraph" id="atest_2fxvolcurve_8cpp_ae9bae09009a28259fba7aa5aaf97a059_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,196,31"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="244,5,349,31"/>
+</map>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->

@@ -96,7 +96,7 @@ $(function() {
 <map name="a_cross_ccy_fix_float_mt_m_reset_swap_inherit__map" id="a_cross_ccy_fix_float_mt_m_reset_swap_inherit__map">
 <area shape="rect" title="Cross currency fix float MtM resettable swap." alt="" coords="5,445,228,1307"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_ccy_swap.html" title="Cross currency swap." alt="" coords="43,93,190,397"/>
-<area shape="rect" href="class_swap.html" title=" " alt="" coords="87,5,146,45"/>
+<area shape="rect" title=" " alt="" coords="87,5,146,45"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -108,7 +108,7 @@ $(function() {
 <map name="a_cross_ccy_fix_float_mt_m_reset_swap_coll__map" id="a_cross_ccy_fix_float_mt_m_reset_swap_coll__map">
 <area shape="rect" title="Cross currency fix float MtM resettable swap." alt="" coords="1016,665,1239,1233"/>
 <area shape="rect" href="class_quant_ext_1_1_cross_ccy_swap.html" title="Cross currency swap." alt="" coords="426,328,573,573"/>
-<area shape="rect" href="class_swap.html" title=" " alt="" coords="470,211,529,251"/>
+<area shape="rect" title=" " alt="" coords="470,211,529,251"/>
 <area shape="rect" title=" " alt="" coords="113,211,249,251"/>
 <area shape="rect" title=" " alt="" coords="5,108,84,148"/>
 <area shape="rect" title=" " alt="" coords="338,108,429,148"/>
@@ -1013,7 +1013,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  125</span>        Date aDate = <a class="code hl_variable" href="class_quant_ext_1_1_cross_ccy_fix_float_mt_m_reset_swap.html#abe55b923b813504c1b983ad42c29bd00">floatSchedule_</a>.dates().front();</div>
 <div class="line"><span class="lineno">  126</span>        aDate = <a class="code hl_variable" href="class_quant_ext_1_1_cross_ccy_fix_float_mt_m_reset_swap.html#aba0b0e48bb97d8d1dd13315ed10c7e59">floatPaymentCalendar_</a>.adjust(aDate, <a class="code hl_variable" href="class_quant_ext_1_1_cross_ccy_fix_float_mt_m_reset_swap.html#ae5032dbeb8f96befc2090e141224c9df">floatPaymentBdc_</a>);</div>
 <div class="line"><span class="lineno">  127</span>        boost::shared_ptr&lt;CashFlow&gt; aCashflow = boost::make_shared&lt;SimpleCashFlow&gt;(-floatNotional, aDate);</div>
-<div class="line"><span class="lineno">  128</span>        floatLeg.insert(fixedLeg.begin(), aCashflow);</div>
+<div class="line"><span class="lineno">  128</span>        floatLeg.insert(floatLeg.begin(), aCashflow);</div>
 <div class="line"><span class="lineno">  129</span> </div>
 <div class="line"><span class="lineno">  130</span>        <span class="comment">// Final notional exchange</span></div>
 <div class="line"><span class="lineno">  131</span>        aDate = fixedLeg.back()-&gt;date();</div>

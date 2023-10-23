@@ -134,7 +134,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00047">47</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00050">50</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a17da6eadc68fc3c2af2b35e77fb86c04" name="a17da6eadc68fc3c2af2b35e77fb86c04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17da6eadc68fc3c2af2b35e77fb86c04">&#9670;&#160;</a></span>getBuilders()</h2>
@@ -151,13 +151,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00053">53</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                                                 {</div>
-<div class="line"><span class="lineno">   54</span>        boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>;</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="ttc" id="aclassore_1_1data_1_1_trs_underlying_builder_factory_html_a587fb59b38db849f23c363e99c4255d3"><div class="ttname"><a href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">ore::data::TrsUnderlyingBuilderFactory::builders_</a></div><div class="ttdeci">map&lt; std::string, boost::shared_ptr&lt; TrsUnderlyingBuilder &gt; &gt; builders_</div><div class="ttdef"><b>Definition:</b> <a href="trsunderlyingbuilder_8hpp_source.html#l00049">trsunderlyingbuilder.hpp:49</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_trs_underlying_builder_factory_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::TrsUnderlyingBuilderFactory::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="trsunderlyingbuilder_8hpp_source.html#l00050">trsunderlyingbuilder.hpp:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00056">56</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                                                 {</div>
+<div class="line"><span class="lineno">   57</span>        boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>;</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="ttc" id="aclassore_1_1data_1_1_trs_underlying_builder_factory_html_a587fb59b38db849f23c363e99c4255d3"><div class="ttname"><a href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">ore::data::TrsUnderlyingBuilderFactory::builders_</a></div><div class="ttdeci">map&lt; std::string, boost::shared_ptr&lt; TrsUnderlyingBuilder &gt; &gt; builders_</div><div class="ttdef"><b>Definition:</b> <a href="trsunderlyingbuilder_8hpp_source.html#l00052">trsunderlyingbuilder.hpp:52</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_trs_underlying_builder_factory_html_ac2c85d824f3d1d5f619d8df25b46bcca"><div class="ttname"><a href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">ore::data::TrsUnderlyingBuilderFactory::mutex_</a></div><div class="ttdeci">boost::shared_mutex mutex_</div><div class="ttdef"><b>Definition:</b> <a href="trsunderlyingbuilder_8hpp_source.html#l00053">trsunderlyingbuilder.hpp:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -177,13 +177,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8cpp_source.html#l00034">34</a> of file <a class="el" href="trsunderlyingbuilder_8cpp_source.html">trsunderlyingbuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                                                                              {</div>
-<div class="line"><span class="lineno">   35</span>    boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keyword">auto</span> b = <a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>.find(tradeType);</div>
-<div class="line"><span class="lineno">   37</span>    QL_REQUIRE(b != <a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>.end(), <span class="stringliteral">&quot;TrsUnderlyingBuilderFactory::getBuilder(&quot;</span> &lt;&lt; tradeType &lt;&lt; <span class="stringliteral">&quot;): no builder found&quot;</span>);</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> b-&gt;second;</div>
-<div class="line"><span class="lineno">   39</span>}</div>
+<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8cpp_source.html#l00063">63</a> of file <a class="el" href="trsunderlyingbuilder_8cpp_source.html">trsunderlyingbuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                                                                                              {</div>
+<div class="line"><span class="lineno">   64</span>    boost::shared_lock&lt;boost::shared_mutex&gt; lock(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">auto</span> b = <a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>.find(tradeType);</div>
+<div class="line"><span class="lineno">   66</span>    QL_REQUIRE(b != <a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>.end(), <span class="stringliteral">&quot;TrsUnderlyingBuilderFactory::getBuilder(&quot;</span> &lt;&lt; tradeType &lt;&lt; <span class="stringliteral">&quot;): no builder found&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> b-&gt;second;</div>
+<div class="line"><span class="lineno">   68</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -219,12 +219,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8cpp_source.html#l00041">41</a> of file <a class="el" href="trsunderlyingbuilder_8cpp_source.html">trsunderlyingbuilder.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>                                                                        {</div>
-<div class="line"><span class="lineno">   44</span>    boost::unique_lock&lt;boost::shared_mutex&gt; locK(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
-<div class="line"><span class="lineno">   45</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>.insert(std::make_pair(tradeType, builder)).second || allowOverwrite,</div>
-<div class="line"><span class="lineno">   46</span>               <span class="stringliteral">&quot;TrsUnderlyingBuidlerFactory::addBuilder(&quot;</span> &lt;&lt; tradeType &lt;&lt; <span class="stringliteral">&quot;): builder for key already exists.&quot;</span>);</div>
-<div class="line"><span class="lineno">   47</span>}</div>
+<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8cpp_source.html#l00070">70</a> of file <a class="el" href="trsunderlyingbuilder_8cpp_source.html">trsunderlyingbuilder.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                        {</div>
+<div class="line"><span class="lineno">   73</span>    boost::unique_lock&lt;boost::shared_mutex&gt; locK(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#ac2c85d824f3d1d5f619d8df25b46bcca">mutex_</a>);</div>
+<div class="line"><span class="lineno">   74</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_trs_underlying_builder_factory.html#a587fb59b38db849f23c363e99c4255d3">builders_</a>.insert(std::make_pair(tradeType, builder)).second || allowOverwrite,</div>
+<div class="line"><span class="lineno">   75</span>               <span class="stringliteral">&quot;TrsUnderlyingBuidlerFactory::addBuilder(&quot;</span> &lt;&lt; tradeType &lt;&lt; <span class="stringliteral">&quot;): builder for key already exists.&quot;</span>);</div>
+<div class="line"><span class="lineno">   76</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,7 +249,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00049">49</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00052">52</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00050">50</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="trsunderlyingbuilder_8hpp_source.html#l00053">53</a> of file <a class="el" href="trsunderlyingbuilder_8hpp_source.html">trsunderlyingbuilder.hpp</a>.</p>
 
 </div>
 </div>

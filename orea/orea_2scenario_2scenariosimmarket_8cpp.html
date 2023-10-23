@@ -87,29 +87,8 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="observationmode_8hpp_source.html">orea/engine/observationmode.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="scenariosimmarket_8hpp_source.html">orea/scenario/scenariosimmarket.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="deltascenario_8hpp_source.html">orea/scenario/deltascenario.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="simplescenario_8hpp_source.html">orea/scenario/simplescenario.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/basecorrelationstructure_8hpp.html">qle/termstructures/credit/basecorrelationstructure.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/proxyoptionletvolatility_8hpp.html">qle/termstructures/proxyoptionletvolatility.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/proxyswaptionvolatility_8hpp.html">qle/termstructures/proxyswaptionvolatility.hpp</a>&gt;</code><br />
-<code>#include &lt;ql/instruments/makecapfloor.hpp&gt;</code><br />
-<code>#include &lt;ql/math/interpolations/loginterpolation.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/credit/interpolatedsurvivalprobabilitycurve.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/defaulttermstructure.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/capfloor/capfloortermvolatilitystructure.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/capfloor/capfloortermvolsurface.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/equityfx/blackvariancecurve.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/equityfx/blackvoltermstructure.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/optionlet/strippedoptionlet.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/optionlet/strippedoptionletadapter.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/swaption/swaptionconstantvol.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/swaption/swaptionvolcube.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/swaption/swaptionvolmatrix.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/volatility/swaption/swaptionvolstructure.hpp&gt;</code><br />
-<code>#include &lt;ql/termstructures/yield/discountcurve.hpp&gt;</code><br />
-<code>#include &lt;ql/time/calendars/target.hpp&gt;</code><br />
-<code>#include &lt;ql/time/calendars/weekendsonly.hpp&gt;</code><br />
-<code>#include &lt;ql/time/daycounters/actual365fixed.hpp&gt;</code><br />
-<code>#include &lt;ql/time/daycounters/actualactual.hpp&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../ored/curvespecparser_8hpp.html">ored/marketdata/curvespecparser.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../ored/structuredcurveerror_8hpp.html">ored/marketdata/structuredcurveerror.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../ored/indexnametranslator_8hpp.html">ored/utilities/indexnametranslator.hpp</a>&gt;</code><br />
@@ -122,16 +101,27 @@ $(function() {
 <code>#include &lt;<a class="elRef" href="../qle/inflationindexobserver_8hpp.html">qle/indexes/inflationindexobserver.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/inflationindexwrapper_8hpp.html">qle/indexes/inflationindexwrapper.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/makeoiscapfloor_8hpp.html">qle/instruments/makeoiscapfloor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/blackinvertedvoltermstructure_8hpp.html">qle/termstructures/blackinvertedvoltermstructure.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/blackvariancecurve3_8hpp.html">qle/termstructures/blackvariancecurve3.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/blackvariancesurfacestddevs_8hpp.html">qle/termstructures/blackvariancesurfacestddevs.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/blackvolconstantspread_8hpp.html">qle/termstructures/blackvolconstantspread.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/commoditybasispricecurvewrapper_8hpp.html">qle/termstructures/commoditybasispricecurvewrapper.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/basecorrelationstructure_8hpp.html">qle/termstructures/credit/basecorrelationstructure.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/spreadedbasecorrelationcurve_8hpp.html">qle/termstructures/credit/spreadedbasecorrelationcurve.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/dynamicblackvoltermstructure_8hpp.html">qle/termstructures/dynamicblackvoltermstructure.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/dynamiccpivolatilitystructure_8hpp.html">qle/termstructures/dynamiccpivolatilitystructure.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/dynamicoptionletvolatilitystructure_8hpp.html">qle/termstructures/dynamicoptionletvolatilitystructure.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/dynamicswaptionvolmatrix_8hpp.html">qle/termstructures/dynamicswaptionvolmatrix.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/dynamicyoyoptionletvolatilitystructure_8hpp.html">qle/termstructures/dynamicyoyoptionletvolatilitystructure.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/flatcorrelation_8hpp.html">qle/termstructures/flatcorrelation.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/interpolatedcorrelationcurve_8hpp.html">qle/termstructures/interpolatedcorrelationcurve.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/interpolatedcpivolatilitysurface_8hpp.html">qle/termstructures/interpolatedcpivolatilitysurface.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/interpolateddiscountcurve_8hpp.html">qle/termstructures/interpolateddiscountcurve.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/interpolateddiscountcurve2_8hpp.html">qle/termstructures/interpolateddiscountcurve2.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/pricecurve_8hpp.html">qle/termstructures/pricecurve.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/pricetermstructureadapter_8hpp.html">qle/termstructures/pricetermstructureadapter.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/proxyoptionletvolatility_8hpp.html">qle/termstructures/proxyoptionletvolatility.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/proxyswaptionvolatility_8hpp.html">qle/termstructures/proxyswaptionvolatility.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/spreadedblackvolatilitycurve_8hpp.html">qle/termstructures/spreadedblackvolatilitycurve.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/spreadedblackvolatilitysurfacemoneyness_8hpp.html">qle/termstructures/spreadedblackvolatilitysurfacemoneyness.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/spreadedcorrelationcurve_8hpp.html">qle/termstructures/spreadedcorrelationcurve.hpp</a>&gt;</code><br />
@@ -152,8 +142,26 @@ $(function() {
 <code>#include &lt;<a class="elRef" href="../qle/swaptionvolcubewithatm_8hpp.html">qle/termstructures/swaptionvolcubewithatm.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/yoyinflationcurveobservermoving_8hpp.html">qle/termstructures/yoyinflationcurveobservermoving.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/zeroinflationcurveobservermoving_8hpp.html">qle/termstructures/zeroinflationcurveobservermoving.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/commoditybasispricecurve_8hpp.html">qle/termstructures/commoditybasispricecurve.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="elRef" href="../qle/commoditybasispricecurvewrapper_8hpp.html">qle/termstructures/commoditybasispricecurvewrapper.hpp</a>&gt;</code><br />
+<code>#include &lt;ql/instruments/makecapfloor.hpp&gt;</code><br />
+<code>#include &lt;ql/math/interpolations/loginterpolation.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/credit/interpolatedsurvivalprobabilitycurve.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/defaulttermstructure.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/capfloor/capfloortermvolatilitystructure.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/capfloor/capfloortermvolsurface.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/equityfx/blackvariancecurve.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/equityfx/blackvoltermstructure.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/optionlet/strippedoptionlet.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/optionlet/strippedoptionletadapter.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/swaption/swaptionconstantvol.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/swaption/swaptionvolcube.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/swaption/swaptionvolmatrix.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/volatility/swaption/swaptionvolstructure.hpp&gt;</code><br />
+<code>#include &lt;ql/termstructures/yield/discountcurve.hpp&gt;</code><br />
+<code>#include &lt;ql/time/calendars/target.hpp&gt;</code><br />
+<code>#include &lt;ql/time/calendars/weekendsonly.hpp&gt;</code><br />
+<code>#include &lt;ql/time/daycounters/actual365fixed.hpp&gt;</code><br />
+<code>#include &lt;ql/time/daycounters/actualactual.hpp&gt;</code><br />
+<code>#include &lt;ql/quotes/compositequote.hpp&gt;</code><br />
 <code>#include &lt;boost/algorithm/string.hpp&gt;</code><br />
 <code>#include &lt;boost/timer/timer.hpp&gt;</code><br />
 </div>

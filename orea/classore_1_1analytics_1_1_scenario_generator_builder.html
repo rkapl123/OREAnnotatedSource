@@ -244,12 +244,18 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   49</span> </div>
 <div class="line"><span class="lineno">   50</span>    QL_REQUIRE(initMarket != NULL, <span class="stringliteral">&quot;ScenarioGeneratorBuilder: initMarket is null&quot;</span>);</div>
 <div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <span class="keyword">auto</span> pathGen = pf-&gt;build(<a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;sequenceType(), model-&gt;stateProcess(), <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;getGrid()-&gt;timeGrid(), <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;seed(),</div>
-<div class="line"><span class="lineno">   53</span>                             <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;ordering(), <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;directionIntegers());</div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> boost::make_shared&lt;CrossAssetModelScenarioGenerator&gt;(model, pathGen, scenarioFactory, marketConfig, <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>,</div>
-<div class="line"><span class="lineno">   56</span>                                                                <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;getGrid(), initMarket, configuration);</div>
-<div class="line"><span class="lineno">   57</span>}</div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// enable cache</span></div>
+<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span> process = model-&gt;stateProcess();</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span> tmp = boost::dynamic_pointer_cast&lt;CrossAssetStateProcess&gt;(process)) {</div>
+<div class="line"><span class="lineno">   55</span>        tmp-&gt;resetCache(<a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;getGrid()-&gt;timeGrid().size() - 1);</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <span class="keyword">auto</span> pathGen = pf-&gt;build(<a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;sequenceType(), process, <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;getGrid()-&gt;timeGrid(), <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;seed(),</div>
+<div class="line"><span class="lineno">   59</span>                             <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;ordering(), <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;directionIntegers());</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">return</span> boost::make_shared&lt;CrossAssetModelScenarioGenerator&gt;(model, pathGen, scenarioFactory, marketConfig, <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>,</div>
+<div class="line"><span class="lineno">   62</span>                                                                <a class="code hl_variable" href="classore_1_1analytics_1_1_scenario_generator_builder.html#a1582492b4925e5bf608858d98fa85ace">data_</a>-&gt;getGrid(), initMarket, configuration);</div>
+<div class="line"><span class="lineno">   63</span>}</div>
 <div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div></div>
 <div class="ttc" id="atest_2scenarioshiftcalculator_8cpp_html_a652b8805d9b88185e25574d4820660c4"><div class="ttname"><a href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a></div><div class="ttdeci">Date asof(14, Jun, 2018)</div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -270,16 +276,18 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1analytics_1_1_scenario_generator_builder_a2223dea59294ad4ccf98fcf182dc7031_icgraph.png" border="0" usemap="#aclassore_1_1analytics_1_1_scenario_generator_builder_a2223dea59294ad4ccf98fcf182dc7031_icgraph" alt=""/></div>
 <map name="aclassore_1_1analytics_1_1_scenario_generator_builder_a2223dea59294ad4ccf98fcf182dc7031_icgraph" id="aclassore_1_1analytics_1_1_scenario_generator_builder_a2223dea59294ad4ccf98fcf182dc7031_icgraph">
-<area shape="rect" title="Build function." alt="" coords="719,112,768,137"/>
+<area shape="rect" title="Build function." alt="" coords="719,155,768,180"/>
 <area shape="rect" href="scenariogenerator_8cpp.html#a2346d676af349b56f4801cddf8fbefa8" title=" " alt="" coords="470,5,661,31"/>
 <area shape="rect" href="amcbermudanswaption_8cpp.html#a2087323606b8822fa8f5d6fe9bf09b5f" title=" " alt="" coords="470,55,661,80"/>
-<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#abd21b6e09306678b9cc72d20534547ab" title=" " alt="" coords="471,105,660,145"/>
-<area shape="rect" href="classore_1_1analytics_1_1_xva_runner.html#a18e8a1ed57296b6ae93f2c1472d8d5a6" title=" " alt="" coords="460,169,671,209"/>
-<area shape="rect" href="simulationmeasures_8cpp.html#a2d28d9482c88b6bc30b9c883d3002303" title=" " alt="" coords="515,233,616,259"/>
-<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#afe30cd07f7a3f42e16a3d987440434ad" title=" " alt="" coords="229,105,404,145"/>
-<area shape="rect" href="classore_1_1analytics_1_1_xva_runner.html#a565c34174e8fb4fe3604b9989c1c3426" title=" " alt="" coords="233,169,401,209"/>
-<area shape="rect" href="classore_1_1analytics_1_1_xva_runner.html#a45d152f89bffd36303fd8e82aa562ef6" title=" " alt="" coords="5,169,173,209"/>
-<area shape="rect" href="simulationmeasures_8cpp.html#a56d91767dde8f498911de589448c2306" title=" " alt="" coords="221,233,412,259"/>
+<area shape="rect" href="classore_1_1analytics_1_1_scenario_statistics_analytic_impl.html#abd21b6e09306678b9cc72d20534547ab" title=" " alt="" coords="483,104,648,159"/>
+<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#abd21b6e09306678b9cc72d20534547ab" title=" " alt="" coords="471,183,660,223"/>
+<area shape="rect" href="classore_1_1analytics_1_1_xva_runner.html#a18e8a1ed57296b6ae93f2c1472d8d5a6" title=" " alt="" coords="460,247,671,287"/>
+<area shape="rect" href="simulationmeasures_8cpp.html#a2d28d9482c88b6bc30b9c883d3002303" title=" " alt="" coords="515,312,616,337"/>
+<area shape="rect" href="classore_1_1analytics_1_1_scenario_statistics_analytic_impl.html#afe30cd07f7a3f42e16a3d987440434ad" title=" " alt="" coords="237,104,396,159"/>
+<area shape="rect" href="classore_1_1analytics_1_1_xva_analytic_impl.html#afe30cd07f7a3f42e16a3d987440434ad" title=" " alt="" coords="229,183,404,223"/>
+<area shape="rect" href="classore_1_1analytics_1_1_xva_runner.html#a565c34174e8fb4fe3604b9989c1c3426" title=" " alt="" coords="233,247,401,287"/>
+<area shape="rect" href="classore_1_1analytics_1_1_xva_runner.html#a45d152f89bffd36303fd8e82aa562ef6" title=" " alt="" coords="5,247,173,287"/>
+<area shape="rect" href="simulationmeasures_8cpp.html#a56d91767dde8f498911de589448c2306" title=" " alt="" coords="221,312,412,337"/>
 </map>
 </div>
 

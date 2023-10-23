@@ -92,12 +92,15 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_exercise_builder__coll__graph.png" border="0" usemap="#a_exercise_builder_coll__map" alt="Collaboration graph"/></div>
 <map name="a_exercise_builder_coll__map" id="a_exercise_builder_coll__map">
-<area shape="rect" title=" " alt="" coords="81,343,219,441"/>
+<area shape="rect" title=" " alt="" coords="406,343,545,500"/>
 <area shape="rect" title=" " alt="" coords="5,211,156,265"/>
-<area shape="rect" title=" " alt="" coords="181,218,351,258"/>
-<area shape="rect" title=" " alt="" coords="191,108,245,148"/>
-<area shape="rect" title=" " alt="" coords="269,108,359,148"/>
-<area shape="rect" title=" " alt="" coords="295,5,333,45"/>
+<area shape="rect" title=" " alt="" coords="321,218,491,258"/>
+<area shape="rect" title=" " alt="" coords="231,108,285,148"/>
+<area shape="rect" title=" " alt="" coords="361,108,451,148"/>
+<area shape="rect" title=" " alt="" coords="387,5,425,45"/>
+<area shape="rect" href="classbool.html" title=" " alt="" coords="515,218,566,258"/>
+<area shape="rect" title=" " alt="" coords="591,211,741,265"/>
+<area shape="rect" title=" " alt="" coords="772,218,824,258"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -111,6 +114,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a058392c0250f6f8c76e379c1a2e1b7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7af1f6171f85151cf6354ffe0d41b2"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; QuantLib::Date &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a8b7af1f6171f85151cf6354ffe0d41b2">noticeDates</a> () const</td></tr>
 <tr class="separator:a8b7af1f6171f85151cf6354ffe0d41b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab136d362b4d7108e6bf34b716c0a11a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#aab136d362b4d7108e6bf34b716c0a11a">isExercised</a> () const</td></tr>
+<tr class="separator:aab136d362b4d7108e6bf34b716c0a11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06074e969d1719c291712897422bb1a1"><td class="memItemLeft" align="right" valign="top">const QuantLib::Date &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a06074e969d1719c291712897422bb1a1">exerciseDate</a> () const</td></tr>
+<tr class="separator:a06074e969d1719c291712897422bb1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9549fbe6139dc6adcf6f7f5d2d7ced11"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; QuantLib::CashFlow &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a9549fbe6139dc6adcf6f7f5d2d7ced11">cashSettlement</a> () const</td></tr>
+<tr class="separator:a9549fbe6139dc6adcf6f7f5d2d7ced11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28db83f5d84de69058b66a70acc52502"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; QuantLib::CashFlow &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a28db83f5d84de69058b66a70acc52502">feeSettlement</a> () const</td></tr>
+<tr class="separator:a28db83f5d84de69058b66a70acc52502"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -120,10 +131,20 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae6622affe0e3b62a85d9a351960995a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab16c8cf34544da2af44224e03090b2f6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; QuantLib::Date &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a></td></tr>
 <tr class="separator:ab16c8cf34544da2af44224e03090b2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc67796da086e3347c659c2ecba6abb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#acc67796da086e3347c659c2ecba6abb9">isExercised_</a> = false</td></tr>
+<tr class="separator:acc67796da086e3347c659c2ecba6abb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3acbc2122a68c969e5a7f97426f5f9"><td class="memItemLeft" align="right" valign="top">QuantLib::Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a1b3acbc2122a68c969e5a7f97426f5f9">exerciseDate_</a></td></tr>
+<tr class="separator:a1b3acbc2122a68c969e5a7f97426f5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b7747820cefcdcf354d6c7424583da"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; QuantLib::CashFlow &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a10b7747820cefcdcf354d6c7424583da">cashSettlement_</a></td></tr>
+<tr class="separator:a10b7747820cefcdcf354d6c7424583da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b5234cbeae9f70afeab2ce909a3c85"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; QuantLib::CashFlow &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a50b5234cbeae9f70afeab2ce909a3c85">feeSettlement_</a></td></tr>
+<tr class="separator:a50b5234cbeae9f70afeab2ce909a3c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9d69041ddf918f8f04b9b6967cfeef"><td class="memItemLeft" align="right" valign="top">Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classore_1_1data_1_1_exercise_builder.html#a9d9d69041ddf918f8f04b9b6967cfeef">exerciseDateIndex_</a> = QuantLib::Null&lt;QuantLib::Size&gt;()</td></tr>
+<tr class="separator:a9d9d69041ddf918f8f04b9b6967cfeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00142">142</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00145">145</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab6e53a8b6c19239acfa60086f64ec46" name="aab6e53a8b6c19239acfa60086f64ec46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab6e53a8b6c19239acfa60086f64ec46">&#9670;&#160;</a></span>ExerciseBuilder()</h2>
@@ -197,127 +218,172 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  165</span>                                    &lt;&lt; <span class="stringliteral">&quot; from exercise date &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>.back());</div>
 <div class="line"><span class="lineno">  166</span>        }</div>
 <div class="line"><span class="lineno">  167</span>        <span class="keywordflow">if</span> (noticeDate &gt; lastAccrualStartDate)</div>
-<div class="line"><span class="lineno">  168</span>            <a class="code hl_define" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;Remove notice date &quot;</span> &lt;&lt; <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a>(noticeDate) &lt;&lt; <span class="stringliteral">&quot; (exercise date &quot;</span></div>
+<div class="line"><span class="lineno">  168</span>            <a class="code hl_define" href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;Remove notice date &quot;</span> &lt;&lt; <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a>(noticeDate) &lt;&lt; <span class="stringliteral">&quot; (exercise date &quot;</span></div>
 <div class="line"><span class="lineno">  169</span>                                       &lt;&lt; sortedExerciseDates[i] &lt;&lt; <span class="stringliteral">&quot;) after last accrual start date &quot;</span></div>
 <div class="line"><span class="lineno">  170</span>                                       &lt;&lt; ore ::data::to_string(lastAccrualStartDate));</div>
 <div class="line"><span class="lineno">  171</span>    }</div>
 <div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>    <span class="comment">// if we do not have any notice dates left, we are done (a nullptr will be returned by exercise())</span></div>
+<div class="line"><span class="lineno">  173</span>    <span class="comment">// build exercise instance if we have alive notice dates</span></div>
 <div class="line"><span class="lineno">  174</span> </div>
-<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a>.empty())</div>
-<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  177</span> </div>
-<div class="line"><span class="lineno">  178</span>    <span class="comment">// build exercise instance</span></div>
-<div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">if</span> (optionData.style() == <span class="stringliteral">&quot;European&quot;</span>)</div>
-<div class="line"><span class="lineno">  181</span>        <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a> = boost::make_shared&lt;EuropeanExercise&gt;(sortedExerciseDates.back());</div>
-<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">else</span> </div>
-<div class="line"><span class="lineno">  183</span>        <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a> = boost::make_shared&lt;BermudanExercise&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a>);</div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a>.empty()) {</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">if</span> (optionData.style() == <span class="stringliteral">&quot;European&quot;</span>) {</div>
+<div class="line"><span class="lineno">  177</span>            QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>.size() == 1, <span class="stringliteral">&quot;Got &#39;European&#39; option style, but &quot;</span></div>
+<div class="line"><span class="lineno">  178</span>                                                       &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>.size()</div>
+<div class="line"><span class="lineno">  179</span>                                                       &lt;&lt; <span class="stringliteral">&quot; exercise dates. Should the style be &#39;Bermudan&#39;?&quot;</span>);</div>
+<div class="line"><span class="lineno">  180</span>            <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a> = boost::make_shared&lt;EuropeanExercise&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a>.back());</div>
+<div class="line"><span class="lineno">  181</span>        } <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  182</span>            <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a> = boost::make_shared&lt;BermudanExercise&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a>);</div>
+<div class="line"><span class="lineno">  183</span>    }</div>
 <div class="line"><span class="lineno">  184</span> </div>
-<div class="line"><span class="lineno">  185</span> </div>
-<div class="line"><span class="lineno">  186</span>    <span class="comment">// build fee and rebated exercise instance, if any fees are present</span></div>
-<div class="line"><span class="lineno">  187</span> </div>
-<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">if</span> (!optionData.exerciseFees().empty()) {</div>
-<div class="line"><span class="lineno">  189</span> </div>
-<div class="line"><span class="lineno">  190</span>        <span class="comment">// build an exercise date &quot;schedule&quot; by adding the maximum possible date at the end</span></div>
-<div class="line"><span class="lineno">  191</span> </div>
-<div class="line"><span class="lineno">  192</span>        std::vector&lt;Date&gt; exDatesPlusInf(sortedExerciseDates);</div>
-<div class="line"><span class="lineno">  193</span>        exDatesPlusInf.push_back(Date::maxDate());</div>
-<div class="line"><span class="lineno">  194</span>        vector&lt;double&gt; allRebates = <a class="code hl_function" href="namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560">buildScheduledVectorNormalised</a>(optionData.exerciseFees(),</div>
-<div class="line"><span class="lineno">  195</span>                                                                   optionData.exerciseFeeDates(), exDatesPlusInf, 0.0);</div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>        <span class="comment">// filter on alive rebates, so that we can a vector of rebates corresponding to the exerciseDates vector</span></div>
-<div class="line"><span class="lineno">  198</span> </div>
-<div class="line"><span class="lineno">  199</span>        vector&lt;double&gt; rebates;</div>
-<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; sortedExerciseDates.size(); ++i) {</div>
-<div class="line"><span class="lineno">  201</span>            <span class="keywordflow">if</span> (isExerciseDateAlive[i])</div>
-<div class="line"><span class="lineno">  202</span>                rebates.push_back(allRebates[i]);</div>
-<div class="line"><span class="lineno">  203</span>        }</div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>        <span class="comment">// flip the sign of the fee to get a rebate</span></div>
-<div class="line"><span class="lineno">  206</span> </div>
-<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; r : rebates)</div>
-<div class="line"><span class="lineno">  208</span>            r = -r;</div>
-<div class="line"><span class="lineno">  209</span>        vector&lt;string&gt; feeType = buildScheduledVectorNormalised&lt;string&gt;(</div>
-<div class="line"><span class="lineno">  210</span>            optionData.exerciseFeeTypes(), optionData.exerciseFeeDates(), exDatesPlusInf, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  211</span> </div>
-<div class="line"><span class="lineno">  212</span>        <span class="comment">// convert relative to absolute fees if required</span></div>
-<div class="line"><span class="lineno">  213</span> </div>
-<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; rebates.size(); ++i) {</div>
+<div class="line"><span class="lineno">  185</span>    <span class="comment">// check if the exercise right was executed and if so set cash settlement amount</span></div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">if</span> (optionData.exerciseData()) {</div>
+<div class="line"><span class="lineno">  188</span>        Date d = optionData.exerciseData()-&gt;date();</div>
+<div class="line"><span class="lineno">  189</span>        Real p = optionData.exerciseData()-&gt;price();</div>
+<div class="line"><span class="lineno">  190</span>        <span class="keyword">auto</span> nextDate = std::lower_bound(sortedExerciseDates.begin(), sortedExerciseDates.end(), d);</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">if</span> (nextDate != sortedExerciseDates.end()) {</div>
+<div class="line"><span class="lineno">  192</span>            <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#acc67796da086e3347c659c2ecba6abb9">isExercised_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  193</span>            <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a9d9d69041ddf918f8f04b9b6967cfeef">exerciseDateIndex_</a> = std::distance(sortedExerciseDates.begin(), nextDate);</div>
+<div class="line"><span class="lineno">  194</span>            <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a1b3acbc2122a68c969e5a7f97426f5f9">exerciseDate_</a> = *nextDate;</div>
+<div class="line"><span class="lineno">  195</span>            <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Option is exercised, exercise date = &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a1b3acbc2122a68c969e5a7f97426f5f9">exerciseDate_</a>);</div>
+<div class="line"><span class="lineno">  196</span>            <span class="keywordflow">if</span> (optionData.settlement() == <span class="stringliteral">&quot;Cash&quot;</span>) {</div>
+<div class="line"><span class="lineno">  197</span>                Date cashSettlementDate = d; <span class="comment">// default to exercise date</span></div>
+<div class="line"><span class="lineno">  198</span>                <span class="keywordflow">if</span> (optionData.paymentData()) {</div>
+<div class="line"><span class="lineno">  199</span>                    <span class="keywordflow">if</span> (optionData.paymentData()-&gt;rulesBased()) {</div>
+<div class="line"><span class="lineno">  200</span>                        cashSettlementDate = optionData.paymentData()-&gt;calendar().advance(</div>
+<div class="line"><span class="lineno">  201</span>                            d, optionData.paymentData()-&gt;lag(), Days, optionData.paymentData()-&gt;convention());</div>
+<div class="line"><span class="lineno">  202</span>                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  203</span>                        <span class="keyword">auto</span> <span class="keyword">const</span>&amp; dates = optionData.paymentData()-&gt;dates();</div>
+<div class="line"><span class="lineno">  204</span>                        <span class="keyword">auto</span> nextDate = std::lower_bound(dates.begin(), dates.end(), d);</div>
+<div class="line"><span class="lineno">  205</span>                        <span class="keywordflow">if</span> (nextDate != dates.end())</div>
+<div class="line"><span class="lineno">  206</span>                            cashSettlementDate = *nextDate;</div>
+<div class="line"><span class="lineno">  207</span>                    }</div>
+<div class="line"><span class="lineno">  208</span>                }</div>
+<div class="line"><span class="lineno">  209</span>                <span class="keywordflow">if</span> (p != Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  210</span>                    <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a10b7747820cefcdcf354d6c7424583da">cashSettlement_</a> = boost::make_shared&lt;QuantLib::SimpleCashFlow&gt;(p, cashSettlementDate);</div>
+<div class="line"><span class="lineno">  211</span>                <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Option is cash settled, amount &quot;</span> &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot; paid on &quot;</span> &lt;&lt; cashSettlementDate);</div>
+<div class="line"><span class="lineno">  212</span>            }</div>
+<div class="line"><span class="lineno">  213</span>        }</div>
+<div class="line"><span class="lineno">  214</span>    }</div>
 <div class="line"><span class="lineno">  215</span> </div>
-<div class="line"><span class="lineno">  216</span>            <span class="comment">// default to Absolute</span></div>
+<div class="line"><span class="lineno">  216</span>    <span class="comment">// build fee and rebated exercise instance, if any fees are present</span></div>
 <div class="line"><span class="lineno">  217</span> </div>
-<div class="line"><span class="lineno">  218</span>            <span class="keywordflow">if</span> (feeType[i].empty())</div>
-<div class="line"><span class="lineno">  219</span>                feeType[i] = <span class="stringliteral">&quot;Absolute&quot;</span>;</div>
-<div class="line"><span class="lineno">  220</span> </div>
-<div class="line"><span class="lineno">  221</span>            <span class="keywordflow">if</span> (feeType[i] == <span class="stringliteral">&quot;Percentage&quot;</span>) {</div>
-<div class="line"><span class="lineno">  222</span> </div>
-<div class="line"><span class="lineno">  223</span>                <span class="comment">// get next coupon after exercise to determine relevant notional</span></div>
-<div class="line"><span class="lineno">  224</span> </div>
-<div class="line"><span class="lineno">  225</span>                std::set&lt;std::pair&lt;Date, Real&gt;&gt; notionals;</div>
-<div class="line"><span class="lineno">  226</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; l : legs) {</div>
-<div class="line"><span class="lineno">  227</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; c : l) {</div>
-<div class="line"><span class="lineno">  228</span>                        <span class="keywordflow">if</span> (<span class="keyword">auto</span> cpn = boost::dynamic_pointer_cast&lt;Coupon&gt;(c)) {</div>
-<div class="line"><span class="lineno">  229</span>                            <span class="keywordflow">if</span> (cpn-&gt;accrualStartDate() &gt;= <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>[i])</div>
-<div class="line"><span class="lineno">  230</span>                                notionals.insert(std::make_pair(cpn-&gt;accrualStartDate(), cpn-&gt;nominal()));</div>
-<div class="line"><span class="lineno">  231</span>                        }</div>
-<div class="line"><span class="lineno">  232</span>                    }</div>
-<div class="line"><span class="lineno">  233</span>                }</div>
+<div class="line"><span class="lineno">  218</span>    <span class="keywordflow">if</span> (!optionData.exerciseFees().empty()) {</div>
+<div class="line"><span class="lineno">  219</span> </div>
+<div class="line"><span class="lineno">  220</span>        <span class="comment">// build an exercise date &quot;schedule&quot; by adding the maximum possible date at the end</span></div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>        std::vector&lt;Date&gt; exDatesPlusInf(sortedExerciseDates);</div>
+<div class="line"><span class="lineno">  223</span>        exDatesPlusInf.push_back(Date::maxDate());</div>
+<div class="line"><span class="lineno">  224</span>        vector&lt;double&gt; allRebates = <a class="code hl_function" href="namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560">buildScheduledVectorNormalised</a>(optionData.exerciseFees(),</div>
+<div class="line"><span class="lineno">  225</span>                                                                   optionData.exerciseFeeDates(), exDatesPlusInf, 0.0);</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>        <span class="comment">// flip the sign of the fee to get a rebate</span></div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; r : allRebates)</div>
+<div class="line"><span class="lineno">  230</span>            r = -r;</div>
+<div class="line"><span class="lineno">  231</span> </div>
+<div class="line"><span class="lineno">  232</span>        vector&lt;string&gt; feeType = buildScheduledVectorNormalised&lt;string&gt;(</div>
+<div class="line"><span class="lineno">  233</span>            optionData.exerciseFeeTypes(), optionData.exerciseFeeDates(), exDatesPlusInf, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><span class="lineno">  234</span> </div>
-<div class="line"><span class="lineno">  235</span>                <span class="keywordflow">if</span> (notionals.empty())</div>
-<div class="line"><span class="lineno">  236</span>                    rebates[i] = 0.0; <span class="comment">// notional is zero</span></div>
-<div class="line"><span class="lineno">  237</span>                <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  238</span>                    Real feeNotional = notionals.begin()-&gt;second;</div>
-<div class="line"><span class="lineno">  239</span>                    <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Convert percentage rebate &quot;</span></div>
-<div class="line"><span class="lineno">  240</span>                         &lt;&lt; rebates[i] &lt;&lt; <span class="stringliteral">&quot; to absolute rebate &quot;</span> &lt;&lt; rebates[i] * feeNotional &lt;&lt; <span class="stringliteral">&quot; using nominal &quot;</span></div>
-<div class="line"><span class="lineno">  241</span>                         &lt;&lt; feeNotional &lt;&lt; <span class="stringliteral">&quot; for exercise date &quot;</span> &lt;&lt; QuantLib::io::iso_date(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>[i]));</div>
-<div class="line"><span class="lineno">  242</span>                    rebates[i] *= feeNotional; <span class="comment">// multiply percentage fee by relevant notional</span></div>
-<div class="line"><span class="lineno">  243</span>                }</div>
-<div class="line"><span class="lineno">  244</span> </div>
-<div class="line"><span class="lineno">  245</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  246</span>                QL_REQUIRE(feeType[i] == <span class="stringliteral">&quot;Absolute&quot;</span>, <span class="stringliteral">&quot;fee type must be Absolute or Relative&quot;</span>);</div>
-<div class="line"><span class="lineno">  247</span>            }</div>
-<div class="line"><span class="lineno">  248</span>        }</div>
-<div class="line"><span class="lineno">  249</span> </div>
-<div class="line"><span class="lineno">  250</span>        Period feeSettlPeriod = optionData.exerciseFeeSettlementPeriod().empty()</div>
-<div class="line"><span class="lineno">  251</span>                                    ? 0 * Days</div>
-<div class="line"><span class="lineno">  252</span>                                    : <a class="code hl_function" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208">parsePeriod</a>(optionData.exerciseFeeSettlementPeriod());</div>
-<div class="line"><span class="lineno">  253</span> </div>
-<div class="line"><span class="lineno">  254</span>        Calendar feeSettlCal = optionData.exerciseFeeSettlementCalendar().empty()</div>
-<div class="line"><span class="lineno">  255</span>                                   ? NullCalendar()</div>
-<div class="line"><span class="lineno">  256</span>                                   : <a class="code hl_function" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">parseCalendar</a>(optionData.exerciseFeeSettlementCalendar());</div>
+<div class="line"><span class="lineno">  235</span>        <span class="comment">// convert relative to absolute fees if required</span></div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; allRebates.size(); ++i) {</div>
+<div class="line"><span class="lineno">  238</span> </div>
+<div class="line"><span class="lineno">  239</span>            <span class="comment">// default to Absolute</span></div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>            <span class="keywordflow">if</span> (feeType[i].empty())</div>
+<div class="line"><span class="lineno">  242</span>                feeType[i] = <span class="stringliteral">&quot;Absolute&quot;</span>;</div>
+<div class="line"><span class="lineno">  243</span> </div>
+<div class="line"><span class="lineno">  244</span>            <span class="keywordflow">if</span> (feeType[i] == <span class="stringliteral">&quot;Percentage&quot;</span>) {</div>
+<div class="line"><span class="lineno">  245</span> </div>
+<div class="line"><span class="lineno">  246</span>                <span class="comment">// get next coupon after exercise to determine relevant notional</span></div>
+<div class="line"><span class="lineno">  247</span> </div>
+<div class="line"><span class="lineno">  248</span>                std::set&lt;std::pair&lt;Date, Real&gt;&gt; notionals;</div>
+<div class="line"><span class="lineno">  249</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; l : legs) {</div>
+<div class="line"><span class="lineno">  250</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; c : l) {</div>
+<div class="line"><span class="lineno">  251</span>                        <span class="keywordflow">if</span> (<span class="keyword">auto</span> cpn = boost::dynamic_pointer_cast&lt;Coupon&gt;(c)) {</div>
+<div class="line"><span class="lineno">  252</span>                            <span class="keywordflow">if</span> (cpn-&gt;accrualStartDate() &gt;= sortedExerciseDates[i])</div>
+<div class="line"><span class="lineno">  253</span>                                notionals.insert(std::make_pair(cpn-&gt;accrualStartDate(), cpn-&gt;nominal()));</div>
+<div class="line"><span class="lineno">  254</span>                        }</div>
+<div class="line"><span class="lineno">  255</span>                    }</div>
+<div class="line"><span class="lineno">  256</span>                }</div>
 <div class="line"><span class="lineno">  257</span> </div>
-<div class="line"><span class="lineno">  258</span>        BusinessDayConvention feeSettlBdc =</div>
-<div class="line"><span class="lineno">  259</span>            optionData.exerciseFeeSettlementConvention().empty()</div>
-<div class="line"><span class="lineno">  260</span>                ? Unadjusted</div>
-<div class="line"><span class="lineno">  261</span>                : <a class="code hl_function" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732">parseBusinessDayConvention</a>(optionData.exerciseFeeSettlementConvention());</div>
-<div class="line"><span class="lineno">  262</span> </div>
-<div class="line"><span class="lineno">  263</span>        <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a> = boost::make_shared&lt;QuantExt::RebatedExercise&gt;(*<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>, rebates, feeSettlPeriod,</div>
-<div class="line"><span class="lineno">  264</span>                                                                  feeSettlCal, feeSettlBdc);</div>
-<div class="line"><span class="lineno">  265</span> </div>
-<div class="line"><span class="lineno">  266</span>        <span class="comment">// log rebates</span></div>
+<div class="line"><span class="lineno">  258</span>                <span class="keywordflow">if</span> (notionals.empty())</div>
+<div class="line"><span class="lineno">  259</span>                    allRebates[i] = 0.0; <span class="comment">// notional is zero</span></div>
+<div class="line"><span class="lineno">  260</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  261</span>                    Real feeNotional = notionals.begin()-&gt;second;</div>
+<div class="line"><span class="lineno">  262</span>                    <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Convert percentage rebate &quot;</span></div>
+<div class="line"><span class="lineno">  263</span>                         &lt;&lt; allRebates[i] &lt;&lt; <span class="stringliteral">&quot; to absolute rebate &quot;</span> &lt;&lt; allRebates[i] * feeNotional &lt;&lt; <span class="stringliteral">&quot; using nominal &quot;</span></div>
+<div class="line"><span class="lineno">  264</span>                         &lt;&lt; feeNotional &lt;&lt; <span class="stringliteral">&quot; for exercise date &quot;</span> &lt;&lt; QuantLib::io::iso_date(sortedExerciseDates[i]));</div>
+<div class="line"><span class="lineno">  265</span>                    allRebates[i] *= feeNotional; <span class="comment">// multiply percentage fee by relevant notional</span></div>
+<div class="line"><span class="lineno">  266</span>                }</div>
 <div class="line"><span class="lineno">  267</span> </div>
-<div class="line"><span class="lineno">  268</span>        <span class="keyword">auto</span> dbgEx = boost::static_pointer_cast&lt;QuantExt::RebatedExercise&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a>);</div>
-<div class="line"><span class="lineno">  269</span> </div>
-<div class="line"><span class="lineno">  270</span>        <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>.size(); ++i) {</div>
-<div class="line"><span class="lineno">  271</span>            <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Got rebate &quot;</span> &lt;&lt; dbgEx-&gt;rebate(i) &lt;&lt; <span class="stringliteral">&quot; with payment date &quot;</span></div>
-<div class="line"><span class="lineno">  272</span>                               &lt;&lt; QuantLib::io::iso_date(dbgEx-&gt;rebatePaymentDate(i)) &lt;&lt; <span class="stringliteral">&quot; (exercise date=&quot;</span></div>
-<div class="line"><span class="lineno">  273</span>                               &lt;&lt; QuantLib::io::iso_date(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>[i]) &lt;&lt; <span class="stringliteral">&quot;) using rebate settl period &quot;</span></div>
-<div class="line"><span class="lineno">  274</span>                               &lt;&lt; feeSettlPeriod &lt;&lt; <span class="stringliteral">&quot;, calendar &quot;</span> &lt;&lt; feeSettlCal &lt;&lt; <span class="stringliteral">&quot;, convention &quot;</span> &lt;&lt; feeSettlBdc);</div>
-<div class="line"><span class="lineno">  275</span>        }</div>
-<div class="line"><span class="lineno">  276</span>    }</div>
-<div class="line"><span class="lineno">  277</span>}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_a2a0b5d34833068f2b36c16d8fc74c094"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">ore::data::ExerciseBuilder::exercise_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::Exercise &gt; exercise_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00151">optiondata.hpp:151</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_ab16c8cf34544da2af44224e03090b2f6"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">ore::data::ExerciseBuilder::noticeDates_</a></div><div class="ttdeci">std::vector&lt; QuantLib::Date &gt; noticeDates_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00153">optiondata.hpp:153</a></div></div>
-<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_ae6622affe0e3b62a85d9a351960995a0"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">ore::data::ExerciseBuilder::exerciseDates_</a></div><div class="ttdeci">std::vector&lt; QuantLib::Date &gt; exerciseDates_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00152">optiondata.hpp:152</a></div></div>
+<div class="line"><span class="lineno">  268</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  269</span>                QL_REQUIRE(feeType[i] == <span class="stringliteral">&quot;Absolute&quot;</span>, <span class="stringliteral">&quot;fee type must be Absolute or Relative&quot;</span>);</div>
+<div class="line"><span class="lineno">  270</span>            }</div>
+<div class="line"><span class="lineno">  271</span>        }</div>
+<div class="line"><span class="lineno">  272</span> </div>
+<div class="line"><span class="lineno">  273</span>        <span class="comment">// set fee settlement conventions</span></div>
+<div class="line"><span class="lineno">  274</span> </div>
+<div class="line"><span class="lineno">  275</span>        Period feeSettlPeriod = optionData.exerciseFeeSettlementPeriod().empty()</div>
+<div class="line"><span class="lineno">  276</span>                                    ? 0 * Days</div>
+<div class="line"><span class="lineno">  277</span>                                    : <a class="code hl_function" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208">parsePeriod</a>(optionData.exerciseFeeSettlementPeriod());</div>
+<div class="line"><span class="lineno">  278</span> </div>
+<div class="line"><span class="lineno">  279</span>        Calendar feeSettlCal = optionData.exerciseFeeSettlementCalendar().empty()</div>
+<div class="line"><span class="lineno">  280</span>                                   ? NullCalendar()</div>
+<div class="line"><span class="lineno">  281</span>                                   : <a class="code hl_function" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">parseCalendar</a>(optionData.exerciseFeeSettlementCalendar());</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>        BusinessDayConvention feeSettlBdc =</div>
+<div class="line"><span class="lineno">  284</span>            optionData.exerciseFeeSettlementConvention().empty()</div>
+<div class="line"><span class="lineno">  285</span>                ? Unadjusted</div>
+<div class="line"><span class="lineno">  286</span>                : <a class="code hl_function" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732">parseBusinessDayConvention</a>(optionData.exerciseFeeSettlementConvention());</div>
+<div class="line"><span class="lineno">  287</span> </div>
+<div class="line"><span class="lineno">  288</span>        <span class="comment">// set fee settlement amount if option is exercised</span></div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#acc67796da086e3347c659c2ecba6abb9">isExercised_</a>) {</div>
+<div class="line"><span class="lineno">  291</span>            <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a50b5234cbeae9f70afeab2ce909a3c85">feeSettlement_</a> = boost::make_shared&lt;QuantLib::SimpleCashFlow&gt;(</div>
+<div class="line"><span class="lineno">  292</span>                -allRebates[<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a9d9d69041ddf918f8f04b9b6967cfeef">exerciseDateIndex_</a>],</div>
+<div class="line"><span class="lineno">  293</span>                feeSettlCal.advance(sortedExerciseDates[<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a9d9d69041ddf918f8f04b9b6967cfeef">exerciseDateIndex_</a>], feeSettlPeriod, feeSettlBdc));</div>
+<div class="line"><span class="lineno">  294</span>            <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Settlement fee for exercised option is &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a50b5234cbeae9f70afeab2ce909a3c85">feeSettlement_</a>-&gt;amount() &lt;&lt; <span class="stringliteral">&quot; paid on &quot;</span></div>
+<div class="line"><span class="lineno">  295</span>                                                           &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a50b5234cbeae9f70afeab2ce909a3c85">feeSettlement_</a>-&gt;date() &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  296</span>        }</div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span>        <span class="comment">// update exercise instance with rebate information</span></div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  301</span>            vector&lt;double&gt; rebates;</div>
+<div class="line"><span class="lineno">  302</span>            <span class="keywordflow">for</span> (Size i = 0; i &lt; sortedExerciseDates.size(); ++i) {</div>
+<div class="line"><span class="lineno">  303</span>                <span class="keywordflow">if</span> (isExerciseDateAlive[i])</div>
+<div class="line"><span class="lineno">  304</span>                    rebates.push_back(allRebates[i]);</div>
+<div class="line"><span class="lineno">  305</span>            }</div>
+<div class="line"><span class="lineno">  306</span>            <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a> = boost::make_shared&lt;QuantExt::RebatedExercise&gt;(*<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>, rebates,</div>
+<div class="line"><span class="lineno">  307</span>                                                                      feeSettlPeriod, feeSettlCal, feeSettlBdc);</div>
+<div class="line"><span class="lineno">  308</span>            <span class="keyword">auto</span> dbgEx = boost::static_pointer_cast&lt;QuantExt::RebatedExercise&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a>);</div>
+<div class="line"><span class="lineno">  309</span>            <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  310</span>                <a class="code hl_define" href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Got rebate &quot;</span> &lt;&lt; dbgEx-&gt;rebate(i) &lt;&lt; <span class="stringliteral">&quot; with payment date &quot;</span></div>
+<div class="line"><span class="lineno">  311</span>                                   &lt;&lt; QuantLib::io::iso_date(dbgEx-&gt;rebatePaymentDate(i)) &lt;&lt; <span class="stringliteral">&quot; (exercise date=&quot;</span></div>
+<div class="line"><span class="lineno">  312</span>                                   &lt;&lt; QuantLib::io::iso_date(<a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>[i]) &lt;&lt; <span class="stringliteral">&quot;) using rebate settl period &quot;</span></div>
+<div class="line"><span class="lineno">  313</span>                                   &lt;&lt; feeSettlPeriod &lt;&lt; <span class="stringliteral">&quot;, calendar &quot;</span> &lt;&lt; feeSettlCal &lt;&lt; <span class="stringliteral">&quot;, convention &quot;</span> &lt;&lt; feeSettlBdc);</div>
+<div class="line"><span class="lineno">  314</span>            }</div>
+<div class="line"><span class="lineno">  315</span>        }</div>
+<div class="line"><span class="lineno">  316</span>    } <span class="comment">// if exercise fees are given</span></div>
+<div class="line"><span class="lineno">  317</span>} <span class="comment">// ExerciseBuilder()</span></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_a10b7747820cefcdcf354d6c7424583da"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#a10b7747820cefcdcf354d6c7424583da">ore::data::ExerciseBuilder::cashSettlement_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::CashFlow &gt; cashSettlement_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00173">optiondata.hpp:173</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_a1b3acbc2122a68c969e5a7f97426f5f9"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#a1b3acbc2122a68c969e5a7f97426f5f9">ore::data::ExerciseBuilder::exerciseDate_</a></div><div class="ttdeci">QuantLib::Date exerciseDate_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00172">optiondata.hpp:172</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_a2a0b5d34833068f2b36c16d8fc74c094"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">ore::data::ExerciseBuilder::exercise_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::Exercise &gt; exercise_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00166">optiondata.hpp:166</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_a50b5234cbeae9f70afeab2ce909a3c85"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#a50b5234cbeae9f70afeab2ce909a3c85">ore::data::ExerciseBuilder::feeSettlement_</a></div><div class="ttdeci">boost::shared_ptr&lt; QuantLib::CashFlow &gt; feeSettlement_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00174">optiondata.hpp:174</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_a9d9d69041ddf918f8f04b9b6967cfeef"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#a9d9d69041ddf918f8f04b9b6967cfeef">ore::data::ExerciseBuilder::exerciseDateIndex_</a></div><div class="ttdeci">Size exerciseDateIndex_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00177">optiondata.hpp:177</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_ab16c8cf34544da2af44224e03090b2f6"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">ore::data::ExerciseBuilder::noticeDates_</a></div><div class="ttdeci">std::vector&lt; QuantLib::Date &gt; noticeDates_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00169">optiondata.hpp:169</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_acc67796da086e3347c659c2ecba6abb9"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#acc67796da086e3347c659c2ecba6abb9">ore::data::ExerciseBuilder::isExercised_</a></div><div class="ttdeci">bool isExercised_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00171">optiondata.hpp:171</a></div></div>
+<div class="ttc" id="aclassore_1_1data_1_1_exercise_builder_html_ae6622affe0e3b62a85d9a351960995a0"><div class="ttname"><a href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">ore::data::ExerciseBuilder::exerciseDates_</a></div><div class="ttdeci">std::vector&lt; QuantLib::Date &gt; exerciseDates_</div><div class="ttdef"><b>Definition:</b> <a href="optiondata_8hpp_source.html#l00168">optiondata.hpp:168</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga0f72d6fcccae10a674bdcd5095200f14"><div class="ttname"><a href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14">ore::data::parseCalendar</a></div><div class="ttdeci">Calendar parseCalendar(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Calendar.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00152">parsers.cpp:152</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga59b5fdda574d90facae95dec2d13040d"><div class="ttname"><a href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d">ore::data::parseDate</a></div><div class="ttdeci">Date parseDate(const string &amp;s)</div><div class="ttdoc">Convert std::string to QuantLib::Date.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00052">parsers.cpp:52</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga86adcf55f91e340ff40783964666e732"><div class="ttname"><a href="group__utilities.html#ga86adcf55f91e340ff40783964666e732">ore::data::parseBusinessDayConvention</a></div><div class="ttdeci">BusinessDayConvention parseBusinessDayConvention(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::BusinessDayConvention.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00170">parsers.cpp:170</a></div></div>
 <div class="ttc" id="agroup__utilities_html_ga8e0623e2cb01e250e9cfec4619256208"><div class="ttname"><a href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208">ore::data::parsePeriod</a></div><div class="ttdeci">Period parsePeriod(const string &amp;s)</div><div class="ttdoc">Convert text to QuantLib::Period.</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8cpp_source.html#l00168">parsers.cpp:168</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00368">log.hpp:368</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00364">log.hpp:364</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a0ac332ac8261c00686a95df64cf16560"><div class="ttname"><a href="namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560">ore::data::buildScheduledVectorNormalised</a></div><div class="ttdeci">vector&lt; T &gt; buildScheduledVectorNormalised(const vector&lt; T &gt; &amp;values, const vector&lt; string &gt; &amp;dates, const Schedule &amp;schedule, const T &amp;defaultValue, const bool checkAllValuesAppearInResult=false)</div><div class="ttdef"><b>Definition:</b> <a href="legdata_8hpp_source.html#l01113">legdata.hpp:1113</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div><div class="ttdoc">Logging Macro (Level = Debug)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00508">log.hpp:508</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div><div class="ttdoc">Logging Macro (Level = Warning)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00504">log.hpp:504</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a0ac332ac8261c00686a95df64cf16560"><div class="ttname"><a href="namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560">ore::data::buildScheduledVectorNormalised</a></div><div class="ttdeci">vector&lt; T &gt; buildScheduledVectorNormalised(const vector&lt; T &gt; &amp;values, const vector&lt; string &gt; &amp;dates, const Schedule &amp;schedule, const T &amp;defaultValue, const bool checkAllValuesAppearInResult=false)</div><div class="ttdef"><b>Definition:</b> <a href="legdata_8hpp_source.html#l01137">legdata.hpp:1137</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -325,27 +391,31 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classore_1_1data_1_1_exercise_builder_aab6e53a8b6c19239acfa60086f64ec46_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_exercise_builder_aab6e53a8b6c19239acfa60086f64ec46_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_exercise_builder_aab6e53a8b6c19239acfa60086f64ec46_cgraph" id="aclassore_1_1data_1_1_exercise_builder_aab6e53a8b6c19239acfa60086f64ec46_cgraph">
-<area shape="rect" title=" " alt="" coords="5,562,119,587"/>
+<area shape="rect" title=" " alt="" coords="5,658,119,683"/>
 <area shape="rect" href="namespaceore_1_1data.html#a0ac332ac8261c00686a95df64cf16560" title=" " alt="" coords="195,56,365,96"/>
 <area shape="rect" href="group__utilities.html#ga59b5fdda574d90facae95dec2d13040d" title="Convert std::string to QuantLib::Date." alt="" coords="695,67,835,93"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#af82897aa671c01e0988878f1476ef9b8" title=" " alt="" coords="207,171,353,211"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#abf2f2450d2f97b206a5e42110c2fff66" title=" " alt="" coords="207,235,353,275"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#aee07bd2e2fa4cb71fe664c2251db9b9e" title=" " alt="" coords="207,299,353,339"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#a5294f844f31b76b2df4037b07a29c33f" title=" " alt="" coords="173,363,387,403"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#aede61a632505eda43cd0777c109fcbf1" title=" " alt="" coords="167,427,393,467"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#a1cc9777f22636bc2f5b164c3de85331c" title=" " alt="" coords="179,491,381,531"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#a826a06c24b9b4d8f1894cd5ca621293e" title=" " alt="" coords="207,555,353,595"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#a76132db55066c8952ba61c850036ea4a" title=" " alt="" coords="207,619,353,659"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#a4b1611835505ae16799eba47fefbe135" title=" " alt="" coords="207,683,353,723"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#af905d56216d15723b9a1c282402acf73" title=" " alt="" coords="207,747,353,787"/>
-<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="197,811,363,851"/>
-<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="198,875,362,901"/>
-<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="205,925,355,950"/>
-<area shape="rect" href="classore_1_1data_1_1_option_data.html#a657c7d1172af0024c7594ad4082a040e" title=" " alt="" coords="207,975,353,1015"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="215,1063,345,1089"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#ab55874deb46a8404d56db05d2b6e7e9c" title=" " alt="" coords="207,171,353,211"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#af82897aa671c01e0988878f1476ef9b8" title=" " alt="" coords="207,235,353,275"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#abf2f2450d2f97b206a5e42110c2fff66" title=" " alt="" coords="207,299,353,339"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#aee07bd2e2fa4cb71fe664c2251db9b9e" title=" " alt="" coords="207,363,353,403"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#a5294f844f31b76b2df4037b07a29c33f" title=" " alt="" coords="173,427,387,467"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#aede61a632505eda43cd0777c109fcbf1" title=" " alt="" coords="167,491,393,531"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#a1cc9777f22636bc2f5b164c3de85331c" title=" " alt="" coords="179,555,381,595"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#a826a06c24b9b4d8f1894cd5ca621293e" title=" " alt="" coords="207,619,353,659"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#a76132db55066c8952ba61c850036ea4a" title=" " alt="" coords="207,683,353,723"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#a4b1611835505ae16799eba47fefbe135" title=" " alt="" coords="207,747,353,787"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#af905d56216d15723b9a1c282402acf73" title=" " alt="" coords="207,811,353,851"/>
+<area shape="rect" href="group__utilities.html#ga86adcf55f91e340ff40783964666e732" title="Convert text to QuantLib::BusinessDayConvention." alt="" coords="197,875,363,915"/>
+<area shape="rect" href="group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14" title="Convert text to QuantLib::Calendar." alt="" coords="198,939,362,965"/>
+<area shape="rect" href="group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208" title="Convert text to QuantLib::Period." alt="" coords="205,989,355,1014"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#aaf9f088b33dedab37e1b4e1b7d01502c" title=" " alt="" coords="207,1039,353,1079"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#a77098ad5025357188934116cfc632fd3" title=" " alt="" coords="207,1103,353,1143"/>
+<area shape="rect" href="classore_1_1data_1_1_option_data.html#a657c7d1172af0024c7594ad4082a040e" title=" " alt="" coords="207,1167,353,1207"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="215,1255,345,1281"/>
 <area shape="rect" href="namespaceore_1_1data.html#a9206da3667d412d6992de0f3909beef2" title=" " alt="" coords="459,5,629,45"/>
 <area shape="rect" href="namespaceore_1_1data.html#a05260d9174de60219e7cd128e76819f0" title=" " alt="" coords="441,70,647,95"/>
-<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="883,67,1035,93"/>
+<area shape="rect" href="group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721" title="Convert text to QuantLib::Integer." alt="" coords="883,42,1035,67"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="906,91,1011,117"/>
 </map>
 </div>
 
@@ -367,9 +437,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00146">146</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  146</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a>; }</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00150">150</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a2a0b5d34833068f2b36c16d8fc74c094">exercise_</a>; }</div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_exercise_builder_a0e6c953ab7d2347dbb1cf8ba1e147dd5_icgraph.png" border="0" usemap="#aclassore_1_1data_1_1_exercise_builder_a0e6c953ab7d2347dbb1cf8ba1e147dd5_icgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_exercise_builder_a0e6c953ab7d2347dbb1cf8ba1e147dd5_icgraph" id="aclassore_1_1data_1_1_exercise_builder_a0e6c953ab7d2347dbb1cf8ba1e147dd5_icgraph">
+<area shape="rect" title=" " alt="" coords="293,13,364,38"/>
+<area shape="rect" href="classore_1_1data_1_1_risk_participation_agreement.html#a2582a803e4b4ea664059c4c3f0308e69" title=" " alt="" coords="5,5,245,45"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a058392c0250f6f8c76e379c1a2e1b7eb" name="a058392c0250f6f8c76e379c1a2e1b7eb"></a>
@@ -387,8 +468,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00147">147</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  147</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00152">152</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  152</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ae6622affe0e3b62a85d9a351960995a0">exerciseDates_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -407,8 +488,88 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00148">148</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  148</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00154">154</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  154</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#ab16c8cf34544da2af44224e03090b2f6">noticeDates_</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aab136d362b4d7108e6bf34b716c0a11a" name="aab136d362b4d7108e6bf34b716c0a11a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab136d362b4d7108e6bf34b716c0a11a">&#9670;&#160;</a></span>isExercised()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbool.html">bool</a> isExercised </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00157">157</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#acc67796da086e3347c659c2ecba6abb9">isExercised_</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a06074e969d1719c291712897422bb1a1" name="a06074e969d1719c291712897422bb1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06074e969d1719c291712897422bb1a1">&#9670;&#160;</a></span>exerciseDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QuantLib::Date &amp; exerciseDate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00159">159</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  159</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a1b3acbc2122a68c969e5a7f97426f5f9">exerciseDate_</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9549fbe6139dc6adcf6f7f5d2d7ced11" name="a9549fbe6139dc6adcf6f7f5d2d7ced11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9549fbe6139dc6adcf6f7f5d2d7ced11">&#9670;&#160;</a></span>cashSettlement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; QuantLib::CashFlow &gt; cashSettlement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00161">161</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a10b7747820cefcdcf354d6c7424583da">cashSettlement_</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a28db83f5d84de69058b66a70acc52502" name="a28db83f5d84de69058b66a70acc52502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28db83f5d84de69058b66a70acc52502">&#9670;&#160;</a></span>feeSettlement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; QuantLib::CashFlow &gt; feeSettlement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00163">163</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classore_1_1data_1_1_exercise_builder.html#a50b5234cbeae9f70afeab2ce909a3c85">feeSettlement_</a>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,7 +594,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00151">151</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00166">166</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +618,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00152">152</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00168">168</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +642,127 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00153">153</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00169">169</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acc67796da086e3347c659c2ecba6abb9" name="acc67796da086e3347c659c2ecba6abb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc67796da086e3347c659c2ecba6abb9">&#9670;&#160;</a></span>isExercised_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbool.html">bool</a> isExercised_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00171">171</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1b3acbc2122a68c969e5a7f97426f5f9" name="a1b3acbc2122a68c969e5a7f97426f5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3acbc2122a68c969e5a7f97426f5f9">&#9670;&#160;</a></span>exerciseDate_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QuantLib::Date exerciseDate_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00172">172</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a10b7747820cefcdcf354d6c7424583da" name="a10b7747820cefcdcf354d6c7424583da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b7747820cefcdcf354d6c7424583da">&#9670;&#160;</a></span>cashSettlement_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;QuantLib::CashFlow&gt; cashSettlement_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00173">173</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a50b5234cbeae9f70afeab2ce909a3c85" name="a50b5234cbeae9f70afeab2ce909a3c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b5234cbeae9f70afeab2ce909a3c85">&#9670;&#160;</a></span>feeSettlement_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;QuantLib::CashFlow&gt; feeSettlement_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00174">174</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9d9d69041ddf918f8f04b9b6967cfeef" name="a9d9d69041ddf918f8f04b9b6967cfeef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9d69041ddf918f8f04b9b6967cfeef">&#9670;&#160;</a></span>exerciseDateIndex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Size exerciseDateIndex_ = QuantLib::Null&lt;QuantLib::Size&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="optiondata_8hpp_source.html#l00177">177</a> of file <a class="el" href="optiondata_8hpp_source.html">optiondata.hpp</a>.</p>
 
 </div>
 </div>

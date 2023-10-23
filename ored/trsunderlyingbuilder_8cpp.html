@@ -77,7 +77,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">trsunderlyingbuilder.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -88,7 +89,10 @@ $(function() {
 <code>#include &lt;<a class="elRef" href="../qle/compositeindex_8hpp.html">qle/indexes/compositeindex.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="bond_8hpp_source.html">ored/portfolio/bond.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="forwardbond_8hpp_source.html">ored/portfolio/forwardbond.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="indexnametranslator_8hpp_source.html">ored/utilities/indexnametranslator.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="marketdata_8hpp_source.html">ored/utilities/marketdata.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="parsers_8hpp_source.html">ored/utilities/parsers.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="../qle/bondtrscashflow_8hpp.html">qle/cashflows/bondtrscashflow.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/forwardbond_8hpp.html">qle/instruments/forwardbond.hpp</a>&gt;</code><br />
 </div>
 <p><a href="trsunderlyingbuilder_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -100,6 +104,13 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceore_1_1data"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html">ore::data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a918b05e5e3264b9adb7cf7cbdf82c6fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#a918b05e5e3264b9adb7cf7cbdf82c6fb">modifyBondTRSLeg</a> (QuantLib::Leg &amp;leg, QuantLib::Date issueDate)</td></tr>
+<tr class="separator:a918b05e5e3264b9adb7cf7cbdf82c6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4767922f7ade7cf09a2c3f6691b2c27"><td class="memItemLeft" align="right" valign="top">Leg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceore_1_1data.html#af4767922f7ade7cf09a2c3f6691b2c27">makeBondTRSLeg</a> (const std::vector&lt; Date &gt; &amp;valuationDates, const std::vector&lt; Date &gt; &amp;paymentDates, const BondIndexBuilder &amp;bondIndexBuilder, Real initialPrice, QuantLib::ext::shared_ptr&lt; <a class="elRef" href="../qle/class_quant_ext_1_1_fx_index.html">QuantExt::FxIndex</a> &gt; fxIndex)</td></tr>
+<tr class="separator:af4767922f7ade7cf09a2c3f6691b2c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

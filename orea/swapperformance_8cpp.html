@@ -118,7 +118,7 @@ $(function() {
 <code>#include &lt;ql/time/daycounters/actualactual.hpp&gt;</code><br />
 <code>#include &lt;<a class="elRef" href="../qle/multipathgeneratorbase_8hpp.html">qle/methods/multipathgeneratorbase.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="oreatoplevelfixture_8hpp_source.html">test/oreatoplevelfixture.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="testmarket_8hpp_source.html">test/testmarket.hpp</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="testmarket_8hpp_source.html">testmarket.hpp</a>&quot;</code><br />
 </div>
 <p><a href="swapperformance_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -186,10 +186,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00073">73</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                                                                 {</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a> + (rng.nextInt32() % (<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a> + 1 - <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a>));</div>
-<div class="line"><span class="lineno">   75</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00074">74</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                                                                 {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a> + (rng.nextInt32() % (<a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a> + 1 - <a class="code hl_functionRef" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a>));</div>
+<div class="line"><span class="lineno">   76</span>}</div>
 <div class="ttc" id="anamespace_quant_ext_html_a0780e43df89be3d7f7671eca2418cdd1"><div class="ttname"><a href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a></div><div class="ttdeci">RandomVariable max(RandomVariable x, const RandomVariable &amp;y)</div></div>
 <div class="ttc" id="anamespace_quant_ext_html_afe4df8f9c3657399dd532e1d3c895dfa"><div class="ttname"><a href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa">min</a></div><div class="ttdeci">RandomVariable min(RandomVariable x, const RandomVariable &amp;y)</div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -270,11 +270,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00077">77</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                                                            {</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> strs[<a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, 0, strs.size() - 1)];</div>
-<div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="aswapperformance_8cpp_html_a4392acc4f874be8e70d31e6295d7fb76"><div class="ttname"><a href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a></div><div class="ttdeci">unsigned long randInt(MersenneTwisterUniformRng &amp;rng, Size min, Size max)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00073">swapperformance.cpp:73</a></div></div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00078">78</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                                                                                            {</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> strs[<a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, 0, strs.size() - 1)];</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+<div class="ttc" id="aswapperformance_8cpp_html_a4392acc4f874be8e70d31e6295d7fb76"><div class="ttname"><a href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a></div><div class="ttdeci">unsigned long randInt(MersenneTwisterUniformRng &amp;rng, Size min, Size max)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00074">swapperformance.cpp:74</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -342,8 +342,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00081">81</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, 0, 1) == 1; }</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00082">82</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, 0, 1) == 1; }</div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -410,22 +410,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00083">83</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>                                         {</div>
-<div class="line"><span class="lineno">   84</span>    boost::shared_ptr&lt;data::Conventions&gt; conventions(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_conventions.html">data::Conventions</a>());</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>    boost::shared_ptr&lt;data::Convention&gt; swapIndexConv(</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_swap_index_convention.html">data::SwapIndexConvention</a>(<span class="stringliteral">&quot;EUR-CMS-2Y&quot;</span>, <span class="stringliteral">&quot;EUR-6M-SWAP-CONVENTIONS&quot;</span>));</div>
-<div class="line"><span class="lineno">   88</span>    conventions-&gt;add(swapIndexConv);</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    boost::shared_ptr&lt;data::Convention&gt; swapConv(</div>
-<div class="line"><span class="lineno">   91</span>        <span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_i_r_swap_convention.html">data::IRSwapConvention</a>(<span class="stringliteral">&quot;EUR-6M-SWAP-CONVENTIONS&quot;</span>, <span class="stringliteral">&quot;TARGET&quot;</span>, <span class="stringliteral">&quot;Annual&quot;</span>, <span class="stringliteral">&quot;MF&quot;</span>, <span class="stringliteral">&quot;30/360&quot;</span>, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>));</div>
-<div class="line"><span class="lineno">   92</span>    conventions-&gt;add(swapConv);</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    InstrumentConventions::instance().setConventions(conventions);</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> conventions;</div>
-<div class="line"><span class="lineno">   97</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00084">84</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>                                         {</div>
+<div class="line"><span class="lineno">   85</span>    boost::shared_ptr&lt;data::Conventions&gt; conventions(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_conventions.html">data::Conventions</a>());</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    boost::shared_ptr&lt;data::Convention&gt; swapIndexConv(</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_swap_index_convention.html">data::SwapIndexConvention</a>(<span class="stringliteral">&quot;EUR-CMS-2Y&quot;</span>, <span class="stringliteral">&quot;EUR-6M-SWAP-CONVENTIONS&quot;</span>));</div>
+<div class="line"><span class="lineno">   89</span>    conventions-&gt;add(swapIndexConv);</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    boost::shared_ptr&lt;data::Convention&gt; swapConv(</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_i_r_swap_convention.html">data::IRSwapConvention</a>(<span class="stringliteral">&quot;EUR-6M-SWAP-CONVENTIONS&quot;</span>, <span class="stringliteral">&quot;TARGET&quot;</span>, <span class="stringliteral">&quot;Annual&quot;</span>, <span class="stringliteral">&quot;MF&quot;</span>, <span class="stringliteral">&quot;30/360&quot;</span>, <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>));</div>
+<div class="line"><span class="lineno">   93</span>    conventions-&gt;add(swapConv);</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    InstrumentConventions::instance().setConventions(conventions);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">return</span> conventions;</div>
+<div class="line"><span class="lineno">   98</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_conventions_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_conventions.html">ore::data::Conventions</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_i_r_swap_convention_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_i_r_swap_convention.html">ore::data::IRSwapConvention</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_swap_index_convention_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_swap_index_convention.html">ore::data::SwapIndexConvention</a></div></div>
@@ -492,159 +492,159 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00099">99</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   99</span>                                                                                                       {</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_portfolio.html">Portfolio</a>());</div>
-<div class="line"><span class="lineno">  102</span> </div>
-<div class="line"><span class="lineno">  103</span>    vector&lt;string&gt; ccys = {<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="stringliteral">&quot;JPY&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>};</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    map&lt;string, vector&lt;string&gt;&gt; indices = {{<span class="stringliteral">&quot;EUR&quot;</span>, {<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>}},</div>
-<div class="line"><span class="lineno">  106</span>                                           {<span class="stringliteral">&quot;USD&quot;</span>, {<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>}},</div>
-<div class="line"><span class="lineno">  107</span>                                           {<span class="stringliteral">&quot;GBP&quot;</span>, {<span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>}},</div>
-<div class="line"><span class="lineno">  108</span>                                           {<span class="stringliteral">&quot;CHF&quot;</span>, {<span class="stringliteral">&quot;CHF-LIBOR-6M&quot;</span>}},</div>
-<div class="line"><span class="lineno">  109</span>                                           {<span class="stringliteral">&quot;JPY&quot;</span>, {<span class="stringliteral">&quot;JPY-LIBOR-6M&quot;</span>}}};</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>    vector&lt;string&gt; fixedTenors = {<span class="stringliteral">&quot;6M&quot;</span>, <span class="stringliteral">&quot;1Y&quot;</span>};</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    Size minTerm = 2;</div>
-<div class="line"><span class="lineno">  114</span>    Size maxTerm = 30;</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    Size minFixedBps = 10;</div>
-<div class="line"><span class="lineno">  117</span>    Size maxFixedBps = 400;</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    Size seed = 5; <span class="comment">// keep this constant to ensure portfolio doesn&#39;t change</span></div>
-<div class="line"><span class="lineno">  120</span>    MersenneTwisterUniformRng rng(seed);</div>
-<div class="line"><span class="lineno">  121</span> </div>
-<div class="line"><span class="lineno">  122</span>    Date today = Settings::instance().evaluationDate();</div>
-<div class="line"><span class="lineno">  123</span>    Calendar cal = TARGET();</div>
-<div class="line"><span class="lineno">  124</span>    <span class="keywordtype">string</span> calStr = <span class="stringliteral">&quot;TARGET&quot;</span>;</div>
-<div class="line"><span class="lineno">  125</span>    <span class="keywordtype">string</span> conv = <span class="stringliteral">&quot;MF&quot;</span>;</div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordtype">string</span> rule = <span class="stringliteral">&quot;Forward&quot;</span>;</div>
-<div class="line"><span class="lineno">  127</span>    Size days = 2;</div>
-<div class="line"><span class="lineno">  128</span>    <span class="keywordtype">string</span> fixDC = <span class="stringliteral">&quot;30/360&quot;</span>;</div>
-<div class="line"><span class="lineno">  129</span>    <span class="keywordtype">string</span> floatDC = <span class="stringliteral">&quot;ACT/365&quot;</span>;</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>    vector&lt;double&gt; notional(1, 1000000);</div>
-<div class="line"><span class="lineno">  132</span>    vector&lt;double&gt; spread(1, 0);</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; portfolioSize; i++) {</div>
-<div class="line"><span class="lineno">  135</span>        Size term = portfolioSize == 1 ? 20 : <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, minTerm, maxTerm);</div>
-<div class="line"><span class="lineno">  136</span> </div>
-<div class="line"><span class="lineno">  137</span>        <span class="comment">// Start today +/- 1 Year</span></div>
-<div class="line"><span class="lineno">  138</span>        Date startDate = portfolioSize == 1 ? cal.adjust(today) : cal.adjust(today - 365 + <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, 0, 730));</div>
-<div class="line"><span class="lineno">  139</span>        Date endDate = cal.adjust(startDate + term * Years);</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>        <span class="comment">// date 2 string</span></div>
-<div class="line"><span class="lineno">  142</span>        ostringstream oss;</div>
-<div class="line"><span class="lineno">  143</span>        oss &lt;&lt; io::iso_date(startDate);</div>
-<div class="line"><span class="lineno">  144</span>        <span class="keywordtype">string</span> start(oss.str());</div>
-<div class="line"><span class="lineno">  145</span>        oss.str(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  146</span>        oss.clear();</div>
-<div class="line"><span class="lineno">  147</span>        oss &lt;&lt; io::iso_date(endDate);</div>
-<div class="line"><span class="lineno">  148</span>        <span class="keywordtype">string</span> end(oss.str());</div>
-<div class="line"><span class="lineno">  149</span> </div>
-<div class="line"><span class="lineno">  150</span>        <span class="comment">// ccy + index</span></div>
-<div class="line"><span class="lineno">  151</span>        <span class="keywordtype">string</span> ccy = portfolioSize == 1 ? <span class="stringliteral">&quot;EUR&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, ccys);</div>
-<div class="line"><span class="lineno">  152</span>        <span class="keywordtype">string</span> index = portfolioSize == 1 ? <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, indices[ccy]);</div>
-<div class="line"><span class="lineno">  153</span>        <span class="keywordtype">string</span> floatFreq = portfolioSize == 1 ? <span class="stringliteral">&quot;6M&quot;</span> : index.substr(index.find(<span class="charliteral">&#39;-&#39;</span>, 4) + 1);</div>
-<div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>        <span class="comment">// This variable is not used and only here to ensure that the random numbers generated in</span></div>
-<div class="line"><span class="lineno">  156</span>        <span class="comment">// subsequent blocks produce a swap portfolio, which is compatible with the archived values.</span></div>
-<div class="line"><span class="lineno">  157</span>        <span class="keywordtype">string</span> fixedTenor = portfolioSize == 1 ? <span class="stringliteral">&quot;1Y&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, fixedTenors);</div>
-<div class="line"><span class="lineno">  158</span>        fixedTenor = fixedTenor + <span class="stringliteral">&quot;_&quot;</span>;</div>
-<div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>        <span class="comment">// fixed details</span></div>
-<div class="line"><span class="lineno">  161</span>        Real fixedRate = portfolioSize == 1 ? 0.02 : <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, minFixedBps, maxFixedBps) / 100.0;</div>
-<div class="line"><span class="lineno">  162</span>        <span class="keywordtype">string</span> fixFreq = portfolioSize == 1 ? <span class="stringliteral">&quot;1Y&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, fixedTenors);</div>
-<div class="line"><span class="lineno">  163</span> </div>
-<div class="line"><span class="lineno">  164</span>        <span class="comment">// envelope</span></div>
-<div class="line"><span class="lineno">  165</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_envelope.html">Envelope</a> env(<span class="stringliteral">&quot;CP&quot;</span>);</div>
-<div class="line"><span class="lineno">  166</span> </div>
-<div class="line"><span class="lineno">  167</span>        <span class="comment">// Schedules</span></div>
-<div class="line"><span class="lineno">  168</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_data.html">ScheduleData</a> floatSchedule(<a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_rules.html">ScheduleRules</a>(start, end, floatFreq, calStr, conv, conv, rule));</div>
-<div class="line"><span class="lineno">  169</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_data.html">ScheduleData</a> fixedSchedule(<a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_rules.html">ScheduleRules</a>(start, end, fixFreq, calStr, conv, conv, rule));</div>
-<div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>        <span class="keywordtype">bool</span> isPayer = <a class="code hl_function" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109">randBoolean</a>(rng);</div>
-<div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>        <span class="comment">// fixed Leg - with dummy rate</span></div>
-<div class="line"><span class="lineno">  174</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_leg_data.html">LegData</a> fixedLeg(boost::make_shared&lt;FixedLegData&gt;(vector&lt;double&gt;(1, fixedRate)), isPayer, ccy, fixedSchedule,</div>
-<div class="line"><span class="lineno">  175</span>                         fixDC, notional);</div>
-<div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>        <span class="comment">// float Leg</span></div>
-<div class="line"><span class="lineno">  178</span>        vector&lt;double&gt; spreads(1, 0);</div>
-<div class="line"><span class="lineno">  179</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_leg_data.html">LegData</a> floatingLeg(boost::make_shared&lt;FloatingLegData&gt;(index, days, <span class="keyword">false</span>, spread), !isPayer, ccy,</div>
-<div class="line"><span class="lineno">  180</span>                            floatSchedule, floatDC, notional);</div>
-<div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>        boost::shared_ptr&lt;Trade&gt; swap(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_swap.html">data::Swap</a>(env, floatingLeg, fixedLeg));</div>
-<div class="line"><span class="lineno">  183</span> </div>
-<div class="line"><span class="lineno">  184</span>        <span class="comment">// id</span></div>
-<div class="line"><span class="lineno">  185</span>        oss.clear();</div>
-<div class="line"><span class="lineno">  186</span>        oss.str(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  187</span>        oss &lt;&lt; <span class="stringliteral">&quot;Trade_&quot;</span> &lt;&lt; i + 1;</div>
-<div class="line"><span class="lineno">  188</span>        swap-&gt;id() = oss.str();</div>
-<div class="line"><span class="lineno">  189</span> </div>
-<div class="line"><span class="lineno">  190</span>        portfolio-&gt;add(swap);</div>
-<div class="line"><span class="lineno">  191</span>    }</div>
-<div class="line"><span class="lineno">  192</span>    <span class="comment">// portfolio-&gt;save(&quot;port.xml&quot;);</span></div>
-<div class="line"><span class="lineno">  193</span> </div>
-<div class="line"><span class="lineno">  194</span>    portfolio-&gt;build(factory);</div>
-<div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">if</span> (portfolio-&gt;size() != portfolioSize)</div>
-<div class="line"><span class="lineno">  197</span>        BOOST_ERROR(<span class="stringliteral">&quot;Failed to build portfolio (got &quot;</span> &lt;&lt; portfolio-&gt;size() &lt;&lt; <span class="stringliteral">&quot; expected &quot;</span> &lt;&lt; portfolioSize &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">  198</span> </div>
-<div class="line"><span class="lineno">  199</span>    <span class="comment">// Dump stats about portfolio</span></div>
-<div class="line"><span class="lineno">  200</span>    Time <a class="code hl_variableRef" href="../ored/utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = 0;</div>
-<div class="line"><span class="lineno">  201</span>    DayCounter dc = ActualActual(ActualActual::ISDA);</div>
-<div class="line"><span class="lineno">  202</span>    map&lt;string, Size&gt; fixedFreqs;</div>
-<div class="line"><span class="lineno">  203</span>    map&lt;string, Size&gt; floatFreqs;</div>
-<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [tradeId, trade] : portfolio-&gt;trades()) {</div>
-<div class="line"><span class="lineno">  205</span>        <a class="code hl_variableRef" href="../ored/utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> += dc.yearFraction(today, trade-&gt;maturity());</div>
-<div class="line"><span class="lineno">  206</span> </div>
-<div class="line"><span class="lineno">  207</span>        <span class="comment">// fixed Freq</span></div>
-<div class="line"><span class="lineno">  208</span>        boost::shared_ptr&lt;data::Swap&gt; swap = boost::dynamic_pointer_cast&lt;data::Swap&gt;(trade);</div>
-<div class="line"><span class="lineno">  209</span>        <span class="keywordtype">string</span> floatFreq = swap-&gt;legData()[0].schedule().rules().front().tenor();</div>
-<div class="line"><span class="lineno">  210</span>        <span class="keywordtype">string</span> fixFreq = swap-&gt;legData()[1].schedule().rules().front().tenor();</div>
-<div class="line"><span class="lineno">  211</span>        QL_REQUIRE(swap-&gt;legData()[0].legType() == <span class="stringliteral">&quot;Floating&quot;</span> &amp;&amp; swap-&gt;legData()[1].legType() == <span class="stringliteral">&quot;Fixed&quot;</span>, <span class="stringliteral">&quot;Leg mixup&quot;</span>);</div>
-<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">if</span> (fixedFreqs.find(fixFreq) == fixedFreqs.end())</div>
-<div class="line"><span class="lineno">  213</span>            fixedFreqs[fixFreq] = 1;</div>
-<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  215</span>            fixedFreqs[fixFreq]++;</div>
-<div class="line"><span class="lineno">  216</span>        <span class="keywordflow">if</span> (floatFreqs.find(floatFreq) == floatFreqs.end())</div>
-<div class="line"><span class="lineno">  217</span>            floatFreqs[floatFreq] = 1;</div>
-<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  219</span>            floatFreqs[floatFreq]++;</div>
-<div class="line"><span class="lineno">  220</span>    }</div>
-<div class="line"><span class="lineno">  221</span>    <a class="code hl_variableRef" href="../ored/utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> /= portfolioSize;</div>
-<div class="line"><span class="lineno">  222</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Portfolio Size    : &quot;</span> &lt;&lt; portfolioSize);</div>
-<div class="line"><span class="lineno">  223</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Average Maturity  : &quot;</span> &lt;&lt; maturity);</div>
-<div class="line"><span class="lineno">  224</span>    ostringstream oss;</div>
-<div class="line"><span class="lineno">  225</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; ccys.size(); i++)</div>
-<div class="line"><span class="lineno">  226</span>        oss &lt;&lt; ccys[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">  227</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Currencies        : &quot;</span> &lt;&lt; oss.str());</div>
-<div class="line"><span class="lineno">  228</span>    <span class="comment">// dump % breakdown of tenors</span></div>
-<div class="line"><span class="lineno">  229</span>    map&lt;string, Size&gt;::iterator it;</div>
-<div class="line"><span class="lineno">  230</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Fixed Tenors      : &quot;</span>);</div>
-<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">for</span> (it = fixedFreqs.begin(); it != fixedFreqs.end(); ++it) {</div>
-<div class="line"><span class="lineno">  232</span>        Real perc = 100 * it-&gt;second / (Real)portfolioSize;</div>
-<div class="line"><span class="lineno">  233</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;  &quot;</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; perc &lt;&lt; <span class="stringliteral">&quot; %&quot;</span>);</div>
-<div class="line"><span class="lineno">  234</span>    }</div>
-<div class="line"><span class="lineno">  235</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Floating Tenors   : &quot;</span>);</div>
-<div class="line"><span class="lineno">  236</span>    <span class="keywordflow">for</span> (it = floatFreqs.begin(); it != floatFreqs.end(); ++it) {</div>
-<div class="line"><span class="lineno">  237</span>        Real perc = 100 * it-&gt;second / (Real)portfolioSize;</div>
-<div class="line"><span class="lineno">  238</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;  &quot;</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; perc &lt;&lt; <span class="stringliteral">&quot; %&quot;</span>);</div>
-<div class="line"><span class="lineno">  239</span>    }</div>
-<div class="line"><span class="lineno">  240</span> </div>
-<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">return</span> portfolio;</div>
-<div class="line"><span class="lineno">  242</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00100">100</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>                                                                                                       {</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_portfolio.html">Portfolio</a>());</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>    vector&lt;string&gt; ccys = {<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="stringliteral">&quot;JPY&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>};</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    map&lt;string, vector&lt;string&gt;&gt; indices = {{<span class="stringliteral">&quot;EUR&quot;</span>, {<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>}},</div>
+<div class="line"><span class="lineno">  107</span>                                           {<span class="stringliteral">&quot;USD&quot;</span>, {<span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>}},</div>
+<div class="line"><span class="lineno">  108</span>                                           {<span class="stringliteral">&quot;GBP&quot;</span>, {<span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>}},</div>
+<div class="line"><span class="lineno">  109</span>                                           {<span class="stringliteral">&quot;CHF&quot;</span>, {<span class="stringliteral">&quot;CHF-LIBOR-6M&quot;</span>}},</div>
+<div class="line"><span class="lineno">  110</span>                                           {<span class="stringliteral">&quot;JPY&quot;</span>, {<span class="stringliteral">&quot;JPY-LIBOR-6M&quot;</span>}}};</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>    vector&lt;string&gt; fixedTenors = {<span class="stringliteral">&quot;6M&quot;</span>, <span class="stringliteral">&quot;1Y&quot;</span>};</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    Size minTerm = 2;</div>
+<div class="line"><span class="lineno">  115</span>    Size maxTerm = 30;</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    Size minFixedBps = 10;</div>
+<div class="line"><span class="lineno">  118</span>    Size maxFixedBps = 400;</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    Size seed = 5; <span class="comment">// keep this constant to ensure portfolio doesn&#39;t change</span></div>
+<div class="line"><span class="lineno">  121</span>    MersenneTwisterUniformRng rng(seed);</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    Date today = Settings::instance().evaluationDate();</div>
+<div class="line"><span class="lineno">  124</span>    Calendar cal = TARGET();</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordtype">string</span> calStr = <span class="stringliteral">&quot;TARGET&quot;</span>;</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordtype">string</span> conv = <span class="stringliteral">&quot;MF&quot;</span>;</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordtype">string</span> rule = <span class="stringliteral">&quot;Forward&quot;</span>;</div>
+<div class="line"><span class="lineno">  128</span>    Size days = 2;</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordtype">string</span> fixDC = <span class="stringliteral">&quot;30/360&quot;</span>;</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordtype">string</span> floatDC = <span class="stringliteral">&quot;ACT/365&quot;</span>;</div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>    vector&lt;double&gt; notional(1, 1000000);</div>
+<div class="line"><span class="lineno">  133</span>    vector&lt;double&gt; spread(1, 0);</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; portfolioSize; i++) {</div>
+<div class="line"><span class="lineno">  136</span>        Size term = portfolioSize == 1 ? 20 : <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, minTerm, maxTerm);</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>        <span class="comment">// Start today +/- 1 Year</span></div>
+<div class="line"><span class="lineno">  139</span>        Date startDate = portfolioSize == 1 ? cal.adjust(today) : cal.adjust(today - 365 + <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, 0, 730));</div>
+<div class="line"><span class="lineno">  140</span>        Date endDate = cal.adjust(startDate + term * Years);</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>        <span class="comment">// date 2 string</span></div>
+<div class="line"><span class="lineno">  143</span>        ostringstream oss;</div>
+<div class="line"><span class="lineno">  144</span>        oss &lt;&lt; io::iso_date(startDate);</div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordtype">string</span> start(oss.str());</div>
+<div class="line"><span class="lineno">  146</span>        oss.str(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  147</span>        oss.clear();</div>
+<div class="line"><span class="lineno">  148</span>        oss &lt;&lt; io::iso_date(endDate);</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordtype">string</span> end(oss.str());</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>        <span class="comment">// ccy + index</span></div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordtype">string</span> ccy = portfolioSize == 1 ? <span class="stringliteral">&quot;EUR&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, ccys);</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordtype">string</span> index = portfolioSize == 1 ? <span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, indices[ccy]);</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordtype">string</span> floatFreq = portfolioSize == 1 ? <span class="stringliteral">&quot;6M&quot;</span> : index.substr(index.find(<span class="charliteral">&#39;-&#39;</span>, 4) + 1);</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>        <span class="comment">// This variable is not used and only here to ensure that the random numbers generated in</span></div>
+<div class="line"><span class="lineno">  157</span>        <span class="comment">// subsequent blocks produce a swap portfolio, which is compatible with the archived values.</span></div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordtype">string</span> fixedTenor = portfolioSize == 1 ? <span class="stringliteral">&quot;1Y&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, fixedTenors);</div>
+<div class="line"><span class="lineno">  159</span>        fixedTenor = fixedTenor + <span class="stringliteral">&quot;_&quot;</span>;</div>
+<div class="line"><span class="lineno">  160</span> </div>
+<div class="line"><span class="lineno">  161</span>        <span class="comment">// fixed details</span></div>
+<div class="line"><span class="lineno">  162</span>        Real fixedRate = portfolioSize == 1 ? 0.02 : <a class="code hl_function" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76">randInt</a>(rng, minFixedBps, maxFixedBps) / 100.0;</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordtype">string</span> fixFreq = portfolioSize == 1 ? <span class="stringliteral">&quot;1Y&quot;</span> : <a class="code hl_function" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a>(rng, fixedTenors);</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>        <span class="comment">// envelope</span></div>
+<div class="line"><span class="lineno">  166</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_envelope.html">Envelope</a> env(<span class="stringliteral">&quot;CP&quot;</span>);</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>        <span class="comment">// Schedules</span></div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_data.html">ScheduleData</a> floatSchedule(<a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_rules.html">ScheduleRules</a>(start, end, floatFreq, calStr, conv, conv, rule));</div>
+<div class="line"><span class="lineno">  170</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_data.html">ScheduleData</a> fixedSchedule(<a class="code hl_classRef" href="../ored/classore_1_1data_1_1_schedule_rules.html">ScheduleRules</a>(start, end, fixFreq, calStr, conv, conv, rule));</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>        <span class="keywordtype">bool</span> isPayer = <a class="code hl_function" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109">randBoolean</a>(rng);</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>        <span class="comment">// fixed Leg - with dummy rate</span></div>
+<div class="line"><span class="lineno">  175</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_leg_data.html">LegData</a> fixedLeg(boost::make_shared&lt;FixedLegData&gt;(vector&lt;double&gt;(1, fixedRate)), isPayer, ccy, fixedSchedule,</div>
+<div class="line"><span class="lineno">  176</span>                         fixDC, notional);</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>        <span class="comment">// float Leg</span></div>
+<div class="line"><span class="lineno">  179</span>        vector&lt;double&gt; spreads(1, 0);</div>
+<div class="line"><span class="lineno">  180</span>        <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_leg_data.html">LegData</a> floatingLeg(boost::make_shared&lt;FloatingLegData&gt;(index, days, <span class="keyword">false</span>, spread), !isPayer, ccy,</div>
+<div class="line"><span class="lineno">  181</span>                            floatSchedule, floatDC, notional);</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>        boost::shared_ptr&lt;Trade&gt; swap(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_swap.html">data::Swap</a>(env, floatingLeg, fixedLeg));</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>        <span class="comment">// id</span></div>
+<div class="line"><span class="lineno">  186</span>        oss.clear();</div>
+<div class="line"><span class="lineno">  187</span>        oss.str(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  188</span>        oss &lt;&lt; <span class="stringliteral">&quot;Trade_&quot;</span> &lt;&lt; i + 1;</div>
+<div class="line"><span class="lineno">  189</span>        swap-&gt;id() = oss.str();</div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>        portfolio-&gt;add(swap);</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
+<div class="line"><span class="lineno">  193</span>    <span class="comment">// portfolio-&gt;save(&quot;port.xml&quot;);</span></div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>    portfolio-&gt;build(factory);</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">if</span> (portfolio-&gt;size() != portfolioSize)</div>
+<div class="line"><span class="lineno">  198</span>        BOOST_ERROR(<span class="stringliteral">&quot;Failed to build portfolio (got &quot;</span> &lt;&lt; portfolio-&gt;size() &lt;&lt; <span class="stringliteral">&quot; expected &quot;</span> &lt;&lt; portfolioSize &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><span class="lineno">  199</span> </div>
+<div class="line"><span class="lineno">  200</span>    <span class="comment">// Dump stats about portfolio</span></div>
+<div class="line"><span class="lineno">  201</span>    Time <a class="code hl_variableRef" href="../ored/utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> = 0;</div>
+<div class="line"><span class="lineno">  202</span>    DayCounter dc = ActualActual(ActualActual::ISDA);</div>
+<div class="line"><span class="lineno">  203</span>    map&lt;string, Size&gt; fixedFreqs;</div>
+<div class="line"><span class="lineno">  204</span>    map&lt;string, Size&gt; floatFreqs;</div>
+<div class="line"><span class="lineno">  205</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [tradeId, trade] : portfolio-&gt;trades()) {</div>
+<div class="line"><span class="lineno">  206</span>        <a class="code hl_variableRef" href="../ored/utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> += dc.yearFraction(today, trade-&gt;maturity());</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>        <span class="comment">// fixed Freq</span></div>
+<div class="line"><span class="lineno">  209</span>        boost::shared_ptr&lt;data::Swap&gt; swap = boost::dynamic_pointer_cast&lt;data::Swap&gt;(trade);</div>
+<div class="line"><span class="lineno">  210</span>        <span class="keywordtype">string</span> floatFreq = swap-&gt;legData()[0].schedule().rules().front().tenor();</div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordtype">string</span> fixFreq = swap-&gt;legData()[1].schedule().rules().front().tenor();</div>
+<div class="line"><span class="lineno">  212</span>        QL_REQUIRE(swap-&gt;legData()[0].legType() == <span class="stringliteral">&quot;Floating&quot;</span> &amp;&amp; swap-&gt;legData()[1].legType() == <span class="stringliteral">&quot;Fixed&quot;</span>, <span class="stringliteral">&quot;Leg mixup&quot;</span>);</div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordflow">if</span> (fixedFreqs.find(fixFreq) == fixedFreqs.end())</div>
+<div class="line"><span class="lineno">  214</span>            fixedFreqs[fixFreq] = 1;</div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  216</span>            fixedFreqs[fixFreq]++;</div>
+<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">if</span> (floatFreqs.find(floatFreq) == floatFreqs.end())</div>
+<div class="line"><span class="lineno">  218</span>            floatFreqs[floatFreq] = 1;</div>
+<div class="line"><span class="lineno">  219</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  220</span>            floatFreqs[floatFreq]++;</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="line"><span class="lineno">  222</span>    <a class="code hl_variableRef" href="../ored/utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a> /= portfolioSize;</div>
+<div class="line"><span class="lineno">  223</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Portfolio Size    : &quot;</span> &lt;&lt; portfolioSize);</div>
+<div class="line"><span class="lineno">  224</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Average Maturity  : &quot;</span> &lt;&lt; maturity);</div>
+<div class="line"><span class="lineno">  225</span>    ostringstream oss;</div>
+<div class="line"><span class="lineno">  226</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; ccys.size(); i++)</div>
+<div class="line"><span class="lineno">  227</span>        oss &lt;&lt; ccys[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  228</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Currencies        : &quot;</span> &lt;&lt; oss.str());</div>
+<div class="line"><span class="lineno">  229</span>    <span class="comment">// dump % breakdown of tenors</span></div>
+<div class="line"><span class="lineno">  230</span>    map&lt;string, Size&gt;::iterator it;</div>
+<div class="line"><span class="lineno">  231</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Fixed Tenors      : &quot;</span>);</div>
+<div class="line"><span class="lineno">  232</span>    <span class="keywordflow">for</span> (it = fixedFreqs.begin(); it != fixedFreqs.end(); ++it) {</div>
+<div class="line"><span class="lineno">  233</span>        Real perc = 100 * it-&gt;second / (Real)portfolioSize;</div>
+<div class="line"><span class="lineno">  234</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;  &quot;</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; perc &lt;&lt; <span class="stringliteral">&quot; %&quot;</span>);</div>
+<div class="line"><span class="lineno">  235</span>    }</div>
+<div class="line"><span class="lineno">  236</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Floating Tenors   : &quot;</span>);</div>
+<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">for</span> (it = floatFreqs.begin(); it != floatFreqs.end(); ++it) {</div>
+<div class="line"><span class="lineno">  238</span>        Real perc = 100 * it-&gt;second / (Real)portfolioSize;</div>
+<div class="line"><span class="lineno">  239</span>        BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;  &quot;</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; perc &lt;&lt; <span class="stringliteral">&quot; %&quot;</span>);</div>
+<div class="line"><span class="lineno">  240</span>    }</div>
+<div class="line"><span class="lineno">  241</span> </div>
+<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">return</span> portfolio;</div>
+<div class="line"><span class="lineno">  243</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_envelope_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_envelope.html">ore::data::Envelope</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_leg_data_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_leg_data.html">ore::data::LegData</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_portfolio_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_portfolio.html">ore::data::Portfolio</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_data_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_schedule_data.html">ore::data::ScheduleData</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_rules_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_schedule_rules.html">ore::data::ScheduleRules</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_swap_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_swap.html">ore::data::Swap</a></div></div>
-<div class="ttc" id="aswapperformance_8cpp_html_a4b41f5a2efc268d5f6f24389f4700109"><div class="ttname"><a href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109">randBoolean</a></div><div class="ttdeci">bool randBoolean(MersenneTwisterUniformRng &amp;rng)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00081">swapperformance.cpp:81</a></div></div>
-<div class="ttc" id="aswapperformance_8cpp_html_a5bb4f31822343cec98fd81c5a2394351"><div class="ttname"><a href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a></div><div class="ttdeci">const string &amp; randString(MersenneTwisterUniformRng &amp;rng, const vector&lt; string &gt; &amp;strs)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00077">swapperformance.cpp:77</a></div></div>
+<div class="ttc" id="aswapperformance_8cpp_html_a4b41f5a2efc268d5f6f24389f4700109"><div class="ttname"><a href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109">randBoolean</a></div><div class="ttdeci">bool randBoolean(MersenneTwisterUniformRng &amp;rng)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00082">swapperformance.cpp:82</a></div></div>
+<div class="ttc" id="aswapperformance_8cpp_html_a5bb4f31822343cec98fd81c5a2394351"><div class="ttname"><a href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351">randString</a></div><div class="ttdeci">const string &amp; randString(MersenneTwisterUniformRng &amp;rng, const vector&lt; string &gt; &amp;strs)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00078">swapperformance.cpp:78</a></div></div>
 <div class="ttc" id="autilities_8cpp_html_a13d7d92e74b3e8c94c52ca7a1262c55e"><div class="ttname"><a href="../ored/utilities_8cpp.html#a13d7d92e74b3e8c94c52ca7a1262c55e">maturity</a></div><div class="ttdeci">Time maturity</div></div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -742,258 +742,261 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00244">244</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  245</span>                                                  {</div>
-<div class="line"><span class="lineno">  246</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Exposure Performance size=&quot;</span> &lt;&lt; portfolioSize &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>);</div>
-<div class="line"><span class="lineno">  247</span> </div>
-<div class="line"><span class="lineno">  248</span>    SavedSettings backup;</div>
-<div class="line"><span class="lineno">  249</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ObservationMode::Mode</a> backupOm = ObservationMode::instance().mode();</div>
-<div class="line"><span class="lineno">  250</span>    ObservationMode::instance().setMode(om);</div>
-<div class="line"><span class="lineno">  251</span> </div>
-<div class="line"><span class="lineno">  252</span>    <span class="comment">// Log::instance().registerLogger(boost::make_shared&lt;StderrLogger&gt;());</span></div>
-<div class="line"><span class="lineno">  253</span>    <span class="comment">// Log::instance().switchOn();</span></div>
-<div class="line"><span class="lineno">  254</span> </div>
-<div class="line"><span class="lineno">  255</span>    Date today = Date(14, April, 2016); <span class="comment">// Settings::instance().evaluationDate();</span></div>
-<div class="line"><span class="lineno">  256</span>    Settings::instance().evaluationDate() = today;</div>
-<div class="line"><span class="lineno">  257</span> </div>
-<div class="line"><span class="lineno">  258</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Today is &quot;</span> &lt;&lt; today);</div>
-<div class="line"><span class="lineno">  259</span> </div>
-<div class="line"><span class="lineno">  260</span>    <span class="keywordtype">string</span> dateGridStr = <span class="stringliteral">&quot;80,3M&quot;</span>; <span class="comment">// 20 years</span></div>
-<div class="line"><span class="lineno">  261</span>    boost::shared_ptr&lt;DateGrid&gt; dg = boost::make_shared&lt;DateGrid&gt;(dateGridStr);</div>
-<div class="line"><span class="lineno">  262</span>    Size samples = 1000;</div>
-<div class="line"><span class="lineno">  263</span> </div>
-<div class="line"><span class="lineno">  264</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Date Grid : &quot;</span> &lt;&lt; dateGridStr);</div>
-<div class="line"><span class="lineno">  265</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Samples   : &quot;</span> &lt;&lt; samples);</div>
-<div class="line"><span class="lineno">  266</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Swaps     : &quot;</span> &lt;&lt; portfolioSize);</div>
-<div class="line"><span class="lineno">  267</span> </div>
-<div class="line"><span class="lineno">  268</span>    <span class="comment">// build model</span></div>
-<div class="line"><span class="lineno">  269</span>    <span class="keywordtype">string</span> baseCcy = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
-<div class="line"><span class="lineno">  270</span>    vector&lt;string&gt; ccys;</div>
-<div class="line"><span class="lineno">  271</span>    ccys.push_back(baseCcy);</div>
-<div class="line"><span class="lineno">  272</span>    ccys.push_back(<span class="stringliteral">&quot;GBP&quot;</span>);</div>
-<div class="line"><span class="lineno">  273</span>    ccys.push_back(<span class="stringliteral">&quot;CHF&quot;</span>);</div>
-<div class="line"><span class="lineno">  274</span>    ccys.push_back(<span class="stringliteral">&quot;USD&quot;</span>);</div>
-<div class="line"><span class="lineno">  275</span>    ccys.push_back(<span class="stringliteral">&quot;JPY&quot;</span>);</div>
-<div class="line"><span class="lineno">  276</span> </div>
-<div class="line"><span class="lineno">  277</span>    <span class="comment">// Init market</span></div>
-<div class="line"><span class="lineno">  278</span>    boost::shared_ptr&lt;Market&gt; initMarket = boost::make_shared&lt;TestMarket&gt;(today);</div>
-<div class="line"><span class="lineno">  279</span> </div>
-<div class="line"><span class="lineno">  280</span>    <span class="comment">// build scenario sim market parameters</span></div>
-<div class="line"><span class="lineno">  281</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarketParameters&gt; parameters(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_sim_market_parameters.html">analytics::ScenarioSimMarketParameters</a>());</div>
-<div class="line"><span class="lineno">  282</span>    parameters-&gt;baseCcy() = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
-<div class="line"><span class="lineno">  283</span>    parameters-&gt;setDiscountCurveNames({<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, <span class="stringliteral">&quot;JPY&quot;</span>});</div>
-<div class="line"><span class="lineno">  284</span>    parameters-&gt;setYieldCurveTenors(<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><span class="lineno">  285</span>                                    {1 * Months, 6 * Months, 1 * Years, 2 * Years, 5 * Years, 10 * Years, 20 * Years});</div>
-<div class="line"><span class="lineno">  286</span>    parameters-&gt;setIndices({<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, <span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, <span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;CHF-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;JPY-LIBOR-6M&quot;</span>});</div>
-<div class="line"><span class="lineno">  287</span> </div>
-<div class="line"><span class="lineno">  288</span>    parameters-&gt;interpolation() = <span class="stringliteral">&quot;LogLinear&quot;</span>;</div>
-<div class="line"><span class="lineno">  289</span> </div>
-<div class="line"><span class="lineno">  290</span>    parameters-&gt;setSimulateSwapVols(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  291</span>    parameters-&gt;setSwapVolTerms(<span class="stringliteral">&quot;&quot;</span>, {6 * Months, 1 * Years});</div>
-<div class="line"><span class="lineno">  292</span>    parameters-&gt;setSwapVolExpiries(<span class="stringliteral">&quot;&quot;</span>, {1 * Years, 2 * Years});</div>
-<div class="line"><span class="lineno">  293</span>    parameters-&gt;swapVolKeys() = ccys;</div>
-<div class="line"><span class="lineno">  294</span>    parameters-&gt;swapVolDecayMode() = <span class="stringliteral">&quot;ForwardVariance&quot;</span>;</div>
-<div class="line"><span class="lineno">  295</span> </div>
-<div class="line"><span class="lineno">  296</span>    parameters-&gt;setFxVolExpiries(<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><span class="lineno">  297</span>        vector&lt;Period&gt;{1 * Months, 3 * Months, 6 * Months, 2 * Years, 3 * Years, 4 * Years, 5 * Years});</div>
-<div class="line"><span class="lineno">  298</span>    parameters-&gt;setFxVolDecayMode(<span class="keywordtype">string</span>(<span class="stringliteral">&quot;ConstantVariance&quot;</span>));</div>
-<div class="line"><span class="lineno">  299</span>    parameters-&gt;setSimulateFXVols(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  300</span> </div>
-<div class="line"><span class="lineno">  301</span>    parameters-&gt;setFxVolCcyPairs({<span class="stringliteral">&quot;USDEUR&quot;</span>, <span class="stringliteral">&quot;GBPEUR&quot;</span>, <span class="stringliteral">&quot;CHFEUR&quot;</span>, <span class="stringliteral">&quot;JPYEUR&quot;</span>});</div>
-<div class="line"><span class="lineno">  302</span>    parameters-&gt;setFxCcyPairs({<span class="stringliteral">&quot;USDEUR&quot;</span>, <span class="stringliteral">&quot;GBPEUR&quot;</span>, <span class="stringliteral">&quot;CHFEUR&quot;</span>, <span class="stringliteral">&quot;JPYEUR&quot;</span>});</div>
-<div class="line"><span class="lineno">  303</span> </div>
-<div class="line"><span class="lineno">  304</span>    parameters-&gt;setEquityVolExpiries(<span class="stringliteral">&quot;&quot;</span>, {1 * Months, 3 * Months, 6 * Months, 2 * Years, 3 * Years, 4 * Years, 5 * Years});</div>
-<div class="line"><span class="lineno">  305</span>    parameters-&gt;setEquityVolDecayMode(<span class="stringliteral">&quot;ConstantVariance&quot;</span>);</div>
-<div class="line"><span class="lineno">  306</span>    parameters-&gt;setSimulateEquityVols(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  307</span> </div>
-<div class="line"><span class="lineno">  308</span>    <span class="comment">// Config</span></div>
-<div class="line"><span class="lineno">  309</span> </div>
-<div class="line"><span class="lineno">  310</span>    <span class="comment">// Build IR configurations</span></div>
-<div class="line"><span class="lineno">  311</span>    <a class="code hl_enumerationRef" href="../ored/namespaceore_1_1data.html#a18340f2f2342933b54b1dc8e6c0ed797">CalibrationType</a> calibrationType = CalibrationType::Bootstrap;</div>
-<div class="line"><span class="lineno">  312</span>    <a class="code hl_enumerationRef" href="../ored/classore_1_1data_1_1_lgm_data.html#a85128cf8fffb22eea15b6db0929ffb43">LgmData::ReversionType</a> revType = LgmData::ReversionType::HullWhite;</div>
-<div class="line"><span class="lineno">  313</span>    <a class="code hl_enumerationRef" href="../ored/classore_1_1data_1_1_lgm_data.html#a8b2aa10016abb1ffb6f55484a04a5143">LgmData::VolatilityType</a> volType = LgmData::VolatilityType::Hagan;</div>
-<div class="line"><span class="lineno">  314</span>    vector&lt;string&gt; swaptionExpiries = {<span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;2Y&quot;</span>, <span class="stringliteral">&quot;3Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;7Y&quot;</span>, <span class="stringliteral">&quot;10Y&quot;</span>, <span class="stringliteral">&quot;15Y&quot;</span>, <span class="stringliteral">&quot;20Y&quot;</span>, <span class="stringliteral">&quot;30Y&quot;</span>};</div>
-<div class="line"><span class="lineno">  315</span>    vector&lt;string&gt; swaptionTerms = {<span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>};</div>
-<div class="line"><span class="lineno">  316</span>    vector&lt;string&gt; swaptionStrikes(swaptionExpiries.size(), <span class="stringliteral">&quot;ATM&quot;</span>);</div>
-<div class="line"><span class="lineno">  317</span>    vector&lt;Time&gt; hTimes = {};</div>
-<div class="line"><span class="lineno">  318</span>    vector&lt;Time&gt; aTimes = {};</div>
-<div class="line"><span class="lineno">  319</span> </div>
-<div class="line"><span class="lineno">  320</span>    std::vector&lt;boost::shared_ptr&lt;IrModelData&gt;&gt; irConfigs;</div>
-<div class="line"><span class="lineno">  321</span> </div>
-<div class="line"><span class="lineno">  322</span>    vector&lt;Real&gt; hValues = {0.02};</div>
-<div class="line"><span class="lineno">  323</span>    vector&lt;Real&gt; aValues = {0.008};</div>
-<div class="line"><span class="lineno">  324</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
-<div class="line"><span class="lineno">  325</span>        <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  326</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
-<div class="line"><span class="lineno">  327</span> </div>
-<div class="line"><span class="lineno">  328</span>    hValues = {0.03};</div>
-<div class="line"><span class="lineno">  329</span>    aValues = {0.009};</div>
-<div class="line"><span class="lineno">  330</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
-<div class="line"><span class="lineno">  331</span>        <span class="stringliteral">&quot;USD&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  332</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
-<div class="line"><span class="lineno">  333</span> </div>
-<div class="line"><span class="lineno">  334</span>    hValues = {0.04};</div>
-<div class="line"><span class="lineno">  335</span>    aValues = {0.01};</div>
-<div class="line"><span class="lineno">  336</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
-<div class="line"><span class="lineno">  337</span>        <span class="stringliteral">&quot;GBP&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  338</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
-<div class="line"><span class="lineno">  339</span> </div>
-<div class="line"><span class="lineno">  340</span>    hValues = {0.04};</div>
-<div class="line"><span class="lineno">  341</span>    aValues = {0.01};</div>
-<div class="line"><span class="lineno">  342</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
-<div class="line"><span class="lineno">  343</span>        <span class="stringliteral">&quot;CHF&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  344</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
-<div class="line"><span class="lineno">  345</span> </div>
-<div class="line"><span class="lineno">  346</span>    hValues = {0.04};</div>
-<div class="line"><span class="lineno">  347</span>    aValues = {0.01};</div>
-<div class="line"><span class="lineno">  348</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
-<div class="line"><span class="lineno">  349</span>        <span class="stringliteral">&quot;JPY&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
-<div class="line"><span class="lineno">  350</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
-<div class="line"><span class="lineno">  351</span> </div>
-<div class="line"><span class="lineno">  352</span>    <span class="comment">// Compile FX configurations</span></div>
-<div class="line"><span class="lineno">  353</span>    vector&lt;string&gt; optionExpiries = {<span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;2Y&quot;</span>, <span class="stringliteral">&quot;3Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;7Y&quot;</span>, <span class="stringliteral">&quot;10Y&quot;</span>};</div>
-<div class="line"><span class="lineno">  354</span>    vector&lt;string&gt; optionStrikes(optionExpiries.size(), <span class="stringliteral">&quot;ATMF&quot;</span>);</div>
-<div class="line"><span class="lineno">  355</span>    vector&lt;Time&gt; sigmaTimes = {};</div>
-<div class="line"><span class="lineno">  356</span> </div>
-<div class="line"><span class="lineno">  357</span>    std::vector&lt;boost::shared_ptr&lt;FxBsData&gt;&gt; fxConfigs;</div>
-<div class="line"><span class="lineno">  358</span> </div>
-<div class="line"><span class="lineno">  359</span>    vector&lt;Real&gt; sigmaValues = {0.15};</div>
-<div class="line"><span class="lineno">  360</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
-<div class="line"><span class="lineno">  361</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
-<div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>    sigmaValues = {0.20};</div>
-<div class="line"><span class="lineno">  364</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;GBP&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
-<div class="line"><span class="lineno">  365</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
-<div class="line"><span class="lineno">  366</span> </div>
-<div class="line"><span class="lineno">  367</span>    sigmaValues = {0.20};</div>
-<div class="line"><span class="lineno">  368</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;CHF&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
-<div class="line"><span class="lineno">  369</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
-<div class="line"><span class="lineno">  370</span> </div>
-<div class="line"><span class="lineno">  371</span>    sigmaValues = {0.20};</div>
-<div class="line"><span class="lineno">  372</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;JPY&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
-<div class="line"><span class="lineno">  373</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
-<div class="line"><span class="lineno">  374</span> </div>
-<div class="line"><span class="lineno">  375</span>    map&lt;CorrelationKey, Handle&lt;Quote&gt;&gt; corr;</div>
-<div class="line"><span class="lineno">  376</span>    <a class="code hl_structRef" href="../ored/structore_1_1data_1_1_correlation_factor.html">CorrelationFactor</a> f_1{ CrossAssetModel::AssetType::IR, <span class="stringliteral">&quot;EUR&quot;</span>, 0 };</div>
-<div class="line"><span class="lineno">  377</span>    <a class="code hl_structRef" href="../ored/structore_1_1data_1_1_correlation_factor.html">CorrelationFactor</a> f_2{ CrossAssetModel::AssetType::IR, <span class="stringliteral">&quot;USD&quot;</span>, 0 };</div>
-<div class="line"><span class="lineno">  378</span>    corr[make_pair(f_1, f_2)] = Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(0.6));</div>
-<div class="line"><span class="lineno">  379</span> </div>
-<div class="line"><span class="lineno">  380</span>    boost::shared_ptr&lt;CrossAssetModelData&gt; config(boost::make_shared&lt;CrossAssetModelData&gt;(irConfigs, fxConfigs, corr));</div>
-<div class="line"><span class="lineno">  381</span> </div>
-<div class="line"><span class="lineno">  382</span>    <span class="comment">// Model Builder &amp; Model</span></div>
-<div class="line"><span class="lineno">  383</span>    <span class="comment">// model builder</span></div>
-<div class="line"><span class="lineno">  384</span>    boost::shared_ptr&lt;CrossAssetModelBuilder&gt; modelBuilder(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_cross_asset_model_builder.html">CrossAssetModelBuilder</a>(initMarket, config));</div>
-<div class="line"><span class="lineno">  385</span>    boost::shared_ptr&lt;QuantExt::CrossAssetModel&gt; model = *modelBuilder-&gt;model();</div>
-<div class="line"><span class="lineno">  386</span>    modelBuilder = NULL;</div>
-<div class="line"><span class="lineno">  387</span> </div>
-<div class="line"><span class="lineno">  388</span>    <span class="comment">// Path generator</span></div>
-<div class="line"><span class="lineno">  389</span>    Size seed = 5;</div>
-<div class="line"><span class="lineno">  390</span>    <span class="keywordtype">bool</span> antithetic = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  391</span>    boost::shared_ptr&lt;QuantExt::MultiPathGeneratorBase&gt; pathGen =</div>
-<div class="line"><span class="lineno">  392</span>        boost::make_shared&lt;MultiPathGeneratorMersenneTwister&gt;(model-&gt;stateProcess(), dg-&gt;timeGrid(), seed, antithetic);</div>
-<div class="line"><span class="lineno">  393</span> </div>
-<div class="line"><span class="lineno">  394</span>    <span class="comment">// build scenario generator</span></div>
-<div class="line"><span class="lineno">  395</span>    boost::shared_ptr&lt;ScenarioFactory&gt; scenarioFactory(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_simple_scenario_factory.html">SimpleScenarioFactory</a>);</div>
-<div class="line"><span class="lineno">  396</span>    boost::shared_ptr&lt;ScenarioGenerator&gt; scenarioGenerator = boost::make_shared&lt;CrossAssetModelScenarioGenerator&gt;(</div>
-<div class="line"><span class="lineno">  397</span>        model, pathGen, scenarioFactory, parameters, today, dg, initMarket);</div>
-<div class="line"><span class="lineno">  398</span> </div>
-<div class="line"><span class="lineno">  399</span>    <span class="comment">// build scenario sim market</span></div>
-<div class="line"><span class="lineno">  400</span>    <a class="code hl_function" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116">convs</a>();</div>
-<div class="line"><span class="lineno">  401</span>    <span class="keyword">auto</span> simMarket = boost::make_shared&lt;analytics::ScenarioSimMarket&gt;(initMarket, parameters);</div>
-<div class="line"><span class="lineno">  402</span>    simMarket-&gt;scenarioGenerator() = scenarioGenerator;</div>
-<div class="line"><span class="lineno">  403</span> </div>
-<div class="line"><span class="lineno">  404</span>    <span class="comment">// Build Portfolio</span></div>
-<div class="line"><span class="lineno">  405</span>    boost::shared_ptr&lt;EngineData&gt; data = boost::make_shared&lt;EngineData&gt;();</div>
-<div class="line"><span class="lineno">  406</span>    data-&gt;model(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
-<div class="line"><span class="lineno">  407</span>    data-&gt;engine(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountingSwapEngine&quot;</span>;</div>
-<div class="line"><span class="lineno">  408</span>    boost::shared_ptr&lt;EngineFactory&gt; factory = boost::make_shared&lt;EngineFactory&gt;(data, simMarket);</div>
-<div class="line"><span class="lineno">  409</span> </div>
-<div class="line"><span class="lineno">  410</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio = <a class="code hl_function" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da">buildPortfolio</a>(portfolioSize, factory);</div>
-<div class="line"><span class="lineno">  411</span> </div>
-<div class="line"><span class="lineno">  412</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Portfolio size after build: &quot;</span> &lt;&lt; portfolio-&gt;size());</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00245">245</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  246</span>                                                  {</div>
+<div class="line"><span class="lineno">  247</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Exposure Performance size=&quot;</span> &lt;&lt; portfolioSize &lt;&lt; <span class="stringliteral">&quot;...&quot;</span>);</div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>    SavedSettings backup;</div>
+<div class="line"><span class="lineno">  250</span>    <a class="code hl_enumeration" href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ObservationMode::Mode</a> backupOm = ObservationMode::instance().mode();</div>
+<div class="line"><span class="lineno">  251</span>    ObservationMode::instance().setMode(om);</div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>    <span class="comment">// Log::instance().registerLogger(boost::make_shared&lt;StderrLogger&gt;());</span></div>
+<div class="line"><span class="lineno">  254</span>    <span class="comment">// Log::instance().switchOn();</span></div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>    Date today = Date(14, April, 2016); <span class="comment">// Settings::instance().evaluationDate();</span></div>
+<div class="line"><span class="lineno">  257</span>    Settings::instance().evaluationDate() = today;</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Today is &quot;</span> &lt;&lt; today);</div>
+<div class="line"><span class="lineno">  260</span> </div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordtype">string</span> dateGridStr = <span class="stringliteral">&quot;80,3M&quot;</span>; <span class="comment">// 20 years</span></div>
+<div class="line"><span class="lineno">  262</span>    boost::shared_ptr&lt;DateGrid&gt; dg = boost::make_shared&lt;DateGrid&gt;(dateGridStr);</div>
+<div class="line"><span class="lineno">  263</span>    Size samples = 1000;</div>
+<div class="line"><span class="lineno">  264</span> </div>
+<div class="line"><span class="lineno">  265</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Date Grid : &quot;</span> &lt;&lt; dateGridStr);</div>
+<div class="line"><span class="lineno">  266</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Samples   : &quot;</span> &lt;&lt; samples);</div>
+<div class="line"><span class="lineno">  267</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Swaps     : &quot;</span> &lt;&lt; portfolioSize);</div>
+<div class="line"><span class="lineno">  268</span> </div>
+<div class="line"><span class="lineno">  269</span>    <span class="comment">// build model</span></div>
+<div class="line"><span class="lineno">  270</span>    <span class="keywordtype">string</span> baseCcy = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
+<div class="line"><span class="lineno">  271</span>    vector&lt;string&gt; ccys;</div>
+<div class="line"><span class="lineno">  272</span>    ccys.push_back(baseCcy);</div>
+<div class="line"><span class="lineno">  273</span>    ccys.push_back(<span class="stringliteral">&quot;GBP&quot;</span>);</div>
+<div class="line"><span class="lineno">  274</span>    ccys.push_back(<span class="stringliteral">&quot;CHF&quot;</span>);</div>
+<div class="line"><span class="lineno">  275</span>    ccys.push_back(<span class="stringliteral">&quot;USD&quot;</span>);</div>
+<div class="line"><span class="lineno">  276</span>    ccys.push_back(<span class="stringliteral">&quot;JPY&quot;</span>);</div>
+<div class="line"><span class="lineno">  277</span> </div>
+<div class="line"><span class="lineno">  278</span>    <span class="comment">// Init market</span></div>
+<div class="line"><span class="lineno">  279</span>    boost::shared_ptr&lt;Market&gt; initMarket = boost::make_shared&lt;TestMarket&gt;(today);</div>
+<div class="line"><span class="lineno">  280</span> </div>
+<div class="line"><span class="lineno">  281</span>    <span class="comment">// build scenario sim market parameters</span></div>
+<div class="line"><span class="lineno">  282</span>    boost::shared_ptr&lt;analytics::ScenarioSimMarketParameters&gt; parameters(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_scenario_sim_market_parameters.html">analytics::ScenarioSimMarketParameters</a>());</div>
+<div class="line"><span class="lineno">  283</span>    parameters-&gt;baseCcy() = <span class="stringliteral">&quot;EUR&quot;</span>;</div>
+<div class="line"><span class="lineno">  284</span>    parameters-&gt;setDiscountCurveNames({<span class="stringliteral">&quot;EUR&quot;</span>, <span class="stringliteral">&quot;GBP&quot;</span>, <span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;CHF&quot;</span>, <span class="stringliteral">&quot;JPY&quot;</span>});</div>
+<div class="line"><span class="lineno">  285</span>    parameters-&gt;setYieldCurveTenors(<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><span class="lineno">  286</span>                                    {1 * Months, 6 * Months, 1 * Years, 2 * Years, 5 * Years, 10 * Years, 20 * Years});</div>
+<div class="line"><span class="lineno">  287</span>    parameters-&gt;setIndices({<span class="stringliteral">&quot;EUR-EURIBOR-6M&quot;</span>, <span class="stringliteral">&quot;USD-LIBOR-3M&quot;</span>, <span class="stringliteral">&quot;GBP-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;CHF-LIBOR-6M&quot;</span>, <span class="stringliteral">&quot;JPY-LIBOR-6M&quot;</span>});</div>
+<div class="line"><span class="lineno">  288</span> </div>
+<div class="line"><span class="lineno">  289</span>    parameters-&gt;interpolation() = <span class="stringliteral">&quot;LogLinear&quot;</span>;</div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>    parameters-&gt;setSimulateSwapVols(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  292</span>    parameters-&gt;setSwapVolTerms(<span class="stringliteral">&quot;&quot;</span>, {6 * Months, 1 * Years});</div>
+<div class="line"><span class="lineno">  293</span>    parameters-&gt;setSwapVolExpiries(<span class="stringliteral">&quot;&quot;</span>, {1 * Years, 2 * Years});</div>
+<div class="line"><span class="lineno">  294</span>    parameters-&gt;swapVolKeys() = ccys;</div>
+<div class="line"><span class="lineno">  295</span>    parameters-&gt;swapVolDecayMode() = <span class="stringliteral">&quot;ForwardVariance&quot;</span>;</div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>    parameters-&gt;setFxVolExpiries(<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><span class="lineno">  298</span>        vector&lt;Period&gt;{1 * Months, 3 * Months, 6 * Months, 2 * Years, 3 * Years, 4 * Years, 5 * Years});</div>
+<div class="line"><span class="lineno">  299</span>    parameters-&gt;setFxVolDecayMode(<span class="keywordtype">string</span>(<span class="stringliteral">&quot;ConstantVariance&quot;</span>));</div>
+<div class="line"><span class="lineno">  300</span>    parameters-&gt;setSimulateFXVols(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  301</span> </div>
+<div class="line"><span class="lineno">  302</span>    parameters-&gt;setFxVolCcyPairs({<span class="stringliteral">&quot;USDEUR&quot;</span>, <span class="stringliteral">&quot;GBPEUR&quot;</span>, <span class="stringliteral">&quot;CHFEUR&quot;</span>, <span class="stringliteral">&quot;JPYEUR&quot;</span>});</div>
+<div class="line"><span class="lineno">  303</span>    parameters-&gt;setFxCcyPairs({<span class="stringliteral">&quot;USDEUR&quot;</span>, <span class="stringliteral">&quot;GBPEUR&quot;</span>, <span class="stringliteral">&quot;CHFEUR&quot;</span>, <span class="stringliteral">&quot;JPYEUR&quot;</span>});</div>
+<div class="line"><span class="lineno">  304</span> </div>
+<div class="line"><span class="lineno">  305</span>    parameters-&gt;setEquityVolExpiries(<span class="stringliteral">&quot;&quot;</span>, {1 * Months, 3 * Months, 6 * Months, 2 * Years, 3 * Years, 4 * Years, 5 * Years});</div>
+<div class="line"><span class="lineno">  306</span>    parameters-&gt;setEquityVolDecayMode(<span class="stringliteral">&quot;ConstantVariance&quot;</span>);</div>
+<div class="line"><span class="lineno">  307</span>    parameters-&gt;setSimulateEquityVols(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  308</span> </div>
+<div class="line"><span class="lineno">  309</span>    <span class="comment">// Config</span></div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>    <span class="comment">// Build IR configurations</span></div>
+<div class="line"><span class="lineno">  312</span>    <a class="code hl_enumerationRef" href="../ored/namespaceore_1_1data.html#a18340f2f2342933b54b1dc8e6c0ed797">CalibrationType</a> calibrationType = CalibrationType::Bootstrap;</div>
+<div class="line"><span class="lineno">  313</span>    <a class="code hl_enumerationRef" href="../ored/classore_1_1data_1_1_lgm_data.html#a85128cf8fffb22eea15b6db0929ffb43">LgmData::ReversionType</a> revType = LgmData::ReversionType::HullWhite;</div>
+<div class="line"><span class="lineno">  314</span>    <a class="code hl_enumerationRef" href="../ored/classore_1_1data_1_1_lgm_data.html#a8b2aa10016abb1ffb6f55484a04a5143">LgmData::VolatilityType</a> volType = LgmData::VolatilityType::Hagan;</div>
+<div class="line"><span class="lineno">  315</span>    vector&lt;string&gt; swaptionExpiries = {<span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;2Y&quot;</span>, <span class="stringliteral">&quot;3Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;7Y&quot;</span>, <span class="stringliteral">&quot;10Y&quot;</span>, <span class="stringliteral">&quot;15Y&quot;</span>, <span class="stringliteral">&quot;20Y&quot;</span>, <span class="stringliteral">&quot;30Y&quot;</span>};</div>
+<div class="line"><span class="lineno">  316</span>    vector&lt;string&gt; swaptionTerms = {<span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>};</div>
+<div class="line"><span class="lineno">  317</span>    vector&lt;string&gt; swaptionStrikes(swaptionExpiries.size(), <span class="stringliteral">&quot;ATM&quot;</span>);</div>
+<div class="line"><span class="lineno">  318</span>    vector&lt;Time&gt; hTimes = {};</div>
+<div class="line"><span class="lineno">  319</span>    vector&lt;Time&gt; aTimes = {};</div>
+<div class="line"><span class="lineno">  320</span> </div>
+<div class="line"><span class="lineno">  321</span>    std::vector&lt;boost::shared_ptr&lt;IrModelData&gt;&gt; irConfigs;</div>
+<div class="line"><span class="lineno">  322</span> </div>
+<div class="line"><span class="lineno">  323</span>    vector&lt;Real&gt; hValues = {0.02};</div>
+<div class="line"><span class="lineno">  324</span>    vector&lt;Real&gt; aValues = {0.008};</div>
+<div class="line"><span class="lineno">  325</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
+<div class="line"><span class="lineno">  326</span>        <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  327</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
+<div class="line"><span class="lineno">  328</span> </div>
+<div class="line"><span class="lineno">  329</span>    hValues = {0.03};</div>
+<div class="line"><span class="lineno">  330</span>    aValues = {0.009};</div>
+<div class="line"><span class="lineno">  331</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
+<div class="line"><span class="lineno">  332</span>        <span class="stringliteral">&quot;USD&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  333</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>    hValues = {0.04};</div>
+<div class="line"><span class="lineno">  336</span>    aValues = {0.01};</div>
+<div class="line"><span class="lineno">  337</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
+<div class="line"><span class="lineno">  338</span>        <span class="stringliteral">&quot;GBP&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  339</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
+<div class="line"><span class="lineno">  340</span> </div>
+<div class="line"><span class="lineno">  341</span>    hValues = {0.04};</div>
+<div class="line"><span class="lineno">  342</span>    aValues = {0.01};</div>
+<div class="line"><span class="lineno">  343</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
+<div class="line"><span class="lineno">  344</span>        <span class="stringliteral">&quot;CHF&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  345</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
+<div class="line"><span class="lineno">  346</span> </div>
+<div class="line"><span class="lineno">  347</span>    hValues = {0.04};</div>
+<div class="line"><span class="lineno">  348</span>    aValues = {0.01};</div>
+<div class="line"><span class="lineno">  349</span>    irConfigs.push_back(boost::make_shared&lt;IrLgmData&gt;(</div>
+<div class="line"><span class="lineno">  350</span>        <span class="stringliteral">&quot;JPY&quot;</span>, calibrationType, revType, volType, <span class="keyword">false</span>, ParamType::Constant, hTimes, hValues, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  351</span>        ParamType::Piecewise, aTimes, aValues, 0.0, 1.0, swaptionExpiries, swaptionTerms, swaptionStrikes));</div>
+<div class="line"><span class="lineno">  352</span> </div>
+<div class="line"><span class="lineno">  353</span>    <span class="comment">// Compile FX configurations</span></div>
+<div class="line"><span class="lineno">  354</span>    vector&lt;string&gt; optionExpiries = {<span class="stringliteral">&quot;1Y&quot;</span>, <span class="stringliteral">&quot;2Y&quot;</span>, <span class="stringliteral">&quot;3Y&quot;</span>, <span class="stringliteral">&quot;5Y&quot;</span>, <span class="stringliteral">&quot;7Y&quot;</span>, <span class="stringliteral">&quot;10Y&quot;</span>};</div>
+<div class="line"><span class="lineno">  355</span>    vector&lt;string&gt; optionStrikes(optionExpiries.size(), <span class="stringliteral">&quot;ATMF&quot;</span>);</div>
+<div class="line"><span class="lineno">  356</span>    vector&lt;Time&gt; sigmaTimes = {};</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>    std::vector&lt;boost::shared_ptr&lt;FxBsData&gt;&gt; fxConfigs;</div>
+<div class="line"><span class="lineno">  359</span> </div>
+<div class="line"><span class="lineno">  360</span>    vector&lt;Real&gt; sigmaValues = {0.15};</div>
+<div class="line"><span class="lineno">  361</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;USD&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
+<div class="line"><span class="lineno">  362</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>    sigmaValues = {0.20};</div>
+<div class="line"><span class="lineno">  365</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;GBP&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
+<div class="line"><span class="lineno">  366</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>    sigmaValues = {0.20};</div>
+<div class="line"><span class="lineno">  369</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;CHF&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
+<div class="line"><span class="lineno">  370</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>    sigmaValues = {0.20};</div>
+<div class="line"><span class="lineno">  373</span>    fxConfigs.push_back(boost::make_shared&lt;FxBsData&gt;(<span class="stringliteral">&quot;JPY&quot;</span>, <span class="stringliteral">&quot;EUR&quot;</span>, calibrationType, <span class="keyword">true</span>, ParamType::Piecewise,</div>
+<div class="line"><span class="lineno">  374</span>                                                     sigmaTimes, sigmaValues, optionExpiries, optionStrikes));</div>
+<div class="line"><span class="lineno">  375</span> </div>
+<div class="line"><span class="lineno">  376</span>    map&lt;CorrelationKey, Handle&lt;Quote&gt;&gt; corr;</div>
+<div class="line"><span class="lineno">  377</span>    <a class="code hl_structRef" href="../ored/structore_1_1data_1_1_correlation_factor.html">CorrelationFactor</a> f_1{ CrossAssetModel::AssetType::IR, <span class="stringliteral">&quot;EUR&quot;</span>, 0 };</div>
+<div class="line"><span class="lineno">  378</span>    <a class="code hl_structRef" href="../ored/structore_1_1data_1_1_correlation_factor.html">CorrelationFactor</a> f_2{ CrossAssetModel::AssetType::IR, <span class="stringliteral">&quot;USD&quot;</span>, 0 };</div>
+<div class="line"><span class="lineno">  379</span>    corr[make_pair(f_1, f_2)] = Handle&lt;Quote&gt;(boost::make_shared&lt;SimpleQuote&gt;(0.6));</div>
+<div class="line"><span class="lineno">  380</span> </div>
+<div class="line"><span class="lineno">  381</span>    boost::shared_ptr&lt;CrossAssetModelData&gt; config(boost::make_shared&lt;CrossAssetModelData&gt;(irConfigs, fxConfigs, corr));</div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>    <span class="comment">// Model Builder &amp; Model</span></div>
+<div class="line"><span class="lineno">  384</span>    <span class="comment">// model builder</span></div>
+<div class="line"><span class="lineno">  385</span>    boost::shared_ptr&lt;CrossAssetModelBuilder&gt; modelBuilder(<span class="keyword">new</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_cross_asset_model_builder.html">CrossAssetModelBuilder</a>(initMarket, config));</div>
+<div class="line"><span class="lineno">  386</span>    boost::shared_ptr&lt;QuantExt::CrossAssetModel&gt; model = *modelBuilder-&gt;model();</div>
+<div class="line"><span class="lineno">  387</span>    modelBuilder = NULL;</div>
+<div class="line"><span class="lineno">  388</span> </div>
+<div class="line"><span class="lineno">  389</span>    <span class="comment">// Path generator</span></div>
+<div class="line"><span class="lineno">  390</span>    Size seed = 5;</div>
+<div class="line"><span class="lineno">  391</span>    <span class="keywordtype">bool</span> antithetic = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  392</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span> tmp = boost::dynamic_pointer_cast&lt;CrossAssetStateProcess&gt;(model-&gt;stateProcess())) {</div>
+<div class="line"><span class="lineno">  393</span>        tmp-&gt;resetCache(dg-&gt;timeGrid().size() - 1);</div>
+<div class="line"><span class="lineno">  394</span>    }</div>
+<div class="line"><span class="lineno">  395</span>    boost::shared_ptr&lt;QuantExt::MultiPathGeneratorBase&gt; pathGen =</div>
+<div class="line"><span class="lineno">  396</span>        boost::make_shared&lt;MultiPathGeneratorMersenneTwister&gt;(model-&gt;stateProcess(), dg-&gt;timeGrid(), seed, antithetic);</div>
+<div class="line"><span class="lineno">  397</span> </div>
+<div class="line"><span class="lineno">  398</span>    <span class="comment">// build scenario generator</span></div>
+<div class="line"><span class="lineno">  399</span>    boost::shared_ptr&lt;ScenarioFactory&gt; scenarioFactory(<span class="keyword">new</span> <a class="code hl_class" href="classore_1_1analytics_1_1_simple_scenario_factory.html">SimpleScenarioFactory</a>);</div>
+<div class="line"><span class="lineno">  400</span>    boost::shared_ptr&lt;ScenarioGenerator&gt; scenarioGenerator = boost::make_shared&lt;CrossAssetModelScenarioGenerator&gt;(</div>
+<div class="line"><span class="lineno">  401</span>        model, pathGen, scenarioFactory, parameters, today, dg, initMarket);</div>
+<div class="line"><span class="lineno">  402</span> </div>
+<div class="line"><span class="lineno">  403</span>    <span class="comment">// build scenario sim market</span></div>
+<div class="line"><span class="lineno">  404</span>    <a class="code hl_function" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116">convs</a>();</div>
+<div class="line"><span class="lineno">  405</span>    <span class="keyword">auto</span> simMarket = boost::make_shared&lt;analytics::ScenarioSimMarket&gt;(initMarket, parameters);</div>
+<div class="line"><span class="lineno">  406</span>    simMarket-&gt;scenarioGenerator() = scenarioGenerator;</div>
+<div class="line"><span class="lineno">  407</span> </div>
+<div class="line"><span class="lineno">  408</span>    <span class="comment">// Build Portfolio</span></div>
+<div class="line"><span class="lineno">  409</span>    boost::shared_ptr&lt;EngineData&gt; data = boost::make_shared&lt;EngineData&gt;();</div>
+<div class="line"><span class="lineno">  410</span>    data-&gt;model(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountedCashflows&quot;</span>;</div>
+<div class="line"><span class="lineno">  411</span>    data-&gt;engine(<span class="stringliteral">&quot;Swap&quot;</span>) = <span class="stringliteral">&quot;DiscountingSwapEngine&quot;</span>;</div>
+<div class="line"><span class="lineno">  412</span>    boost::shared_ptr&lt;EngineFactory&gt; factory = boost::make_shared&lt;EngineFactory&gt;(data, simMarket);</div>
 <div class="line"><span class="lineno">  413</span> </div>
-<div class="line"><span class="lineno">  414</span>    <span class="comment">// Now calculate exposure</span></div>
-<div class="line"><span class="lineno">  415</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_valuation_engine.html">ValuationEngine</a> valEngine(today, dg, simMarket);</div>
-<div class="line"><span class="lineno">  416</span> </div>
-<div class="line"><span class="lineno">  417</span>    <span class="comment">// Calculate Cube</span></div>
-<div class="line"><span class="lineno">  418</span>    boost::timer::cpu_timer t;</div>
-<div class="line"><span class="lineno">  419</span>    boost::shared_ptr&lt;NPVCube&gt; cube =</div>
-<div class="line"><span class="lineno">  420</span>        boost::make_shared&lt;DoublePrecisionInMemoryCube&gt;(today, portfolio-&gt;ids(), dg-&gt;dates(), samples);</div>
-<div class="line"><span class="lineno">  421</span>    vector&lt;boost::shared_ptr&lt;ValuationCalculator&gt;&gt; calculators;</div>
-<div class="line"><span class="lineno">  422</span>    calculators.push_back(boost::make_shared&lt;NPVCalculator&gt;(baseCcy));</div>
-<div class="line"><span class="lineno">  423</span>    valEngine.buildCube(portfolio, cube, calculators);</div>
-<div class="line"><span class="lineno">  424</span>    t.stop();</div>
-<div class="line"><span class="lineno">  425</span>    <span class="keywordtype">double</span> elapsed = t.elapsed().wall * 1e-9;</div>
-<div class="line"><span class="lineno">  426</span> </div>
-<div class="line"><span class="lineno">  427</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube generated in &quot;</span> &lt;&lt; elapsed &lt;&lt; <span class="stringliteral">&quot; seconds&quot;</span>);</div>
-<div class="line"><span class="lineno">  428</span> </div>
-<div class="line"><span class="lineno">  429</span>    Size dates = dg-&gt;dates().size();</div>
-<div class="line"><span class="lineno">  430</span>    Size numNPVs = dates * samples * portfolioSize;</div>
-<div class="line"><span class="lineno">  431</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube size = &quot;</span> &lt;&lt; numNPVs &lt;&lt; <span class="stringliteral">&quot; elements&quot;</span>);</div>
-<div class="line"><span class="lineno">  432</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube elements theoretical storage &quot;</span> &lt;&lt; numNPVs * <span class="keyword">sizeof</span>(Real) / (1024 * 1024) &lt;&lt; <span class="stringliteral">&quot; MB&quot;</span>);</div>
-<div class="line"><span class="lineno">  433</span>    Real pricingTimeMicroSeconds = elapsed * 1000000 / numNPVs;</div>
-<div class="line"><span class="lineno">  434</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Avg Pricing time = &quot;</span> &lt;&lt; pricingTimeMicroSeconds &lt;&lt; <span class="stringliteral">&quot; microseconds&quot;</span>);</div>
-<div class="line"><span class="lineno">  435</span> </div>
-<div class="line"><span class="lineno">  436</span>    <span class="comment">// Count the number of times we have an empty line, ie. swap expired.</span></div>
-<div class="line"><span class="lineno">  437</span>    <span class="comment">// cube is trades/dates/samples</span></div>
-<div class="line"><span class="lineno">  438</span>    Size <a class="code hl_variableRef" href="../ored/ored_2marketdata_2todaysmarket_8cpp.html#a36d2d3ec8fc39969adfd76b5ac2cfcb0">count</a> = 0;</div>
-<div class="line"><span class="lineno">  439</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; portfolioSize; ++i) {</div>
-<div class="line"><span class="lineno">  440</span>        <span class="keywordflow">for</span> (Size j = 0; j &lt; dates; ++j) {</div>
-<div class="line"><span class="lineno">  441</span>            <span class="keywordflow">if</span> (cube-&gt;get(i, j, 0) == 0 &amp;&amp; cube-&gt;get(i, j, 1) == 0 &amp;&amp; cube-&gt;get(i, j, 2) == 0)</div>
-<div class="line"><span class="lineno">  442</span>                ++<a class="code hl_variableRef" href="../ored/ored_2marketdata_2todaysmarket_8cpp.html#a36d2d3ec8fc39969adfd76b5ac2cfcb0">count</a>;</div>
-<div class="line"><span class="lineno">  443</span>        }</div>
-<div class="line"><span class="lineno">  444</span>    }</div>
-<div class="line"><span class="lineno">  445</span>    Real nonZeroPerc = 100 * (1 - (<a class="code hl_variableRef" href="../ored/ored_2marketdata_2todaysmarket_8cpp.html#a36d2d3ec8fc39969adfd76b5ac2cfcb0">count</a> / ((Real)portfolioSize * dates)));</div>
-<div class="line"><span class="lineno">  446</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Percentage of cube that is non-expired : &quot;</span> &lt;&lt; nonZeroPerc &lt;&lt; <span class="stringliteral">&quot; %&quot;</span>);</div>
-<div class="line"><span class="lineno">  447</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Avg Pricing time (for non-expired trades) = &quot;</span> &lt;&lt; pricingTimeMicroSeconds * 100 / nonZeroPerc</div>
-<div class="line"><span class="lineno">  448</span>                                                                      &lt;&lt; <span class="stringliteral">&quot; microseconds&quot;</span>);</div>
-<div class="line"><span class="lineno">  449</span> </div>
-<div class="line"><span class="lineno">  450</span>    <span class="comment">// BOOST_TEST_MESSAGE(os::getSystemDetails());</span></div>
-<div class="line"><span class="lineno">  451</span> </div>
-<div class="line"><span class="lineno">  452</span>    <span class="comment">// Compute portfolio EPE and ENE</span></div>
-<div class="line"><span class="lineno">  453</span>    vector&lt;Real&gt; eeVec, eneVec;</div>
-<div class="line"><span class="lineno">  454</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; dates; ++i) {</div>
-<div class="line"><span class="lineno">  455</span>        Real epe = 0.0, ene = 0.0;</div>
-<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">for</span> (Size j = 0; j &lt; samples; ++j) {</div>
-<div class="line"><span class="lineno">  457</span>            Real npv = 0.0;</div>
-<div class="line"><span class="lineno">  458</span>            <span class="keywordflow">for</span> (Size k = 0; k &lt; portfolioSize; ++k)</div>
-<div class="line"><span class="lineno">  459</span>                npv += cube-&gt;get(k, i, j);</div>
-<div class="line"><span class="lineno">  460</span>            epe += std::max(npv, 0.0);</div>
-<div class="line"><span class="lineno">  461</span>            ene += std::max(-npv, 0.0);</div>
-<div class="line"><span class="lineno">  462</span>        }</div>
-<div class="line"><span class="lineno">  463</span>        epe /= samples;</div>
-<div class="line"><span class="lineno">  464</span>        ene /= samples;</div>
-<div class="line"><span class="lineno">  465</span>        <span class="comment">// BOOST_TEST_MESSAGE(&quot;Exposures, &quot; &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; epe &lt;&lt; &quot; &quot; &lt;&lt; ene);</span></div>
-<div class="line"><span class="lineno">  466</span>        eeVec.push_back(epe);</div>
-<div class="line"><span class="lineno">  467</span>        eneVec.push_back(ene);</div>
-<div class="line"><span class="lineno">  468</span>    }</div>
-<div class="line"><span class="lineno">  469</span> </div>
-<div class="line"><span class="lineno">  470</span>    ObservationMode::instance().setMode(backupOm);</div>
-<div class="line"><span class="lineno">  471</span>    IndexManager::instance().clearHistories();</div>
-<div class="line"><span class="lineno">  472</span> </div>
-<div class="line"><span class="lineno">  473</span>    <span class="comment">// check results</span></div>
-<div class="line"><span class="lineno">  474</span>    BOOST_CHECK_CLOSE(nonZeroPVRatio, nonZeroPerc, 0.005);</div>
-<div class="line"><span class="lineno">  475</span> </div>
-<div class="line"><span class="lineno">  476</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; epe_archived.size(); ++i) {</div>
-<div class="line"><span class="lineno">  477</span>        BOOST_CHECK_CLOSE(eeVec[i], epe_archived[i], 0.01);</div>
-<div class="line"><span class="lineno">  478</span>    }</div>
+<div class="line"><span class="lineno">  414</span>    boost::shared_ptr&lt;Portfolio&gt; portfolio = <a class="code hl_function" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da">buildPortfolio</a>(portfolioSize, factory);</div>
+<div class="line"><span class="lineno">  415</span> </div>
+<div class="line"><span class="lineno">  416</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Portfolio size after build: &quot;</span> &lt;&lt; portfolio-&gt;size());</div>
+<div class="line"><span class="lineno">  417</span> </div>
+<div class="line"><span class="lineno">  418</span>    <span class="comment">// Now calculate exposure</span></div>
+<div class="line"><span class="lineno">  419</span>    <a class="code hl_class" href="classore_1_1analytics_1_1_valuation_engine.html">ValuationEngine</a> valEngine(today, dg, simMarket);</div>
+<div class="line"><span class="lineno">  420</span> </div>
+<div class="line"><span class="lineno">  421</span>    <span class="comment">// Calculate Cube</span></div>
+<div class="line"><span class="lineno">  422</span>    boost::timer::cpu_timer t;</div>
+<div class="line"><span class="lineno">  423</span>    boost::shared_ptr&lt;NPVCube&gt; cube =</div>
+<div class="line"><span class="lineno">  424</span>        boost::make_shared&lt;DoublePrecisionInMemoryCube&gt;(today, portfolio-&gt;ids(), dg-&gt;dates(), samples);</div>
+<div class="line"><span class="lineno">  425</span>    vector&lt;boost::shared_ptr&lt;ValuationCalculator&gt;&gt; calculators;</div>
+<div class="line"><span class="lineno">  426</span>    calculators.push_back(boost::make_shared&lt;NPVCalculator&gt;(baseCcy));</div>
+<div class="line"><span class="lineno">  427</span>    valEngine.buildCube(portfolio, cube, calculators);</div>
+<div class="line"><span class="lineno">  428</span>    t.stop();</div>
+<div class="line"><span class="lineno">  429</span>    <span class="keywordtype">double</span> elapsed = t.elapsed().wall * 1e-9;</div>
+<div class="line"><span class="lineno">  430</span> </div>
+<div class="line"><span class="lineno">  431</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube generated in &quot;</span> &lt;&lt; elapsed &lt;&lt; <span class="stringliteral">&quot; seconds&quot;</span>);</div>
+<div class="line"><span class="lineno">  432</span> </div>
+<div class="line"><span class="lineno">  433</span>    Size dates = dg-&gt;dates().size();</div>
+<div class="line"><span class="lineno">  434</span>    Size numNPVs = dates * samples * portfolioSize;</div>
+<div class="line"><span class="lineno">  435</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube size = &quot;</span> &lt;&lt; numNPVs &lt;&lt; <span class="stringliteral">&quot; elements&quot;</span>);</div>
+<div class="line"><span class="lineno">  436</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Cube elements theoretical storage &quot;</span> &lt;&lt; numNPVs * <span class="keyword">sizeof</span>(Real) / (1024 * 1024) &lt;&lt; <span class="stringliteral">&quot; MB&quot;</span>);</div>
+<div class="line"><span class="lineno">  437</span>    Real pricingTimeMicroSeconds = elapsed * 1000000 / numNPVs;</div>
+<div class="line"><span class="lineno">  438</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Avg Pricing time = &quot;</span> &lt;&lt; pricingTimeMicroSeconds &lt;&lt; <span class="stringliteral">&quot; microseconds&quot;</span>);</div>
+<div class="line"><span class="lineno">  439</span> </div>
+<div class="line"><span class="lineno">  440</span>    <span class="comment">// Count the number of times we have an empty line, ie. swap expired.</span></div>
+<div class="line"><span class="lineno">  441</span>    <span class="comment">// cube is trades/dates/samples</span></div>
+<div class="line"><span class="lineno">  442</span>    Size <a class="code hl_variableRef" href="../ored/ored_2marketdata_2todaysmarket_8cpp.html#a36d2d3ec8fc39969adfd76b5ac2cfcb0">count</a> = 0;</div>
+<div class="line"><span class="lineno">  443</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; portfolioSize; ++i) {</div>
+<div class="line"><span class="lineno">  444</span>        <span class="keywordflow">for</span> (Size j = 0; j &lt; dates; ++j) {</div>
+<div class="line"><span class="lineno">  445</span>            <span class="keywordflow">if</span> (cube-&gt;get(i, j, 0) == 0 &amp;&amp; cube-&gt;get(i, j, 1) == 0 &amp;&amp; cube-&gt;get(i, j, 2) == 0)</div>
+<div class="line"><span class="lineno">  446</span>                ++<a class="code hl_variableRef" href="../ored/ored_2marketdata_2todaysmarket_8cpp.html#a36d2d3ec8fc39969adfd76b5ac2cfcb0">count</a>;</div>
+<div class="line"><span class="lineno">  447</span>        }</div>
+<div class="line"><span class="lineno">  448</span>    }</div>
+<div class="line"><span class="lineno">  449</span>    Real nonZeroPerc = 100 * (1 - (<a class="code hl_variableRef" href="../ored/ored_2marketdata_2todaysmarket_8cpp.html#a36d2d3ec8fc39969adfd76b5ac2cfcb0">count</a> / ((Real)portfolioSize * dates)));</div>
+<div class="line"><span class="lineno">  450</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Percentage of cube that is non-expired : &quot;</span> &lt;&lt; nonZeroPerc &lt;&lt; <span class="stringliteral">&quot; %&quot;</span>);</div>
+<div class="line"><span class="lineno">  451</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Avg Pricing time (for non-expired trades) = &quot;</span> &lt;&lt; pricingTimeMicroSeconds * 100 / nonZeroPerc</div>
+<div class="line"><span class="lineno">  452</span>                                                                      &lt;&lt; <span class="stringliteral">&quot; microseconds&quot;</span>);</div>
+<div class="line"><span class="lineno">  453</span> </div>
+<div class="line"><span class="lineno">  454</span>    <span class="comment">// BOOST_TEST_MESSAGE(os::getSystemDetails());</span></div>
+<div class="line"><span class="lineno">  455</span> </div>
+<div class="line"><span class="lineno">  456</span>    <span class="comment">// Compute portfolio EPE and ENE</span></div>
+<div class="line"><span class="lineno">  457</span>    vector&lt;Real&gt; eeVec, eneVec;</div>
+<div class="line"><span class="lineno">  458</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; dates; ++i) {</div>
+<div class="line"><span class="lineno">  459</span>        Real epe = 0.0, ene = 0.0;</div>
+<div class="line"><span class="lineno">  460</span>        <span class="keywordflow">for</span> (Size j = 0; j &lt; samples; ++j) {</div>
+<div class="line"><span class="lineno">  461</span>            Real npv = 0.0;</div>
+<div class="line"><span class="lineno">  462</span>            <span class="keywordflow">for</span> (Size k = 0; k &lt; portfolioSize; ++k)</div>
+<div class="line"><span class="lineno">  463</span>                npv += cube-&gt;get(k, i, j);</div>
+<div class="line"><span class="lineno">  464</span>            epe += std::max(npv, 0.0);</div>
+<div class="line"><span class="lineno">  465</span>            ene += std::max(-npv, 0.0);</div>
+<div class="line"><span class="lineno">  466</span>        }</div>
+<div class="line"><span class="lineno">  467</span>        epe /= samples;</div>
+<div class="line"><span class="lineno">  468</span>        ene /= samples;</div>
+<div class="line"><span class="lineno">  469</span>        <span class="comment">// BOOST_TEST_MESSAGE(&quot;Exposures, &quot; &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; epe &lt;&lt; &quot; &quot; &lt;&lt; ene);</span></div>
+<div class="line"><span class="lineno">  470</span>        eeVec.push_back(epe);</div>
+<div class="line"><span class="lineno">  471</span>        eneVec.push_back(ene);</div>
+<div class="line"><span class="lineno">  472</span>    }</div>
+<div class="line"><span class="lineno">  473</span> </div>
+<div class="line"><span class="lineno">  474</span>    ObservationMode::instance().setMode(backupOm);</div>
+<div class="line"><span class="lineno">  475</span>    IndexManager::instance().clearHistories();</div>
+<div class="line"><span class="lineno">  476</span> </div>
+<div class="line"><span class="lineno">  477</span>    <span class="comment">// check results</span></div>
+<div class="line"><span class="lineno">  478</span>    BOOST_CHECK_CLOSE(nonZeroPVRatio, nonZeroPerc, 0.005);</div>
 <div class="line"><span class="lineno">  479</span> </div>
-<div class="line"><span class="lineno">  480</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; ene_archived.size(); ++i) {</div>
-<div class="line"><span class="lineno">  481</span>        BOOST_CHECK_CLOSE(eneVec[i], ene_archived[i], 0.01);</div>
+<div class="line"><span class="lineno">  480</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; epe_archived.size(); ++i) {</div>
+<div class="line"><span class="lineno">  481</span>        BOOST_CHECK_CLOSE(eeVec[i], epe_archived[i], 0.01);</div>
 <div class="line"><span class="lineno">  482</span>    }</div>
-<div class="line"><span class="lineno">  483</span>}</div>
+<div class="line"><span class="lineno">  483</span> </div>
+<div class="line"><span class="lineno">  484</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; ene_archived.size(); ++i) {</div>
+<div class="line"><span class="lineno">  485</span>        BOOST_CHECK_CLOSE(eneVec[i], ene_archived[i], 0.01);</div>
+<div class="line"><span class="lineno">  486</span>    }</div>
+<div class="line"><span class="lineno">  487</span>}</div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_observation_mode_html_a46c8a310cf4c094f8c80e1cb8dc1f911"><div class="ttname"><a href="classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911">ore::analytics::ObservationMode::Mode</a></div><div class="ttdeci">Mode</div><div class="ttdoc">Allowable mode mode.</div><div class="ttdef"><b>Definition:</b> <a href="observationmode_8hpp_source.html#l00044">observationmode.hpp:44</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_scenario_sim_market_parameters_html"><div class="ttname"><a href="classore_1_1analytics_1_1_scenario_sim_market_parameters.html">ore::analytics::ScenarioSimMarketParameters</a></div><div class="ttdoc">ScenarioSimMarket description.</div><div class="ttdef"><b>Definition:</b> <a href="scenariosimmarketparameters_8hpp_source.html#l00047">scenariosimmarketparameters.hpp:47</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_simple_scenario_factory_html"><div class="ttname"><a href="classore_1_1analytics_1_1_simple_scenario_factory.html">ore::analytics::SimpleScenarioFactory</a></div><div class="ttdoc">Factory class for building simple scenario objects.</div><div class="ttdef"><b>Definition:</b> <a href="simplescenariofactory_8hpp_source.html#l00036">simplescenariofactory.hpp:36</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_valuation_engine_html"><div class="ttname"><a href="classore_1_1analytics_1_1_valuation_engine.html">ore::analytics::ValuationEngine</a></div><div class="ttdoc">Valuation Engine.</div><div class="ttdef"><b>Definition:</b> <a href="valuationengine_8hpp_source.html#l00058">valuationengine.hpp:58</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_valuation_engine_html"><div class="ttname"><a href="classore_1_1analytics_1_1_valuation_engine.html">ore::analytics::ValuationEngine</a></div><div class="ttdoc">Valuation Engine.</div><div class="ttdef"><b>Definition:</b> <a href="valuationengine_8hpp_source.html#l00069">valuationengine.hpp:69</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_cross_asset_model_builder_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_cross_asset_model_builder.html">ore::data::CrossAssetModelBuilder</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_lgm_data_html_a85128cf8fffb22eea15b6db0929ffb43"><div class="ttname"><a href="../ored/classore_1_1data_1_1_lgm_data.html#a85128cf8fffb22eea15b6db0929ffb43">ore::data::LgmData::ReversionType</a></div><div class="ttdeci">ReversionType</div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_lgm_data_html_a8b2aa10016abb1ffb6f55484a04a5143"><div class="ttname"><a href="../ored/classore_1_1data_1_1_lgm_data.html#a8b2aa10016abb1ffb6f55484a04a5143">ore::data::LgmData::VolatilityType</a></div><div class="ttdeci">VolatilityType</div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a18340f2f2342933b54b1dc8e6c0ed797"><div class="ttname"><a href="../ored/namespaceore_1_1data.html#a18340f2f2342933b54b1dc8e6c0ed797">CalibrationType</a></div><div class="ttdeci">CalibrationType</div></div>
 <div class="ttc" id="aored_2marketdata_2todaysmarket_8cpp_html_a36d2d3ec8fc39969adfd76b5ac2cfcb0"><div class="ttname"><a href="../ored/ored_2marketdata_2todaysmarket_8cpp.html#a36d2d3ec8fc39969adfd76b5ac2cfcb0">count</a></div><div class="ttdeci">std::size_t count</div></div>
 <div class="ttc" id="astructore_1_1data_1_1_correlation_factor_html"><div class="ttname"><a href="../ored/structore_1_1data_1_1_correlation_factor.html">ore::data::CorrelationFactor</a></div></div>
-<div class="ttc" id="aswapperformance_8cpp_html_adb2ded909a682440a6743629968650da"><div class="ttname"><a href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da">buildPortfolio</a></div><div class="ttdeci">boost::shared_ptr&lt; Portfolio &gt; buildPortfolio(Size portfolioSize, boost::shared_ptr&lt; EngineFactory &gt; &amp;factory)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00099">swapperformance.cpp:99</a></div></div>
-<div class="ttc" id="aswapperformance_8cpp_html_aed3546fd4a2f63cd4ed2c7e190dc3116"><div class="ttname"><a href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116">convs</a></div><div class="ttdeci">boost::shared_ptr&lt; data::Conventions &gt; convs()</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00083">swapperformance.cpp:83</a></div></div>
+<div class="ttc" id="aswapperformance_8cpp_html_adb2ded909a682440a6743629968650da"><div class="ttname"><a href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da">buildPortfolio</a></div><div class="ttdeci">boost::shared_ptr&lt; Portfolio &gt; buildPortfolio(Size portfolioSize, boost::shared_ptr&lt; EngineFactory &gt; &amp;factory)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00100">swapperformance.cpp:100</a></div></div>
+<div class="ttc" id="aswapperformance_8cpp_html_aed3546fd4a2f63cd4ed2c7e190dc3116"><div class="ttname"><a href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116">convs</a></div><div class="ttdeci">boost::shared_ptr&lt; data::Conventions &gt; convs()</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00084">swapperformance.cpp:84</a></div></div>
 </div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1006,15 +1009,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="209,287,305,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="230,337,285,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="392,5,564,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="397,69,559,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="395,133,561,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="397,69,559,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="395,133,561,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="387,197,569,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="617,77,748,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="431,262,525,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="652,313,713,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="617,313,679,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="437,363,519,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="796,287,843,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="798,337,841,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="727,287,773,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="729,337,771,362"/>
 </map>
 </div>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1069,12 +1071,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00524">524</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  524</span>                                                 {</div>
-<div class="line"><span class="lineno">  525</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (None observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  526</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
-<div class="line"><span class="lineno">  527</span>}</div>
-<div class="ttc" id="aswapperformance_8cpp_html_a7fc45d614bf44c6d8bb56d625c086471"><div class="ttname"><a href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a></div><div class="ttdeci">void test_performance(Size portfolioSize, ObservationMode::Mode om, double nonZeroPVRatio, vector&lt; Real &gt; &amp;epe_archived, vector&lt; Real &gt; &amp;ene_archived)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00244">swapperformance.cpp:244</a></div></div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00528">528</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  528</span>                                                 {</div>
+<div class="line"><span class="lineno">  529</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (None observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  530</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
+<div class="line"><span class="lineno">  531</span>}</div>
+<div class="ttc" id="aswapperformance_8cpp_html_a7fc45d614bf44c6d8bb56d625c086471"><div class="ttname"><a href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a></div><div class="ttdeci">void test_performance(Size portfolioSize, ObservationMode::Mode om, double nonZeroPVRatio, vector&lt; Real &gt; &amp;epe_archived, vector&lt; Real &gt; &amp;ene_archived)</div><div class="ttdef"><b>Definition:</b> <a href="swapperformance_8cpp_source.html#l00245">swapperformance.cpp:245</a></div></div>
 </div><!-- fragment --><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -1088,15 +1090,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 
@@ -1118,11 +1119,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00529">529</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  529</span>                                                       {</div>
-<div class="line"><span class="lineno">  530</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (None observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  531</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
-<div class="line"><span class="lineno">  532</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00533">533</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  533</span>                                                       {</div>
+<div class="line"><span class="lineno">  534</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (None observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  535</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
+<div class="line"><span class="lineno">  536</span>}</div>
 </div><!-- fragment --><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1136,15 +1137,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 
@@ -1166,11 +1166,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00534">534</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  534</span>                                                    {</div>
-<div class="line"><span class="lineno">  535</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (Disable observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  536</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
-<div class="line"><span class="lineno">  537</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00538">538</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  538</span>                                                    {</div>
+<div class="line"><span class="lineno">  539</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (Disable observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  540</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
+<div class="line"><span class="lineno">  541</span>}</div>
 </div><!-- fragment --><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -1184,15 +1184,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 
@@ -1214,11 +1213,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00539">539</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  539</span>                                                          {</div>
-<div class="line"><span class="lineno">  540</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (Disable observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  541</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
-<div class="line"><span class="lineno">  542</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00543">543</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  543</span>                                                          {</div>
+<div class="line"><span class="lineno">  544</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (Disable observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  545</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
+<div class="line"><span class="lineno">  546</span>}</div>
 </div><!-- fragment --><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -1232,15 +1231,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 
@@ -1262,11 +1260,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00544">544</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  544</span>                                                  {</div>
-<div class="line"><span class="lineno">  545</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (Defer observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  546</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
-<div class="line"><span class="lineno">  547</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00548">548</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  548</span>                                                  {</div>
+<div class="line"><span class="lineno">  549</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (Defer observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  550</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
+<div class="line"><span class="lineno">  551</span>}</div>
 </div><!-- fragment --><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1280,15 +1278,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 
@@ -1310,11 +1307,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00549">549</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  549</span>                                                        {</div>
-<div class="line"><span class="lineno">  550</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (Defer observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  551</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
-<div class="line"><span class="lineno">  552</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00553">553</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  553</span>                                                        {</div>
+<div class="line"><span class="lineno">  554</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (Defer observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  555</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
+<div class="line"><span class="lineno">  556</span>}</div>
 </div><!-- fragment --><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1328,15 +1325,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 
@@ -1358,11 +1354,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00554">554</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  554</span>                                                       {</div>
-<div class="line"><span class="lineno">  555</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (Unregister observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  556</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
-<div class="line"><span class="lineno">  557</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00558">558</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  558</span>                                                       {</div>
+<div class="line"><span class="lineno">  559</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Swap Performance (Unregister observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  560</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(100, ObservationMode::Mode::None, 70.5875, swap_epe_archived, swap_ene_archived);</div>
+<div class="line"><span class="lineno">  561</span>}</div>
 </div><!-- fragment --><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1376,15 +1372,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 
@@ -1406,11 +1401,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00559">559</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  559</span>                                                             {</div>
-<div class="line"><span class="lineno">  560</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (Unregister observation mode)&quot;</span>);</div>
-<div class="line"><span class="lineno">  561</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
-<div class="line"><span class="lineno">  562</span>}</div>
+<p class="definition">Definition at line <a class="el" href="swapperformance_8cpp_source.html#l00563">563</a> of file <a class="el" href="swapperformance_8cpp_source.html">swapperformance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  563</span>                                                             {</div>
+<div class="line"><span class="lineno">  564</span>    BOOST_TEST_MESSAGE(<span class="stringliteral">&quot;Testing Single Swap Performance (Unregister observation mode)&quot;</span>);</div>
+<div class="line"><span class="lineno">  565</span>    <a class="code hl_function" href="swapperformance_8cpp.html#a7fc45d614bf44c6d8bb56d625c086471">test_performance</a>(1, ObservationMode::Mode::None, 98.75, single_swap_epe_archived, single_swap_ene_archived);</div>
+<div class="line"><span class="lineno">  566</span>}</div>
 </div><!-- fragment --><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -1424,15 +1419,14 @@ Functions</h2></td></tr>
 <area shape="rect" href="swapperformance_8cpp.html#adb2ded909a682440a6743629968650da" title=" " alt="" coords="448,287,544,313"/>
 <area shape="rect" href="swapperformance_8cpp.html#aed3546fd4a2f63cd4ed2c7e190dc3116" title=" " alt="" coords="469,337,523,362"/>
 <area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a9cee7dbce995d0e0396b7e5fbba7a181" title=" " alt="" coords="631,5,803,45"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a026e0e52de2af3f31255833e1f67aee3" title=" " alt="" coords="635,69,798,109"/>
-<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#a4ce5e4309192252c3c97970eb5021175" title=" " alt="" coords="633,133,800,173"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#aca249aba7bdad8660536f1165d61d54f" title=" " alt="" coords="635,69,798,109"/>
+<area shape="rect" href="classore_1_1analytics_1_1_valuation_engine.html#adb24d74b2b77a735252ca054a90488ec" title=" " alt="" coords="633,133,800,173"/>
 <area shape="rect" target="_parent" href="../ored/classore_1_1data_1_1_progress_reporter.html#aa0478bbe90075f6f870926294318bf7e" title=" " alt="" coords="625,197,808,237"/>
-<area shape="rect" target="_parent" href="../ored/group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title=" " alt="" coords="856,77,987,102"/>
 <area shape="rect" href="swapperformance_8cpp.html#a4b41f5a2efc268d5f6f24389f4700109" title=" " alt="" coords="669,262,764,287"/>
-<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="891,313,952,338"/>
+<area shape="rect" href="swapperformance_8cpp.html#a4392acc4f874be8e70d31e6295d7fb76" title=" " alt="" coords="856,313,917,338"/>
 <area shape="rect" href="swapperformance_8cpp.html#a5bb4f31822343cec98fd81c5a2394351" title=" " alt="" coords="676,363,757,389"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="1035,287,1081,313"/>
-<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="1037,337,1079,362"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1" title=" " alt="" coords="965,287,1012,313"/>
+<area shape="rect" target="_parent" href="../qle/namespace_quant_ext.html#afe4df8f9c3657399dd532e1d3c895dfa" title=" " alt="" coords="967,337,1010,362"/>
 </map>
 </div>
 

@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  127</span>         vector&lt;std::string&gt; strFixingDates(a.fixings);</div>
 <div class="line"><span class="lineno">  128</span>         <span class="keywordflow">for</span> (Size i = 0; i &lt; a.fixings; ++i) {</div>
 <div class="line"><span class="lineno">  129</span>             fixingDates[i] = (asof + <span class="keyword">static_cast&lt;</span>Integer<span class="keyword">&gt;</span>((a.firstFixing + i * deltaT) * 360 + 0.5));</div>
-<div class="line"><span class="lineno">  130</span>             strFixingDates[i] = <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(fixingDates[i]);</div>
+<div class="line"><span class="lineno">  130</span>             strFixingDates[i] = <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">to_string</a>(fixingDates[i]);</div>
 <div class="line"><span class="lineno">  131</span>         }</div>
 <div class="line"><span class="lineno">  132</span>         expiry = fixingDates[a.fixings - 1];</div>
 <div class="line"><span class="lineno">  133</span> </div>
@@ -186,7 +186,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  149</span> </div>
 <div class="line"><span class="lineno">  150</span>         <span class="comment">// Test the building of a FX Asian option doesn&#39;t throw</span></div>
 <div class="line"><span class="lineno">  151</span>     <a class="code hl_class" href="classore_1_1data_1_1_premium_data.html">PremiumData</a> premiumData;</div>
-<div class="line"><span class="lineno">  152</span>         <a class="code hl_class" href="classore_1_1data_1_1_option_data.html">OptionData</a> optionData(<span class="stringliteral">&quot;Long&quot;</span>, <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(a.type), <span class="stringliteral">&quot;European&quot;</span>, <span class="keyword">true</span>, {to_string(expiry)}, <span class="stringliteral">&quot;Cash&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><span class="lineno">  152</span>         <a class="code hl_class" href="classore_1_1data_1_1_option_data.html">OptionData</a> optionData(<span class="stringliteral">&quot;Long&quot;</span>, <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">to_string</a>(a.type), <span class="stringliteral">&quot;European&quot;</span>, <span class="keyword">true</span>, {to_string(expiry)}, <span class="stringliteral">&quot;Cash&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div>
 <div class="line"><span class="lineno">  153</span>                   premiumData,</div>
 <div class="line"><span class="lineno">  154</span>                               vector&lt;Real&gt;(), vector&lt;Real&gt;(), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, vector&lt;string&gt;(), vector&lt;string&gt;(), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div>
 <div class="line"><span class="lineno">  155</span>                               <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Asian&quot;</span>, <span class="stringliteral">&quot;Arithmetic&quot;</span>, boost::none, boost::none, boost::none);</div>
@@ -223,7 +223,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_data_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_data.html">ore::data::ScheduleData</a></div><div class="ttdoc">Serializable schedule data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00192">schedule.hpp:192</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_schedule_dates_html"><div class="ttname"><a href="classore_1_1data_1_1_schedule_dates.html">ore::data::ScheduleDates</a></div><div class="ttdoc">Serializable object holding schedule Dates data.</div><div class="ttdef"><b>Definition:</b> <a href="schedule_8hpp_source.html#l00104">schedule.hpp:104</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_trade_strike_html"><div class="ttname"><a href="classore_1_1data_1_1_trade_strike.html">ore::data::TradeStrike</a></div><div class="ttdef"><b>Definition:</b> <a href="tradestrike_8hpp_source.html#l00029">tradestrike.hpp:29</a></div></div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -232,7 +232,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="test_2fxasianoption_8cpp_a3680ee882a6d4766be94eba72718080a_cgraph.png" border="0" usemap="#atest_2fxasianoption_8cpp_a3680ee882a6d4766be94eba72718080a_cgraph" alt=""/></div>
 <map name="atest_2fxasianoption_8cpp_a3680ee882a6d4766be94eba72718080a_cgraph" id="atest_2fxasianoption_8cpp_a3680ee882a6d4766be94eba72718080a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,196,55"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="244,29,375,55"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="244,29,375,55"/>
 </map>
 </div>
 

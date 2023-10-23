@@ -3,7 +3,7 @@ var searchData=
   ['shiftdata_0',['ShiftData',['../namespaceore_1_1analytics.html#a1619c68d023b881eb856529b4be48d8b',1,'ore::analytics']]],
   ['shiftscenariodescription_1',['ShiftScenarioDescription',['../classore_1_1analytics_1_1_sensitivity_cube.html#af35cd247f2ee646df687ae731a3e7164',1,'ore::analytics::SensitivityCube']]],
   ['shifttype_2',['ShiftType',['../namespaceore_1_1analytics.html#a5ec0ed800d14b7c0a6c2cc5242772f72',1,'ore::analytics']]],
-  ['simmnetsensitivities_3',['SimmNetSensitivities',['../namespaceore_1_1analytics.html#a9d8a3ff6040fc0182ac0f12d94f1a213',1,'ore::analytics']]],
+  ['simmnetsensitivities_3',['SimmNetSensitivities',['../namespaceore_1_1analytics.html#a0546816948ffc5bc2671a643c0c68de0',1,'ore::analytics']]],
   ['simmside_4',['SimmSide',['../classore_1_1analytics_1_1_simm_calculator.html#afbff2a0e62c01d190bc46ff1461f7ddc',1,'ore::analytics::SimmCalculator::SimmSide()'],['../namespaceore_1_1analytics.html#afbff2a0e62c01d190bc46ff1461f7ddc',1,'ore::analytics::SimmSide()']]],
   ['singleprecisioninmemorycube_5',['SinglePrecisionInMemoryCube',['../namespaceore_1_1analytics.html#a222262a75d40965fcf8ac175355f41b0',1,'ore::analytics']]],
   ['singleprecisioninmemorycuben_6',['SinglePrecisionInMemoryCubeN',['../namespaceore_1_1analytics.html#a39ba153d94c5aed6d9c413a7c0729e9d',1,'ore::analytics']]],

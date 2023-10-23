@@ -43,12 +43,14 @@ var searchData=
   ['dkkcibor_40',['DKKCibor',['../class_quant_ext_1_1_d_k_k_cibor.html',1,'QuantExt']]],
   ['dkkcita_41',['DKKCita',['../class_quant_ext_1_1_d_k_k_cita.html',1,'QuantExt']]],
   ['dkkois_42',['DKKOis',['../class_quant_ext_1_1_d_k_k_ois.html',1,'QuantExt']]],
-  ['durationadjustedcmscoupon_43',['DurationAdjustedCmsCoupon',['../class_quant_ext_1_1_duration_adjusted_cms_coupon.html',1,'QuantExt']]],
-  ['durationadjustedcmscoupontsrpricer_44',['DurationAdjustedCmsCouponTsrPricer',['../class_quant_ext_1_1_duration_adjusted_cms_coupon_tsr_pricer.html',1,'QuantExt']]],
-  ['durationadjustedcmsleg_45',['DurationAdjustedCmsLeg',['../class_quant_ext_1_1_duration_adjusted_cms_leg.html',1,'QuantExt']]],
-  ['dynamicblackvoltermstructure_46',['DynamicBlackVolTermStructure',['../class_quant_ext_1_1_dynamic_black_vol_term_structure.html',1,'QuantExt']]],
-  ['dynamiccpivolatilitysurface_47',['DynamicCPIVolatilitySurface',['../class_quant_ext_1_1_dynamic_c_p_i_volatility_surface.html',1,'QuantExt']]],
-  ['dynamicoptionletvolatilitystructure_48',['DynamicOptionletVolatilityStructure',['../class_quant_ext_1_1_dynamic_optionlet_volatility_structure.html',1,'QuantExt']]],
-  ['dynamicswaptionvolatilitymatrix_49',['DynamicSwaptionVolatilityMatrix',['../class_quant_ext_1_1_dynamic_swaption_volatility_matrix.html',1,'QuantExt']]],
-  ['dynamicyoyoptionletvolatilitysurface_50',['DynamicYoYOptionletVolatilitySurface',['../class_quant_ext_1_1_dynamic_yo_y_optionlet_volatility_surface.html',1,'QuantExt']]]
+  ['doubleoibshelper_43',['DoubleOIBSHelper',['../class_quant_ext_1_1_double_o_i_b_s_helper.html',1,'QuantExt']]],
+  ['doubleovernightindexedbasisswap_44',['DoubleOvernightIndexedBasisSwap',['../class_quant_ext_1_1_double_overnight_indexed_basis_swap.html',1,'QuantExt']]],
+  ['durationadjustedcmscoupon_45',['DurationAdjustedCmsCoupon',['../class_quant_ext_1_1_duration_adjusted_cms_coupon.html',1,'QuantExt']]],
+  ['durationadjustedcmscoupontsrpricer_46',['DurationAdjustedCmsCouponTsrPricer',['../class_quant_ext_1_1_duration_adjusted_cms_coupon_tsr_pricer.html',1,'QuantExt']]],
+  ['durationadjustedcmsleg_47',['DurationAdjustedCmsLeg',['../class_quant_ext_1_1_duration_adjusted_cms_leg.html',1,'QuantExt']]],
+  ['dynamicblackvoltermstructure_48',['DynamicBlackVolTermStructure',['../class_quant_ext_1_1_dynamic_black_vol_term_structure.html',1,'QuantExt']]],
+  ['dynamiccpivolatilitysurface_49',['DynamicCPIVolatilitySurface',['../class_quant_ext_1_1_dynamic_c_p_i_volatility_surface.html',1,'QuantExt']]],
+  ['dynamicoptionletvolatilitystructure_50',['DynamicOptionletVolatilityStructure',['../class_quant_ext_1_1_dynamic_optionlet_volatility_structure.html',1,'QuantExt']]],
+  ['dynamicswaptionvolatilitymatrix_51',['DynamicSwaptionVolatilityMatrix',['../class_quant_ext_1_1_dynamic_swaption_volatility_matrix.html',1,'QuantExt']]],
+  ['dynamicyoyoptionletvolatilitysurface_52',['DynamicYoYOptionletVolatilitySurface',['../class_quant_ext_1_1_dynamic_yo_y_optionlet_volatility_surface.html',1,'QuantExt']]]
 ];

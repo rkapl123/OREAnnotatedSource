@@ -217,12 +217,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00146">146</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  149</span>    : <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a633a2f63e35f5d5b6ec5b92ea38709ae">discountCurve_</a>(discountCurve), <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>(vol), <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a>(beta) {</div>
-<div class="line"><span class="lineno">  150</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a> &gt;= 0.0, <span class="stringliteral">&quot;beta &gt;= 0 required, found &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a>);</div>
-<div class="line"><span class="lineno">  151</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a633a2f63e35f5d5b6ec5b92ea38709ae">discountCurve_</a>);</div>
-<div class="line"><span class="lineno">  152</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>);</div>
-<div class="line"><span class="lineno">  153</span>}</div>
+<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00152">152</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  155</span>    : <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a633a2f63e35f5d5b6ec5b92ea38709ae">discountCurve_</a>(discountCurve), <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>(vol), <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a>(beta) {</div>
+<div class="line"><span class="lineno">  156</span>    QL_REQUIRE(<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a> &gt;= 0.0, <span class="stringliteral">&quot;beta &gt;= 0 required, found &quot;</span> &lt;&lt; <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a>);</div>
+<div class="line"><span class="lineno">  157</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a633a2f63e35f5d5b6ec5b92ea38709ae">discountCurve_</a>);</div>
+<div class="line"><span class="lineno">  158</span>    registerWith(<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>);</div>
+<div class="line"><span class="lineno">  159</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_commodity_average_price_option_base_engine_html_a633a2f63e35f5d5b6ec5b92ea38709ae"><div class="ttname"><a href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a633a2f63e35f5d5b6ec5b92ea38709ae">QuantExt::CommodityAveragePriceOptionBaseEngine::discountCurve_</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantLib::YieldTermStructure &gt; discountCurve_</div><div class="ttdef"><b>Definition:</b> <a href="commodityapoengine_8hpp_source.html#l00102">commodityapoengine.hpp:102</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_commodity_average_price_option_base_engine_html_a7bb1cfe348f1597abca4cf086bf907b1"><div class="ttname"><a href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">QuantExt::CommodityAveragePriceOptionBaseEngine::volStructure_</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantLib::BlackVolTermStructure &gt; volStructure_</div><div class="ttdef"><b>Definition:</b> <a href="commodityapoengine_8hpp_source.html#l00103">commodityapoengine.hpp:103</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_commodity_average_price_option_base_engine_html_ae10f34142aa6043ea12e0445fa2cf304"><div class="ttname"><a href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">QuantExt::CommodityAveragePriceOptionBaseEngine::beta_</a></div><div class="ttdeci">QuantLib::Real beta_</div><div class="ttdef"><b>Definition:</b> <a href="commodityapoengine_8hpp_source.html#l00104">commodityapoengine.hpp:104</a></div></div>
@@ -266,17 +266,17 @@ Protected Attributes</h2></td></tr>
 
 <p>Return the correlation between two future expiry dates <code>ed_1</code> and <code>ed_2</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00155">155</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>                                                                                        {</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a> == 0.0 || ed_1 == ed_2) {</div>
-<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">return</span> 1.0;</div>
-<div class="line"><span class="lineno">  158</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  159</span>        Time t_1 = <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>-&gt;timeFromReference(ed_1);</div>
-<div class="line"><span class="lineno">  160</span>        Time t_2 = <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>-&gt;timeFromReference(ed_2);</div>
-<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>(-<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a> * fabs(t_2 - t_1));</div>
-<div class="line"><span class="lineno">  162</span>    }</div>
-<div class="line"><span class="lineno">  163</span>}</div>
-<div class="ttc" id="anamespace_quant_ext_html_a11171c842d01ffacc4ec522e398070a9"><div class="ttname"><a href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">QuantExt::exp</a></div><div class="ttdeci">RandomVariable exp(RandomVariable x)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00445">randomvariable.cpp:445</a></div></div>
+<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00161">161</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>                                                                                        {</div>
+<div class="line"><span class="lineno">  162</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a> == 0.0 || ed_1 == ed_2) {</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">return</span> 1.0;</div>
+<div class="line"><span class="lineno">  164</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  165</span>        Time t_1 = <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>-&gt;timeFromReference(ed_1);</div>
+<div class="line"><span class="lineno">  166</span>        Time t_2 = <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a7bb1cfe348f1597abca4cf086bf907b1">volStructure_</a>-&gt;timeFromReference(ed_2);</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">exp</a>(-<a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#ae10f34142aa6043ea12e0445fa2cf304">beta_</a> * fabs(t_2 - t_1));</div>
+<div class="line"><span class="lineno">  168</span>    }</div>
+<div class="line"><span class="lineno">  169</span>}</div>
+<div class="ttc" id="anamespace_quant_ext_html_a11171c842d01ffacc4ec522e398070a9"><div class="ttname"><a href="namespace_quant_ext.html#a11171c842d01ffacc4ec522e398070a9">QuantExt::exp</a></div><div class="ttdeci">RandomVariable exp(RandomVariable x)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00724">randomvariable.cpp:724</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -329,76 +329,76 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >In certain cases, the APO value is not model dependent. This method returns <code>true</code> if the APO value is model dependent. If the APO value is not model dependent, this method returns <code>false</code> and populates the results with the model independent value. </p>
 
-<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00165">165</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  165</span>                                                                   {</div>
-<div class="line"><span class="lineno">  166</span> </div>
-<div class="line"><span class="lineno">  167</span>    <span class="comment">// Discount factor to the APO payment date</span></div>
-<div class="line"><span class="lineno">  168</span>    Real discount = <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a633a2f63e35f5d5b6ec5b92ea38709ae">discountCurve_</a>-&gt;discount(<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;date());</div>
-<div class="line"><span class="lineno">  169</span> </div>
-<div class="line"><span class="lineno">  170</span>    <span class="comment">// Valuation date</span></div>
-<div class="line"><span class="lineno">  171</span>    Date today = Settings::instance().evaluationDate();</div>
+<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00171">171</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  171</span>                                                                   {</div>
 <div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>    <span class="comment">// If all pricing dates are on or before today. This can happen when the APO payment date is a positive number</span></div>
-<div class="line"><span class="lineno">  174</span>    <span class="comment">// of days after the final APO pricing date and today is in between.</span></div>
-<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">if</span> (today &gt;= <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;indices().rbegin()-&gt;first) {</div>
-<div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>        <span class="comment">// Put call indicator</span></div>
-<div class="line"><span class="lineno">  178</span>        Real omega = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.type == Option::Call ? 1.0 : -1.0;</div>
-<div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>        <span class="comment">// Populate the result value</span></div>
-<div class="line"><span class="lineno">  181</span>        Real payoff = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;gearing() * <a class="code hl_function" href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a>(omega * (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.accrued - <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.effectiveStrike), 0.0);</div>
-<div class="line"><span class="lineno">  182</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.quantity * payoff * discount;</div>
-<div class="line"><span class="lineno">  183</span> </div>
-<div class="line"><span class="lineno">  184</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  185</span>    }</div>
-<div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>    <span class="comment">// If a portion of the average price has already accrued, the effective strike of the APO will</span></div>
-<div class="line"><span class="lineno">  188</span>    <span class="comment">// have changed by the accrued amount. The strike could be non-positive.</span></div>
-<div class="line"><span class="lineno">  189</span>    Real effectiveStrike = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.effectiveStrike - <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.accrued;</div>
-<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">if</span> (effectiveStrike &lt;= 0.0) {</div>
-<div class="line"><span class="lineno">  191</span> </div>
-<div class="line"><span class="lineno">  192</span>        <span class="comment">// If the effective strike is &lt;= 0, put payoff is 0.0 and call payoff is [A - K]</span></div>
-<div class="line"><span class="lineno">  193</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.type == Option::Call) {</div>
-<div class="line"><span class="lineno">  194</span>            <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;amount() - <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.quantity * <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.strikePrice) * discount;</div>
-<div class="line"><span class="lineno">  195</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  196</span>            <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = 0.0;</div>
-<div class="line"><span class="lineno">  197</span>        }</div>
-<div class="line"><span class="lineno">  198</span> </div>
-<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  200</span>    }</div>
-<div class="line"><span class="lineno">  201</span> </div>
-<div class="line"><span class="lineno">  202</span>    <span class="comment">// If we get to here, value is model dependent except the option was knocked out</span></div>
-<div class="line"><span class="lineno">  203</span> </div>
-<div class="line"><span class="lineno">  204</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  205</span>    Real lastFixing = 0.0;</div>
-<div class="line"><span class="lineno">  206</span> </div>
-<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;indices()) {</div>
-<div class="line"><span class="lineno">  208</span>        <span class="comment">// Break on the first pricing date that is greater than today</span></div>
-<div class="line"><span class="lineno">  209</span>        <span class="keywordflow">if</span> (today &lt; kv.first) {</div>
-<div class="line"><span class="lineno">  210</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  211</span>        }</div>
-<div class="line"><span class="lineno">  212</span>        <span class="comment">// Update accrued where pricing date is on or before today</span></div>
-<div class="line"><span class="lineno">  213</span>        Real fxRate{1.};</div>
-<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.fxIndex)</div>
-<div class="line"><span class="lineno">  215</span>            fxRate=<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.fxIndex-&gt;fixing(kv.first);</div>
-<div class="line"><span class="lineno">  216</span>        lastFixing = fxRate*kv.second-&gt;fixing(kv.first);</div>
-<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierStyle == Exercise::American)</div>
-<div class="line"><span class="lineno">  218</span>            <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> = <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> || this-&gt;<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>(lastFixing, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  219</span>    }</div>
-<div class="line"><span class="lineno">  220</span> </div>
-<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierStyle == Exercise::European)</div>
-<div class="line"><span class="lineno">  222</span>        <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> = this-&gt;<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>(lastFixing, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  223</span> </div>
-<div class="line"><span class="lineno">  224</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> &amp;&amp; (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownOut || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpOut)) {</div>
-<div class="line"><span class="lineno">  225</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = 0.0;</div>
-<div class="line"><span class="lineno">  226</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  227</span>    }</div>
-<div class="line"><span class="lineno">  228</span> </div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  230</span>}</div>
+<div class="line"><span class="lineno">  173</span>    <span class="comment">// Discount factor to the APO payment date</span></div>
+<div class="line"><span class="lineno">  174</span>    Real discount = <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a633a2f63e35f5d5b6ec5b92ea38709ae">discountCurve_</a>-&gt;discount(<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;date());</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="comment">// Valuation date</span></div>
+<div class="line"><span class="lineno">  177</span>    Date today = Settings::instance().evaluationDate();</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>    <span class="comment">// If all pricing dates are on or before today. This can happen when the APO payment date is a positive number</span></div>
+<div class="line"><span class="lineno">  180</span>    <span class="comment">// of days after the final APO pricing date and today is in between.</span></div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (today &gt;= <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;indices().rbegin()-&gt;first) {</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>        <span class="comment">// Put call indicator</span></div>
+<div class="line"><span class="lineno">  184</span>        Real omega = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.type == Option::Call ? 1.0 : -1.0;</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>        <span class="comment">// Populate the result value</span></div>
+<div class="line"><span class="lineno">  187</span>        Real payoff = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;gearing() * <a class="code hl_function" href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">max</a>(omega * (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.accrued - <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.effectiveStrike), 0.0);</div>
+<div class="line"><span class="lineno">  188</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.quantity * payoff * discount;</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+<div class="line"><span class="lineno">  192</span> </div>
+<div class="line"><span class="lineno">  193</span>    <span class="comment">// If a portion of the average price has already accrued, the effective strike of the APO will</span></div>
+<div class="line"><span class="lineno">  194</span>    <span class="comment">// have changed by the accrued amount. The strike could be non-positive.</span></div>
+<div class="line"><span class="lineno">  195</span>    Real effectiveStrike = <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.effectiveStrike - <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.accrued;</div>
+<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">if</span> (effectiveStrike &lt;= 0.0) {</div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>        <span class="comment">// If the effective strike is &lt;= 0, put payoff is 0.0 and call payoff is [A - K]</span></div>
+<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.type == Option::Call) {</div>
+<div class="line"><span class="lineno">  200</span>            <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;amount() - <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.quantity * <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.strikePrice) * discount;</div>
+<div class="line"><span class="lineno">  201</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  202</span>            <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = 0.0;</div>
+<div class="line"><span class="lineno">  203</span>        }</div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>    <span class="comment">// If we get to here, value is model dependent except the option was knocked out</span></div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  211</span>    Real lastFixing = 0.0;</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.flow-&gt;indices()) {</div>
+<div class="line"><span class="lineno">  214</span>        <span class="comment">// Break on the first pricing date that is greater than today</span></div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordflow">if</span> (today &lt; kv.first) {</div>
+<div class="line"><span class="lineno">  216</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  217</span>        }</div>
+<div class="line"><span class="lineno">  218</span>        <span class="comment">// Update accrued where pricing date is on or before today</span></div>
+<div class="line"><span class="lineno">  219</span>        Real fxRate{1.};</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.fxIndex)</div>
+<div class="line"><span class="lineno">  221</span>            fxRate=<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.fxIndex-&gt;fixing(kv.first);</div>
+<div class="line"><span class="lineno">  222</span>        lastFixing = fxRate*kv.second-&gt;fixing(kv.first);</div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierStyle == Exercise::American)</div>
+<div class="line"><span class="lineno">  224</span>            <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> = <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> || this-&gt;<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>(lastFixing, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  225</span>    }</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierStyle == Exercise::European)</div>
+<div class="line"><span class="lineno">  228</span>        <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> = this-&gt;<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>(lastFixing, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a> &amp;&amp; (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownOut || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpOut)) {</div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_variable" href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a>.value = 0.0;</div>
+<div class="line"><span class="lineno">  232</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  233</span>    }</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  236</span>}</div>
 <div class="ttc" id="acdsoption_8cpp_html_afeb3e8b4e6ab6604c185b2ea55bbc728"><div class="ttname"><a href="cdsoption_8cpp.html#afeb3e8b4e6ab6604c185b2ea55bbc728">results_</a></div><div class="ttdeci">const Instrument::results * results_</div><div class="ttdef"><b>Definition:</b> <a href="cdsoption_8cpp_source.html#l00081">cdsoption.cpp:81</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_commodity_average_price_option_base_engine_html_a03d74db999034464e3c0882f231cd0de"><div class="ttname"><a href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">QuantExt::CommodityAveragePriceOptionBaseEngine::barrierTriggered</a></div><div class="ttdeci">bool barrierTriggered(const Real price, const bool logPrice) const</div><div class="ttdef"><b>Definition:</b> <a href="commodityapoengine_8cpp_source.html#l00232">commodityapoengine.cpp:232</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a0780e43df89be3d7f7671eca2418cdd1"><div class="ttname"><a href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">QuantExt::max</a></div><div class="ttdeci">RandomVariable max(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00387">randomvariable.cpp:387</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_commodity_average_price_option_base_engine_html_a03d74db999034464e3c0882f231cd0de"><div class="ttname"><a href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">QuantExt::CommodityAveragePriceOptionBaseEngine::barrierTriggered</a></div><div class="ttdeci">bool barrierTriggered(const Real price, const bool logPrice) const</div><div class="ttdef"><b>Definition:</b> <a href="commodityapoengine_8cpp_source.html#l00238">commodityapoengine.cpp:238</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a0780e43df89be3d7f7671eca2418cdd1"><div class="ttname"><a href="namespace_quant_ext.html#a0780e43df89be3d7f7671eca2418cdd1">QuantExt::max</a></div><div class="ttdeci">RandomVariable max(RandomVariable x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00636">randomvariable.cpp:636</a></div></div>
 <div class="ttc" id="atenorbasisswap_8cpp_html_a71b2ce0e52885aca4ce15e1d128b9f56"><div class="ttname"><a href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a></div><div class="ttdeci">Swap::arguments * arguments_</div><div class="ttdef"><b>Definition:</b> <a href="tenorbasisswap_8cpp_source.html#l00059">tenorbasisswap.cpp:59</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -462,17 +462,17 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Check barriers on given (log-)price </p>
 
-<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00232">232</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  232</span>                                                                                                        {</div>
-<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierLevel == Null&lt;Real&gt;())</div>
-<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  235</span>    Real tmp = logPrice ? <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a75be6235d3655680eb1ded11061299a7">logBarrier_</a> : <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierLevel;</div>
-<div class="line"><span class="lineno">  236</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownIn || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownOut)</div>
-<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">return</span> price &lt;= tmp;</div>
-<div class="line"><span class="lineno">  238</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpIn || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpOut)</div>
-<div class="line"><span class="lineno">  239</span>        <span class="keywordflow">return</span> price &gt;= tmp;</div>
-<div class="line"><span class="lineno">  240</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  241</span>}</div>
+<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00238">238</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  238</span>                                                                                                        {</div>
+<div class="line"><span class="lineno">  239</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierLevel == Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  240</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  241</span>    Real tmp = logPrice ? <a class="code hl_variable" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a75be6235d3655680eb1ded11061299a7">logBarrier_</a> : <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierLevel;</div>
+<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownIn || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownOut)</div>
+<div class="line"><span class="lineno">  243</span>        <span class="keywordflow">return</span> price &lt;= tmp;</div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpIn || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpOut)</div>
+<div class="line"><span class="lineno">  245</span>        <span class="keywordflow">return</span> price &gt;= tmp;</div>
+<div class="line"><span class="lineno">  246</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  247</span>}</div>
 <div class="ttc" id="aclass_quant_ext_1_1_commodity_average_price_option_base_engine_html_a75be6235d3655680eb1ded11061299a7"><div class="ttname"><a href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a75be6235d3655680eb1ded11061299a7">QuantExt::CommodityAveragePriceOptionBaseEngine::logBarrier_</a></div><div class="ttdeci">QuantLib::Real logBarrier_</div><div class="ttdef"><b>Definition:</b> <a href="commodityapoengine_8hpp_source.html#l00106">commodityapoengine.hpp:106</a></div></div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -518,15 +518,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >Check whether option is alive depending on whether barrier was triggered </p>
 
-<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00243">243</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  243</span>                                                                                   {</div>
-<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierLevel == Null&lt;Real&gt;())</div>
-<div class="line"><span class="lineno">  245</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  246</span>    <span class="keywordflow">return</span> ((<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownIn || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpIn) &amp;&amp;</div>
-<div class="line"><span class="lineno">  247</span>            <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>) ||</div>
-<div class="line"><span class="lineno">  248</span>           ((<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownOut || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpOut) &amp;&amp;</div>
-<div class="line"><span class="lineno">  249</span>            !<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>);</div>
-<div class="line"><span class="lineno">  250</span>}</div>
+<p class="definition">Definition at line <a class="el" href="commodityapoengine_8cpp_source.html#l00249">249</a> of file <a class="el" href="commodityapoengine_8cpp_source.html">commodityapoengine.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  249</span>                                                                                   {</div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierLevel == Null&lt;Real&gt;())</div>
+<div class="line"><span class="lineno">  251</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  252</span>    <span class="keywordflow">return</span> ((<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownIn || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpIn) &amp;&amp;</div>
+<div class="line"><span class="lineno">  253</span>            <a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>) ||</div>
+<div class="line"><span class="lineno">  254</span>           ((<a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::DownOut || <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.barrierType == Barrier::UpOut) &amp;&amp;</div>
+<div class="line"><span class="lineno">  255</span>            !<a class="code hl_function" href="class_quant_ext_1_1_commodity_average_price_option_base_engine.html#a03d74db999034464e3c0882f231cd0de">barrierTriggered</a>);</div>
+<div class="line"><span class="lineno">  256</span>}</div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">

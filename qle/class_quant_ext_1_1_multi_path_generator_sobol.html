@@ -95,7 +95,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_ext_1_1_multi_path_generator_sobol__inherit__graph.png" border="0" usemap="#a_multi_path_generator_sobol_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_multi_path_generator_sobol_inherit__map" id="a_multi_path_generator_sobol_inherit__map">
-<area shape="rect" title="Instantiation of MultiPathGenerator with standard LowDiscrepancy traits." alt="" coords="9,137,200,295"/>
+<area shape="rect" title="Instantiation of MultiPathGenerator with standard LowDiscrepancy traits." alt="" coords="9,137,200,324"/>
 <area shape="rect" href="class_quant_ext_1_1_multi_path_generator_base.html" title="Multi Path Generator Base." alt="" coords="5,5,204,89"/>
 </map>
 </div>
@@ -106,13 +106,15 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_ext_1_1_multi_path_generator_sobol__coll__graph.png" border="0" usemap="#a_multi_path_generator_sobol_coll__map" alt="Collaboration graph"/></div>
 <map name="a_multi_path_generator_sobol_coll__map" id="a_multi_path_generator_sobol_coll__map">
-<area shape="rect" title="Instantiation of MultiPathGenerator with standard LowDiscrepancy traits." alt="" coords="471,152,664,236"/>
+<area shape="rect" title="Instantiation of MultiPathGenerator with standard LowDiscrepancy traits." alt="" coords="588,152,781,236"/>
 <area shape="rect" href="class_quant_ext_1_1_multi_path_generator_base.html" title="Multi Path Generator Base." alt="" coords="5,5,204,89"/>
 <area shape="rect" title=" " alt="" coords="229,27,450,67"/>
 <area shape="rect" title=" " alt="" coords="475,27,553,67"/>
 <area shape="rect" title=" " alt="" coords="577,27,664,67"/>
 <area shape="rect" title=" " alt="" coords="689,27,811,67"/>
 <area shape="rect" title=" " alt="" coords="835,20,1046,75"/>
+<area shape="rect" title=" " alt="" coords="1070,20,1281,75"/>
+<area shape="rect" title=" " alt="" coords="1305,27,1454,67"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -144,12 +146,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a44bcbd366a24b9989a3295b7202ec3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29965ceddb6e0145f05458b199e56ea7"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; MultiPathGenerator&lt; LowDiscrepancy::rsg_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">pg_</a></td></tr>
 <tr class="separator:a29965ceddb6e0145f05458b199e56ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6c8d1851d602c8f5ede690574f39db"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; PathGenerator&lt; LowDiscrepancy::rsg_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a3f6c8d1851d602c8f5ede690574f39db">pg1D_</a></td></tr>
+<tr class="separator:a3f6c8d1851d602c8f5ede690574f39db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9ef5ddefa4ac9ea8d4103565204de8"><td class="memItemLeft" align="right" valign="top">Sample&lt; MultiPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a2a9ef5ddefa4ac9ea8d4103565204de8">next_</a></td></tr>
+<tr class="separator:a2a9ef5ddefa4ac9ea8d4103565204de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Instantiation of MultiPathGenerator with standard LowDiscrepancy traits. </p>
 <p >no Brownian bridge provided, use <a class="el" href="class_quant_ext_1_1_multi_path_generator_sobol_brownian_bridge.html" title="Instantiation using SobolBrownianGenerator from models/marketmodels/browniangenerators.">MultiPathGeneratorSobolBrownianBridge</a> for this, for the use of the seed, see ql/math/randomnumbers/sobolrsg.cpp </p><pre class="fragment">\ingroup methods
 </pre> 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00083">83</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00084">84</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af1163815d4e63e2216c3f3aea8786412" name="af1163815d4e63e2216c3f3aea8786412"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1163815d4e63e2216c3f3aea8786412">&#9670;&#160;</a></span>MultiPathGeneratorSobol()</h2>
@@ -189,15 +195,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8cpp_source.html#l00039">39</a> of file <a class="el" href="multipathgeneratorbase_8cpp_source.html">multipathgeneratorbase.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>    : <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>(process), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>(grid), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a654936ea7a7e268c1d02b452e80c7fdb">seed_</a>(seed), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a44bcbd366a24b9989a3295b7202ec3fa">directionIntegers_</a>(directionIntegers) {</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_function" href="class_quant_ext_1_1_multi_path_generator_sobol.html#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a>();</div>
-<div class="line"><span class="lineno">   44</span>}</div>
-<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a362f60eca3740d862ba51cceeb245d6c"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">QuantExt::MultiPathGeneratorSobol::grid_</a></div><div class="ttdeci">TimeGrid grid_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00092">multipathgeneratorbase.hpp:92</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a44bcbd366a24b9989a3295b7202ec3fa"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a44bcbd366a24b9989a3295b7202ec3fa">QuantExt::MultiPathGeneratorSobol::directionIntegers_</a></div><div class="ttdeci">SobolRsg::DirectionIntegers directionIntegers_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00094">multipathgeneratorbase.hpp:94</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a5683e89bb2b68143367238eb4491164f"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">QuantExt::MultiPathGeneratorSobol::process_</a></div><div class="ttdeci">const boost::shared_ptr&lt; StochasticProcess &gt; process_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00091">multipathgeneratorbase.hpp:91</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a654936ea7a7e268c1d02b452e80c7fdb"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a654936ea7a7e268c1d02b452e80c7fdb">QuantExt::MultiPathGeneratorSobol::seed_</a></div><div class="ttdeci">BigNatural seed_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00093">multipathgeneratorbase.hpp:93</a></div></div>
-<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_aebfcdbbd0fe4efbff10b180be50ca6bc"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#aebfcdbbd0fe4efbff10b180be50ca6bc">QuantExt::MultiPathGeneratorSobol::reset</a></div><div class="ttdeci">void reset() override</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8cpp_source.html#l00046">multipathgeneratorbase.cpp:46</a></div></div>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8cpp_source.html#l00063">63</a> of file <a class="el" href="multipathgeneratorbase_8cpp_source.html">multipathgeneratorbase.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>    : <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>(process), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>(grid), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a654936ea7a7e268c1d02b452e80c7fdb">seed_</a>(seed), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a44bcbd366a24b9989a3295b7202ec3fa">directionIntegers_</a>(directionIntegers),</div>
+<div class="line"><span class="lineno">   67</span>      <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a2a9ef5ddefa4ac9ea8d4103565204de8">next_</a>(MultiPath(process-&gt;size(), grid), 1.0) {</div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_function" href="class_quant_ext_1_1_multi_path_generator_sobol.html#aebfcdbbd0fe4efbff10b180be50ca6bc">reset</a>();</div>
+<div class="line"><span class="lineno">   69</span>}</div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a2a9ef5ddefa4ac9ea8d4103565204de8"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a2a9ef5ddefa4ac9ea8d4103565204de8">QuantExt::MultiPathGeneratorSobol::next_</a></div><div class="ttdeci">Sample&lt; MultiPath &gt; next_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00099">multipathgeneratorbase.hpp:99</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a362f60eca3740d862ba51cceeb245d6c"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">QuantExt::MultiPathGeneratorSobol::grid_</a></div><div class="ttdeci">TimeGrid grid_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00093">multipathgeneratorbase.hpp:93</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a44bcbd366a24b9989a3295b7202ec3fa"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a44bcbd366a24b9989a3295b7202ec3fa">QuantExt::MultiPathGeneratorSobol::directionIntegers_</a></div><div class="ttdeci">SobolRsg::DirectionIntegers directionIntegers_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00095">multipathgeneratorbase.hpp:95</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a5683e89bb2b68143367238eb4491164f"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">QuantExt::MultiPathGeneratorSobol::process_</a></div><div class="ttdeci">const boost::shared_ptr&lt; StochasticProcess &gt; process_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00092">multipathgeneratorbase.hpp:92</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a654936ea7a7e268c1d02b452e80c7fdb"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a654936ea7a7e268c1d02b452e80c7fdb">QuantExt::MultiPathGeneratorSobol::seed_</a></div><div class="ttdeci">BigNatural seed_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00094">multipathgeneratorbase.hpp:94</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_aebfcdbbd0fe4efbff10b180be50ca6bc"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#aebfcdbbd0fe4efbff10b180be50ca6bc">QuantExt::MultiPathGeneratorSobol::reset</a></div><div class="ttdeci">void reset() override</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8cpp_source.html#l00071">multipathgeneratorbase.cpp:71</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -238,9 +246,17 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_quant_ext_1_1_multi_path_generator_base.html#a8ed0777959c237aa0256e42665d8d8a2">MultiPathGeneratorBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00142">142</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  142</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">pg_</a>-&gt;next(); }</div>
-<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a29965ceddb6e0145f05458b199e56ea7"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">QuantExt::MultiPathGeneratorSobol::pg_</a></div><div class="ttdeci">boost::shared_ptr&lt; MultiPathGenerator&lt; LowDiscrepancy::rsg_type &gt; &gt; pg_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00096">multipathgeneratorbase.hpp:96</a></div></div>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8cpp_source.html#l00087">87</a> of file <a class="el" href="multipathgeneratorbase_8cpp_source.html">multipathgeneratorbase.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                                                             {</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">pg_</a>)</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">pg_</a>-&gt;next();</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a2a9ef5ddefa4ac9ea8d4103565204de8">next_</a>.value.at(0) = <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a3f6c8d1851d602c8f5ede690574f39db">pg1D_</a>-&gt;next().value;</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a2a9ef5ddefa4ac9ea8d4103565204de8">next_</a>;</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a29965ceddb6e0145f05458b199e56ea7"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">QuantExt::MultiPathGeneratorSobol::pg_</a></div><div class="ttdeci">boost::shared_ptr&lt; MultiPathGenerator&lt; LowDiscrepancy::rsg_type &gt; &gt; pg_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00097">multipathgeneratorbase.hpp:97</a></div></div>
+<div class="ttc" id="aclass_quant_ext_1_1_multi_path_generator_sobol_html_a3f6c8d1851d602c8f5ede690574f39db"><div class="ttname"><a href="class_quant_ext_1_1_multi_path_generator_sobol.html#a3f6c8d1851d602c8f5ede690574f39db">QuantExt::MultiPathGeneratorSobol::pg1D_</a></div><div class="ttdeci">boost::shared_ptr&lt; PathGenerator&lt; LowDiscrepancy::rsg_type &gt; &gt; pg1D_</div><div class="ttdef"><b>Definition:</b> <a href="multipathgeneratorbase_8hpp_source.html#l00098">multipathgeneratorbase.hpp:98</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,13 +285,22 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_quant_ext_1_1_multi_path_generator_base.html#a20dcbdfbd0ec77afc802522bb7e379c1">MultiPathGeneratorBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8cpp_source.html#l00046">46</a> of file <a class="el" href="multipathgeneratorbase_8cpp_source.html">multipathgeneratorbase.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                    {</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">pg_</a> = boost::make_shared&lt;MultiPathGenerator&lt;InverseCumulativeRsg&lt;SobolRsg, InverseCumulativeNormal&gt; &gt; &gt;(</div>
-<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>,</div>
-<div class="line"><span class="lineno">   49</span>        InverseCumulativeRsg&lt;SobolRsg, InverseCumulativeNormal&gt;(</div>
-<div class="line"><span class="lineno">   50</span>            SobolRsg(<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>-&gt;factors() * (<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>.size() - 1), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a654936ea7a7e268c1d02b452e80c7fdb">seed_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a44bcbd366a24b9989a3295b7202ec3fa">directionIntegers_</a>)));</div>
-<div class="line"><span class="lineno">   51</span>}</div>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8cpp_source.html#l00071">71</a> of file <a class="el" href="multipathgeneratorbase_8cpp_source.html">multipathgeneratorbase.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                                    {</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (<span class="keyword">auto</span> tmp = boost::dynamic_pointer_cast&lt;StochasticProcess1D&gt;(<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>)) {</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a3f6c8d1851d602c8f5ede690574f39db">pg1D_</a> = boost::make_shared&lt;PathGenerator&lt;InverseCumulativeRsg&lt;SobolRsg, InverseCumulativeNormal&gt;&gt;&gt;(</div>
+<div class="line"><span class="lineno">   74</span>            tmp, <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>,</div>
+<div class="line"><span class="lineno">   75</span>            InverseCumulativeRsg&lt;SobolRsg, InverseCumulativeNormal&gt;(</div>
+<div class="line"><span class="lineno">   76</span>                SobolRsg(<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>-&gt;factors() * (<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>.size() - 1), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a654936ea7a7e268c1d02b452e80c7fdb">seed_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a44bcbd366a24b9989a3295b7202ec3fa">directionIntegers_</a>)),</div>
+<div class="line"><span class="lineno">   77</span>            <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a29965ceddb6e0145f05458b199e56ea7">pg_</a> = boost::make_shared&lt;MultiPathGenerator&lt;InverseCumulativeRsg&lt;SobolRsg, InverseCumulativeNormal&gt;&gt;&gt;(</div>
+<div class="line"><span class="lineno">   81</span>            <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>,</div>
+<div class="line"><span class="lineno">   82</span>            InverseCumulativeRsg&lt;SobolRsg, InverseCumulativeNormal&gt;(</div>
+<div class="line"><span class="lineno">   83</span>                SobolRsg(<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a5683e89bb2b68143367238eb4491164f">process_</a>-&gt;factors() * (<a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a362f60eca3740d862ba51cceeb245d6c">grid_</a>.size() - 1), <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a654936ea7a7e268c1d02b452e80c7fdb">seed_</a>, <a class="code hl_variable" href="class_quant_ext_1_1_multi_path_generator_sobol.html#a44bcbd366a24b9989a3295b7202ec3fa">directionIntegers_</a>)));</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="line"><span class="lineno">   85</span>}</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -311,7 +336,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00091">91</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00092">92</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +360,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00092">92</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00093">93</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
 
 </div>
 </div>
@@ -359,7 +384,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00093">93</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00094">94</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +408,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00094">94</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00095">95</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
 
 </div>
 </div>
@@ -407,7 +432,55 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00096">96</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00097">97</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3f6c8d1851d602c8f5ede690574f39db" name="a3f6c8d1851d602c8f5ede690574f39db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6c8d1851d602c8f5ede690574f39db">&#9670;&#160;</a></span>pg1D_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;PathGenerator&lt;LowDiscrepancy::rsg_type&gt; &gt; pg1D_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00098">98</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2a9ef5ddefa4ac9ea8d4103565204de8" name="a2a9ef5ddefa4ac9ea8d4103565204de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9ef5ddefa4ac9ea8d4103565204de8">&#9670;&#160;</a></span>next_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sample&lt;MultiPath&gt; next_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="multipathgeneratorbase_8hpp_source.html#l00099">99</a> of file <a class="el" href="multipathgeneratorbase_8hpp_source.html">multipathgeneratorbase.hpp</a>.</p>
 
 </div>
 </div>

@@ -268,7 +268,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p >Abstract Engine Builder for Asian Options. </p>
 <p >Pricing engines are cached by asset/currency/expiry, where expiry is null (Date()) if irrelevant. </p>
 
-<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00047">47</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00050">50</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3d7b17d87a1ca0b490587f9cfb9e3524" name="a3d7b17d87a1ca0b490587f9cfb9e3524"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d7b17d87a1ca0b490587f9cfb9e3524">&#9670;&#160;</a></span>AsianOptionEngineBuilder()</h2>
@@ -314,9 +314,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00050">50</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>         : <a class="code hl_function" href="classore_1_1data_1_1_caching_option_engine_builder.html#af5d52278e7cc7f7f32a41ede8c25eaa5">CachingOptionEngineBuilder</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a5b42b4fc92c1fab7879d756cce6bc6b9">model</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">engine</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a1ed37a8575bdf2338a7021c7c30c24f8">tradeTypes</a>, assetClass), <a class="code hl_variable" href="classore_1_1data_1_1_asian_option_engine_builder.html#affd57471af222907e43abc97892df61b">expiryDate_</a>(expiryDate) {}</div>
-<div class="ttc" id="aclassore_1_1data_1_1_asian_option_engine_builder_html_affd57471af222907e43abc97892df61b"><div class="ttname"><a href="classore_1_1data_1_1_asian_option_engine_builder.html#affd57471af222907e43abc97892df61b">ore::data::AsianOptionEngineBuilder::expiryDate_</a></div><div class="ttdeci">Date expiryDate_</div><div class="ttdef"><b>Definition:</b> <a href="builders_2asianoption_8hpp_source.html#l00073">asianoption.hpp:73</a></div></div>
+<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00053">53</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>         : <a class="code hl_function" href="classore_1_1data_1_1_caching_option_engine_builder.html#af5d52278e7cc7f7f32a41ede8c25eaa5">CachingOptionEngineBuilder</a>(<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a5b42b4fc92c1fab7879d756cce6bc6b9">model</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">engine</a>, <a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a1ed37a8575bdf2338a7021c7c30c24f8">tradeTypes</a>, assetClass), <a class="code hl_variable" href="classore_1_1data_1_1_asian_option_engine_builder.html#affd57471af222907e43abc97892df61b">expiryDate_</a>(expiryDate) {}</div>
+<div class="ttc" id="aclassore_1_1data_1_1_asian_option_engine_builder_html_affd57471af222907e43abc97892df61b"><div class="ttname"><a href="classore_1_1data_1_1_asian_option_engine_builder.html#affd57471af222907e43abc97892df61b">ore::data::AsianOptionEngineBuilder::expiryDate_</a></div><div class="ttdeci">Date expiryDate_</div><div class="ttdef"><b>Definition:</b> <a href="builders_2asianoption_8hpp_source.html#l00076">asianoption.hpp:76</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_caching_option_engine_builder_html_af5d52278e7cc7f7f32a41ede8c25eaa5"><div class="ttname"><a href="classore_1_1data_1_1_caching_option_engine_builder.html#af5d52278e7cc7f7f32a41ede8c25eaa5">ore::data::CachingOptionEngineBuilder&lt; string, const string &amp;, const Currency &amp;, const AssetClass &amp;, const Date &amp; &gt;::CachingOptionEngineBuilder</a></div><div class="ttdeci">CachingOptionEngineBuilder(const string &amp;model, const string &amp;engine, const set&lt; string &gt; &amp;tradeTypes, const AssetClass &amp;assetClass)</div><div class="ttdef"><b>Definition:</b> <a href="builders_2vanillaoption_8hpp_source.html#l00047">vanillaoption.hpp:47</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a163cd3dc5a4afac8f3455002ed3310c5"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">ore::data::EngineBuilder::engine</a></div><div class="ttdeci">const string &amp; engine() const</div><div class="ttdoc">Return the engine name.</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00110">enginefactory.hpp:110</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html_a1ed37a8575bdf2338a7021c7c30c24f8"><div class="ttname"><a href="classore_1_1data_1_1_engine_builder.html#a1ed37a8575bdf2338a7021c7c30c24f8">ore::data::EngineBuilder::tradeTypes</a></div><div class="ttdeci">const set&lt; string &gt; &amp; tradeTypes() const</div><div class="ttdoc">Return the possible trade types.</div><div class="ttdef"><b>Definition:</b> <a href="enginefactory_8hpp_source.html#l00112">enginefactory.hpp:112</a></div></div>
@@ -357,13 +357,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00054">54</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                                                                 {</div>
-<div class="line"><span class="lineno">   55</span>         <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespaceore_1_1data.html#aaf4d07dacc7ac10050de976387a15c1a">CachingPricingEngineBuilder</a>&lt;string, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> Currency&amp;, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">AssetClass</a>&amp;,</div>
-<div class="line"><span class="lineno">   56</span>                                            <span class="keyword">const</span> Date&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(assetName, ccy, <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>, expiryDate);</div>
-<div class="line"><span class="lineno">   57</span>     }</div>
+<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00057">57</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                                                                                                 {</div>
+<div class="line"><span class="lineno">   58</span>         <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespaceore_1_1data.html#aaf4d07dacc7ac10050de976387a15c1a">CachingPricingEngineBuilder</a>&lt;string, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> Currency&amp;, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">AssetClass</a>&amp;,</div>
+<div class="line"><span class="lineno">   59</span>                                            <span class="keyword">const</span> Date&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(assetName, ccy, <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>, expiryDate);</div>
+<div class="line"><span class="lineno">   60</span>     }</div>
 <div class="ttc" id="aclassore_1_1data_1_1_caching_option_engine_builder_html_a54b9dabc759b8ee8e1482e5e0891ee6a"><div class="ttname"><a href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">ore::data::CachingOptionEngineBuilder&lt; string, const string &amp;, const Currency &amp;, const AssetClass &amp;, const Date &amp; &gt;::assetClass_</a></div><div class="ttdeci">AssetClass assetClass_</div><div class="ttdef"><b>Definition:</b> <a href="builders_2vanillaoption_8hpp_source.html#l00103">vanillaoption.hpp:103</a></div></div>
-<div class="ttc" id="anamespaceore_1_1data_html_a257a26b87a296246c696d5931f88840e"><div class="ttname"><a href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a></div><div class="ttdeci">AssetClass</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8hpp_source.html#l00347">parsers.hpp:347</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a257a26b87a296246c696d5931f88840e"><div class="ttname"><a href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">ore::data::AssetClass</a></div><div class="ttdeci">AssetClass</div><div class="ttdef"><b>Definition:</b> <a href="parsers_8hpp_source.html#l00359">parsers.hpp:359</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_aaf4d07dacc7ac10050de976387a15c1a"><div class="ttname"><a href="namespaceore_1_1data.html#aaf4d07dacc7ac10050de976387a15c1a">ore::data::CachingPricingEngineBuilder</a></div><div class="ttdeci">CachingEngineBuilder&lt; T, PricingEngine, Args... &gt; CachingPricingEngineBuilder</div><div class="ttdef"><b>Definition:</b> <a href="cachingenginebuilder_8hpp_source.html#l00083">cachingenginebuilder.hpp:83</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -411,11 +411,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00059">59</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                                                                                                               {</div>
-<div class="line"><span class="lineno">   60</span>         <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespaceore_1_1data.html#aaf4d07dacc7ac10050de976387a15c1a">CachingPricingEngineBuilder</a>&lt;string, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> Currency&amp;, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">AssetClass</a>&amp;,</div>
-<div class="line"><span class="lineno">   61</span>                                            <span class="keyword">const</span> Date&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(ccy1.code(), ccy2, <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>, expiryDate);</div>
-<div class="line"><span class="lineno">   62</span>     }</div>
+<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00062">62</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                                                                                                               {</div>
+<div class="line"><span class="lineno">   63</span>         <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespaceore_1_1data.html#aaf4d07dacc7ac10050de976387a15c1a">CachingPricingEngineBuilder</a>&lt;string, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp;, <span class="keyword">const</span> Currency&amp;, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceore_1_1data.html#a257a26b87a296246c696d5931f88840e">AssetClass</a>&amp;,</div>
+<div class="line"><span class="lineno">   64</span>                                            <span class="keyword">const</span> Date&amp;&gt;<a class="code hl_function" href="classore_1_1data_1_1_engine_builder.html#a163cd3dc5a4afac8f3455002ed3310c5">::engine</a>(ccy1.code(), ccy2, <a class="code hl_variable" href="classore_1_1data_1_1_caching_option_engine_builder.html#a54b9dabc759b8ee8e1482e5e0891ee6a">assetClass_</a>, expiryDate);</div>
+<div class="line"><span class="lineno">   65</span>     }</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -457,8 +457,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classore_1_1data_1_1_european_asian_option_m_c_d_a_a_p_engine_builder.html#a70135b7bff02659d0e2b065319e4ca70">EuropeanAsianOptionMCDAAPEngineBuilder</a>, <a class="el" href="classore_1_1data_1_1_european_asian_option_m_c_d_a_a_s_engine_builder.html#a70135b7bff02659d0e2b065319e4ca70">EuropeanAsianOptionMCDAASEngineBuilder</a>, <a class="el" href="classore_1_1data_1_1_european_asian_option_m_c_d_g_a_p_engine_builder.html#a70135b7bff02659d0e2b065319e4ca70">EuropeanAsianOptionMCDGAPEngineBuilder</a>, <a class="el" href="classore_1_1data_1_1_european_asian_option_a_d_g_a_p_engine_builder.html#a70135b7bff02659d0e2b065319e4ca70">EuropeanAsianOptionADGAPEngineBuilder</a>, <a class="el" href="classore_1_1data_1_1_european_asian_option_a_d_g_a_s_engine_builder.html#a70135b7bff02659d0e2b065319e4ca70">EuropeanAsianOptionADGASEngineBuilder</a>, <a class="el" href="classore_1_1data_1_1_european_asian_option_a_c_g_a_p_engine_builder.html#a70135b7bff02659d0e2b065319e4ca70">EuropeanAsianOptionACGAPEngineBuilder</a>, and <a class="el" href="classore_1_1data_1_1_european_asian_option_t_w_engine_builder.html#a70135b7bff02659d0e2b065319e4ca70">EuropeanAsianOptionTWEngineBuilder</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00065">65</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; }</div>
+<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00068">68</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -508,11 +508,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00068">68</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>                                                             {</div>
-<div class="line"><span class="lineno">   70</span>         <span class="keywordflow">return</span> assetName + <span class="stringliteral">&quot;/&quot;</span> + ccy.code() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">to_string</a>(expiryDate);</div>
-<div class="line"><span class="lineno">   71</span>     }</div>
-<div class="ttc" id="agroup__utilities_html_ga1b8cd9a976247da6df232ad48d4af190"><div class="ttname"><a href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const QuantLib::Date &amp;date)</div><div class="ttdoc">Convert QuantLib::Date to std::string.</div><div class="ttdef"><b>Definition:</b> <a href="to__string_8cpp_source.html#l00038">to_string.cpp:38</a></div></div>
+<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00071">71</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                             {</div>
+<div class="line"><span class="lineno">   73</span>         <span class="keywordflow">return</span> assetName + <span class="stringliteral">&quot;/&quot;</span> + ccy.code() + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_function" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">to_string</a>(expiryDate);</div>
+<div class="line"><span class="lineno">   74</span>     }</div>
+<div class="ttc" id="anamespaceore_1_1data_html_a86651dfeb5c18ee891f7a4734d8cf455"><div class="ttname"><a href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455">ore::data::to_string</a></div><div class="ttdeci">std::string to_string(const LocationInfo &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="ast_8cpp_source.html#l00028">ast.cpp:28</a></div></div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -521,7 +521,7 @@ Protected Attributes</h2></td></tr>
 <div class="center"><img src="classore_1_1data_1_1_asian_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_asian_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph" alt=""/></div>
 <map name="aclassore_1_1data_1_1_asian_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph" id="aclassore_1_1data_1_1_asian_option_engine_builder_a810bbdbc44eaf2a9dbbea8d29ecdab32_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,72,55"/>
-<area shape="rect" href="group__utilities.html#ga1b8cd9a976247da6df232ad48d4af190" title="Convert QuantLib::Date to std::string." alt="" coords="120,29,251,55"/>
+<area shape="rect" href="namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455" title=" " alt="" coords="120,29,251,55"/>
 </map>
 </div>
 
@@ -548,7 +548,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00073">73</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="builders_2asianoption_8hpp_source.html#l00076">76</a> of file <a class="el" href="builders_2asianoption_8hpp_source.html">asianoption.hpp</a>.</p>
 
 </div>
 </div>

@@ -404,7 +404,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  227</span>        brent.setLowerBound(1.0E-8);</div>
 <div class="line"><span class="lineno">  228</span>        <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  229</span>            fepAdjustedForwardSpread = brent.solve(target, 1.0E-7, <a class="code hl_variable" href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a>.swap-&gt;fairSpreadClean(), 0.0001);</div>
-<div class="line"><span class="lineno">  230</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception e) {</div>
+<div class="line"><span class="lineno">  230</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
 <div class="line"><span class="lineno">  231</span>            QL_FAIL(</div>
 <div class="line"><span class="lineno">  232</span>                <span class="stringliteral">&quot;NumericalIntegrationIndexCdsOptionEngine::doCalc(): failed to calibrate forward spread: &quot;</span> &lt;&lt; e.what());</div>
 <div class="line"><span class="lineno">  233</span>        }</div>
@@ -425,7 +425,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  248</span>        Brent brent2;</div>
 <div class="line"><span class="lineno">  249</span>        <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  250</span>            exerciseBoundary = brent2.solve(payoff, 1.0E-7, 0.0, 0.0001);</div>
-<div class="line"><span class="lineno">  251</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception e) {</div>
+<div class="line"><span class="lineno">  251</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
 <div class="line"><span class="lineno">  252</span>            QL_FAIL(</div>
 <div class="line"><span class="lineno">  253</span>                <span class="stringliteral">&quot;NumericalIntegrationIndexCdsOptionEngine::doCalc(): failed to find exercise boundary: &quot;</span> &lt;&lt; e.what());</div>
 <div class="line"><span class="lineno">  254</span>        }</div>
@@ -453,7 +453,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  276</span>                                            std::exp(-0.5 * x * x) / boost::math::constants::root_two_pi&lt;Real&gt;();</div>
 <div class="line"><span class="lineno">  277</span>                                 },</div>
 <div class="line"><span class="lineno">  278</span>                                 lowerIntegrationBound, upperIntegrationBound);</div>
-<div class="line"><span class="lineno">  279</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception e) {</div>
+<div class="line"><span class="lineno">  279</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
 <div class="line"><span class="lineno">  280</span>            QL_FAIL(</div>
 <div class="line"><span class="lineno">  281</span>                <span class="stringliteral">&quot;NumericalIntegrationIndexCdsOptionEngine::doCalc(): failed to compute option payoff: &quot;</span> &lt;&lt; e.what());</div>
 <div class="line"><span class="lineno">  282</span>        }</div>
@@ -473,7 +473,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclass_quant_ext_1_1_index_cds_option_base_engine_html_aac544765f16a4ca1df403284762ba8b0"><div class="ttname"><a href="class_quant_ext_1_1_index_cds_option_base_engine.html#aac544765f16a4ca1df403284762ba8b0">QuantExt::IndexCdsOptionBaseEngine::discountSwapCurrency_</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantLib::YieldTermStructure &gt; discountSwapCurrency_</div><div class="ttdef"><b>Definition:</b> <a href="indexcdsoptionbaseengine_8hpp_source.html#l00076">indexcdsoptionbaseengine.hpp:76</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_index_cds_option_base_engine_html_ab0b5049883e81849c43a1e8b513ecdf5"><div class="ttname"><a href="class_quant_ext_1_1_index_cds_option_base_engine.html#ab0b5049883e81849c43a1e8b513ecdf5">QuantExt::IndexCdsOptionBaseEngine::volatility_</a></div><div class="ttdeci">QuantLib::Handle&lt; QuantExt::CreditVolCurve &gt; volatility_</div><div class="ttdef"><b>Definition:</b> <a href="indexcdsoptionbaseengine_8hpp_source.html#l00078">indexcdsoptionbaseengine.hpp:78</a></div></div>
 <div class="ttc" id="aclass_quant_ext_1_1_numerical_integration_index_cds_option_engine_html_a197fb07203ec2363883c167ab063f893"><div class="ttname"><a href="class_quant_ext_1_1_numerical_integration_index_cds_option_engine.html#a197fb07203ec2363883c167ab063f893">QuantExt::NumericalIntegrationIndexCdsOptionEngine::forwardRiskyAnnuityStrike</a></div><div class="ttdeci">Real forwardRiskyAnnuityStrike(const Real strike) const</div><div class="ttdef"><b>Definition:</b> <a href="numericalintegrationindexcdsoptionengine_8cpp_source.html#l00288">numericalintegrationindexcdsoptionengine.cpp:288</a></div></div>
-<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00496">randomvariable.cpp:496</a></div></div>
+<div class="ttc" id="anamespace_quant_ext_html_a1cab4fb6a720eff245acb9f3a7a9e7c5"><div class="ttname"><a href="namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5">QuantExt::close_enough</a></div><div class="ttdeci">Filter close_enough(const RandomVariable &amp;x, const RandomVariable &amp;y)</div><div class="ttdef"><b>Definition:</b> <a href="qle_2math_2randomvariable_8cpp_source.html#l00817">randomvariable.cpp:817</a></div></div>
 <div class="ttc" id="anamespace_quant_ext_html_a5eedff657bd84ace641bab7e28ac9ed1"><div class="ttname"><a href="namespace_quant_ext.html#a5eedff657bd84ace641bab7e28ac9ed1">QuantExt::periodToTime</a></div><div class="ttdeci">Real periodToTime(const Period &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="time_8cpp_source.html#l00037">time.cpp:37</a></div></div>
 <div class="ttc" id="atenorbasisswap_8cpp_html_a71b2ce0e52885aca4ce15e1d128b9f56"><div class="ttname"><a href="tenorbasisswap_8cpp.html#a71b2ce0e52885aca4ce15e1d128b9f56">arguments_</a></div><div class="ttdeci">Swap::arguments * arguments_</div><div class="ttdef"><b>Definition:</b> <a href="tenorbasisswap_8cpp_source.html#l00059">tenorbasisswap.cpp:59</a></div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">

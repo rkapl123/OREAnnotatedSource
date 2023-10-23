@@ -317,22 +317,23 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   55</span>                        boost::shared_ptr&lt;MarketDatum&gt; datum = <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#ae66dab4ac0dfb4d3f1c8850517ab4639">csvLoader_</a>-&gt;get(q, d);</div>
 <div class="line"><span class="lineno">   56</span>                        loader-&gt;add(d, datum-&gt;name(), datum-&gt;quote()-&gt;value());</div>
 <div class="line"><span class="lineno">   57</span>                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   58</span>                        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;Missing required quote &quot;</span> &lt;&lt; q &lt;&lt; <span class="stringliteral">&quot; for date &quot;</span> &lt;&lt; d);</div>
-<div class="line"><span class="lineno">   59</span>                    }</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   62</span>                    <span class="comment">// a bit messy, we loop over all quotes each time</span></div>
-<div class="line"><span class="lineno">   63</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> md : <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#ae66dab4ac0dfb4d3f1c8850517ab4639">csvLoader_</a>-&gt;loadQuotes(d)) {</div>
-<div class="line"><span class="lineno">   64</span>                        <span class="keywordflow">if</span> (wc.matches(md-&gt;name()))</div>
-<div class="line"><span class="lineno">   65</span>                            loader-&gt;add(d, md-&gt;name(), md-&gt;quote()-&gt;value());</div>
-<div class="line"><span class="lineno">   66</span>                    }</div>
-<div class="line"><span class="lineno">   67</span>                }</div>
-<div class="line"><span class="lineno">   68</span>            }</div>
-<div class="line"><span class="lineno">   69</span>        }</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
-<div class="line"><span class="lineno">   71</span>}</div>
+<div class="line"><span class="lineno">   58</span>                        <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;Requested quote &quot;</span> &lt;&lt; q &lt;&lt; <span class="stringliteral">&quot; for date &quot;</span> &lt;&lt; d</div>
+<div class="line"><span class="lineno">   59</span>                                               &lt;&lt; <span class="stringliteral">&quot; not in csv file. This is not necessarily an error.&quot;</span>);</div>
+<div class="line"><span class="lineno">   60</span>                    }</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   63</span>                    <span class="comment">// a bit messy, we loop over all quotes each time</span></div>
+<div class="line"><span class="lineno">   64</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> md : <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#ae66dab4ac0dfb4d3f1c8850517ab4639">csvLoader_</a>-&gt;loadQuotes(d)) {</div>
+<div class="line"><span class="lineno">   65</span>                        <span class="keywordflow">if</span> (wc.matches(md-&gt;name()))</div>
+<div class="line"><span class="lineno">   66</span>                            loader-&gt;add(d, md-&gt;name(), md-&gt;quote()-&gt;value());</div>
+<div class="line"><span class="lineno">   67</span>                    }</div>
+<div class="line"><span class="lineno">   68</span>                }</div>
+<div class="line"><span class="lineno">   69</span>            }</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 <div class="ttc" id="aclassore_1_1data_1_1_wildcard_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_wildcard.html">ore::data::Wildcard</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="../ored/log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div></div>
+<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div></div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -392,53 +393,53 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classore_1_1analytics_1_1_market_data_loader_impl.html#ab1990ae5dd9d8ad8b5fca34aa6ede423">MarketDataLoaderImpl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="marketdatacsvloader_8cpp_source.html#l00073">73</a> of file <a class="el" href="marketdatacsvloader_8cpp_source.html">marketdatacsvloader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>                                                                         {</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;MarketDataCsvLoader::retrieveFixings called: all fixings ? &quot;</span> &lt;&lt; (<a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#a30e5fac48a57336fd1b2a5de559b5120">inputs_</a>-&gt;allFixings() ? <span class="stringliteral">&quot;Y&quot;</span> : <span class="stringliteral">&quot;N&quot;</span>));</div>
-<div class="line"><span class="lineno">   78</span>    </div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#a30e5fac48a57336fd1b2a5de559b5120">inputs_</a>-&gt;allFixings()) {</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; f : <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#ae66dab4ac0dfb4d3f1c8850517ab4639">csvLoader_</a>-&gt;loadFixings()) {</div>
-<div class="line"><span class="lineno">   81</span>            loader-&gt;addFixing(f.date, f.name, f.fixing);</div>
-<div class="line"><span class="lineno">   82</span>            <span class="comment">//DLOG(&quot;add fixing for &quot; &lt;&lt; f.name &lt;&lt; &quot; fixing date &quot; &lt;&lt; io::iso_date(f.date));</span></div>
-<div class="line"><span class="lineno">   83</span>        }</div>
-<div class="line"><span class="lineno">   84</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   85</span>        <span class="comment">// Filter by required fixing data</span></div>
-<div class="line"><span class="lineno">   86</span>        </div>
-<div class="line"><span class="lineno">   87</span>        <span class="comment">// Loop over the relevant fixings and add only them to the InMemoryLoader</span></div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> kv : fixings) {</div>
-<div class="line"><span class="lineno">   89</span>            <span class="comment">// LOG(&quot;fixings are required for index &quot; &lt;&lt; kv.first &lt;&lt; &quot; and &quot; &lt;&lt; kv.second.size() &lt;&lt; &quot; dates&quot;); </span></div>
-<div class="line"><span class="lineno">   90</span>            <span class="comment">// map&lt;string, set&lt;Date&gt;&gt;</span></div>
-<div class="line"><span class="lineno">   91</span>            <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = kv.first;</div>
-<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; date : kv.second) {</div>
-<div class="line"><span class="lineno">   93</span>                <span class="comment">// lazy loop over all of them...</span></div>
-<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fix : <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#ae66dab4ac0dfb4d3f1c8850517ab4639">csvLoader_</a>-&gt;loadFixings()) {</div>
-<div class="line"><span class="lineno">   95</span>                    <span class="keywordflow">if</span> (fix.name == name &amp;&amp; fix.date == date) {</div>
-<div class="line"><span class="lineno">   96</span>                        <span class="comment">// add it to the inMemory</span></div>
-<div class="line"><span class="lineno">   97</span>                        loader-&gt;addFixing(fix.date, fix.name, fix.fixing);</div>
-<div class="line"><span class="lineno">   98</span>                        <span class="comment">//DLOG(&quot;add fixing for &quot; &lt;&lt; fix.name &lt;&lt; &quot; as of &quot; &lt;&lt; io::iso_date(fix.date));</span></div>
-<div class="line"><span class="lineno">   99</span>                    }</div>
-<div class="line"><span class="lineno">  100</span>                }</div>
-<div class="line"><span class="lineno">  101</span>            }</div>
-<div class="line"><span class="lineno">  102</span>        }</div>
-<div class="line"><span class="lineno">  103</span>    }</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fp : lastAvailableFixingLookupMap) {</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">if</span> (loader-&gt;getFixing(fp.first.first, fp.first.second).empty()) {</div>
-<div class="line"><span class="lineno">  107</span>            set&lt;Date&gt;::reverse_iterator rit;</div>
-<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">for</span> (rit = fp.second.rbegin(); rit != fp.second.rend(); rit++) {</div>
-<div class="line"><span class="lineno">  109</span>                <span class="keyword">auto</span> f = loader-&gt;getFixing(fp.first.first, *rit);</div>
-<div class="line"><span class="lineno">  110</span>                <span class="keywordflow">if</span> (!f.empty()) {</div>
-<div class="line"><span class="lineno">  111</span>                    loader-&gt;addFixing(fp.first.second, fp.first.first, f.fixing);</div>
-<div class="line"><span class="lineno">  112</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  113</span>                }</div>
-<div class="line"><span class="lineno">  114</span>            }</div>
-<div class="line"><span class="lineno">  115</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;MarketDataCsvLoader::retrieveFixings(::load Could not find fixing for id &quot;</span> &lt;&lt; fp.first.first &lt;&lt; <span class="stringliteral">&quot; on date &quot;</span></div>
-<div class="line"><span class="lineno">  116</span>                                                                       &lt;&lt; fp.first.second &lt;&lt; <span class="stringliteral">&quot;. &quot;</span>);</div>
-<div class="line"><span class="lineno">  117</span>        }</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-<div class="line"><span class="lineno">  119</span>}</div>
-<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div></div>
+<p class="definition">Definition at line <a class="el" href="marketdatacsvloader_8cpp_source.html#l00074">74</a> of file <a class="el" href="marketdatacsvloader_8cpp_source.html">marketdatacsvloader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                                         {</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;MarketDataCsvLoader::retrieveFixings called: all fixings ? &quot;</span> &lt;&lt; (<a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#a30e5fac48a57336fd1b2a5de559b5120">inputs_</a>-&gt;allFixings() ? <span class="stringliteral">&quot;Y&quot;</span> : <span class="stringliteral">&quot;N&quot;</span>));</div>
+<div class="line"><span class="lineno">   79</span>    </div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#a30e5fac48a57336fd1b2a5de559b5120">inputs_</a>-&gt;allFixings()) {</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; f : <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#ae66dab4ac0dfb4d3f1c8850517ab4639">csvLoader_</a>-&gt;loadFixings()) {</div>
+<div class="line"><span class="lineno">   82</span>            loader-&gt;addFixing(f.date, f.name, f.fixing);</div>
+<div class="line"><span class="lineno">   83</span>            <span class="comment">//DLOG(&quot;add fixing for &quot; &lt;&lt; f.name &lt;&lt; &quot; fixing date &quot; &lt;&lt; io::iso_date(f.date));</span></div>
+<div class="line"><span class="lineno">   84</span>        }</div>
+<div class="line"><span class="lineno">   85</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   86</span>        <span class="comment">// Filter by required fixing data</span></div>
+<div class="line"><span class="lineno">   87</span>        </div>
+<div class="line"><span class="lineno">   88</span>        <span class="comment">// Loop over the relevant fixings and add only them to the InMemoryLoader</span></div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> kv : fixings) {</div>
+<div class="line"><span class="lineno">   90</span>            <span class="comment">// LOG(&quot;fixings are required for index &quot; &lt;&lt; kv.first &lt;&lt; &quot; and &quot; &lt;&lt; kv.second.size() &lt;&lt; &quot; dates&quot;); </span></div>
+<div class="line"><span class="lineno">   91</span>            <span class="comment">// map&lt;string, set&lt;Date&gt;&gt;</span></div>
+<div class="line"><span class="lineno">   92</span>            <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code hl_variableRef" href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a> = kv.first;</div>
+<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; date : kv.second) {</div>
+<div class="line"><span class="lineno">   94</span>                <span class="comment">// lazy loop over all of them...</span></div>
+<div class="line"><span class="lineno">   95</span>                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fix : <a class="code hl_variable" href="classore_1_1analytics_1_1_market_data_csv_loader_impl.html#ae66dab4ac0dfb4d3f1c8850517ab4639">csvLoader_</a>-&gt;loadFixings()) {</div>
+<div class="line"><span class="lineno">   96</span>                    <span class="keywordflow">if</span> (fix.name == name &amp;&amp; fix.date == date) {</div>
+<div class="line"><span class="lineno">   97</span>                        <span class="comment">// add it to the inMemory</span></div>
+<div class="line"><span class="lineno">   98</span>                        loader-&gt;addFixing(fix.date, fix.name, fix.fixing);</div>
+<div class="line"><span class="lineno">   99</span>                        <span class="comment">//DLOG(&quot;add fixing for &quot; &lt;&lt; fix.name &lt;&lt; &quot; as of &quot; &lt;&lt; io::iso_date(fix.date));</span></div>
+<div class="line"><span class="lineno">  100</span>                    }</div>
+<div class="line"><span class="lineno">  101</span>                }</div>
+<div class="line"><span class="lineno">  102</span>            }</div>
+<div class="line"><span class="lineno">  103</span>        }</div>
+<div class="line"><span class="lineno">  104</span>    }</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fp : lastAvailableFixingLookupMap) {</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">if</span> (loader-&gt;getFixing(fp.first.first, fp.first.second).empty()) {</div>
+<div class="line"><span class="lineno">  108</span>            set&lt;Date&gt;::reverse_iterator rit;</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">for</span> (rit = fp.second.rbegin(); rit != fp.second.rend(); rit++) {</div>
+<div class="line"><span class="lineno">  110</span>                <span class="keyword">auto</span> f = loader-&gt;getFixing(fp.first.first, *rit);</div>
+<div class="line"><span class="lineno">  111</span>                <span class="keywordflow">if</span> (!f.empty()) {</div>
+<div class="line"><span class="lineno">  112</span>                    loader-&gt;addFixing(fp.first.second, fp.first.first, f.fixing);</div>
+<div class="line"><span class="lineno">  113</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  114</span>                }</div>
+<div class="line"><span class="lineno">  115</span>            }</div>
+<div class="line"><span class="lineno">  116</span>            <a class="code hl_defineRef" href="../ored/log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a>(<span class="stringliteral">&quot;MarketDataCsvLoader::retrieveFixings(::load Could not find fixing for id &quot;</span> &lt;&lt; fp.first.first &lt;&lt; <span class="stringliteral">&quot; on date &quot;</span></div>
+<div class="line"><span class="lineno">  117</span>                                                                       &lt;&lt; fp.first.second &lt;&lt; <span class="stringliteral">&quot;. &quot;</span>);</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span>    }</div>
+<div class="line"><span class="lineno">  120</span>}</div>
+<div class="ttc" id="alog_8hpp_html_a9622ca943201e814041f051b7a10b3ea"><div class="ttname"><a href="../ored/log_8hpp.html#a9622ca943201e814041f051b7a10b3ea">WLOG</a></div><div class="ttdeci">#define WLOG(text)</div></div>
 <div class="ttc" id="atodaysmarketparameters_8cpp_html_a8ccf841cb59e451791bcb2e1ac4f1edc"><div class="ttname"><a href="../ored/todaysmarketparameters_8cpp.html#a8ccf841cb59e451791bcb2e1ac4f1edc">name</a></div><div class="ttdeci">string name</div></div>
 </div><!-- fragment -->
 </div>

@@ -100,238 +100,239 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="historicalpnlgenerator_8hpp.html">orea/engine/historicalpnlgenerator.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="multithreadedvaluationengine_8hpp.html">orea/engine/multithreadedvaluationengine.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="jointnpvcube_8hpp.html">orea/cube/jointnpvcube.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="inmemorycube_8hpp.html">orea/cube/inmemorycube.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;boost/range/adaptor/indexed.hpp&gt;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_engine_builder.html">ore::data::EngineBuilder</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_engine_data.html">ore::data::EngineData</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_engine_factory.html">ore::data::EngineFactory</a>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">using </span><a class="code hl_enumerationRef" href="../ored/namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cc">ore::data::MarketContext</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_portfolio.html">ore::data::Portfolio</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">ore::data::TimePeriod</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">using </span>QuantLib::Real;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">using </span>QuantLib::io::iso_date;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using </span>std::map;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">using </span>std::set;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">using </span>std::string;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">using </span>std::vector;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">namespace </span>analytics {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><a class="code hl_function" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a1e4d4fff3312f3f90065761abc0383ea">HistoricalPnlGenerator::HistoricalPnlGenerator</a>(</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; baseCurrency, <span class="keyword">const</span> boost::shared_ptr&lt;Portfolio&gt;&amp; portfolio,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ScenarioSimMarket&gt;&amp; simMarket,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> boost::shared_ptr&lt;HistoricalScenarioGenerator&gt;&amp; hisScenGen, <span class="keyword">const</span> boost::shared_ptr&lt;NPVCube&gt;&amp; cube,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">const</span> set&lt;std::pair&lt;<span class="keywordtype">string</span>, boost::shared_ptr&lt;QuantExt::ModelBuilder&gt;&gt;&gt;&amp; modelBuilders, <span class="keywordtype">bool</span> dryRun)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    : useSingleThreadedEngine_(true), portfolio_(portfolio), simMarket_(simMarket), hisScenGen_(hisScenGen),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      cube_(cube), dryRun_(dryRun),</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      npvCalculator_([&amp;baseCurrency]() -&gt; std::vector&lt;<a class="code hl_namespaceRef" href="../qle/namespaceboost.html">boost</a>::shared_ptr&lt;ValuationCalculator&gt;&gt; {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>          <span class="keywordflow">return</span> {boost::make_shared&lt;NPVCalculator&gt;(baseCurrency)};</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      }) {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// Check the cube&#39;s dimensions</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Possibly easier to create the cube here but then need to enforce a cube type or make a templated class.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QL_REQUIRE(cube_-&gt;asof() == simMarket_-&gt;asofDate(),</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>               <span class="stringliteral">&quot;The cube&#39;s as of date (&quot;</span> &lt;&lt; iso_date(cube_-&gt;asof()) &lt;&lt; <span class="stringliteral">&quot;) should equal that of the simulation market (&quot;</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                         &lt;&lt; iso_date(simMarket_-&gt;asofDate()) &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::set&lt;std::string&gt; cubeIds;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, pos] : cube-&gt;idsAndIndexes()) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        cubeIds.insert(<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    QL_REQUIRE(cubeIds == portfolio_-&gt;ids(), <span class="stringliteral">&quot;The cube ids should equal the portfolio ids&quot;</span>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    QL_REQUIRE(cube_-&gt;samples() == hisScenGen_-&gt;numScenarios(),</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>               <span class="stringliteral">&quot;The cube sample size (&quot;</span> &lt;&lt; cube_-&gt;samples() &lt;&lt; <span class="stringliteral">&quot;) should equal the number of historical scenarios (&quot;</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                        &lt;&lt; hisScenGen_-&gt;numScenarios() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    QL_REQUIRE(cube_-&gt;numDates() == 1, <span class="stringliteral">&quot;The cube should have exactly one date&quot;</span>);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    QL_REQUIRE(cube_-&gt;depth() == 1, <span class="stringliteral">&quot;The cube should have a depth of one&quot;</span>);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    simMarket_-&gt;scenarioGenerator() = hisScenGen_;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">auto</span> grid = boost::make_shared&lt;DateGrid&gt;();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    valuationEngine_ = boost::make_shared&lt;ValuationEngine&gt;(simMarket_-&gt;asofDate(), grid, simMarket_, modelBuilders);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>HistoricalPnlGenerator::HistoricalPnlGenerator(</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; baseCurrency, <span class="keyword">const</span> boost::shared_ptr&lt;Portfolio&gt;&amp; portfolio,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">const</span> boost::shared_ptr&lt;HistoricalScenarioGenerator&gt;&amp; hisScenGen, <span class="keyword">const</span> boost::shared_ptr&lt;EngineData&gt;&amp; engineData,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">const</span> Size nThreads, <span class="keyword">const</span> Date&amp; today, <span class="keyword">const</span> boost::shared_ptr&lt;ore::data::Loader&gt;&amp; loader,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ore::data::CurveConfigurations&gt;&amp; curveConfigs,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ore::data::TodaysMarketParameters&gt;&amp; todaysMarketParams, <span class="keyword">const</span> std::string&amp; configuration,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ore::analytics::ScenarioSimMarketParameters&gt;&amp; simMarketData,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ReferenceDataManager&gt;&amp; referenceData, <span class="keyword">const</span> IborFallbackConfig&amp; iborFallbackConfig,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">bool</span> dryRun, <span class="keyword">const</span> std::string&amp; context)</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    : useSingleThreadedEngine_(false), portfolio_(portfolio), hisScenGen_(hisScenGen), engineData_(engineData),</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      nThreads_(nThreads), today_(today), loader_(loader), curveConfigs_(<a class="code hl_variableRef" href="../ored/test_2commodityvolcurve_8cpp.html#a96a582300d10244c7df851066de48438">curveConfigs</a>),</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      todaysMarketParams_(todaysMarketParams), configuration_(configuration), simMarketData_(simMarketData),</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      referenceData_(referenceData), iborFallbackConfig_(iborFallbackConfig), dryRun_(dryRun), context_(context),</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      npvCalculator_([&amp;baseCurrency]() -&gt; std::vector&lt;<a class="code hl_namespaceRef" href="../qle/namespaceboost.html">boost</a>::shared_ptr&lt;ValuationCalculator&gt;&gt; {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          <span class="keywordflow">return</span> {boost::make_shared&lt;NPVCalculator&gt;(baseCurrency)};</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      }) {}</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a68ff9ac37fb4ab9ef6713e031d4260a9">   95</a></span><span class="keywordtype">void</span> HistoricalPnlGenerator::generateCube(<span class="keyword">const</span> boost::shared_ptr&lt;ScenarioFilter&gt;&amp; <a class="code hl_function" href="test_2sensitivityaggregator_8cpp.html#a5e77cfb322782d5a81c5f0cc2cc1de42">filter</a>) {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Filling historical P&amp;L cube for &quot;</span> &lt;&lt; portfolio_-&gt;size() &lt;&lt; <span class="stringliteral">&quot; trades and &quot;</span> &lt;&lt; hisScenGen_-&gt;numScenarios()</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                                            &lt;&lt; <span class="stringliteral">&quot; scenarios.&quot;</span>);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span> (useSingleThreadedEngine_) {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        valuationEngine_-&gt;unregisterAllProgressIndicators();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i : this-&gt;progressIndicators()) {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            i-&gt;reset();</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            valuationEngine_-&gt;registerProgressIndicator(i);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        hisScenGen_-&gt;reset();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        simMarket_-&gt;filter() = <a class="code hl_function" href="test_2sensitivityaggregator_8cpp.html#a5e77cfb322782d5a81c5f0cc2cc1de42">filter</a>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        simMarket_-&gt;reset();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        simMarket_-&gt;scenarioGenerator() = hisScenGen_;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        hisScenGen_-&gt;baseScenario() = simMarket_-&gt;baseScenario();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        valuationEngine_-&gt;buildCube(portfolio_, cube_, npvCalculator_(), <span class="keyword">true</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, {}, dryRun_);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <a class="code hl_class" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html">MultiThreadedValuationEngine</a> engine(</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            nThreads_, today_, boost::make_shared&lt;ore::analytics::DateGrid&gt;(), hisScenGen_-&gt;numScenarios(), loader_,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            hisScenGen_, engineData_, curveConfigs_, todaysMarketParams_, configuration_, simMarketData_, <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <a class="code hl_function" href="test_2sensitivityaggregator_8cpp.html#a5e77cfb322782d5a81c5f0cc2cc1de42">filter</a>, referenceData_, iborFallbackConfig_, <span class="keyword">true</span>, <span class="keyword">true</span>, {}, {}, {}, context_);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i : this-&gt;progressIndicators()) {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            i-&gt;reset();</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            engine.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_progress_reporter.html#a499650a4410acc7cf051dd9598e03fb7">registerProgressIndicator</a>(i);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        engine.<a class="code hl_function" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a30978b77ff4ae4476fa37080c9d05089">buildCube</a>(portfolio_, npvCalculator_, {}, <span class="keyword">true</span>, dryRun_);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        cube_ = boost::make_shared&lt;JointNPVCube&gt;(engine.<a class="code hl_function" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a38243f31e3b0d2562eb266c380d8bed8">outputCubes</a>(), portfolio_-&gt;ids(), <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Historical P&amp;L cube generated&quot;</span>);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>&amp; period, <span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="comment">// Create result with enough space</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    vector&lt;Real&gt; pnls;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    pnls.reserve(cube_-&gt;samples());</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">// Look up the date index once</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    Size dateIdx = indexAsof();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">for</span> (Size s = 0; s &lt; cube_-&gt;samples(); ++s) {</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="comment">// Start and end of period relating to current sample</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        Date start = hisScenGen_-&gt;startDates()[s];</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        Date end = hisScenGen_-&gt;endDates()[s];</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">if</span> (period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(start) &amp;&amp; period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(end)) {</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            Real pnl = 0.0;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; tradeId : tradeIds) {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                pnl -= cube_-&gt;getT0(tradeId.second);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                pnl += cube_-&gt;get(tradeId.second, dateIdx, s);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            }</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            pnls.push_back(pnl);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    pnls.shrink_to_fit();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordflow">return</span> pnls;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#aa6568ef260dae1fb0341885903b3ad9d">  160</a></span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>&amp; period)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> pnl(period, tradeIdIndexPairs()); }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl(<span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">return</span> pnl(timePeriod(), tradeIds);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>}</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#aebe60dd83b646257144f6bc4354ee34f">  166</a></span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> pnl(timePeriod()); }</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">  168</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> = <a class="code hl_typedef" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173">HistoricalPnlGenerator::TradePnlStore</a>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>&amp; period,</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                                                    <span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="comment">// Create result with enough space</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> pnls;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    pnls.reserve(cube_-&gt;samples());</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="comment">// Look up the date index once</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    Size dateIdx = indexAsof();</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="comment">// Store t0 npvs on first pass</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    vector&lt;Real&gt; t0Npvs;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    t0Npvs.reserve(tradeIds.size());</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordflow">for</span> (Size s = 0; s &lt; cube_-&gt;samples(); ++s) {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="comment">// Start and end of period relating to current sample</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        Date start = hisScenGen_-&gt;startDates()[s];</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        Date end = hisScenGen_-&gt;endDates()[s];</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">if</span> (period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(start) &amp;&amp; period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(end)) {</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="comment">// Store the t0 NPVs on first pass.</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">if</span> (t0Npvs.empty()) {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : tradeIds) {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                    t0Npvs.push_back(cube_-&gt;getT0(p.second));</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                }</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="comment">// Add vector to hold the trade level P&amp;Ls</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            pnls.push_back(vector&lt;Real&gt;(tradeIds.size(), 0.0));</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="comment">// Populate the trade level P&amp;L vector</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> elem : tradeIds | boost::adaptors::indexed(0)) {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                <span class="keyword">auto</span> idx = elem.index();</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                pnls.back()[idx] = cube_-&gt;get(elem.value().second, dateIdx, s) - t0Npvs[idx];</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    pnls.shrink_to_fit();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">return</span> pnls;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a44a80afa2bc52c2cdadf962e7deb1ba1">  215</a></span><a class="code hl_typedef" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">ore::data::TimePeriod</a>&amp; period)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordflow">return</span> tradeLevelPnl(period, tradeIdIndexPairs());</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl(<span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">return</span> tradeLevelPnl(timePeriod(), tradeIds);</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a57ee5a946068cccfdb4552527b2b9002">  223</a></span><a class="code hl_typedef" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tradeLevelPnl(timePeriod()); }</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a1fe07ecd48402ba1866539fd0b562096">  225</a></span><span class="keyword">const</span> boost::shared_ptr&lt;NPVCube&gt;&amp; HistoricalPnlGenerator::cube()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> cube_; }</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#aefe91917066f7a8c031083cad7565626">  227</a></span>set&lt;pair&lt;string, Size&gt;&gt; HistoricalPnlGenerator::tradeIdIndexPairs()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    set&lt;pair&lt;string, Size&gt;&gt; res;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    Size i = 0;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, trade]: portfolio_-&gt;trades())</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        res.insert(std::make_pair(<span class="keywordtype">id</span>, i++));</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>}</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#ae06e2e3472823a8536a804121c4c36f9">  235</a></span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a> HistoricalPnlGenerator::timePeriod()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    vector&lt;Date&gt; dates{hisScenGen_-&gt;<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#ac942b6a197f6becffb2a8e13c51ac310">startDates</a>().front(), hisScenGen_-&gt;endDates().back()};</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordflow">return</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>(dates);</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#ae9259e2eecc1060c44a629421581e0af">  240</a></span>Size HistoricalPnlGenerator::indexAsof()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    Date <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a> = useSingleThreadedEngine_ ? simMarket_-&gt;asofDate() : today_;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dates = cube_-&gt;dates();</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keyword">auto</span> it = std::find(dates.begin(), dates.end(), <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    QL_REQUIRE(it != dates.end(), <span class="stringliteral">&quot;Can&#39;t find an index for asof date &quot;</span> &lt;&lt; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a> &lt;&lt; <span class="stringliteral">&quot; in cube&quot;</span>);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordflow">return</span> std::distance(dates.begin(), it);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>} <span class="comment">// namespace analytics</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>} <span class="comment">// namespace ore</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="valuationcalculator_8hpp.html">orea/engine/valuationcalculator.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="jointnpvcube_8hpp.html">orea/cube/jointnpvcube.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="inmemorycube_8hpp.html">orea/cube/inmemorycube.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;boost/range/adaptor/indexed.hpp&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_engine_builder.html">ore::data::EngineBuilder</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_engine_data.html">ore::data::EngineData</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_engine_factory.html">ore::data::EngineFactory</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">using </span><a class="code hl_enumerationRef" href="../ored/namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cc">ore::data::MarketContext</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_portfolio.html">ore::data::Portfolio</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">using </span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">ore::data::TimePeriod</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">using </span>QuantLib::Real;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using </span>QuantLib::io::iso_date;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">using </span>std::map;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">using </span>std::set;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">using </span>std::string;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">using </span>std::vector;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceore.html">ore</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">namespace </span>analytics {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_function" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a1e4d4fff3312f3f90065761abc0383ea">HistoricalPnlGenerator::HistoricalPnlGenerator</a>(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; baseCurrency, <span class="keyword">const</span> boost::shared_ptr&lt;Portfolio&gt;&amp; portfolio,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ScenarioSimMarket&gt;&amp; simMarket,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">const</span> boost::shared_ptr&lt;HistoricalScenarioGenerator&gt;&amp; hisScenGen, <span class="keyword">const</span> boost::shared_ptr&lt;NPVCube&gt;&amp; cube,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> set&lt;std::pair&lt;<span class="keywordtype">string</span>, boost::shared_ptr&lt;QuantExt::ModelBuilder&gt;&gt;&gt;&amp; modelBuilders, <span class="keywordtype">bool</span> dryRun)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    : useSingleThreadedEngine_(true), portfolio_(portfolio), simMarket_(simMarket), hisScenGen_(hisScenGen),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      cube_(cube), dryRun_(dryRun),</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      npvCalculator_([&amp;baseCurrency]() -&gt; std::vector&lt;<a class="code hl_namespaceRef" href="../qle/namespaceboost.html">boost</a>::shared_ptr&lt;ValuationCalculator&gt;&gt; {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>          <span class="keywordflow">return</span> {boost::make_shared&lt;NPVCalculator&gt;(baseCurrency)};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      }) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Check the cube&#39;s dimensions</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Possibly easier to create the cube here but then need to enforce a cube type or make a templated class.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    QL_REQUIRE(cube_-&gt;asof() == simMarket_-&gt;asofDate(),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>               <span class="stringliteral">&quot;The cube&#39;s as of date (&quot;</span> &lt;&lt; iso_date(cube_-&gt;asof()) &lt;&lt; <span class="stringliteral">&quot;) should equal that of the simulation market (&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                         &lt;&lt; iso_date(simMarket_-&gt;asofDate()) &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::set&lt;std::string&gt; cubeIds;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, pos] : cube-&gt;idsAndIndexes()) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        cubeIds.insert(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    QL_REQUIRE(cubeIds == portfolio_-&gt;ids(), <span class="stringliteral">&quot;The cube ids should equal the portfolio ids&quot;</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    QL_REQUIRE(cube_-&gt;samples() == hisScenGen_-&gt;numScenarios(),</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>               <span class="stringliteral">&quot;The cube sample size (&quot;</span> &lt;&lt; cube_-&gt;samples() &lt;&lt; <span class="stringliteral">&quot;) should equal the number of historical scenarios (&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                        &lt;&lt; hisScenGen_-&gt;numScenarios() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    QL_REQUIRE(cube_-&gt;numDates() == 1, <span class="stringliteral">&quot;The cube should have exactly one date&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    QL_REQUIRE(cube_-&gt;depth() == 1, <span class="stringliteral">&quot;The cube should have a depth of one&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    simMarket_-&gt;scenarioGenerator() = hisScenGen_;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">auto</span> grid = boost::make_shared&lt;DateGrid&gt;();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    valuationEngine_ = boost::make_shared&lt;ValuationEngine&gt;(simMarket_-&gt;asofDate(), grid, simMarket_, modelBuilders);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>HistoricalPnlGenerator::HistoricalPnlGenerator(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; baseCurrency, <span class="keyword">const</span> boost::shared_ptr&lt;Portfolio&gt;&amp; portfolio,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">const</span> boost::shared_ptr&lt;HistoricalScenarioGenerator&gt;&amp; hisScenGen, <span class="keyword">const</span> boost::shared_ptr&lt;EngineData&gt;&amp; engineData,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> Size nThreads, <span class="keyword">const</span> Date&amp; today, <span class="keyword">const</span> boost::shared_ptr&lt;ore::data::Loader&gt;&amp; loader,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ore::data::CurveConfigurations&gt;&amp; curveConfigs,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ore::data::TodaysMarketParameters&gt;&amp; todaysMarketParams, <span class="keyword">const</span> std::string&amp; configuration,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ore::analytics::ScenarioSimMarketParameters&gt;&amp; simMarketData,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> boost::shared_ptr&lt;ReferenceDataManager&gt;&amp; referenceData, <span class="keyword">const</span> IborFallbackConfig&amp; iborFallbackConfig,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">bool</span> dryRun, <span class="keyword">const</span> std::string&amp; context)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    : useSingleThreadedEngine_(false), portfolio_(portfolio), hisScenGen_(hisScenGen), engineData_(engineData),</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      nThreads_(nThreads), today_(today), loader_(loader), curveConfigs_(<a class="code hl_variableRef" href="../ored/test_2commodityvolcurve_8cpp.html#a96a582300d10244c7df851066de48438">curveConfigs</a>),</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      todaysMarketParams_(todaysMarketParams), configuration_(configuration), simMarketData_(simMarketData),</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      referenceData_(referenceData), iborFallbackConfig_(iborFallbackConfig), dryRun_(dryRun), context_(context),</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      npvCalculator_([&amp;baseCurrency]() -&gt; std::vector&lt;<a class="code hl_namespaceRef" href="../qle/namespaceboost.html">boost</a>::shared_ptr&lt;ValuationCalculator&gt;&gt; {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          <span class="keywordflow">return</span> {boost::make_shared&lt;NPVCalculator&gt;(baseCurrency)};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      }) {}</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a68ff9ac37fb4ab9ef6713e031d4260a9">   96</a></span><span class="keywordtype">void</span> HistoricalPnlGenerator::generateCube(<span class="keyword">const</span> boost::shared_ptr&lt;ScenarioFilter&gt;&amp; <a class="code hl_function" href="test_2sensitivityaggregator_8cpp.html#a5e77cfb322782d5a81c5f0cc2cc1de42">filter</a>) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Filling historical P&amp;L cube for &quot;</span> &lt;&lt; portfolio_-&gt;size() &lt;&lt; <span class="stringliteral">&quot; trades and &quot;</span> &lt;&lt; hisScenGen_-&gt;numScenarios()</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                                            &lt;&lt; <span class="stringliteral">&quot; scenarios.&quot;</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">if</span> (useSingleThreadedEngine_) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        valuationEngine_-&gt;unregisterAllProgressIndicators();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i : this-&gt;progressIndicators()) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            i-&gt;reset();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            valuationEngine_-&gt;registerProgressIndicator(i);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        hisScenGen_-&gt;reset();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        simMarket_-&gt;filter() = <a class="code hl_function" href="test_2sensitivityaggregator_8cpp.html#a5e77cfb322782d5a81c5f0cc2cc1de42">filter</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        simMarket_-&gt;reset();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        simMarket_-&gt;scenarioGenerator() = hisScenGen_;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        hisScenGen_-&gt;baseScenario() = simMarket_-&gt;baseScenario();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        valuationEngine_-&gt;buildCube(portfolio_, cube_, npvCalculator_(), <span class="keyword">true</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, {}, dryRun_);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <a class="code hl_class" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html">MultiThreadedValuationEngine</a> engine(</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            nThreads_, today_, boost::make_shared&lt;ore::analytics::DateGrid&gt;(), hisScenGen_-&gt;numScenarios(), loader_,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            hisScenGen_, engineData_, curveConfigs_, todaysMarketParams_, configuration_, simMarketData_, <span class="keyword">false</span>, <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_function" href="test_2sensitivityaggregator_8cpp.html#a5e77cfb322782d5a81c5f0cc2cc1de42">filter</a>, referenceData_, iborFallbackConfig_, <span class="keyword">true</span>, <span class="keyword">true</span>, {}, {}, {}, context_);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i : this-&gt;progressIndicators()) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            i-&gt;reset();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            engine.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_progress_reporter.html#a499650a4410acc7cf051dd9598e03fb7">registerProgressIndicator</a>(i);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        engine.<a class="code hl_function" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a30978b77ff4ae4476fa37080c9d05089">buildCube</a>(portfolio_, npvCalculator_, {}, <span class="keyword">true</span>, dryRun_);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        cube_ = boost::make_shared&lt;JointNPVCube&gt;(engine.<a class="code hl_function" href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a38243f31e3b0d2562eb266c380d8bed8">outputCubes</a>(), portfolio_-&gt;ids(), <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_defineRef" href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a>(<span class="stringliteral">&quot;Historical P&amp;L cube generated&quot;</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>&amp; period, <span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="comment">// Create result with enough space</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    vector&lt;Real&gt; pnls;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    pnls.reserve(cube_-&gt;samples());</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="comment">// Look up the date index once</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    Size dateIdx = indexAsof();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordflow">for</span> (Size s = 0; s &lt; cube_-&gt;samples(); ++s) {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="comment">// Start and end of period relating to current sample</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        Date start = hisScenGen_-&gt;startDates()[s];</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        Date end = hisScenGen_-&gt;endDates()[s];</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">if</span> (period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(start) &amp;&amp; period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(end)) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            Real pnl = 0.0;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; tradeId : tradeIds) {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                pnl -= cube_-&gt;getT0(tradeId.second);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                pnl += cube_-&gt;get(tradeId.second, dateIdx, s);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            pnls.push_back(pnl);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    pnls.shrink_to_fit();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">return</span> pnls;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>}</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#aa6568ef260dae1fb0341885903b3ad9d">  161</a></span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>&amp; period)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> pnl(period, tradeIdIndexPairs()); }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl(<span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">return</span> pnl(timePeriod(), tradeIds);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#aebe60dd83b646257144f6bc4354ee34f">  167</a></span>vector&lt;Real&gt; HistoricalPnlGenerator::pnl()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> pnl(timePeriod()); }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">  169</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> = <a class="code hl_typedef" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173">HistoricalPnlGenerator::TradePnlStore</a>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>&amp; period,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                                                    <span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="comment">// Create result with enough space</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> pnls;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    pnls.reserve(cube_-&gt;samples());</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="comment">// Look up the date index once</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    Size dateIdx = indexAsof();</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="comment">// Store t0 npvs on first pass</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    vector&lt;Real&gt; t0Npvs;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    t0Npvs.reserve(tradeIds.size());</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">for</span> (Size s = 0; s &lt; cube_-&gt;samples(); ++s) {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="comment">// Start and end of period relating to current sample</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        Date start = hisScenGen_-&gt;startDates()[s];</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        Date end = hisScenGen_-&gt;endDates()[s];</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span> (period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(start) &amp;&amp; period.<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#afa39c430404a0b291ef654aa1feccb1f">contains</a>(end)) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="comment">// Store the t0 NPVs on first pass.</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <span class="keywordflow">if</span> (t0Npvs.empty()) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : tradeIds) {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                    t0Npvs.push_back(cube_-&gt;getT0(p.second));</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <span class="comment">// Add vector to hold the trade level P&amp;Ls</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            pnls.push_back(vector&lt;Real&gt;(tradeIds.size(), 0.0));</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="comment">// Populate the trade level P&amp;L vector</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> elem : tradeIds | boost::adaptors::indexed(0)) {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <span class="keyword">auto</span> idx = elem.index();</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                pnls.back()[idx] = cube_-&gt;get(elem.value().second, dateIdx, s) - t0Npvs[idx];</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    pnls.shrink_to_fit();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordflow">return</span> pnls;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a44a80afa2bc52c2cdadf962e7deb1ba1">  216</a></span><a class="code hl_typedef" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl(<span class="keyword">const</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">ore::data::TimePeriod</a>&amp; period)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordflow">return</span> tradeLevelPnl(period, tradeIdIndexPairs());</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>}</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><a class="code hl_typedef" href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl(<span class="keyword">const</span> set&lt;pair&lt;string, Size&gt;&gt;&amp; tradeIds)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">return</span> tradeLevelPnl(timePeriod(), tradeIds);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a57ee5a946068cccfdb4552527b2b9002">  224</a></span><a class="code hl_typedef" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173">TradePnlStore</a> HistoricalPnlGenerator::tradeLevelPnl()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tradeLevelPnl(timePeriod()); }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#a1fe07ecd48402ba1866539fd0b562096">  226</a></span><span class="keyword">const</span> boost::shared_ptr&lt;NPVCube&gt;&amp; HistoricalPnlGenerator::cube()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> cube_; }</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#aefe91917066f7a8c031083cad7565626">  228</a></span>set&lt;pair&lt;string, Size&gt;&gt; HistoricalPnlGenerator::tradeIdIndexPairs()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    set&lt;pair&lt;string, Size&gt;&gt; res;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    Size i = 0;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [<span class="keywordtype">id</span>, trade]: portfolio_-&gt;trades())</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        res.insert(std::make_pair(<span class="keywordtype">id</span>, i++));</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>}</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#ae06e2e3472823a8536a804121c4c36f9">  236</a></span><a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a> HistoricalPnlGenerator::timePeriod()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    vector&lt;Date&gt; dates{hisScenGen_-&gt;<a class="code hl_functionRef" href="../ored/classore_1_1data_1_1_time_period.html#ac942b6a197f6becffb2a8e13c51ac310">startDates</a>().front(), hisScenGen_-&gt;endDates().back()};</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordflow">return</span> <a class="code hl_classRef" href="../ored/classore_1_1data_1_1_time_period.html">TimePeriod</a>(dates);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="classore_1_1analytics_1_1_historical_pnl_generator.html#ae9259e2eecc1060c44a629421581e0af">  241</a></span>Size HistoricalPnlGenerator::indexAsof()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    Date <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a> = useSingleThreadedEngine_ ? simMarket_-&gt;asofDate() : today_;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dates = cube_-&gt;dates();</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keyword">auto</span> it = std::find(dates.begin(), dates.end(), <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a>);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    QL_REQUIRE(it != dates.end(), <span class="stringliteral">&quot;Can&#39;t find an index for asof date &quot;</span> &lt;&lt; <a class="code hl_function" href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a> &lt;&lt; <span class="stringliteral">&quot; in cube&quot;</span>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">return</span> std::distance(dates.begin(), it);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>}</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>} <span class="comment">// namespace analytics</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>} <span class="comment">// namespace ore</span></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_historical_pnl_generator_html_a1e4d4fff3312f3f90065761abc0383ea"><div class="ttname"><a href="classore_1_1analytics_1_1_historical_pnl_generator.html#a1e4d4fff3312f3f90065761abc0383ea">ore::analytics::HistoricalPnlGenerator::HistoricalPnlGenerator</a></div><div class="ttdeci">HistoricalPnlGenerator(const std::string &amp;baseCurrency, const boost::shared_ptr&lt; ore::data::Portfolio &gt; &amp;portfolio, const boost::shared_ptr&lt; ScenarioSimMarket &gt; &amp;simMarket, const boost::shared_ptr&lt; HistoricalScenarioGenerator &gt; &amp;hisScenGen, const boost::shared_ptr&lt; NPVCube &gt; &amp;cube, const set&lt; std::pair&lt; string, boost::shared_ptr&lt; QuantExt::ModelBuilder &gt; &gt; &gt; &amp;modelBuilders={}, bool dryRun=false)</div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_historical_pnl_generator_html_a4f91ba412049fd9fefb40d1f52e67173"><div class="ttname"><a href="classore_1_1analytics_1_1_historical_pnl_generator.html#a4f91ba412049fd9fefb40d1f52e67173">ore::analytics::HistoricalPnlGenerator::TradePnlStore</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; QuantLib::Real &gt; &gt; TradePnlStore</div><div class="ttdef"><b>Definition:</b> <a href="historicalpnlgenerator_8hpp_source.html#l00117">historicalpnlgenerator.hpp:117</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html">ore::analytics::MultiThreadedValuationEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00037">multithreadedvaluationengine.hpp:37</a></div></div>
-<div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_a30978b77ff4ae4476fa37080c9d05089"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a30978b77ff4ae4476fa37080c9d05089">ore::analytics::MultiThreadedValuationEngine::buildCube</a></div><div class="ttdeci">void buildCube(const boost::shared_ptr&lt; ore::data::Portfolio &gt; &amp;portfolio, const std::function&lt; std::vector&lt; boost::shared_ptr&lt; ore::analytics::ValuationCalculator &gt; &gt;()&gt; &amp;calculators, const std::function&lt; std::vector&lt; boost::shared_ptr&lt; ore::analytics::CounterpartyCalculator &gt; &gt;()&gt; &amp;cptyCalculators={}, bool mporStickyDate=true, bool dryRun=false)</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8cpp_source.html#l00104">multithreadedvaluationengine.cpp:104</a></div></div>
+<div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_a30978b77ff4ae4476fa37080c9d05089"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a30978b77ff4ae4476fa37080c9d05089">ore::analytics::MultiThreadedValuationEngine::buildCube</a></div><div class="ttdeci">void buildCube(const boost::shared_ptr&lt; ore::data::Portfolio &gt; &amp;portfolio, const std::function&lt; std::vector&lt; boost::shared_ptr&lt; ore::analytics::ValuationCalculator &gt; &gt;()&gt; &amp;calculators, const std::function&lt; std::vector&lt; boost::shared_ptr&lt; ore::analytics::CounterpartyCalculator &gt; &gt;()&gt; &amp;cptyCalculators={}, bool mporStickyDate=true, bool dryRun=false)</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8cpp_source.html#l00103">multithreadedvaluationengine.cpp:103</a></div></div>
 <div class="ttc" id="aclassore_1_1analytics_1_1_multi_threaded_valuation_engine_html_a38243f31e3b0d2562eb266c380d8bed8"><div class="ttname"><a href="classore_1_1analytics_1_1_multi_threaded_valuation_engine.html#a38243f31e3b0d2562eb266c380d8bed8">ore::analytics::MultiThreadedValuationEngine::outputCubes</a></div><div class="ttdeci">std::vector&lt; boost::shared_ptr&lt; ore::analytics::NPVCube &gt; &gt; outputCubes() const</div><div class="ttdef"><b>Definition:</b> <a href="multithreadedvaluationengine_8hpp_source.html#l00083">multithreadedvaluationengine.hpp:83</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_builder_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_engine_builder.html">ore::data::EngineBuilder</a></div></div>
 <div class="ttc" id="aclassore_1_1data_1_1_engine_data_html"><div class="ttname"><a href="../ored/classore_1_1data_1_1_engine_data.html">ore::data::EngineData</a></div></div>
@@ -347,12 +348,13 @@ $(function() {
 <div class="ttc" id="alog_8hpp_html_a34c7c8cde9b91d2eee82d7b9a0b66fd5"><div class="ttname"><a href="../ored/log_8hpp.html#a34c7c8cde9b91d2eee82d7b9a0b66fd5">DLOG</a></div><div class="ttdeci">#define DLOG(text)</div></div>
 <div class="ttc" id="amultithreadedvaluationengine_8hpp_html"><div class="ttname"><a href="multithreadedvaluationengine_8hpp.html">multithreadedvaluationengine.hpp</a></div><div class="ttdoc">multi-threaded valuation engine</div></div>
 <div class="ttc" id="anamespaceboost_html"><div class="ttname"><a href="../qle/namespaceboost.html">boost</a></div></div>
-<div class="ttc" id="anamespaceore_1_1analytics_html_aefd1ab019c516eca0059447bbe69e727"><div class="ttname"><a href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">ore::analytics::TradePnlStore</a></div><div class="ttdeci">HistoricalPnlGenerator::TradePnlStore TradePnlStore</div><div class="ttdef"><b>Definition:</b> <a href="historicalpnlgenerator_8cpp_source.html#l00168">historicalpnlgenerator.cpp:168</a></div></div>
+<div class="ttc" id="anamespaceore_1_1analytics_html_aefd1ab019c516eca0059447bbe69e727"><div class="ttname"><a href="namespaceore_1_1analytics.html#aefd1ab019c516eca0059447bbe69e727">ore::analytics::TradePnlStore</a></div><div class="ttdeci">HistoricalPnlGenerator::TradePnlStore TradePnlStore</div><div class="ttdef"><b>Definition:</b> <a href="historicalpnlgenerator_8cpp_source.html#l00169">historicalpnlgenerator.cpp:169</a></div></div>
 <div class="ttc" id="anamespaceore_1_1data_html_a81db05f0ea371a4a14cac6e955ecd5cc"><div class="ttname"><a href="../ored/namespaceore_1_1data.html#a81db05f0ea371a4a14cac6e955ecd5cc">ore::data::MarketContext</a></div><div class="ttdeci">MarketContext</div></div>
 <div class="ttc" id="anamespaceore_html"><div class="ttname"><a href="namespaceore.html">ore</a></div></div>
 <div class="ttc" id="atest_2commodityvolcurve_8cpp_html_a96a582300d10244c7df851066de48438"><div class="ttname"><a href="../ored/test_2commodityvolcurve_8cpp.html#a96a582300d10244c7df851066de48438">curveConfigs</a></div><div class="ttdeci">vector&lt; string &gt; curveConfigs</div></div>
 <div class="ttc" id="atest_2scenarioshiftcalculator_8cpp_html_a652b8805d9b88185e25574d4820660c4"><div class="ttname"><a href="test_2scenarioshiftcalculator_8cpp.html#a652b8805d9b88185e25574d4820660c4">asof</a></div><div class="ttdeci">Date asof(14, Jun, 2018)</div></div>
 <div class="ttc" id="atest_2sensitivityaggregator_8cpp_html_a5e77cfb322782d5a81c5f0cc2cc1de42"><div class="ttname"><a href="test_2sensitivityaggregator_8cpp.html#a5e77cfb322782d5a81c5f0cc2cc1de42">filter</a></div><div class="ttdeci">set&lt; SensitivityRecord &gt; filter(set&lt; SensitivityRecord &gt; records, const string &amp;tradeId)</div><div class="ttdef"><b>Definition:</b> <a href="test_2sensitivityaggregator_8cpp_source.html#l00117">sensitivityaggregator.cpp:117</a></div></div>
+<div class="ttc" id="avaluationcalculator_8hpp_html"><div class="ttname"><a href="valuationcalculator_8hpp.html">valuationcalculator.hpp</a></div><div class="ttdoc">The counterparty cube calculator interface.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

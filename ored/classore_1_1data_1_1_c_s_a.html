@@ -827,20 +827,20 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p >invert all relevant aspects of the <a class="el" href="classore_1_1data_1_1_c_s_a.html">CSA</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="nettingsetdefinition_8cpp_source.html#l00053">53</a> of file <a class="el" href="nettingsetdefinition_8cpp_source.html">nettingsetdefinition.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>                    {</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a> != <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7a935a853dcf868e85798173de95df9565">Bilateral</a>) {</div>
-<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a> = (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a> == <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a> ? <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7ac40bc5e1aaaad6fcf6bfcd9d0bdac993">PostOnly</a> : <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a>);</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ad271d07b25d9e8e4f8c8c8b78630b41a">initialMarginType_</a> != <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7a935a853dcf868e85798173de95df9565">Bilateral</a>) {</div>
-<div class="line"><span class="lineno">   58</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ad271d07b25d9e8e4f8c8c8b78630b41a">initialMarginType_</a> = (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ad271d07b25d9e8e4f8c8c8b78630b41a">initialMarginType_</a> == <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a> ? <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7ac40bc5e1aaaad6fcf6bfcd9d0bdac993">PostOnly</a> : <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a>);</div>
-<div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span>    std::swap&lt;Real&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acd205fac8d978d4daec6646dd02a043f">collatSpreadPay_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ab6fe4f6ee8b23104a2ef385d8bf9aae4">collatSpreadRcv_</a>);</div>
-<div class="line"><span class="lineno">   61</span>    std::swap&lt;Real&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a77287d8a05dc33153d06c1387f128d14">thresholdPay_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#add2d2994d99888b343185cb18f369a2c">thresholdRcv_</a>);</div>
-<div class="line"><span class="lineno">   62</span>    std::swap&lt;Real&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ab63c328d31b9b2ff825ed843ec3115cf">mtaPay_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aa013721ebf9b7281281bac0aad69dd22">mtaRcv_</a>);</div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aadfad2e44d859c78b2a28fe90db29273">iaHeld_</a> *= -1;</div>
-<div class="line"><span class="lineno">   64</span>    std::swap&lt;Period&gt;(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a>);</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<p class="definition">Definition at line <a class="el" href="nettingsetdefinition_8cpp_source.html#l00054">54</a> of file <a class="el" href="nettingsetdefinition_8cpp_source.html">nettingsetdefinition.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>                    {</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a> != <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7a935a853dcf868e85798173de95df9565">Bilateral</a>) {</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a> = (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a> == <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a> ? <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7ac40bc5e1aaaad6fcf6bfcd9d0bdac993">PostOnly</a> : <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a>);</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ad271d07b25d9e8e4f8c8c8b78630b41a">initialMarginType_</a> != <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7a935a853dcf868e85798173de95df9565">Bilateral</a>) {</div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ad271d07b25d9e8e4f8c8c8b78630b41a">initialMarginType_</a> = (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ad271d07b25d9e8e4f8c8c8b78630b41a">initialMarginType_</a> == <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a> ? <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7ac40bc5e1aaaad6fcf6bfcd9d0bdac993">PostOnly</a> : <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a>);</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span>    std::swap(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acd205fac8d978d4daec6646dd02a043f">collatSpreadPay_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ab6fe4f6ee8b23104a2ef385d8bf9aae4">collatSpreadRcv_</a>);</div>
+<div class="line"><span class="lineno">   62</span>    std::swap(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a77287d8a05dc33153d06c1387f128d14">thresholdPay_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#add2d2994d99888b343185cb18f369a2c">thresholdRcv_</a>);</div>
+<div class="line"><span class="lineno">   63</span>    std::swap(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ab63c328d31b9b2ff825ed843ec3115cf">mtaPay_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aa013721ebf9b7281281bac0aad69dd22">mtaRcv_</a>);</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aadfad2e44d859c78b2a28fe90db29273">iaHeld_</a> *= -1;</div>
+<div class="line"><span class="lineno">   65</span>    std::swap(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a>, <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a>);</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -859,49 +859,61 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nettingsetdefinition_8cpp_source.html#l00067">67</a> of file <a class="el" href="nettingsetdefinition_8cpp_source.html">nettingsetdefinition.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>                   {</div>
-<div class="line"><span class="lineno">   68</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aea12a5d0e35139b2f899b80890608698">csaCurrency_</a>.size() == 3, <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
-<div class="line"><span class="lineno">   69</span>                                             &lt;&lt; <span class="stringliteral">&quot; CSA currency should be a three-letter ISO code&quot;</span>);</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a77287d8a05dc33153d06c1387f128d14">thresholdPay_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative thresholdPay&quot;</span>);</div>
-<div class="line"><span class="lineno">   72</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#add2d2994d99888b343185cb18f369a2c">thresholdRcv_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative thresholdRcv&quot;</span>);</div>
-<div class="line"><span class="lineno">   73</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ab63c328d31b9b2ff825ed843ec3115cf">mtaPay_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative mtaPay&quot;</span>);</div>
-<div class="line"><span class="lineno">   74</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aa013721ebf9b7281281bac0aad69dd22">mtaRcv_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative mtaRcv&quot;</span>);</div>
-<div class="line"><span class="lineno">   75</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a38c5b864a5b8c16cf45cf433231d3773">iaType_</a> == <span class="stringliteral">&quot;FIXED&quot;</span>, <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
-<div class="line"><span class="lineno">   76</span>                                       &lt;&lt; <span class="stringliteral">&quot; unsupported independent amount type; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a38c5b864a5b8c16cf45cf433231d3773">iaType_</a>);</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a> &gt; Period(0, Days) &amp;&amp; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a> &gt; Period(0, Days),</div>
-<div class="line"><span class="lineno">   79</span>               <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
-<div class="line"><span class="lineno">   80</span>                   &lt;&lt; <span class="stringliteral">&quot; non-positive margining frequency&quot;</span>);</div>
-<div class="line"><span class="lineno">   81</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a> &gt;= Period(0, Days), <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
-<div class="line"><span class="lineno">   82</span>                                            &lt;&lt; <span class="stringliteral">&quot; negative margin period of risk&quot;</span>);</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a> &lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a> || <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a> &lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a>) {</div>
-<div class="line"><span class="lineno">   84</span>        <a class="code hl_define" href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;NettingSetDefinition has CSA margining frequency (&quot;</span></div>
-<div class="line"><span class="lineno">   85</span>            &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a> &lt;&lt; <span class="stringliteral">&quot;) longer than assumed margin period of risk &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a>);</div>
-<div class="line"><span class="lineno">   86</span>    }</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acc8fe214871408ea2b6d6d6a7428597d">eligCollatCcys_</a>.size(); i++) {</div>
-<div class="line"><span class="lineno">   89</span>        QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acc8fe214871408ea2b6d6d6a7428597d">eligCollatCcys_</a>[i].size() == 3,</div>
-<div class="line"><span class="lineno">   90</span>                   <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
-<div class="line"><span class="lineno">   91</span>                       &lt;&lt; <span class="stringliteral">&quot;EligibleCollaterals currency should be a three-letter ISO code&quot;</span>);</div>
-<div class="line"><span class="lineno">   92</span>    }</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <span class="comment">// unilateral CSA - set threshold near infinity to disable margining</span></div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a>) {</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a>: {</div>
-<div class="line"><span class="lineno">   97</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a77287d8a05dc33153d06c1387f128d14">thresholdPay_</a> = std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7ac40bc5e1aaaad6fcf6bfcd9d0bdac993">PostOnly</a>: {</div>
-<div class="line"><span class="lineno">  101</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#add2d2994d99888b343185cb18f369a2c">thresholdRcv_</a> = std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><span class="lineno">  102</span>    }</div>
-<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  105</span>    }</div>
-<div class="line"><span class="lineno">  106</span>}</div>
-<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div><div class="ttdoc">Logging Macro (Level = Notice)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00366">log.hpp:366</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="nettingsetdefinition_8cpp_source.html#l00068">68</a> of file <a class="el" href="nettingsetdefinition_8cpp_source.html">nettingsetdefinition.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                   {</div>
+<div class="line"><span class="lineno">   69</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aea12a5d0e35139b2f899b80890608698">csaCurrency_</a>.size() == 3, <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
+<div class="line"><span class="lineno">   70</span>                                             &lt;&lt; <span class="stringliteral">&quot; CSA currency should be a three-letter ISO code&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a77287d8a05dc33153d06c1387f128d14">thresholdPay_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative thresholdPay&quot;</span>);</div>
+<div class="line"><span class="lineno">   73</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#add2d2994d99888b343185cb18f369a2c">thresholdRcv_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative thresholdRcv&quot;</span>);</div>
+<div class="line"><span class="lineno">   74</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ab63c328d31b9b2ff825ed843ec3115cf">mtaPay_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative mtaPay&quot;</span>);</div>
+<div class="line"><span class="lineno">   75</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#aa013721ebf9b7281281bac0aad69dd22">mtaRcv_</a> &gt;= 0, <span class="stringliteral">&quot;NettingSetDefinition build error; negative mtaRcv&quot;</span>);</div>
+<div class="line"><span class="lineno">   76</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a38c5b864a5b8c16cf45cf433231d3773">iaType_</a> == <span class="stringliteral">&quot;FIXED&quot;</span>, <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
+<div class="line"><span class="lineno">   77</span>                                       &lt;&lt; <span class="stringliteral">&quot; unsupported independent amount type; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a38c5b864a5b8c16cf45cf433231d3773">iaType_</a>);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a> &gt; Period(0, Days) &amp;&amp; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a> &gt; Period(0, Days),</div>
+<div class="line"><span class="lineno">   80</span>               <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
+<div class="line"><span class="lineno">   81</span>                   &lt;&lt; <span class="stringliteral">&quot; non-positive margining frequency&quot;</span>);</div>
+<div class="line"><span class="lineno">   82</span>    QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a> &gt;= Period(0, Days), <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
+<div class="line"><span class="lineno">   83</span>                                            &lt;&lt; <span class="stringliteral">&quot; negative margin period of risk&quot;</span>);</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a> &lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a> || <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a> &lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a>) {</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_define" href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a>(<span class="stringliteral">&quot;NettingSetDefinition has CSA margining frequency (&quot;</span></div>
+<div class="line"><span class="lineno">   86</span>            &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a271bab585e220c59817f06a30c1e131b">marginCallFreq_</a> &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#afcba3b65973faa8e42b07541723085d6">marginPostFreq_</a> &lt;&lt; <span class="stringliteral">&quot;) longer than assumed margin period of risk &quot;</span> &lt;&lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acadb15b7dd7deeeb9cd2e79723838d4c">mpr_</a>);</div>
+<div class="line"><span class="lineno">   87</span>    }</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">for</span> (Size i = 0; i &lt; <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acc8fe214871408ea2b6d6d6a7428597d">eligCollatCcys_</a>.size(); i++) {</div>
+<div class="line"><span class="lineno">   90</span>        QL_REQUIRE(<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#acc8fe214871408ea2b6d6d6a7428597d">eligCollatCcys_</a>[i].<a class="code hl_function" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">size</a>() == 3,</div>
+<div class="line"><span class="lineno">   91</span>                   <span class="stringliteral">&quot;NettingSetDefinition build error;&quot;</span></div>
+<div class="line"><span class="lineno">   92</span>                       &lt;&lt; <span class="stringliteral">&quot;EligibleCollaterals currency should be a three-letter ISO code&quot;</span>);</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">// unilateral CSA - set threshold near infinity to disable margining</span></div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a>) {</div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7adb1e84c90840a3052a60a11922365c3e">CallOnly</a>: {</div>
+<div class="line"><span class="lineno">   98</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#a77287d8a05dc33153d06c1387f128d14">thresholdPay_</a> = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classore_1_1data_1_1_c_s_a.html#a1d1cfd8ffb84e947f82999c682b666a7ac40bc5e1aaaad6fcf6bfcd9d0bdac993">PostOnly</a>: {</div>
+<div class="line"><span class="lineno">  102</span>        <a class="code hl_variable" href="classore_1_1data_1_1_c_s_a.html#add2d2994d99888b343185cb18f369a2c">thresholdRcv_</a> = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+<div class="ttc" id="alog_8hpp_html_a158e0f085ddedfe5c8ed069986039f50"><div class="ttname"><a href="log_8hpp.html#a158e0f085ddedfe5c8ed069986039f50">LOG</a></div><div class="ttdeci">#define LOG(text)</div><div class="ttdoc">Logging Macro (Level = Notice)</div><div class="ttdef"><b>Definition:</b> <a href="log_8hpp_source.html#l00506">log.hpp:506</a></div></div>
+<div class="ttc" id="anamespaceore_1_1data_html_a777e216dee6069b548bb87da7152699e"><div class="ttname"><a href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e">ore::data::size</a></div><div class="ttdeci">Size size(const ValueType &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="ored_2scripting_2value_8cpp_source.html#l00145">value.cpp:145</a></div></div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classore_1_1data_1_1_c_s_a_a41d45236c37b75848f4b1667a11fb50e_cgraph.png" border="0" usemap="#aclassore_1_1data_1_1_c_s_a_a41d45236c37b75848f4b1667a11fb50e_cgraph" alt=""/></div>
+<map name="aclassore_1_1data_1_1_c_s_a_a41d45236c37b75848f4b1667a11fb50e_cgraph" id="aclassore_1_1data_1_1_c_s_a_a41d45236c37b75848f4b1667a11fb50e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,71,31"/>
+<area shape="rect" href="namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e" title=" " alt="" coords="119,5,224,31"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
