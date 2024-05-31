@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['yieldcurverolldown_0',['YieldCurveRollDown',['../../qle/group__termstructures.html#ga3d14939b6009218bf529700f2a9a9a54',1,'QuantExt::YieldCurveRollDown()'],['../../qle/group__termstructures.html#ga3d14939b6009218bf529700f2a9a9a54',1,'QuantExt::YieldCurveRollDown()']]],
-  ['yieldcurvetype_1',['YieldCurveType',['../../ored/namespaceore_1_1data.html#ac6f42eb3486232f025ca701de91409cc',1,'ore::data']]]
+  ['which_0',['which',['../../ored/structore_1_1data_1_1_value_type_which.html#a40b5ec2f455aafcdf87faa2a2ec10c59',1,'ore::data::ValueTypeWhich']]]
 ];

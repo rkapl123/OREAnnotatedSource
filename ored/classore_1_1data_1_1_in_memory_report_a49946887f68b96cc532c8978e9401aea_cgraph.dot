@@ -1,0 +1,30 @@
+digraph "add"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="add",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#a0b8f13b57d2b70800ffaaca84efbae99",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="columns",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#a86a771d47cf764c4ef43aab250442fda",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="data",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#a5df3c5eacb128a26c8a2ee148f5b75f9",tooltip="Returns the data."];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="header",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#a5b19a6c0c51dc7d1abc59a1a2300bc35",tooltip=" "];
+  Node4 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="rows",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#a74da223ed3bde38f5e9f6822f6cacfbe",tooltip=" "];
+  Node6 -> Node3 [color="steelblue1",style="solid"];
+  Node4 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="end",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#a64e9fa75beda50a9e8400ee0d4e61984",tooltip=" "];
+  Node8 -> Node3 [color="steelblue1",style="solid"];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="next",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#a7ba407af8cfb7f4701894176d4a3ea74",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+}

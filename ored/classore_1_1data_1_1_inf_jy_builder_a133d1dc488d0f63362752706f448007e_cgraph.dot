@@ -1,0 +1,20 @@
+digraph "buildYoYSwapBasket"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="buildYoYSwapBasket",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Build a YoY swap calibration basket."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="QuantExt::close_enough",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="inflationTime",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a78aebbc0de375f5058e2837300a8c038",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::CalibrationBasket\l::instruments",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_calibration_basket.html#aadb5e6dbce35a5826e9760541a5447f8",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="referenceCalibrationDates",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inf_jy_builder.html#acc7b35fae386b8e18ed5b7a4bbe99cea",tooltip="Create the reference calibration dates."];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::DateGrid\l::dates",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_date_grid.html#aca8cf8d394b2ce6e3662fe8a9db4a466",tooltip=" "];
+}

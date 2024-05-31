@@ -1,0 +1,11 @@
+digraph "TRS::ReturnData"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{TRS::ReturnData\n|- payer_\l- currency_\l- scheduleData_\l- observationLag_\l- observationConvention_\l- observationCalendar_\l- paymentLag_\l- paymentConvention_\l- paymentCalendar_\l- paymentDates_\l- initialPrice_\l- initialPriceCurrency_\l- fxTerms_\l- payUnderlyingCashFlowsImmediately_\l|+ ReturnData()\l+ ReturnData()\l+ payer()\l+ currency()\l+ scheduleData()\l+ observationLag()\l+ observationConvention()\l+ observationCalendar()\l+ paymentLag()\l+ paymentConvention()\l+ paymentCalendar()\l+ paymentDates()\l+ initialPrice()\l+ initialPriceCurrency()\l+ fxTerms()\l+ payUnderlyingCashFlowsImmediately()\l+ fromXML()\l+ toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+}

@@ -1,0 +1,56 @@
+digraph "YieldCurveConfig"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{YieldCurveConfig\n||+ YieldCurveConfig()\l+ YieldCurveConfig()\l+ ~YieldCurveConfig()\l+ fromXML()\l+ toXML()\l+ currency()\l+ discountCurveID()\l+ curveSegments()\l+ interpolationVariable()\l+ interpolationMethod()\l+ mixedInterpolationCutoff()\l+ zeroDayCounter()\l+ extrapolation()\l+ bootstrapConfig()\l* interpolationVariable()\l* interpolationMethod()\l* mixedInterpolationCutoff()\l* zeroDayCounter()\l* extrapolation()\l* setBootstrapConfig()\l* quotes()\l* populateRequiredCurveIds()\l* YieldCurveConfig()\l* YieldCurveConfig()\l* ~YieldCurveConfig()\l* fromXML()\l* toXML()\l* currency()\l* discountCurveID()\l* curveSegments()\l* interpolationVariable()\l* interpolationMethod()\l* mixedInterpolationCutoff()\l* zeroDayCounter()\l* extrapolation()\l* bootstrapConfig()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Yield Curve configuration."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{CurveConfig\n||+ CurveConfig()\l+ CurveConfig()\l+ curveID()\l+ curveDescription()\l+ requiredCurveIds()\l+ requiredCurveIds()\l* curveID()\l* curveDescription()\l* requiredCurveIds()\l* requiredCurveIds()\l* quotes()\l* CurveConfig()\l* CurveConfig()\l* curveID()\l* curveDescription()\l* requiredCurveIds()\l* requiredCurveIds()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_config.html",tooltip="Base curve configuration."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node4 -> Node2 [color="grey25",style="solid",label=" #curveDescription_\n#curveID_" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [color="grey25",style="solid",label=" #quotes_" ,arrowhead="odiamond"];
+  Node6 [label="{vector\< string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node6 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node7 -> Node6 [dir="back",color="orange",style="solid",label=" \< string \>" ];
+  Node7 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node8 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node2 [color="grey25",style="solid",label=" #requiredCurveIds_" ,arrowhead="odiamond"];
+  Node9 [label="{map\< CurveSpec::CurveType,\l set\< string \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node10 [label="{CurveType\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node9 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node11 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node11 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node12 -> Node11 [dir="back",color="orange",style="solid",label=" \< string \>" ];
+  Node12 [label="{set\< K \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node13 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node9 [dir="back",color="orange",style="solid",label=" \< CurveSpec::CurveType,\l set\< string \> \>" ];
+  Node14 [label="{map\< K, T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node14 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node8 -> Node14 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node4 -> Node1 [color="grey25",style="solid",label=" -currency_\n-discountCurveID\l_\n-interpolationMethod\l_\n-interpolationVariable\l_\n-zeroDayCounter_" ,arrowhead="odiamond"];
+  Node15 -> Node1 [color="grey25",style="solid",label=" -curveSegments_" ,arrowhead="odiamond"];
+  Node15 [label="{vector\< QuantLib::ext\l::shared_ptr\< ore::data\l::YieldCurveSegment \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node15 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node16 [label="{shared_ptr\< ore::data\l::YieldCurveSegment \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node15 [dir="back",color="orange",style="solid",label=" \< QuantLib::ext::shared\l_ptr\< ore::data::YieldCurveSegment \> \>" ];
+  Node17 -> Node1 [color="grey25",style="solid",label=" -extrapolation_" ,arrowhead="odiamond"];
+  Node17 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node18 -> Node1 [color="grey25",style="solid",label=" -bootstrapConfig_" ,arrowhead="odiamond"];
+  Node18 [label="{BootstrapConfig\n||+ BootstrapConfig()\l+ fromXML()\l+ toXML()\l* accuracy()\l* globalAccuracy()\l* dontThrow()\l* maxAttempts()\l* maxFactor()\l* minFactor()\l* dontThrowSteps()\l* fromXML()\l* toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bootstrap_config.html",tooltip=" "];
+  Node3 -> Node18 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node19 -> Node18 [color="grey25",style="solid",label=" -accuracy_\n-globalAccuracy\l_\n-maxFactor_\n-minFactor_" ,arrowhead="odiamond"];
+  Node19 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node18 [color="grey25",style="solid",label=" -dontThrow_" ,arrowhead="odiamond"];
+  Node20 -> Node18 [color="grey25",style="solid",label=" -dontThrowSteps_\n-maxAttempts_" ,arrowhead="odiamond"];
+  Node20 [label="{Size\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node20 -> Node1 [color="grey25",style="solid",label=" -mixedInterpolationCutoff_" ,arrowhead="odiamond"];
+}

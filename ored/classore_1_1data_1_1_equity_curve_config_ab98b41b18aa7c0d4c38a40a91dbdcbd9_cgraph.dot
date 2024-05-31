@@ -1,0 +1,14 @@
+digraph "setCurrency"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="setCurrency",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="currency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_curve_config.html#a14dac022d83c5fa9597e6344199a41b6",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::parseCurrency\lWithMinors",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga5816082aca07feca7ec905758bd09392",tooltip="Convert text to QuantLib::Currency."];
+}

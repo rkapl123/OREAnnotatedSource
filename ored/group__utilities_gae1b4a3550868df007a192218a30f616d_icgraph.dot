@@ -1,0 +1,14 @@
+digraph "isInflationIndex"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="isInflationIndex",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="amendInflationFixingDates",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a511d2c17ea98f37aa1a00c33b5f7b153",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2fixings_8cpp.html#ab612f87972b1016fe93e43c1ff080266",tooltip=" "];
+}

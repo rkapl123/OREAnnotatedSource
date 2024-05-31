@@ -1,0 +1,12 @@
+digraph "closeOutTimeGrid"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="closeOutTimeGrid",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Returns the time grid associated with the vector of close-out times (plus t=0)"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="times",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_date_grid.html#a732aa9d2d97648fb15927f125206103b",tooltip="Returns the times from Settings::instance().evaluationDate to each Date using the day counter."];
+}

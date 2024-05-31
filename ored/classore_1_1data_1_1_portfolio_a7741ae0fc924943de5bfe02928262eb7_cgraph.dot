@@ -1,0 +1,30 @@
+digraph "fromXML"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="fromXML",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="XMLSerializable interface."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#a2dee4ce61500d6d075af518a136f0810",tooltip="Add a trade to the portfolio."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="has",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#ae9d256db4455a57dfc163ef743ae1c6a",tooltip="Check if a trade id is already in the portfolio."];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::XMLUtils\l::checkNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#a37c092916f4bdf10d4fbf6bb9e474db7",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::XMLUtils\l::getAttribute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#a2d656de3f92d61e867ec7a3c88ad4015",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::XMLUtils\l::getChildrenNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#a42678b2a0d7c4052dc19123914359ec1",tooltip="Returns all the children with a given name."];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::XMLUtils\l::getChildValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#a5a1307174ddefdb3aad6e3bd8cc63b27",tooltip=" "];
+  Node7 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="ore::data::XMLUtils\l::getNodeValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#a6704501b110fa9d056096df3e05f0df2",tooltip="Get a node's value."];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="ore::data::JSONMessage::log",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a5e21eca2668ed948bdc409b19a78e5bb",tooltip="generate Boost log record to pass to corresponding sinks"];
+  Node9 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="ore::data::JSONMessage\l::emitLog",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a6a9077605df871e6e961dd0099645b35",tooltip="generate Boost log record - this method is called by log()"];
+  Node9 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="ore::data::JSONMessage::msg",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a39f83a0ab38c425a8844c8892b93d69e",tooltip="return a std::string for the log file"];
+}

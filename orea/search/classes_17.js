@@ -12,5 +12,10 @@ var searchData=
   ['xptcurrency_9',['XPTCurrency',['../../qle/class_quant_ext_1_1_x_p_t_currency.html',1,'QuantExt']]],
   ['xvaanalytic_10',['XvaAnalytic',['../classore_1_1analytics_1_1_xva_analytic.html',1,'ore::analytics']]],
   ['xvaanalyticimpl_11',['XvaAnalyticImpl',['../classore_1_1analytics_1_1_xva_analytic_impl.html',1,'ore::analytics']]],
-  ['xvarunner_12',['XvaRunner',['../classore_1_1analytics_1_1_xva_runner.html',1,'ore::analytics']]]
+  ['xvaenginecg_12',['XvaEngineCG',['../classore_1_1analytics_1_1_xva_engine_c_g.html',1,'ore::analytics']]],
+  ['xvarunner_13',['XvaRunner',['../classore_1_1analytics_1_1_xva_runner.html',1,'ore::analytics']]],
+  ['xvasensitivityanalytic_14',['XvaSensitivityAnalytic',['../classore_1_1analytics_1_1_xva_sensitivity_analytic.html',1,'ore::analytics']]],
+  ['xvasensitivityanalyticimpl_15',['XvaSensitivityAnalyticImpl',['../classore_1_1analytics_1_1_xva_sensitivity_analytic_impl.html',1,'ore::analytics']]],
+  ['xvastressanalytic_16',['XvaStressAnalytic',['../classore_1_1analytics_1_1_xva_stress_analytic.html',1,'ore::analytics']]],
+  ['xvastressanalyticimpl_17',['XvaStressAnalyticImpl',['../classore_1_1analytics_1_1_xva_stress_analytic_impl.html',1,'ore::analytics']]]
 ];

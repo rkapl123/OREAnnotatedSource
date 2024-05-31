@@ -1,0 +1,30 @@
+digraph "EquityCliquetOption"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{EquityCliquetOption\n||+ EquityCliquetOption()\l+ EquityCliquetOption()\l+ underlyingIndices()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{CliquetOption\n||+ CliquetOption()\l+ isExpired()\l+ setupArguments()\l+ valuationDates()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_cliquet_option.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{OneAssetOption\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_one_asset_option.html",tooltip=" "];
+  Node4 -> Node2 [color="grey25",style="solid",label=" -valuationDates_" ,arrowhead="odiamond"];
+  Node4 [label="{set\< Date \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node5 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="orange",style="solid",label=" \< Date \>" ];
+  Node6 [label="{set\< K \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node7 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [color="grey25",style="solid",label=" -paymentDate_\n-premiumPayDate_" ,arrowhead="odiamond"];
+  Node8 -> Node2 [color="grey25",style="solid",label=" -globalCap_\n-globalFloor_\n-localCap_\n-localFloor_\n-notional_\n-premium_" ,arrowhead="odiamond"];
+  Node8 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node2 [color="grey25",style="solid",label=" -longShort_" ,arrowhead="odiamond"];
+  Node9 [label="{Type\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node2 [color="grey25",style="solid",label=" -premiumCurrency_" ,arrowhead="odiamond"];
+  Node10 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node11 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

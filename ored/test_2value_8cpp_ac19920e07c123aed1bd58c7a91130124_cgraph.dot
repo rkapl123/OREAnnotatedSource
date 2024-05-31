@@ -1,0 +1,25 @@
+digraph "BOOST_AUTO_TEST_CASE"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="equal",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#ad3a3c6984d5f98350b8f45db0b13c5d4",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::geq",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ad1cf0cc571d430b6e1a7d7fefdc406c6",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::gt",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a37faa791a3c8b46f8aa6c0b450c05606",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::leq",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ac4249503075b397c525eadfdd5576e18",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::lt",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a02a0d756a2a3bb7491d30124830ca66d",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::notequal",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a2c99fe9b991c10412a7d36685a8f0143",tooltip=" "];
+  Node7 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="QuantExt::close_enough",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5",tooltip=" "];
+  Node7 -> Node2 [color="steelblue1",style="solid"];
+}

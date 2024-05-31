@@ -1,0 +1,21 @@
+digraph "build"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="build",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::ScriptedTrade\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_scripted_trade.html#a9c636e31b77522b708a0b20e376209aa",tooltip=" "];
+  Node2 -> Node2 [color="steelblue1",style="solid"];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::ScriptedTrade\l::clear",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_scripted_trade.html#ac8bb3912a3ce86b15842e79d0b421204",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="initIndices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_performance_option__01.html#a207c6701b5856e4a18bf06f71ce54287",tooltip=" "];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::scriptedIndexName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a21b0675ac29be95aa2df8bceafa09a39",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::parsePositionType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga71937c757a73b33221be6ce6a8046839",tooltip="Convert text to QuantLib::Position::Type."];
+}

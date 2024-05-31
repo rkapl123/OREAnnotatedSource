@@ -1,0 +1,17 @@
+digraph "setupParams"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="setupParams",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="createIndexParam",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inf_jy_builder.html#ac1ee56313b677fe9f5a81bd624030030",tooltip="Create the inflation index parameterisation."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="InfJyBuilder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inf_jy_builder.html#aad12b32f1cc6f20235515935c229ce3e",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="createRealRateParam",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inf_jy_builder.html#a8b5569dab308b4dac0cf78307e3189ff",tooltip="Create the real rate parameterisation."];
+  Node4 -> Node3 [dir="back",color="steelblue1",style="solid"];
+}

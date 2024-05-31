@@ -1,13 +1,14 @@
 <map id="isOnePeriod" name="isOnePeriod">
-<area shape="rect" id="node1" title="return true if s represents a period of the form [0&#45;9][D|W|M|Y] (i.e. 1Y6M would return false)" alt="" coords="861,84,955,109"/>
-<area shape="rect" id="node2" href="$group__marketdata.html#gafcb88f661ad6cb9bf3c931bcc2fbd299" title="Function to parse a market datum." alt="" coords="681,84,813,109"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_in_memory_loader.html#ab033d7bbd4da0af2f75abb8952fcacce" title=" " alt="" coords="427,5,633,31"/>
-<area shape="rect" id="node6" href="$equitymarketdata_8cpp.html#a386ad4b756cebb1ed30e0dcbbf64dcb6" title=" " alt="" coords="435,55,625,80"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_dependency_graph.html#a32f251ee6ad9521e1cb321a91d778da5" title=" " alt="" coords="436,105,624,145"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_c_s_v_loader.html#af8a277c7dc57076a3daec6356ccc1be3" title=" " alt="" coords="457,169,603,209"/>
-<area shape="rect" id="node4" href="$namespaceore_1_1data.html#a42f1390d171c5924c3fa721f51a32200" title=" " alt="" coords="274,5,321,31"/>
-<area shape="rect" id="node5" href="$namespaceore_1_1data.html#a22d0bfabdad131343a5f49618b7db10d" title="Utility function for loading market quotes and fixings from an in memory csv buffer." alt="" coords="15,5,158,31"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="216,105,379,145"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_todays_market.html#aa82cc4ddd3bd6cf77cbe95fa5d2281cd" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,105,168,145"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_c_s_v_loader.html#a018b17f5187e6a0647fb5b52a96c5152" title=" " alt="" coords="224,169,371,209"/>
+<area shape="rect" id="node1" title="return true if s represents a period of the form [0&#45;9][D|W|M|Y] (i.e. 1Y6M would return false)" alt="" coords="888,113,981,138"/>
+<area shape="rect" id="node2" href="$group__marketdata.html#ga49b8909d3761de5c44f8140f95ec0d94" title="Function to parse a market datum." alt="" coords="708,113,840,138"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_adjusted_in_memory_loader.html#a394ea65c115638a789b7e4793aed8f8a" title=" " alt="" coords="216,5,405,45"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_in_memory_loader.html#ab033d7bbd4da0af2f75abb8952fcacce" title=" " alt="" coords="453,63,660,89"/>
+<area shape="rect" id="node7" href="$equitymarketdata_8cpp.html#a386ad4b756cebb1ed30e0dcbbf64dcb6" title=" " alt="" coords="461,113,652,138"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_dependency_graph.html#a32f251ee6ad9521e1cb321a91d778da5" title=" " alt="" coords="463,163,651,203"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_c_s_v_loader.html#af8a277c7dc57076a3daec6356ccc1be3" title=" " alt="" coords="483,227,630,267"/>
+<area shape="rect" id="node5" href="$namespaceore_1_1data.html#a42f1390d171c5924c3fa721f51a32200" title=" " alt="" coords="287,70,334,95"/>
+<area shape="rect" id="node6" href="$namespaceore_1_1data.html#a22d0bfabdad131343a5f49618b7db10d" title="Utility function for loading market quotes and fixings from an in memory csv buffer." alt="" coords="15,70,158,95"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1" title=" " alt="" coords="229,163,392,203"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_todays_market.html#ad79acb672b27bd7258f228494d94cb32" title="Constructor taking pointers and allowing for a lazy build of the market objects." alt="" coords="5,163,168,203"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_c_s_v_loader.html#a9cd43c2280d0cee91b282fe13b36679d" title=" " alt="" coords="237,227,384,267"/>
 </map>

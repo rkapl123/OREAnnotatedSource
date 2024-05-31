@@ -1,0 +1,16 @@
+digraph "name"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="name",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ore::data::CreditIndexReference\lDatum::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_credit_index_reference_datum.html#acc685a83d051af2e37262cc149ab5363",tooltip="Add a constituent. The constituent is not added if already present."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::CreditIndexReference\lDatum::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_credit_index_reference_datum.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="ore::data::operator\<",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a24127026a429cac5114b7bd5390b5019",tooltip="Compare CreditIndexConstituent instances using their name."];
+}

@@ -1,0 +1,24 @@
+digraph "pay"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="pay",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="getDiscount",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_model_impl.html#a7a986ced76fdd726c3617f36d741a131",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="getFxSpot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_model_impl.html#a795b2380a1d3c499d63cfde21ec10531",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="getIndexValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_model_impl.html#ab59061d75ad41f5cfb70c6992e532868",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="getNumeraire",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_model_impl.html#ace0fcc2b07a3858bf1f95247a698e31e",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="QuantExt::RandomVariable\l::initialised",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$struct_quant_ext_1_1_random_variable.html#adaeda39d7b8cc716a40c4da65b00ba77",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::Model::referenceDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_model.html#a06843bb9dcd2cb5e4ef8185cc5fe57c9",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="ore::data::Model::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_model.html#a9edcd102946c4e3bd0bcdba2fc64e397",tooltip=" "];
+}

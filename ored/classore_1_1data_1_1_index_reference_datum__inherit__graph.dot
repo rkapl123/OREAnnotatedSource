@@ -1,0 +1,17 @@
+digraph "IndexReferenceDatum"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{IndexReferenceDatum\n|- data_\l|+ fromXML()\l+ toXML()\l+ underlyings()\l+ setUnderlyings()\l+ addUnderlying()\l# IndexReferenceDatum()\l# IndexReferenceDatum()\l# IndexReferenceDatum()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Base class for indices - lets see if we can keep this, they might diverge too much...."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{ReferenceDatum\n|- type_\l- id_\l- validFrom_\l|+ ReferenceDatum()\l+ ReferenceDatum()\l+ ReferenceDatum()\l+ setType()\l+ setId()\l+ setValidFrom()\l+ type()\l+ id()\l+ validFrom()\l+ fromXML()\l+ toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_reference_datum.html",tooltip="Base class for reference data."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node4 [label="{CommodityIndexReferenceDatum\n|+ TYPE\l|+ CommodityIndexReferenceDatum()\l+ CommodityIndexReferenceDatum()\l+ CommodityIndexReferenceDatum()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_index_reference_datum.html",tooltip="EquityIndex Reference data, contains the names and weights of an equity index."];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{EquityIndexReferenceDatum\n|+ TYPE\l|+ EquityIndexReferenceDatum()\l+ EquityIndexReferenceDatum()\l+ EquityIndexReferenceDatum()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_index_reference_datum.html",tooltip="EquityIndex Reference data, contains the names and weights of an equity index."];
+}

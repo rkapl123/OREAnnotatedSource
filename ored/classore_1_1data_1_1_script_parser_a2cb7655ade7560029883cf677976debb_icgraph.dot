@@ -1,0 +1,20 @@
+digraph "error"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="error",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ore::data::CliquetOption\lMcScriptEngine::CliquetOption\lMcScriptEngine",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_cliquet_option_mc_script_engine.html#a3b3bfcace535c68c3c9f0bb547ea04ef",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2scriptengine_8cpp.html#a7c96f35727fedc60540dcba98817253a",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="BOOST_DATA_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2scriptparser_8cpp.html#a53f0bac88cb47bbdd4bb6cf58c276946",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::parseScript",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a58fac66491448eaf11dbcb7bced47a06",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="ore::data::ScriptedTrade\lEngineBuilder::engine",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_scripted_trade_engine_builder.html#afa7bc32050325672e45000b32d62ec0b",tooltip=" "];
+}

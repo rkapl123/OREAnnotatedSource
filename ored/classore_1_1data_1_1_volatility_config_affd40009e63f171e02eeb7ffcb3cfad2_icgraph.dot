@@ -1,0 +1,28 @@
+digraph "toXMLNode"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="toXMLNode",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ore::data::QuoteBasedVolatility\lConfig::toBaseNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_quote_based_volatility_config.html#a7f336cc5825064e52b7f2566c814ef50",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::ConstantVolatility\lConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_constant_volatility_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="ore::data::VolatilityCurve\lConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_volatility_curve_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::VolatilityStrike\lSurfaceConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_volatility_strike_surface_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+  Node2 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="ore::data::VolatilityDelta\lSurfaceConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_volatility_delta_surface_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="ore::data::VolatilityMoneyness\lSurfaceConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_volatility_moneyness_surface_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="ore::data::VolatilityApo\lFutureSurfaceConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_volatility_apo_future_surface_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="ore::data::ProxyVolatility\lConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_proxy_volatility_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="ore::data::CDSProxyVolatility\lConfig::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_d_s_proxy_volatility_config.html#a5ab84b4972e623b734fc13becbf7902e",tooltip=" "];
+}

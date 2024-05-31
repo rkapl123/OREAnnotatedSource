@@ -1,0 +1,21 @@
+digraph "parseCurveConfigurationType"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="parseCurveConfigurationType",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="function to convert a curve configuration node string into a curve spec type"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ore::data::CurveConfigurations\l::addNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_configurations.html#acee3f83ec4e8fbb7de27fa86c09ca50a",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::CurveConfigurations\l::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_configurations.html#a7efefb9270d6c4933e4c96de0771f17a",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$equitymarketdata_8cpp.html#a0a8db005e5898e1432e60360308e9a6f",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::CurveConfigurations\l::getNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_configurations.html#a21a271456cad397fd3967c2f5848e38e",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="ore::data::CurveConfigurations\l::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_configurations.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="steelblue1",style="solid"];
+}

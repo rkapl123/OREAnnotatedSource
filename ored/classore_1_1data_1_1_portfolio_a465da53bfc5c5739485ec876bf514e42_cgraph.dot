@@ -1,0 +1,14 @@
+digraph "build"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="build",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Call build on all trades in the portfolio, the context is included in error messages."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="buildFailedTrades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#aa132f7e3db9728b12a14c975c9714c58",tooltip="Does this portfolio build failed trades?"];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::buildTrade",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#af7851439c1cfcd8eca85761ced5f9f63",tooltip=" "];
+}

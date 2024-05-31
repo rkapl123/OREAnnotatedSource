@@ -1,0 +1,14 @@
+digraph "build"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="build",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Trade Interface's build."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::Trade::setSensitivity\lTemplate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_trade.html#a788e0abfac5089ac015b7d71dbda25e3",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::EngineBuilder\l::engineParameter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_engine_builder.html#a9d7654707f3b935dcf6a7b19df70c085",tooltip=" "];
+}

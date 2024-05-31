@@ -1,0 +1,34 @@
+digraph "BOOST_DATA_TEST_CASE_F"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="BOOST_DATA_TEST_CASE_F",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::Portfolio\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#a78b7a46465ae740388a7061e932a1f26",tooltip="Call build on all trades in the portfolio, the context is included in error messages."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::Portfolio\l::buildFailedTrades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#aa132f7e3db9728b12a14c975c9714c58",tooltip="Does this portfolio build failed trades?"];
+  Node2 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::buildTrade",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a4189e2c4ca70a4330840992fb570b3b1",tooltip=" "];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::JSONMessage::log",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a5e21eca2668ed948bdc409b19a78e5bb",tooltip="generate Boost log record to pass to corresponding sinks"];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::JSONMessage\l::emitLog",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a6a9077605df871e6e961dd0099645b35",tooltip="generate Boost log record - this method is called by log()"];
+  Node5 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::JSONMessage::msg",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a39f83a0ab38c425a8844c8892b93d69e",tooltip="return a std::string for the log file"];
+  Node2 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="ore::data::Portfolio\l::ignoreTradeBuildFail",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#a7687577d15ee357689a1b7c947cebb67",tooltip="Keep trade in the portfolio even after build fail."];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="ore::data::XMLSerializable\l::fromFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#ac3ac11cf6a3155713cea6a1a67e2b64d",tooltip=" "];
+  Node9 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="ore::data::XMLSerializable\l::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#a52f896048a4e04b36fcfc8fa3de6a9b4",tooltip=" "];
+  Node9 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="ore::data::XMLDocument\l::getFirstNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_document.html#adc51f551b19a2cabd09440c56d4119d6",tooltip=" "];
+  Node1 -> Node12 [color="steelblue1",style="solid"];
+  Node12 [label="ore::data::Portfolio\l::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#a48b90275c7bccf5822418ef47bb922ee",tooltip="Portfolio size."];
+  Node1 -> Node13 [color="steelblue1",style="solid"];
+  Node13 [label="ore::data::Portfolio\l::trades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio.html#a1688e87b84477c3bd5d58fa19c147077",tooltip="Return the map tradeId -> trade."];
+}

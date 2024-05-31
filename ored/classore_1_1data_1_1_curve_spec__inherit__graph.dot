@@ -1,0 +1,43 @@
+digraph "CurveSpec"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{CurveSpec\n||+ CurveSpec()\l+ CurveSpec()\l+ ~CurveSpec()\l* curveConfigID_\l* baseType()\l* subName()\l* name()\l* curveConfigID()\l* baseName()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Curve Specification."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{BaseCorrelationCurveSpec\n||+ BaseCorrelationCurveSpec()\l+ BaseCorrelationCurveSpec()\l+ baseType()\l+ subName()\l* BaseCorrelationCurveSpec()\l* BaseCorrelationCurveSpec()\l* baseType()\l* subName()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_base_correlation_curve_spec.html",tooltip="Base Correlation surface description."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{CDSVolatilityCurveSpec\n||+ CDSVolatilityCurveSpec()\l+ CDSVolatilityCurveSpec()\l* ccy_\l* curveConfigID_\l* baseType()\l* subName()\l* CDSVolatilityCurveSpec()\l* CDSVolatilityCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_d_s_volatility_curve_spec.html",tooltip="CDS Volatility curve description."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node4 [label="{CapFloorVolatilityCurveSpec\n||+ CapFloorVolatilityCurveSpec()\l+ CapFloorVolatilityCurveSpec()\l+ baseType()\l+ subName()\l* key_\l* key()\l* baseType()\l* subName()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_cap_floor_volatility_curve_spec.html",tooltip="Cap/Floor Volatility curve description."];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{CommodityCurveSpec\n||+ CommodityCurveSpec()\l+ CommodityCurveSpec()\l* currency_\l* baseType()\l* currency()\l* subName()\l* CommodityCurveSpec()\l* CommodityCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_curve_spec.html",tooltip="Commodity curve description."];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node6 [label="{CommodityVolatilityCurveSpec\n||+ CommodityVolatilityCurve\lSpec()\l+ CommodityVolatilityCurve\lSpec()\l* currency_\l* curveConfigId_\l* baseType()\l* currency()\l* subName()\l* CommodityVolatilityCurve\lSpec()\l* CommodityVolatilityCurve\lSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_volatility_curve_spec.html",tooltip="Commodity volatility description."];
+  Node1 -> Node7 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node7 [label="{CorrelationCurveSpec\n||+ CorrelationCurveSpec()\l+ CorrelationCurveSpec()\l+ baseType()\l+ subName()\l* CorrelationCurveSpec()\l* CorrelationCurveSpec()\l* baseType()\l* subName()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_correlation_curve_spec.html",tooltip="Correlation curve description."];
+  Node1 -> Node8 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node8 [label="{DefaultCurveSpec\n||+ DefaultCurveSpec()\l+ DefaultCurveSpec()\l* ccy_\l* baseType()\l* ccy()\l* subName()\l* DefaultCurveSpec()\l* DefaultCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_default_curve_spec.html",tooltip="Default curve description."];
+  Node1 -> Node9 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node9 [label="{EquityCurveSpec\n||+ EquityCurveSpec()\l+ EquityCurveSpec()\l* ccy_\l* baseType()\l* ccy()\l* subName()\l* EquityCurveSpec()\l* EquityCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_curve_spec.html",tooltip="Equity curve description."];
+  Node1 -> Node10 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node10 [label="{EquityVolatilityCurveSpec\n||+ EquityVolatilityCurveSpec()\l+ EquityVolatilityCurveSpec()\l* ccy_\l* baseType()\l* ccy()\l* subName()\l* EquityVolatilityCurveSpec()\l* EquityVolatilityCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_volatility_curve_spec.html",tooltip="Equity Volatility curve description."];
+  Node1 -> Node11 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node11 [label="{FXSpotSpec\n||+ FXSpotSpec()\l+ FXSpotSpec()\l* unitCcy_\l* ccy_\l* baseType()\l* unitCcy()\l* ccy()\l* subName()\l* FXSpotSpec()\l* FXSpotSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_f_x_spot_spec.html",tooltip="FX Spot description."];
+  Node1 -> Node12 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node12 [label="{FXVolatilityCurveSpec\n||+ FXVolatilityCurveSpec()\l+ FXVolatilityCurveSpec()\l* unitCcy_\l* ccy_\l* baseType()\l* unitCcy()\l* ccy()\l* subName()\l* FXVolatilityCurveSpec()\l* FXVolatilityCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_f_x_volatility_curve_spec.html",tooltip="FX Volatility curve description."];
+  Node1 -> Node13 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node13 [label="{InflationCapFloorVolatility\lCurveSpec\n|- index_\l|+ InflationCapFloorVolatility\lCurveSpec()\l+ InflationCapFloorVolatility\lCurveSpec()\l+ baseType()\l+ index()\l+ subName()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inflation_cap_floor_volatility_curve_spec.html",tooltip="Inflation cap floor volatility description."];
+  Node1 -> Node14 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node14 [label="{InflationCurveSpec\n|- index_\l|+ InflationCurveSpec()\l+ InflationCurveSpec()\l+ baseType()\l+ index()\l+ subName()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inflation_curve_spec.html",tooltip="Inflation curve description."];
+  Node1 -> Node15 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node15 [label="{SecuritySpec\n|# securityID_\l|+ SecuritySpec()\l+ SecuritySpec()\l+ baseType()\l+ subName()\l+ securityID()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_security_spec.html",tooltip="Security description."];
+  Node1 -> Node16 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node16 [label="{SwaptionVolatilityCurveSpec\n||+ SwaptionVolatilityCurveSpec()\l+ SwaptionVolatilityCurveSpec()\l* key_\l* baseType()\l* key()\l* subName()\l* SwaptionVolatilityCurveSpec()\l* SwaptionVolatilityCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_swaption_volatility_curve_spec.html",tooltip="Swaption Volatility curve description."];
+  Node1 -> Node17 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node17 [label="{YieldCurveSpec\n||+ YieldCurveSpec()\l+ YieldCurveSpec()\l* ccy_\l* baseType()\l* ccy()\l* subName()\l* YieldCurveSpec()\l* YieldCurveSpec()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_yield_curve_spec.html",tooltip="Yield curve description."];
+  Node1 -> Node18 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node18 [label="{YieldVolatilityCurveSpec\n||+ YieldVolatilityCurveSpec()\l+ YieldVolatilityCurveSpec()\l+ baseType()\l+ subName()\l* YieldVolatilityCurveSpec()\l* YieldVolatilityCurveSpec()\l* baseType()\l* subName()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_yield_volatility_curve_spec.html",tooltip="Yield volatility curve description."];
+}

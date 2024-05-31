@@ -1,0 +1,45 @@
+digraph "parseSwapIndex"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="parseSwapIndex",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Convert std::string to QuantLib::SwapIndex."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ore::data::IndexInfo\l::IndexInfo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_index_info.html#a4a4b506377c2c463c36ebd016b62c124",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::MarketImpl\l::addSwapIndex",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_market_impl.html#af731b404daf72d32a4986990c5190bcc",tooltip="add a swap index to the market"];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="OredTestMarket::OredTest\lMarket",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_ored_test_market.html#ab19dad4599472bbfab0270154f542504",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::TodaysMarket\l::buildNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_todays_market.html#ae947670c7306fd552e37a0f140984721",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="ore::data::TodaysMarket\l::initialise",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_todays_market.html#a0816e5ec53019bee5353fea5fc006eb1",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="ore::data::TodaysMarket\l::TodaysMarket",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_todays_market.html#ad79acb672b27bd7258f228494d94cb32",tooltip="Constructor taking pointers and allowing for a lazy build of the market objects."];
+  Node5 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="ore::data::TodaysMarket\l::require",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_todays_market.html#a36416143258c4e4c30bb46935cef9408",tooltip=" "];
+  Node8 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node8 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$indices_8cpp.html#a0c766871ab46713e7c0f7d75b1f3079f",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="parseIndex",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#gaa2e4a5db4f69e91149467abc58e85613",tooltip="Convert std::string to QuantLib::Index."];
+  Node10 -> Node11 [dir="back",color="steelblue1",style="solid"];
+  Node11 [label="applyFixings",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#afbdabb3acc8c9fd3e013b2d5b9b71660",tooltip="Utility to write a vector of fixings in the QuantLib index manager's fixing history."];
+  Node11 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node10 -> Node12 [dir="back",color="steelblue1",style="solid"];
+  Node12 [label="ore::data::AsianOption\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_asian_option.html#af7b69d5b18d278257927e32b10a23ee6",tooltip="Build QuantLib/QuantExt instrument, link pricing engine."];
+  Node10 -> Node13 [dir="back",color="steelblue1",style="solid"];
+  Node13 [label="ore::data::CommoditySwap\l::underlyingIndices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_swap.html#ad0ab039c4a42b750bf36dbdd6929b34b",tooltip="Add underlying Commodity names."];
+  Node10 -> Node14 [dir="back",color="steelblue1",style="solid"];
+  Node14 [label="ore::data::CommodityOption\lStrip::underlyingIndices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_option_strip.html#a6da7779e38177d8b39cb72df2c538d0f",tooltip="Add underlying Commodity names."];
+  Node10 -> Node15 [dir="back",color="steelblue1",style="solid"];
+  Node15 [label="ore::data::CommoditySpread\lOption::underlyingIndices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_spread_option.html#a6da7779e38177d8b39cb72df2c538d0f",tooltip="Add underlying Commodity names."];
+  Node10 -> Node16 [dir="back",color="steelblue1",style="solid"];
+  Node16 [label="ore::data::CommoditySwaption\l::underlyingIndices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_swaption.html#a5172c779c3cbbd760ae110e62e08bb35",tooltip="Add underlying Commodity names."];
+  Node10 -> Node17 [dir="back",color="steelblue1",style="solid"];
+  Node17 [label="ore::data::Swap::underlying\lIndices",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_swap.html#a92a7823e84102c31f6fabc6de932e568",tooltip="Add underlying index names."];
+}

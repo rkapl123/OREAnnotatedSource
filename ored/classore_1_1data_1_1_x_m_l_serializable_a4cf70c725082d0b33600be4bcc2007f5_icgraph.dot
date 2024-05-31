@@ -1,0 +1,18 @@
+digraph "toXML"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="toXML",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="toFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#af745b3068eabdd2d1cad260e1f9ebd49",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2curveconfig_8cpp.html#aa8e0d19e46649d49997f7d7dc39622ff",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="toXMLString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#a3e09bde0f950d4f2ad9e103f478d326a",tooltip="Parse from XML string."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2compositetrade_8cpp.html#afc8201390ccfa8dc659b3ec6f865eac7",tooltip=" "];
+}

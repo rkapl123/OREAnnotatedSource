@@ -1,0 +1,40 @@
+digraph "build"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="build",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::RequiredFixings\l::addFixingDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="fixingDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="QuantExt::close_enough",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a1cab4fb6a720eff245acb9f3a7a9e7c5",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="endDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_var_swap.html#a3d58887f8de63e2753d9775cd691b005",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="longShort",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_var_swap.html#ae3408c6e846f0ead34c6ace1bde92296",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="momentType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_var_swap.html#abcdfe1e7e51b8a86c75703ed8024e44f",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="name",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_var_swap.html#a24dcbf29c0d6cd766009a182a6484e3b",tooltip=" "];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="ore::data::parseCalendar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14",tooltip="Convert text to QuantLib::Calendar."];
+  Node1 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="ore::data::parseCurrency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b",tooltip="Convert text to QuantLib::Currency."];
+  Node1 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="ore::data::parseDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga59b5fdda574d90facae95dec2d13040d",tooltip="Convert std::string to QuantLib::Date."];
+  Node11 -> Node11 [color="steelblue1",style="solid"];
+  Node11 -> Node12 [color="steelblue1",style="solid"];
+  Node12 [label="ore::data::parseInteger",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721",tooltip="Convert text to QuantLib::Integer."];
+  Node12 -> Node12 [color="steelblue1",style="solid"];
+  Node11 -> Node13 [color="steelblue1",style="solid"];
+  Node13 [label="ore::data::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e",tooltip=" "];
+  Node1 -> Node14 [color="steelblue1",style="solid"];
+  Node14 [label="ore::data::parseMomentType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#gac1a9d0a784b9d16836daf9965d8d83e8",tooltip="Convert text to ore::data::MomentType."];
+  Node1 -> Node15 [color="steelblue1",style="solid"];
+  Node15 [label="ore::data::parsePositionType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga71937c757a73b33221be6ce6a8046839",tooltip="Convert text to QuantLib::Position::Type."];
+}

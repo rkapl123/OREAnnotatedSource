@@ -1,0 +1,27 @@
+digraph "PremiumData"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{PremiumData\n||+ PremiumData()\l+ PremiumData()\l+ PremiumData()\l+ latestPremiumDate()\l+ premiumData()\l* fromXML()\l* toXML()\l* premiumData()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Serializable object holding premium data."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -premiumData_" ,arrowhead="odiamond"];
+  Node3 [label="{vector\< ore::data::\lPremiumData::PremiumDatum \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node4 [label="{PremiumDatum\n||+ PremiumDatum()\l+ PremiumDatum()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structore_1_1data_1_1_premium_data_1_1_premium_datum.html",tooltip=" "];
+  Node5 -> Node4 [color="grey25",style="solid",label=" +amount" ,arrowhead="odiamond"];
+  Node5 [label="{double\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node4 [color="grey25",style="solid",label=" +ccy" ,arrowhead="odiamond"];
+  Node6 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node7 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node4 [color="grey25",style="solid",label=" +payDate" ,arrowhead="odiamond"];
+  Node8 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node3 [dir="back",color="orange",style="solid",label=" \< ore::data::PremiumData\l::PremiumDatum \>" ];
+  Node9 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node10 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,26 @@
+digraph "backoff"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="backoff",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="create_directories",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_file_i_o.html#aa8812f7a0ed5115edcbf71d5a0d6e03b",tooltip="Retry wrapper for boost::filesystem::create_directories."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="fopen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_file_i_o.html#add2edb3654b2130d8e6e23f70395543b",tooltip="Retry wrapper for std::fopen."];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="ore::data::CSVFileReport\l::open",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a9e8555112049fc2b4945120b3c45f8ab",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::CSVFileReport\l::CSVFileReport",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a4b9238746c9da99be470027b6ea0e0b5",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="ore::data::CSVFileReport\l::rollover",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a1445193a5ee913dfadf174b47a49f1d2",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="ore::data::CSVFileReport\l::next",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a7ba407af8cfb7f4701894176d4a3ea74",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="ore::data::InMemoryReport\l::toFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#abe91a6caf015cdc4c4e53c3f03dcc103",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="remove_all",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_file_i_o.html#a76af22d38b405883592a6e28a6e9de0c",tooltip="Retry wrapper for boost::filesystem::remove_all."];
+}

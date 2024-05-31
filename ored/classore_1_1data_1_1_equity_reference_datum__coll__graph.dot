@@ -1,0 +1,29 @@
+digraph "EquityReferenceDatum"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{EquityReferenceDatum\n||+ EquityReferenceDatum()\l+ EquityReferenceDatum()\l+ EquityReferenceDatum()\l+ EquityReferenceDatum()\l+ EquityReferenceDatum()\l+ fromXML()\l+ toXML()\l+ equityData()\l+ setEquityData()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Equity Reference data."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{ReferenceDatum\n||+ ReferenceDatum()\l+ ReferenceDatum()\l+ ReferenceDatum()\l+ setType()\l+ setId()\l+ setValidFrom()\l+ type()\l+ id()\l+ validFrom()\l+ fromXML()\l+ toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_reference_datum.html",tooltip="Base class for reference data."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node4 -> Node2 [color="grey25",style="solid",label=" -id_\n-type_" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [color="grey25",style="solid",label=" -validFrom_" ,arrowhead="odiamond"];
+  Node6 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" +TYPE" ,arrowhead="odiamond"];
+  Node7 [label="{char\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [color="grey25",style="solid",label=" #equityData_" ,arrowhead="odiamond"];
+  Node8 [label="{EquityData\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structore_1_1data_1_1_equity_reference_datum_1_1_equity_data.html",tooltip=" "];
+  Node4 -> Node8 [color="grey25",style="solid",label=" +crifQualifier\n+currency\n+equityId\n+equityName\n+exchangeCode\n+proxyIdentifier\n+proxyVolatilityId\n+simmBucket" ,arrowhead="odiamond"];
+  Node9 -> Node8 [color="grey25",style="solid",label=" +scalingFactor" ,arrowhead="odiamond"];
+  Node9 [label="{Size\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node8 [color="grey25",style="solid",label=" +isIndex" ,arrowhead="odiamond"];
+  Node10 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node6 -> Node8 [color="grey25",style="solid",label=" +equityStartDate" ,arrowhead="odiamond"];
+}

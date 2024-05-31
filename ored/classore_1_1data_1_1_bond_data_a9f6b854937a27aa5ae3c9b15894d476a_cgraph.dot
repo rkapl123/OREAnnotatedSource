@@ -1,0 +1,34 @@
+digraph "populateFromBondReferenceData"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="populateFromBondReferenceData",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="look up reference datum in ref data manager and populate, check data for completeness"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="checkData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bond_data.html#aedc5f6df51431b1e9646155e79afffc5",tooltip="check data for completeness"];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="initialise",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bond_data.html#a18abf8b19283101238a77c9e6865b673",tooltip=" "];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="coupons",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bond_data.html#a3d8db715d9a2d0185987be6586b6da90",tooltip=" "];
+  Node3 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="currency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bond_data.html#a14dac022d83c5fa9597e6344199a41b6",tooltip=" "];
+  Node3 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="isPayer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bond_data.html#a49d5ef4ecab600807fc919eb14ba3513",tooltip=" "];
+  Node3 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="zeroBond",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bond_data.html#a1133ea9e816167481beee5fec9bbc418",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="populateFromBondReferenceData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_bond_data.html#a3fe7607641308a7e92896f33818e2327",tooltip="populate data from reference datum and check data for completeness"];
+  Node8 -> Node2 [color="steelblue1",style="solid"];
+  Node8 -> Node3 [color="steelblue1",style="solid"];
+  Node8 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="ore::data::populateFromBond\lReferenceData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ac1445af709e015c19b2136c63d9b8d88",tooltip="Populate bond data from name and ReferenceDataManager."];
+  Node9 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="ore::data::JSONMessage::log",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a5e21eca2668ed948bdc409b19a78e5bb",tooltip="generate Boost log record to pass to corresponding sinks"];
+  Node10 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="ore::data::JSONMessage\l::emitLog",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a6a9077605df871e6e961dd0099645b35",tooltip="generate Boost log record - this method is called by log()"];
+  Node10 -> Node12 [color="steelblue1",style="solid"];
+  Node12 [label="ore::data::JSONMessage::msg",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html#a39f83a0ab38c425a8844c8892b93d69e",tooltip="return a std::string for the log file"];
+}

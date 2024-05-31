@@ -1,0 +1,13 @@
+digraph "Security"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{Security\n||+ Security()\l+ spread()\l+ price()\l+ recoveryRate()\l+ cpr()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Wrapper class for holding Bond Spread and recovery rate quotes."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -cpr_\n-price_\n-recoveryRate\l_\n-spread_" ,arrowhead="odiamond"];
+  Node2 [label="{Handle\< Quote \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="orange",style="solid",label=" \< Quote \>" ];
+  Node3 [label="{Handle\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

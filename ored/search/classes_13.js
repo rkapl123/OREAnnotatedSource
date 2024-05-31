@@ -32,10 +32,12 @@ var searchData=
   ['transitionprobabilityquote_29',['TransitionProbabilityQuote',['../classore_1_1data_1_1_transition_probability_quote.html',1,'ore::data']]],
   ['treasurylockdata_30',['TreasuryLockData',['../classore_1_1data_1_1_treasury_lock_data.html',1,'ore::data']]],
   ['trs_31',['TRS',['../classore_1_1data_1_1_t_r_s.html',1,'ore::data']]],
-  ['trsunderlyingbuilder_32',['TrsUnderlyingBuilder',['../structore_1_1data_1_1_trs_underlying_builder.html',1,'ore::data']]],
-  ['trsunderlyingbuilderfactory_33',['TrsUnderlyingBuilderFactory',['../classore_1_1data_1_1_trs_underlying_builder_factory.html',1,'ore::data']]],
-  ['trswrapper_34',['TRSWrapper',['../classore_1_1data_1_1_t_r_s_wrapper.html',1,'ore::data']]],
-  ['trswrapperaccrualengine_35',['TRSWrapperAccrualEngine',['../classore_1_1data_1_1_t_r_s_wrapper_accrual_engine.html',1,'ore::data']]],
-  ['tsiveriotisfernandeslattice_36',['TsiveriotisFernandesLattice',['../../qle/class_quant_ext_1_1_tsiveriotis_fernandes_lattice.html',1,'QuantExt']]],
-  ['twdtaibor_37',['TWDTaibor',['../../qle/class_quant_ext_1_1_t_w_d_taibor.html',1,'QuantExt']]]
+  ['trscashflow_32',['TRSCashFlow',['../../qle/class_quant_ext_1_1_t_r_s_cash_flow.html',1,'QuantExt']]],
+  ['trsleg_33',['TRSLeg',['../../qle/class_quant_ext_1_1_t_r_s_leg.html',1,'QuantExt']]],
+  ['trsunderlyingbuilder_34',['TrsUnderlyingBuilder',['../structore_1_1data_1_1_trs_underlying_builder.html',1,'ore::data']]],
+  ['trsunderlyingbuilderfactory_35',['TrsUnderlyingBuilderFactory',['../classore_1_1data_1_1_trs_underlying_builder_factory.html',1,'ore::data']]],
+  ['trswrapper_36',['TRSWrapper',['../classore_1_1data_1_1_t_r_s_wrapper.html',1,'ore::data']]],
+  ['trswrapperaccrualengine_37',['TRSWrapperAccrualEngine',['../classore_1_1data_1_1_t_r_s_wrapper_accrual_engine.html',1,'ore::data']]],
+  ['tsiveriotisfernandeslattice_38',['TsiveriotisFernandesLattice',['../../qle/class_quant_ext_1_1_tsiveriotis_fernandes_lattice.html',1,'QuantExt']]],
+  ['twdtaibor_39',['TWDTaibor',['../../qle/class_quant_ext_1_1_t_w_d_taibor.html',1,'QuantExt']]]
 ];

@@ -1,0 +1,22 @@
+digraph "getFxSpotQuote"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="getFxSpotQuote",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="addCrossCcyBasisSwaps",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_yield_curve.html#ab4fc5f56e586e2b853df28a4f00c3bd6",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="buildBootstrappedCurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_yield_curve.html#a9926d222ab68411efb749aa1e6cbd0b1",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="YieldCurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_yield_curve.html#a4b705bf1c5123b7cd7eaab64eca1dd5b",tooltip="Constructor."];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="addCrossCcyFixFloatSwaps",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_yield_curve.html#a071b252c7ef6882d52cb6705d35ff45e",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="addFXForwards",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_yield_curve.html#a4b2bda6f0f23bed37493b47ef450f971",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="steelblue1",style="solid"];
+}

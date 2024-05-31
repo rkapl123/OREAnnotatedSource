@@ -1,0 +1,27 @@
+digraph "InflationCurveCalibrationInfo"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{InflationCurveCalibrationInfo\n||+ ~InflationCurveCalibration\lInfo()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",style="solid",label=" +calendar\n+dayCounter" ,arrowhead="odiamond"];
+  Node2 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",style="solid",label=" +baseDate" ,arrowhead="odiamond"];
+  Node4 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [color="grey25",style="solid",label=" +pillarDates" ,arrowhead="odiamond"];
+  Node5 [label="{vector\< QuantLib::Date \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node5 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node6 -> Node5 [dir="back",color="orange",style="solid",label=" \< QuantLib::Date \>" ];
+  Node6 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node7 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [color="grey25",style="solid",label=" +times" ,arrowhead="odiamond"];
+  Node8 [label="{vector\< double \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node8 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node9 [label="{double\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="orange",style="solid",label=" \< double \>" ];
+}

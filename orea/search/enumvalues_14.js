@@ -14,5 +14,5 @@ var searchData=
   ['v2_5f5a_11',['V2_5A',['../namespaceore_1_1analytics.html#a5c1f8b37037e5cd698ccaae388982477a6fcc7998d9df204c6204e6113aa89520',1,'ore::analytics']]],
   ['v2_5f6_12',['V2_6',['../namespaceore_1_1analytics.html#a5c1f8b37037e5cd698ccaae388982477aaa017751902007a40bd215992761c3eb',1,'ore::analytics']]],
   ['value_13',['Value',['../classore_1_1analytics_1_1_credit_migration_helper.html#a107e6f4665fc02da5c3ece2c028a0517a689202409e48743b914713f96d93947c',1,'ore::analytics::CreditMigrationHelper']]],
-  ['vega_14',['Vega',['../classore_1_1analytics_1_1_simm_configuration.html#a6a26f2b024f96bf0f329f403a135aceaabb8efcd4ab24730b7cd34e88ac390878',1,'ore::analytics::SimmConfiguration']]]
+  ['vega_14',['Vega',['../classore_1_1analytics_1_1_market_risk_configuration.html#a1c18a2eca0437452edb56ef0965d3ec2abb8efcd4ab24730b7cd34e88ac390878',1,'ore::analytics::MarketRiskConfiguration::Vega()'],['../classore_1_1analytics_1_1_simm_configuration.html#a6a26f2b024f96bf0f329f403a135aceaabb8efcd4ab24730b7cd34e88ac390878',1,'ore::analytics::SimmConfiguration::Vega()']]]
 ];

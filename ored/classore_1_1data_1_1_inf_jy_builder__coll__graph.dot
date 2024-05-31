@@ -1,0 +1,56 @@
+digraph "InfJyBuilder"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{InfJyBuilder\n||+ InfJyBuilder()\l+ inflationIndex()\l+ parameterization()\l+ realRateBasket()\l+ indexBasket()\l- performCalculations()\l- buildCalibrationBaskets()\l- buildCalibrationBasket()\l- buildCpiCapFloorBasket()\l- buildYoYCapFloorBasket()\l- buildYoYSwapBasket()\l- calibrationBasket()\l- createRealRateParam()\l- createIndexParam()\l- setupParams()\l- referenceCalibrationDates()\l- initialiseMarket()\l- pricesChanged()\l- marketPrice()\l* forceRecalculate()\l* requiresRecalibration()\l* setCalibrationDone()\l* inflationIndex()\l* parameterization()\l* realRateBasket()\l* indexBasket()\l* performCalculations()\l* buildCalibrationBaskets()\l* buildCalibrationBasket()\l* buildCpiCapFloorBasket()\l* buildYoYCapFloorBasket()\l* buildYoYSwapBasket()\l* calibrationBasket()\l* createRealRateParam()\l* createIndexParam()\l* setupParams()\l* referenceCalibrationDates()\l* initialiseMarket()\l* pricesChanged()\l* marketPrice()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{ModelBuilder\n||+ recalibrate()\l+ forceRecalculate()\l+ requiresRecalibration()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_model_builder.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -market_" ,arrowhead="odiamond"];
+  Node3 [label="{shared_ptr\< ore::data\l::Market \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",style="solid",label=" -configuration_\n-referenceCalibrationGrid_" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [color="grey25",style="solid",label=" -data_" ,arrowhead="odiamond"];
+  Node6 [label="{shared_ptr\< ore::data\l::InfJyData \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" -dontCalibrate_\n-forceCalibration_" ,arrowhead="odiamond"];
+  Node7 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node8 -> Node1 [color="grey25",style="solid",label=" -parameterization_" ,arrowhead="odiamond"];
+  Node8 [label="{shared_ptr\< QuantExt\l::InfJyParameterization \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [color="grey25",style="solid",label=" -marketObserver_" ,arrowhead="odiamond"];
+  Node9 [label="{shared_ptr\< QuantExt\l::MarketObserver \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [color="grey25",style="solid",label=" -rateCurve_" ,arrowhead="odiamond"];
+  Node10 [label="{Handle\< YieldTermStructure \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="orange",style="solid",label=" \< YieldTermStructure \>" ];
+  Node11 [label="{Handle\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node1 [color="grey25",style="solid",label=" -zeroInflationIndex_" ,arrowhead="odiamond"];
+  Node12 [label="{shared_ptr\< QuantLib\l::ZeroInflationIndex \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node1 [color="grey25",style="solid",label=" -cpiVolatility_" ,arrowhead="odiamond"];
+  Node13 [label="{Handle\< QuantLib::CPIVolatility\lSurface \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [color="grey25",style="solid",label=" -yoyInflationIndex_" ,arrowhead="odiamond"];
+  Node14 [label="{shared_ptr\< QuantLib\l::YoYInflationIndex \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node1 [color="grey25",style="solid",label=" -yoyVolatility_" ,arrowhead="odiamond"];
+  Node15 [label="{Handle\< QuantLib::YoYOptionlet\lVolatilitySurface \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node1 [color="grey25",style="solid",label=" -indexBasket_\n-realRateBasket_" ,arrowhead="odiamond"];
+  Node16 [label="{vector\< QuantLib::ext\l::shared_ptr\< QuantLib\l::CalibrationHelper \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node16 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node17 [label="{shared_ptr\< QuantLib\l::CalibrationHelper \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node16 [dir="back",color="orange",style="solid",label=" \< QuantLib::ext::shared\l_ptr\< QuantLib::CalibrationHelper \> \>" ];
+  Node18 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node19 -> Node18 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node19 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node20 -> Node1 [color="grey25",style="solid",label=" -indexInstActive_\n-rrInstActive_" ,arrowhead="odiamond"];
+  Node20 [label="{vector\< bool \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node20 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node18 -> Node20 [dir="back",color="orange",style="solid",label=" \< bool \>" ];
+  Node21 -> Node1 [color="grey25",style="solid",label=" -indexInstExpiries\l_\n-rrInstExpiries_" ,arrowhead="odiamond"];
+  Node21 [label="{Array\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node22 -> Node1 [color="grey25",style="solid",label=" -priceCache_" ,arrowhead="odiamond"];
+  Node22 [label="{vector\< QuantLib::Real \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node23 -> Node22 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node23 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node22 [dir="back",color="orange",style="solid",label=" \< QuantLib::Real \>" ];
+}

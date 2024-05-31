@@ -1,0 +1,28 @@
+digraph "InstrumentWrapper"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{InstrumentWrapper\n||+ InstrumentWrapper()\l+ InstrumentWrapper()\l+ ~InstrumentWrapper()\l+ initialise()\l+ reset()\l+ NPV()\l+ additionalResults()\l+ additionalInstrumentsNPV()\l+ updateQlInstruments()\l+ isOption()\l+ qlInstrument()\l+ multiplier()\l+ multiplier2()\l+ additionalInstruments()\l+ additionalMultipliers()\l+ getCumulativePricingTime()\l+ getNumberOfPricings()\l+ resetPricingStats()\l# getTimedNPV()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Instrument Wrapper."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" #instrument_" ,arrowhead="odiamond"];
+  Node2 [label="{shared_ptr\< QuantLib\l::Instrument \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" #multiplier_" ,arrowhead="odiamond"];
+  Node3 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",style="solid",label=" #additionalInstruments_" ,arrowhead="odiamond"];
+  Node4 [label="{vector\< QuantLib::ext\l::shared_ptr\< QuantLib\l::Instrument \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node4 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node5 -> Node4 [dir="back",color="orange",style="solid",label=" \< QuantLib::ext::shared\l_ptr\< QuantLib::Instrument \> \>" ];
+  Node5 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node6 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" #additionalMultipliers_" ,arrowhead="odiamond"];
+  Node7 [label="{vector\< Real \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node7 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node5 -> Node7 [dir="back",color="orange",style="solid",label=" \< Real \>" ];
+  Node8 -> Node1 [color="grey25",style="solid",label=" #numberOfPricings_" ,arrowhead="odiamond"];
+  Node8 [label="{size_t\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [color="grey25",style="solid",label=" #cumulativePricingTime_" ,arrowhead="odiamond"];
+  Node9 [label="{nanosecond_type\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

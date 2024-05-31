@@ -17,5 +17,7 @@ var searchData=
   ['crediteventtype_14',['CreditEventType',['../../ored/namespaceore_1_1data.html#a87bf50b1522c93662fee0e448924cbdb',1,'ore::data']]],
   ['creditmode_15',['CreditMode',['../classore_1_1analytics_1_1_credit_migration_helper.html#a1b6782b367cf2a3aad70d1ed2c2d59b7',1,'ore::analytics::CreditMigrationHelper']]],
   ['creditportfoliosensitivitydecomposition_16',['CreditPortfolioSensitivityDecomposition',['../../ored/namespaceore_1_1data.html#ab42387d9dd2c00239f6e97b4b0862d70',1,'ore::data']]],
-  ['curvetype_17',['CurveType',['../../ored/classore_1_1data_1_1_curve_spec.html#a007dea27057008224e9da69eaeca8606',1,'ore::data::CurveSpec']]]
+  ['criftype_17',['CrifType',['../classore_1_1analytics_1_1_crif.html#af24ece2de2e8f08b9873bc22b9efb917',1,'ore::analytics::Crif']]],
+  ['curvaturescenario_18',['CurvatureScenario',['../structore_1_1analytics_1_1_crif_record.html#ac61bd0b90f15bdd71d99b0ea00a988a5',1,'ore::analytics::CrifRecord']]],
+  ['curvetype_19',['CurveType',['../../ored/classore_1_1data_1_1_curve_spec.html#a007dea27057008224e9da69eaeca8606',1,'ore::data::CurveSpec']]]
 ];

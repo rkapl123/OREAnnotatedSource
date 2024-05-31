@@ -1,0 +1,60 @@
+digraph "Log"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{Log\n||+ registerLogger()\l+ registerIndependentLogger()\l+ clearAllIndependentLoggers()\l+ hasLogger()\l+ hasIndependentLogger()\l+ logger()\l+ independentLogger()\l+ removeLogger()\l+ removeIndependentLogger()\l+ removeAllLoggers()\l+ addExcludeFilter()\l+ removeExcludeFilter()\l+ checkExcludeFilters()\l+ header()\l+ logStream()\l+ log()\l+ mutex()\l+ filter()\l+ mask()\l+ setMask()\l+ rootPath()\l+ setRootPath()\l+ maxLen()\l+ setMaxLen()\l+ enabled()\l+ switchOn()\l+ switchOff()\l+ writeSuppressedMessagesHint()\l+ setPid()\l- Log()\l- source()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Global static Log class."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{Singleton\< Log, std\l::integral_constant\l\< bool, true \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -loggers_" ,arrowhead="odiamond"];
+  Node3 [label="{map\< std::string, QuantLib\l::ext::shared_ptr\< ore::\ldata::Logger \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node3 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node6 [label="{shared_ptr\< ore::data\l::Logger \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node3 [dir="back",color="orange",style="solid",label=" \< std::string, QuantLib\l::ext::shared_ptr\< ore\l::data::Logger \> \>" ];
+  Node7 [label="{map\< K, T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node8 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node7 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node9 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [color="grey25",style="solid",label=" -independentLoggers_" ,arrowhead="odiamond"];
+  Node10 [label="{map\< std::string, QuantLib\l::ext::shared_ptr\< ore::\ldata::IndependentLogger \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node10 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node11 -> Node10 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node11 [label="{shared_ptr\< ore::data\l::IndependentLogger \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="orange",style="solid",label=" \< std::string, QuantLib\l::ext::shared_ptr\< ore\l::data::IndependentLogger \> \>" ];
+  Node12 -> Node1 [color="grey25",style="solid",label=" -enabled_\n-writeSuppressedMessages\lHint_" ,arrowhead="odiamond"];
+  Node12 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node13 -> Node1 [color="grey25",style="solid",label=" -mask_" ,arrowhead="odiamond"];
+  Node13 [label="{unsigned\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [color="grey25",style="solid",label=" -rootPath_" ,arrowhead="odiamond"];
+  Node14 [label="{path\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node1 [color="grey25",style="solid",label=" -ls_" ,arrowhead="odiamond"];
+  Node15 [label="{ostringstream\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node16 [label="{basic_ostringstream\l\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node16 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node17 [label="{basic_ostream\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node17 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node18 [label="{basic_ios\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node19 -> Node18 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node19 [label="{ios_base\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node20 -> Node1 [color="grey25",style="solid",label=" -lastLineNo_\n-maxLen_\n-pid_" ,arrowhead="odiamond"];
+  Node20 [label="{int\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node21 -> Node1 [color="grey25",style="solid",label=" -sameSourceLocationCutoff\l_\n-sameSourceLocationSince_" ,arrowhead="odiamond"];
+  Node21 [label="{size_t\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",style="solid",label=" -lastFileName_" ,arrowhead="odiamond"];
+  Node22 -> Node1 [color="grey25",style="solid",label=" -mutex_" ,arrowhead="odiamond"];
+  Node22 [label="{shared_mutex\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node23 -> Node1 [color="grey25",style="solid",label=" -excludeFilters_" ,arrowhead="odiamond"];
+  Node23 [label="{map\< std::string, std\l::function\< bool(const\l std::string &)\> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node23 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node24 -> Node23 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node24 [label="{function\< bool(const\l std::string &)\>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node23 [dir="back",color="orange",style="solid",label=" \< std::string, std\l::function\< bool(const\l std::string &)\> \>" ];
+}

@@ -1,0 +1,47 @@
+digraph "buildNotionalLeg"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="buildNotionalLeg",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::RequiredFixings\l::addFixingDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_required_fixings.html#ae12e0cc681b4cc2d31b7ee2acc16e99c",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="fixingDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="buildFxIndex",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ade4be232275cfbb581d21fddbc01b7be",tooltip=" "];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="parseFxIndex",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#gaf0c22b2380b7865d6513ec50a6990bad",tooltip="Convert std::string to QuantExt::FxIndex."];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="getFxIndexConventions",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a924eb5d1881d31c82ac8abbdc15a5027",tooltip=" "];
+  Node6 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="isFxIndex",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a123e19b0fac4f5124a8c26bad300de0e",tooltip=" "];
+  Node6 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="isPseudoCurrency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#gac0cf10eef45b9d706e29e7eb2ddddc90",tooltip="check for pseudo currency = precious metal or crypto currency *‍/"];
+  Node6 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="parseCalendar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga0f72d6fcccae10a674bdcd5095200f14",tooltip="Convert text to QuantLib::Calendar."];
+  Node6 -> Node5 [color="steelblue1",style="solid"];
+  Node5 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="parseCurrency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga6e9e781a58e78200301c76161589fc7b",tooltip="Convert text to QuantLib::Currency."];
+  Node4 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="xccyYieldCurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a6048fd87840c79258ed4e959f0555a2f",tooltip=" "];
+  Node11 -> Node11 [color="steelblue1",style="solid"];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node1 -> Node12 [color="steelblue1",style="solid"];
+  Node12 [label="makeNotionalLeg",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ae0e87506a8df9d5f518734d3b1a28ab3",tooltip=" "];
+  Node12 -> Node13 [color="steelblue1",style="solid"];
+  Node13 [label="QuantExt::unpackIndexedCoupon",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a2fbdcf775a469730892895d65ec4decc",tooltip=" "];
+  Node1 -> Node14 [color="steelblue1",style="solid"];
+  Node14 [label="parseBusinessDayConvention",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga86adcf55f91e340ff40783964666e732",tooltip="Convert text to QuantLib::BusinessDayConvention."];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node1 -> Node15 [color="steelblue1",style="solid"];
+  Node15 [label="parsePaymentLag",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#gaaccd32117e7bb7cbec793de579976cc8",tooltip="Convert text to PaymentLag."];
+  Node15 -> Node16 [color="steelblue1",style="solid"];
+  Node16 [label="parseInteger",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#gaecd67eda4fb5f4859bb8f6d383547721",tooltip="Convert text to QuantLib::Integer."];
+  Node16 -> Node16 [color="steelblue1",style="solid"];
+  Node15 -> Node17 [color="steelblue1",style="solid"];
+  Node17 [label="parsePeriod",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga8e0623e2cb01e250e9cfec4619256208",tooltip="Convert text to QuantLib::Period."];
+}

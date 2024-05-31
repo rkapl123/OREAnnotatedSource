@@ -1,0 +1,30 @@
+digraph "TenorBasisTwoSwapConvention"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{TenorBasisTwoSwapConvention\n||+ TenorBasisTwoSwapConvention()\l+ TenorBasisTwoSwapConvention()\l+ calendar()\l+ longFixedFrequency()\l+ longFixedConvention()\l+ longFixedDayCounter()\l+ longIndex()\l+ shortFixedFrequency()\l+ shortFixedConvention()\l+ shortFixedDayCounter()\l+ shortIndex()\l+ longMinusShort()\l* fromXML()\l* toXML()\l* build()\l* TenorBasisTwoSwapConvention()\l* TenorBasisTwoSwapConvention()\l* calendar()\l* longFixedFrequency()\l* longFixedConvention()\l* longFixedDayCounter()\l* longIndex()\l* shortFixedFrequency()\l* shortFixedConvention()\l* shortFixedDayCounter()\l* shortIndex()\l* longMinusShort()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Container for storing conventions for Tenor Basis Swaps quoted as a spread of two interest rate swaps..."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{Convention\n||+ ~Convention()\l+ id()\l+ type()\l* build()\l* Convention()\l* Convention()\l* id()\l* type()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_convention.html",tooltip="Abstract base class for convention objects."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node4 -> Node2 [color="grey25",style="solid",label=" #type_" ,arrowhead="odiamond"];
+  Node4 [label="{Type\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [color="grey25",style="solid",label=" #id_" ,arrowhead="odiamond"];
+  Node5 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node6 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" -calendar_" ,arrowhead="odiamond"];
+  Node7 [label="{Calendar\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [color="grey25",style="solid",label=" -longFixedFrequency\l_\n-shortFixedFrequency_" ,arrowhead="odiamond"];
+  Node8 [label="{Frequency\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [color="grey25",style="solid",label=" -longFixedConvention\l_\n-shortFixedConvention_" ,arrowhead="odiamond"];
+  Node9 [label="{BusinessDayConvention\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [color="grey25",style="solid",label=" -longFixedDayCounter\l_\n-shortFixedDayCounter_" ,arrowhead="odiamond"];
+  Node10 [label="{DayCounter\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [color="grey25",style="solid",label=" -longMinusShort_" ,arrowhead="odiamond"];
+  Node11 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",style="solid",label=" -strCalendar_\n-strLongFixedConvention\l_\n-strLongFixedDayCounter\l_\n-strLongFixedFrequency\l_\n-strLongIndex_\n-strLongMinusShort\l_\n-strShortFixedConvention\l_\n-strShortFixedDayCounter\l_\n-strShortFixedFrequency\l_\n-strShortIndex_\n..." ,arrowhead="odiamond"];
+}

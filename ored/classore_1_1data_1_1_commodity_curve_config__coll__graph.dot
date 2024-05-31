@@ -1,0 +1,68 @@
+digraph "CommodityCurveConfig"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{CommodityCurveConfig\n||+ CommodityCurveConfig()\l+ CommodityCurveConfig()\l+ CommodityCurveConfig()\l+ CommodityCurveConfig()\l+ CommodityCurveConfig()\l+ fromXML()\l+ toXML()\l+ type()\l+ currency()\l+ commoditySpotQuoteId()\l+ dayCountId()\l+ interpolationMethod()\l+ basePriceCurveId()\l+ baseYieldCurveId()\l+ yieldCurveId()\l+ extrapolation()\l+ fwdQuotes()\l+ conventionsId()\l+ baseConventionsId()\l+ addBasis()\l+ monthOffset()\l+ averageBase()\l+ priceAsHistFixing()\l+ priceSegments()\l+ bootstrapConfig()\l* type()\l* currency()\l* commoditySpotQuoteId()\l* dayCountId()\l* interpolationMethod()\l* basePriceCurveId()\l* baseYieldCurveId()\l* yieldCurveId()\l* extrapolation()\l* conventionsId()\l* baseConventionsId()\l* addBasis()\l* monthOffset()\l* averageBase()\l* priceAsHistFixing()\l* setPriceSegments()\l* setBootstrapConfig()\l* populateRequiredCurveIds()\l* processSegments()\l* CommodityCurveConfig()\l* CommodityCurveConfig()\l* CommodityCurveConfig()\l* CommodityCurveConfig()\l* CommodityCurveConfig()\l* fromXML()\l* toXML()\l* type()\l* currency()\l* commoditySpotQuoteId()\l* dayCountId()\l* interpolationMethod()\l* basePriceCurveId()\l* baseYieldCurveId()\l* yieldCurveId()\l* extrapolation()\l* fwdQuotes()\l* conventionsId()\l* baseConventionsId()\l* addBasis()\l* monthOffset()\l* averageBase()\l* priceAsHistFixing()\l* priceSegments()\l* bootstrapConfig()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Commodity curve configuration."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{CurveConfig\n||+ CurveConfig()\l+ CurveConfig()\l+ curveID()\l+ curveDescription()\l+ requiredCurveIds()\l+ requiredCurveIds()\l* curveID()\l* curveDescription()\l* requiredCurveIds()\l* requiredCurveIds()\l* quotes()\l* CurveConfig()\l* CurveConfig()\l* curveID()\l* curveDescription()\l* requiredCurveIds()\l* requiredCurveIds()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_config.html",tooltip="Base curve configuration."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node4 -> Node2 [color="grey25",style="solid",label=" #curveDescription_\n#curveID_" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [color="grey25",style="solid",label=" #quotes_" ,arrowhead="odiamond"];
+  Node6 [label="{vector\< string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node6 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node7 -> Node6 [dir="back",color="orange",style="solid",label=" \< string \>" ];
+  Node7 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node8 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node2 [color="grey25",style="solid",label=" #requiredCurveIds_" ,arrowhead="odiamond"];
+  Node9 [label="{map\< CurveSpec::CurveType,\l set\< string \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node10 [label="{CurveType\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node9 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node11 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node11 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node12 -> Node11 [dir="back",color="orange",style="solid",label=" \< string \>" ];
+  Node12 [label="{set\< K \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node13 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node9 [dir="back",color="orange",style="solid",label=" \< CurveSpec::CurveType,\l set\< string \> \>" ];
+  Node14 [label="{map\< K, T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node14 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node8 -> Node14 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node15 -> Node1 [color="grey25",style="solid",label=" -type_" ,arrowhead="odiamond"];
+  Node15 [label="{Type\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [color="grey25",style="solid",label=" -fwdQuotes_" ,arrowhead="odiamond"];
+  Node4 -> Node1 [color="grey25",style="solid",label=" -baseConventionsId\l_\n-basePriceCurveId\l_\n-baseYieldCurveId\l_\n-commoditySpotQuote\lId_\n-conventionsId\l_\n-currency_\n-dayCountId\l_\n-interpolation\lMethod_\n-yieldCurveId_" ,arrowhead="odiamond"];
+  Node16 -> Node1 [color="grey25",style="solid",label=" -addBasis_\n-averageBase_\n-extrapolation_\n-priceAsHistFixing_" ,arrowhead="odiamond"];
+  Node16 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node17 -> Node1 [color="grey25",style="solid",label=" -monthOffset_" ,arrowhead="odiamond"];
+  Node17 [label="{Natural\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node1 [color="grey25",style="solid",label=" -priceSegments_" ,arrowhead="odiamond"];
+  Node18 [label="{map\< unsigned short,\l ore::data::PriceSegment \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node19 -> Node18 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node19 [label="{unsigned\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node20 -> Node18 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node20 [label="{PriceSegment\n||+ PriceSegment()\l+ PriceSegment()\l+ type()\l+ conventionsId()\l+ quotes()\l+ priority()\l+ offPeakDaily()\l+ peakPriceCurveId()\l+ peakPriceCalendar()\l+ empty()\l* fromXML()\l* toXML()\l* populateQuotes()\l* PriceSegment()\l* PriceSegment()\l* type()\l* conventionsId()\l* quotes()\l* priority()\l* offPeakDaily()\l* peakPriceCurveId()\l* peakPriceCalendar()\l* empty()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_price_segment.html",tooltip=" "];
+  Node3 -> Node20 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node4 -> Node20 [color="grey25",style="solid",label=" -conventionsId_\n-peakPriceCalendar\l_\n-peakPriceCurveId\l_\n-strType_" ,arrowhead="odiamond"];
+  Node21 -> Node20 [color="grey25",style="solid",label=" -quotes_" ,arrowhead="odiamond"];
+  Node21 [label="{vector\< std::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node21 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node7 -> Node21 [dir="back",color="orange",style="solid",label=" \< std::string \>" ];
+  Node22 -> Node20 [color="grey25",style="solid",label=" -priority_" ,arrowhead="odiamond"];
+  Node22 [label="{optional\< unsigned\l short \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node23 -> Node20 [color="grey25",style="solid",label=" -offPeakDaily_" ,arrowhead="odiamond"];
+  Node23 [label="{optional\< ore::data\l::PriceSegment::OffPeakDaily \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node20 [color="grey25",style="solid",label=" -empty_" ,arrowhead="odiamond"];
+  Node15 -> Node20 [color="grey25",style="solid",label=" -type_" ,arrowhead="odiamond"];
+  Node14 -> Node18 [dir="back",color="orange",style="solid",label=" \< unsigned short, ore\l::data::PriceSegment \>" ];
+  Node24 -> Node1 [color="grey25",style="solid",label=" -bootstrapConfig_" ,arrowhead="odiamond"];
+  Node24 [label="{optional\< ore::data\l::BootstrapConfig \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

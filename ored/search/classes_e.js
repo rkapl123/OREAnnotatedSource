@@ -48,5 +48,6 @@ var searchData=
   ['overnightindexedcouponpricer_45',['OvernightIndexedCouponPricer',['../../qle/class_quant_ext_1_1_overnight_indexed_coupon_pricer.html',1,'QuantExt']]],
   ['overnightindexedcrossccybasisswap_46',['OvernightIndexedCrossCcyBasisSwap',['../../qle/class_quant_ext_1_1_overnight_indexed_cross_ccy_basis_swap.html',1,'QuantExt']]],
   ['overnightindexedcrossccybasisswapengine_47',['OvernightIndexedCrossCcyBasisSwapEngine',['../../qle/class_quant_ext_1_1_overnight_indexed_cross_ccy_basis_swap_engine.html',1,'QuantExt']]],
-  ['overnightleg_48',['OvernightLeg',['../../qle/class_quant_ext_1_1_overnight_leg.html',1,'QuantExt']]]
+  ['overnightindexwithfixingoverride_48',['OvernightIndexWithFixingOverride',['../../qle/class_quant_ext_1_1_overnight_index_with_fixing_override.html',1,'QuantExt']]],
+  ['overnightleg_49',['OvernightLeg',['../../qle/class_quant_ext_1_1_overnight_leg.html',1,'QuantExt']]]
 ];

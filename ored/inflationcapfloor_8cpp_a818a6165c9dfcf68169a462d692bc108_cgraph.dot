@@ -1,0 +1,18 @@
+digraph "BOOST_AUTO_TEST_CASE"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="QuantExt::yoyInflationLeg\l::withNotionals",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1yoy_inflation_leg.html#a31afff2ccfbd52b6333575ee40c23504",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="QuantExt::yoyInflationLeg\l::withPaymentAdjustment",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1yoy_inflation_leg.html#a2a7bfe6996c7e5edb890e0877a52be46",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="QuantExt::yoyInflationLeg\l::withPaymentDayCounter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1yoy_inflation_leg.html#a7bd51a0a7da6c232fa3bcc70045d501d",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="QuantExt::yoyInflationLeg\l::withRateCurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1yoy_inflation_leg.html#a0617466d18a23a375cc3d45ec9102b33",tooltip=" "];
+}

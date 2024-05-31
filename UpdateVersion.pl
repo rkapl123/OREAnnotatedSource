@@ -3,7 +3,6 @@ use strict; use feature 'unicode_strings';
 print "new version (empty to skip):";
 my $newVersion = <STDIN>;
 chomp $newVersion;
-# used for CONFIGURATION REFERENCE, fetches comments from %hashCheck in Common.pm and translates them to pod =items
 
 for my $libfile ("orea","ored","quantext") {
 print "updating version for ${libfile}headerFull.html\n";

@@ -1,0 +1,19 @@
+digraph "addDefaultBuilders"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="addDefaultBuilders",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Add a set of default engine and leg builders."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="registerBuilder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_engine_factory.html#afb291629fa71143a87af398a160833df",tooltip="Register a builder with the factory."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="builder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_engine_factory.html#a42204bc14082d5bbe0e718b675ed5ad8",tooltip="Get a builder by trade type."];
+  Node3 -> Node3 [color="steelblue1",style="solid"];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="registerLegBuilder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_engine_factory.html#afb2dd3b5cd2e56acfc5147d6e4fd656e",tooltip="Register a leg builder with the factory."];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="legBuilder",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_engine_factory.html#a478ec016dd58ed15c12deae34efa1b60",tooltip="Get a leg builder by leg type."];
+}

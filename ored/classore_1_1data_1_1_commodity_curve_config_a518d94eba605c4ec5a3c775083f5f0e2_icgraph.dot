@@ -1,0 +1,24 @@
+digraph "priceSegments"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="priceSegments",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="CommodityCurveConfig",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_curve_config.html#a57dd7db942e45bd1bc35f0276438b360",tooltip="Detailed constructor for Piecewise commodity curve configuration."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::CommodityCurve\l::buildPiecewiseCurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_curve.html#a771e0386d3a147f22a46b810d82f4fd3",tooltip="Build commodity piecewise price curve."];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_curve_config.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2commoditycurveconfig_8cpp.html#a211329d4e6d8e3d23c39ccee40f56f99",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="processSegments",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_curve_config.html#a641c2327efd02e04cddf1fa98e0c3345",tooltip="Process price segments when configuring a Piecewise curve."];
+  Node6 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node6 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="setPriceSegments",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_curve_config.html#ad2be2caac5ea859db8ab86ed2ee75975",tooltip=" "];
+}

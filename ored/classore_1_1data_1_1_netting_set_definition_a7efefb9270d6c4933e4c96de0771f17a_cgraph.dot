@@ -1,0 +1,25 @@
+digraph "toXML"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="toXML",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::XMLUtils\l::addChild",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#aced1fd4bd35df3642d8022301744b138",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::XMLDocument\l::allocNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_document.html#a8717c517803f0df2e693e3cadefeafd7",tooltip="util functions that wrap rapidxml"];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::XMLDocument\l::allocString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_document.html#ae3474059e483990f3afea260096e5c90",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::XMLUtils\l::addChildren",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#a29cd524fd4d9381e10c71939131fa4d4",tooltip=" "];
+  Node5 -> Node2 [color="steelblue1",style="solid"];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::XMLUtils\l::appendNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_utils.html#ae646b9cdf949a88f35c36c18bf90b370",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::to_string",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455",tooltip=" "];
+  Node7 -> Node7 [color="steelblue1",style="solid"];
+}

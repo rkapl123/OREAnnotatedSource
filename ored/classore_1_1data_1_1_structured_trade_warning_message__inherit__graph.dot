@@ -1,0 +1,13 @@
+digraph "StructuredTradeWarningMessage"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{StructuredTradeWarningMessage\n||+ StructuredTradeWarningMessage()\l+ StructuredTradeWarningMessage()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Utility classes for Structured warnings, contains the Trade ID and Type."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{StructuredMessage\n|+ name\l|+ StructuredMessage()\l+ StructuredMessage()\l+ ~StructuredMessage()\l+ msg()\l+ emitLog()\l# addSubFields()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_structured_message.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{JSONMessage\n|# data_\l|+ ~JSONMessage()\l+ msg()\l+ log()\l+ json()\l+ set()\l# emitLog()\l# jsonify()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_j_s_o_n_message.html",tooltip=" "];
+}

@@ -11,5 +11,5 @@ var searchData=
   ['mode_8',['Mode',['../classore_1_1analytics_1_1_observation_mode.html#a46c8a310cf4c094f8c80e1cb8dc1f911',1,'ore::analytics::ObservationMode']]],
   ['modeltype_9',['ModelType',['../../qle/class_quant_ext_1_1_cross_asset_model.html#a9f27db0468ce0ce2994eb68dc919b15d',1,'QuantExt::CrossAssetModel']]],
   ['momenttype_10',['MomentType',['../../ored/namespaceore_1_1data.html#a1dd3178717c03aef7d6851a3dfd92207',1,'ore::data']]],
-  ['mporcashflowmode_11',['MporCashFlowMode',['../classore_1_1analytics_1_1_scenario_generator_data.html#a7693a772803cb30c6e553518468a72eb',1,'ore::analytics::ScenarioGeneratorData']]]
+  ['mporcashflowmode_11',['MporCashFlowMode',['../../ored/namespaceore_1_1data.html#a7693a772803cb30c6e553518468a72eb',1,'ore::data']]]
 ];

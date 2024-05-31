@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fixingcache_0',['FixingCache',['../classore_1_1analytics_1_1_fixing_manager.html#a5cc0a277167f7f58c3fe76544cdb96a2',1,'ore::analytics::FixingManager']]],
-  ['fixingentry_1',['FixingEntry',['../../ored/classore_1_1data_1_1_required_fixings.html#aab54e199d0dad042f3d2ac66e7fec268',1,'ore::data::RequiredFixings']]],
-  ['fixingmap_2',['FixingMap',['../classore_1_1analytics_1_1_fixing_manager.html#a4a085461566b78911bfe7342f15eb96c',1,'ore::analytics::FixingManager::FixingMap()'],['../namespaceore_1_1analytics.html#ad87cc618af14ca6052f32a20771c79cf',1,'ore::analytics::FixingMap()']]]
+  ['file_5fsink_0',['file_sink',['../../ored/namespaceore_1_1data.html#adbcbe666be974a54b446768e3b1a6bb7',1,'ore::data']]],
+  ['fixingcache_1',['FixingCache',['../classore_1_1analytics_1_1_fixing_manager.html#a412076622ec91f5ee0a6a7e7ad5324c3',1,'ore::analytics::FixingManager']]],
+  ['fixingmap_2',['FixingMap',['../classore_1_1analytics_1_1_fixing_manager.html#a4022cb9366587961de7db51cf21319ef',1,'ore::analytics::FixingManager::FixingMap()'],['../namespaceore_1_1analytics.html#a4b0dd573ec451060582425ddb703ede9',1,'ore::analytics::FixingMap()']]]
 ];

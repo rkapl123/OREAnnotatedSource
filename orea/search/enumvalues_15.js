@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wepay_0',['WePay',['../classore_1_1analytics_1_1_scenario_generator_data.html#a7693a772803cb30c6e553518468a72eba8bad052292e5ee168ff065b84a996142',1,'ore::analytics::ScenarioGeneratorData']]]
+  ['xccybasis_0',['XCcyBasis',['../structore_1_1analytics_1_1_crif_record.html#a1c18a2eca0437452edb56ef0965d3ec2aef31392597ae33c22cd85e39bb165997',1,'ore::analytics::CrifRecord']]]
 ];

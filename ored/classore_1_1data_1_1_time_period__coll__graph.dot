@@ -1,0 +1,17 @@
+digraph "TimePeriod"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{TimePeriod\n||+ TimePeriod()\l+ numberOfContiguousParts()\l+ startDates()\l+ endDates()\l+ contains()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Handles non-contiguous time period."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -endDates_\n-startDates_" ,arrowhead="odiamond"];
+  Node2 [label="{vector\< Date \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node3 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="orange",style="solid",label=" \< Date \>" ];
+  Node4 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node5 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

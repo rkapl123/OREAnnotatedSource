@@ -1,0 +1,11 @@
+digraph "SafeStack&lt; T &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{SafeStack\< T \>\n||+ top()\l+ top()\l+ pop()\l+ empty()\l+ size()\l+ push()\l+ push()\l+ emplace()\l+ swap()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -stack_" ,arrowhead="odiamond"];
+  Node2 [label="{stack\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

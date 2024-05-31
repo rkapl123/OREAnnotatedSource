@@ -1,0 +1,20 @@
+digraph "BOOST_AUTO_TEST_CASE"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="QuantExt::CPILeg::withFixed\lRates",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_c_p_i_leg.html#a5cd9bfd8425f90f4fb58adb5c48545e3",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="QuantExt::CPILeg::withNotionals",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_c_p_i_leg.html#a0507c46361d7d5c8f983e47f4d36f476",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="QuantExt::CPILeg::withObservation\lInterpolation",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_c_p_i_leg.html#af76fc29933663e5e036b069d83cd7ae4",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="QuantExt::CPILeg::withPayment\lAdjustment",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_c_p_i_leg.html#a126fda36b39cf9404d7a3436fb2f22d7",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="QuantExt::CPILeg::withPayment\lDayCounter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_c_p_i_leg.html#a8cfbd4b0aea1a6f33ec8e4c850f75ed2",tooltip=" "];
+}

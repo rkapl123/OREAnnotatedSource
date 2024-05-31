@@ -1,0 +1,25 @@
+digraph "get"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="get",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="get quotes matching a wildcard, this should be overriden in derived classes for performance"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="get",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_loader.html#a8148586c75e4912f4d2d0ade83e34b19",tooltip="get quote by its unique name, throws if not existent, override in derived classes for performance"];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::makeDummyMarket\lDatum",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ad54d6392da5740836cc7336a525c67c3",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::Wildcard\l::hasWildcard",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::Wildcard\l::isPrefix",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_wildcard.html#a1d1a164eac0e3f5fec7539bb4c3d6182",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::Wildcard\l::matches",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_wildcard.html#a8097329a4de8f1d7ea77f3f5027c95a7",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::Wildcard\l::pattern",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_wildcard.html#a43dd0b801a3a054364dd0f080515b115",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="ore::data::Wildcard\l::wildcardPos",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_wildcard.html#a9160ddc8711b71d34f258d06d56c07e7",tooltip=" "];
+}

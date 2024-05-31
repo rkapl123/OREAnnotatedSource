@@ -1,0 +1,29 @@
+digraph "PortfolioBasketReferenceDatum"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{PortfolioBasketReference\lDatum\n||+ PortfolioBasketReference\lDatum()\l+ PortfolioBasketReference\lDatum()\l+ PortfolioBasketReference\lDatum()\l+ fromXML()\l+ toXML()\l+ getTrades()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{ReferenceDatum\n||+ ReferenceDatum()\l+ ReferenceDatum()\l+ ReferenceDatum()\l+ setType()\l+ setId()\l+ setValidFrom()\l+ type()\l+ id()\l+ validFrom()\l+ fromXML()\l+ toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_reference_datum.html",tooltip="Base class for reference data."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node4 -> Node2 [color="grey25",style="solid",label=" -id_\n-type_" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [color="grey25",style="solid",label=" -validFrom_" ,arrowhead="odiamond"];
+  Node6 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" +TYPE" ,arrowhead="odiamond"];
+  Node7 [label="{char\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [color="grey25",style="solid",label=" -tradecomponents_" ,arrowhead="odiamond"];
+  Node8 [label="{vector\< QuantLib::ext\l::shared_ptr\< ore::data\l::Trade \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node8 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node9 [label="{shared_ptr\< ore::data\l::Trade \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node8 [dir="back",color="orange",style="solid",label=" \< QuantLib::ext::shared\l_ptr\< ore::data::Trade \> \>" ];
+  Node10 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node11 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

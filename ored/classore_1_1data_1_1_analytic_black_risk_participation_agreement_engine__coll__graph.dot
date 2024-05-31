@@ -1,0 +1,61 @@
+digraph "AnalyticBlackRiskParticipationAgreementEngine"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{AnalyticBlackRiskParticipation\lAgreementEngine\n||+ AnalyticBlackRiskParticipation\lAgreementEngine()\l- protectionLegNpv()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{RiskParticipationAgreement\lBaseEngine\n||+ RiskParticipationAgreement\lBaseEngine()\l+ buildDiscretisationGrid()\l# protectionLegNpv()\l# calculate()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_risk_participation_agreement_base_engine.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{engine\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_risk_participation_agreement_1_1engine.html",tooltip=" "];
+  Node4 -> Node2 [color="grey25",style="solid",label=" #baseCcy_" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [color="grey25",style="solid",label=" #discountCurves_" ,arrowhead="odiamond"];
+  Node6 [label="{map\< std::string, Handle\l\< YieldTermStructure \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node6 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node7 -> Node6 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node7 [label="{Handle\< YieldTermStructure \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="orange",style="solid",label=" \< YieldTermStructure \>" ];
+  Node8 [label="{Handle\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node6 [dir="back",color="orange",style="solid",label=" \< std::string, Handle\l\< YieldTermStructure \> \>" ];
+  Node9 [label="{map\< K, T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node10 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node9 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node11 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node2 [color="grey25",style="solid",label=" #fxSpots_" ,arrowhead="odiamond"];
+  Node12 [label="{map\< std::string, Handle\l\< Quote \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node12 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node13 [label="{Handle\< Quote \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node13 [dir="back",color="orange",style="solid",label=" \< Quote \>" ];
+  Node9 -> Node12 [dir="back",color="orange",style="solid",label=" \< std::string, Handle\l\< Quote \> \>" ];
+  Node14 -> Node2 [color="grey25",style="solid",label=" #defaultCurve_" ,arrowhead="odiamond"];
+  Node14 [label="{Handle\< DefaultProbability\lTermStructure \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node14 [dir="back",color="orange",style="solid",label=" \< DefaultProbabilityTerm\lStructure \>" ];
+  Node13 -> Node2 [color="grey25",style="solid",label=" #recoveryRate_" ,arrowhead="odiamond"];
+  Node15 -> Node2 [color="grey25",style="solid",label=" #maxDiscretisationPoints\l_\n#maxGapDays_" ,arrowhead="odiamond"];
+  Node15 [label="{Size\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node2 [color="grey25",style="solid",label=" #gridDates_" ,arrowhead="odiamond"];
+  Node16 [label="{vector\< Date \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node16 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node17 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node16 [dir="back",color="orange",style="solid",label=" \< Date \>" ];
+  Node18 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node18 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node17 -> Node2 [color="grey25",style="solid",label=" #referenceDate_" ,arrowhead="odiamond"];
+  Node19 -> Node2 [color="grey25",style="solid",label=" #effectiveRecoveryRate_" ,arrowhead="odiamond"];
+  Node19 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node20 -> Node1 [color="grey25",style="solid",label=" -volatility_" ,arrowhead="odiamond"];
+  Node20 [label="{Handle\< SwaptionVolatility\lStructure \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node20 [dir="back",color="orange",style="solid",label=" \< SwaptionVolatilityStructure \>" ];
+  Node21 -> Node1 [color="grey25",style="solid",label=" -swapIndexBase_" ,arrowhead="odiamond"];
+  Node21 [label="{shared_ptr\< SwapIndex \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node22 -> Node1 [color="grey25",style="solid",label=" -alwaysRecomputeOptionRepresentation\l_\n-matchUnderlyingTenor_" ,arrowhead="odiamond"];
+  Node22 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node19 -> Node1 [color="grey25",style="solid",label=" -reversion_" ,arrowhead="odiamond"];
+}

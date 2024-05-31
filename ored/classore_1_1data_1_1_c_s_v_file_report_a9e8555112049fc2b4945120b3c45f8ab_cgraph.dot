@@ -1,0 +1,18 @@
+digraph "open"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="open",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::FileIO::\lfopen",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_file_i_o.html#add2edb3654b2130d8e6e23f70395543b",tooltip="Retry wrapper for std::fopen."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::FileIO::\lbackoff",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_file_i_o.html#a1daa2e3edf57698976d9a2fca1f6819e",tooltip=" "];
+  Node2 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::FileIO::\lmaxBackoff",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_file_i_o.html#a77fced44211da5e22aeaad73ab8055ca",tooltip=" "];
+  Node2 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::FileIO::\lmaxRetries",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_file_i_o.html#a7b4c3165ded4410d0be9f0369c5b2113",tooltip="The maximum number of retries, defaults to 7."];
+}

@@ -1,0 +1,11 @@
+digraph "Log"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{Log\n|- loggers_\l- independentLoggers_\l- enabled_\l- mask_\l- rootPath_\l- ls_\l- maxLen_\l- sameSourceLocationSince_\l- writeSuppressedMessagesHint_\l- sameSourceLocationCutoff_\l- lastFileName_\l- lastLineNo_\l- pid_\l- mutex_\l- excludeFilters_\l|+ registerLogger()\l+ registerIndependentLogger()\l+ clearAllIndependentLoggers()\l+ hasLogger()\l+ hasIndependentLogger()\l+ logger()\l+ independentLogger()\l+ removeLogger()\l+ removeIndependentLogger()\l+ removeAllLoggers()\l+ addExcludeFilter()\l+ removeExcludeFilter()\l+ checkExcludeFilters()\l+ header()\l+ logStream()\l+ log()\l+ mutex()\l+ filter()\l+ mask()\l+ setMask()\l+ rootPath()\l+ setRootPath()\l+ maxLen()\l+ setMaxLen()\l+ enabled()\l+ switchOn()\l+ switchOff()\l+ writeSuppressedMessagesHint()\l+ setPid()\l- Log()\l- source()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Global static Log class."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{Singleton\< Log, std\l::integral_constant\l\< bool, true \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

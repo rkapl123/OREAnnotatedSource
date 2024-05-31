@@ -1,0 +1,29 @@
+digraph "additionalData"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="additionalData",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="returns all additional data returned by the trade once built"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::Swap::additionalData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_swap.html#af9ec5dcfee7297ab6cc404d9e4bd83ae",tooltip="returns all additional data returned by the trade once built"];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::Trade::setLeg\lBasedAdditionalData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_trade.html#aedbdf37ffffad588c47ed19da03a23a0",tooltip=" "];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::currentNotional",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a43e91fce1c1cb13a28fa91d7d893109d",tooltip=" "];
+  Node3 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="fixingDate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext_1_1_zero_inflation.html#a57de786c1c8988b6da9d354282b4b370",tooltip=" "];
+  Node3 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="QuantExt::getIndexedCoupon\lOrCashFlowFixingDetails",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$namespace_quant_ext.html#a68e1c0b23d379b24a10fb853c8b4c7ef",tooltip=" "];
+  Node3 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::originalNotional",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a7cfc87add518625c1375588cf6bedaa8",tooltip=" "];
+  Node3 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="ore::data::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a777e216dee6069b548bb87da7152699e",tooltip=" "];
+  Node3 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="ore::data::to_string",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455",tooltip=" "];
+  Node9 -> Node9 [color="steelblue1",style="solid"];
+  Node2 -> Node8 [color="steelblue1",style="solid"];
+  Node2 -> Node9 [color="steelblue1",style="solid"];
+}

@@ -1,0 +1,61 @@
+digraph "ConvertibleBondData::DividendProtectionData"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{ConvertibleBondData\l::DividendProtectionData\n||+ DividendProtectionData()\l+ initialised()\l+ dates()\l+ adjustmentStyles()\l+ adjustmentStyleDates()\l+ dividendTypes()\l+ dividendTypeDates()\l+ thresholds()\l+ thresholdDates()\l+ fromXML()\l+ toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -initialised_" ,arrowhead="odiamond"];
+  Node3 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",style="solid",label=" -dates_" ,arrowhead="odiamond"];
+  Node4 [label="{ScheduleData\n||+ ScheduleData()\l+ ScheduleData()\l+ ScheduleData()\l+ ScheduleData()\l+ addDates()\l+ addRules()\l+ addDerived()\l+ hasData()\l+ baseScheduleNames()\l+ dates()\l+ rules()\l+ derived()\l+ name()\l+ hasDerived()\l+ modifyDates()\l+ modifyRules()\l+ modifyDerived()\l* fromXML()\l* toXML()\l* dates()\l* rules()\l* derived()\l* name()\l* hasDerived()\l* modifyDates()\l* modifyRules()\l* modifyDerived()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_schedule_data.html",tooltip="Serializable schedule data."];
+  Node2 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 -> Node4 [color="grey25",style="solid",label=" -dates_" ,arrowhead="odiamond"];
+  Node5 [label="{vector\< ore::data::\lScheduleDates \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node6 [label="{ScheduleDates\n||+ ScheduleDates()\l+ ScheduleDates()\l+ hasData()\l+ calendar()\l+ convention()\l+ tenor()\l+ endOfMonth()\l+ endOfMonthConvention()\l+ dates()\l+ modifyDates()\l* fromXML()\l* toXML()\l* calendar()\l* convention()\l* tenor()\l* endOfMonth()\l* endOfMonthConvention()\l* dates()\l* modifyDates()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_schedule_dates.html",tooltip="Serializable object holding schedule Dates data."];
+  Node2 -> Node6 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node7 -> Node6 [color="grey25",style="solid",label=" -calendar_\n-convention_\n-endOfMonthConvention\l_\n-endOfMonth_\n-tenor_" ,arrowhead="odiamond"];
+  Node7 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node8 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node6 [color="grey25",style="solid",label=" -dates_" ,arrowhead="odiamond"];
+  Node9 [label="{vector\< string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node9 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node10 -> Node9 [dir="back",color="orange",style="solid",label=" \< string \>" ];
+  Node10 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node11 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node6 [color="grey25",style="solid",label=" -was1T_" ,arrowhead="odiamond"];
+  Node10 -> Node5 [dir="back",color="orange",style="solid",label=" \< ore::data::ScheduleDates \>" ];
+  Node12 -> Node4 [color="grey25",style="solid",label=" -rules_" ,arrowhead="odiamond"];
+  Node12 [label="{vector\< ore::data::\lScheduleRules \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node13 [label="{ScheduleRules\n||+ ScheduleRules()\l+ ScheduleRules()\l+ hasData()\l+ startDate()\l+ endDate()\l+ tenor()\l+ calendar()\l+ convention()\l+ termConvention()\l+ rule()\l+ endOfMonth()\l+ endOfMonthConvention()\l+ firstDate()\l+ lastDate()\l+ removeFirstDate()\l+ removeLastDate()\l+ modifyStartDate()\l+ modifyEndDate()\l+ modifyCalendar()\l+ modifyConvention()\l+ modifyTermConvention()\l+ modifyEndOfMonthConvention()\l* termConvention_\l* fromXML()\l* toXML()\l* startDate()\l* endDate()\l* tenor()\l* calendar()\l* convention()\l* termConvention()\l* rule()\l* endOfMonth()\l* endOfMonthConvention()\l* firstDate()\l* lastDate()\l* removeFirstDate()\l* removeLastDate()\l* modifyStartDate()\l* modifyEndDate()\l* modifyCalendar()\l* modifyConvention()\l* modifyTermConvention()\l* modifyEndOfMonthConvention()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_schedule_rules.html",tooltip="Serializable object holding schedule Rules data."];
+  Node2 -> Node13 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node7 -> Node13 [color="grey25",style="solid",label=" -calendar_\n-convention_\n-endDate_\n-endOfMonthConvention\l_\n-endOfMonth_\n-firstDate_\n-lastDate_\n-rule_\n-startDate_\n-tenor_\n..." ,arrowhead="odiamond"];
+  Node3 -> Node13 [color="grey25",style="solid",label=" -adjustEndDateToPrevious\lMonthEnd_\n-removeFirstDate_\n-removeLastDate_\n-was1T_" ,arrowhead="odiamond"];
+  Node10 -> Node12 [dir="back",color="orange",style="solid",label=" \< ore::data::ScheduleRules \>" ];
+  Node14 -> Node4 [color="grey25",style="solid",label=" -derived_" ,arrowhead="odiamond"];
+  Node14 [label="{vector\< ore::data::\lScheduleDerived \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node14 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node15 [label="{ScheduleDerived\n||+ ScheduleDerived()\l+ ScheduleDerived()\l+ baseSchedule()\l+ calendar()\l+ convention()\l+ shift()\l+ removeFirstDate()\l+ removeLastDate()\l+ modifyCalendar()\l+ modifyConvention()\l+ modifyShift()\l* fromXML()\l* toXML()\l* baseSchedule()\l* calendar()\l* convention()\l* shift()\l* removeFirstDate()\l* removeLastDate()\l* modifyCalendar()\l* modifyConvention()\l* modifyShift()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_schedule_derived.html",tooltip="Serializable object holding Derived schedule data."];
+  Node2 -> Node15 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node7 -> Node15 [color="grey25",style="solid",label=" -baseSchedule_\n-calendar_\n-convention_\n-shift_" ,arrowhead="odiamond"];
+  Node3 -> Node15 [color="grey25",style="solid",label=" -removeFirstDate_\n-removeLastDate_" ,arrowhead="odiamond"];
+  Node10 -> Node14 [dir="back",color="orange",style="solid",label=" \< ore::data::ScheduleDerived \>" ];
+  Node7 -> Node4 [color="grey25",style="solid",label=" -name_" ,arrowhead="odiamond"];
+  Node3 -> Node4 [color="grey25",style="solid",label=" -hasDerived_" ,arrowhead="odiamond"];
+  Node16 -> Node1 [color="grey25",style="solid",label=" -adjustmentStyleDates\l_\n-adjustmentStyles\l_\n-dividendTypeDates\l_\n-dividendTypes\l_\n-thresholdDates_" ,arrowhead="odiamond"];
+  Node16 [label="{vector\< std::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node16 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node10 -> Node16 [dir="back",color="orange",style="solid",label=" \< std::string \>" ];
+  Node17 -> Node1 [color="grey25",style="solid",label=" -thresholds_" ,arrowhead="odiamond"];
+  Node17 [label="{vector\< double \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node17 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node18 [label="{double\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node17 [dir="back",color="orange",style="solid",label=" \< double \>" ];
+}

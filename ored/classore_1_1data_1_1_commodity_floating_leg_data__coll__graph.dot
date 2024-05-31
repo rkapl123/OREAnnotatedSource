@@ -1,0 +1,49 @@
+digraph "CommodityFloatingLegData"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{CommodityFloatingLegData\n||+ CommodityFloatingLegData()\l+ CommodityFloatingLegData()\l+ name()\l+ priceType()\l+ quantities()\l+ quantityDates()\l+ commodityQuantityFrequency()\l+ commodityPayRelativeTo()\l+ spreads()\l+ spreadDates()\l+ gearings()\l+ gearingDates()\l+ pricingDateRule()\l+ pricingCalendar()\l+ pricingLag()\l+ pricingDates()\l+ isAveraged()\l+ isInArrears()\l+ futureMonthOffset()\l+ deliveryRollDays()\l+ includePeriodEnd()\l+ excludePeriodStart()\l+ hoursPerDay()\l+ useBusinessDays()\l+ tag()\l+ dailyExpiryOffset()\l+ unrealisedQuantity()\l+ lastNDays()\l+ fxIndex()\l* fromXML()\l* toXML()\l* name()\l* priceType()\l* quantities()\l* quantityDates()\l* commodityQuantityFrequency()\l* commodityPayRelativeTo()\l* spreads()\l* spreadDates()\l* gearings()\l* gearingDates()\l* pricingDateRule()\l* pricingCalendar()\l* pricingLag()\l* pricingDates()\l* isAveraged()\l* isInArrears()\l* futureMonthOffset()\l* deliveryRollDays()\l* includePeriodEnd()\l* excludePeriodStart()\l* hoursPerDay()\l* useBusinessDays()\l* tag()\l* dailyExpiryOffset()\l* unrealisedQuantity()\l* lastNDays()\l* fxIndex()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{LegAdditionalData\n||+ LegAdditionalData()\l+ LegAdditionalData()\l+ legType()\l+ legNodeName()\l+ indices()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_leg_additional_data.html",tooltip="Serializable Additional Leg Data."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node4 -> Node2 [color="grey25",style="solid",label=" #indices_" ,arrowhead="odiamond"];
+  Node4 [label="{set\< std::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node5 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node6 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="orange",style="solid",label=" \< std::string \>" ];
+  Node7 [label="{set\< K \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node8 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [color="grey25",style="solid",label=" -legNodeName_\n-legType_" ,arrowhead="odiamond"];
+  Node5 -> Node1 [color="grey25",style="solid",label=" -fxIndex_\n-name_\n-pricingCalendar\l_\n-tag_" ,arrowhead="odiamond"];
+  Node9 -> Node1 [color="grey25",style="solid",label=" -priceType_" ,arrowhead="odiamond"];
+  Node9 [label="{CommodityPriceType\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [color="grey25",style="solid",label=" -gearings_\n-quantities_\n-spreads_" ,arrowhead="odiamond"];
+  Node10 [label="{vector\< QuantLib::Real \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node11 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node10 [dir="back",color="orange",style="solid",label=" \< QuantLib::Real \>" ];
+  Node12 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node13 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [color="grey25",style="solid",label=" -gearingDates_\n-pricingDates_\n-quantityDates_\n-spreadDates_" ,arrowhead="odiamond"];
+  Node14 [label="{vector\< std::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node14 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node12 -> Node14 [dir="back",color="orange",style="solid",label=" \< std::string \>" ];
+  Node15 -> Node1 [color="grey25",style="solid",label=" -commodityQuantityFrequency_" ,arrowhead="odiamond"];
+  Node15 [label="{CommodityQuantityFrequency\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node1 [color="grey25",style="solid",label=" -commodityPayRelativeTo_" ,arrowhead="odiamond"];
+  Node16 [label="{CommodityPayRelativeTo\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node1 [color="grey25",style="solid",label=" -pricingDateRule_" ,arrowhead="odiamond"];
+  Node17 [label="{CommodityPricingDateRule\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node1 [color="grey25",style="solid",label=" -dailyExpiryOffset\l_\n-deliveryRollDays\l_\n-futureMonthOffset\l_\n-hoursPerDay\l_\n-lastNDays\l_\n-pricingLag_" ,arrowhead="odiamond"];
+  Node18 [label="{Natural\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node19 -> Node1 [color="grey25",style="solid",label=" -excludePeriodStart\l_\n-includePeriodEnd\l_\n-isAveraged_\n-isInArrears\l_\n-unrealisedQuantity\l_\n-useBusinessDays_" ,arrowhead="odiamond"];
+  Node19 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+}

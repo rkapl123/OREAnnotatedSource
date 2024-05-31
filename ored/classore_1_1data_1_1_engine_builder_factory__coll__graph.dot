@@ -1,0 +1,36 @@
+digraph "EngineBuilderFactory"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{EngineBuilderFactory\n||+ addEngineBuilder()\l+ addAmcEngineBuilder()\l+ addAmcCgEngineBuilder()\l+ addLegBuilder()\l+ generateEngineBuilders()\l+ generateAmcEngineBuilders()\l+ generateAmcCgEngineBuilders()\l+ generateLegBuilders()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Engine/ Leg Builder Factory - notice that both engine and leg builders are allowed to maintain a stat..."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{Singleton\< EngineBuilder\lFactory, std::integral\l_constant\< bool, true \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -engineBuilderBuilders_" ,arrowhead="odiamond"];
+  Node3 [label="{vector\< std::function\l\< QuantLib::ext::shared\l_ptr\< ore::data::EngineBuilder \>()\> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node4 [label="{function\< QuantLib\l::ext::shared_ptr\< ore\l::data::EngineBuilder \>()\>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="orange",style="solid",label=" \< std::function\< QuantLib\l::ext::shared_ptr\< ore\l::data::EngineBuilder \>()\> \>" ];
+  Node5 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node6 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" -amcEngineBuilderBuilders_" ,arrowhead="odiamond"];
+  Node7 [label="{vector\< std::function\l\< QuantLib::ext::shared\l_ptr\< ore::data::EngineBuilder\l \>(const QuantLib::ext::shared\l_ptr\< QuantExt::CrossAssetModel\l \> &cam, const std::vector\< Date\l \> &grid)\> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node8 [label="{function\< QuantLib\l::ext::shared_ptr\< ore\l::data::EngineBuilder\l \>(const QuantLib::ext\l::shared_ptr\< QuantExt::\lCrossAssetModel \> &cam, const\l std::vector\< Date \> &grid)\>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node7 [dir="back",color="orange",style="solid",label=" \< std::function\< QuantLib\l::ext::shared_ptr\< ore\l::data::EngineBuilder \>\l(const QuantLib::ext::shared\l_ptr\< QuantExt::CrossAssetModel\l \> &cam, const std::vector\< Date\l \> &grid)\> \>" ];
+  Node9 -> Node1 [color="grey25",style="solid",label=" -amcCgEngineBuilderBuilders_" ,arrowhead="odiamond"];
+  Node9 [label="{vector\< std::function\l\< QuantLib::ext::shared\l_ptr\< ore::data::EngineBuilder\l \>(const QuantLib::ext::shared\l_ptr\< ore::data::ModelCG \> &model,\l const std::vector\< Date \> &grid)\> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node10 [label="{function\< QuantLib\l::ext::shared_ptr\< ore\l::data::EngineBuilder\l \>(const QuantLib::ext\l::shared_ptr\< ore::data\l::ModelCG \> &model, const\l std::vector\< Date \> &grid)\>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node9 [dir="back",color="orange",style="solid",label=" \< std::function\< QuantLib\l::ext::shared_ptr\< ore\l::data::EngineBuilder \>\l(const QuantLib::ext::shared\l_ptr\< ore::data::ModelCG \> &model,\l const std::vector\< Date \> &grid)\> \>" ];
+  Node11 -> Node1 [color="grey25",style="solid",label=" -legBuilderBuilders_" ,arrowhead="odiamond"];
+  Node11 [label="{vector\< std::function\l\< QuantLib::ext::shared\l_ptr\< ore::data::LegBuilder \>()\> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node11 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node12 [label="{function\< QuantLib\l::ext::shared_ptr\< ore\l::data::LegBuilder \>()\>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node11 [dir="back",color="orange",style="solid",label=" \< std::function\< QuantLib\l::ext::shared_ptr\< ore\l::data::LegBuilder \>()\> \>" ];
+  Node13 -> Node1 [color="grey25",style="solid",label=" -mutex_" ,arrowhead="odiamond"];
+  Node13 [label="{shared_mutex\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

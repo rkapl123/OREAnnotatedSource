@@ -1,11 +1,13 @@
 <map id="SensitivityStream" name="SensitivityStream">
-<area shape="rect" id="node1" title="Base Class for streaming SensitivityRecords." alt="" coords="565,5,722,89"/>
-<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_buffered_sensitivity_stream.html" title=" " alt="" coords="5,181,199,309"/>
-<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_filtered_sensitivity_stream.html" title="Class that wraps a sensitivity stream and filters out negligible records." alt="" coords="223,167,413,324"/>
-<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_par_sensitivity_cube_stream.html" title=" " alt="" coords="437,159,633,331"/>
-<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_sensitivity_cube_stream.html" title=" " alt="" coords="658,137,845,353"/>
-<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_sensitivity_in_memory_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="869,174,1071,317"/>
-<area shape="rect" id="node7" href="$classore_1_1analytics_1_1_sensitivity_input_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="1095,152,1274,339"/>
-<area shape="rect" id="node8" href="$classore_1_1analytics_1_1_sensitivity_buffer_stream.html" title=" " alt="" coords="992,416,1175,471"/>
-<area shape="rect" id="node9" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html" title=" " alt="" coords="1199,401,1371,485"/>
+<area shape="rect" id="node1" title="Base Class for streaming SensitivityRecords." alt="" coords="859,5,1017,89"/>
+<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_buffered_sensitivity_stream.html" title=" " alt="" coords="5,321,199,449"/>
+<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_decomposed_sensitivity_stream.html" title="Class that wraps a sensitivity stream and decompose default, equity and commodity risk records given ..." alt="" coords="223,137,493,632"/>
+<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_filtered_sensitivity_stream.html" title="Class that wraps a sensitivity stream and filters out negligible records." alt="" coords="518,306,707,463"/>
+<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_par_sensitivity_cube_stream.html" title=" " alt="" coords="732,291,928,478"/>
+<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_sensitivity_cube_stream.html" title=" " alt="" coords="953,262,1139,507"/>
+<area shape="rect" id="node7" href="$classore_1_1analytics_1_1_sensitivity_in_memory_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="1163,313,1366,456"/>
+<area shape="rect" id="node8" href="$classore_1_1analytics_1_1_sensitivity_input_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="1390,291,1569,478"/>
+<area shape="rect" id="node11" href="$classore_1_1analytics_1_1_sensitivity_report_stream.html" title="Class for streaming SensitivityRecords from csv file." alt="" coords="1593,313,1782,456"/>
+<area shape="rect" id="node9" href="$classore_1_1analytics_1_1_sensitivity_buffer_stream.html" title=" " alt="" coords="1287,695,1469,749"/>
+<area shape="rect" id="node10" href="$classore_1_1analytics_1_1_sensitivity_file_stream.html" title=" " alt="" coords="1493,680,1665,764"/>
 </map>

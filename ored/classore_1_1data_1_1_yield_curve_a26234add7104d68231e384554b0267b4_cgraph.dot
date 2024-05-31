@@ -1,0 +1,25 @@
+digraph "addOISs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="addOISs",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::Loader::get",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_loader.html#a19d9f6f808db2631247ec12ffe291225",tooltip="get quote by its unique name, throws if not existent, override in derived classes for performance"];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::Loader::\lloadQuotes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_loader.html#a0086c4f946085ef0b9d5c56bd1539f91",tooltip="get all quotes, TODO change the return value to std::set"];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::CurveSpec\l::name",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_spec.html#afa7a10b4b56522f03c698ac514b0f844",tooltip="returns the unique curve name"];
+  Node4 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::CurveSpec\l::baseName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_spec.html#a3d24768215bf6280c80eca3930ea3f55",tooltip=" "];
+  Node5 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::CurveSpec\l::baseType",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_spec.html#a0106d2fb6472e64456c6ebd018aa6300",tooltip=" "];
+  Node5 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::to_string",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a86651dfeb5c18ee891f7a4734d8cf455",tooltip=" "];
+  Node7 -> Node7 [color="steelblue1",style="solid"];
+  Node4 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="ore::data::CurveSpec\l::subName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_spec.html#a471fbcf9df5ab7ac2153495b4c8ac723",tooltip=" "];
+}

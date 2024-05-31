@@ -1,0 +1,31 @@
+digraph "checkIsOpen"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="checkIsOpen",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a0b8f13b57d2b70800ffaaca84efbae99",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::InMemoryReport\l::toFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_report.html#abe91a6caf015cdc4c4e53c3f03dcc103",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="addColumn",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#ab78c52d6fb1074c61907e16ae254f149",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="end",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a64e9fa75beda50a9e8400ee0d4e61984",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="~CSVFileReport",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a54db19233f6bb3e8131dfc805e4046fd",tooltip=" "];
+  Node5 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="rollover",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a1445193a5ee913dfadf174b47a49f1d2",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="next",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a7ba407af8cfb7f4701894176d4a3ea74",tooltip=" "];
+  Node8 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node5 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="flush",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_file_report.html#a04f2540d940cc37b5c2538ed8e5b54be",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node1 -> Node7 [dir="back",color="steelblue1",style="solid"];
+}

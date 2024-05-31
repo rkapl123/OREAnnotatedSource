@@ -1,0 +1,14 @@
+digraph "PriceSegment"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="PriceSegment",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Detailed constructor."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="populateQuotes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_price_segment.html#a19ed6e6444ea03ab24f69f1bf17d2151",tooltip="Populate quotes."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="quotes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_price_segment.html#ab4850b56e8bad34c1c061fed3ade5d1a",tooltip=" "];
+}

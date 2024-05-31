@@ -1,0 +1,22 @@
+digraph "additionalResults"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="additionalResults",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Return the additional results of this instrument."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="NPV",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_option_wrapper.html#a11b99e22b9e192c940be8cda78c87f53",tooltip="Return the NPV of this instrument."];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::InstrumentWrapper\l::additionalInstrumentsNPV",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_instrument_wrapper.html#abdcc048739fce301d5907bf5a4e7ac46",tooltip=" "];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::InstrumentWrapper::NPV",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_instrument_wrapper.html#a48bc2555c7d4b0f36887f6a30fd41361",tooltip="Return the NPV of this instrument."];
+  Node2 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="exercise",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_option_wrapper.html#a3e5ebf4d1671703e5ebfd2285af53250",tooltip=" "];
+  Node2 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::InstrumentWrapper\l::getTimedNPV",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_instrument_wrapper.html#ae0bb68a1eb3a1b0b3c4b69b6f94711c0",tooltip=" "];
+  Node2 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="multiplier2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_option_wrapper.html#adf89c7de1d5c2f7474ae075235c5ca9c",tooltip=" "];
+}

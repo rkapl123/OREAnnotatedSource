@@ -1,0 +1,45 @@
+digraph "CurrencyHedgedEquityIndexReferenceDatum"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{CurrencyHedgedEquityIndex\lReferenceDatum\n||+ CurrencyHedgedEquityIndex\lReferenceDatum()\l+ CurrencyHedgedEquityIndex\lReferenceDatum()\l+ CurrencyHedgedEquityIndex\lReferenceDatum()\l+ underlyingIndexName()\l+ referenceDateOffset()\l+ rebalancingStrategy()\l+ hedgeAdjustmentRule()\l+ hedgeCalendar()\l+ fxIndexes()\l+ currencyWeights()\l+ referenceDate()\l+ rebalancingDate()\l+ fromXML()\l+ toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{ReferenceDatum\n||+ ReferenceDatum()\l+ ReferenceDatum()\l+ ReferenceDatum()\l+ setType()\l+ setId()\l+ setValidFrom()\l+ type()\l+ id()\l+ validFrom()\l+ fromXML()\l+ toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_reference_datum.html",tooltip="Base class for reference data."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+  Node4 -> Node2 [color="grey25",style="solid",label=" -id_\n-type_" ,arrowhead="odiamond"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node5 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [color="grey25",style="solid",label=" -validFrom_" ,arrowhead="odiamond"];
+  Node6 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" +TYPE" ,arrowhead="odiamond"];
+  Node7 [label="{char\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [color="grey25",style="solid",label=" -underlyingIndexName_" ,arrowhead="odiamond"];
+  Node8 -> Node1 [color="grey25",style="solid",label=" -rebalancingStrategy_" ,arrowhead="odiamond"];
+  Node8 [label="{Strategy\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [color="grey25",style="solid",label=" -referenceDateOffset_" ,arrowhead="odiamond"];
+  Node9 [label="{int\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [color="grey25",style="solid",label=" -hedgeAdjustmentRule_" ,arrowhead="odiamond"];
+  Node10 [label="{Rule\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [color="grey25",style="solid",label=" -hedgeCalendar_" ,arrowhead="odiamond"];
+  Node11 [label="{Calendar\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node1 [color="grey25",style="solid",label=" -fxIndexes_" ,arrowhead="odiamond"];
+  Node12 [label="{map\< std::string, std\l::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node12 [color="grey25",style="solid",label=" +elements\n+keys" ,arrowhead="odiamond"];
+  Node13 -> Node12 [dir="back",color="orange",style="solid",label=" \< std::string, std\l::string \>" ];
+  Node13 [label="{map\< K, T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node13 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node14 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node13 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node15 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node1 [color="grey25",style="solid",label=" -data_" ,arrowhead="odiamond"];
+  Node16 [label="{map\< string, double \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node16 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node17 -> Node16 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node17 [label="{double\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node16 [dir="back",color="orange",style="solid",label=" \< string, double \>" ];
+}

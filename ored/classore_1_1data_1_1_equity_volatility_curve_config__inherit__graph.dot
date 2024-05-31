@@ -1,0 +1,13 @@
+digraph "EquityVolatilityCurveConfig"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{EquityVolatilityCurveConfig\n||+ EquityVolatilityCurveConfig()\l+ EquityVolatilityCurveConfig()\l+ EquityVolatilityCurveConfig()\l+ fromXML()\l+ toXML()\l+ equityId()\l+ ccy()\l+ dayCounter()\l+ calendar()\l+ volatilityConfig()\l+ quoteStem()\l+ populateQuotes()\l+ isProxySurface()\l+ solverConfig()\l+ preferOutOfTheMoney()\l+ reportConfig()\l* ccy_\l* volatilityConfig_\l* equityId_\l* dayCounter_\l* calendar_\l* solverConfig_\l* preferOutOfTheMoney_\l* reportConfig_\l* ccy()\l* dayCounter()\l* populateRequiredCurveIds()\l* defaultSolverConfig()\l* EquityVolatilityCurveConfig()\l* EquityVolatilityCurveConfig()\l* EquityVolatilityCurveConfig()\l* fromXML()\l* toXML()\l* equityId()\l* ccy()\l* dayCounter()\l* calendar()\l* volatilityConfig()\l* quoteStem()\l* populateQuotes()\l* isProxySurface()\l* solverConfig()\l* preferOutOfTheMoney()\l* reportConfig()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Equity volatility structure configuration."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{CurveConfig\n||+ CurveConfig()\l+ CurveConfig()\l+ curveID()\l+ curveDescription()\l+ requiredCurveIds()\l+ requiredCurveIds()\l* curveID_\l* curveDescription_\l* quotes_\l* requiredCurveIds_\l* curveID()\l* curveDescription()\l* requiredCurveIds()\l* requiredCurveIds()\l* quotes()\l* CurveConfig()\l* CurveConfig()\l* curveID()\l* curveDescription()\l* requiredCurveIds()\l* requiredCurveIds()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_curve_config.html",tooltip="Base curve configuration."];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node3 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+}

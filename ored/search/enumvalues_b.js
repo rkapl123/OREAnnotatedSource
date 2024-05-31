@@ -1,16 +1,19 @@
 var searchData=
 [
-  ['market_0',['Market',['../classore_1_1data_1_1_c_s_v_loader.html#ad8ed01ff3ff33333d8e19db4d2818bb6a31840a66a8d6d223e5b0540138768838',1,'ore::data::CSVLoader']]],
-  ['max_1',['Max',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664ca6a061313d22e51e0f25b7cd4dc065233',1,'ore::data::CompositeTrade']]],
-  ['mc_2',['MC',['../classore_1_1data_1_1_model.html#a1d1cfd8ffb84e947f82999c682b666a7a92a54b358b4cf53cca4095e4697e1004',1,'ore::data::Model::MC()'],['../classore_1_1data_1_1_model_c_g.html#a1d1cfd8ffb84e947f82999c682b666a7a92a54b358b4cf53cca4095e4697e1004',1,'ore::data::ModelCG::MC()']]],
-  ['mean_3',['Mean',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664ca3d6c9ac08ada31c184094bbc67afe00d',1,'ore::data::CompositeTrade']]],
-  ['memory_4',['memory',['../log_8hpp.html#a08cf33440c824c6fda734c566a726536ad1f4a7fb5b172f4e4357ed36d13018ec',1,'log.hpp']]],
-  ['min_5',['Min',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664ca78d811e98514cd165dda532286610fd2',1,'ore::data::CompositeTrade']]],
-  ['mm_6',['MM',['../classore_1_1data_1_1_market_datum.html#a78a53e954df1d387bae9b3680287ec69aad05f78187c942f9dd521605fa81f1ba',1,'ore::data::MarketDatum::MM()'],['../namespaceore_1_1data.html#a1c8d62fd759e177405f7d28b33d0d981aad05f78187c942f9dd521605fa81f1ba',1,'ore::data::MM()']]],
-  ['mm14_7',['MM14',['../namespaceore_1_1data.html#a1c8d62fd759e177405f7d28b33d0d981aac6a54c98e46550495475ba9496db7e9',1,'ore::data']]],
-  ['mm_5ffuture_8',['MM_FUTURE',['../classore_1_1data_1_1_market_datum.html#a78a53e954df1d387bae9b3680287ec69a912d3eeb96dc184e2db59ead58e77534',1,'ore::data::MarketDatum']]],
-  ['model_9',['Model',['../classore_1_1data_1_1_structured_message.html#ace1050b29fb6a0619ecf018e6cb26bceaa559b87068921eec05086ce5485e9784',1,'ore::data::StructuredMessage']]],
-  ['mr_10',['MR',['../namespaceore_1_1data.html#a1c8d62fd759e177405f7d28b33d0d981ad5c44258d51659f96279c470ce8185dc',1,'ore::data']]],
-  ['mr14_11',['MR14',['../namespaceore_1_1data.html#a1c8d62fd759e177405f7d28b33d0d981a814a029c37672336d6a452a390f68f3f',1,'ore::data']]],
-  ['multisection_12',['MultiSection',['../classore_1_1data_1_1_default_curve_config_1_1_config.html#a1d1cfd8ffb84e947f82999c682b666a7a7533f00b05f0344d0893340968ddb72c',1,'ore::data::DefaultCurveConfig::Config']]]
+  ['last_0',['Last',['../classore_1_1data_1_1_composite_trade.html#aacebab8b3d80fb9768b8b1ce782d664cad55b30607c2a9a2616347d6edb789f6b',1,'ore::data::CompositeTrade']]],
+  ['lastweekday_1',['LastWeekday',['../classore_1_1data_1_1_commodity_future_convention.html#a36388d1ac26722c387a0a040b0669248ab24e5e4bb4a288b0c2cc4128e611ca70',1,'ore::data::CommodityFutureConvention::LastWeekday()'],['../classore_1_1data_1_1_commodity_future_convention.html#a369d26e2357b73c505d9c95d1ef6c228ab24e5e4bb4a288b0c2cc4128e611ca70',1,'ore::data::CommodityFutureConvention::LastWeekday()']]],
+  ['lien1_2',['LIEN1',['../namespaceore_1_1data.html#a46d1d73080a5b02d118f5775eabfa7d6af4565c511999b5dc1a24810696638376',1,'ore::data']]],
+  ['lien2_3',['LIEN2',['../namespaceore_1_1data.html#a46d1d73080a5b02d118f5775eabfa7d6adea3732a5c0793b7cdc7b9f58b17120a',1,'ore::data']]],
+  ['lien3_4',['LIEN3',['../namespaceore_1_1data.html#a46d1d73080a5b02d118f5775eabfa7d6a7491e75b679d2e5599f59958ecf806bc',1,'ore::data']]],
+  ['linear_5',['Linear',['../classore_1_1data_1_1_f_x_volatility_curve_config.html#af4a46b8832b2a6d595b949f103813347a32a843da6ea40ab3b17a3421ccdf671b',1,'ore::data::FXVolatilityCurveConfig::Linear()'],['../classore_1_1data_1_1_generic_yield_volatility_curve_config.html#a817402314dfc91b23b3642e5b6bb4549a32a843da6ea40ab3b17a3421ccdf671b',1,'ore::data::GenericYieldVolatilityCurveConfig::Linear()'],['../classore_1_1data_1_1_generic_yield_volatility_curve_config.html#a8e2df513f6590afb6c85a22a458745c5a32a843da6ea40ab3b17a3421ccdf671b',1,'ore::data::GenericYieldVolatilityCurveConfig::Linear()'],['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284a32a843da6ea40ab3b17a3421ccdf671b',1,'ore::data::YieldCurve::Linear()']]],
+  ['lineartomaturity_6',['LinearToMaturity',['../namespaceore_1_1data.html#afeab426fdd2c8ae2b2f44019e699f821af6dae87992e4e9a12f104ad06d7b447c',1,'ore::data']]],
+  ['logcubicspline_7',['LogCubicSpline',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284a97220c3a9d1b15c3d0c06254875c8ed8',1,'ore::data::YieldCurve']]],
+  ['logfinancialcubic_8',['LogFinancialCubic',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284aaeb8fdb3fef1fb1eaf06617778df6139',1,'ore::data::YieldCurve']]],
+  ['logging_9',['Logging',['../classore_1_1data_1_1_structured_message.html#ace1050b29fb6a0619ecf018e6cb26bcea8db7df66ab1d7ab5f1dc947acdb5fae4',1,'ore::data::StructuredMessage']]],
+  ['loglinear_10',['LogLinear',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284af7ca71066fb1ed0e1d1b01a29a9ec936',1,'ore::data::YieldCurve']]],
+  ['logmixedlinearcubicnaturalspline_11',['LogMixedLinearCubicNaturalSpline',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284a2c3e6fecd03c50e813c4dd0a796bfb64',1,'ore::data::YieldCurve']]],
+  ['lognaturalcubic_12',['LogNaturalCubic',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284a977fd107d9ebafb60e5586a21da26036',1,'ore::data::YieldCurve']]],
+  ['lognormal_13',['Lognormal',['../classore_1_1data_1_1_cap_floor_volatility_curve_config.html#a8b2aa10016abb1ffb6f55484a04a5143a8d92d8af321ea1ce4f12019bcc6c3880',1,'ore::data::CapFloorVolatilityCurveConfig::Lognormal()'],['../classore_1_1data_1_1_generic_yield_volatility_curve_config.html#a8b2aa10016abb1ffb6f55484a04a5143a8d92d8af321ea1ce4f12019bcc6c3880',1,'ore::data::GenericYieldVolatilityCurveConfig::Lognormal()'],['../classore_1_1data_1_1_inflation_cap_floor_volatility_curve_config.html#a8b2aa10016abb1ffb6f55484a04a5143a8d92d8af321ea1ce4f12019bcc6c3880',1,'ore::data::InflationCapFloorVolatilityCurveConfig::Lognormal()']]],
+  ['logquadratic_14',['LogQuadratic',['../classore_1_1data_1_1_yield_curve.html#aa0081e804011c551ea0f4a596a64b284a223ccd11124780772cb232ca02dfc0ad',1,'ore::data::YieldCurve']]],
+  ['lossweighted_15',['LossWeighted',['../namespaceore_1_1data.html#ab42387d9dd2c00239f6e97b4b0862d70a78f14bf17d441dfb8d765ee58e3771c4',1,'ore::data']]]
 ];

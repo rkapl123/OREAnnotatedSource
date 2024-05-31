@@ -1,0 +1,16 @@
+digraph "oreName"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="oreName",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="throws if qlName is not known"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_index_name_translator.html#a5754782d9b8e46cfe536fb66c9b17fb0",tooltip="adds a pair to the mapping"];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="qlName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_index_name_translator.html#af63dca04d592a404524bffa894d36e53",tooltip="throws if oreName is not known"];
+  Node3 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node3 -> Node1 [dir="back",color="steelblue1",style="solid"];
+}

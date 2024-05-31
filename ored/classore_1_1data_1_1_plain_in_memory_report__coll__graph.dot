@@ -1,0 +1,11 @@
+digraph "PlainInMemoryReport"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{PlainInMemoryReport\n||+ PlainInMemoryReport()\l+ ~PlainInMemoryReport()\l+ columns()\l+ header()\l+ columnType()\l+ dataAsSize()\l+ dataAsReal()\l+ dataAsString()\l+ dataAsDate()\l+ dataAsPeriod()\l+ rows()\l+ dataAsSize()\l+ dataAsReal()\l+ dataAsString()\l+ dataAsDate()\l+ dataAsPeriod()\l- data_T()\l- sizeToInt()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="InMemoryReport with access to plain types instead of boost::variant<>, to facilitate language binding..."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -imReport_" ,arrowhead="odiamond"];
+  Node2 [label="{shared_ptr\< ore::data\l::InMemoryReport \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

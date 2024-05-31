@@ -1,0 +1,19 @@
+digraph "legs"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="legs",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ore::data::CallableSwap\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_callable_swap.html#ab1db499ff5e65c59fd2009d62276fdaf",tooltip="Build QuantLib/QuantExt instrument, link pricing engine."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::Swaption\l::buildUnderlyingSwaps",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_swaption.html#a303df5b328ef9bdb90920c8fb494d124",tooltip="build underlying swaps for exposure simulation"];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="ore::data::Swaption\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_swaption.html#af7b69d5b18d278257927e32b10a23ee6",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2swaption_8cpp.html#a3dba2613c5fc93775620d58ed073e9d9",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="steelblue1",style="solid"];
+}

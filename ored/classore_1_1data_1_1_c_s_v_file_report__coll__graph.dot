@@ -1,0 +1,47 @@
+digraph "CSVFileReport"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{CSVFileReport\n||+ CSVFileReport()\l+ ~CSVFileReport()\l+ open()\l+ rollover()\l+ addColumn()\l+ next()\l+ add()\l+ end()\l+ flush()\l- checkIsOpen()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{Report\n||+ ~Report()\l+ addColumn()\l+ next()\l+ add()\l+ end()\l+ flush()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_report.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -columnTypes_" ,arrowhead="odiamond"];
+  Node3 [label="{vector\< ReportType \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node4 [label="{ReportType\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="orange",style="solid",label=" \< ReportType \>" ];
+  Node5 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node6 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" -printers_" ,arrowhead="odiamond"];
+  Node7 [label="{vector\< ReportTypePrinter \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node8 [label="{ReportTypePrinter\n||+ ReportTypePrinter()\l+ operator()()\l+ operator()()\l+ operator()()\l+ operator()()\l+ operator()()\l+ updateFile()\l- fprintNull()\l- fprintString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node9 [label="{static_visitor\<\>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node8 [color="grey25",style="solid",label=" -fp_" ,arrowhead="odiamond"];
+  Node10 [label="{FILE *\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node8 [color="grey25",style="solid",label=" -rounding_" ,arrowhead="odiamond"];
+  Node11 [label="{Rounding\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node8 [color="grey25",style="solid",label=" -quoteChar_" ,arrowhead="odiamond"];
+  Node12 [label="{char\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node8 [color="grey25",style="solid",label=" -null_" ,arrowhead="odiamond"];
+  Node13 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node13 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node14 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node7 [dir="back",color="orange",style="solid",label=" \< ReportTypePrinter \>" ];
+  Node13 -> Node1 [color="grey25",style="solid",label=" -baseFilename_\n-filename_\n-nullString_" ,arrowhead="odiamond"];
+  Node12 -> Node1 [color="grey25",style="solid",label=" -quoteChar_\n-sep_" ,arrowhead="odiamond"];
+  Node15 -> Node1 [color="grey25",style="solid",label=" -commentCharacter_\n-finalized_\n-lowerHeader_" ,arrowhead="odiamond"];
+  Node15 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node16 -> Node1 [color="grey25",style="solid",label=" -i_\n-j_\n-rolloverSize\l_\n-version_" ,arrowhead="odiamond"];
+  Node16 [label="{Size\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node1 [color="grey25",style="solid",label=" -fp_" ,arrowhead="odiamond"];
+  Node17 -> Node1 [color="grey25",style="solid",label=" -headers_" ,arrowhead="odiamond"];
+  Node17 [label="{vector\< std::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node17 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node5 -> Node17 [dir="back",color="orange",style="solid",label=" \< std::string \>" ];
+}

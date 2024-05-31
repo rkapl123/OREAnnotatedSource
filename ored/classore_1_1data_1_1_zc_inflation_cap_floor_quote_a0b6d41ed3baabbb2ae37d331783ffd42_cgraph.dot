@@ -1,0 +1,18 @@
+digraph "clone"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="clone",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Make a copy of the market datum."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::InflationCapFloor\lQuote::index",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inflation_cap_floor_quote.html#a3b71a29b4790e6acd90a46dd8ee50a3f",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::InflationCapFloor\lQuote::isCap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inflation_cap_floor_quote.html#a7edc79f6deb748a53ed3ebbdc89932b5",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::InflationCapFloor\lQuote::strike",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inflation_cap_floor_quote.html#ac3903e04c0ab80fafc9a21b0253660c2",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::InflationCapFloor\lQuote::term",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_inflation_cap_floor_quote.html#ab612487982a45a97487c857073877125",tooltip=" "];
+}

@@ -1,0 +1,15 @@
+digraph "XMLDocument"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{XMLDocument\n||+ XMLDocument()\l+ XMLDocument()\l+ ~XMLDocument()\l+ fromXMLString()\l+ toFile()\l+ toString()\l+ getFirstNode()\l+ appendNode()\l+ allocNode()\l+ allocNode()\l+ allocString()\l+ doc()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Small XML Document wrapper class."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -_doc" ,arrowhead="odiamond"];
+  Node2 [label="{xml_document\< char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classrapidxml_1_1xml__document.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="orange",style="solid",label=" \< char \>" ];
+  Node3 [label="{xml_document\< Ch \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classrapidxml_1_1xml__document.html",tooltip="XML Document."];
+  Node4 -> Node1 [color="grey25",style="solid",label=" -_buffer" ,arrowhead="odiamond"];
+  Node4 [label="{char\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

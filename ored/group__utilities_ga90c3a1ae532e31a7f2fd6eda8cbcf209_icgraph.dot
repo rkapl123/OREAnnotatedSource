@@ -1,0 +1,28 @@
+digraph "fxDominance"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="fxDominance",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Convert FX pair to market standard dominance."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$fxdom_8cpp.html#a2aca42177d20c12cb9efd929a21f7286",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::Loader::\lcheckFxDuplicate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_loader.html#a5fd63a6d54fdaac9a490ef18bf07c08d",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="ore::data::InMemoryLoader::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_in_memory_loader.html#ab033d7bbd4da0af2f75abb8952fcacce",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::AdjustedInMemory\lLoader::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_adjusted_in_memory_loader.html#a394ea65c115638a789b7e4793aed8f8a",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="load",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a42f1390d171c5924c3fa721f51a32200",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="loadDataFromBuffers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a22d0bfabdad131343a5f49618b7db10d",tooltip="Utility function for loading market quotes and fixings from an in memory csv buffer."];
+  Node3 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="ore::data::CSVLoader\l::loadFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_loader.html#af8a277c7dc57076a3daec6356ccc1be3",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="ore::data::CSVLoader\l::CSVLoader",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_c_s_v_loader.html#a9cd43c2280d0cee91b282fe13b36679d",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="normaliseFxIndex",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#a0d8a56a2055eed832eecb066005885a2",tooltip="Convert FX index name to market standard dominance."];
+}

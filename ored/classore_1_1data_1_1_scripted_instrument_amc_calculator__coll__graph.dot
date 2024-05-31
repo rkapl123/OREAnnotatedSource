@@ -1,0 +1,50 @@
+digraph "ScriptedInstrumentAmcCalculator"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{ScriptedInstrumentAmcCalculator\n||+ ScriptedInstrumentAmcCalculator()\l+ npvCurrency()\l+ simulatePath()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{AmcCalculator\n||+ ~AmcCalculator()\l+ npvCurrency()\l+ simulatePath()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_amc_calculator.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -npv_\n-script_" ,arrowhead="odiamond"];
+  Node3 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node4 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [color="grey25",style="solid",label=" -model_" ,arrowhead="odiamond"];
+  Node5 [label="{shared_ptr\< ore::data\l::Model \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [color="grey25",style="solid",label=" -ast_" ,arrowhead="odiamond"];
+  Node6 [label="{const ASTNodePtr\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node1 [color="grey25",style="solid",label=" -context_" ,arrowhead="odiamond"];
+  Node7 [label="{shared_ptr\< ore::data\l::Context \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [color="grey25",style="solid",label=" -interactive_" ,arrowhead="odiamond"];
+  Node8 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node9 -> Node1 [color="grey25",style="solid",label=" -stickyCloseOutStates_" ,arrowhead="odiamond"];
+  Node9 [label="{set\< std::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node9 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node10 -> Node9 [dir="back",color="orange",style="solid",label=" \< std::string \>" ];
+  Node10 [label="{set\< K \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node11 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node1 [color="grey25",style="solid",label=" -stickyCloseOutRunScalars_" ,arrowhead="odiamond"];
+  Node12 [label="{map\< std::string, ValueType \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node12 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node13 [label="{ValueType\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node12 [dir="back",color="orange",style="solid",label=" \< std::string, ValueType \>" ];
+  Node14 [label="{map\< K, T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node14 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node15 -> Node14 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node15 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node1 [color="grey25",style="solid",label=" -stickyCloseOutRunArrays_" ,arrowhead="odiamond"];
+  Node16 [label="{map\< std::string, std\l::vector\< ValueType \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node16 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node17 -> Node16 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node17 [label="{vector\< ValueType \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node17 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node18 -> Node17 [dir="back",color="orange",style="solid",label=" \< ValueType \>" ];
+  Node18 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node18 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node14 -> Node16 [dir="back",color="orange",style="solid",label=" \< std::string, std\l::vector\< ValueType \> \>" ];
+}

@@ -19,6 +19,7 @@ var searchData=
   ['bondyield_16',['BondYield',['../classore_1_1data_1_1_convention.html#a1d1cfd8ffb84e947f82999c682b666a7ac8b48682c652fee74ab4f020b6772ae4',1,'ore::data::Convention']]],
   ['bondyieldshifted_17',['BondYieldShifted',['../classore_1_1data_1_1_yield_curve_segment.html#a1d1cfd8ffb84e947f82999c682b666a7a42e4fbdec0ee2d612321d702530d37f0',1,'ore::data::YieldCurveSegment']]],
   ['bootstrap_18',['Bootstrap',['../namespaceore_1_1data.html#a18340f2f2342933b54b1dc8e6c0ed797a6699fc2680f2601917ba69358414fa51',1,'ore::data']]],
-  ['businessdaysafter_19',['BusinessDaysAfter',['../classore_1_1data_1_1_commodity_future_convention.html#a36388d1ac26722c387a0a040b0669248a28293f48bb5dd0a8aacbcdcc554b7bcb',1,'ore::data::CommodityFutureConvention']]],
-  ['businessdaysbefore_20',['BusinessDaysBefore',['../classore_1_1data_1_1_commodity_future_convention.html#a369d26e2357b73c505d9c95d1ef6c228a78ff80492ce225aa6d37653494519cbe',1,'ore::data::CommodityFutureConvention']]]
+  ['bothpay_19',['BothPay',['../namespaceore_1_1data.html#a7693a772803cb30c6e553518468a72eba51fc38f2c9ec4c442f0cfe4d9d561def',1,'ore::data']]],
+  ['businessdaysafter_20',['BusinessDaysAfter',['../classore_1_1data_1_1_commodity_future_convention.html#a36388d1ac26722c387a0a040b0669248a28293f48bb5dd0a8aacbcdcc554b7bcb',1,'ore::data::CommodityFutureConvention']]],
+  ['businessdaysbefore_21',['BusinessDaysBefore',['../classore_1_1data_1_1_commodity_future_convention.html#a369d26e2357b73c505d9c95d1ef6c228a78ff80492ce225aa6d37653494519cbe',1,'ore::data::CommodityFutureConvention']]]
 ];

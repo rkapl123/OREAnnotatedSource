@@ -1,0 +1,7 @@
+<map id="getQuotes" name="getQuotes">
+<area shape="rect" id="node1" title="Get the configured quotes. If filter is true, remove tenor based quotes and quotes with expiry before..." alt="" coords="5,43,88,69"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_loader.html#a19d9f6f808db2631247ec12ffe291225" title="get quote by its unique name, throws if not existent, override in derived classes for performance" alt="" coords="158,17,305,42"/>
+<area shape="rect" id="node4" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="136,70,327,95"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_loader.html#a0086c4f946085ef0b9d5c56bd1539f91" title="get all quotes, TODO change the return value to std::set" alt="" coords="377,5,505,45"/>
+<area shape="rect" id="node5" href="$classore_1_1data_1_1_wildcard.html#a2c8716c3eecd1edf1c1675aa730d59e3" title=" " alt="" coords="375,69,507,109"/>
+</map>

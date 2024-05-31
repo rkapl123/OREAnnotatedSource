@@ -1,0 +1,17 @@
+digraph "mapping"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="mapping",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="EUR => Yield/EUR/EUR6M, USD => Yield/USD/USD3M etc."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="empty",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_todays_market_parameters.html#a3f37b042a1e7cd4bd38fc564de81f0da",tooltip="Check if any parameters."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="hasConfiguration",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_todays_market_parameters.html#a15146782240bf68d7923722c5371feb9",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="marketObjectId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_todays_market_parameters.html#af07dd518bba247175c3e8816becacec7",tooltip="Intermediate id for a given market object and configuration, see the description of configurations_ b..."];
+  Node4 -> Node3 [color="steelblue1",style="solid"];
+}

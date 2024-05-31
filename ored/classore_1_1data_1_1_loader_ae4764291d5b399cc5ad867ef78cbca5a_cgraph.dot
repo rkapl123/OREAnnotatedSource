@@ -1,0 +1,16 @@
+digraph "hasFixing"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="hasFixing",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::Fixing::\lempty",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$structore_1_1data_1_1_fixing.html#a3f37b042a1e7cd4bd38fc564de81f0da",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="getFixing",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_loader.html#a0fdd97e9b3f5b666ca2e9cdf84bc99e8",tooltip="Default implementation for getFixing."];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="loadFixings",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_loader.html#a843cedb8bd4ec68e84f9d478ba263f5b",tooltip=" "];
+}

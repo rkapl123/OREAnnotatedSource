@@ -1,0 +1,30 @@
+digraph "EquityOptionQuote"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{EquityOptionQuote\n||+ EquityOptionQuote()\l+ EquityOptionQuote()\l+ clone()\l* boost::serialization\l::access\l* eqName()\l* ccy()\l* expiry()\l* strike()\l* isCall()\l* serialize()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Equity/Index Option data class."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{MarketDatum\n||+ MarketDatum()\l+ MarketDatum()\l+ ~MarketDatum()\l+ clone()\l* boost::serialization\l::access\l* name()\l* quote()\l* asofDate()\l* instrumentType()\l* quoteType()\l* serialize()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_market_datum.html",tooltip="Base market data class."];
+  Node3 -> Node2 [color="grey25",style="solid",label=" #quote_" ,arrowhead="odiamond"];
+  Node3 [label="{Handle\< Quote \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="orange",style="solid",label=" \< Quote \>" ];
+  Node4 [label="{Handle\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [color="grey25",style="solid",label=" #asofDate_" ,arrowhead="odiamond"];
+  Node5 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node2 [color="grey25",style="solid",label=" #name_" ,arrowhead="odiamond"];
+  Node6 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node7 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node2 [color="grey25",style="solid",label=" #instrumentType_" ,arrowhead="odiamond"];
+  Node8 [label="{InstrumentType\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node2 [color="grey25",style="solid",label=" #quoteType_" ,arrowhead="odiamond"];
+  Node9 [label="{QuoteType\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [color="grey25",style="solid",label=" -ccy_\n-eqName_\n-expiry_" ,arrowhead="odiamond"];
+  Node10 -> Node1 [color="grey25",style="solid",label=" -strike_" ,arrowhead="odiamond"];
+  Node10 [label="{shared_ptr\< ore::data\l::BaseStrike \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node1 [color="grey25",style="solid",label=" -isCall_" ,arrowhead="odiamond"];
+  Node11 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+}

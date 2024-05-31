@@ -1,0 +1,66 @@
+digraph "BlackScholesModelBuilderBase"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{BlackScholesModelBuilderBase\n||+ BlackScholesModelBuilder\lBase()\l+ BlackScholesModelBuilder\lBase()\l+ model()\l* forceRecalculate()\l* requiresRecalibration()\l* BlackScholesModelBuilder\lBase()\l* setupDatesAndTimes()\l* getCalibratedProcesses()\l* getCurveTimes()\l* getVolTimesStrikes()\l* performCalculations()\l* calibrationPointsChanged()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{ModelBuilder\n||+ recalibrate()\l+ forceRecalculate()\l+ requiresRecalibration()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$class_quant_ext_1_1_model_builder.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" #allCurves_\n#curves_" ,arrowhead="odiamond"];
+  Node3 [label="{vector\< Handle\< YieldTerm\lStructure \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node4 [label="{Handle\< YieldTermStructure \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="orange",style="solid",label=" \< YieldTermStructure \>" ];
+  Node5 [label="{Handle\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="orange",style="solid",label=" \< Handle\< YieldTermStructure \> \>" ];
+  Node6 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node7 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [color="grey25",style="solid",label=" #processes_" ,arrowhead="odiamond"];
+  Node8 [label="{vector\< QuantLib::ext\l::shared_ptr\< GeneralizedBlack\lScholesProcess \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node8 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node9 [label="{shared_ptr\< GeneralizedBlack\lScholesProcess \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="orange",style="solid",label=" \< QuantLib::ext::shared\l_ptr\< GeneralizedBlackScholes\lProcess \> \>" ];
+  Node10 -> Node1 [color="grey25",style="solid",label=" #addDates_\n#effectiveSimulationDates\l_\n#simulationDates_" ,arrowhead="odiamond"];
+  Node10 [label="{set\< Date \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node11 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node10 [dir="back",color="orange",style="solid",label=" \< Date \>" ];
+  Node12 [label="{set\< K \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node13 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node1 [color="grey25",style="solid",label=" #timeStepsPerYear_" ,arrowhead="odiamond"];
+  Node14 [label="{Size\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node1 [color="grey25",style="solid",label=" #discretisationTimeGrid_" ,arrowhead="odiamond"];
+  Node15 [label="{TimeGrid\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node1 [color="grey25",style="solid",label=" #model_" ,arrowhead="odiamond"];
+  Node16 [label="{RelinkableHandle\< QuantExt\l::BlackScholesModelWrapper \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node17 -> Node1 [color="grey25",style="solid",label=" #forceCalibration_" ,arrowhead="odiamond"];
+  Node17 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node18 -> Node1 [color="grey25",style="solid",label=" #marketObserver_" ,arrowhead="odiamond"];
+  Node18 [label="{shared_ptr\< QuantExt\l::MarketObserver \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node19 -> Node1 [color="grey25",style="solid",label=" #vols_" ,arrowhead="odiamond"];
+  Node19 [label="{vector\< Handle\< BlackVol\lTermStructure \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node20 -> Node19 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node20 [label="{Handle\< BlackVolTermStructure \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node20 [dir="back",color="orange",style="solid",label=" \< BlackVolTermStructure \>" ];
+  Node6 -> Node19 [dir="back",color="orange",style="solid",label=" \< Handle\< BlackVolTermStructure \> \>" ];
+  Node21 -> Node1 [color="grey25",style="solid",label=" #cache_" ,arrowhead="odiamond"];
+  Node21 [label="{CalibrationPointCache\n||+ hasChanged()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_calibration_point_cache.html",tooltip=" "];
+  Node11 -> Node21 [color="grey25",style="solid",label=" -referenceDate_" ,arrowhead="odiamond"];
+  Node22 -> Node21 [color="grey25",style="solid",label=" -curveData_\n-curveTimes_\n-volData_" ,arrowhead="odiamond"];
+  Node22 [label="{vector\< std::vector\l\< Real \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node23 -> Node22 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node23 [label="{vector\< Real \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node24 -> Node23 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node24 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node23 [dir="back",color="orange",style="solid",label=" \< Real \>" ];
+  Node6 -> Node22 [dir="back",color="orange",style="solid",label=" \< std::vector\< Real \> \>" ];
+  Node25 -> Node21 [color="grey25",style="solid",label=" -volTimesStrikes_" ,arrowhead="odiamond"];
+  Node25 [label="{vector\< std::vector\l\< std::pair\< Real, Real \> \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node26 -> Node25 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node26 [label="{vector\< std::pair\<\l Real, Real \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node25 [dir="back",color="orange",style="solid",label=" \< std::vector\< std\l::pair\< Real, Real \> \> \>" ];
+}

@@ -17,7 +17,7 @@ var searchData=
   ['mccamcurrencyswapengine_14',['McCamCurrencySwapEngine',['../../qle/class_quant_ext_1_1_mc_cam_currency_swap_engine.html',1,'QuantExt']]],
   ['mccamfxforwardengine_15',['McCamFxForwardEngine',['../../qle/class_quant_ext_1_1_mc_cam_fx_forward_engine.html',1,'QuantExt']]],
   ['mccamfxoptionengine_16',['McCamFxOptionEngine',['../../qle/class_quant_ext_1_1_mc_cam_fx_option_engine.html',1,'QuantExt']]],
-  ['mclgmfraengine_17',['McLgmFraEngine',['../../qle/class_quant_ext_1_1_mc_lgm_fra_engine.html',1,'QuantExt']]],
+  ['mcenginestats_17',['McEngineStats',['../../qle/struct_quant_ext_1_1_mc_engine_stats.html',1,'QuantExt']]],
   ['mclgmnonstandardswaptionengine_18',['McLgmNonstandardSwaptionEngine',['../../qle/class_quant_ext_1_1_mc_lgm_nonstandard_swaption_engine.html',1,'QuantExt']]],
   ['mclgmswapengine_19',['McLgmSwapEngine',['../../qle/class_quant_ext_1_1_mc_lgm_swap_engine.html',1,'QuantExt']]],
   ['mclgmswaptionengine_20',['McLgmSwaptionEngine',['../../qle/class_quant_ext_1_1_mc_lgm_swaption_engine.html',1,'QuantExt']]],

@@ -1,0 +1,13 @@
+digraph "GenericYieldVolCurve"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{GenericYieldVolCurve\n||+ GenericYieldVolCurve()\l+ ~GenericYieldVolCurve()\l+ GenericYieldVolCurve()\l* volTermStructure()\l* calibrationInfo()\l* GenericYieldVolCurve()\l* ~GenericYieldVolCurve()\l* GenericYieldVolCurve()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Wrapper class for building Generic yield volatility structures."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -vol_" ,arrowhead="odiamond"];
+  Node2 [label="{shared_ptr\< SwaptionVolatility\lStructure \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",style="solid",label=" -calibrationInfo_" ,arrowhead="odiamond"];
+  Node3 [label="{shared_ptr\< ore::data\l::IrVolCalibrationInfo \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['basket_0',['Basket',['../class_quant_ext_1_1_default_loss_model.html#a24fba90c5cb14b8b83fb4cf477559994',1,'QuantExt::DefaultLossModel']]],
-  ['bootstraperror_3c_20this_5fcurve_20_3e_1',['BootstrapError&lt; this_curve &gt;',['../class_quant_ext_1_1_piecewise_zero_inflation_curve.html#a785bdd7fd89db3df650011a596214d0e',1,'QuantExt::PiecewiseZeroInflationCurve']]],
-  ['singleton_3c_20dividendmanager_20_3e_2',['Singleton&lt; DividendManager &gt;',['../class_quant_ext_1_1_dividend_manager.html#aaaf3b26670c7f9cc5077876ec9eb3b13',1,'QuantExt::DividendManager']]]
+  ['penaltyfunction_3c_20this_5fcurve_20_3e_0',['PenaltyFunction&lt; this_curve &gt;',['../class_quant_ext_1_1_piecewise_optionlet_curve.html#aca3f88b9684e23193ac4481984646966',1,'QuantExt::PiecewiseOptionletCurve::PenaltyFunction&lt; this_curve &gt;()'],['../class_quant_ext_1_1_piecewise_price_curve.html#aca3f88b9684e23193ac4481984646966',1,'QuantExt::PiecewisePriceCurve::PenaltyFunction&lt; this_curve &gt;()']]],
+  ['pow_1',['pow',['../class_quant_ext_1_1_compiled_formula.html#afef1c3e96e1b5063dede90f74756f79a',1,'QuantExt::CompiledFormula::pow()'],['../struct_quant_ext_1_1_random_variable.html#a9b37450e8470d04748dc24803699472a',1,'QuantExt::RandomVariable::pow()']]]
 ];

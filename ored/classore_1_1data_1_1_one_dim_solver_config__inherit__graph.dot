@@ -1,0 +1,11 @@
+digraph "OneDimSolverConfig"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{OneDimSolverConfig\n||+ OneDimSolverConfig()\l+ OneDimSolverConfig()\l+ OneDimSolverConfig()\l+ fromXML()\l+ toXML()\l* maxEvaluations_\l* initialGuess_\l* accuracy_\l* minMax_\l* step_\l* lowerBound_\l* upperBound_\l* empty_\l* maxEvaluations()\l* initialGuess()\l* accuracy()\l* minMax()\l* step()\l* lowerBound()\l* upperBound()\l* empty()\l* operator QuantExt::\lSolver1DOptions()\l* check()\l* fromXML()\l* toXML()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [label="{XMLSerializable\n||+ ~XMLSerializable()\l+ fromXML()\l+ toXML()\l+ fromFile()\l+ toFile()\l+ fromXMLString()\l+ toXMLString()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html",tooltip="Base class for all serializable classes."];
+}

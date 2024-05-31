@@ -1,0 +1,43 @@
+digraph "PayLog"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{PayLog\n||+ write()\l+ consolidateAndSort()\l+ size()\l+ amounts()\l+ dates()\l+ currencies()\l+ legNos()\l+ cashflowTypes()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -legNos_\n-slots_" ,arrowhead="odiamond"];
+  Node2 [label="{vector\< Size \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node3 [label="{Size\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="orange",style="solid",label=" \< Size \>" ];
+  Node4 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node5 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [color="grey25",style="solid",label=" -amounts_" ,arrowhead="odiamond"];
+  Node6 [label="{vector\< QuantExt::Random\lVariable \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node7 [label="{RandomVariable\n||+ ~RandomVariable()\l+ RandomVariable()\l+ RandomVariable()\l+ RandomVariable()\l+ operator=()\l+ operator=()\l+ RandomVariable()\l+ RandomVariable()\l+ RandomVariable()\l+ copyToMatrixCol()\l+ copyToArray()\l+ clear()\l+ set()\l+ setTime()\l+ setAll()\l+ resetSize()\l+ deterministic()\l+ updateDeterministic()\l+ initialised()\l+ size()\l+ operator[]()\l+ at()\l+ time()\l+ operator+=()\l+ operator-=()\l+ operator*=()\l+ operator/=()\l+ expand()\l+ data()\l- checkTimeConsistencyAndUpdate()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="C:/dev/ORE/documentation/QuantExt/doc/quantext.tag$struct_quant_ext_1_1_random_variable.html",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +deleter" ,arrowhead="odiamond"];
+  Node8 [label="{function\< void(QuantExt\l::RandomVariable &)\>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node7 [color="grey25",style="solid",label=" -n_" ,arrowhead="odiamond"];
+  Node9 -> Node7 [color="grey25",style="solid",label=" -constantData_\n-data_" ,arrowhead="odiamond"];
+  Node9 [label="{double\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node7 [color="grey25",style="solid",label=" -deterministic_" ,arrowhead="odiamond"];
+  Node10 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node11 -> Node7 [color="grey25",style="solid",label=" -time_" ,arrowhead="odiamond"];
+  Node11 [label="{Real\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="orange",style="solid",label=" \< QuantExt::RandomVariable \>" ];
+  Node12 -> Node1 [color="grey25",style="solid",label=" -dates_" ,arrowhead="odiamond"];
+  Node12 [label="{vector\< Date \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node13 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node12 [dir="back",color="orange",style="solid",label=" \< Date \>" ];
+  Node14 -> Node1 [color="grey25",style="solid",label=" -cashflowTypes_\n-currencies_" ,arrowhead="odiamond"];
+  Node14 [label="{vector\< std::string \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node14 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node15 [label="{string\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node16 [label="{basic_string\< Char \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node14 [dir="back",color="orange",style="solid",label=" \< std::string \>" ];
+}

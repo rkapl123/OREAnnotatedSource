@@ -1,0 +1,17 @@
+digraph "ProgressReporter"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{ProgressReporter\n||+ ProgressReporter()\l+ registerProgressIndicator()\l+ unregisterProgressIndicator()\l+ unregisterAllProgressIndicators()\l+ updateProgress()\l+ resetProgress()\l+ progressIndicators()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Base class for a Progress Reporter."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" -indicators_" ,arrowhead="odiamond"];
+  Node2 [label="{set\< QuantLib::ext\l::shared_ptr\< ore::data\l::ProgressIndicator \> \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node3 [label="{shared_ptr\< ore::data\l::ProgressIndicator \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="orange",style="solid",label=" \< QuantLib::ext::shared\l_ptr\< ore::data::ProgressIndicator \> \>" ];
+  Node4 [label="{set\< K \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [color="grey25",style="solid",label=" +keys" ,arrowhead="odiamond"];
+  Node5 [label="{K\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

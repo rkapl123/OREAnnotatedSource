@@ -1,7 +1,8 @@
 <map id="tradeIdx" name="tradeIdx">
-<area shape="rect" id="node1" title="Return the map of up trade id&#39;s to index in cube." alt="" coords="153,140,221,165"/>
-<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_sensitivity_cube.html#a453d52ca58e35c81ad0e261b4f23113f" title=" " alt="" coords="5,29,105,55"/>
-<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_sensitivity_cube.html#afaf55566c0b01fd20455fa4237c41c19" title="Get the trade delta for trade with ID tradeId and for the given risk factor key riskFactorKey." alt="" coords="30,103,81,128"/>
-<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_sensitivity_cube.html#aa2500609657e286f27965d786394f3da" title="Get the trade gamma for trade with ID tradeId and for the given risk factor key riskFactorKey." alt="" coords="23,176,88,201"/>
-<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_sensitivity_cube.html#a96d86bf02a9f4b93850a4b12cd7a431b" title="Get the NPV with scenario description scenarioDescription for trade with ID tradeId." alt="" coords="35,225,76,251"/>
+<area shape="rect" id="node1" title="Return the map of up trade id&#39;s to index in cube." alt="" coords="267,79,335,104"/>
+<area shape="rect" id="node2" href="$classore_1_1analytics_1_1_sensitivity_cube.html#ab0031a4061bec14a266c6a038b9700dd" title=" " alt="" coords="119,29,219,55"/>
+<area shape="rect" id="node3" href="$classore_1_1analytics_1_1_sensitivity_cube.html#aa3738cf2e2e8828737eeaf9501805546" title="Get the trade delta for trade with index tradeIdx and for the given risk factor key riskFactorKey." alt="" coords="143,79,194,104"/>
+<area shape="rect" id="node5" href="$classore_1_1analytics_1_1_sensitivity_cube.html#a8856e9f92ad1adb17e2449280a85e307" title="Get the trade gamma for trade with index tradeIdx and for the given risk factor key riskFactorKey." alt="" coords="136,128,201,153"/>
+<area shape="rect" id="node4" href="$classore_1_1analytics_1_1_sensitivity_cube.html#afaf55566c0b01fd20455fa4237c41c19" title="Get the trade delta for trade with ID tradeId and for the given risk factor key riskFactorKey." alt="" coords="13,79,63,104"/>
+<area shape="rect" id="node6" href="$classore_1_1analytics_1_1_sensitivity_cube.html#aa2500609657e286f27965d786394f3da" title="Get the trade gamma for trade with ID tradeId and for the given risk factor key riskFactorKey." alt="" coords="5,128,71,153"/>
 </map>

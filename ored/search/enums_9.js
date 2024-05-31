@@ -8,5 +8,6 @@ var searchData=
   ['measure_5',['Measure',['../../qle/class_quant_ext_1_1_ir_model.html#afb571f7e4181db2c9a40dd64f8dce6bb',1,'QuantExt::IrModel']]],
   ['method_6',['Method',['../../qle/class_quant_ext_1_1_stabilised_g_l_l_s.html#a2a3c0067e44c5ef3210a256d06c16b0f',1,'QuantExt::StabilisedGLLS']]],
   ['modeltype_7',['ModelType',['../../qle/class_quant_ext_1_1_cross_asset_model.html#a9f27db0468ce0ce2994eb68dc919b15d',1,'QuantExt::CrossAssetModel']]],
-  ['momenttype_8',['MomentType',['../namespaceore_1_1data.html#a1dd3178717c03aef7d6851a3dfd92207',1,'ore::data']]]
+  ['momenttype_8',['MomentType',['../namespaceore_1_1data.html#a1dd3178717c03aef7d6851a3dfd92207',1,'ore::data']]],
+  ['mporcashflowmode_9',['MporCashFlowMode',['../namespaceore_1_1data.html#a7693a772803cb30c6e553518468a72eb',1,'ore::data']]]
 ];

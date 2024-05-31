@@ -1,0 +1,17 @@
+digraph "DefaultCurveConfig"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="DefaultCurveConfig",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="the curve builder will try to build the configs by ascending key in the map, first success wins"];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="populateQuotes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_default_curve_config.html#a19ed6e6444ea03ab24f69f1bf17d2151",tooltip=" "];
+  Node2 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::tryParseReal",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$group__utilities.html#ga3447951aa05e25440d0d5b7eecfce581",tooltip="Attempt to convert text to Real."];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="populateRequiredCurveIds",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_default_curve_config.html#a09cdbe524aa89af7bba59a844397ebb9",tooltip=" "];
+  Node4 -> Node4 [color="steelblue1",style="solid"];
+}

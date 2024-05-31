@@ -1,0 +1,38 @@
+digraph "BOOST_AUTO_TEST_CASE"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::CompositeTrade\l::currency",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_composite_trade.html#a14dac022d83c5fa9597e6344199a41b6",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::XMLSerializable\l::fromXMLString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#a449d65e6ed48eaecaf0a055dab61ebd3",tooltip="Parse from XML string."];
+  Node3 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::XMLSerializable\l::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#a52f896048a4e04b36fcfc8fa3de6a9b4",tooltip=" "];
+  Node3 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="ore::data::XMLDocument\l::fromXMLString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_document.html#acc30bd0f5b952978558a02ee60a952e8",tooltip="load a document from a hard-coded string"];
+  Node3 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="ore::data::XMLDocument\l::getFirstNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_document.html#adc51f551b19a2cabd09440c56d4119d6",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="ore::data::PortfolioBasket\lReferenceDatum::getTrades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_portfolio_basket_reference_datum.html#af2fc6cd41e746a1a6ed678511f0d76fd",tooltip=" "];
+  Node1 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="ore::data::Trade::id",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_trade.html#a87ddb3c71e81046ae19c4bf5949b178a",tooltip="Set the trade id."];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="ore::data::ReferenceDatum::id",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_reference_datum.html#a2afbfe390842c04d4a063889cee1b543",tooltip=" "];
+  Node1 -> Node10 [color="steelblue1",style="solid"];
+  Node10 [label="ore::data::CompositeTrade\l::notionalCalculation",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_composite_trade.html#a9ea438ffcfa6e52e334c306687cd8795",tooltip=" "];
+  Node1 -> Node11 [color="steelblue1",style="solid"];
+  Node11 [label="ore::data::XMLSerializable\l::toXMLString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#a3e09bde0f950d4f2ad9e103f478d326a",tooltip="Parse from XML string."];
+  Node11 -> Node12 [color="steelblue1",style="solid"];
+  Node12 [label="ore::data::XMLDocument\l::appendNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_document.html#a079b7b275c5d8cd0b3aef9dd8c29b5ae",tooltip=" "];
+  Node11 -> Node13 [color="steelblue1",style="solid"];
+  Node13 [label="ore::data::XMLDocument\l::toString",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_document.html#a133cf5030cda633035ca97147356f2f9",tooltip="return the XML Document as a string."];
+  Node11 -> Node14 [color="steelblue1",style="solid"];
+  Node14 [label="ore::data::XMLSerializable\l::toXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_x_m_l_serializable.html#a4cf70c725082d0b33600be4bcc2007f5",tooltip=" "];
+  Node1 -> Node15 [color="steelblue1",style="solid"];
+  Node15 [label="ore::data::CompositeTrade\l::trades",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_composite_trade.html#a52550426858b51cfda2a2cd8f922cddd",tooltip=" "];
+}

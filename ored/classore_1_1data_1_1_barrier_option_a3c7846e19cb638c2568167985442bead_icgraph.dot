@@ -1,0 +1,18 @@
+digraph "tradeMultiplier"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="tradeMultiplier",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_barrier_option.html#ab1db499ff5e65c59fd2009d62276fdaf",tooltip="Build QuantLib/QuantExt instrument, link pricing engine."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ore::data::FxOptionWithBarrier\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_fx_option_with_barrier.html#a023906d726fdb4d1f906576fe597c579",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$fxexotics_8cpp.html#a97f1cf85be4712888f153506afc004be",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::EquityOptionWith\lBarrier::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_option_with_barrier.html#a023906d726fdb4d1f906576fe597c579",tooltip=" "];
+}

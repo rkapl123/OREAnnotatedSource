@@ -1,0 +1,30 @@
+digraph "setEquityName"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="setEquityName",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="set name of equity"];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="EquityUnderlying",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_underlying.html#ad047dca63897f5d55f47d500968173ef",tooltip="Constructor with identifier information."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_underlying.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="ore::data::EquityOptionWith\lBarrier::additionalFromXml",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_option_with_barrier.html#a32a53e87b35de4acfc761bbc6e559b93",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="ore::data::EquityDigital\lOption::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_digital_option.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="ore::data::EquityDoubleTouch\lOption::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_double_touch_option.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="ore::data::EquityEuropean\lBarrierOption::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_european_barrier_option.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="ore::data::EquityOption\l::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_option.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node3 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="ore::data::EquityOptionUnderlying\lData::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_option_underlying_data.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node3 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="ore::data::EquityTouchOption\l::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_touch_option.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+  Node3 -> Node11 [dir="back",color="steelblue1",style="solid"];
+  Node11 [label="ore::data::EquityLegData\l::fromXML",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_leg_data.html#a7741ae0fc924943de5bfe02928262eb7",tooltip=" "];
+}

@@ -1,0 +1,11 @@
+digraph "Loader"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{Loader\n||+ ~Loader()\l* boost::serialization\l::access\l* loadQuotes()\l* get()\l* get()\l* get()\l* has()\l* hasQuotes()\l* get()\l* loadFixings()\l* hasFixing()\l* getFixing()\l* loadDividends()\l* setActualDate()\l* actualDate()\l* checkFxDuplicate()\l* serialize()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Market data loader base class."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" #actualDate_" ,arrowhead="odiamond"];
+  Node2 [label="{Date\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

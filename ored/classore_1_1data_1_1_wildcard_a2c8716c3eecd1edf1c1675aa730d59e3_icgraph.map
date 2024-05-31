@@ -1,21 +1,23 @@
 <map id="hasWildcard" name="hasWildcard">
-<area shape="rect" id="node1" title=" " alt="" coords="979,147,1073,173"/>
-<area shape="rect" id="node2" href="$classore_1_1data_1_1_default_curve.html#a0fb79c48d8e8b4debf08bd87c4bdd3c8" title="Detailed constructor." alt="" coords="256,65,409,105"/>
-<area shape="rect" id="node3" href="$classore_1_1data_1_1_c_s_v_loader.html#a98e4e7deeb617f0cff0d51955b17af2f" title="get quotes matching a wildcard" alt="" coords="743,98,916,123"/>
-<area shape="rect" id="node4" href="$classore_1_1data_1_1_in_memory_loader.html#a98e4e7deeb617f0cff0d51955b17af2f" title="get quotes matching a wildcard, this should be overriden in derived classes for performance" alt="" coords="728,147,931,173"/>
-<area shape="rect" id="node5" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="734,197,925,222"/>
-<area shape="rect" id="node19" href="$namespaceore_1_1data.html#ad660d5d2bc5b0b181009ab882b4ca8d2" title=" " alt="" coords="745,246,914,271"/>
-<area shape="rect" id="node6" href="$classore_1_1data_1_1_correlation_curve.html#acac20a4bd9ed917e740fda49980377d3" title="Detailed constructor." alt="" coords="493,29,668,69"/>
-<area shape="rect" id="node7" href="$classore_1_1data_1_1_equity_curve.html#a4fd38f7c9e899d6c320d49ca88e0b5e0" title="Detailed constructor." alt="" coords="505,93,656,133"/>
-<area shape="rect" id="node8" href="$classore_1_1data_1_1_default_curve.html#af7b2625ceb2794ac81c921df3116e5be" title=" " alt="" coords="490,157,671,197"/>
-<area shape="rect" id="node9" href="$classore_1_1data_1_1_c_d_s_vol_curve.html#a916d14abfcfc8d77084cc78867211778" title="Build a volatility curve from a 1&#45;D curve of volatility quotes." alt="" coords="501,221,660,261"/>
-<area shape="rect" id="node10" href="$classore_1_1data_1_1_commodity_vol_curve.html#a782cc59a036687f2402136c9003e07c2" title="Build a volatility curve from a 1&#45;D curve of volatility quotes." alt="" coords="481,285,680,325"/>
-<area shape="rect" id="node11" href="$classore_1_1data_1_1_commodity_curve.html#a8f12d0e659e33dda4a8a1a90005acbe7" title="Get the configured quotes. If filter is true, remove tenor based quotes and quotes with expiry before..." alt="" coords="491,349,670,389"/>
-<area shape="rect" id="node17" href="$classore_1_1data_1_1_f_x_vol_curve.html#af8a8fa2b7d9d22dad02c8b6341e6ea54" title=" " alt="" coords="507,445,654,485"/>
-<area shape="rect" id="node12" href="$classore_1_1data_1_1_commodity_curve.html#a75270868cf6dc7217514710735089a8d" title=" " alt="" coords="243,221,422,261"/>
-<area shape="rect" id="node14" href="$classore_1_1data_1_1_commodity_curve.html#ad4a4837b499ad4867fc9fa96ede42c59" title="Special method to add instruments when the priceSegment is OffPeakPowerDaily." alt="" coords="232,285,433,325"/>
-<area shape="rect" id="node15" href="$classore_1_1data_1_1_commodity_curve.html#af67e7c2b3e83030b4412f148d40ff311" title="Build commodity basis price curve." alt="" coords="243,349,422,389"/>
-<area shape="rect" id="node16" href="$classore_1_1data_1_1_commodity_curve.html#a9c85da3df3c4e4a6a8c9b8a597823852" title="Populate data with dates and prices from the loader." alt="" coords="243,413,422,453"/>
-<area shape="rect" id="node13" href="$classore_1_1data_1_1_commodity_curve.html#a30389d59c3806a212814ae01f6dca313" title="Build commodity piecewise price curve." alt="" coords="5,253,184,293"/>
-<area shape="rect" id="node18" href="$classore_1_1data_1_1_f_x_vol_curve.html#a7ee4c7d8a2c13896b1e241036efc8004" title="Detailed constructor." alt="" coords="259,477,406,517"/>
+<area shape="rect" id="node1" title=" " alt="" coords="979,181,1073,206"/>
+<area shape="rect" id="node2" href="$classore_1_1data_1_1_default_curve.html#aab7d6b459c59f1a3854a5cefc764f485" title="Detailed constructor." alt="" coords="256,67,409,107"/>
+<area shape="rect" id="node3" href="$classore_1_1data_1_1_c_s_v_loader.html#ad511d01ae42756876d9a116d19d8107a" title="get quotes matching a wildcard" alt="" coords="743,131,916,157"/>
+<area shape="rect" id="node4" href="$classore_1_1data_1_1_in_memory_loader.html#ad511d01ae42756876d9a116d19d8107a" title="get quotes matching a wildcard, this should be overriden in derived classes for performance" alt="" coords="728,181,931,206"/>
+<area shape="rect" id="node5" href="$namespaceore_1_1data.html#afb4bd26f4cf89fd9281278c484e0f9c3" title="checks if at most one element in C has a wild card and returns it in this case" alt="" coords="734,230,925,255"/>
+<area shape="rect" id="node21" href="$namespaceore_1_1data.html#ad660d5d2bc5b0b181009ab882b4ca8d2" title=" " alt="" coords="745,279,914,305"/>
+<area shape="rect" id="node6" href="$classore_1_1data_1_1_correlation_curve.html#a5dadf72004e9f236b46815d5a37606d8" title="Detailed constructor." alt="" coords="493,31,668,71"/>
+<area shape="rect" id="node7" href="$classore_1_1data_1_1_equity_curve.html#aa0b93fc44d9ba933557ebfd0796d8e5d" title="Detailed constructor." alt="" coords="505,95,656,135"/>
+<area shape="rect" id="node8" href="$classore_1_1data_1_1_yield_curve.html#ab95be441662bdbb7946d1d195c43bc51" title=" " alt="" coords="509,223,652,263"/>
+<area shape="rect" id="node10" href="$classore_1_1data_1_1_default_curve.html#a7028c2a461e78dee15fa5310a06c0bc7" title=" " alt="" coords="490,159,671,199"/>
+<area shape="rect" id="node11" href="$classore_1_1data_1_1_c_d_s_vol_curve.html#a916d14abfcfc8d77084cc78867211778" title="Build a volatility curve from a 1&#45;D curve of volatility quotes." alt="" coords="501,287,660,327"/>
+<area shape="rect" id="node12" href="$classore_1_1data_1_1_commodity_vol_curve.html#a782cc59a036687f2402136c9003e07c2" title="Build a volatility curve from a 1&#45;D curve of volatility quotes." alt="" coords="481,351,680,391"/>
+<area shape="rect" id="node13" href="$classore_1_1data_1_1_commodity_curve.html#a9a04717f9a8e0adafeb57d34753348b1" title="Get the configured quotes. If filter is true, remove tenor based quotes and quotes with expiry before..." alt="" coords="491,415,670,455"/>
+<area shape="rect" id="node19" href="$classore_1_1data_1_1_f_x_vol_curve.html#aa5334770a51cbfa81ecf8b7d14a3acf1" title=" " alt="" coords="507,511,654,551"/>
+<area shape="rect" id="node9" href="$classore_1_1data_1_1_yield_curve.html#a59d4997751f3007ffe3c18b56f2fa207" title="Constructor." alt="" coords="261,223,404,263"/>
+<area shape="rect" id="node14" href="$classore_1_1data_1_1_commodity_curve.html#afb12407f81eadbfd2463e61f4898c7ac" title=" " alt="" coords="243,287,422,327"/>
+<area shape="rect" id="node16" href="$classore_1_1data_1_1_commodity_curve.html#ad964fbfa1aff4319eb169a8cff4e62de" title="Special method to add instruments when the priceSegment is OffPeakPowerDaily." alt="" coords="232,351,433,391"/>
+<area shape="rect" id="node17" href="$classore_1_1data_1_1_commodity_curve.html#af67e7c2b3e83030b4412f148d40ff311" title="Build commodity basis price curve." alt="" coords="243,415,422,455"/>
+<area shape="rect" id="node18" href="$classore_1_1data_1_1_commodity_curve.html#aeeabdd32666fe17eb1e3c26a9d82a77c" title="Populate data with dates and prices from the loader." alt="" coords="243,479,422,519"/>
+<area shape="rect" id="node15" href="$classore_1_1data_1_1_commodity_curve.html#a771e0386d3a147f22a46b810d82f4fd3" title="Build commodity piecewise price curve." alt="" coords="5,319,184,359"/>
+<area shape="rect" id="node20" href="$classore_1_1data_1_1_f_x_vol_curve.html#af2e42c318046fe68ebaa0a7d0cc5067d" title="Detailed constructor." alt="" coords="259,543,406,583"/>
 </map>

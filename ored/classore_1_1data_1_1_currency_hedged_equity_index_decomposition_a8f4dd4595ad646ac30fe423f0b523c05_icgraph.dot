@@ -1,0 +1,16 @@
+digraph "fxIndexName"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="fxIndexName",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="addAdditionalFixingsForEquity\lIndexDecomposition",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_currency_hedged_equity_index_decomposition.html#afc3c59b08ce74ba6cbb239b07571a533",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="fxSpotRiskFromForwards",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_currency_hedged_equity_index_decomposition.html#a6c50e22e2b8e29fbd6631bd1b93c0a68",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="unhedgedSpotExposure",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_currency_hedged_equity_index_decomposition.html#a3cc0e6ce91be96ade0c8a3fdbf8bfc87",tooltip=" "];
+}

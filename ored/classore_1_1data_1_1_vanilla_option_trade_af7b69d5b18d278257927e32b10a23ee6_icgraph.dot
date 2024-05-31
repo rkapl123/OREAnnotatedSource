@@ -1,0 +1,28 @@
+digraph "build"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="build",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Build QuantLib/QuantExt instrument, link pricing engine."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ore::data::EquityFutureOption\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_future_option.html#af7b69d5b18d278257927e32b10a23ee6",tooltip="Build QuantLib/QuantExt instrument, link pricing engine."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$equitytrades_8cpp.html#aa42062877db60fac479ac06add9deb01",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="ore::data::EquityOption\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_equity_option.html#af7b69d5b18d278257927e32b10a23ee6",tooltip="Build QuantLib/QuantExt instrument, link pricing engine."];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$equitytrades_8cpp.html#a9157b4f937ae04fa01bdd86ef531a15d",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="steelblue1",style="solid"];
+  Node6 [label="ore::data::FxOption\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_fx_option.html#af7b69d5b18d278257927e32b10a23ee6",tooltip="Build QuantLib/QuantExt instrument, link pricing engine."];
+  Node6 -> Node7 [dir="back",color="steelblue1",style="solid"];
+  Node7 [label="BOOST_AUTO_TEST_CASE",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2fxoption_8cpp.html#a321417ba3c97d0524c8fa2d8acb97d72",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="steelblue1",style="solid"];
+  Node8 [label="ore::data::CommodityOption\l::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_option.html#a82238405f67248d44bb177a6951c8c2e",tooltip="Build underlying instrument and link pricing engine."];
+  Node8 -> Node9 [dir="back",color="steelblue1",style="solid"];
+  Node9 [label="ore::data::CommodityDigital\lOption::build",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_digital_option.html#a82238405f67248d44bb177a6951c8c2e",tooltip="Build underlying instrument and link pricing engine."];
+  Node8 -> Node10 [dir="back",color="steelblue1",style="solid"];
+  Node10 [label="ore::data::CommodityAverage\lPriceOption::buildStandardOption",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classore_1_1data_1_1_commodity_average_price_option.html#ab927cfcbbf36bfbbaa854f21f964aced",tooltip="Build a standard option."];
+}

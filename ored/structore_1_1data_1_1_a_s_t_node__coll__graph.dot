@@ -1,0 +1,23 @@
+digraph "ASTNode"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="{ASTNode\n||+ ASTNode()\l+ ~ASTNode()\l+ ASTNode()\l+ accept()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",style="solid",label=" +locationInfo" ,arrowhead="odiamond"];
+  Node2 [label="{LocationInfo\n||+ LocationInfo()\l+ LocationInfo()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structore_1_1data_1_1_location_info.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",style="solid",label=" +initialised" ,arrowhead="odiamond"];
+  Node3 [label="{bool\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classbool.html",tooltip=" "];
+  Node4 -> Node2 [color="grey25",style="solid",label=" +columnEnd\n+columnStart\n+lineEnd\n+lineStart" ,arrowhead="odiamond"];
+  Node4 [label="{Size\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [color="grey25",style="solid",label=" +args" ,arrowhead="odiamond"];
+  Node5 [label="{vector\< ASTNodePtr \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node6 [label="{ASTNodePtr\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="orange",style="solid",label=" \< ASTNodePtr \>" ];
+  Node7 [label="{vector\< T \>\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node7 [color="grey25",style="solid",label=" +elements" ,arrowhead="odiamond"];
+  Node8 [label="{T\n||}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+}

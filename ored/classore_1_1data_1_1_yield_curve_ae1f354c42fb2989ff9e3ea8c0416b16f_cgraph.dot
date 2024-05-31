@@ -1,0 +1,16 @@
+digraph "piecewisecurve"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="piecewisecurve",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="ore::data::discountcurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#aa184f2d487261594f30eb71bae3ca981",tooltip="Create a Interpolated Discount Curve and apply interpolators."];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="ore::data::forwardcurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ad80f3980af9a32be9dc20791d9f64b5e",tooltip="Create a Interpolated Forward Curve and apply interpolators."];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="ore::data::zerocurve",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceore_1_1data.html#ae1d27033e39ac9a482852f335b186756",tooltip="Create a Interpolated Zero Curve and apply interpolators."];
+}
